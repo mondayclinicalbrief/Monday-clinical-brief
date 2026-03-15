@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome — The Monday Clinical Brief</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --charcoal: #1c1c1c;
+    --cream: #f7f5f0;
+    --warm-white: #fdfcf9;
+    --sage: #5a7a6a;
+    --sage-light: #e8efeb;
+    --sage-deep: #3d5a4c;
+    --gold: #c4994c;
+    --gold-light: #f5edd8;
+    --text: #3a3a38;
+    --text-muted: #7a7a76;
+    --border: #e2dfd8;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Figtree', sans-serif; color: var(--text); background: var(--cream); line-height: 1.7; -webkit-font-smoothing: antialiased; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2rem; }
+
+  .card { background: var(--warm-white); border: 1px solid var(--border); border-radius: 12px; padding: 3rem; max-width: 560px; width: 100%; text-align: center; }
+  .checkmark { width: 64px; height: 64px; background: var(--sage-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; }
+  .checkmark svg { width: 28px; height: 28px; stroke: var(--sage-deep); stroke-width: 2.5; fill: none; }
+  h1 { font-family: 'Instrument Serif', serif; font-size: 2rem; font-weight: 400; color: var(--charcoal); margin-bottom: 1rem; }
+  .subtitle { font-size: 1.05rem; color: var(--text-muted); margin-bottom: 2rem; }
+  .steps-list { text-align: left; margin-bottom: 2rem; list-style: none; padding: 0; }
+  .steps-list li { padding: 0.75rem 0; border-bottom: 1px solid var(--border); font-size: 0.95rem; color: var(--text); display: flex; gap: 0.75rem; align-items: baseline; }
+  .steps-list li:last-child { border-bottom: none; }
+  .step-icon { font-weight: 700; color: var(--sage-deep); flex-shrink: 0; }
+
+  .upsell { margin: 2rem 0; padding: 1.5rem; background: var(--charcoal); color: white; border-radius: 10px; text-align: left; position: relative; overflow: hidden; }
+  .upsell::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(ellipse at 50% 0%, rgba(90,122,106,0.15) 0%, transparent 60%); }
+  .upsell > * { position: relative; }
+  .upsell-tag { display: inline-block; background: var(--gold); color: var(--charcoal); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.2rem 0.6rem; border-radius: 3px; margin-bottom: 0.75rem; }
+  .upsell h3 { font-family: 'Instrument Serif', serif; font-size: 1.3rem; font-weight: 400; margin-bottom: 0.5rem; }
+  .upsell p { font-size: 0.9rem; opacity: 0.8; margin-bottom: 1rem; }
+  .upsell-price { font-size: 0.85rem; opacity: 0.6; margin-bottom: 1.25rem; }
+  .upsell-price strong { color: white; opacity: 1; font-size: 1.1rem; }
+  .upsell-select { width: 100%; padding: 0.75rem 1rem; font-family: 'Figtree', sans-serif; font-size: 0.9rem; border: 1px solid rgba(255,255,255,0.15); border-radius: 6px; background: rgba(255,255,255,0.08); color: white; appearance: none; cursor: pointer; margin-bottom: 1rem; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23ffffff' stroke-width='1.5'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 1rem center; }
+  .upsell-select:focus { outline: none; border-color: var(--sage); }
+  .upsell-select option { background: var(--charcoal); color: white; }
+  .upsell-btn { width: 100%; padding: 0.75rem; font-family: 'Figtree', sans-serif; font-size: 0.9rem; font-weight: 600; background: white; color: var(--charcoal); border: none; border-radius: 40px; cursor: pointer; transition: all 0.2s; }
+  .upsell-btn:hover { background: var(--gold-light); }
+  .upsell-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+  .upsell-skip { display: block; text-align: center; margin-top: 0.75rem; font-size: 0.8rem; color: rgba(255,255,255,0.4); text-decoration: none; }
+
+  .note { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 2rem; padding: 1rem; background: var(--sage-light); border-radius: 8px; }
+  .btn-home { display: inline-block; background: var(--sage-deep); color: white; text-decoration: none; padding: 0.75rem 2rem; border-radius: 60px; font-family: 'Figtree', sans-serif; font-size: 0.95rem; font-weight: 600; transition: all 0.3s; }
+  .btn-home:hover { background: var(--charcoal); }
+  .footer-note { margin-top: 2rem; font-size: 0.8rem; color: var(--text-muted); }
+  .footer-note a { color: var(--sage); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="checkmark">
+    <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+  </div>
+
+  <h1>Your free trial has started</h1>
+  <p class="subtitle">Welcome to The Monday Clinical Brief. You won't be charged during your 4-week trial.</p>
+
+  <ol class="steps-list">
+    <li><span class="step-icon">1.</span> You'll receive a confirmation email from Stripe. No payment is taken today.</li>
+    <li><span class="step-icon">2.</span> We'll set up your digest within 24 hours and send you a welcome email.</li>
+    <li><span class="step-icon">3.</span> Your first Monday Clinical Brief will arrive on the next Monday morning.</li>
+    <li><span class="step-icon">4.</span> After 4 weeks, your subscription continues at £20/year. Cancel any time before then at no cost.</li>
+  </ol>
+
+  <div class="upsell">
+    <div class="upsell-tag">Subscriber exclusive</div>
+    <h3>Add another specialty</h3>
+    <p>Cover a second area of interest or add one for your department. Only available to existing subscribers.</p>
+    <div class="upsell-price">Just <strong>£5</strong> / year per additional specialty</div>
+
+    <select class="upsell-select" id="extra-specialty">
+      <option value="" disabled selected>Choose an additional specialty...</option>
+      <option value="acute-medicine">Acute Medicine</option>
+      <option value="anaesthetics">Anaesthetics</option>
+      <option value="cardiology">Cardiology</option>
+      <option value="cardiothoracic-surgery">Cardiothoracic Surgery</option>
+      <option value="dermatology">Dermatology</option>
+      <option value="emergency-medicine">Emergency Medicine</option>
+      <option value="endocrinology">Endocrinology</option>
+      <option value="gastroenterology">Gastroenterology</option>
+      <option value="general-practice">General Practice / Family Medicine</option>
+      <option value="general-surgery">General Surgery</option>
+      <option value="geriatric-medicine">Geriatric Medicine</option>
+      <option value="haematology">Haematology</option>
+      <option value="infectious-disease">Infectious Disease</option>
+      <option value="intensive-care">Intensive Care / Critical Care</option>
+      <option value="nephrology">Nephrology / Renal Medicine</option>
+      <option value="neurology">Neurology</option>
+      <option value="neurosurgery">Neurosurgery</option>
+      <option value="obstetrics-gynaecology">Obstetrics &amp; Gynaecology</option>
+      <option value="oncology">Oncology</option>
+      <option value="ophthalmology">Ophthalmology</option>
+      <option value="orthopaedic-surgery">Orthopaedic Surgery</option>
+      <option value="paediatrics">Paediatrics</option>
+      <option value="palliative-care">Palliative Care</option>
+      <option value="pathology">Pathology</option>
+      <option value="plastic-surgery">Plastic &amp; Reconstructive Surgery</option>
+      <option value="psychiatry">Psychiatry</option>
+      <option value="public-health">Public Health</option>
+      <option value="radiology">Radiology</option>
+      <option value="respiratory">Respiratory Medicine</option>
+      <option value="rheumatology">Rheumatology</option>
+      <option value="urology">Urology</option>
+    </select>
+
+    <button class="upsell-btn" id="extra-btn" disabled onclick="addExtra()">
+      Select a specialty to add
+    </button>
+    <a href="/" class="upsell-skip">Maybe later</a>
+  </div>
+
+  <div class="note">
+    You can always add more specialties later by emailing us at <a href="mailto:mondayclinicalbrief@gmail.com">mondayclinicalbrief@gmail.com</a>
+  </div>
+
+  <a href="/" class="btn-home">Go to homepage</a>
+
+  <p class="footer-note">
+    Questions? <a href="mailto:mondayclinicalbrief@gmail.com">mondayclinicalbrief@gmail.com</a>
+    <br><a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms of Service</a>
+  </p>
+</div>
+
+<script>
+// ══════════════════════════════════════════════════════════════
+// STRIPE — ADDITIONAL SPECIALTY PAYMENT LINK (£5/year product)
+// Replace with your Payment Link B
+const EXTRA_STRIPE_LINK = 'https://buy.stripe.com/eVqaEQ1fwfmy0NHd0KefC01';
+// ══════════════════════════════════════════════════════════════
+
+const extraSelect = document.getElementById('extra-specialty');
+const extraBtn = document.getElementById('extra-btn');
+
+extraSelect.addEventListener('change', function() {
+  if (this.value) {
+    extraBtn.disabled = false;
+    const name = this.options[this.selectedIndex].text;
+    extraBtn.textContent = 'Add ' + name + ' — \u00a35/year \u2192';
+  }
+});
+
+function addExtra() {
+  const specialty = extraSelect.value;
+  if (!specialty) return;
+  const url = EXTRA_STRIPE_LINK + '?client_reference_id=' + encodeURIComponent('extra-' + specialty);
+  window.location.href = url;
+}
+</script>
+
+</body>
+</html>

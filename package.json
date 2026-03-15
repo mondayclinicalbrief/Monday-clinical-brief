@@ -1,0 +1,15 @@
+{
+  "name": "monday-clinical-brief-functions",
+  "version": "1.0.0",
+  "description": "Netlify Functions for The Monday Clinical Brief",
+  "dependencies": {
+    "nodemailer": "^6.9.9",
+    "stripe": "^14.21.0"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "luxon": "^3.7.2",
+    "markdown-it": "^14.1.1",
+    "markdown-it-anchor": "^9.2.0"
+  }
+}

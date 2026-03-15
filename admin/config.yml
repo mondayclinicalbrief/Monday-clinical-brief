@@ -1,0 +1,105 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Media files will be stored here
+media_folder: "assets/images/blog"
+public_folder: "/assets/images/blog"
+
+# Slug settings
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "-"
+
+collections:
+  # ── Cluster 1: Medical Journal Digest ──
+  - name: "medical-journal-digest"
+    label: "Medical Journal Digest"
+    folder: "blog/medical-journal-digest"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "SEO Title", name: "seoTitle", widget: "string", hint: "Max 60 chars. Include primary keyword near front.", required: false }
+      - { label: "Meta Description", name: "metaDescription", widget: "text", hint: "Max 155 chars. Include primary keyword + CTA.", required: false }
+      - { label: "Description", name: "description", widget: "text", hint: "Short summary for blog listings and social shares." }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Last Updated", name: "updated", widget: "datetime", required: false }
+      - { label: "Featured Image", name: "featuredImage", widget: "image", required: false }
+      - { label: "Cluster", name: "cluster", widget: "hidden", default: "Medical Journal Digest" }
+      - label: "Schema Type"
+        name: "schemaType"
+        widget: "select"
+        options: ["Article", "MedicalWebPage"]
+        default: "Article"
+      - { label: "Pillar Page", name: "pillar", widget: "boolean", default: false, hint: "Is this a pillar (hub) page?" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - label: "FAQs"
+        name: "faqs"
+        widget: "list"
+        required: false
+        hint: "Add FAQ items for FAQPage schema markup."
+        fields:
+          - { label: "Question", name: "question", widget: "string" }
+          - { label: "Answer", name: "answer", widget: "text" }
+
+  # ── Cluster 2: CPD Reading Tool ──
+  - name: "cpd-reading-tool"
+    label: "CPD Reading Tool"
+    folder: "blog/cpd-reading-tool"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "SEO Title", name: "seoTitle", widget: "string", required: false }
+      - { label: "Meta Description", name: "metaDescription", widget: "text", required: false }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Last Updated", name: "updated", widget: "datetime", required: false }
+      - { label: "Featured Image", name: "featuredImage", widget: "image", required: false }
+      - { label: "Cluster", name: "cluster", widget: "hidden", default: "CPD Reading Tool" }
+      - label: "Schema Type"
+        name: "schemaType"
+        widget: "select"
+        options: ["Article", "MedicalWebPage"]
+        default: "Article"
+      - { label: "Pillar Page", name: "pillar", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - label: "FAQs"
+        name: "faqs"
+        widget: "list"
+        required: false
+        fields:
+          - { label: "Question", name: "question", widget: "string" }
+          - { label: "Answer", name: "answer", widget: "text" }
+
+  # ── Cluster 3: Journal Summary Subscription ──
+  - name: "journal-summary-subscription"
+    label: "Journal Summary Subscription"
+    folder: "blog/journal-summary-subscription"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "SEO Title", name: "seoTitle", widget: "string", required: false }
+      - { label: "Meta Description", name: "metaDescription", widget: "text", required: false }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Last Updated", name: "updated", widget: "datetime", required: false }
+      - { label: "Featured Image", name: "featuredImage", widget: "image", required: false }
+      - { label: "Cluster", name: "cluster", widget: "hidden", default: "Journal Summary Subscription" }
+      - label: "Schema Type"
+        name: "schemaType"
+        widget: "select"
+        options: ["Article", "MedicalWebPage"]
+        default: "Article"
+      - { label: "Pillar Page", name: "pillar", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - label: "FAQs"
+        name: "faqs"
+        widget: "list"
+        required: false
+        fields:
+          - { label: "Question", name: "question", widget: "string" }
+          - { label: "Answer", name: "answer", widget: "text" }

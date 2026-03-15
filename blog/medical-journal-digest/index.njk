@@ -1,0 +1,19 @@
+---
+layout: blog-index.njk
+title: "Medical Journal Digest"
+description: "Guides to reading, filtering, and staying on top of the medical literature — without drowning in journals."
+permalink: /blog/medical-journal-digest/
+---
+
+{% for post in collections.cluster1 %}
+<div class="post-card">
+  <span class="post-card-cluster">Medical Journal Digest</span>
+  {% if post.data.pillar %}<span class="pillar-badge">Pillar</span>{% endif %}
+  <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+  <p>{{ post.data.description }}</p>
+  <div class="post-card-meta">
+    <time datetime="{{ post.date | isoDate }}">{{ post.date | readableDate }}</time>
+    <span>{{ post.data.description | readingTime }}</span>
+  </div>
+</div>
+{% endfor %}
