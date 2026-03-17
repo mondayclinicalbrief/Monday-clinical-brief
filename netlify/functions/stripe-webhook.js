@@ -307,8 +307,42 @@ exports.handler = async (event) => {
   // FAF2026 coupon = £2 first year; standard trial = £20/year
   let price = DEFAULT_PRICE;
   try {
+    // 1. Check session.discount (included in webhook payload)
+    const couponCodes = [];
+    if (session.discount?.coupon) {
+      const c = session.discount.coupon;
+      if (c.id) couponCodes.push(c.id);
+      if (c.name) couponCodes.push(c.name);
+    }
+
+    // 2. Also check total_details.breakdown.discounts (may be present if expanded)
     const discounts = session.total_details?.breakdown?.discounts || [];
-    const couponCodes = discounts.map(d => d.discount?.coupon?.id || d.discount?.coupon?.name || "").filter(Boolean);
+    for (const d of discounts) {
+      const id = d.discount?.coupon?.id || d.discount?.coupon?.name || "";
+      if (id) couponCodes.push(id);
+    }
+
+    // 3. If still empty, retrieve the session from Stripe with expanded fields
+    if (couponCodes.length === 0) {
+      try {
+        const fullSession = await stripe.checkout.sessions.retrieve(session.id, {
+          expand: ["total_details.breakdown", "discounts"],
+        });
+        if (fullSession.discount?.coupon) {
+          const c = fullSession.discount.coupon;
+          if (c.id) couponCodes.push(c.id);
+          if (c.name) couponCodes.push(c.name);
+        }
+        const expandedDiscounts = fullSession.total_details?.breakdown?.discounts || [];
+        for (const d of expandedDiscounts) {
+          const id = d.discount?.coupon?.id || d.discount?.coupon?.name || "";
+          if (id) couponCodes.push(id);
+        }
+      } catch (retrieveErr) {
+        console.log("Could not retrieve expanded session:", retrieveErr.message);
+      }
+    }
+
     console.log("Coupon codes detected:", couponCodes);
     if (couponCodes.some(c => c.toUpperCase().includes("FAF2026"))) {
       price = "£2";
@@ -316,7 +350,7 @@ exports.handler = async (event) => {
       price = formatPrice(session.amount_total);
     }
   } catch (e) {
-    console.log("Could not parse discounts, using default price");
+    console.log("Could not parse discounts, using default price:", e.message);
   }
 
   try {
