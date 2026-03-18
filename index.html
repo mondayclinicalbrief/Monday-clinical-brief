@@ -112,6 +112,25 @@
 
   .subscribe-note { text-align: center; margin-top: 2rem; font-size: 0.82rem; opacity: 0.4; }
 
+  /* ── ADD EXTRAS ── */
+  .add-extras-toggle { display: none; width: 100%; padding: 0.75rem 1.25rem; font-family: 'Figtree', sans-serif; font-size: 0.9rem; font-weight: 500; background: transparent; color: var(--gold); border: 1px dashed rgba(196,153,76,0.4); border-radius: 8px; cursor: pointer; transition: all 0.2s; margin-bottom: 1.5rem; }
+  .add-extras-toggle:hover { border-color: var(--gold); background: rgba(196,153,76,0.08); }
+  .add-extras-toggle.active { border-style: solid; background: rgba(196,153,76,0.08); }
+
+  .extras-panel { display: none; margin-bottom: 1.5rem; border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 1.25rem; background: rgba(255,255,255,0.04); }
+  .extras-panel.visible { display: block; }
+  .extras-panel-label { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 0.75rem; }
+  .extras-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.4rem; max-height: 240px; overflow-y: auto; padding-right: 0.5rem; }
+  .extras-grid::-webkit-scrollbar { width: 4px; }
+  .extras-grid::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 2px; }
+  .extra-option { display: flex; align-items: center; gap: 0.6rem; padding: 0.5rem 0.65rem; border-radius: 6px; cursor: pointer; transition: background 0.15s; font-size: 0.85rem; color: rgba(255,255,255,0.7); }
+  .extra-option:hover { background: rgba(255,255,255,0.06); }
+  .extra-option input[type="checkbox"] { accent-color: var(--gold); width: 16px; height: 16px; cursor: pointer; flex-shrink: 0; }
+  .extra-option.disabled { opacity: 0.3; pointer-events: none; }
+
+  .price-summary { margin-top: 1rem; padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.85rem; color: rgba(255,255,255,0.6); }
+  .price-summary .total { color: white; font-weight: 600; font-size: 1rem; margin-top: 0.25rem; }
+
   /* ── ABOUT ── */
   .about-section { background: var(--cream); }
   .about-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 2.5rem; align-items: start; margin-top: 2rem; }
@@ -319,6 +338,14 @@
         <option value="urology">Urology</option>
       </select>
 
+      <button type="button" class="add-extras-toggle" id="add-extras-toggle">+ Add additional specialties (£5/yr each)</button>
+
+      <div class="extras-panel" id="extras-panel">
+        <div class="extras-panel-label">Additional specialties</div>
+        <div class="extras-grid" id="extras-grid"></div>
+        <div class="price-summary" id="price-summary"></div>
+      </div>
+
       <button class="subscribe-btn" id="subscribe-btn" disabled onclick="goToCheckout()">
         Select a specialty to start your free trial
       </button>
@@ -361,25 +388,99 @@
 
 <script>
 // ══════════════════════════════════════════════════════════
-// STRIPE CONFIGURATION — UPDATE THIS WITH YOUR PAYMENT LINK
-// ═══════════════════════════════════════════════�uy.stripe.com/abc123)
-// 3. Paste it below as STRIPE_LINK
-//
+// STRIPE CONFIGURATION
+// ══════════════════════════════════════════════════════════
 const STRIPE_LINK = 'https://buy.stripe.com/dRm28k4rI5LYaoh3qaefC00';
+const CHECKOUT_FUNCTION = '/.netlify/functions/create-checkout';
 // ══════════════════════════════════════════════════════════
 
 const select = document.getElementById('specialty-select');
 const btn = document.getElementById('subscribe-btn');
+const extrasToggle = document.getElementById('add-extras-toggle');
+const extrasPanel = document.getElementById('extras-panel');
+const extrasGrid = document.getElementById('extras-grid');
+const priceSummary = document.getElementById('price-summary');
 
+// All specialties for the extras checkboxes
+const ALL_SPECIALTIES = Array.from(select.options)
+  .filter(function(o) { return o.value; })
+  .map(function(o) { return { value: o.value, label: o.text }; });
+
+// ── Build extras checkboxes ──
+function buildExtrasGrid() {
+  var primary = select.value;
+  extrasGrid.innerHTML = '';
+  ALL_SPECIALTIES.forEach(function(spec) {
+    var label = document.createElement('label');
+    label.className = 'extra-option' + (spec.value === primary ? ' disabled' : '');
+    var cb = document.createElement('input');
+    cb.type = 'checkbox';
+    cb.value = spec.value;
+    cb.disabled = spec.value === primary;
+    if (spec.value === primary) cb.checked = false;
+    cb.addEventListener('change', updatePricing);
+    label.appendChild(cb);
+    label.appendChild(document.createTextNode(spec.label));
+    extrasGrid.appendChild(label);
+  });
+  updatePricing();
+}
+
+// ── Get selected extras ──
+function getSelectedExtras() {
+  return Array.from(extrasGrid.querySelectorAll('input[type="checkbox"]:checked'))
+    .map(function(cb) { return cb.value; });
+}
+
+// ── Update pricing + button ──
+function updatePricing() {
+  var primary = select.value;
+  if (!primary) return;
+
+  var extras = getSelectedExtras();
+  var totalSpecialties = 1 + extras.length;
+  var totalPrice = 20 + (extras.length * 5);
+
+  // Update button
+  var primaryName = select.options[select.selectedIndex].text;
+  if (totalSpecialties === 1) {
+    btn.textContent = 'Start free trial \u2014 ' + primaryName + ' \u2192';
+  } else {
+    btn.textContent = 'Start free trial \u2014 ' + totalSpecialties + ' specialties \u2192';
+  }
+
+  // Update price summary in extras panel
+  if (extras.length > 0) {
+    priceSummary.innerHTML =
+      primaryName + ': <strong>\u00a320/yr</strong><br>' +
+      extras.length + ' additional: <strong>\u00a3' + (extras.length * 5) + '/yr</strong>' +
+      '<div class="total">Total after trial: \u00a3' + totalPrice + '/year</div>';
+  } else {
+    priceSummary.innerHTML = '';
+  }
+}
+
+// ── Primary specialty change ──
 select.addEventListener('change', function() {
   if (this.value) {
     btn.disabled = false;
-    const name = this.options[this.selectedIndex].text;
-    btn.textContent = 'Start free trial — ' + name + ' →';
+    extrasToggle.style.display = 'block';
+    buildExtrasGrid();
+    updatePricing();
   }
 });
 
-// Make specialty tiles clickable — scroll to subscribe and auto-select
+// ── Toggle extras panel ──
+extrasToggle.addEventListener('click', function() {
+  var isVisible = extrasPanel.classList.contains('visible');
+  extrasPanel.classList.toggle('visible');
+  this.classList.toggle('active');
+  this.textContent = isVisible
+    ? '+ Add additional specialties (\u00a35/yr each)'
+    : '\u2212 Hide additional specialties';
+});
+
+// ── Specialty tiles: auto-select + scroll ──
 document.querySelectorAll('.specialty-pill[data-slug]').forEach(function(pill) {
   pill.addEventListener('click', function() {
     var slug = this.getAttribute('data-slug');
@@ -389,14 +490,43 @@ document.querySelectorAll('.specialty-pill[data-slug]').forEach(function(pill) {
   });
 });
 
+// ── Checkout ──
 function goToCheckout() {
-  const specialty = select.value;
-  if (!specialty) return;
+  var primary = select.value;
+  if (!primary) return;
 
-  // client_reference_id passes the specialty choice to Stripe
-  // You'll see this in your Stripe dashboard alongside the payment
-  const url = STRIPE_LINK + '?client_reference_id=' + encodeURIComponent(specialty);
-  window.location.href = url;
+  var extras = getSelectedExtras();
+
+  if (extras.length === 0) {
+    // Single specialty — use existing Stripe payment link
+    var url = STRIPE_LINK + '?client_reference_id=' + encodeURIComponent(primary);
+    window.location.href = url;
+  } else {
+    // Multiple specialties — use dynamic checkout session
+    btn.disabled = true;
+    btn.textContent = 'Redirecting to checkout\u2026';
+
+    fetch(CHECKOUT_FUNCTION, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ primary: primary, extras: extras })
+    })
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+      if (data.url) {
+        window.location.href = data.url;
+      } else {
+        alert('Something went wrong. Please try again or contact us.');
+        btn.disabled = false;
+        updatePricing();
+      }
+    })
+    .catch(function() {
+      alert('Something went wrong. Please try again or contact us.');
+      btn.disabled = false;
+      updatePricing();
+    });
+  }
 }
 </script>
 
