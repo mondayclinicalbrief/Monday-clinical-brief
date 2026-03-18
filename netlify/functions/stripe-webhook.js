@@ -293,10 +293,18 @@ exports.handler = async (event) => {
     return { statusCode: 200, body: "No email — skipped" };
   }
 
-  // Extract specialty slug from client_reference_id
-  // client_reference_id format: "cardiology" or "extra-cardiology"
+  // Extract specialty slug(s) from client_reference_id
+  // Formats: "cardiology", "extra-cardiology", or "cardiology,neurology,palliative-care"
   const ref = session.client_reference_id || "";
-  const specialtySlug = ref.startsWith("extra-") ? ref.replace("extra-", "") : ref;
+  let specialtySlugs;
+  if (ref.includes(",")) {
+    // Multi-specialty signup: comma-separated list (primary first)
+    specialtySlugs = ref.split(",").map(s => s.trim()).filter(Boolean);
+  } else {
+    const slug = ref.startsWith("extra-") ? ref.replace("extra-", "") : ref;
+    specialtySlugs = slug ? [slug] : [];
+  }
+  const specialtySlug = specialtySlugs[0] || "";
 
   if (!specialtySlug) {
     console.error("No specialty slug in client_reference_id:", ref);
@@ -353,11 +361,17 @@ exports.handler = async (event) => {
     console.log("Could not parse discounts, using default price:", e.message);
   }
 
+  // For multi-specialty signups, calculate total price if not discounted
+  if (specialtySlugs.length > 1 && price === DEFAULT_PRICE) {
+    const totalPounds = 20 + ((specialtySlugs.length - 1) * 5);
+    price = `£${totalPounds}`;
+  }
+
   try {
     await sendWelcomeEmail(email, specialtySlug, price);
     return {
       statusCode: 200,
-      body: JSON.stringify({ ok: true, email, specialtySlug, price }),
+      body: JSON.stringify({ ok: true, email, specialties: specialtySlugs, price }),
     };
   } catch (err) {
     console.error("Failed to send welcome email:", err);
