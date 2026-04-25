@@ -1,10 +1,10 @@
 ---
-title: "Heidi Evidence vs a Weekly Journal Digest: Which Keeps You Current?"
+title: "Heidi Evidence vs The Monday Clinical Brief: Pull vs Push for UK Clinicians"
 seoTitle: "Heidi Evidence Alternative: Why a Weekly Digest Still Matters | MCB"
-metaDescription: "Heidi Evidence is free and powerful. But does it replace a weekly journal digest? We compare pull vs push, ad-hoc vs structured, and explain why UK doctors need both."
+metaDescription: "Heidi Evidence is free, UK-focused, and powered by Claude. Does it replace a weekly journal digest? We compare pull vs push, ad-hoc vs structured, and explain why UK doctors need both."
 description: "Heidi Evidence is free and powerful — but it solves a different problem. Here's why UK doctors still need a weekly digest alongside evidence lookup tools."
 date: 2026-04-25
-cluster: "Journal Summary Subscription"
+cluster: "Medical Journal Digest"
 schemaType: "Article"
 pillar: false
 faqs:
@@ -14,9 +14,11 @@ faqs:
     answer: "Heidi Evidence is free for individual clinicians in the UK. Premium features are available in paid tiers. The free tier provides clinical answers grounded in NICE, BMJ, and other UK-relevant sources."
   - question: "What is the best alternative to Heidi Evidence for staying current?"
     answer: "For staying current with medical literature on a weekly basis, a structured journal digest like The Monday Clinical Brief is a better fit. Heidi excels at point-of-care questions; a weekly digest excels at keeping you aware of what you haven't thought to ask yet."
+  - question: "Can I use Heidi Evidence and MCB together?"
+    answer: "Yes — and most clinicians who try both end up using them together. Read MCB on Monday morning to see what's new in your specialty. Use Heidi during the week when a specific clinical question arises. Push and pull, working together."
 ---
 
-# Heidi Evidence vs a Weekly Journal Digest: Which Keeps You Current?
+# Heidi Evidence vs The Monday Clinical Brief: Pull vs Push for UK Clinicians
 
 Heidi Evidence launched in February 2026 and immediately changed the conversation for UK clinicians. It is free. It is powered by Claude. It is partnered with NICE and BMJ Group. It gives you cited, UK-relevant clinical answers in seconds.
 
@@ -60,7 +62,7 @@ This is not a criticism. It is a design choice. Heidi is built for the consultat
 
 **Serendipitous discovery.** The most valuable thing a digest does is show you a paper you would never have searched for. A cross-specialty finding, a trial in a neighbouring field, a methodology paper that changes how you interpret evidence in your own domain. Pull tools, by definition, cannot surface what you have not thought to look for.
 
-**Reading habit formation.** Evidence suggests that doctors who maintain a fixed weekly reading habit produce substantially better CPD portfolios than those who read reactively. Heidi supports reactive reading. A digest supports habitual reading. The habit is what keeps you current; the lookup is what keeps you safe.
+**Reading habit formation.** Doctors who maintain a fixed weekly reading habit produce more consistent CPD portfolios than those who read reactively. Heidi supports reactive reading. A digest supports habitual reading. The habit is what keeps you current; the lookup is what keeps you safe.
 
 ## The Practical Combination
 
