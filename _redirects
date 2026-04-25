@@ -1,1 +1,15 @@
 /welcome  /welcome.html  200
+
+# 2026-04-25: Heidi blog moved from journal-summary-subscription to medical-journal-digest cluster
+/blog/journal-summary-subscription/heidi-evidence-vs-weekly-journal-digest/  /blog/medical-journal-digest/heidi-evidence-vs-monday-clinical-brief/  301
+/blog/journal-summary-subscription/heidi-evidence-vs-weekly-journal-digest  /blog/medical-journal-digest/heidi-evidence-vs-monday-clinical-brief/  301
+
+# 2026-04-25: Standalone landing pages removed; comparison content lives in the updated blog post
+/compare/  /blog/journal-summary-subscription/bmj-nejm-independent-journal-digests-compared/  301
+/compare  /blog/journal-summary-subscription/bmj-nejm-independent-journal-digests-compared/  301
+/early-access/  /  301
+/early-access  /  301
+/ad-free/  /  301
+/ad-free  /  301
+/why-uk/  /  301
+/why-uk  /  301
