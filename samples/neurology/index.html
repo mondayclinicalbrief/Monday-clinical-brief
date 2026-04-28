@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neurology Sample Digest — The Monday Clinical Brief</title>
+<meta name="description" content="See what Neurology clinicians received in this Monday's digest: 30 new articles from Brain : a journal of neurology, Neurology, JAMA neurology summarised every Monday by The Monday Clinical Brief.">
+<link rel="canonical" href="https://mondayclinicalbrief.co.uk/samples/neurology/">
+<meta property="og:title" content="Neurology — Monday Clinical Brief Sample Digest">
+<meta property="og:description" content="30 new Neurology papers summarised this week. Free 4-week trial.">
+<meta property="og:url" content="https://mondayclinicalbrief.co.uk/samples/neurology/">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --charcoal: #1c1c1c;
+    --cream: #f7f5f0;
+    --warm-white: #fdfcf9;
+    --sage: #5a7a6a;
+    --sage-light: #e8efeb;
+    --sage-deep: #3d5a4c;
+    --gold: #c4994c;
+    --gold-light: #f5edd8;
+    --text: #3a3a38;
+    --text-muted: #7a7a76;
+    --border: #e2dfd8;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Figtree', sans-serif; color: var(--text); background: var(--warm-white); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+
+  /* ── NAV ── */
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; background: rgba(247,245,240,0.9); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(226,223,216,0.5); }
+  .nav-brand { font-family: 'Instrument Serif', serif; font-size: 1.8rem; font-weight: 700; color: var(--charcoal); text-decoration: none; letter-spacing: -0.02em; }
+  .nav-links { display: flex; gap: 1.5rem; align-items: center; }
+  .nav-links a { font-size: 0.85rem; color: var(--text-muted); text-decoration: none; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--sage-deep); }
+  .nav-cta { background: var(--sage-deep); color: white !important; padding: 0.5rem 1.25rem; border-radius: 40px; font-size: 0.85rem; }
+  .nav-cta:hover { background: var(--charcoal); }
+
+  /* ── PAGE HEADER ── */
+  .page-header { padding: 8rem 2rem 3rem; background: var(--cream); text-align: center; }
+  .page-header .eyebrow { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--sage); margin-bottom: 1.25rem; }
+  .page-header .eyebrow::before, .page-header .eyebrow::after { content: ''; width: 24px; height: 1px; background: var(--sage); opacity: 0.4; }
+  .page-header h1 { font-family: 'Instrument Serif', serif; font-size: clamp(2.2rem, 4.5vw, 3.2rem); font-weight: 400; color: var(--charcoal); line-height: 1.2; letter-spacing: -0.02em; margin-bottom: 1rem; max-width: 720px; margin-left: auto; margin-right: auto; }
+  .page-header h1 em { font-style: italic; color: var(--sage-deep); }
+  .page-header .lede { font-size: 1.05rem; color: var(--text-muted); max-width: 560px; margin: 0 auto 1.75rem; }
+  .stat-bar { display: inline-flex; gap: 2.5rem; padding: 1rem 1.75rem; background: white; border: 1px solid var(--border); border-radius: 60px; font-size: 0.85rem; }
+  .stat-bar .stat strong { display: block; font-family: 'Instrument Serif', serif; font-size: 1.6rem; color: var(--sage-deep); line-height: 1; margin-bottom: 0.2rem; }
+  .stat-bar .stat span { color: var(--text-muted); font-size: 0.78rem; }
+
+  /* ── DISCLAIMER ── */
+  .disclaimer { max-width: 800px; margin: 2rem auto 0; padding: 0.85rem 1.25rem; background: var(--gold-light); border-left: 3px solid var(--gold); font-size: 0.85rem; color: var(--text); border-radius: 4px; }
+  .disclaimer strong { color: var(--charcoal); }
+
+  /* ── ARTICLES ── */
+  section { padding: 3rem 2rem 5rem; }
+  .container { max-width: 800px; margin: 0 auto; }
+  .sample-card { background: white; border: 1px solid var(--border); border-radius: 8px; padding: 2rem; margin-bottom: 1.5rem; }
+  .sample-badge { display: inline-block; background: var(--sage-light); color: var(--sage-deep); padding: 0.2rem 0.7rem; border-radius: 4px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 1rem; }
+  .sample-card h3 { font-family: 'Instrument Serif', serif; font-size: 1.3rem; font-weight: 400; color: var(--charcoal); margin-bottom: 0.5rem; line-height: 1.35; }
+  .sample-meta { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1.25rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--border); }
+  .summary-field { margin-bottom: 0.75rem; font-size: 0.9rem; line-height: 1.6; }
+  .summary-label { font-weight: 600; color: var(--sage-deep); }
+  .summary-field ul { list-style: none; margin: 0.4rem 0 0 0; padding: 0; }
+  .summary-field ul li { padding-left: 1.1rem; position: relative; margin-bottom: 0.3rem; }
+  .summary-field ul li::before { content: '•'; position: absolute; left: 0.2rem; color: var(--sage); font-weight: 700; }
+  .source-links { margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 0.8rem; }
+  .source-links a { color: var(--sage-deep); text-decoration: none; margin-right: 1rem; font-weight: 500; }
+  .source-links a:hover { text-decoration: underline; }
+
+  /* ── TEASE ── */
+  .tease { text-align: center; padding: 2rem; background: var(--cream); border: 1px dashed var(--border); border-radius: 8px; margin-top: 1rem; }
+  .tease p { font-family: 'Instrument Serif', serif; font-size: 1.4rem; color: var(--charcoal); line-height: 1.4; margin-bottom: 0.5rem; }
+  .tease p em { color: var(--sage-deep); }
+  .tease small { color: var(--text-muted); font-size: 0.9rem; }
+
+  /* ── CTA ── */
+  .cta-section { background: var(--charcoal); color: white; padding: 4rem 2rem; text-align: center; }
+  .cta-section h2 { font-family: 'Instrument Serif', serif; font-size: clamp(1.8rem, 4vw, 2.4rem); font-weight: 400; color: white; line-height: 1.25; margin-bottom: 1rem; }
+  .cta-section p { color: rgba(255,255,255,0.7); max-width: 480px; margin: 0 auto 2rem; font-size: 1rem; }
+  .cta-btn { display: inline-block; background: white; color: var(--charcoal); text-decoration: none; padding: 1.1rem 2.5rem; border-radius: 60px; font-family: 'Figtree', sans-serif; font-size: 1.05rem; font-weight: 600; transition: all 0.3s ease; }
+  .cta-btn:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.3); }
+  .cta-meta { display: block; margin-top: 1rem; font-size: 0.85rem; color: rgba(255,255,255,0.5); }
+
+  /* ── FOOTER ── */
+  footer { padding: 3rem 2rem; text-align: center; border-top: 1px solid var(--border); }
+  footer p { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+  footer a { color: var(--sage); text-decoration: none; }
+
+  @media (max-width: 640px) {
+    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; }
+    .nav-links a:not(.nav-cta) { display: none; }
+    body { padding-bottom: 60px; }
+    .page-header { padding: 3.5rem 1.5rem 2.5rem; }
+    section { padding: 2rem 1.5rem 3.5rem; }
+    .sample-card { padding: 1.5rem; }
+    .stat-bar { flex-direction: column; gap: 1rem; padding: 1.25rem 1.75rem; }
+    .cta-section { padding: 3rem 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav>
+  <a href="/" class="nav-brand">The Monday Clinical Brief</a>
+  <div class="nav-links">
+    <a href="/#how">How it works</a>
+    <a href="/#about">About</a>
+    <a href="/?specialty=neurology#subscribe" class="nav-cta">Start free trial</a>
+  </div>
+</nav>
+
+<!-- ═══ HEADER ═══ -->
+<header class="page-header">
+  <div class="eyebrow">Sample Digest · Monday 27 April 2026</div>
+  <h1>A recent Neurology digest,<br><em>as sent to subscribers</em></h1>
+  <p class="lede">This is the real Monday digest from Monday 27 April 2026. Showing the first 8 of 30 articles from that week — every new paper from the top journals in Neurology.</p>
+  <div class="stat-bar">
+    <div class="stat"><strong>30</strong><span>articles that week</span></div>
+    <div class="stat"><strong>5</strong><span>journals covered</span></div>
+    <div class="stat"><strong>£0</strong><span>for your first 4 weeks</span></div>
+  </div>
+  <div class="disclaimer">
+    <strong>Note:</strong> Summaries are AI-generated from publicly available PubMed abstracts. Always verify against the source article before clinical use.
+  </div>
+</header>
+
+<!-- ═══ ARTICLES ═══ -->
+<section>
+  <div class="container">
+    <div class="sample-card">
+      <div class="sample-badge">Annals of neurology</div>
+      <h3>Developing a Virtual Research Environment in the Parkinson&#39;s Progression Markers Initiative: myPPMI</h3>
+      <div class="sample-meta">Stanley CE, Fabrizio K, McMahon BA et al. · 2026 Apr 21</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Technology development/implementation study
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        How can a virtual research environment enhance participant engagement and data collection efficiency in Parkinson&#39;s disease research?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>myPPMI platform integrates education, screening, e-consent, motor/non-motor assessments, and biospecimen referral into a single virtual environment</li><li>Platform enables precision recruitment with real-time eligibility matching and standardized low-burden data capture across multiple studies</li><li>Cloud-native architecture supports multi-country deployment with daily analytics and tiered support model</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        This virtual research framework could inform development of similar platforms for UK neurological research, potentially improving patient recruitment and reducing research participation burden within NHS trusts.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        No quantitative outcomes or comparative effectiveness data provided to assess platform performance versus traditional research methods.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42015362/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1002/ana.78230" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Annals of neurology</div>
+      <h3>Partnering With Participant Advisors on the Parkinson&#39;s Progression Markers Initiative</h3>
+      <div class="sample-meta">McGuire Kuhl M, Destro C, Dobkin RD et al. · 2026 Apr 21</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Commentary/methodology paper
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        How can large-scale neurological research studies effectively partner with participants to improve study design and conduct?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>PPMI implemented multiple participant engagement mechanisms including Community Advisory Boards, in-person events, and direct communication channels</li><li>Participant input directly modified five key study areas: online platform design, research result sharing protocols, lumbar puncture patient education, population recruitment strategies, and travel logistics</li><li>The engagement model accelerated enrollment and enhanced study outcomes through participant-informed modifications</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        Provides a practical framework for UK neurology research teams to improve patient engagement in clinical studies, potentially enhancing recruitment and retention in NHS-based neurological research programmes.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        No quantitative data provided on engagement effectiveness or specific impact metrics on study outcomes.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42012017/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1002/ana.78220" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Annals of neurology</div>
+      <h3>Stroke Etiologies With Intravenous Thrombolysis before Thrombectomy and Functional Outcomes in Anterior Circulation Large Vessel Occlusion</h3>
+      <div class="sample-meta">Guo C, Cavalcante F, Yang S et al. · 2026 Apr 23</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Individual participant data meta-analysis of 6 RCTs
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Does stroke etiology modify the benefit of intravenous thrombolysis before thrombectomy compared to thrombectomy alone in large vessel occlusion patients presenting directly to EVT-capable centres?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>No significant treatment effect modification by stroke etiology overall (p=0.60 for interaction) across 2,313 patients with large artery atherosclerosis (19%), cardioembolism (42%), or other/undetermined etiology (39%)</li><li>Patients with other/undetermined etiology showed benefit from IVT+EVT (adjusted cOR 1.34, 95% CI 1.05-1.69 for better 90-day functional outcome)</li><li>No safety differences by etiology or atrial fibrillation status</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        This supports current UK stroke guidelines recommending IVT before thrombectomy regardless of presumed stroke mechanism, though the isolated benefit in cryptogenic strokes warrants further investigation.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        The benefit observed specifically in the other/undetermined etiology subgroup requires confirmation in future studies.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42026777/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1002/ana.78225" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Brain : a journal of neurology</div>
+      <h3>Neuropathological correlates of age and sex differences in 18F-flortaucipir PET</h3>
+      <div class="sample-meta">Coomans EM, Smith R, Pawlik D et al. · 2026 Apr 20</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Cross-sectional analysis using three independent cohorts (PET-only, autopsy-only, and PET-to-autopsy validation)
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Do older age and male sex affect flortaucipir-PET sensitivity for detecting tau pathology in Alzheimer&#39;s disease, and what are the neuropathological correlates?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Flortaucipir-PET showed 100% specificity for Braak V-VI pathology but sensitivity decreased markedly with older age (&lt;83y: 92% vs ≥83y: 42%) and in males (females: 85% vs males: 48%)</li><li>Lower PET sensitivity correlated with genuinely lower tangle density at autopsy in older individuals (β=-0.38, p&lt;0.001) and males</li><li>PET SUVr accurately reflected tangle density across all age and sex groups, indicating the tracer performs consistently but detects real biological differences</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        UK clinicians should interpret negative flortaucipir-PET scans cautiously in older patients and males, as these may reflect lower tangle density below detection threshold rather than absence of significant tau pathology.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Median PET-to-autopsy interval of 2.6 months may allow tau progression between imaging and neuropathological assessment.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42010343/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1093/brain/awag136" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Brain : a journal of neurology</div>
+      <h3>Satellite glial GLRX3 drives ageing-biased neuropathic pain via HMGB1</h3>
+      <div class="sample-meta">Yang Y, Zhao B, Liu X et al. · 2026 Apr 20</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Preclinical experimental study with clinical cohort validation
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        What molecular mechanisms drive the age-related persistence of oxaliplatin-induced peripheral neuropathy?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Satellite glial cells in aged mice show selective upregulation of glutaredoxin-3 (GLRX3), which deglutathionylates HMGB1, converting it into a TLR4 agonist that sustains neuropathic pain</li><li>Clinical cohort confirmed advanced age associates with higher chronic neuropathy incidence, with declining serum protein S-glutathionylation levels correlating inversely with pain duration</li><li>Targeted GLRX3 knockdown or pharmacological interventions (γ-glutamylcysteine, TAK-242) reversed pain phenotypes specifically in aged models</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        This research identifies circulating protein S-glutathionylation as a potential age-stratified biomarker for chronic neuropathy and suggests targeted therapeutic approaches for elderly patients with chemotherapy-induced neuropathy—relevant given the aging UK cancer population.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Findings primarily from murine models with limited validation in human cohorts may not fully translate to clinical practice.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42007893/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1093/brain/awag138" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Brain : a journal of neurology</div>
+      <h3>The impact of the COVID-19 pandemic on the incidence and clinical profiles of Guillain-Barré syndrome in Japan</h3>
+      <div class="sample-meta">Suichi T, Misawa S, Ukita S et al. · 2026 Apr 22</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Nationwide cohort study
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Did the COVID-19 pandemic alter the incidence and clinical characteristics of Guillain-Barré syndrome in Japan?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>GBS incidence decreased by 9% during the pandemic (1.49 to 1.28 per 100,000; RR 0.91, 95% CI 0.83-0.99)</li><li>Pandemic-era patients were older (median 56 vs 53 years), had fewer antecedent infections (38.2% vs 24.5% with no preceding illness), and more demyelinating subtypes (37.8% vs 32.6%)</li><li>Time to nadir was longer during the pandemic (8 vs 7 days), but 6-month outcomes were similar</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        This provides evidence for how infection control measures during COVID-19 affected GBS epidemiology, with implications for understanding triggers and potentially informing future pandemic responses in neurology services.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        The study relies on voluntary questionnaire responses from hospitals, which may introduce reporting bias and underestimate true case numbers.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42025320/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1093/brain/awag144" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Brain : a journal of neurology</div>
+      <h3>Default mode network failure across the Alzheimer&#39;s disease spectrum</h3>
+      <div class="sample-meta">Corriveau-Lecavalier N, Dicks E, Martin PR et al. · 2026 Apr 22</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Longitudinal cohort study
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        How do default mode network connectivity changes relate to amyloid accumulation and predict conversion across the Alzheimer&#39;s disease spectrum?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>In 1,451 participants (2,763 timepoints), both hyper- and hypoconnectivity emerged across DMN subsystems with increasing amyloid burden</li><li>DMN connectivity patterns predicted conversion to amyloid positivity, MCI, and dementia, independent of age, APOE4 status, sex, and education</li><li>Functional network disruption preceded detectable amyloidosis on PET imaging in clinically unimpaired individuals</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        This suggests functional MRI could potentially identify at-risk individuals before amyloid becomes detectable, offering earlier intervention opportunities within NHS memory services.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        The study does not address whether these connectivity patterns can be reliably measured at individual patient level for clinical application.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42019008/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1093/brain/awag146" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Brain : a journal of neurology</div>
+      <h3>Collapse of feed-forward inhibition underpins hyperexcitability in GABAA gain-of-function epilepsy</h3>
+      <div class="sample-meta">McKenzie CE, Aung KP, Dos Santos AB et al. · 2026 Apr 22</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Experimental mouse model study with electrophysiology and computational modelling
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        How do gain-of-function GABAA receptor variants cause hyperexcitability and seizures in developmental and epileptic encephalopathies?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>β3E77K GOF variant mice showed spike-wave discharges, increased seizure susceptibility, and cortical hyperexcitability, with vigabatrin worsening and valproate improving seizures (matching human phenotype)</li><li>Enhanced GABAA currents in cortical interneurons caused use-dependent collapse of feed-forward inhibition, paradoxically increasing pyramidal neuron excitability</li><li>Computational modelling confirmed that stronger GABAA synapses between interneurons reduces overall inhibitory drive to pyramidal cells</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        This study explains the counterintuitive mechanism whereby enhanced GABAA function causes epilepsy, providing a preclinical model for testing treatments in GOF GABAA receptor epilepsies increasingly recognised in UK epilepsy genetics services.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Mouse model findings require validation in human tissue and clinical translation of therapeutic implications.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42017314/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1093/brain/awag119" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+
+    <div class="tease">
+      <p>…and <em>22 more</em> Neurology articles in that week's digest.</p>
+      <small>Subscribers get the complete brief, every Monday.</small>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA ═══ -->
+<section class="cta-section">
+  <h2>Get the Neurology digest in your inbox every Monday</h2>
+  <p>4 weeks completely free, then £20/year. Cancel any time during your trial — no charge.</p>
+  <a href="/?specialty=neurology&ref=samples#subscribe" class="cta-btn">Start your free trial — Neurology →</a>
+  <span class="cta-meta">No card needed to browse. We'll ask for payment details to start the trial.</span>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <p>&copy; 2026 The Monday Clinical Brief</p>
+  <p><a href="/">Home</a> · <a href="mailto:info@mondayclinicalbrief.co.uk">Contact</a> · <a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms</a></p>
+</footer>
+
+</body>
+</html>

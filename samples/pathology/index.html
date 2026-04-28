@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pathology Sample Digest — The Monday Clinical Brief</title>
+<meta name="description" content="See what Pathology clinicians received in this Monday's digest: 23 new articles from The American journal of surgical pathology, Histopathology, The American journal of pathology summarised every Monday by The Monday Clinical Brief.">
+<link rel="canonical" href="https://mondayclinicalbrief.co.uk/samples/pathology/">
+<meta property="og:title" content="Pathology — Monday Clinical Brief Sample Digest">
+<meta property="og:description" content="23 new Pathology papers summarised this week. Free 4-week trial.">
+<meta property="og:url" content="https://mondayclinicalbrief.co.uk/samples/pathology/">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --charcoal: #1c1c1c;
+    --cream: #f7f5f0;
+    --warm-white: #fdfcf9;
+    --sage: #5a7a6a;
+    --sage-light: #e8efeb;
+    --sage-deep: #3d5a4c;
+    --gold: #c4994c;
+    --gold-light: #f5edd8;
+    --text: #3a3a38;
+    --text-muted: #7a7a76;
+    --border: #e2dfd8;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Figtree', sans-serif; color: var(--text); background: var(--warm-white); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+
+  /* ── NAV ── */
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; background: rgba(247,245,240,0.9); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(226,223,216,0.5); }
+  .nav-brand { font-family: 'Instrument Serif', serif; font-size: 1.8rem; font-weight: 700; color: var(--charcoal); text-decoration: none; letter-spacing: -0.02em; }
+  .nav-links { display: flex; gap: 1.5rem; align-items: center; }
+  .nav-links a { font-size: 0.85rem; color: var(--text-muted); text-decoration: none; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--sage-deep); }
+  .nav-cta { background: var(--sage-deep); color: white !important; padding: 0.5rem 1.25rem; border-radius: 40px; font-size: 0.85rem; }
+  .nav-cta:hover { background: var(--charcoal); }
+
+  /* ── PAGE HEADER ── */
+  .page-header { padding: 8rem 2rem 3rem; background: var(--cream); text-align: center; }
+  .page-header .eyebrow { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--sage); margin-bottom: 1.25rem; }
+  .page-header .eyebrow::before, .page-header .eyebrow::after { content: ''; width: 24px; height: 1px; background: var(--sage); opacity: 0.4; }
+  .page-header h1 { font-family: 'Instrument Serif', serif; font-size: clamp(2.2rem, 4.5vw, 3.2rem); font-weight: 400; color: var(--charcoal); line-height: 1.2; letter-spacing: -0.02em; margin-bottom: 1rem; max-width: 720px; margin-left: auto; margin-right: auto; }
+  .page-header h1 em { font-style: italic; color: var(--sage-deep); }
+  .page-header .lede { font-size: 1.05rem; color: var(--text-muted); max-width: 560px; margin: 0 auto 1.75rem; }
+  .stat-bar { display: inline-flex; gap: 2.5rem; padding: 1rem 1.75rem; background: white; border: 1px solid var(--border); border-radius: 60px; font-size: 0.85rem; }
+  .stat-bar .stat strong { display: block; font-family: 'Instrument Serif', serif; font-size: 1.6rem; color: var(--sage-deep); line-height: 1; margin-bottom: 0.2rem; }
+  .stat-bar .stat span { color: var(--text-muted); font-size: 0.78rem; }
+
+  /* ── DISCLAIMER ── */
+  .disclaimer { max-width: 800px; margin: 2rem auto 0; padding: 0.85rem 1.25rem; background: var(--gold-light); border-left: 3px solid var(--gold); font-size: 0.85rem; color: var(--text); border-radius: 4px; }
+  .disclaimer strong { color: var(--charcoal); }
+
+  /* ── ARTICLES ── */
+  section { padding: 3rem 2rem 5rem; }
+  .container { max-width: 800px; margin: 0 auto; }
+  .sample-card { background: white; border: 1px solid var(--border); border-radius: 8px; padding: 2rem; margin-bottom: 1.5rem; }
+  .sample-badge { display: inline-block; background: var(--sage-light); color: var(--sage-deep); padding: 0.2rem 0.7rem; border-radius: 4px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 1rem; }
+  .sample-card h3 { font-family: 'Instrument Serif', serif; font-size: 1.3rem; font-weight: 400; color: var(--charcoal); margin-bottom: 0.5rem; line-height: 1.35; }
+  .sample-meta { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1.25rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--border); }
+  .summary-field { margin-bottom: 0.75rem; font-size: 0.9rem; line-height: 1.6; }
+  .summary-label { font-weight: 600; color: var(--sage-deep); }
+  .summary-field ul { list-style: none; margin: 0.4rem 0 0 0; padding: 0; }
+  .summary-field ul li { padding-left: 1.1rem; position: relative; margin-bottom: 0.3rem; }
+  .summary-field ul li::before { content: '•'; position: absolute; left: 0.2rem; color: var(--sage); font-weight: 700; }
+  .source-links { margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 0.8rem; }
+  .source-links a { color: var(--sage-deep); text-decoration: none; margin-right: 1rem; font-weight: 500; }
+  .source-links a:hover { text-decoration: underline; }
+
+  /* ── TEASE ── */
+  .tease { text-align: center; padding: 2rem; background: var(--cream); border: 1px dashed var(--border); border-radius: 8px; margin-top: 1rem; }
+  .tease p { font-family: 'Instrument Serif', serif; font-size: 1.4rem; color: var(--charcoal); line-height: 1.4; margin-bottom: 0.5rem; }
+  .tease p em { color: var(--sage-deep); }
+  .tease small { color: var(--text-muted); font-size: 0.9rem; }
+
+  /* ── CTA ── */
+  .cta-section { background: var(--charcoal); color: white; padding: 4rem 2rem; text-align: center; }
+  .cta-section h2 { font-family: 'Instrument Serif', serif; font-size: clamp(1.8rem, 4vw, 2.4rem); font-weight: 400; color: white; line-height: 1.25; margin-bottom: 1rem; }
+  .cta-section p { color: rgba(255,255,255,0.7); max-width: 480px; margin: 0 auto 2rem; font-size: 1rem; }
+  .cta-btn { display: inline-block; background: white; color: var(--charcoal); text-decoration: none; padding: 1.1rem 2.5rem; border-radius: 60px; font-family: 'Figtree', sans-serif; font-size: 1.05rem; font-weight: 600; transition: all 0.3s ease; }
+  .cta-btn:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.3); }
+  .cta-meta { display: block; margin-top: 1rem; font-size: 0.85rem; color: rgba(255,255,255,0.5); }
+
+  /* ── FOOTER ── */
+  footer { padding: 3rem 2rem; text-align: center; border-top: 1px solid var(--border); }
+  footer p { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+  footer a { color: var(--sage); text-decoration: none; }
+
+  @media (max-width: 640px) {
+    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; }
+    .nav-links a:not(.nav-cta) { display: none; }
+    body { padding-bottom: 60px; }
+    .page-header { padding: 3.5rem 1.5rem 2.5rem; }
+    section { padding: 2rem 1.5rem 3.5rem; }
+    .sample-card { padding: 1.5rem; }
+    .stat-bar { flex-direction: column; gap: 1rem; padding: 1.25rem 1.75rem; }
+    .cta-section { padding: 3rem 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav>
+  <a href="/" class="nav-brand">The Monday Clinical Brief</a>
+  <div class="nav-links">
+    <a href="/#how">How it works</a>
+    <a href="/#about">About</a>
+    <a href="/?specialty=pathology#subscribe" class="nav-cta">Start free trial</a>
+  </div>
+</nav>
+
+<!-- ═══ HEADER ═══ -->
+<header class="page-header">
+  <div class="eyebrow">Sample Digest · Monday 27 April 2026</div>
+  <h1>A recent Pathology digest,<br><em>as sent to subscribers</em></h1>
+  <p class="lede">This is the real Monday digest from Monday 27 April 2026. Showing the first 8 of 23 articles from that week — every new paper from the top journals in Pathology.</p>
+  <div class="stat-bar">
+    <div class="stat"><strong>23</strong><span>articles that week</span></div>
+    <div class="stat"><strong>5</strong><span>journals covered</span></div>
+    <div class="stat"><strong>£0</strong><span>for your first 4 weeks</span></div>
+  </div>
+  <div class="disclaimer">
+    <strong>Note:</strong> Summaries are AI-generated from publicly available PubMed abstracts. Always verify against the source article before clinical use.
+  </div>
+</header>
+
+<!-- ═══ ARTICLES ═══ -->
+<section>
+  <div class="container">
+    <div class="sample-card">
+      <div class="sample-badge">Histopathology</div>
+      <h3>Glomerular plasmalemma vesicle-associated protein-1 as an endothelial remodelling marker complementing C4d in chronic active antibody-mediated rejection</h3>
+      <div class="sample-meta">Igarashi Y, Shimokawa M, Kawanishi K et al. · 2026 Apr 21</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Retrospective cohort study
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Does glomerular plasmalemma vesicle-associated protein-1 (PV-1) complement C4d staining in identifying active endothelial injury in chronic active antibody-mediated rejection?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Analysis of 429 caABMR biopsies showed PV-1 specifically identifies endothelial remodelling (particularly in double-contour lesions) while C4d reflects cumulative complement activation</li><li>PV-1 demonstrated dynamic reduction following B-cell-directed therapy, whereas C4d showed persistent staining in ABO-incompatible grafts</li><li>In multivariable Cox models, changes in PV-1 (ΔPV-1) remained independently associated with death-censored graft survival, while changes in C4d (ΔC4d) did not</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        Combined PV-1 and C4d assessment could refine histopathological evaluation of renal transplant biopsies by capturing distinct aspects of microvascular pathology and potentially improving monitoring of treatment response in antibody-mediated rejection.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Retrospective design limits ability to establish causality and standardise treatment protocols across the study period.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42011911/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1111/his.70162" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Histopathology</div>
+      <h3>Insights into Langerhans cell sarcoma: Focus on cutaneous Langerhans cell sarcoma</h3>
+      <div class="sample-meta">Xiong Y, Liu W, Zhang W et al. · 2026 Apr 21</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Retrospective case series with literature review
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        What are the clinicopathological features that distinguish cutaneous Langerhans cell sarcoma from extracutaneous disease?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Cutaneous LCS frequently arises from malignant transformation of pre-existing lesions (74.4% progressed vs 13.9% de novo cases), compared to only 19.6% transformation in extracutaneous disease (P&lt;0.001)</li><li>Progressed cutaneous LCS shows higher lymph node metastasis rates (56.3% vs 0%, P=0.021) and Ki-67 proliferation index compared to de novo cases</li><li>Langerin immunostaining can be focal (&lt;5% of cells in one case), requiring ultrastructural confirmation of Birbeck granules for diagnosis</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        UK pathologists should recognise that cutaneous LCS often represents transformation from pre-existing Langerhans cell lesions and may require electron microscopy when immunohistochemistry is equivocal.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Very small primary cohort (n=5) from a single institution limits generalisability of findings.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42011893/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1111/his.70146" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Histopathology</div>
+      <h3>World Health Organization classification of tumours of the breast 6th edition 2026</h3>
+      <div class="sample-meta">Quinn C, Tan PH, Allison KH et al. · 2026 Apr 21</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Classification system update/guidelines
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        What are the key changes in the 6th edition WHO Classification of Breast Tumours that will affect diagnostic practice?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>HER2 reporting categories updated following DESTINY-Breast trials, with refined predictive testing approaches</li><li>New diagnostic entity: invasive lobular carcinoma with extracellular mucin, carrying prognostic significance</li><li>Revised criteria for malignant phyllodes tumours (now requires only 4/5 adverse histological features) and mucinous carcinoma (restricted to grade 1-2 morphology with favourable biomarkers)</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        UK breast pathologists must implement these classification changes to ensure accurate diagnosis, appropriate biomarker reporting, and optimal treatment selection aligned with current therapeutic trials and NHS treatment pathways.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        As a classification update rather than research study, implementation challenges and validation of new criteria in routine practice remain to be established.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42011085/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1111/his.70149" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Histopathology</div>
+      <h3>PLAG1-rearranged uterine mesenchymal tumours: A study of 11 cases showing distinct histological features beyond myxoid morphology</h3>
+      <div class="sample-meta">Cai M, Zuo K, Yu L et al. · 2026 Apr 22</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Retrospective case series
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        What are the clinicopathological features and molecular characteristics of PLAG1-rearranged uterine mesenchymal tumours beyond the historically recognised myxoid morphology?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Morphological heterogeneity with myxoid features in 54.5% (6/11), epithelioid in 27.3% (3/11), and spindle cell in 18.2% (2/11) of cases</li><li>Multiple fusion partners identified, most commonly TRPS1::PLAG1 (27.3%) and CSDE1::PLAG1 (18.2%)</li><li>Clinical significance demonstrated by 27.3% recurrence/metastasis rate during follow-up</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        UK pathologists should recognise that PLAG1-rearranged uterine tumours show diverse morphologies beyond myxoid patterns, requiring molecular testing for accurate diagnosis and appropriate patient counselling regarding recurrence risk.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Small case series (n=11) limits generalisability of findings and prognostic conclusions.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42021529/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1111/his.70158" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Histopathology</div>
+      <h3>Malignant epithelioid mesenchymal neoplasms with EWSR1/FUS::CREM fusions: clinicopathological and molecular genetic analysis of seven cases highlighting immunophenotypic heterogeneity, frequent aggressive behaviour, and diagnostic pitfalls</h3>
+      <div class="sample-meta">Zhao M, Xu J, Zheng S et al. · 2026 Apr 23</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Case series
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        What are the clinicopathological features and diagnostic challenges of epithelioid mesenchymal neoplasms with EWSR1/FUS::CREM fusions?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Seven cases (age 5-55 years) showed epithelioid morphology with heterogeneous immunoprofiles that led to frequent misdiagnosis as mesothelioma, Ewing sarcoma, sex cord-stromal tumours, or metastatic carcinoma</li><li>Molecular analysis identified EWSR1::CREM fusions in 5 cases and FUS::CREM fusions in 2 cases, confirmed by FISH</li><li>All 3 patients with follow-up had aggressive clinical courses with recurrence or metastasis; 2 presented with disseminated disease</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        UK pathologists should recognise this emerging sarcoma entity that mimics multiple other tumour types immunohistochemically, requiring molecular testing to avoid misdiagnosis and ensure appropriate oncological management.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Small case series with limited follow-up data on clinical outcomes.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42023520/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1111/his.70165" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Histopathology</div>
+      <h3>Aberrant p53 immunohistochemical staining is uncommon in serrated epithelial change, regardless of association with dysplasia</h3>
+      <div class="sample-meta">Bahceci D, Lauwers GY, Choi WT · 2026 Apr 23</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Retrospective cohort study
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Does p53 immunohistochemical staining differ in serrated epithelial change (SEC) associated with dysplasia versus SEC without dysplasia in IBD patients?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Strong p53 staining was uncommon in SEC regardless of dysplasia association (13% vs 8% in controls, P=0.315)</li><li>SEC patients with synchronous/metachronous dysplasia were older (mean 57 vs 47 years, P=0.006), had longer disease duration (26 vs 13 years, P&lt;0.001), and more frequently had Crohn&#39;s disease (21% vs 0%, P=0.023)</li><li>SEC showed more moderate p53 staining compared to normal IBD mucosa (71% vs 13%, P&lt;0.001) but similar strong staining patterns</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        This suggests p53 immunohistochemistry has limited value for risk stratifying SEC in IBD surveillance programmes, but careful colonoscopic follow-up may be warranted for high-risk SEC patients.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        The study examined p53 staining only and did not assess other molecular markers that might better characterise SEC&#39;s neoplastic potential.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42023487/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1111/his.70159" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Histopathology</div>
+      <h3>Glandular lesions of the vagina: a review of a group of rare lesions</h3>
+      <div class="sample-meta">Wong RW, Talia KL, McCluggage WG · 2026 Apr 23</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Narrative review
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        How should pathologists approach the diagnosis and classification of rare glandular lesions of the vagina, particularly distinguishing primary adenocarcinomas from metastases?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Primary vaginal carcinomas represent &lt;1% of female cancers, with adenocarcinomas being extremely rare compared to squamous cell carcinomas</li><li>Primary vaginal adenocarcinomas present a diagnostic challenge since normal vaginal tissue lacks glands, necessitating careful exclusion of metastatic disease</li><li>Multiple morphological subtypes exist, many resembling cervical adenocarcinomas, requiring systematic approach to typing and reporting</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        This review provides essential guidance for UK pathologists encountering these diagnostically challenging lesions, offering practical approaches to distinguish primary from metastatic disease in routine histopathology practice.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        As a narrative review, this does not provide systematic evidence synthesis or quantitative data on diagnostic accuracy of proposed approaches.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42023432/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1111/his.70163" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Modern pathology : an official journal of the United States and Canadian Academy of Pathology, Inc</div>
+      <h3>Copy Number-Low/TP53 Mutated Endometrial Cancer With Wild Type p53 Immunoexpression: Implications for Risk Stratification and Management When Using Next Generation Sequencing for Molecular Classification</h3>
+      <div class="sample-meta">Rabban JT, Wolsky RJ, Kayraklioglu N et al. · 2026 Apr 21</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Retrospective cohort study
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        What are the clinical implications of a rare subgroup of endometrial cancers with TP53 mutations but low copy number alterations and wild-type p53 immunohistochemistry?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>18/755 endometrial cancers (2.4%) showed TP53 mutation with low copy number burden, wild-type p53 IHC, and low variant allele frequency (median 13%)</li><li>These cases had low-grade endometrioid histology, minimal lymphovascular invasion, and favourable prognosis (6.25% recurrence rate, no deaths)</li><li>Standard ProMisE immunohistochemistry-based classification fails to identify this subgroup due to wild-type p53 staining pattern</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        UK pathologists using NGS-based molecular classification should consider copy number analysis when TP53 mutations have &lt;50% variant allele frequency, as standard immunohistochemistry may misclassify these cases with potentially different treatment implications.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Small case series with limited follow-up data insufficient to establish definitive prognostic significance.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42025847/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.modpat.2026.101005" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+
+    <div class="tease">
+      <p>…and <em>15 more</em> Pathology articles in that week's digest.</p>
+      <small>Subscribers get the complete brief, every Monday.</small>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA ═══ -->
+<section class="cta-section">
+  <h2>Get the Pathology digest in your inbox every Monday</h2>
+  <p>4 weeks completely free, then £20/year. Cancel any time during your trial — no charge.</p>
+  <a href="/?specialty=pathology&ref=samples#subscribe" class="cta-btn">Start your free trial — Pathology →</a>
+  <span class="cta-meta">No card needed to browse. We'll ask for payment details to start the trial.</span>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <p>&copy; 2026 The Monday Clinical Brief</p>
+  <p><a href="/">Home</a> · <a href="mailto:info@mondayclinicalbrief.co.uk">Contact</a> · <a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms</a></p>
+</footer>
+
+</body>
+</html>

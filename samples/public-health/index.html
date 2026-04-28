@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Public Health Sample Digest — The Monday Clinical Brief</title>
+<meta name="description" content="See what Public Health clinicians received in this Monday's digest: 29 new articles from BMC public health, American journal of public health, The Lancet. Public health summarised every Monday by The Monday Clinical Brief.">
+<link rel="canonical" href="https://mondayclinicalbrief.co.uk/samples/public-health/">
+<meta property="og:title" content="Public Health — Monday Clinical Brief Sample Digest">
+<meta property="og:description" content="29 new Public Health papers summarised this week. Free 4-week trial.">
+<meta property="og:url" content="https://mondayclinicalbrief.co.uk/samples/public-health/">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --charcoal: #1c1c1c;
+    --cream: #f7f5f0;
+    --warm-white: #fdfcf9;
+    --sage: #5a7a6a;
+    --sage-light: #e8efeb;
+    --sage-deep: #3d5a4c;
+    --gold: #c4994c;
+    --gold-light: #f5edd8;
+    --text: #3a3a38;
+    --text-muted: #7a7a76;
+    --border: #e2dfd8;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Figtree', sans-serif; color: var(--text); background: var(--warm-white); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+
+  /* ── NAV ── */
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; background: rgba(247,245,240,0.9); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(226,223,216,0.5); }
+  .nav-brand { font-family: 'Instrument Serif', serif; font-size: 1.8rem; font-weight: 700; color: var(--charcoal); text-decoration: none; letter-spacing: -0.02em; }
+  .nav-links { display: flex; gap: 1.5rem; align-items: center; }
+  .nav-links a { font-size: 0.85rem; color: var(--text-muted); text-decoration: none; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--sage-deep); }
+  .nav-cta { background: var(--sage-deep); color: white !important; padding: 0.5rem 1.25rem; border-radius: 40px; font-size: 0.85rem; }
+  .nav-cta:hover { background: var(--charcoal); }
+
+  /* ── PAGE HEADER ── */
+  .page-header { padding: 8rem 2rem 3rem; background: var(--cream); text-align: center; }
+  .page-header .eyebrow { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--sage); margin-bottom: 1.25rem; }
+  .page-header .eyebrow::before, .page-header .eyebrow::after { content: ''; width: 24px; height: 1px; background: var(--sage); opacity: 0.4; }
+  .page-header h1 { font-family: 'Instrument Serif', serif; font-size: clamp(2.2rem, 4.5vw, 3.2rem); font-weight: 400; color: var(--charcoal); line-height: 1.2; letter-spacing: -0.02em; margin-bottom: 1rem; max-width: 720px; margin-left: auto; margin-right: auto; }
+  .page-header h1 em { font-style: italic; color: var(--sage-deep); }
+  .page-header .lede { font-size: 1.05rem; color: var(--text-muted); max-width: 560px; margin: 0 auto 1.75rem; }
+  .stat-bar { display: inline-flex; gap: 2.5rem; padding: 1rem 1.75rem; background: white; border: 1px solid var(--border); border-radius: 60px; font-size: 0.85rem; }
+  .stat-bar .stat strong { display: block; font-family: 'Instrument Serif', serif; font-size: 1.6rem; color: var(--sage-deep); line-height: 1; margin-bottom: 0.2rem; }
+  .stat-bar .stat span { color: var(--text-muted); font-size: 0.78rem; }
+
+  /* ── DISCLAIMER ── */
+  .disclaimer { max-width: 800px; margin: 2rem auto 0; padding: 0.85rem 1.25rem; background: var(--gold-light); border-left: 3px solid var(--gold); font-size: 0.85rem; color: var(--text); border-radius: 4px; }
+  .disclaimer strong { color: var(--charcoal); }
+
+  /* ── ARTICLES ── */
+  section { padding: 3rem 2rem 5rem; }
+  .container { max-width: 800px; margin: 0 auto; }
+  .sample-card { background: white; border: 1px solid var(--border); border-radius: 8px; padding: 2rem; margin-bottom: 1.5rem; }
+  .sample-badge { display: inline-block; background: var(--sage-light); color: var(--sage-deep); padding: 0.2rem 0.7rem; border-radius: 4px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 1rem; }
+  .sample-card h3 { font-family: 'Instrument Serif', serif; font-size: 1.3rem; font-weight: 400; color: var(--charcoal); margin-bottom: 0.5rem; line-height: 1.35; }
+  .sample-meta { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1.25rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--border); }
+  .summary-field { margin-bottom: 0.75rem; font-size: 0.9rem; line-height: 1.6; }
+  .summary-label { font-weight: 600; color: var(--sage-deep); }
+  .summary-field ul { list-style: none; margin: 0.4rem 0 0 0; padding: 0; }
+  .summary-field ul li { padding-left: 1.1rem; position: relative; margin-bottom: 0.3rem; }
+  .summary-field ul li::before { content: '•'; position: absolute; left: 0.2rem; color: var(--sage); font-weight: 700; }
+  .source-links { margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 0.8rem; }
+  .source-links a { color: var(--sage-deep); text-decoration: none; margin-right: 1rem; font-weight: 500; }
+  .source-links a:hover { text-decoration: underline; }
+
+  /* ── TEASE ── */
+  .tease { text-align: center; padding: 2rem; background: var(--cream); border: 1px dashed var(--border); border-radius: 8px; margin-top: 1rem; }
+  .tease p { font-family: 'Instrument Serif', serif; font-size: 1.4rem; color: var(--charcoal); line-height: 1.4; margin-bottom: 0.5rem; }
+  .tease p em { color: var(--sage-deep); }
+  .tease small { color: var(--text-muted); font-size: 0.9rem; }
+
+  /* ── CTA ── */
+  .cta-section { background: var(--charcoal); color: white; padding: 4rem 2rem; text-align: center; }
+  .cta-section h2 { font-family: 'Instrument Serif', serif; font-size: clamp(1.8rem, 4vw, 2.4rem); font-weight: 400; color: white; line-height: 1.25; margin-bottom: 1rem; }
+  .cta-section p { color: rgba(255,255,255,0.7); max-width: 480px; margin: 0 auto 2rem; font-size: 1rem; }
+  .cta-btn { display: inline-block; background: white; color: var(--charcoal); text-decoration: none; padding: 1.1rem 2.5rem; border-radius: 60px; font-family: 'Figtree', sans-serif; font-size: 1.05rem; font-weight: 600; transition: all 0.3s ease; }
+  .cta-btn:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.3); }
+  .cta-meta { display: block; margin-top: 1rem; font-size: 0.85rem; color: rgba(255,255,255,0.5); }
+
+  /* ── FOOTER ── */
+  footer { padding: 3rem 2rem; text-align: center; border-top: 1px solid var(--border); }
+  footer p { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+  footer a { color: var(--sage); text-decoration: none; }
+
+  @media (max-width: 640px) {
+    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; }
+    .nav-links a:not(.nav-cta) { display: none; }
+    body { padding-bottom: 60px; }
+    .page-header { padding: 3.5rem 1.5rem 2.5rem; }
+    section { padding: 2rem 1.5rem 3.5rem; }
+    .sample-card { padding: 1.5rem; }
+    .stat-bar { flex-direction: column; gap: 1rem; padding: 1.25rem 1.75rem; }
+    .cta-section { padding: 3rem 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav>
+  <a href="/" class="nav-brand">The Monday Clinical Brief</a>
+  <div class="nav-links">
+    <a href="/#how">How it works</a>
+    <a href="/#about">About</a>
+    <a href="/?specialty=public-health#subscribe" class="nav-cta">Start free trial</a>
+  </div>
+</nav>
+
+<!-- ═══ HEADER ═══ -->
+<header class="page-header">
+  <div class="eyebrow">Sample Digest · Monday 27 April 2026</div>
+  <h1>A recent Public Health digest,<br><em>as sent to subscribers</em></h1>
+  <p class="lede">This is the real Monday digest from Monday 27 April 2026. Showing the first 8 of 29 articles from that week — every new paper from the top journals in Public Health.</p>
+  <div class="stat-bar">
+    <div class="stat"><strong>29</strong><span>articles that week</span></div>
+    <div class="stat"><strong>3</strong><span>journals covered</span></div>
+    <div class="stat"><strong>£0</strong><span>for your first 4 weeks</span></div>
+  </div>
+  <div class="disclaimer">
+    <strong>Note:</strong> Summaries are AI-generated from publicly available PubMed abstracts. Always verify against the source article before clinical use.
+  </div>
+</header>
+
+<!-- ═══ ARTICLES ═══ -->
+<section>
+  <div class="container">
+    <div class="sample-card">
+      <div class="sample-badge">American journal of public health</div>
+      <h3>Challenges and Opportunities in Estimating the Mortality Burden Related to Heat Exposure: Maricopa County, Arizona, 2019-2023</h3>
+      <div class="sample-meta">Leahy HL, Vaidyanathan A, Hondula DM et al. · 2026 Apr 23</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Retrospective analysis using distributed lag nonlinear modelling
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        What is the mortality burden attributable to heat exposure during Arizona&#39;s heat season, and how does this compare to routine surveillance estimates?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>At 99°F (95th percentile temperature), all-cause mortality increased by 11% (95% CI: 7-16%) compared to 77°F baseline</li><li>Statistical modelling attributed 3,036 deaths (95% empirical CI: 968-4,887) to heat exposure over 2019-2023</li><li>Heat-attributable deaths were 57% higher than those identified through standard epidemiological surveillance methods</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        Demonstrates that routine heat surveillance significantly underestimates mortality burden, suggesting UK heat-health warning systems may similarly undercount heat-related deaths and miss opportunities for preventive interventions.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Limited to one US county with extreme heat conditions, potentially limiting generalisability to UK climate and population characteristics.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42024837/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.2105/AJPH.2026.308443" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">American journal of public health</div>
+      <h3>Abortion Bans and Maternal, Pregnancy-Related, and Pregnancy-Associated Mortality in 14 US States, 2016-2023: Estimated Impacts Amid Substantial Measurement Challenges</h3>
+      <div class="sample-meta">Bell SO, Franks AM, Ozinsky A et al. · 2026 Apr 23</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Bayesian panel analysis using national vital statistics data
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Are abortion bans associated with changes in maternal, pregnancy-related, and pregnancy-associated mortality rates?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Potential 9.2% increase in pregnancy-associated deaths (95% CI: -1.6%, 20.7%) in 14 US states with abortion bans, equivalent to 68 excess deaths (95% CI: -13, 147)</li><li>Rate increase of 3.3 additional deaths per 100,000 live births (95% CI: -2.6, 9.0) for pregnancy-associated mortality</li><li>Similar magnitude effects for pregnancy-related mortality but with greater uncertainty; no detectable increase in maternal mortality</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        Provides evidence for UK public health policy discussions on reproductive health access and potential mortality impacts, particularly relevant for health equity assessments and international comparative analyses.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Wide confidence intervals crossing zero indicate substantial uncertainty, with authors noting data limitations and chance variation in these rare outcomes constrain certainty of findings.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42024836/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.2105/AJPH.2026.308465" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">American journal of public health</div>
+      <h3>The Impact of Recreational Cannabis Laws on Cannabis-Related Disorders in the US Medicare Population</h3>
+      <div class="sample-meta">Abraham AJ, Bethel V, Lozano-Rojas F et al. · 2026 Apr 23</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Retrospective cohort study using difference-in-difference analysis
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Do recreational cannabis laws increase cannabis-related disorder rates among older US Medicare beneficiaries?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Recreational cannabis laws increased cannabis-related disorders by 19.73 patients per 10,000 Medicare enrollees (P&lt;0.001) and 20.56 claims per 10,000 enrollees (P=0.005)</li><li>Opening recreational cannabis dispensaries similarly increased disorders by 14.14 patients per 10,000 enrollees (P&lt;0.001) and 13.98 claims per 10,000 enrollees (P=0.004)</li><li>Effects observed across 12-year period (2010-2022) comparing states with and without recreational cannabis laws</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        Provides evidence for UK policymakers considering cannabis liberalisation policies, particularly regarding potential harms to older populations who may be more vulnerable to cannabis-related health problems.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Cannot distinguish between increased actual disorders versus increased healthcare seeking/diagnostic coding following legalisation.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42024835/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.2105/AJPH.2026.308522" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">American journal of public health</div>
+      <h3>Enhancing Classification of Sexual Orientation and Gender Identity Information Among Suicide Decedents Reported in the National Violent Death Reporting System, 2003-2021</h3>
+      <div class="sample-meta">Anderson AM, Hughes LD, Rahman B et al. · 2026 Apr 23</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Retrospective analysis
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Can systematic keyword searches of suicide narrative records improve identification of sexual and gender minority (SGM) decedents in national surveillance data?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Keyword search of 298,662 suicide records flagged 2,580 cases for review, with 1,221 (47%) confirmed as SGM decedents</li><li>This method increased identified SGM suicide cases by 32% compared to standard surveillance coding</li><li>Analysis covered 19 years (2003-2021) of National Violent Death Reporting System data</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        Enhanced SGM identification in suicide surveillance could inform targeted prevention strategies, though direct applicability to UK systems (where ONS and coroners&#39; data are primary sources) requires evaluation of narrative data availability and coding practices.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Study relied on narrative text quality and completeness, which may vary across jurisdictions and time periods, potentially missing cases without documented SGM indicators.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42024834/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.2105/AJPH.2026.308460" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">American journal of public health</div>
+      <h3>Rosemary Collaboratory: A Policy, Systems, and Environmental Approach to Understanding and Addressing Health Inequities for People With Intellectual and Developmental Disabilities, United States</h3>
+      <div class="sample-meta">Jenkins A · 2026 May</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Policy analysis and health system assessment
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        What are the barriers and gaps in US health systems that contribute to health inequities for people with intellectual and developmental disabilities?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>National and three-state assessments identified significant health system failures contributing to poorer outcomes for people with IDD compared to those without disabilities</li><li>State-level innovation in supported decision-making and guardianship alternatives demonstrates feasible approaches to reducing barriers</li><li>Substantial improvement opportunities exist across all health system components at federal and state levels despite existing legislation</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        While US-focused, this analysis of systematic barriers to healthcare access for people with learning disabilities has direct relevance to NHS England&#39;s learning disability health checks programme and health equity initiatives.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        The study appears descriptive without quantified outcomes or comparative effectiveness data on specific interventions.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42018957/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.2105/AJPH.2026.308452" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">American journal of public health</div>
+      <h3>Cocreating an Inclusive Evaluation: Lessons Learned From Special Olympics Project ALL STAR Across Six US States</h3>
+      <div class="sample-meta">Caudill AN, Pfeaster C, Smith AL et al. · 2026 May</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Qualitative study/process evaluation
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        How can evaluation practices be made truly inclusive for athletes with intellectual and developmental disabilities in health research?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Special Olympics successfully implemented inclusive evaluation practices including plain-language materials, athlete-led media production, and inclusive presentation formats</li><li>Athletes with IDD were meaningfully involved across all evaluation phases from conception through dissemination</li><li>Training programmes and adapted consent processes enabled authentic participation rather than tokenistic involvement</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        Provides a practical framework for UK public health teams conducting research or evaluation with people with learning disabilities, aligning with NHS England&#39;s commitment to co-production and health equity.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Abstract provides limited detail on specific outcomes or measurable impacts of the inclusive approach.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42018956/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.2105/AJPH.2026.308462" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">American journal of public health</div>
+      <h3>Special Olympics PATH to Health Equity for People With Intellectual and Developmental Disabilities</h3>
+      <div class="sample-meta">Williams AD · 2026 May</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Commentary/programme description
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        How can the Special Olympics PATH to Health Equity framework address persistent health disparities for people with intellectual and developmental disabilities?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Special Olympics Health uses a 4-pronged PATH approach targeting Prevention, Assessment, Training, and Health systems</li><li>Framework includes evidence-based programming with documented outcomes (specific metrics not provided in abstract)</li><li>Approach addresses systemic barriers through capacity building in healthcare systems, workforce, and government structures</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        Relevant to UK public health commissioners developing learning disability health services, particularly given NHS England&#39;s commitment to reducing health inequalities for people with learning disabilities through annual health checks and reasonable adjustments.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Abstract provides limited detail on specific outcomes, effectiveness measures, or how this US-based framework might translate to different healthcare systems.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42018954/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.2105/AJPH.2026.308436" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">American journal of public health</div>
+      <h3>Health Promotion Across the Life Span for Special Olympics Athletes</h3>
+      <div class="sample-meta">Ralston R, Smith A, Dixon-Ibarra A · 2026 May</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Programme evaluation/commentary
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        How effective is Special Olympics&#39; life span health promotion approach for improving health outcomes in people with intellectual and developmental disabilities?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Two core interventions (Young Athletes and fitness programming) target health equity barriers for people with IDD</li><li>Programme evaluations show measurable improvements in motor development and cardiovascular health outcomes</li><li>Global implementation demonstrates scalable models that can be replicated across different settings</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        Provides evidence-based framework for addressing health inequalities in people with IDD, relevant to NHS learning disability health services and public health commissioners developing inclusive health promotion programmes.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Abstract provides limited detail on evaluation methodology, effect sizes, or specific outcome measures.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42018952/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.2105/AJPH.2026.308502" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+
+    <div class="tease">
+      <p>…and <em>21 more</em> Public Health articles in that week's digest.</p>
+      <small>Subscribers get the complete brief, every Monday.</small>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA ═══ -->
+<section class="cta-section">
+  <h2>Get the Public Health digest in your inbox every Monday</h2>
+  <p>4 weeks completely free, then £20/year. Cancel any time during your trial — no charge.</p>
+  <a href="/?specialty=public-health&ref=samples#subscribe" class="cta-btn">Start your free trial — Public Health →</a>
+  <span class="cta-meta">No card needed to browse. We'll ask for payment details to start the trial.</span>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <p>&copy; 2026 The Monday Clinical Brief</p>
+  <p><a href="/">Home</a> · <a href="mailto:info@mondayclinicalbrief.co.uk">Contact</a> · <a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms</a></p>
+</footer>
+
+</body>
+</html>

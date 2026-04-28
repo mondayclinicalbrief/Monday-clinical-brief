@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Urology Sample Digest — The Monday Clinical Brief</title>
+<meta name="description" content="See what Urology clinicians received in this Monday's digest: 9 new articles from BJU international, European urology, World journal of urology summarised every Monday by The Monday Clinical Brief.">
+<link rel="canonical" href="https://mondayclinicalbrief.co.uk/samples/urology/">
+<meta property="og:title" content="Urology — Monday Clinical Brief Sample Digest">
+<meta property="og:description" content="9 new Urology papers summarised this week. Free 4-week trial.">
+<meta property="og:url" content="https://mondayclinicalbrief.co.uk/samples/urology/">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --charcoal: #1c1c1c;
+    --cream: #f7f5f0;
+    --warm-white: #fdfcf9;
+    --sage: #5a7a6a;
+    --sage-light: #e8efeb;
+    --sage-deep: #3d5a4c;
+    --gold: #c4994c;
+    --gold-light: #f5edd8;
+    --text: #3a3a38;
+    --text-muted: #7a7a76;
+    --border: #e2dfd8;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Figtree', sans-serif; color: var(--text); background: var(--warm-white); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+
+  /* ── NAV ── */
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; background: rgba(247,245,240,0.9); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(226,223,216,0.5); }
+  .nav-brand { font-family: 'Instrument Serif', serif; font-size: 1.8rem; font-weight: 700; color: var(--charcoal); text-decoration: none; letter-spacing: -0.02em; }
+  .nav-links { display: flex; gap: 1.5rem; align-items: center; }
+  .nav-links a { font-size: 0.85rem; color: var(--text-muted); text-decoration: none; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--sage-deep); }
+  .nav-cta { background: var(--sage-deep); color: white !important; padding: 0.5rem 1.25rem; border-radius: 40px; font-size: 0.85rem; }
+  .nav-cta:hover { background: var(--charcoal); }
+
+  /* ── PAGE HEADER ── */
+  .page-header { padding: 8rem 2rem 3rem; background: var(--cream); text-align: center; }
+  .page-header .eyebrow { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--sage); margin-bottom: 1.25rem; }
+  .page-header .eyebrow::before, .page-header .eyebrow::after { content: ''; width: 24px; height: 1px; background: var(--sage); opacity: 0.4; }
+  .page-header h1 { font-family: 'Instrument Serif', serif; font-size: clamp(2.2rem, 4.5vw, 3.2rem); font-weight: 400; color: var(--charcoal); line-height: 1.2; letter-spacing: -0.02em; margin-bottom: 1rem; max-width: 720px; margin-left: auto; margin-right: auto; }
+  .page-header h1 em { font-style: italic; color: var(--sage-deep); }
+  .page-header .lede { font-size: 1.05rem; color: var(--text-muted); max-width: 560px; margin: 0 auto 1.75rem; }
+  .stat-bar { display: inline-flex; gap: 2.5rem; padding: 1rem 1.75rem; background: white; border: 1px solid var(--border); border-radius: 60px; font-size: 0.85rem; }
+  .stat-bar .stat strong { display: block; font-family: 'Instrument Serif', serif; font-size: 1.6rem; color: var(--sage-deep); line-height: 1; margin-bottom: 0.2rem; }
+  .stat-bar .stat span { color: var(--text-muted); font-size: 0.78rem; }
+
+  /* ── DISCLAIMER ── */
+  .disclaimer { max-width: 800px; margin: 2rem auto 0; padding: 0.85rem 1.25rem; background: var(--gold-light); border-left: 3px solid var(--gold); font-size: 0.85rem; color: var(--text); border-radius: 4px; }
+  .disclaimer strong { color: var(--charcoal); }
+
+  /* ── ARTICLES ── */
+  section { padding: 3rem 2rem 5rem; }
+  .container { max-width: 800px; margin: 0 auto; }
+  .sample-card { background: white; border: 1px solid var(--border); border-radius: 8px; padding: 2rem; margin-bottom: 1.5rem; }
+  .sample-badge { display: inline-block; background: var(--sage-light); color: var(--sage-deep); padding: 0.2rem 0.7rem; border-radius: 4px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 1rem; }
+  .sample-card h3 { font-family: 'Instrument Serif', serif; font-size: 1.3rem; font-weight: 400; color: var(--charcoal); margin-bottom: 0.5rem; line-height: 1.35; }
+  .sample-meta { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1.25rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--border); }
+  .summary-field { margin-bottom: 0.75rem; font-size: 0.9rem; line-height: 1.6; }
+  .summary-label { font-weight: 600; color: var(--sage-deep); }
+  .summary-field ul { list-style: none; margin: 0.4rem 0 0 0; padding: 0; }
+  .summary-field ul li { padding-left: 1.1rem; position: relative; margin-bottom: 0.3rem; }
+  .summary-field ul li::before { content: '•'; position: absolute; left: 0.2rem; color: var(--sage); font-weight: 700; }
+  .source-links { margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 0.8rem; }
+  .source-links a { color: var(--sage-deep); text-decoration: none; margin-right: 1rem; font-weight: 500; }
+  .source-links a:hover { text-decoration: underline; }
+
+  /* ── TEASE ── */
+  .tease { text-align: center; padding: 2rem; background: var(--cream); border: 1px dashed var(--border); border-radius: 8px; margin-top: 1rem; }
+  .tease p { font-family: 'Instrument Serif', serif; font-size: 1.4rem; color: var(--charcoal); line-height: 1.4; margin-bottom: 0.5rem; }
+  .tease p em { color: var(--sage-deep); }
+  .tease small { color: var(--text-muted); font-size: 0.9rem; }
+
+  /* ── CTA ── */
+  .cta-section { background: var(--charcoal); color: white; padding: 4rem 2rem; text-align: center; }
+  .cta-section h2 { font-family: 'Instrument Serif', serif; font-size: clamp(1.8rem, 4vw, 2.4rem); font-weight: 400; color: white; line-height: 1.25; margin-bottom: 1rem; }
+  .cta-section p { color: rgba(255,255,255,0.7); max-width: 480px; margin: 0 auto 2rem; font-size: 1rem; }
+  .cta-btn { display: inline-block; background: white; color: var(--charcoal); text-decoration: none; padding: 1.1rem 2.5rem; border-radius: 60px; font-family: 'Figtree', sans-serif; font-size: 1.05rem; font-weight: 600; transition: all 0.3s ease; }
+  .cta-btn:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.3); }
+  .cta-meta { display: block; margin-top: 1rem; font-size: 0.85rem; color: rgba(255,255,255,0.5); }
+
+  /* ── FOOTER ── */
+  footer { padding: 3rem 2rem; text-align: center; border-top: 1px solid var(--border); }
+  footer p { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+  footer a { color: var(--sage); text-decoration: none; }
+
+  @media (max-width: 640px) {
+    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; }
+    .nav-links a:not(.nav-cta) { display: none; }
+    body { padding-bottom: 60px; }
+    .page-header { padding: 3.5rem 1.5rem 2.5rem; }
+    section { padding: 2rem 1.5rem 3.5rem; }
+    .sample-card { padding: 1.5rem; }
+    .stat-bar { flex-direction: column; gap: 1rem; padding: 1.25rem 1.75rem; }
+    .cta-section { padding: 3rem 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav>
+  <a href="/" class="nav-brand">The Monday Clinical Brief</a>
+  <div class="nav-links">
+    <a href="/#how">How it works</a>
+    <a href="/#about">About</a>
+    <a href="/?specialty=urology#subscribe" class="nav-cta">Start free trial</a>
+  </div>
+</nav>
+
+<!-- ═══ HEADER ═══ -->
+<header class="page-header">
+  <div class="eyebrow">Sample Digest · Monday 27 April 2026</div>
+  <h1>A recent Urology digest,<br><em>as sent to subscribers</em></h1>
+  <p class="lede">This is the real Monday digest from Monday 27 April 2026. Showing the first 8 of 9 articles from that week — every new paper from the top journals in Urology.</p>
+  <div class="stat-bar">
+    <div class="stat"><strong>9</strong><span>articles that week</span></div>
+    <div class="stat"><strong>3</strong><span>journals covered</span></div>
+    <div class="stat"><strong>£0</strong><span>for your first 4 weeks</span></div>
+  </div>
+  <div class="disclaimer">
+    <strong>Note:</strong> Summaries are AI-generated from publicly available PubMed abstracts. Always verify against the source article before clinical use.
+  </div>
+</header>
+
+<!-- ═══ ARTICLES ═══ -->
+<section>
+  <div class="container">
+    <div class="sample-card">
+      <div class="sample-badge">BJU international</div>
+      <h3>Deep learning for fluorescence confocal microscopy image interpretation in radical prostatectomy</h3>
+      <div class="sample-meta">Fang L, Mayor N, Light A et al. · 2026 Apr 19</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Prospective deep learning model development and validation study
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Can a deep learning model accurately interpret fluorescence confocal microscopy images for real-time surgical margin assessment during radical prostatectomy?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Internal validation (n=57): sensitivity 87.5%, specificity 97.9%, AUC 0.93 for detecting positive margins</li><li>External validation (n=46): sensitivity 91.3%, specificity 73.9%, AUC 0.83, demonstrating generalisability across centres</li><li>Model provides interpretable predictions in &lt;2 seconds with visual explanations via Grad-CAM mapping</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        This technology could enable real-time intraoperative margin assessment during radical prostatectomy without requiring immediate frozen section pathology support, potentially improving surgical outcomes whilst reducing theatre delays.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Small dataset with only 275 total images and pronounced class imbalance (37 tumour vs 238 benign images) limits model robustness.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42001901/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1111/bju.70273" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">BJU international</div>
+      <h3>Nodal maximum standardised uptake value improves PSMA-PET/CT-based nodal staging in intermediate- and high-risk prostate cancer</h3>
+      <div class="sample-meta">Bruins Slot AS, Sweere V, Heetman JG et al. · 2026 Apr 20</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Retrospective multicentre cohort study
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Does incorporating nodal maximum standardised uptake value (SUVmax) improve PSMA-PET/CT accuracy for detecting lymph node invasion in intermediate- and high-risk prostate cancer?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Adding nodal SUVmax ≥4.9 improved positive predictive value from 64.7% to 81.1% and sensitivity from 45.0% to 71.4% for lymph node invasion detection</li><li>A clinical decision tool combining SUVmax ≥4.9, PSA ≥10 ng/mL, MRI T-stage ≥T3a, and miT-stage ≥T3a identified 95% of pathological N1 cases in the high-risk group</li><li>High-volume nodal disease (≥4 positive nodes) occurred in 3.8% of patients, including 1.1% with negative PSMA-PET (miN0)</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        This could help UK urologists better stratify patients for extended lymph node dissection and tailor surgical planning by improving PSMA-PET interpretation beyond standard visual assessment.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Requires external validation before implementation and relies on standardised SUVmax measurement across different PET scanners and protocols.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42003684/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1111/bju.70293" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">BJU international</div>
+      <h3>Surveillance patterns in non-muscle-invasive bladder cancer across risk groups: a real-world analysis</h3>
+      <div class="sample-meta">van Hoogstraten LMC, Vermeulen SH, Hof JP et al. · 2026 Apr 23</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Retrospective cohort study
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        How do real-world surveillance practices for non-muscle invasive bladder cancer compare to guideline recommendations across different risk groups?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>37.6% of low-risk NMIBC patients received more intensive surveillance than recommended (average 1.3 cystoscopies in first year)</li><li>88.2% of high-risk NMIBC patients were under-monitored compared to guidelines, though adherence improved over time</li><li>Intermediate-risk surveillance showed poor long-term adherence, declining from 78.1% to 59.3%, with heterogeneous use of cytology (52.3%), imaging (25-65%), and biopsies (25-85%)</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        These findings highlight significant resource misallocation in UK bladder cancer services, with potential overtreatment of low-risk disease and undermonitoring of high-risk patients requiring immediate service redesign.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Dutch healthcare system data may not fully represent UK NHS practices and resource constraints.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42024120/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1111/bju.70297" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">BJU international</div>
+      <h3>Iatrogenic ureteric injuries after abdominal surgery: a systematic review and meta-regression from the European Association of Urology Endourology Section</h3>
+      <div class="sample-meta">Scilipoti P, Nannola N, Zorzi F et al. · 2026 Apr 23</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Systematic review and meta-analysis
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        What are the outcomes of different management strategies for iatrogenic ureteric injuries following abdominal surgery?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Overall clinical success rate was 87% (95% CI 80-91%) across 1,517 patients from 30 retrospective studies</li><li>Reconstructive surgery achieved higher success rates than endoscopic management (91% vs 66%, 95% CI 84-95% vs 58-73%)</li><li>Endoscopic management was associated with 5.6-fold higher odds of requiring subsequent reconstructive surgery and lower success rates (OR 0.14, 95% CI 0.05-0.40)</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        This evidence supports reconstructive surgery as first-line treatment for iatrogenic ureteric injuries in UK practice, though endoscopic approaches remain viable for selected cases where patients accept higher re-intervention rates.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        All included studies were retrospective with serious risk of bias and substantial heterogeneity in outcome definitions and follow-up protocols.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42023813/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1111/bju.70275" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">European urology</div>
+      <h3>Safety and Efficacy of Tranexamic Acid in Urologic Surgery: Results from the International, Randomized, Placebo-Controlled POISE-3 Trial</h3>
+      <div class="sample-meta">Tikkinen KAO, Marcucci M, Halme ALE et al. · 2026 Apr 21</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Post-hoc subgroup analysis of an international RCT (POISE-3 trial)
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Does tranexamic acid reduce bleeding complications in patients undergoing urological surgery with bleeding and cardiovascular risk factors?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Major bleeding reduced from 9.5% (placebo) to 6.1% (TXA group), HR 0.63 (95% CI 0.41-0.97)</li><li>Composite bleeding outcome (life-threatening/major/critical organ) showed non-significant reduction: 10.9% vs 8.1%, HR 0.73 (95% CI 0.50-1.07)</li><li>No significant increase in thrombotic complications: 10.9% vs 12.1%, HR 1.12 (95% CI 0.79-1.58)</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        This provides the first robust evidence supporting TXA use in urological surgery for UK clinicians, particularly relevant given current lack of guidance in major urological guidelines and potential for reducing perioperative bleeding complications.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        This was a subgroup analysis of patients with pre-existing bleeding and cardiovascular risk factors, limiting generalisability to all urological patients.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42020258/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.eururo.2026.03.019" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">European urology</div>
+      <h3>Performance of [89Zr]girentuximab PET/CT in Predicting the Presence of Any Renal Malignancy: A Reanalysis of the ZIRCON Trial</h3>
+      <div class="sample-meta">Kaba A, Kanabur P, Calais J et al. · 2026 Apr 22</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Post-hoc analysis of phase 3 RCT (ZIRCON trial)
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Can [89Zr]girentuximab PET/CT detect non-clear cell renal cell carcinoma in addition to its established role in ccRCC detection?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Positive predictive value for any renal malignancy was 98%, with sensitivity 82% and specificity 87%</li><li>The tracer identified non-ccRCC tumours, particularly papillary RCC with higher CAIX expression (H score) and SUVmax values</li><li>Performance extends beyond the original indication of ccRCC detection to include other malignant renal masses</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        This expands the potential clinical utility of [89Zr]girentuximab PET/CT for NHS urology departments, offering high diagnostic confidence (98% PPV) for distinguishing any renal malignancy from benign masses, not just ccRCC.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        This is a secondary analysis of trial data originally designed for ccRCC detection, potentially limiting the robustness of conclusions for nccRCC applications.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42025513/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.eururo.2026.03.003" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">European urology</div>
+      <h3>Comprehensive Genomic and Transcriptomic Characterization of Matched Primary and Recurrent Tumors in High-risk Localized Renal Cell Carcinoma</h3>
+      <div class="sample-meta">Xu W, Rini BI, Albiges L et al. · 2026 Apr 25</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Prospective translational analysis from RCT
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        What are the genomic and transcriptomic differences between primary and recurrent tumors in high-risk localized renal cell carcinoma?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Primary tumors showed higher angiogenic signatures compared to published metastatic cohorts, while recurrent sites demonstrated upregulation of proliferation, fatty acid synthesis, and stromal signatures</li><li>Recurrences in placebo patients had increased B cell/macrophage signatures, whereas recurrences despite adjuvant atezolizumab showed downregulated MHC-I expression</li><li>Molecular changes at recurrence may provide scientific rationale for switching from checkpoint inhibitors to VEGF inhibition</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        This provides molecular insights that could inform sequential treatment strategies for UK patients with high-risk RCC who develop recurrence after adjuvant immunotherapy.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Findings require clinical validation and sample size for genomic analysis was limited (n=52).
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42036258/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.eururo.2026.03.023" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">World journal of urology</div>
+      <h3>A molecular landscape tracking the progression of non-muscle invasive bladder cancer</h3>
+      <div class="sample-meta">Cesta G, Zolfanelli C, Lauciello V et al. · 2026 Apr 20</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Narrative literature review
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        What transcriptomic biomarkers can reliably track bladder cancer progression from NMIBC to MIBC and within NMIBC stages?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Multiple dysregulated gene expression signatures were identified that correlate with bladder cancer progression and predict oncological outcomes</li><li>Oncotarget genes and mitotic spindle abnormalities play key roles in tumour development and progression</li><li>Substantial morphological changes in urothelium and extracellular matrix accompany molecular progression</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        This synthesis of transcriptomic data could inform future development of molecular stratification tools for NMIBC patients, potentially improving risk assessment and treatment selection in NHS urology services.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Despite identifying multiple promising biomarkers, none have yet been validated for clinical implementation, limiting immediate clinical utility.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42002631/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1007/s00345-026-06406-0" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+
+    <div class="tease">
+      <p>…and <em>1 more</em> Urology articles in that week's digest.</p>
+      <small>Subscribers get the complete brief, every Monday.</small>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA ═══ -->
+<section class="cta-section">
+  <h2>Get the Urology digest in your inbox every Monday</h2>
+  <p>4 weeks completely free, then £20/year. Cancel any time during your trial — no charge.</p>
+  <a href="/?specialty=urology&ref=samples#subscribe" class="cta-btn">Start your free trial — Urology →</a>
+  <span class="cta-meta">No card needed to browse. We'll ask for payment details to start the trial.</span>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <p>&copy; 2026 The Monday Clinical Brief</p>
+  <p><a href="/">Home</a> · <a href="mailto:info@mondayclinicalbrief.co.uk">Contact</a> · <a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms</a></p>
+</footer>
+
+</body>
+</html>

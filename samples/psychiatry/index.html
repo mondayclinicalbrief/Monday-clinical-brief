@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Psychiatry Sample Digest — The Monday Clinical Brief</title>
+<meta name="description" content="See what Psychiatry clinicians received in this Monday's digest: 13 new articles from Molecular psychiatry, JAMA psychiatry, The American journal of psychiatry summarised every Monday by The Monday Clinical Brief.">
+<link rel="canonical" href="https://mondayclinicalbrief.co.uk/samples/psychiatry/">
+<meta property="og:title" content="Psychiatry — Monday Clinical Brief Sample Digest">
+<meta property="og:description" content="13 new Psychiatry papers summarised this week. Free 4-week trial.">
+<meta property="og:url" content="https://mondayclinicalbrief.co.uk/samples/psychiatry/">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --charcoal: #1c1c1c;
+    --cream: #f7f5f0;
+    --warm-white: #fdfcf9;
+    --sage: #5a7a6a;
+    --sage-light: #e8efeb;
+    --sage-deep: #3d5a4c;
+    --gold: #c4994c;
+    --gold-light: #f5edd8;
+    --text: #3a3a38;
+    --text-muted: #7a7a76;
+    --border: #e2dfd8;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Figtree', sans-serif; color: var(--text); background: var(--warm-white); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+
+  /* ── NAV ── */
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; background: rgba(247,245,240,0.9); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(226,223,216,0.5); }
+  .nav-brand { font-family: 'Instrument Serif', serif; font-size: 1.8rem; font-weight: 700; color: var(--charcoal); text-decoration: none; letter-spacing: -0.02em; }
+  .nav-links { display: flex; gap: 1.5rem; align-items: center; }
+  .nav-links a { font-size: 0.85rem; color: var(--text-muted); text-decoration: none; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--sage-deep); }
+  .nav-cta { background: var(--sage-deep); color: white !important; padding: 0.5rem 1.25rem; border-radius: 40px; font-size: 0.85rem; }
+  .nav-cta:hover { background: var(--charcoal); }
+
+  /* ── PAGE HEADER ── */
+  .page-header { padding: 8rem 2rem 3rem; background: var(--cream); text-align: center; }
+  .page-header .eyebrow { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--sage); margin-bottom: 1.25rem; }
+  .page-header .eyebrow::before, .page-header .eyebrow::after { content: ''; width: 24px; height: 1px; background: var(--sage); opacity: 0.4; }
+  .page-header h1 { font-family: 'Instrument Serif', serif; font-size: clamp(2.2rem, 4.5vw, 3.2rem); font-weight: 400; color: var(--charcoal); line-height: 1.2; letter-spacing: -0.02em; margin-bottom: 1rem; max-width: 720px; margin-left: auto; margin-right: auto; }
+  .page-header h1 em { font-style: italic; color: var(--sage-deep); }
+  .page-header .lede { font-size: 1.05rem; color: var(--text-muted); max-width: 560px; margin: 0 auto 1.75rem; }
+  .stat-bar { display: inline-flex; gap: 2.5rem; padding: 1rem 1.75rem; background: white; border: 1px solid var(--border); border-radius: 60px; font-size: 0.85rem; }
+  .stat-bar .stat strong { display: block; font-family: 'Instrument Serif', serif; font-size: 1.6rem; color: var(--sage-deep); line-height: 1; margin-bottom: 0.2rem; }
+  .stat-bar .stat span { color: var(--text-muted); font-size: 0.78rem; }
+
+  /* ── DISCLAIMER ── */
+  .disclaimer { max-width: 800px; margin: 2rem auto 0; padding: 0.85rem 1.25rem; background: var(--gold-light); border-left: 3px solid var(--gold); font-size: 0.85rem; color: var(--text); border-radius: 4px; }
+  .disclaimer strong { color: var(--charcoal); }
+
+  /* ── ARTICLES ── */
+  section { padding: 3rem 2rem 5rem; }
+  .container { max-width: 800px; margin: 0 auto; }
+  .sample-card { background: white; border: 1px solid var(--border); border-radius: 8px; padding: 2rem; margin-bottom: 1.5rem; }
+  .sample-badge { display: inline-block; background: var(--sage-light); color: var(--sage-deep); padding: 0.2rem 0.7rem; border-radius: 4px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 1rem; }
+  .sample-card h3 { font-family: 'Instrument Serif', serif; font-size: 1.3rem; font-weight: 400; color: var(--charcoal); margin-bottom: 0.5rem; line-height: 1.35; }
+  .sample-meta { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1.25rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--border); }
+  .summary-field { margin-bottom: 0.75rem; font-size: 0.9rem; line-height: 1.6; }
+  .summary-label { font-weight: 600; color: var(--sage-deep); }
+  .summary-field ul { list-style: none; margin: 0.4rem 0 0 0; padding: 0; }
+  .summary-field ul li { padding-left: 1.1rem; position: relative; margin-bottom: 0.3rem; }
+  .summary-field ul li::before { content: '•'; position: absolute; left: 0.2rem; color: var(--sage); font-weight: 700; }
+  .source-links { margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 0.8rem; }
+  .source-links a { color: var(--sage-deep); text-decoration: none; margin-right: 1rem; font-weight: 500; }
+  .source-links a:hover { text-decoration: underline; }
+
+  /* ── TEASE ── */
+  .tease { text-align: center; padding: 2rem; background: var(--cream); border: 1px dashed var(--border); border-radius: 8px; margin-top: 1rem; }
+  .tease p { font-family: 'Instrument Serif', serif; font-size: 1.4rem; color: var(--charcoal); line-height: 1.4; margin-bottom: 0.5rem; }
+  .tease p em { color: var(--sage-deep); }
+  .tease small { color: var(--text-muted); font-size: 0.9rem; }
+
+  /* ── CTA ── */
+  .cta-section { background: var(--charcoal); color: white; padding: 4rem 2rem; text-align: center; }
+  .cta-section h2 { font-family: 'Instrument Serif', serif; font-size: clamp(1.8rem, 4vw, 2.4rem); font-weight: 400; color: white; line-height: 1.25; margin-bottom: 1rem; }
+  .cta-section p { color: rgba(255,255,255,0.7); max-width: 480px; margin: 0 auto 2rem; font-size: 1rem; }
+  .cta-btn { display: inline-block; background: white; color: var(--charcoal); text-decoration: none; padding: 1.1rem 2.5rem; border-radius: 60px; font-family: 'Figtree', sans-serif; font-size: 1.05rem; font-weight: 600; transition: all 0.3s ease; }
+  .cta-btn:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.3); }
+  .cta-meta { display: block; margin-top: 1rem; font-size: 0.85rem; color: rgba(255,255,255,0.5); }
+
+  /* ── FOOTER ── */
+  footer { padding: 3rem 2rem; text-align: center; border-top: 1px solid var(--border); }
+  footer p { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+  footer a { color: var(--sage); text-decoration: none; }
+
+  @media (max-width: 640px) {
+    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; }
+    .nav-links a:not(.nav-cta) { display: none; }
+    body { padding-bottom: 60px; }
+    .page-header { padding: 3.5rem 1.5rem 2.5rem; }
+    section { padding: 2rem 1.5rem 3.5rem; }
+    .sample-card { padding: 1.5rem; }
+    .stat-bar { flex-direction: column; gap: 1rem; padding: 1.25rem 1.75rem; }
+    .cta-section { padding: 3rem 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav>
+  <a href="/" class="nav-brand">The Monday Clinical Brief</a>
+  <div class="nav-links">
+    <a href="/#how">How it works</a>
+    <a href="/#about">About</a>
+    <a href="/?specialty=psychiatry#subscribe" class="nav-cta">Start free trial</a>
+  </div>
+</nav>
+
+<!-- ═══ HEADER ═══ -->
+<header class="page-header">
+  <div class="eyebrow">Sample Digest · Monday 27 April 2026</div>
+  <h1>A recent Psychiatry digest,<br><em>as sent to subscribers</em></h1>
+  <p class="lede">This is the real Monday digest from Monday 27 April 2026. Showing the first 8 of 13 articles from that week — every new paper from the top journals in Psychiatry.</p>
+  <div class="stat-bar">
+    <div class="stat"><strong>13</strong><span>articles that week</span></div>
+    <div class="stat"><strong>3</strong><span>journals covered</span></div>
+    <div class="stat"><strong>£0</strong><span>for your first 4 weeks</span></div>
+  </div>
+  <div class="disclaimer">
+    <strong>Note:</strong> Summaries are AI-generated from publicly available PubMed abstracts. Always verify against the source article before clinical use.
+  </div>
+</header>
+
+<!-- ═══ ARTICLES ═══ -->
+<section>
+  <div class="container">
+    <div class="sample-card">
+      <div class="sample-badge">JAMA psychiatry</div>
+      <h3>Dialectical Behavior Therapy vs Schema Therapy for Patients With Borderline Personality Disorder: The BOOTS Multicenter Randomized Clinical Trial</h3>
+      <div class="sample-meta">Wibbelink CJM, Kamphuis JH, Sinnaeve R et al. · 2026 Apr 22</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Multicenter randomized controlled trial
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        How does dialectical behavior therapy (DBT) compare to schema therapy (ST) for effectiveness in treating borderline personality disorder?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>No significant difference between DBT and ST in reducing BPD severity over 3 years (p=0.27, Cohen&#39;s d=0.15, 95% CI -0.17 to 0.47)</li><li>Both treatments showed large, substantial improvements across all outcome measures including BPD symptoms, functioning, and quality of life</li><li>Dropout rates were similar between groups (DBT: 52% at 2 years; ST: 46% at 2 years)</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        This provides robust evidence that both DBT and ST are equally effective for BPD treatment, giving UK clinicians flexibility in choosing between these evidence-based approaches based on patient preferences, therapist expertise, or service capacity.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        High dropout rates (approximately 50% at 2 years) limit the generalizability of findings and reflect real-world treatment challenges in BPD populations.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42018336/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1001/jamapsychiatry.2026.0418" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">JAMA psychiatry</div>
+      <h3>Updating Psychological Treatment During Inpatient Psychiatric Care</h3>
+      <div class="sample-meta">Kleiman EM, Hawes-Sousa MT, Rizvi SL et al. · 2026 Apr 22</div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42018314/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1001/jamapsychiatry.2026.0443" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">JAMA psychiatry</div>
+      <h3>Antipsychotic Efficacy and Safety of LB-102 in the Treatment of Adults With Acute Schizophrenia: A Randomized Clinical Trial</h3>
+      <div class="sample-meta">Eramo A, Correll CU, Walling DP et al. · 2026 Apr 22</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Randomized controlled trial (phase 2, double-blind, placebo-controlled)
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Is LB-102 (N-methyl amisulpride), a novel benzamide antipsychotic, effective and safe for treating acute schizophrenia in hospitalized adults?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>LB-102 50mg and 75mg demonstrated statistically superior efficacy versus placebo on PANSS total scores at 4 weeks (mean reductions: placebo -9.3, 50mg -14.3, 75mg -14.0; effect sizes 0.61 and 0.41 respectively)</li><li>Treatment-emergent adverse events occurred in 56-75% of participants across groups, with 10 withdrawals due to adverse events and 5 serious adverse events including one death in placebo group</li><li>100mg dose showed largest effect size (0.83) but was underpowered with only 36 participants</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        This provides early evidence for a potentially new antipsychotic option for acute schizophrenia management in UK inpatient settings, though regulatory approval and NICE evaluation would be required.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Phase 2 study with relatively short 4-week treatment duration limits assessment of longer-term efficacy and safety profile.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42018313/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1001/jamapsychiatry.2026.0428" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Molecular psychiatry</div>
+      <h3>Genetic overlap and shared risk loci between autism spectrum disorder and cardiometabolic traits</h3>
+      <div class="sample-meta">Muntané G, Shadrin A, Guardiola-Ripoll M et al. · 2026 Apr 20</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Genome-wide association study analysis using statistical modelling approaches
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        What is the shared genetic architecture between autism spectrum disorder and cardiometabolic traits?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Significant polygenic overlap identified between ASD and cardiometabolic phenotypes despite negligible overall genetic correlation</li><li>Positive genetic correlations found within shared components for ASD with metabolic traits (BMI rg=0.03, T2DM rg=0.23, cholesterol rg=0.78), but negative correlations with cardiovascular traits (blood pressure rg=-0.22, coronary artery disease rg=-0.90)</li><li>100 shared genetic loci identified between ASD and cardiometabolic traits, mapping to 124 genes with potential therapeutic relevance</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        These findings provide genetic evidence for the well-recognised cardiometabolic comorbidities in ASD patients, potentially informing risk stratification and personalised prevention strategies in NHS autism services.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        The study relies on statistical associations from GWAS data without functional validation of identified genetic variants.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42009985/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1038/s41380-026-03563-x" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Molecular psychiatry</div>
+      <h3>Single-cell transcriptomics of human brain disorders</h3>
+      <div class="sample-meta">Arbabi K, Carito G, Luquez T et al. · 2026 Apr 20</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Narrative review
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        What cellular pathologies in human brain disorders have been revealed through single-cell genomics studies of post-mortem brain tissue?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Single-cell studies demonstrate depletion of vulnerable cellular populations across neurological and psychiatric conditions</li><li>Disease-associated cellular states emerge with characteristic dysregulated gene expression programs</li><li>These cellular changes interact with genetic risk factors to drive pathology across different CNS cell types</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        This synthesis provides psychiatrists with a cellular-level understanding of psychiatric disorders that may inform future diagnostic biomarkers and therapeutic targets in UK mental health services.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Review nature limits assessment of individual study quality and potential publication bias across included single-cell studies.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42009984/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1038/s41380-026-03573-9" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Molecular psychiatry</div>
+      <h3>Multimodal microglial and kynurenine pathway alterations across the affective-psychosis spectrum: a systematic review of patterns, heterogeneity, and dimensional implications</h3>
+      <div class="sample-meta">Nussbaumer M, Guest PC, Schiltz K et al. · 2026 Apr 21</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Systematic review with quantitative synthesis
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        What are the patterns of microglial activation and kynurenine pathway alterations across major depressive disorder, bipolar disorder, and schizophrenia?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>MDD showed most consistent evidence with increased TSPO-PET binding in frontolimbic regions (cingulate, hippocampus, prefrontal cortex) and lower heterogeneity than schizophrenia</li><li>Schizophrenia demonstrated heterogeneous TSPO findings but consistent shift toward KYNA branch of kynurenine pathway (increased CSF and cortical KYNA), supporting glutamatergic dysregulation</li><li>Bipolar disorder evidence was limited, with single TSPO-PET study showing hippocampal increases and subgroup effects emerging with psychosis/suicide stratification</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        This supports moving away from categorical diagnostic approaches toward dimensional phenotyping and biological subgroup identification in NHS psychiatric services, particularly for treatment-resistant cases.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Limited cellular specificity of TSPO-PET imaging, small sample sizes, and postmortem studies restricted to cortical/limbic regions rather than whole-brain analysis.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42014469/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1038/s41380-026-03614-3" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Molecular psychiatry</div>
+      <h3>Shared and disorder-specific prenatal and perinatal risk factors for neurodevelopmental disorders: a nationwide cohort study</h3>
+      <div class="sample-meta">Peyre H, Rios P, Botton J et al. · 2026 Apr 21</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Nationwide cohort study
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        What prenatal and perinatal risk factors are shared versus disorder-specific across major neurodevelopmental disorders?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Among 6.8 million French children, 7.5% developed at least one NDD over 9.6 years median follow-up, with high co-occurrence rates (ID 54.5%, ASD 52.2%, ADHD 34.9%)</li><li>Common risk factors across disorders included male sex, prematurity, small for gestational age, congenital malformations, maternal obesity, and prenatal substance exposure</li><li>Intellectual disability showed strongest disorder-specific associations with extreme prematurity, severe growth restriction, neonatal hypoxia, and advanced parental age</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        This large-scale study provides evidence-based risk stratification data that could inform early identification and prevention strategies for neurodevelopmental disorders in UK clinical practice.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        The study&#39;s generalizability to UK populations may be limited given differences in healthcare systems and population characteristics between France and the UK.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42014468/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1038/s41380-026-03607-2" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Molecular psychiatry</div>
+      <h3>IL-15 receptor alpha deficiency triggers depressive-like behaviors via enhanced microglial synapse pruning</h3>
+      <div class="sample-meta">Tang Y, Huang Y, Pan J et al. · 2026 Apr 22</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Preclinical experimental study using knockout mouse model with single-nucleus RNA sequencing
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Does IL-15 receptor alpha deficiency contribute to depression through microglial-mediated synaptic changes?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>IL-15RA knockout mice showed depressive-like behaviours with cell-type-specific transcriptomic changes affecting synapse assembly in prefrontal cortex</li><li>Enhanced CX3CL1/CX3CR1 signalling drove microglial activation and excessive synaptic pruning in these mice</li><li>CX3CR1 antagonist treatment reversed both depressive behaviours and pathological synaptic pruning</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        Identifies a specific neuroimmune pathway (IL-15RA/CX3CL1-CX3CR1) that could inform novel therapeutic targets for treatment-resistant depression, particularly relevant given NHS emphasis on precision psychiatry approaches.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Mouse model findings may not translate directly to human MDD pathophysiology and treatment responses.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42020719/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1038/s41380-026-03593-5" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+
+    <div class="tease">
+      <p>…and <em>5 more</em> Psychiatry articles in that week's digest.</p>
+      <small>Subscribers get the complete brief, every Monday.</small>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA ═══ -->
+<section class="cta-section">
+  <h2>Get the Psychiatry digest in your inbox every Monday</h2>
+  <p>4 weeks completely free, then £20/year. Cancel any time during your trial — no charge.</p>
+  <a href="/?specialty=psychiatry&ref=samples#subscribe" class="cta-btn">Start your free trial — Psychiatry →</a>
+  <span class="cta-meta">No card needed to browse. We'll ask for payment details to start the trial.</span>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <p>&copy; 2026 The Monday Clinical Brief</p>
+  <p><a href="/">Home</a> · <a href="mailto:info@mondayclinicalbrief.co.uk">Contact</a> · <a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms</a></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Radiology Sample Digest — The Monday Clinical Brief</title>
+<meta name="description" content="See what Radiology clinicians received in this Monday's digest: 21 new articles from European radiology, Radiology, AJR. American journal of roentgenology summarised every Monday by The Monday Clinical Brief.">
+<link rel="canonical" href="https://mondayclinicalbrief.co.uk/samples/radiology/">
+<meta property="og:title" content="Radiology — Monday Clinical Brief Sample Digest">
+<meta property="og:description" content="21 new Radiology papers summarised this week. Free 4-week trial.">
+<meta property="og:url" content="https://mondayclinicalbrief.co.uk/samples/radiology/">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --charcoal: #1c1c1c;
+    --cream: #f7f5f0;
+    --warm-white: #fdfcf9;
+    --sage: #5a7a6a;
+    --sage-light: #e8efeb;
+    --sage-deep: #3d5a4c;
+    --gold: #c4994c;
+    --gold-light: #f5edd8;
+    --text: #3a3a38;
+    --text-muted: #7a7a76;
+    --border: #e2dfd8;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Figtree', sans-serif; color: var(--text); background: var(--warm-white); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+
+  /* ── NAV ── */
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; background: rgba(247,245,240,0.9); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(226,223,216,0.5); }
+  .nav-brand { font-family: 'Instrument Serif', serif; font-size: 1.8rem; font-weight: 700; color: var(--charcoal); text-decoration: none; letter-spacing: -0.02em; }
+  .nav-links { display: flex; gap: 1.5rem; align-items: center; }
+  .nav-links a { font-size: 0.85rem; color: var(--text-muted); text-decoration: none; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--sage-deep); }
+  .nav-cta { background: var(--sage-deep); color: white !important; padding: 0.5rem 1.25rem; border-radius: 40px; font-size: 0.85rem; }
+  .nav-cta:hover { background: var(--charcoal); }
+
+  /* ── PAGE HEADER ── */
+  .page-header { padding: 8rem 2rem 3rem; background: var(--cream); text-align: center; }
+  .page-header .eyebrow { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--sage); margin-bottom: 1.25rem; }
+  .page-header .eyebrow::before, .page-header .eyebrow::after { content: ''; width: 24px; height: 1px; background: var(--sage); opacity: 0.4; }
+  .page-header h1 { font-family: 'Instrument Serif', serif; font-size: clamp(2.2rem, 4.5vw, 3.2rem); font-weight: 400; color: var(--charcoal); line-height: 1.2; letter-spacing: -0.02em; margin-bottom: 1rem; max-width: 720px; margin-left: auto; margin-right: auto; }
+  .page-header h1 em { font-style: italic; color: var(--sage-deep); }
+  .page-header .lede { font-size: 1.05rem; color: var(--text-muted); max-width: 560px; margin: 0 auto 1.75rem; }
+  .stat-bar { display: inline-flex; gap: 2.5rem; padding: 1rem 1.75rem; background: white; border: 1px solid var(--border); border-radius: 60px; font-size: 0.85rem; }
+  .stat-bar .stat strong { display: block; font-family: 'Instrument Serif', serif; font-size: 1.6rem; color: var(--sage-deep); line-height: 1; margin-bottom: 0.2rem; }
+  .stat-bar .stat span { color: var(--text-muted); font-size: 0.78rem; }
+
+  /* ── DISCLAIMER ── */
+  .disclaimer { max-width: 800px; margin: 2rem auto 0; padding: 0.85rem 1.25rem; background: var(--gold-light); border-left: 3px solid var(--gold); font-size: 0.85rem; color: var(--text); border-radius: 4px; }
+  .disclaimer strong { color: var(--charcoal); }
+
+  /* ── ARTICLES ── */
+  section { padding: 3rem 2rem 5rem; }
+  .container { max-width: 800px; margin: 0 auto; }
+  .sample-card { background: white; border: 1px solid var(--border); border-radius: 8px; padding: 2rem; margin-bottom: 1.5rem; }
+  .sample-badge { display: inline-block; background: var(--sage-light); color: var(--sage-deep); padding: 0.2rem 0.7rem; border-radius: 4px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 1rem; }
+  .sample-card h3 { font-family: 'Instrument Serif', serif; font-size: 1.3rem; font-weight: 400; color: var(--charcoal); margin-bottom: 0.5rem; line-height: 1.35; }
+  .sample-meta { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1.25rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--border); }
+  .summary-field { margin-bottom: 0.75rem; font-size: 0.9rem; line-height: 1.6; }
+  .summary-label { font-weight: 600; color: var(--sage-deep); }
+  .summary-field ul { list-style: none; margin: 0.4rem 0 0 0; padding: 0; }
+  .summary-field ul li { padding-left: 1.1rem; position: relative; margin-bottom: 0.3rem; }
+  .summary-field ul li::before { content: '•'; position: absolute; left: 0.2rem; color: var(--sage); font-weight: 700; }
+  .source-links { margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 0.8rem; }
+  .source-links a { color: var(--sage-deep); text-decoration: none; margin-right: 1rem; font-weight: 500; }
+  .source-links a:hover { text-decoration: underline; }
+
+  /* ── TEASE ── */
+  .tease { text-align: center; padding: 2rem; background: var(--cream); border: 1px dashed var(--border); border-radius: 8px; margin-top: 1rem; }
+  .tease p { font-family: 'Instrument Serif', serif; font-size: 1.4rem; color: var(--charcoal); line-height: 1.4; margin-bottom: 0.5rem; }
+  .tease p em { color: var(--sage-deep); }
+  .tease small { color: var(--text-muted); font-size: 0.9rem; }
+
+  /* ── CTA ── */
+  .cta-section { background: var(--charcoal); color: white; padding: 4rem 2rem; text-align: center; }
+  .cta-section h2 { font-family: 'Instrument Serif', serif; font-size: clamp(1.8rem, 4vw, 2.4rem); font-weight: 400; color: white; line-height: 1.25; margin-bottom: 1rem; }
+  .cta-section p { color: rgba(255,255,255,0.7); max-width: 480px; margin: 0 auto 2rem; font-size: 1rem; }
+  .cta-btn { display: inline-block; background: white; color: var(--charcoal); text-decoration: none; padding: 1.1rem 2.5rem; border-radius: 60px; font-family: 'Figtree', sans-serif; font-size: 1.05rem; font-weight: 600; transition: all 0.3s ease; }
+  .cta-btn:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.3); }
+  .cta-meta { display: block; margin-top: 1rem; font-size: 0.85rem; color: rgba(255,255,255,0.5); }
+
+  /* ── FOOTER ── */
+  footer { padding: 3rem 2rem; text-align: center; border-top: 1px solid var(--border); }
+  footer p { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+  footer a { color: var(--sage); text-decoration: none; }
+
+  @media (max-width: 640px) {
+    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; }
+    .nav-links a:not(.nav-cta) { display: none; }
+    body { padding-bottom: 60px; }
+    .page-header { padding: 3.5rem 1.5rem 2.5rem; }
+    section { padding: 2rem 1.5rem 3.5rem; }
+    .sample-card { padding: 1.5rem; }
+    .stat-bar { flex-direction: column; gap: 1rem; padding: 1.25rem 1.75rem; }
+    .cta-section { padding: 3rem 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav>
+  <a href="/" class="nav-brand">The Monday Clinical Brief</a>
+  <div class="nav-links">
+    <a href="/#how">How it works</a>
+    <a href="/#about">About</a>
+    <a href="/?specialty=radiology#subscribe" class="nav-cta">Start free trial</a>
+  </div>
+</nav>
+
+<!-- ═══ HEADER ═══ -->
+<header class="page-header">
+  <div class="eyebrow">Sample Digest · Monday 27 April 2026</div>
+  <h1>A recent Radiology digest,<br><em>as sent to subscribers</em></h1>
+  <p class="lede">This is the real Monday digest from Monday 27 April 2026. Showing the first 8 of 21 articles from that week — every new paper from the top journals in Radiology.</p>
+  <div class="stat-bar">
+    <div class="stat"><strong>21</strong><span>articles that week</span></div>
+    <div class="stat"><strong>4</strong><span>journals covered</span></div>
+    <div class="stat"><strong>£0</strong><span>for your first 4 weeks</span></div>
+  </div>
+  <div class="disclaimer">
+    <strong>Note:</strong> Summaries are AI-generated from publicly available PubMed abstracts. Always verify against the source article before clinical use.
+  </div>
+</header>
+
+<!-- ═══ ARTICLES ═══ -->
+<section>
+  <div class="container">
+    <div class="sample-card">
+      <div class="sample-badge">AJR. American journal of roentgenology</div>
+      <h3>Interreader Agreement for Individual Ancillary Features in LI-RADS CT/MRI Version 2018: A Systematic Review and Meta-Analysis</h3>
+      <div class="sample-meta">Jung YJ, Choi SH, Heo S et al. · 2026 Apr 22</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Systematic review and meta-analysis
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        What is the interreader agreement for individual ancillary features in LI-RADS CT/MRI version 2018?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Analysis of 47 studies (11,891 patients, 13,695 observations) showed variable agreement across 18 reported ancillary features, with kappa values ranging from 0.26 to 0.84</li><li>Features favouring malignancy demonstrated higher agreement (kappa 0.58-0.84) than those favouring benignity (kappa 0.26-0.73)</li><li>Enhancement paralleling blood pool showed poorest agreement (kappa 0.26), while hepatobiliary-phase hypointensity showed best agreement (kappa 0.84)</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        This evidence highlights significant interpretation variability in LI-RADS ancillary features that UK radiologists rely upon for hepatocellular carcinoma diagnosis, potentially impacting diagnostic confidence and patient management decisions.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Three ancillary features were not reported in any included studies, limiting the comprehensiveness of the agreement assessment.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42018773/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.2214/AJR.26.34591" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">AJR. American journal of roentgenology</div>
+      <h3>Shaping Digital Health Policy-Career Pivots, an AJR Podcast Series (Episode 10)</h3>
+      <div class="sample-meta">Dogra S, Juluru K · 2026 Apr 22</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Podcast/Commentary
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        How do career transitions into digital health policy development occur and what insights can be gained for radiologists considering this path?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>This is a podcast episode focusing on career pivots into digital health policy rather than original research</li><li>No quantitative findings or clinical data are provided in the abstract</li><li>The content appears to explore professional transitions and policy development perspectives</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        May provide guidance for UK radiologists interested in transitioning from clinical practice to digital health policy roles, particularly relevant given NHS digital transformation initiatives and policy development needs.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Abstract provides insufficient detail to assess the specific content, methodology, or evidence base of the podcast discussion.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42018772/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.2214/AJR.26.35061" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">European radiology</div>
+      <h3>Staging of non-metastatic nasopharyngeal carcinoma with PET/CT</h3>
+      <div class="sample-meta">Cao C, Treechairusame T, Wu Y et al. · 2026 Apr 20</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Retrospective cohort study
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Does the ninth edition AJCC/UICC TNM staging system accurately predict overall survival in non-metastatic nasopharyngeal carcinoma patients staged with PET/CT?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>TNM-9 showed declining 5-year overall survival rates across stages (Stage I: 91.7%, II: 84.8%, III: 76.8%), but differences were not statistically significant (p=0.090)</li><li>TNM-9 had inferior discriminatory performance compared to TNM-8 (AUC 0.6239 vs 0.6678, p=0.0003)</li><li>Nodal classifications (N0-N3) showed no significant survival differences (p=0.879)</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        UK radiologists staging nasopharyngeal carcinoma with PET/CT should be aware that the current TNM-9 system may have limited prognostic value, potentially affecting treatment stratification and multidisciplinary team discussions.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Single-centre retrospective study spanning 20 years may introduce treatment era bias and limit generalisability to current UK practice.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42009870/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1007/s00330-026-12537-0" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">European radiology</div>
+      <h3>Reporting efficiency in diagnostic imaging: Can plug-and-play general-purpose large language models outperform conventional speech recognition?</h3>
+      <div class="sample-meta">de Margerie-Mellon C, Duron L, Fournier L et al. · 2026 Apr 20</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Prospective multicenter comparative study
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Does a general-purpose large language model with speech recognition improve reporting efficiency and accuracy compared to conventional speech recognition in routine radiology practice?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>LLM reduced median report generation time by 25% overall (238 vs 318 seconds, p&lt;0.01), though only 3 of 5 radiologists experienced time savings</li><li>LLM significantly reduced grammar/spelling errors (79 vs 293) and transcription errors (225 vs 445) compared to conventional speech recognition</li><li>LLM introduced new error patterns including 99 instances of non-compliance to instructions and 4 confabulations, with higher character-level changes (Levenshtein distance 43 vs 20)</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        This technology could enhance NHS radiology workflow efficiency and reduce transcription errors, though benefits vary significantly between individual radiologists&#39; working styles.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Time savings were inconsistent across radiologists, and the study introduces new types of errors that may require additional quality assurance measures.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42009869/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1007/s00330-026-12524-5" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">European radiology</div>
+      <h3>Recruitment strategies and outcomes in lung cancer screening programmes: a scoping review</h3>
+      <div class="sample-meta">Djuric O, Venturelli F, Bassi MC et al. · 2026 Apr 20</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Systematic scoping review
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        What recruitment strategies are most effective for identifying and enrolling at-risk populations in lung cancer screening programmes using low-dose CT?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Population-based programmes achieved highest screening coverage (35-40%) compared to volunteer-based (4.8%) or referral-based programmes (6.7%)</li><li>Participation rates varied widely: targeted programmes 8.4-55.9%, referral-based 30.9-92.5%, underserved populations 31-92%</li><li>No programme achieved high overall test coverage, with an inverse relationship between population reach and participation rates</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        UK radiology departments planning lung cancer screening implementation need evidence-based recruitment strategies to optimise population coverage whilst maintaining acceptable participation rates in screening programmes.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        The review identified no single recruitment strategy that achieved both high population reach and high participation rates simultaneously.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42009868/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1007/s00330-026-12525-4" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">European radiology</div>
+      <h3>Detection of calcified plaques: comparison between coronary CT angiography and thin-slice non-contrast CT with deep learning-aided image registration</h3>
+      <div class="sample-meta">Schulze K, Biavati F, Föllmer B et al. · 2026 Apr 20</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Retrospective comparative analysis
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Does coronary CT angiography miss calcified plaques that are detectable on thin-slice non-contrast CT?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>CCTA missed 37.6% (121/322) of calcified plaques detected by thin-slice NCCT, leading to misclassification of 8.9% of patients as having no plaques</li><li>Missed plaques were significantly smaller (median 3.0 vs 9.2 mm³, p&lt;0.001) and lower density (median 212.7 vs 292.7 HU, p&lt;0.001) than detected plaques</li><li>Standard calcium scoring CT detected only 44% of plaques missed by CCTA</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        This suggests UK cardiac CT services may be underestimating plaque burden when relying on CCTA alone, potentially impacting cardiovascular risk stratification and treatment decisions.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Small sample size (45 patients) from a single trial limits generalisability to routine clinical practice.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42009867/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1007/s00330-026-12501-y" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">European radiology</div>
+      <h3>Long-term outcomes of genicular artery embolization for knee osteoarthritis: 12-month efficacy and secondary outcomes from a randomized sham-controlled clinical trial</h3>
+      <div class="sample-meta">van Zadelhoff TA, van der Heijden RA, Bierma-Zeinstra SMA et al. · 2026 Apr 20</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Randomized sham-controlled clinical trial
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Is genicular artery embolization more effective than sham procedure for treating pain in mild to moderate knee osteoarthritis at 12 months?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Both GAE and sham groups showed similar pain improvement (GAE: 44.4 to 65.6; sham: 42.3 to 58.2) with no significant between-group difference (7.46 points, 95% CI: -13.63 to -28.56, p=0.25)</li><li>No significant changes in MRI-assessed synovitis in either group at any timepoint</li><li>Sustained placebo effect observed up to 12 months in both groups</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        These results challenge the efficacy of GAE for knee osteoarthritis and suggest interventional radiologists should not routinely offer this procedure, as benefits appear entirely placebo-driven.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Small sample size (58 patients total) may limit generalizability of findings.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42009866/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1007/s00330-026-12505-8" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">European radiology</div>
+      <h3>From pixels to pathology: how artificial intelligence mammographic risk scores capture tumor biology through imaging</h3>
+      <div class="sample-meta">Zhang Z, Elabeid J, Ali T et al. · 2026 Apr 21</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Retrospective cohort study
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        What clinical and pathological tumor characteristics are associated with AI-generated mammographic risk scores from the year prior to cancer detection?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>AI risk scores showed modest discrimination for predicting biopsy-confirmed cancer (AUC 0.62, 95% CI: 0.59-0.65)</li><li>Grade 3 tumors had significantly lower prior-year AI risk scores than Grade 1 tumors (p = 0.016)</li><li>Initial association between invasive lobular carcinoma and higher risk scores was mediated by tumor grade</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        AI mammographic risk assessment may detect subtle imaging features of low-grade malignancies up to one year before clinical detection, potentially informing risk stratification in NHS breast screening programmes.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Modest discriminative performance suggests limited clinical utility as a standalone risk assessment tool.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42014495/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1007/s00330-026-12536-1" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+
+    <div class="tease">
+      <p>…and <em>13 more</em> Radiology articles in that week's digest.</p>
+      <small>Subscribers get the complete brief, every Monday.</small>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA ═══ -->
+<section class="cta-section">
+  <h2>Get the Radiology digest in your inbox every Monday</h2>
+  <p>4 weeks completely free, then £20/year. Cancel any time during your trial — no charge.</p>
+  <a href="/?specialty=radiology&ref=samples#subscribe" class="cta-btn">Start your free trial — Radiology →</a>
+  <span class="cta-meta">No card needed to browse. We'll ask for payment details to start the trial.</span>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <p>&copy; 2026 The Monday Clinical Brief</p>
+  <p><a href="/">Home</a> · <a href="mailto:info@mondayclinicalbrief.co.uk">Contact</a> · <a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms</a></p>
+</footer>
+
+</body>
+</html>
