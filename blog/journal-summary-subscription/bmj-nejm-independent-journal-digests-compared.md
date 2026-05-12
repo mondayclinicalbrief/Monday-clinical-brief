@@ -26,7 +26,7 @@ If you read a journal-digest comparison article written before late 2025, severa
 - **NEJM Journal Watch is now NEJM Clinician.** The rebrand in November 2025 came with a redesigned platform, broader clinical context, and a UK price reduction to approximately **£75 per year**. The old £150–£250 figure is no longer current.
 - **UpToDate now ships an AI assistant — but not for UK individuals.** Expert AI is available to personal subscribers in the US and Canada only, with limited Enterprise Edition availability elsewhere. UK individual subscribers cannot yet use Expert AI.
 - **Free UK-focused AI tools now exist.** Heidi Evidence (February 2026) is free, partnered with NICE and BMJ Group, and built on Claude. It is not a digest, but it occupies adjacent mindshare.
-- **Foundation-model vendors are entering directly.** ChatGPT for Clinicians launched 22 April 2026 in the US. Claude for Healthcare exists. The boundary between "clinical AI assistant" and "evidence tool" is blurring.
+- **Foundation-model vendors are entering directly — but not in the UK.** ChatGPT for Clinicians launched 23 April 2026 and explicitly excludes UK and EEA users. OpenEvidence withdrew from the UK entirely on 25 April 2026. UK doctors lost both tools in the same fortnight due to AI regulatory uncertainty.
 
 The result is a more crowded but also more interesting landscape, and the price gap between premium and value options has compressed sharply.
 
@@ -94,21 +94,21 @@ Launched February 2026. Free for UK clinicians. Powered by Claude. Partnered wit
 
 OpenEvidence raised $250 million in January 2026 at a $12 billion valuation. It offers AI-powered clinical reasoning with direct access to NEJM content, plus newer features including DeepConsult (multi-step clinical reasoning) and Coding Intelligence.
 
-**The UK caveat:** OpenEvidence is **currently US-only**. UK expansion has been signalled but no launch date is confirmed. When it arrives, it will likely be free and ad-supported.
+**The UK situation:** OpenEvidence **withdrew from the UK and EU on 25 April 2026**, citing regulatory uncertainty around AI in healthcare. UK doctors who were trialling it have lost access. There is no confirmed timeline for return.
 
-**How it relates to a digest:** OpenEvidence is building a workflow platform — evidence search, documentation, coding. It is not a weekly digest. The same push-vs-pull distinction applies. The ad-supported funding model is also worth noting: every paper surfaced by an ad-supported platform exists in an environment shaped, in part, by commercial relationships. An independent reader-paid digest avoids that.
+**How it relates to a digest:** OpenEvidence was building a workflow platform — evidence search, documentation, coding. It was not a weekly digest. The same push-vs-pull distinction applies. Its withdrawal is one reason UK clinicians are actively looking for stable, UK-based alternatives.
 
-**Best for:** Currently not available in the UK. Worth watching.
+**Best for:** Not currently available in the UK.
 
 ## ChatGPT for Clinicians
 
-Launched 22 April 2026 in the US. Free for verified US physicians, NPs, PAs, and pharmacists. Features include clinical search with citations, reusable workflow skills, deep medical research, documentation assistance, and CME credits.
+Launched 23 April 2026 in the US. Free for verified US physicians, NPs, PAs, and pharmacists. Features include clinical search with citations, reusable workflow skills, deep medical research, documentation assistance, and CME credits.
 
-**The UK caveat:** ChatGPT for Clinicians is **US-only** at launch. UK availability has not been announced.
+**The UK situation:** ChatGPT for Clinicians **explicitly excludes UK and EEA users**. UK doctors navigating to the product receive a "not available in your region" message. No UK launch date has been announced. The exclusion reflects the same regulatory uncertainty that drove OpenEvidence's withdrawal — the EU AI Act and UK AI framework create compliance complexity that US vendors are sidestepping for now.
 
 **How it relates to a digest:** A general-purpose clinical AI assistant could in principle summarise journals on demand. In practice, the value of a digest is editorial curation — "of the 47 papers published in your specialty this week, these are the ones worth reading" — not retrieval. A general-purpose tool retrieves; it does not curate on a calendar.
 
-**Best for:** Powerful, but not yet available in the UK and not built for current awareness.
+**Best for:** Not available in the UK. When or if it arrives, it will be a Q&A tool, not a current-awareness digest.
 
 ## Independent UK Digest Services (MCB and others)
 
@@ -136,12 +136,12 @@ Independent digests are the growing third option. Services like The Monday Clini
 | | **BMJ** | **NEJM Clinician** | **UpToDate (+Expert AI)** | **Heidi Evidence** | **OpenEvidence** | **ChatGPT for Clinicians** | **MCB / Independent** |
 |---|---|---|---|---|---|---|---|
 | **What it is** | Summaries + commentary | Expert journal commentary | Reference + AI lookup | Evidence lookup | AI clinical reasoning | AI clinical assistant | Weekly journal digest |
-| **UK price** | £100–£400 (bundle) | ~£75/year per track | £400+ / institutional | Free (base tier) | Free, US only | Free, US only | £20–£100 |
+| **UK price** | £100–£400 (bundle) | ~£75/year per track | ~£440 / institutional | Free (base tier) | Withdrew from UK (Apr 2026) | Excludes UK/EEA | £20/year |
 | **Delivery** | Mixed (push + pull) | Push (weekly) | Pull | Pull | Pull | Pull | Push (Monday email) |
 | **Coverage model** | Mostly BMJ family | Expert picks across literature | Reference, not digest | On-demand lookup | On-demand lookup | On-demand lookup | Top 5 journals per specialty (complete) |
 | **UK guidelines (NICE)** | Strong | Limited | US-weighted | NICE partnership | US-focused | US-focused | Built in |
 | **CPD logging** | Strong (BMJ Learning) | CME (US-focused) | No | No | No | CME (US) | UK revalidation-focused |
-| **Available in UK now** | Yes | Yes | Yes (Expert AI: no) | Yes | No | No | Yes |
+| **Available in UK now** | Yes | Yes | Yes (Expert AI: no) | Yes | No — withdrew Apr 2026 | No — excludes UK/EEA | Yes |
 
 ## Which to Pick
 

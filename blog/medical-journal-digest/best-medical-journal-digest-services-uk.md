@@ -56,7 +56,7 @@ Pricing ranges from free to several hundred pounds annually. Consider both the d
 - No formal CPD credit structure yet, though this is being developed
 - Subscriber base smaller than established players
 
-**Pricing:** Free trial; from £60/year for individuals
+**Pricing:** Free trial; from £20/year for individuals
 
 **CPD Support:** Structured learning summaries being introduced; intended for appraisal portfolios
 
@@ -125,13 +125,13 @@ Pricing ranges from free to several hundred pounds annually. Consider both the d
 - Can be overwhelming in depth; overkill for quick updates
 - Interface not optimised for mobile or quick reads
 
-**Pricing:** From £600+/year for individual access (widely available free via NHS trusts)
+**Pricing:** From £440/year for individual access (widely available free via NHS trusts). Note: UpToDate Pro Plus AI — the generative AI layer — is currently US and Canada only; UK individual subscribers do not have access.
 
 **CPD Support:** Limited in formal CPD integration
 
 ---
 
-### NEJM Journal Watch
+### NEJM Clinician
 
 **What is it?** A curated daily digest of significant articles from New England Journal of Medicine and other major journals, with commentary by specialist physicians.
 
@@ -148,7 +148,7 @@ Pricing ranges from free to several hundred pounds annually. Consider both the d
 - Relatively narrow coverage; you'll miss important non-NEJM publications
 - Subscription can feel expensive for limited breadth
 
-**Pricing:** From £200–250/year
+**Pricing:** Approximately £75/year per specialty track (rebranded from NEJM Journal Watch in November 2025)
 
 **CPD Support:** Minimal; not designed as a CPD tool
 
@@ -181,11 +181,11 @@ Pricing ranges from free to several hundred pounds annually. Consider both the d
 
 | Service | Journals Covered | Frequency | CPD Credits | Price |
 |---------|-----------------|-----------|------------|-------|
-| **The Monday Clinical Brief** | 50+ major journals | Daily | Being developed | From £60/year |
+| **The Monday Clinical Brief** | 50+ major journals | Weekly | Being developed | From £20/year |
 | **BMJ Best Practice** | BMJ journals + integrated guidelines | Daily updates | Yes | £200–500/year |
 | **DynaMed** | 500+ journals (summarised) | Continuous updates | Limited | From £150/year |
 | **UpToDate** | 500+ journals (summarised) | Continuous updates | Limited | From £600/year |
-| **NEJM Journal Watch** | Major journals (primarily NEJM) | Daily | Minimal | From £200/year |
+| **NEJM Clinician** | Major journals (expert picks) | Weekly | Minimal | ~£75/year per specialty |
 | **Evidence Alerts** | High-quality evidence (RCTs, reviews) | 2–3 times/week | Minimal | Free–£50/year |
 
 ## How to Choose the Right Service for You
@@ -194,7 +194,7 @@ Pricing ranges from free to several hundred pounds annually. Consider both the d
 
 **For NHS consultants:** Likely you'll have institutional access to UpToDate or BMJ Best Practice. For personal, commute-friendly reading, The Monday Clinical Brief adds value without duplication.
 
-**For specialty practice:** Consider NEJM Journal Watch if your specialty is well-covered; otherwise, combination approach (your trust's institutional access + a curated daily digest) works best.
+**For specialty practice:** Consider NEJM Clinician if your specialty is well-covered; otherwise, combination approach (your trust's institutional access + a curated daily digest) works best.
 
 **For CPD and appraisal:** BMJ Best Practice remains strongest for formal CPD documentation; MCB is developing this capability for UK revalidation workflows.
 
