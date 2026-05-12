@@ -293,10 +293,18 @@ exports.handler = async (event) => {
     return { statusCode: 200, body: "No email — skipped" };
   }
 
-  // Extract specialty slug from client_reference_id
-  // client_reference_id format: "cardiology" or "extra-cardiology"
+  // Extract specialty slug(s) from client_reference_id
+  // Formats: "cardiology", "extra-cardiology", or "cardiology,neurology,palliative-care"
   const ref = session.client_reference_id || "";
-  const specialtySlug = ref.startsWith("extra-") ? ref.replace("extra-", "") : ref;
+  let specialtySlugs;
+  if (ref.includes(",")) {
+    // Multi-specialty signup: comma-separated list (primary first)
+    specialtySlugs = ref.split(",").map(s => s.trim()).filter(Boolean);
+  } else {
+    const slug = ref.startsWith("extra-") ? ref.replace("extra-", "") : ref;
+    specialtySlugs = slug ? [slug] : [];
+  }
+  const specialtySlug = specialtySlugs[0] || "";
 
   if (!specialtySlug) {
     console.error("No specialty slug in client_reference_id:", ref);
@@ -307,8 +315,42 @@ exports.handler = async (event) => {
   // FAF2026 coupon = £2 first year; standard trial = £20/year
   let price = DEFAULT_PRICE;
   try {
+    // 1. Check session.discount (included in webhook payload)
+    const couponCodes = [];
+    if (session.discount?.coupon) {
+      const c = session.discount.coupon;
+      if (c.id) couponCodes.push(c.id);
+      if (c.name) couponCodes.push(c.name);
+    }
+
+    // 2. Also check total_details.breakdown.discounts (may be present if expanded)
     const discounts = session.total_details?.breakdown?.discounts || [];
-    const couponCodes = discounts.map(d => d.discount?.coupon?.id || d.discount?.coupon?.name || "").filter(Boolean);
+    for (const d of discounts) {
+      const id = d.discount?.coupon?.id || d.discount?.coupon?.name || "";
+      if (id) couponCodes.push(id);
+    }
+
+    // 3. If still empty, retrieve the session from Stripe with expanded fields
+    if (couponCodes.length === 0) {
+      try {
+        const fullSession = await stripe.checkout.sessions.retrieve(session.id, {
+          expand: ["total_details.breakdown", "discounts"],
+        });
+        if (fullSession.discount?.coupon) {
+          const c = fullSession.discount.coupon;
+          if (c.id) couponCodes.push(c.id);
+          if (c.name) couponCodes.push(c.name);
+        }
+        const expandedDiscounts = fullSession.total_details?.breakdown?.discounts || [];
+        for (const d of expandedDiscounts) {
+          const id = d.discount?.coupon?.id || d.discount?.coupon?.name || "";
+          if (id) couponCodes.push(id);
+        }
+      } catch (retrieveErr) {
+        console.log("Could not retrieve expanded session:", retrieveErr.message);
+      }
+    }
+
     console.log("Coupon codes detected:", couponCodes);
     if (couponCodes.some(c => c.toUpperCase().includes("FAF2026"))) {
       price = "£2";
@@ -316,14 +358,20 @@ exports.handler = async (event) => {
       price = formatPrice(session.amount_total);
     }
   } catch (e) {
-    console.log("Could not parse discounts, using default price");
+    console.log("Could not parse discounts, using default price:", e.message);
+  }
+
+  // For multi-specialty signups, calculate total price if not discounted
+  if (specialtySlugs.length > 1 && price === DEFAULT_PRICE) {
+    const totalPounds = 20 + ((specialtySlugs.length - 1) * 5);
+    price = `£${totalPounds}`;
   }
 
   try {
     await sendWelcomeEmail(email, specialtySlug, price);
     return {
       statusCode: 200,
-      body: JSON.stringify({ ok: true, email, specialtySlug, price }),
+      body: JSON.stringify({ ok: true, email, specialties: specialtySlugs, price }),
     };
   } catch (err) {
     console.error("Failed to send welcome email:", err);

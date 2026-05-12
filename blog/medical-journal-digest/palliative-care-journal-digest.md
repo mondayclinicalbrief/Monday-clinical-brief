@@ -4,17 +4,19 @@ title: "Palliative Care Journal Digest"
 seoTitle: "Palliative Care Journal Digest for NHS Clinicians | The Monday Clinical Brief"
 metaDescription: "Stay current with palliative care evidence — the five most important papers from your specialty, every Monday. Written by a Consultant in Palliative Medicine, NHS Wales."
 description: "Five peer-reviewed palliative care papers, every Monday. Plain-language summaries, written for NHS clinicians by a serving consultant in the specialty."
-permalink: /specialty/palliative-care/
+date: 2026-05-11
+cluster: "Medical Journal Digest"
+schemaType: "Article"
+pillar: false
 author: "Tim Hamilton"
 authorBio: "Consultant in Palliative Medicine, Aneurin Bevan University Health Board (ABUHB), NHS Wales. Founder, The Monday Clinical Brief."
-schemaType: "Article"
 faqs:
   - question: "What palliative care journals does The Monday Clinical Brief cover?"
     answer: "Each week we cover the top-impact palliative care journals including BMJ Supportive & Palliative Care, Journal of Palliative Medicine, Supportive Care in Cancer, Palliative Medicine, and the Journal of Pain and Symptom Management. Papers are selected for clinical relevance to NHS practice."
   - question: "Is The Monday Clinical Brief written by a palliative care clinician?"
     answer: "Yes. The Monday Clinical Brief was founded by Tim Hamilton, a Consultant in Palliative Medicine at Aneurin Bevan University Health Board (ABUHB), NHS Wales. The palliative care digest is curated with direct specialty experience."
   - question: "How much does the palliative care digest cost?"
-    answer: "There is a four-week free trial. After the trial, the subscription is £20 per year. Payment is taken via Stripe at the point of sign-up — you will need to enter your card details to start the trial."
+    answer: "There is a four-week free trial. After the trial, the subscription is £20 per year."
   - question: "Can I use The Monday Clinical Brief for NHS revalidation and CPD?"
     answer: "Yes. Each issue is formatted to support CPD documentation for UK revalidation. Summaries include clinical relevance prompts designed to support reflective practice entries."
 ---

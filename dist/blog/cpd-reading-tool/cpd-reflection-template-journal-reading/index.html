@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CPD Reflection Template for Journal Reading (Free, UK) | MCB — The Monday Clinical Brief</title>
+<meta name="description" content="A free CPD reflection template for UK doctors, designed for journal reading. Fill-in fields, worked examples, and guidance on what appraisers want to see.">
+<link rel="canonical" href="https://mondayclinicalbrief.co.uk/blog/cpd-reading-tool/cpd-reflection-template-journal-reading/">
+
+
+<!-- Open Graph -->
+<meta property="og:title" content="CPD Reflection Template for Journal Reading (Free, UK) | MCB">
+<meta property="og:description" content="A free CPD reflection template for UK doctors, designed for journal reading. Fill-in fields, worked examples, and guidance on what appraisers want to see.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://mondayclinicalbrief.co.uk/blog/cpd-reading-tool/cpd-reflection-template-journal-reading/">
+
+<meta property="og:site_name" content="The Monday Clinical Brief">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CPD Reflection Template for Journal Reading (Free, UK) | MCB">
+<meta name="twitter:description" content="A free CPD reflection template for UK doctors, designed for journal reading. Fill-in fields, worked examples, and guidance on what appraisers want to see.">
+
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --charcoal: #1c1c1c;
+    --cream: #f7f5f0;
+    --warm-white: #fdfcf9;
+    --sage: #5a7a6a;
+    --sage-light: #e8efeb;
+    --sage-deep: #3d5a4c;
+    --gold: #c4994c;
+    --gold-light: #f5edd8;
+    --text: #3a3a38;
+    --text-muted: #7a7a76;
+    --border: #e2dfd8;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Figtree', sans-serif; color: var(--text); background: var(--warm-white); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+
+  /* ── NAV ── */
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; background: rgba(247,245,240,0.9); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(226,223,216,0.5); }
+  .nav-brand { font-family: 'Instrument Serif', serif; font-size: 1.8rem; font-weight: 700; color: var(--charcoal); text-decoration: none; letter-spacing: -0.02em; }
+  .nav-links { display: flex; gap: 1.5rem; align-items: center; }
+  .nav-links a { font-size: 0.85rem; color: var(--text-muted); text-decoration: none; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--sage-deep); }
+  .nav-cta { background: var(--sage-deep); color: white !important; padding: 0.5rem 1.25rem; border-radius: 40px; font-size: 0.85rem; }
+  .nav-cta:hover { background: var(--charcoal); }
+
+  /* ── BREADCRUMB ── */
+  .breadcrumb { padding: 6rem 2rem 0; max-width: 760px; margin: 0 auto; }
+  .breadcrumb ol { list-style: none; display: flex; flex-wrap: wrap; gap: 0.25rem; font-size: 0.8rem; color: var(--text-muted); }
+  .breadcrumb ol li::after { content: '/'; margin-left: 0.4rem; opacity: 0.4; }
+  .breadcrumb ol li:last-child::after { content: ''; }
+  .breadcrumb a { color: var(--sage); text-decoration: none; }
+  .breadcrumb a:hover { text-decoration: underline; }
+
+  /* ── ARTICLE ── */
+  .article-header { max-width: 760px; margin: 0 auto; padding: 2rem 2rem 0; }
+  .article-cluster { display: inline-block; background: var(--sage-light); color: var(--sage-deep); padding: 0.2rem 0.7rem; border-radius: 4px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 1rem; text-decoration: none; }
+  .article-cluster:hover { background: var(--sage); color: white; }
+  .article-header h1 { font-family: 'Instrument Serif', serif; font-size: clamp(2rem, 4.5vw, 2.8rem); font-weight: 400; color: var(--charcoal); line-height: 1.2; letter-spacing: -0.02em; margin-bottom: 1rem; }
+  .article-meta { font-size: 0.85rem; color: var(--text-muted); display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  .article-meta time { font-weight: 500; }
+
+  /* ── CONTENT ── */
+  .article-content { max-width: 760px; margin: 0 auto; padding: 2.5rem 2rem 4rem; }
+  .article-content h2 { font-family: 'Instrument Serif', serif; font-size: 1.6rem; font-weight: 400; color: var(--charcoal); line-height: 1.3; margin: 2.5rem 0 1rem; }
+  .article-content h3 { font-size: 1.15rem; font-weight: 600; color: var(--charcoal); margin: 2rem 0 0.75rem; }
+  .article-content p { margin-bottom: 1.25rem; font-size: 1.02rem; }
+  .article-content ul, .article-content ol { margin-bottom: 1.25rem; padding-left: 1.5rem; }
+  .article-content li { margin-bottom: 0.4rem; font-size: 1.02rem; }
+  .article-content a { color: var(--sage-deep); text-decoration: underline; text-underline-offset: 2px; }
+  .article-content a:hover { color: var(--charcoal); }
+  .article-content blockquote { border-left: 3px solid var(--sage); padding: 1rem 1.5rem; margin: 1.5rem 0; background: var(--sage-light); border-radius: 0 6px 6px 0; font-style: italic; color: var(--text-muted); }
+  .article-content img { max-width: 100%; height: auto; border-radius: 8px; margin: 1.5rem 0; }
+  .article-content table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.92rem; }
+  .article-content th { background: var(--sage-light); color: var(--sage-deep); font-weight: 600; text-align: left; padding: 0.75rem 1rem; border-bottom: 2px solid var(--sage); }
+  .article-content td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); }
+  .article-content tr:hover td { background: var(--cream); }
+  .article-content code { font-size: 0.9em; background: var(--cream); padding: 0.15em 0.4em; border-radius: 3px; }
+  .article-content pre { background: var(--charcoal); color: var(--cream); padding: 1.25rem; border-radius: 8px; overflow-x: auto; margin: 1.5rem 0; }
+  .article-content pre code { background: none; padding: 0; color: inherit; }
+
+  /* ── CTA BOX ── */
+  .cta-box { background: var(--sage-light); border: 1px solid var(--sage); border-radius: 8px; padding: 1.5rem 2rem; margin: 2rem 0; text-align: center; }
+  .cta-box h3 { font-family: 'Instrument Serif', serif; font-size: 1.3rem; font-weight: 400; color: var(--sage-deep); margin-bottom: 0.5rem; }
+  .cta-box p { color: var(--text-muted); margin-bottom: 1rem; font-size: 0.95rem; }
+  .cta-box .btn-primary { display: inline-block; background: var(--sage-deep); color: white; text-decoration: none; padding: 0.75rem 2rem; border-radius: 60px; font-family: 'Figtree', sans-serif; font-size: 0.95rem; font-weight: 600; transition: all 0.3s ease; }
+  .cta-box .btn-primary:hover { background: var(--charcoal); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
+
+  /* ── FAQ SECTION ── */
+  .faq-section { margin: 3rem 0 2rem; }
+  .faq-section h2 { font-family: 'Instrument Serif', serif; font-size: 1.6rem; color: var(--charcoal); margin-bottom: 1.5rem; }
+  .faq-item { border-bottom: 1px solid var(--border); padding: 1.25rem 0; }
+  .faq-item summary { font-weight: 600; font-size: 1rem; color: var(--charcoal); cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+  .faq-item summary::after { content: '+'; font-size: 1.3rem; color: var(--sage); transition: transform 0.2s; }
+  .faq-item[open] summary::after { content: '−'; }
+  .faq-item p { margin-top: 0.75rem; color: var(--text-muted); font-size: 0.95rem; }
+
+  /* ── RELATED POSTS ── */
+  .related-posts { background: var(--cream); border-radius: 8px; padding: 2rem; margin: 3rem 0; }
+  .related-posts h3 { font-family: 'Instrument Serif', serif; font-size: 1.3rem; color: var(--charcoal); margin-bottom: 1rem; }
+  .related-posts ul { list-style: none; padding: 0; }
+  .related-posts li { padding: 0.5rem 0; border-bottom: 1px solid var(--border); }
+  .related-posts li:last-child { border-bottom: none; }
+  .related-posts a { color: var(--sage-deep); text-decoration: none; font-weight: 500; }
+  .related-posts a:hover { text-decoration: underline; }
+
+  /* ── AUTHOR BOX ── */
+  .author-box { display: flex; gap: 1.5rem; align-items: center; background: var(--cream); border-radius: 8px; padding: 1.5rem; margin: 3rem 0; }
+  .author-avatar { width: 64px; height: 64px; background: var(--sage-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Instrument Serif', serif; font-size: 1.5rem; color: var(--sage); flex-shrink: 0; }
+  .author-info h4 { font-size: 0.95rem; color: var(--charcoal); margin-bottom: 0.25rem; }
+  .author-info p { font-size: 0.85rem; color: var(--text-muted); margin: 0; }
+
+  /* ── FOOTER ── */
+  footer { padding: 3rem 2rem; text-align: center; border-top: 1px solid var(--border); }
+  footer p { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+  footer a { color: var(--sage); text-decoration: none; }
+
+  @media (max-width: 640px) {
+    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; }
+    .nav-links a:not(.nav-cta) { display: none; }
+    body { padding-bottom: 60px; }
+    .breadcrumb { padding-top: 2rem; }
+    .article-header { padding-top: 1rem; }
+    .article-header h1 { font-size: 1.8rem; }
+    .article-content { padding: 1.5rem 1.5rem 3rem; }
+    .author-box { flex-direction: column; text-align: center; }
+  }
+</style>
+
+<!-- Schema.org Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "CPD Reflection Template for Journal Reading (Free, UK) | MCB",
+  "description": "A free CPD reflection template for UK doctors, designed for journal reading. Fill-in fields, worked examples, and guidance on what appraisers want to see.",
+  "url": "https://mondayclinicalbrief.co.uk/blog/cpd-reading-tool/cpd-reflection-template-journal-reading/",
+  "datePublished": "2026-05-26T00:00:00.000Z",
+  
+  "author": {
+    "@type": "Organization",
+    "name": "The Monday Clinical Brief",
+    "url": "https://mondayclinicalbrief.co.uk"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Monday Clinical Brief",
+    "url": "https://mondayclinicalbrief.co.uk"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://mondayclinicalbrief.co.uk/blog/cpd-reading-tool/cpd-reflection-template-journal-reading/"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://mondayclinicalbrief.co.uk/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://mondayclinicalbrief.co.uk/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "CPD Reading Tool",
+      "item": "https://mondayclinicalbrief.co.uk/blog/cpd-reading-tool/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "CPD Reflection Template for Journal Reading"
+    }
+  ]
+}
+</script>
+
+
+
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav>
+  <a href="/" class="nav-brand">The Monday Clinical Brief</a>
+  <div class="nav-links">
+    <a href="/blog/">Blog</a>
+    <a href="/#how">How it works</a>
+    <a href="/#subscribe" class="nav-cta">Start free trial</a>
+  </div>
+</nav>
+
+<!-- ═══ BREADCRUMB ═══ -->
+<div class="breadcrumb" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="/">Home</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/blog/cpd-reading-tool/">CPD Reading Tool</a></li>
+    <li>CPD Reflection Template for Journal Reading</li>
+  </ol>
+</div>
+
+<!-- ═══ ARTICLE HEADER ═══ -->
+<header class="article-header">
+  
+  <a href="/blog/cpd-reading-tool/" class="article-cluster">CPD Reading Tool</a>
+  
+  <h1>CPD Reflection Template for Journal Reading</h1>
+  <div class="article-meta">
+    <time datetime="2026-05-26T00:00:00.000Z">26 May 2026</time>
+    <span>5 min read</span>
+    <span>By The Monday Clinical Brief</span>
+  </div>
+</header>
+
+<!-- ═══ ARTICLE CONTENT ═══ -->
+<article class="article-content">
+  <h1>CPD Reflection Template for Journal Reading</h1>
+<p>Reflection is the part of CPD most doctors avoid. Not because they cannot do it, but because the templates they are given are bloated, repetitive, and designed by committees who have never been through an appraisal themselves.</p>
+<p>This guide gives you a lean reflection template built around what the GMC and UK Royal Colleges actually want to see. You can copy it into any system — RCGP Toolkit, SARD, PReP, a spreadsheet, a Word document.</p>
+<h2 id="what-makes-reflection-%22good-enough%22" tabindex="-1">What Makes Reflection &quot;Good Enough&quot;</h2>
+<p>Appraisers and Responsible Officers look for three signals in written reflection:</p>
+<ul>
+<li><strong>Specificity.</strong> Generic reflection (&quot;this was useful&quot;) does not count. Name the learning.</li>
+<li><strong>Application.</strong> What will you do, or not do, as a result? A clinical decision, a behaviour change, a conversation with a colleague.</li>
+<li><strong>Honesty.</strong> Reflection that says &quot;this confirmed my current practice&quot; is acceptable and often more credible than forced change.</li>
+</ul>
+<p>You do not need to write an essay. Two short paragraphs, anchored to a specific paper, is enough.</p>
+<h2 id="the-template" tabindex="-1">The Template</h2>
+<p>Copy this block into your CPD system. Fill in each field as you read.</p>
+<hr>
+<p><strong>Activity type:</strong> Journal reading</p>
+<p><strong>Date of learning:</strong> [date you read it]</p>
+<p><strong>Source:</strong> [Journal title, issue, authors, paper title, DOI or URL]</p>
+<p><strong>Time spent (minutes):</strong> [honest figure, including time reading summary + time on the full paper if relevant]</p>
+<p><strong>Estimated CPD credits claimed:</strong> [follow your Royal College rate — typically 0.5 to 1 credit per hour]</p>
+<hr>
+<p><strong>1. What was this paper about? (2–3 sentences)</strong>
+A brief description — the clinical question, the population, the intervention or finding. Do not summarise the methods in detail unless it changes the interpretation.</p>
+<p><strong>2. What did I learn? (2–4 sentences)</strong>
+Name the learning directly. &quot;I learned that...&quot; or &quot;This confirmed that...&quot; Include the finding and the context. If the paper is part of an evolving evidence base, say where it sits in that picture.</p>
+<p><strong>3. How does this affect my practice? (2–4 sentences)</strong>
+Be specific. Name a patient group, a decision, a threshold, a conversation. Include what you will not change, if nothing. &quot;I am not changing my approach because...&quot; is a valid reflection when the evidence does not support a change.</p>
+<p><strong>4. Will I follow up or share this? (1–2 sentences)</strong>
+Do you need to look at a guideline, bring this to a team meeting, or discuss with a specific colleague? Say so. This closes the reflection loop.</p>
+<hr>
+<h2 id="a-worked-example" tabindex="-1">A Worked Example</h2>
+<p>Here is the template filled in for a palliative care registrar who has read a digest summary on oral morphine in end-of-life dyspnoea.</p>
+<hr>
+<p><strong>Activity type:</strong> Journal reading
+<strong>Date of learning:</strong> 28 April 2026
+<strong>Source:</strong> <em>JAMA Internal Medicine</em>, 24 April 2026. Smith et al. &quot;Low-dose morphine for refractory dyspnoea in advanced cancer: a pragmatic RCT.&quot; DOI: 10.1001/example.
+<strong>Time spent (minutes):</strong> 25 (digest summary + abstract + selected results)
+<strong>Estimated CPD credits claimed:</strong> 0.5</p>
+<p><strong>What was this paper about?</strong>
+A multicentre RCT of 320 patients with advanced cancer and refractory dyspnoea comparing low-dose oral morphine (2.5 mg four-hourly as required) against placebo over 14 days. Primary outcome was patient-rated breathlessness.</p>
+<p><strong>What did I learn?</strong>
+Low-dose morphine produced a clinically meaningful reduction in breathlessness scores compared with placebo, without an increase in respiratory depression or serious adverse events. This adds prospective data to a field that had relied heavily on smaller observational studies and existing guidance from the Association for Palliative Medicine.</p>
+<p><strong>How does this affect my practice?</strong>
+I will be more confident starting low-dose oral morphine for refractory dyspnoea in my advanced cancer patients, particularly those who have previously declined a trial on concern about respiratory effects. I will also update the ward induction notes I give to F1s rotating through, which currently underplay the evidence base for this indication.</p>
+<p><strong>Will I follow up or share this?</strong>
+Yes — I will bring the paper to next Wednesday's MDT for brief discussion, and send the digest link to the two F1s currently on the team.</p>
+<hr>
+<p>That entry would take under six minutes to write. It passes all three GMC requirements. It is specific, applied, and honest.</p>
+<h2 id="common-mistakes-to-avoid" tabindex="-1">Common Mistakes to Avoid</h2>
+<p><strong>Writing the same reflection twice.</strong> If two papers produce the same reflection, either you are not reading carefully or you are padding. One of them does not need to be logged.</p>
+<p><strong>Logging only landmark papers.</strong> Your reading log should show the weekly rhythm of keeping current, not a highlight reel of the year's top trials. Small incremental papers are exactly the evidence of steady CPD that appraisers value.</p>
+<p><strong>Confusing reflection with critique.</strong> Appraisers do not need a methods critique. They need to know what you took from the paper for your practice.</p>
+<p><strong>Leaving fields blank because &quot;nothing changed.&quot;</strong> If nothing changed, write why nothing changed. That is reflection.</p>
+<h2 id="how-to-use-the-template-weekly" tabindex="-1">How to Use the Template Weekly</h2>
+<p>The simplest workflow:</p>
+<ol>
+<li>Open your reading slot — fifteen to twenty minutes, same time each week.</li>
+<li>Read the digest or journal.</li>
+<li>Pick one or two papers worth reflecting on. Not all of them.</li>
+<li>Open the template. Fill it in immediately. Five minutes per entry.</li>
+<li>Save or sync to your appraisal system.</li>
+<li>Close.</li>
+</ol>
+<p>Over a year, this produces 50+ log entries. No padding, no cramming the weekend before your appraisal.</p>
+<h2 id="how-mcb-aligns" tabindex="-1">How MCB Aligns</h2>
+<p>Every MCB digest is designed so that each paper summary includes the information you need for this template — citation, DOI, a short description of the clinical question, and a reflection prompt.</p>
+<p>You can export a digest and paste entries directly into your CPD system. We do not write the reflection for you — that part has to be yours — but we make the scaffolding almost invisible.</p>
+<p><a href="/#subscribe">Start your four-week trial</a> and build a weekly reading and reflection habit that writes your CPD for you.</p>
+
+
+  
+
+  <!-- CTA Box -->
+  <div class="cta-box">
+    <h3>Stay on top of the evidence</h3>
+    <p>Weekly journal digests for 31 medical specialties. Structured summaries, every Monday.</p>
+    <a href="/#subscribe" class="btn-primary">Start your free trial →</a>
+  </div>
+</article>
+
+<!-- ═══ AUTHOR ═══ -->
+
+<div style="max-width: 760px; margin: 0 auto; padding: 0 2rem;">
+  <div class="author-box">
+    <div class="author-avatar">MCB</div>
+    <div class="author-info">
+      <h4>The Monday Clinical Brief</h4>
+      <p>AI-powered weekly journal digests for UK clinicians across 31 medical specialties.</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <p>&copy; 2025 The Monday Clinical Brief. All rights reserved.</p>
+  <p><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/blog/">Blog</a></p>
+</footer>
+
+</body>
+</html>

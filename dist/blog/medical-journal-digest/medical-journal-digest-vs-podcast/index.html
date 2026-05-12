@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Medical Journal Digest vs Podcast: Which Is Better for CPD? | MCB — The Monday Clinical Brief</title>
+<meta name="description" content="Should UK doctors learn from journal digests or medical podcasts? A practical comparison of retention, CPD value, and time efficiency for busy clinicians.">
+<link rel="canonical" href="https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/medical-journal-digest-vs-podcast/">
+
+
+<!-- Open Graph -->
+<meta property="og:title" content="Medical Journal Digest vs Podcast: Which Is Better for CPD? | MCB">
+<meta property="og:description" content="Should UK doctors learn from journal digests or medical podcasts? A practical comparison of retention, CPD value, and time efficiency for busy clinicians.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/medical-journal-digest-vs-podcast/">
+
+<meta property="og:site_name" content="The Monday Clinical Brief">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Medical Journal Digest vs Podcast: Which Is Better for CPD? | MCB">
+<meta name="twitter:description" content="Should UK doctors learn from journal digests or medical podcasts? A practical comparison of retention, CPD value, and time efficiency for busy clinicians.">
+
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --charcoal: #1c1c1c;
+    --cream: #f7f5f0;
+    --warm-white: #fdfcf9;
+    --sage: #5a7a6a;
+    --sage-light: #e8efeb;
+    --sage-deep: #3d5a4c;
+    --gold: #c4994c;
+    --gold-light: #f5edd8;
+    --text: #3a3a38;
+    --text-muted: #7a7a76;
+    --border: #e2dfd8;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Figtree', sans-serif; color: var(--text); background: var(--warm-white); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+
+  /* ── NAV ── */
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; background: rgba(247,245,240,0.9); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(226,223,216,0.5); }
+  .nav-brand { font-family: 'Instrument Serif', serif; font-size: 1.8rem; font-weight: 700; color: var(--charcoal); text-decoration: none; letter-spacing: -0.02em; }
+  .nav-links { display: flex; gap: 1.5rem; align-items: center; }
+  .nav-links a { font-size: 0.85rem; color: var(--text-muted); text-decoration: none; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--sage-deep); }
+  .nav-cta { background: var(--sage-deep); color: white !important; padding: 0.5rem 1.25rem; border-radius: 40px; font-size: 0.85rem; }
+  .nav-cta:hover { background: var(--charcoal); }
+
+  /* ── BREADCRUMB ── */
+  .breadcrumb { padding: 6rem 2rem 0; max-width: 760px; margin: 0 auto; }
+  .breadcrumb ol { list-style: none; display: flex; flex-wrap: wrap; gap: 0.25rem; font-size: 0.8rem; color: var(--text-muted); }
+  .breadcrumb ol li::after { content: '/'; margin-left: 0.4rem; opacity: 0.4; }
+  .breadcrumb ol li:last-child::after { content: ''; }
+  .breadcrumb a { color: var(--sage); text-decoration: none; }
+  .breadcrumb a:hover { text-decoration: underline; }
+
+  /* ── ARTICLE ── */
+  .article-header { max-width: 760px; margin: 0 auto; padding: 2rem 2rem 0; }
+  .article-cluster { display: inline-block; background: var(--sage-light); color: var(--sage-deep); padding: 0.2rem 0.7rem; border-radius: 4px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 1rem; text-decoration: none; }
+  .article-cluster:hover { background: var(--sage); color: white; }
+  .article-header h1 { font-family: 'Instrument Serif', serif; font-size: clamp(2rem, 4.5vw, 2.8rem); font-weight: 400; color: var(--charcoal); line-height: 1.2; letter-spacing: -0.02em; margin-bottom: 1rem; }
+  .article-meta { font-size: 0.85rem; color: var(--text-muted); display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  .article-meta time { font-weight: 500; }
+
+  /* ── CONTENT ── */
+  .article-content { max-width: 760px; margin: 0 auto; padding: 2.5rem 2rem 4rem; }
+  .article-content h2 { font-family: 'Instrument Serif', serif; font-size: 1.6rem; font-weight: 400; color: var(--charcoal); line-height: 1.3; margin: 2.5rem 0 1rem; }
+  .article-content h3 { font-size: 1.15rem; font-weight: 600; color: var(--charcoal); margin: 2rem 0 0.75rem; }
+  .article-content p { margin-bottom: 1.25rem; font-size: 1.02rem; }
+  .article-content ul, .article-content ol { margin-bottom: 1.25rem; padding-left: 1.5rem; }
+  .article-content li { margin-bottom: 0.4rem; font-size: 1.02rem; }
+  .article-content a { color: var(--sage-deep); text-decoration: underline; text-underline-offset: 2px; }
+  .article-content a:hover { color: var(--charcoal); }
+  .article-content blockquote { border-left: 3px solid var(--sage); padding: 1rem 1.5rem; margin: 1.5rem 0; background: var(--sage-light); border-radius: 0 6px 6px 0; font-style: italic; color: var(--text-muted); }
+  .article-content img { max-width: 100%; height: auto; border-radius: 8px; margin: 1.5rem 0; }
+  .article-content table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.92rem; }
+  .article-content th { background: var(--sage-light); color: var(--sage-deep); font-weight: 600; text-align: left; padding: 0.75rem 1rem; border-bottom: 2px solid var(--sage); }
+  .article-content td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); }
+  .article-content tr:hover td { background: var(--cream); }
+  .article-content code { font-size: 0.9em; background: var(--cream); padding: 0.15em 0.4em; border-radius: 3px; }
+  .article-content pre { background: var(--charcoal); color: var(--cream); padding: 1.25rem; border-radius: 8px; overflow-x: auto; margin: 1.5rem 0; }
+  .article-content pre code { background: none; padding: 0; color: inherit; }
+
+  /* ── CTA BOX ── */
+  .cta-box { background: var(--sage-light); border: 1px solid var(--sage); border-radius: 8px; padding: 1.5rem 2rem; margin: 2rem 0; text-align: center; }
+  .cta-box h3 { font-family: 'Instrument Serif', serif; font-size: 1.3rem; font-weight: 400; color: var(--sage-deep); margin-bottom: 0.5rem; }
+  .cta-box p { color: var(--text-muted); margin-bottom: 1rem; font-size: 0.95rem; }
+  .cta-box .btn-primary { display: inline-block; background: var(--sage-deep); color: white; text-decoration: none; padding: 0.75rem 2rem; border-radius: 60px; font-family: 'Figtree', sans-serif; font-size: 0.95rem; font-weight: 600; transition: all 0.3s ease; }
+  .cta-box .btn-primary:hover { background: var(--charcoal); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
+
+  /* ── FAQ SECTION ── */
+  .faq-section { margin: 3rem 0 2rem; }
+  .faq-section h2 { font-family: 'Instrument Serif', serif; font-size: 1.6rem; color: var(--charcoal); margin-bottom: 1.5rem; }
+  .faq-item { border-bottom: 1px solid var(--border); padding: 1.25rem 0; }
+  .faq-item summary { font-weight: 600; font-size: 1rem; color: var(--charcoal); cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+  .faq-item summary::after { content: '+'; font-size: 1.3rem; color: var(--sage); transition: transform 0.2s; }
+  .faq-item[open] summary::after { content: '−'; }
+  .faq-item p { margin-top: 0.75rem; color: var(--text-muted); font-size: 0.95rem; }
+
+  /* ── RELATED POSTS ── */
+  .related-posts { background: var(--cream); border-radius: 8px; padding: 2rem; margin: 3rem 0; }
+  .related-posts h3 { font-family: 'Instrument Serif', serif; font-size: 1.3rem; color: var(--charcoal); margin-bottom: 1rem; }
+  .related-posts ul { list-style: none; padding: 0; }
+  .related-posts li { padding: 0.5rem 0; border-bottom: 1px solid var(--border); }
+  .related-posts li:last-child { border-bottom: none; }
+  .related-posts a { color: var(--sage-deep); text-decoration: none; font-weight: 500; }
+  .related-posts a:hover { text-decoration: underline; }
+
+  /* ── AUTHOR BOX ── */
+  .author-box { display: flex; gap: 1.5rem; align-items: center; background: var(--cream); border-radius: 8px; padding: 1.5rem; margin: 3rem 0; }
+  .author-avatar { width: 64px; height: 64px; background: var(--sage-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Instrument Serif', serif; font-size: 1.5rem; color: var(--sage); flex-shrink: 0; }
+  .author-info h4 { font-size: 0.95rem; color: var(--charcoal); margin-bottom: 0.25rem; }
+  .author-info p { font-size: 0.85rem; color: var(--text-muted); margin: 0; }
+
+  /* ── FOOTER ── */
+  footer { padding: 3rem 2rem; text-align: center; border-top: 1px solid var(--border); }
+  footer p { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+  footer a { color: var(--sage); text-decoration: none; }
+
+  @media (max-width: 640px) {
+    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; }
+    .nav-links a:not(.nav-cta) { display: none; }
+    body { padding-bottom: 60px; }
+    .breadcrumb { padding-top: 2rem; }
+    .article-header { padding-top: 1rem; }
+    .article-header h1 { font-size: 1.8rem; }
+    .article-content { padding: 1.5rem 1.5rem 3rem; }
+    .author-box { flex-direction: column; text-align: center; }
+  }
+</style>
+
+<!-- Schema.org Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Medical Journal Digest vs Podcast: Which Is Better for CPD? | MCB",
+  "description": "Should UK doctors learn from journal digests or medical podcasts? A practical comparison of retention, CPD value, and time efficiency for busy clinicians.",
+  "url": "https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/medical-journal-digest-vs-podcast/",
+  "datePublished": "2026-06-09T00:00:00.000Z",
+  
+  "author": {
+    "@type": "Organization",
+    "name": "The Monday Clinical Brief",
+    "url": "https://mondayclinicalbrief.co.uk"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Monday Clinical Brief",
+    "url": "https://mondayclinicalbrief.co.uk"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/medical-journal-digest-vs-podcast/"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://mondayclinicalbrief.co.uk/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://mondayclinicalbrief.co.uk/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Medical Journal Digest",
+      "item": "https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Medical Journal Digest vs Medical Podcast: Which Is Better for CPD?"
+    }
+  ]
+}
+</script>
+
+
+
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav>
+  <a href="/" class="nav-brand">The Monday Clinical Brief</a>
+  <div class="nav-links">
+    <a href="/blog/">Blog</a>
+    <a href="/#how">How it works</a>
+    <a href="/#subscribe" class="nav-cta">Start free trial</a>
+  </div>
+</nav>
+
+<!-- ═══ BREADCRUMB ═══ -->
+<div class="breadcrumb" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="/">Home</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/blog/medical-journal-digest/">Medical Journal Digest</a></li>
+    <li>Medical Journal Digest vs Medical Podcast: Which Is Better for CPD?</li>
+  </ol>
+</div>
+
+<!-- ═══ ARTICLE HEADER ═══ -->
+<header class="article-header">
+  
+  <a href="/blog/medical-journal-digest/" class="article-cluster">Medical Journal Digest</a>
+  
+  <h1>Medical Journal Digest vs Medical Podcast: Which Is Better for CPD?</h1>
+  <div class="article-meta">
+    <time datetime="2026-06-09T00:00:00.000Z">9 June 2026</time>
+    <span>5 min read</span>
+    <span>By The Monday Clinical Brief</span>
+  </div>
+</header>
+
+<!-- ═══ ARTICLE CONTENT ═══ -->
+<article class="article-content">
+  <h1>Medical Journal Digest vs Medical Podcast: Which Is Better for CPD?</h1>
+<p>Most UK doctors now consume medical education through a mix of formats. Reading is no longer the only way to keep current. Podcasts have moved from a fringe novelty in 2015 to a serious part of many clinicians' weekly learning.</p>
+<p>The question is no longer whether podcasts are useful. They are. The question is how they compare with reading-based digests for the specific job of keeping current and producing CPD evidence.</p>
+<h2 id="what-each-format-is-good-at" tabindex="-1">What Each Format Is Good At</h2>
+<p>Podcasts and digests are not the same product, even when they cover the same papers.</p>
+<p><strong>Medical podcasts</strong> are conversational. A host and a guest discuss a paper, a guideline, or a clinical scenario. The format suits topics that benefit from interpretation, debate, or expert commentary. The best UK examples — <em>The BMJ Podcast</em>, <em>NEJM Curbsiders</em>, <em>Sharp Scratch</em>, <em>Pall-Care for All</em> — pair good clinical content with editorial discipline.</p>
+<p><strong>Journal digests</strong> are written summaries. They strip a paper to its essential findings and clinical implications. The format suits topics where you want the data quickly, accurately, and in a form you can re-read or cite.</p>
+<p>Neither format is universally better. They are tools for different cognitive jobs.</p>
+<h2 id="retention%3A-what-the-evidence-says" tabindex="-1">Retention: What the Evidence Says</h2>
+<p>The cognitive science is reasonably clear, even if individual mileage varies.</p>
+<ul>
+<li><strong>Reading produces better recall of specific facts and figures.</strong> When you need to remember a number — a hazard ratio, a dosing threshold, a screening interval — text outperforms audio. The eye can re-read; the ear cannot easily.</li>
+<li><strong>Audio produces stronger conceptual understanding when content is explanatory.</strong> A complex pathway, a debate between expert positions, a nuanced clinical decision — these often land better when discussed than when read.</li>
+<li><strong>Active engagement matters more than format.</strong> Whichever you use, you remember more if you stop, reflect, and write a note. Passive consumption — reading or listening — produces weak retention.</li>
+</ul>
+<p>Evidence suggests the highest-retention pattern for most doctors is a combination: a written digest as the primary source, with podcasts adding interpretation on selected topics.</p>
+<h2 id="time-efficiency" tabindex="-1">Time Efficiency</h2>
+<p>Time efficiency is the strongest argument for digests.</p>
+<p>A typical 30-minute clinical podcast covers two to four papers in real time. A typical 15-minute reading slot with a written digest covers eight to fifteen papers. The reading-based format compresses information faster because you control the pace — you skim what is familiar and slow down on what is new.</p>
+<p>For doctors with a fixed CPD reading slot — a Monday morning fifteen minutes, a Sunday evening twenty — written digests deliver substantially more content per minute.</p>
+<p>Podcasts win on time only when you would not otherwise be reading. The classic case is the commute. If you drive to work, a podcast turns dead time into learning time. A written digest cannot do that.</p>
+<h2 id="cpd-logging" tabindex="-1">CPD Logging</h2>
+<p>Both formats produce valid CPD evidence under the GMC framework. Both require the same three things: description, reflection, application.</p>
+<p>In practice, written digests are easier to log because:</p>
+<ul>
+<li>The citation, DOI, and key findings are already in front of you in text form. You can copy them directly into your portfolio.</li>
+<li>The structured format prompts structured reflection.</li>
+<li>Re-reading to check a detail before writing your reflection takes seconds.</li>
+</ul>
+<p>Podcasts are loggable but slower. You need to note the episode, scrub back to confirm a detail, and reconstruct the key learning from memory. Some podcast platforms now offer transcripts, which closes part of the gap.</p>
+<p>If your appraisal portfolio is feeling thin, a digest will produce evidence faster than a podcast will.</p>
+<h2 id="specialty-coverage" tabindex="-1">Specialty Coverage</h2>
+<p>Most major medical podcasts focus on internal medicine, primary care, emergency medicine, or critical care. Subspecialty podcast coverage exists — palliative care, paediatric oncology, dermatology — but is patchy and dependent on individual presenters' enthusiasm.</p>
+<p>Written digests scale better. A digest service like The Monday Clinical Brief covers thirty-one specialties because the editorial pipeline can run in parallel. A podcast for thirty-one specialties would require thirty-one production teams.</p>
+<p>If your specialty is covered well by an active podcast, podcasts are a real option. If it is not, written digests fill the gap.</p>
+<h2 id="when-to-use-each" tabindex="-1">When to Use Each</h2>
+<p>There is no need to choose. The realistic recommendation for a UK doctor with a busy clinical week is a mix.</p>
+<ul>
+<li><strong>Use a written journal digest</strong> as the spine of weekly reading. Fixed time, structured format, broad coverage, fast CPD logging.</li>
+<li><strong>Use medical podcasts</strong> to fill commute time and to deepen your understanding of selected topics. Pick two or three that match your specialty and listen when you would otherwise be passive.</li>
+<li><strong>Re-read or take notes</strong> on anything you want to retain long-term, regardless of format.</li>
+</ul>
+<p>A doctor who reads a digest on Monday morning, listens to one podcast episode on the Tuesday commute, and logs two reflections in the week is doing more weekly CPD than 90% of their colleagues — and the time investment is under ninety minutes total.</p>
+<h2 id="the-honest-trade-off" tabindex="-1">The Honest Trade-off</h2>
+<p>Podcasts are popular for good reasons. They are easy to consume. They feel social. They make you feel like you are keeping up.</p>
+<p>Written digests are less glamorous. They demand attention. They cannot be played in the background. But they pack more learning into less time and produce the cleaner CPD trail.</p>
+<p>If you are starting from zero and can only adopt one format, start with a written digest. Add podcasts once the digest habit is steady.</p>
+<h2 id="how-mcb-fits" tabindex="-1">How MCB Fits</h2>
+<p>The Monday Clinical Brief is the written-digest spine. Every Monday morning, fifteen to twenty minutes of structured reading covering the top five journals in your specialty. CPD-formatted, reflection-prompted, and easy to log.</p>
+<p>Pair it with whichever podcast suits your commute. The two formats complement each other, and neither makes the other redundant.</p>
+<p><a href="/#subscribe">Start your four-week trial</a> and add podcasts on top once the reading habit is in place.</p>
+
+
+  
+
+  <!-- CTA Box -->
+  <div class="cta-box">
+    <h3>Stay on top of the evidence</h3>
+    <p>Weekly journal digests for 31 medical specialties. Structured summaries, every Monday.</p>
+    <a href="/#subscribe" class="btn-primary">Start your free trial →</a>
+  </div>
+</article>
+
+<!-- ═══ AUTHOR ═══ -->
+
+<div style="max-width: 760px; margin: 0 auto; padding: 0 2rem;">
+  <div class="author-box">
+    <div class="author-avatar">MCB</div>
+    <div class="author-info">
+      <h4>The Monday Clinical Brief</h4>
+      <p>AI-powered weekly journal digests for UK clinicians across 31 medical specialties.</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <p>&copy; 2025 The Monday Clinical Brief. All rights reserved.</p>
+  <p><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/blog/">Blog</a></p>
+</footer>
+
+</body>
+</html>

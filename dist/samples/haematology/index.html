@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Haematology Sample Digest — The Monday Clinical Brief</title>
+<meta name="description" content="See what Haematology clinicians received in this Monday's digest: 41 new articles from Haematologica, Blood, Leukemia summarised every Monday by The Monday Clinical Brief.">
+<link rel="canonical" href="https://mondayclinicalbrief.co.uk/samples/haematology/">
+<meta property="og:title" content="Haematology — Monday Clinical Brief Sample Digest">
+<meta property="og:description" content="41 new Haematology papers summarised this week. Free 4-week trial.">
+<meta property="og:url" content="https://mondayclinicalbrief.co.uk/samples/haematology/">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --charcoal: #1c1c1c;
+    --cream: #f7f5f0;
+    --warm-white: #fdfcf9;
+    --sage: #5a7a6a;
+    --sage-light: #e8efeb;
+    --sage-deep: #3d5a4c;
+    --gold: #c4994c;
+    --gold-light: #f5edd8;
+    --text: #3a3a38;
+    --text-muted: #7a7a76;
+    --border: #e2dfd8;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Figtree', sans-serif; color: var(--text); background: var(--warm-white); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+
+  /* ── NAV ── */
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; background: rgba(247,245,240,0.9); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(226,223,216,0.5); }
+  .nav-brand { font-family: 'Instrument Serif', serif; font-size: 1.8rem; font-weight: 700; color: var(--charcoal); text-decoration: none; letter-spacing: -0.02em; }
+  .nav-links { display: flex; gap: 1.5rem; align-items: center; }
+  .nav-links a { font-size: 0.85rem; color: var(--text-muted); text-decoration: none; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--sage-deep); }
+  .nav-cta { background: var(--sage-deep); color: white !important; padding: 0.5rem 1.25rem; border-radius: 40px; font-size: 0.85rem; }
+  .nav-cta:hover { background: var(--charcoal); }
+
+  /* ── PAGE HEADER ── */
+  .page-header { padding: 8rem 2rem 3rem; background: var(--cream); text-align: center; }
+  .page-header .eyebrow { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--sage); margin-bottom: 1.25rem; }
+  .page-header .eyebrow::before, .page-header .eyebrow::after { content: ''; width: 24px; height: 1px; background: var(--sage); opacity: 0.4; }
+  .page-header h1 { font-family: 'Instrument Serif', serif; font-size: clamp(2.2rem, 4.5vw, 3.2rem); font-weight: 400; color: var(--charcoal); line-height: 1.2; letter-spacing: -0.02em; margin-bottom: 1rem; max-width: 720px; margin-left: auto; margin-right: auto; }
+  .page-header h1 em { font-style: italic; color: var(--sage-deep); }
+  .page-header .lede { font-size: 1.05rem; color: var(--text-muted); max-width: 560px; margin: 0 auto 1.75rem; }
+  .stat-bar { display: inline-flex; gap: 2.5rem; padding: 1rem 1.75rem; background: white; border: 1px solid var(--border); border-radius: 60px; font-size: 0.85rem; }
+  .stat-bar .stat strong { display: block; font-family: 'Instrument Serif', serif; font-size: 1.6rem; color: var(--sage-deep); line-height: 1; margin-bottom: 0.2rem; }
+  .stat-bar .stat span { color: var(--text-muted); font-size: 0.78rem; }
+
+  /* ── DISCLAIMER ── */
+  .disclaimer { max-width: 800px; margin: 2rem auto 0; padding: 0.85rem 1.25rem; background: var(--gold-light); border-left: 3px solid var(--gold); font-size: 0.85rem; color: var(--text); border-radius: 4px; }
+  .disclaimer strong { color: var(--charcoal); }
+
+  /* ── ARTICLES ── */
+  section { padding: 3rem 2rem 5rem; }
+  .container { max-width: 800px; margin: 0 auto; }
+  .sample-card { background: white; border: 1px solid var(--border); border-radius: 8px; padding: 2rem; margin-bottom: 1.5rem; }
+  .sample-badge { display: inline-block; background: var(--sage-light); color: var(--sage-deep); padding: 0.2rem 0.7rem; border-radius: 4px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 1rem; }
+  .sample-card h3 { font-family: 'Instrument Serif', serif; font-size: 1.3rem; font-weight: 400; color: var(--charcoal); margin-bottom: 0.5rem; line-height: 1.35; }
+  .sample-meta { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1.25rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--border); }
+  .summary-field { margin-bottom: 0.75rem; font-size: 0.9rem; line-height: 1.6; }
+  .summary-label { font-weight: 600; color: var(--sage-deep); }
+  .summary-field ul { list-style: none; margin: 0.4rem 0 0 0; padding: 0; }
+  .summary-field ul li { padding-left: 1.1rem; position: relative; margin-bottom: 0.3rem; }
+  .summary-field ul li::before { content: '•'; position: absolute; left: 0.2rem; color: var(--sage); font-weight: 700; }
+  .source-links { margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 0.8rem; }
+  .source-links a { color: var(--sage-deep); text-decoration: none; margin-right: 1rem; font-weight: 500; }
+  .source-links a:hover { text-decoration: underline; }
+
+  /* ── TEASE ── */
+  .tease { text-align: center; padding: 2rem; background: var(--cream); border: 1px dashed var(--border); border-radius: 8px; margin-top: 1rem; }
+  .tease p { font-family: 'Instrument Serif', serif; font-size: 1.4rem; color: var(--charcoal); line-height: 1.4; margin-bottom: 0.5rem; }
+  .tease p em { color: var(--sage-deep); }
+  .tease small { color: var(--text-muted); font-size: 0.9rem; }
+
+  /* ── CTA ── */
+  .cta-section { background: var(--charcoal); color: white; padding: 4rem 2rem; text-align: center; }
+  .cta-section h2 { font-family: 'Instrument Serif', serif; font-size: clamp(1.8rem, 4vw, 2.4rem); font-weight: 400; color: white; line-height: 1.25; margin-bottom: 1rem; }
+  .cta-section p { color: rgba(255,255,255,0.7); max-width: 480px; margin: 0 auto 2rem; font-size: 1rem; }
+  .cta-btn { display: inline-block; background: white; color: var(--charcoal); text-decoration: none; padding: 1.1rem 2.5rem; border-radius: 60px; font-family: 'Figtree', sans-serif; font-size: 1.05rem; font-weight: 600; transition: all 0.3s ease; }
+  .cta-btn:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.3); }
+  .cta-meta { display: block; margin-top: 1rem; font-size: 0.85rem; color: rgba(255,255,255,0.5); }
+
+  /* ── FOOTER ── */
+  footer { padding: 3rem 2rem; text-align: center; border-top: 1px solid var(--border); }
+  footer p { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+  footer a { color: var(--sage); text-decoration: none; }
+
+  @media (max-width: 640px) {
+    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; }
+    .nav-links a:not(.nav-cta) { display: none; }
+    body { padding-bottom: 60px; }
+    .page-header { padding: 3.5rem 1.5rem 2.5rem; }
+    section { padding: 2rem 1.5rem 3.5rem; }
+    .sample-card { padding: 1.5rem; }
+    .stat-bar { flex-direction: column; gap: 1rem; padding: 1.25rem 1.75rem; }
+    .cta-section { padding: 3rem 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav>
+  <a href="/" class="nav-brand">The Monday Clinical Brief</a>
+  <div class="nav-links">
+    <a href="/#how">How it works</a>
+    <a href="/#about">About</a>
+    <a href="/?specialty=haematology#subscribe" class="nav-cta">Start free trial</a>
+  </div>
+</nav>
+
+<!-- ═══ HEADER ═══ -->
+<header class="page-header">
+  <div class="eyebrow">Sample Digest · Monday 27 April 2026</div>
+  <h1>A recent Haematology digest,<br><em>as sent to subscribers</em></h1>
+  <p class="lede">This is the real Monday digest from Monday 27 April 2026. Showing the first 8 of 41 articles from that week — every new paper from the top journals in Haematology.</p>
+  <div class="stat-bar">
+    <div class="stat"><strong>41</strong><span>articles that week</span></div>
+    <div class="stat"><strong>4</strong><span>journals covered</span></div>
+    <div class="stat"><strong>£0</strong><span>for your first 4 weeks</span></div>
+  </div>
+  <div class="disclaimer">
+    <strong>Note:</strong> Summaries are AI-generated from publicly available PubMed abstracts. Always verify against the source article before clinical use.
+  </div>
+</header>
+
+<!-- ═══ ARTICLES ═══ -->
+<section>
+  <div class="container">
+    <div class="sample-card">
+      <div class="sample-badge">Blood</div>
+      <h3>Molecular mechanism of cleavage at R271 during prothrombin activation revealed by cryo-EM</h3>
+      <div class="sample-meta">Stojanovski B, Mohammed BM, Basore K et al. · 2026 Apr 20</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Structural biology study using cryo-electron microscopy
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        How does the prothrombinase complex achieve the second proteolytic cleavage at R271 to convert meizothrombin to active thrombin?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Cryo-EM structure at 3.8 Å resolution revealed the molecular mechanism of R271 cleavage in meizothrombin activation</li><li>Cleavage site switching from R320 to R271 requires significant reorientation (&gt;20 Å movement) of the protease domain rather than conformational changes</li><li>Molecular contacts primarily involve protease domains of meizothrombin and factor Xa, validating previous biochemical studies</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        This structural insight into thrombin generation could inform development of more targeted anticoagulants or procoagulant therapies for bleeding disorders managed in UK haematology services.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        The study used a truncated form of meizothrombin which may not fully represent the native activation process.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42008389/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1182/blood.2025032364" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Blood</div>
+      <h3>Modulation of the E3-ubiquitin ligase RNF217 alters ferroportin levels in enterocytes and iron loading in murine hemochromatosis</h3>
+      <div class="sample-meta">Yu Y, Jiang L, Lin Z et al. · 2026 Apr 20</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Experimental study using genetically modified mouse models
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Can overexpression of the E3 ubiquitin ligase RNF217 ameliorate iron overload in hereditary haemochromatosis by modulating ferroportin levels independently of hepcidin?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Both global and intestine-specific RNF217 overexpression rescued the haemochromatosis phenotype in Hjv-/- knockout mice, with duodenal enterocytes identified as the primary site of action</li><li>Intestinal RNF217 overexpression significantly reduced serum and organ iron accumulation through direct modulation of ferroportin protein levels</li><li>The iron-reducing effects occurred independently of hepcidin levels, suggesting a hepcidin-independent pathway for iron regulation</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        This research identifies a potential novel therapeutic target for hereditary haemochromatosis that could bypass hepcidin deficiency, offering hope for patients with severe iron overload who may not respond adequately to current treatments.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        This is preclinical mouse model research requiring validation in human studies before clinical translation.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42008384/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1182/blood.2025032994" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Blood</div>
+      <h3>Harnessing Neoantigen-specific T Cells for Precision Immunotherapy in Hematologic Malignancies</h3>
+      <div class="sample-meta">Kandel A, Cha SC, Kwak LW · 2026 Apr 20</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Narrative review
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        How can neoantigen-specific T-cell immunotherapies be developed and optimised for treating hematological malignancies?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Neoantigen-specific therapies offer superior tumour selectivity and reduced off-target toxicity compared to tumour-associated antigen approaches by targeting HLA-restricted, tumour-derived peptides</li><li>Early-phase clinical trials demonstrate safety and feasibility across multiple haematological cancers, though efficacy and durability data are still emerging</li><li>Advances in immunogenomics and high-resolution sequencing are accelerating identification of both personalised and recurrent neoantigens for TCR-engineered T-cell development</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        This provides UK haematology clinicians with a framework for understanding an emerging immunotherapy modality that may offer more precise alternatives to current CAR-T approaches, particularly relevant as the NHS expands cellular therapy programmes.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        As a review article, it synthesises existing literature rather than presenting new clinical data on efficacy outcomes.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42008381/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1182/blood.2025030711" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Blood</div>
+      <h3>IFNγ Drives Long-Term Bone Marrow Niche Dysfunction Following Doxorubicin-Based Chemotherapy</h3>
+      <div class="sample-meta">Li X, Aguilar-Navarro AG, Nader M et al. · 2026 Apr 20</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Preclinical experimental study with human correlative data
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        What mechanisms drive long-term bone marrow niche dysfunction following doxorubicin-based chemotherapy in cancer survivors?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Doxorubicin chemotherapy caused loss of arteriolar vasculature, impaired mesenchymal stromal cell differentiation, trabecular bone loss, and reduced HSC maintenance capacity in murine models</li><li>CD8⁺ T cell-derived IFNγ was identified as a key driver of chronic inflammatory remodeling; IFNγ blockade partially restored vascular structure and adipogenic differentiation</li><li>Human bone marrow samples from leukaemia patients showed similar MSC lineage alterations, inflammatory pathway upregulation, and CD8⁺ memory T cell expansion post-chemotherapy</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        This research identifies potential therapeutic targets (IFNγ signaling) to prevent long-term skeletal and haematopoietic complications in chemotherapy survivors, which could improve quality of life outcomes for UK cancer patients.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Preclinical findings require validation in larger human cohorts before clinical translation.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42008378/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1182/blood.2025030946" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Blood</div>
+      <h3>Platelet-derived TGF-β1 and Treg maintenance in a murine model of ITP</h3>
+      <div class="sample-meta">Ahamed J · 2026 Apr 20</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Commentary
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Does platelet-derived TGF-β1 maintain immune tolerance in immune thrombocytopenic purpura (ITP) through regulatory T cell (Treg) modulation?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Authors challenge previous findings by Mei et al., arguing that reported TGF-β1 levels were implausibly high and likely due to ex vivo measurement artifacts</li><li>Knockout mouse studies failed to reproduce platelet-derived TGF-β1-driven Treg deficiency</li><li>ITP remission maintenance appears to involve TGF-β1 sources other than platelets</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        This challenges current understanding of platelet-derived immunomodulation in ITP, potentially redirecting research towards alternative TGF-β1 sources for therapeutic targeting in UK ITP patients.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Limited methodological details provided in this brief commentary format.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42008373/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1182/blood.2026034039" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Blood</div>
+      <h3>PF4/Heparin-Nonbinding Platelet-Activating Antibodies in Heparin-Induced Thrombocytopenia</h3>
+      <div class="sample-meta">Zhou L, Cao A, Zhu W et al. · 2026 Apr 21</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Laboratory-based mechanistic study with single-cell cloning and mouse model validation
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Do clinically significant HIT antibodies exist that are undetectable by standard PF4/heparin ELISA but still cause platelet activation?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>ELISA-negative but PEA-positive (ELISA⁻PEA⁺) antibodies comprised 65±19% of total platelet-activating activity in 11 confirmed HIT patients</li><li>Single-cell cloning identified 17 ELISA⁻PEA⁺ versus 6 ELISA⁺PEA⁺ antibody-producing B-cell clones across 7 patients</li><li>These antibodies induced thrombocytopenia in humanised mouse models and showed identical functional characteristics to conventional HIT antibodies</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        This challenges the reliability of negative PF4/heparin ELISA results to exclude HIT in UK practice, potentially explaining cases of clinical HIT with negative serology.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Small patient cohort (11 patients) and the clinical prevalence of ELISA⁻PEA⁺ antibodies in suspected HIT remains undefined.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42013023/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1182/blood.2025032317" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Blood</div>
+      <h3>Refined classification and phenotype-driven analysis of PIEZO1 variants in hereditary red cell and iron disorders</h3>
+      <div class="sample-meta">Rosato BE, Marra R, Martone S et al. · 2026 Apr 21</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Retrospective genetic analysis with phenotype-genotype correlation
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        How can PIEZO1 variant classification be improved to better predict clinical phenotypes in hereditary stomatocytosis?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Analysis of 2,565 PIEZO1 variants using integrated ACMG guidelines and structural annotation enabled reclassification of nearly 1,000 variants of uncertain significance</li><li>Pathogenic variants clustered non-randomly in functionally constrained domains (Anchor, Inner helix, C-terminal regions)</li><li>Three distinct phenotypic clusters identified in 176 DHS1 patients, ranging from severe hemolysis with iron overload to subclinical presentations</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        This refined variant classification system could improve diagnostic accuracy for UK patients with unexplained hemolytic anemia and iron overload, potentially reducing diagnostic delays and enabling more targeted monitoring strategies.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Study relies heavily on computational predictions and may not capture all functional consequences of variants in this complex mechanosensitive channel.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42013021/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1182/blood.2025031632" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Blood</div>
+      <h3>Mosunetuzumab plus polatuzumab vedotin in relapsed/refractory MCL after BTK inhibitor therapy: a phase 2 study</h3>
+      <div class="sample-meta">Budde LE, Kamdar M, Assouline SE et al. · 2026 Apr 21</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Phase 2 clinical trial
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        What is the efficacy and safety of mosunetuzumab plus polatuzumab vedotin in patients with relapsed/refractory mantle cell lymphoma who have previously received BTK inhibitor therapy?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Overall response rate was 88.1% (95% CI 74.4-96.0%) with complete response in 78.6% (95% CI 63.2-89.7%) in 42 patients with median 3 prior therapies</li><li>Median progression-free survival was 18.6 months (95% CI 13.9-not estimable) at 15.9 months median follow-up</li><li>Cytokine release syndrome occurred in 42.9% of patients but was limited to Grade 1-2 severity only</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        This bispecific-ADC combination offers promising salvage therapy for heavily pre-treated MCL patients, including those with high-risk features and prior CAR-T therapy, addressing a significant unmet need in UK haematology practice.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Single-arm design without comparator group limits interpretation of efficacy relative to other available salvage therapies.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42013019/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1182/blood.2025032422" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+
+    <div class="tease">
+      <p>…and <em>33 more</em> Haematology articles in that week's digest.</p>
+      <small>Subscribers get the complete brief, every Monday.</small>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA ═══ -->
+<section class="cta-section">
+  <h2>Get the Haematology digest in your inbox every Monday</h2>
+  <p>4 weeks completely free, then £20/year. Cancel any time during your trial — no charge.</p>
+  <a href="/?specialty=haematology&ref=samples#subscribe" class="cta-btn">Start your free trial — Haematology →</a>
+  <span class="cta-meta">No card needed to browse. We'll ask for payment details to start the trial.</span>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <p>&copy; 2026 The Monday Clinical Brief</p>
+  <p><a href="/">Home</a> · <a href="mailto:info@mondayclinicalbrief.co.uk">Contact</a> · <a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms</a></p>
+</footer>
+
+</body>
+</html>

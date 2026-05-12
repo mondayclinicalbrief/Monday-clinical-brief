@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ChatGPT for Clinicians UK: Why It&#39;s Not Available and What to Use Instead — The Monday Clinical Brief</title>
+<meta name="description" content="OpenAI launched ChatGPT for Clinicians on 23 April 2026 — and immediately excluded UK and EEA doctors. Here&#39;s what the exclusion means, and what UK clinicians can use instead.">
+<link rel="canonical" href="https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/chatgpt-for-clinicians-uk/">
+
+
+<!-- Open Graph -->
+<meta property="og:title" content="ChatGPT for Clinicians UK: Why It&#39;s Not Available and What to Use Instead">
+<meta property="og:description" content="OpenAI launched ChatGPT for Clinicians on 23 April 2026 — and immediately excluded UK and EEA doctors. Here&#39;s what the exclusion means, and what UK clinicians can use instead.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/chatgpt-for-clinicians-uk/">
+
+<meta property="og:site_name" content="The Monday Clinical Brief">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ChatGPT for Clinicians UK: Why It&#39;s Not Available and What to Use Instead">
+<meta name="twitter:description" content="OpenAI launched ChatGPT for Clinicians on 23 April 2026 — and immediately excluded UK and EEA doctors. Here&#39;s what the exclusion means, and what UK clinicians can use instead.">
+
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --charcoal: #1c1c1c;
+    --cream: #f7f5f0;
+    --warm-white: #fdfcf9;
+    --sage: #5a7a6a;
+    --sage-light: #e8efeb;
+    --sage-deep: #3d5a4c;
+    --gold: #c4994c;
+    --gold-light: #f5edd8;
+    --text: #3a3a38;
+    --text-muted: #7a7a76;
+    --border: #e2dfd8;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Figtree', sans-serif; color: var(--text); background: var(--warm-white); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+
+  /* ── NAV ── */
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; background: rgba(247,245,240,0.9); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(226,223,216,0.5); }
+  .nav-brand { font-family: 'Instrument Serif', serif; font-size: 1.8rem; font-weight: 700; color: var(--charcoal); text-decoration: none; letter-spacing: -0.02em; }
+  .nav-links { display: flex; gap: 1.5rem; align-items: center; }
+  .nav-links a { font-size: 0.85rem; color: var(--text-muted); text-decoration: none; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--sage-deep); }
+  .nav-cta { background: var(--sage-deep); color: white !important; padding: 0.5rem 1.25rem; border-radius: 40px; font-size: 0.85rem; }
+  .nav-cta:hover { background: var(--charcoal); }
+
+  /* ── BREADCRUMB ── */
+  .breadcrumb { padding: 6rem 2rem 0; max-width: 760px; margin: 0 auto; }
+  .breadcrumb ol { list-style: none; display: flex; flex-wrap: wrap; gap: 0.25rem; font-size: 0.8rem; color: var(--text-muted); }
+  .breadcrumb ol li::after { content: '/'; margin-left: 0.4rem; opacity: 0.4; }
+  .breadcrumb ol li:last-child::after { content: ''; }
+  .breadcrumb a { color: var(--sage); text-decoration: none; }
+  .breadcrumb a:hover { text-decoration: underline; }
+
+  /* ── ARTICLE ── */
+  .article-header { max-width: 760px; margin: 0 auto; padding: 2rem 2rem 0; }
+  .article-cluster { display: inline-block; background: var(--sage-light); color: var(--sage-deep); padding: 0.2rem 0.7rem; border-radius: 4px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 1rem; text-decoration: none; }
+  .article-cluster:hover { background: var(--sage); color: white; }
+  .article-header h1 { font-family: 'Instrument Serif', serif; font-size: clamp(2rem, 4.5vw, 2.8rem); font-weight: 400; color: var(--charcoal); line-height: 1.2; letter-spacing: -0.02em; margin-bottom: 1rem; }
+  .article-meta { font-size: 0.85rem; color: var(--text-muted); display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  .article-meta time { font-weight: 500; }
+
+  /* ── CONTENT ── */
+  .article-content { max-width: 760px; margin: 0 auto; padding: 2.5rem 2rem 4rem; }
+  .article-content h2 { font-family: 'Instrument Serif', serif; font-size: 1.6rem; font-weight: 400; color: var(--charcoal); line-height: 1.3; margin: 2.5rem 0 1rem; }
+  .article-content h3 { font-size: 1.15rem; font-weight: 600; color: var(--charcoal); margin: 2rem 0 0.75rem; }
+  .article-content p { margin-bottom: 1.25rem; font-size: 1.02rem; }
+  .article-content ul, .article-content ol { margin-bottom: 1.25rem; padding-left: 1.5rem; }
+  .article-content li { margin-bottom: 0.4rem; font-size: 1.02rem; }
+  .article-content a { color: var(--sage-deep); text-decoration: underline; text-underline-offset: 2px; }
+  .article-content a:hover { color: var(--charcoal); }
+  .article-content blockquote { border-left: 3px solid var(--sage); padding: 1rem 1.5rem; margin: 1.5rem 0; background: var(--sage-light); border-radius: 0 6px 6px 0; font-style: italic; color: var(--text-muted); }
+  .article-content img { max-width: 100%; height: auto; border-radius: 8px; margin: 1.5rem 0; }
+  .article-content table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.92rem; }
+  .article-content th { background: var(--sage-light); color: var(--sage-deep); font-weight: 600; text-align: left; padding: 0.75rem 1rem; border-bottom: 2px solid var(--sage); }
+  .article-content td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); }
+  .article-content tr:hover td { background: var(--cream); }
+  .article-content code { font-size: 0.9em; background: var(--cream); padding: 0.15em 0.4em; border-radius: 3px; }
+  .article-content pre { background: var(--charcoal); color: var(--cream); padding: 1.25rem; border-radius: 8px; overflow-x: auto; margin: 1.5rem 0; }
+  .article-content pre code { background: none; padding: 0; color: inherit; }
+
+  /* ── CTA BOX ── */
+  .cta-box { background: var(--sage-light); border: 1px solid var(--sage); border-radius: 8px; padding: 1.5rem 2rem; margin: 2rem 0; text-align: center; }
+  .cta-box h3 { font-family: 'Instrument Serif', serif; font-size: 1.3rem; font-weight: 400; color: var(--sage-deep); margin-bottom: 0.5rem; }
+  .cta-box p { color: var(--text-muted); margin-bottom: 1rem; font-size: 0.95rem; }
+  .cta-box .btn-primary { display: inline-block; background: var(--sage-deep); color: white; text-decoration: none; padding: 0.75rem 2rem; border-radius: 60px; font-family: 'Figtree', sans-serif; font-size: 0.95rem; font-weight: 600; transition: all 0.3s ease; }
+  .cta-box .btn-primary:hover { background: var(--charcoal); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
+
+  /* ── FAQ SECTION ── */
+  .faq-section { margin: 3rem 0 2rem; }
+  .faq-section h2 { font-family: 'Instrument Serif', serif; font-size: 1.6rem; color: var(--charcoal); margin-bottom: 1.5rem; }
+  .faq-item { border-bottom: 1px solid var(--border); padding: 1.25rem 0; }
+  .faq-item summary { font-weight: 600; font-size: 1rem; color: var(--charcoal); cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+  .faq-item summary::after { content: '+'; font-size: 1.3rem; color: var(--sage); transition: transform 0.2s; }
+  .faq-item[open] summary::after { content: '−'; }
+  .faq-item p { margin-top: 0.75rem; color: var(--text-muted); font-size: 0.95rem; }
+
+  /* ── RELATED POSTS ── */
+  .related-posts { background: var(--cream); border-radius: 8px; padding: 2rem; margin: 3rem 0; }
+  .related-posts h3 { font-family: 'Instrument Serif', serif; font-size: 1.3rem; color: var(--charcoal); margin-bottom: 1rem; }
+  .related-posts ul { list-style: none; padding: 0; }
+  .related-posts li { padding: 0.5rem 0; border-bottom: 1px solid var(--border); }
+  .related-posts li:last-child { border-bottom: none; }
+  .related-posts a { color: var(--sage-deep); text-decoration: none; font-weight: 500; }
+  .related-posts a:hover { text-decoration: underline; }
+
+  /* ── AUTHOR BOX ── */
+  .author-box { display: flex; gap: 1.5rem; align-items: center; background: var(--cream); border-radius: 8px; padding: 1.5rem; margin: 3rem 0; }
+  .author-avatar { width: 64px; height: 64px; background: var(--sage-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Instrument Serif', serif; font-size: 1.5rem; color: var(--sage); flex-shrink: 0; }
+  .author-info h4 { font-size: 0.95rem; color: var(--charcoal); margin-bottom: 0.25rem; }
+  .author-info p { font-size: 0.85rem; color: var(--text-muted); margin: 0; }
+
+  /* ── FOOTER ── */
+  footer { padding: 3rem 2rem; text-align: center; border-top: 1px solid var(--border); }
+  footer p { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+  footer a { color: var(--sage); text-decoration: none; }
+
+  @media (max-width: 640px) {
+    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; }
+    .nav-links a:not(.nav-cta) { display: none; }
+    body { padding-bottom: 60px; }
+    .breadcrumb { padding-top: 2rem; }
+    .article-header { padding-top: 1rem; }
+    .article-header h1 { font-size: 1.8rem; }
+    .article-content { padding: 1.5rem 1.5rem 3rem; }
+    .author-box { flex-direction: column; text-align: center; }
+  }
+</style>
+
+<!-- Schema.org Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "ChatGPT for Clinicians UK: Why It&#39;s Not Available and What to Use Instead",
+  "description": "OpenAI launched ChatGPT for Clinicians on 23 April 2026 — and immediately excluded UK and EEA doctors. Here&#39;s what the exclusion means, and what UK clinicians can use instead.",
+  "url": "https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/chatgpt-for-clinicians-uk/",
+  "datePublished": "2026-05-13T00:00:00.000Z",
+  
+  "author": {
+    "@type": "Organization",
+    "name": "The Monday Clinical Brief",
+    "url": "https://mondayclinicalbrief.co.uk"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Monday Clinical Brief",
+    "url": "https://mondayclinicalbrief.co.uk"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/chatgpt-for-clinicians-uk/"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://mondayclinicalbrief.co.uk/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://mondayclinicalbrief.co.uk/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Medical Journal Digest",
+      "item": "https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "ChatGPT for Clinicians Launched. UK Doctors Are Excluded."
+    }
+  ]
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    
+    {
+      "@type": "Question",
+      "name": "What is ChatGPT for Clinicians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ChatGPT for Clinicians is an OpenAI product launched on 23 April 2026. It provides AI-assisted clinical decision support with cited, peer-reviewed sources — similar in concept to OpenEvidence. It is currently only available to clinicians in the United States."
+      }
+    },
+    
+    {
+      "@type": "Question",
+      "name": "Why is ChatGPT for Clinicians not available in the UK?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "OpenAI has not made ChatGPT for Clinicians available in the UK or EEA. The likely reason is regulatory uncertainty around AI in healthcare — the EU AI Act classifies certain clinical AI tools as high-risk, and the UK&#39;s own AI regulatory framework remains unsettled. Several US AI health tools have paused or withdrawn UK access for the same reason."
+      }
+    },
+    
+    {
+      "@type": "Question",
+      "name": "What can UK doctors use instead of ChatGPT for Clinicians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For clinical Q&amp;A at the point of care, iatroX is a UK-based alternative with MHRA registration and UKCA marking. For staying current with the medical literature — knowing what&#39;s new in your specialty each week — The Monday Clinical Brief is a weekly digest covering 31 specialties for £20 a year."
+      }
+    },
+    
+    {
+      "@type": "Question",
+      "name": "Did OpenEvidence also leave the UK?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. OpenEvidence withdrew from the UK and EU on 25 April 2026 — two days after ChatGPT for Clinicians launched and excluded UK users. UK doctors lost both tools in the same fortnight."
+      }
+    }
+    
+  ]
+}
+</script>
+
+
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav>
+  <a href="/" class="nav-brand">The Monday Clinical Brief</a>
+  <div class="nav-links">
+    <a href="/blog/">Blog</a>
+    <a href="/#how">How it works</a>
+    <a href="/#subscribe" class="nav-cta">Start free trial</a>
+  </div>
+</nav>
+
+<!-- ═══ BREADCRUMB ═══ -->
+<div class="breadcrumb" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="/">Home</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/blog/medical-journal-digest/">Medical Journal Digest</a></li>
+    <li>ChatGPT for Clinicians Launched. UK Doctors Are Excluded.</li>
+  </ol>
+</div>
+
+<!-- ═══ ARTICLE HEADER ═══ -->
+<header class="article-header">
+  
+  <a href="/blog/medical-journal-digest/" class="article-cluster">Medical Journal Digest</a>
+  
+  <h1>ChatGPT for Clinicians Launched. UK Doctors Are Excluded.</h1>
+  <div class="article-meta">
+    <time datetime="2026-05-13T00:00:00.000Z">13 May 2026</time>
+    <span>4 min read</span>
+    <span>By The Monday Clinical Brief</span>
+  </div>
+</header>
+
+<!-- ═══ ARTICLE CONTENT ═══ -->
+<article class="article-content">
+  <h1>ChatGPT for Clinicians Launched. UK Doctors Are Excluded.</h1>
+<p>On 23 April 2026, OpenAI launched ChatGPT for Clinicians. Two days later, OpenEvidence — the tool it most closely resembles — withdrew from the UK entirely.</p>
+<p>UK doctors received both announcements in the same week. Neither had good news for them.</p>
+<h2 id="what-chatgpt-for-clinicians-actually-does" tabindex="-1">What ChatGPT for Clinicians actually does</h2>
+<p>ChatGPT for Clinicians is OpenAI's attempt to bring its AI capabilities directly into clinical practice. It answers clinical questions with cited, peer-reviewed sources. Think point-of-care decision support — you ask a question, it returns a synthesised answer grounded in the medical literature.</p>
+<p>It is, in substance, a more powerful version of what OpenEvidence was doing. And like OpenEvidence, it is currently unavailable to UK and EEA clinicians.</p>
+<p>The exclusion is not subtle. UK doctors navigating to the product are met with a &quot;not available in your region&quot; message.</p>
+<h2 id="why-the-uk-is-locked-out" tabindex="-1">Why the UK is locked out</h2>
+<p>The most likely explanation is regulatory caution.</p>
+<p>The EU AI Act classifies certain clinical AI tools as high-risk systems, with corresponding requirements around transparency, conformity assessment, and liability. The UK's own AI regulatory framework — post-Brexit and currently being shaped through the AI Opportunities Action Plan — remains unsettled. For US companies launching regulated healthcare AI products, the safest short-term decision is often to restrict access to markets where the regulatory path is clear.</p>
+<p>The US is one of those markets. The UK currently is not.</p>
+<p>This is the same logic that drove OpenEvidence's withdrawal. It is also the reason that UpToDate Pro Plus AI — launched with much fanfare in early 2026 — remains US and Canada only.</p>
+<p>UK doctors are not being forgotten. They are being deliberately excluded while the regulatory picture clears.</p>
+<h2 id="the-pattern-uk-clinicians-should-know-about" tabindex="-1">The pattern UK clinicians should know about</h2>
+<p>In the space of a fortnight, two of the most prominent AI clinical tools in the world became unavailable to UK doctors:</p>
+<ul>
+<li><strong>23 April 2026</strong>: ChatGPT for Clinicians launches. UK and EEA excluded.</li>
+<li><strong>25 April 2026</strong>: OpenEvidence withdraws from the UK and EU.</li>
+</ul>
+<p>Both tools were primarily Q&amp;A products — you bring a clinical question, they return a referenced answer. That specific use case now has a meaningful gap in the UK market.</p>
+<h2 id="for-clinical-q%26a%3A-what's-available-in-the-uk" tabindex="-1">For clinical Q&amp;A: what's available in the UK</h2>
+<p><a href="https://iatrox.com">iatroX</a> is UK-based, holds MHRA registration and UKCA marking, and is actively positioning as the UK alternative for AI clinical Q&amp;A. It does the same job as OpenEvidence and ChatGPT for Clinicians — referenced answers to point-of-care questions — within a UK regulatory framework.</p>
+<p>It is not a perfect substitute. These tools differ in model quality, citation depth, and interface. But it is the most credible UK-regulatory-compliant option in this space right now.</p>
+<h2 id="the-other-half-of-the-problem" tabindex="-1">The other half of the problem</h2>
+<p>Clinical Q&amp;A tools solve a specific problem: you have a question, you need a referenced answer, you get one quickly.</p>
+<p>What they do not solve — and what is easy to overlook in the noise around these launches and withdrawals — is the problem of staying current.</p>
+<p>A practice-changing trial published last week does not appear in any Q&amp;A tool until you already know to ask about it. The gap between what was published and what you know exists, whether or not ChatGPT for Clinicians is available in your region.</p>
+<p>That is the problem we built The Monday Clinical Brief to address.</p>
+<h2 id="what-the-monday-clinical-brief-offers" tabindex="-1">What The Monday Clinical Brief offers</h2>
+<p>Every Monday morning, we send you the five most important peer-reviewed papers published in your specialty that week. Plain-language summaries. Links to the originals. Nothing else.</p>
+<p>We cover 31 specialties. We do the curation. You stay current.</p>
+<p>£20 a year. No app. No regulatory uncertainty. Just your inbox.</p>
+<p><a href="/#subscribe">Subscribe to The Monday Clinical Brief</a> — and know what's new before anyone asks you about it.</p>
+<h2 id="the-bottom-line" tabindex="-1">The bottom line</h2>
+<p>ChatGPT for Clinicians is not coming to the UK any time soon. Neither, for now, is OpenEvidence. For clinical Q&amp;A in the meantime, iatroX is the most credible UK option.</p>
+<p>But neither of those tools — available or not — tells you what was published last week. That is a different job. And it matters just as much.</p>
+
+
+  
+  <div class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    
+    <details class="faq-item">
+      <summary>What is ChatGPT for Clinicians?</summary>
+      <p>ChatGPT for Clinicians is an OpenAI product launched on 23 April 2026. It provides AI-assisted clinical decision support with cited, peer-reviewed sources — similar in concept to OpenEvidence. It is currently only available to clinicians in the United States.</p>
+    </details>
+    
+    <details class="faq-item">
+      <summary>Why is ChatGPT for Clinicians not available in the UK?</summary>
+      <p>OpenAI has not made ChatGPT for Clinicians available in the UK or EEA. The likely reason is regulatory uncertainty around AI in healthcare — the EU AI Act classifies certain clinical AI tools as high-risk, and the UK&#39;s own AI regulatory framework remains unsettled. Several US AI health tools have paused or withdrawn UK access for the same reason.</p>
+    </details>
+    
+    <details class="faq-item">
+      <summary>What can UK doctors use instead of ChatGPT for Clinicians?</summary>
+      <p>For clinical Q&amp;A at the point of care, iatroX is a UK-based alternative with MHRA registration and UKCA marking. For staying current with the medical literature — knowing what&#39;s new in your specialty each week — The Monday Clinical Brief is a weekly digest covering 31 specialties for £20 a year.</p>
+    </details>
+    
+    <details class="faq-item">
+      <summary>Did OpenEvidence also leave the UK?</summary>
+      <p>Yes. OpenEvidence withdrew from the UK and EU on 25 April 2026 — two days after ChatGPT for Clinicians launched and excluded UK users. UK doctors lost both tools in the same fortnight.</p>
+    </details>
+    
+  </div>
+  
+
+  <!-- CTA Box -->
+  <div class="cta-box">
+    <h3>Stay on top of the evidence</h3>
+    <p>Weekly journal digests for 31 medical specialties. Structured summaries, every Monday.</p>
+    <a href="/#subscribe" class="btn-primary">Start your free trial →</a>
+  </div>
+</article>
+
+<!-- ═══ AUTHOR ═══ -->
+
+<div style="max-width: 760px; margin: 0 auto; padding: 0 2rem;">
+  <div class="author-box">
+    <div class="author-avatar">MCB</div>
+    <div class="author-info">
+      <h4>The Monday Clinical Brief</h4>
+      <p>AI-powered weekly journal digests for UK clinicians across 31 medical specialties.</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <p>&copy; 2025 The Monday Clinical Brief. All rights reserved.</p>
+  <p><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/blog/">Blog</a></p>
+</footer>
+
+</body>
+</html>
