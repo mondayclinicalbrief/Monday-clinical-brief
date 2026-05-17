@@ -84,3 +84,8 @@ We cover 31 specialties. We do the curation. You stay current.
 ChatGPT for Clinicians is not coming to the UK any time soon. Neither, for now, is OpenEvidence. For clinical Q&A in the meantime, iatroX is the most credible UK option.
 
 But neither of those tools — available or not — tells you what was published last week. That is a different job. And it matters just as much.
+
+## Related reading
+
+- [Looking for an OpenEvidence alternative in the UK?](/blog/medical-journal-digest/openevidence-alternative-uk/)
+- [Heidi Evidence is excellent — and UK NHS clinicians are excluded](/blog/medical-journal-digest/heidi-evidence-uk-nhs-excluded/)

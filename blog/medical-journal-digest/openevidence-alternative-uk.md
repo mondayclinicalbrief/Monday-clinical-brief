@@ -69,3 +69,8 @@ We cover 31 specialties. We do the curation. You stay current.
 OpenEvidence was good at answering questions you already had. For that job in the UK, iatroX is worth a look.
 
 But staying current with the literature — knowing what questions to ask in the first place — is a different problem. If that's the one you're trying to solve, that's what we're here for.
+
+## Related reading
+
+- [ChatGPT for Clinicians launched — and UK doctors are excluded](/blog/medical-journal-digest/chatgpt-for-clinicians-uk/)
+- [Heidi Evidence is excellent — and UK NHS clinicians are excluded](/blog/medical-journal-digest/heidi-evidence-uk-nhs-excluded/)
