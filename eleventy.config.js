@@ -8,6 +8,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("privacy.html");
   eleventyConfig.addPassthroughCopy("terms.html");
   eleventyConfig.addPassthroughCopy("unsubscribe.html");
+  // MTA-STS policy file served from mta-sts.mondayclinicalbrief.co.uk (Netlify
+  // domain alias) for receiving servers that enforce TLS to our MX.
+  eleventyConfig.addPassthroughCopy(".well-known");
   eleventyConfig.addPassthroughCopy("_redirects");
   eleventyConfig.addPassthroughCopy("netlify");
   eleventyConfig.addPassthroughCopy("admin");
