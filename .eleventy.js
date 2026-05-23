@@ -11,6 +11,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("netlify");
   eleventyConfig.addPassthroughCopy("admin");
   eleventyConfig.addPassthroughCopy("assets");
+  eleventyConfig.addPassthroughCopy("samples");
+  eleventyConfig.addPassthroughCopy("robots.txt");
 
   // ── Date filters ──
   eleventyConfig.addFilter("readableDate", (dateObj) => {

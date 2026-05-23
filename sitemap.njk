@@ -1,0 +1,74 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+specialties:
+  - acute-medicine
+  - anaesthetics
+  - cardiology
+  - cardiothoracic-surgery
+  - dermatology
+  - emergency-medicine
+  - endocrinology
+  - gastroenterology
+  - general-practice
+  - general-surgery
+  - geriatric-medicine
+  - haematology
+  - infectious-disease
+  - intensive-care
+  - nephrology
+  - neurology
+  - neurosurgery
+  - obstetrics-gynaecology
+  - oncology
+  - ophthalmology
+  - orthopaedic-surgery
+  - paediatrics
+  - palliative-care
+  - pathology
+  - plastic-surgery
+  - psychiatry
+  - public-health
+  - radiology
+  - respiratory
+  - rheumatology
+  - urology
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://mondayclinicalbrief.co.uk/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://mondayclinicalbrief.co.uk/blog/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mondayclinicalbrief.co.uk/privacy.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://mondayclinicalbrief.co.uk/terms.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  {%- for slug in specialties %}
+  <url>
+    <loc>https://mondayclinicalbrief.co.uk/samples/{{ slug }}/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  {%- endfor %}
+  {%- for post in collections.posts %}
+  <url>
+    <loc>https://mondayclinicalbrief.co.uk{{ post.url }}</loc>
+    <lastmod>{{ post.date | isoDate }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  {%- endfor %}
+</urlset>
