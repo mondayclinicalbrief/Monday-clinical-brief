@@ -74,7 +74,9 @@ For most UK doctors, the best setup is not either/or. It is both.
 
 **During the week: use Heidi.** A patient presents with something unfamiliar. A colleague asks a question you cannot answer from memory. You check Heidi. You get a cited, UK-relevant answer in seconds.
 
-The digest feeds your general awareness. Heidi handles the specific gaps. One is preventive; the other is acute. You need both for the same reason you need both a screening programme and an emergency department.
+**If your NHS email blocks Heidi (May 2026 onwards):** [iatroX](https://iatrox.com) is the credible UK alternative for clinical Q&A. It is MHRA-registered, UKCA-marked, and built around UK guideline retrieval. The pull-vs-push argument in this post applies the same way: combine iatroX (or another pull tool) with a weekly digest, and you cover both kinds of gap. We have no commercial relationship with iatroX — we mention it because in May 2026 it is the option a UK NHS reader can actually use.
+
+The digest feeds your general awareness. The pull tool — whichever one is currently available to you — handles the specific gaps. One is preventive; the other is acute. You need both for the same reason you need both a screening programme and an emergency department.
 
 ## Who Should Choose One Over the Other
 
