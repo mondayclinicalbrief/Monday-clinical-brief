@@ -16,21 +16,25 @@ faqs:
     answer: "No — and it doesn't claim to. OpenEvidence answered clinical questions. The Monday Clinical Brief surfaces new peer-reviewed papers in your specialty each week. These are different problems. MCB is for keeping up with what's new before you need to ask a question about it."
   - question: "Is ChatGPT for Clinicians available in the UK?"
     answer: "No. ChatGPT for Clinicians launched on 23 April 2026 and explicitly excludes UK and EEA users."
+  - question: "Has any other AI tool been excluded from the UK since OpenEvidence withdrew?"
+    answer: "Yes. In May 2026, Heidi Evidence — the clinical decision support arm of Heidi Health, partnered with NICE, BMJ Group, MIMS and HealthPathways — confirmed it was blocking UK NHS email addresses from enrolment. Three credible clinical AI tools have now stepped back from UK NHS access in six weeks: ChatGPT for Clinicians (23 April), OpenEvidence (28 April), and Heidi Evidence (May)."
 ---
 
 # Looking for an OpenEvidence Alternative in the UK?
 
-OpenEvidence is no longer available to UK doctors. The platform withdrew from the UK and EU on 25 April 2026, citing uncertainty around AI regulation. It went quietly — no replacement announced, no UK handoff.
+OpenEvidence is no longer available to UK doctors. The platform withdrew from the UK and EU on 28 April 2026, citing uncertainty around AI regulation. It went quietly — no replacement announced, no UK handoff.
 
 If you used it, you'll have noticed the gap.
+
+> **Update — 25 May 2026 (one month on):** OpenEvidence is still unavailable to UK clinicians. No re-entry signal has been published. The UK regulatory framework that triggered the withdrawal remains mid-flight — the MHRA Medical Devices (Amendment) Regulations consultation closes 19 June 2026; the International Reliance Framework is expected in Autumn. Meanwhile a third clinical AI tool, Heidi Evidence, joined the UK-exclusion pattern in May 2026 by blocking NHS email addresses at enrolment. For the wider context across all three withdrawals, see our anchor post on [the three AI tools UK doctors lost in six weeks](/blog/medical-journal-digest/uk-doctors-lost-ai-tools-2026/).
 
 ## What happened
 
 OpenEvidence was the leading AI clinical Q&A tool in the US — used by over 40% of American physicians. In January 2026 it raised $250m at a $12 billion valuation. By the end of April, it was gone from the UK.
 
-The stated reason was regulatory uncertainty around AI in healthcare. The EU AI Act and the UK's AI regulatory landscape are unsettled enough that several US AI health tools have paused UK expansion or withdrawn entirely. ChatGPT for Clinicians launched the same week and explicitly excluded UK and EEA users.
+The stated reason was regulatory uncertainty around AI in healthcare. The EU AI Act and the UK's AI regulatory landscape are unsettled enough that several US AI health tools have paused UK expansion or withdrawn entirely. ChatGPT for Clinicians launched the same week and explicitly excluded UK and EEA users. Heidi Evidence — the clinical decision support tool partnered with NICE, BMJ Group, MIMS and HealthPathways — joined the pattern in May 2026 by blocking UK NHS email addresses at enrolment.
 
-UK doctors lost two high-profile clinical AI tools in the same fortnight.
+UK doctors have now lost three credible clinical AI tools in six weeks.
 
 ## What OpenEvidence actually did
 
@@ -72,5 +76,6 @@ But staying current with the literature — knowing what questions to ask in the
 
 ## Related reading
 
+- [Three AI tools UK doctors lost in six weeks — and what works in their place](/blog/medical-journal-digest/uk-doctors-lost-ai-tools-2026/) — the wider pattern, with a practical two-tool setup for UK clinicians.
 - [ChatGPT for Clinicians launched — and UK doctors are excluded](/blog/medical-journal-digest/chatgpt-for-clinicians-uk/)
 - [Heidi Evidence is excellent — and UK NHS clinicians are excluded](/blog/medical-journal-digest/heidi-evidence-uk-nhs-excluded/)
