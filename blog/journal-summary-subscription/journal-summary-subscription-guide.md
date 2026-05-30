@@ -113,14 +113,6 @@ None
 
 Alerts only, no summaries
 
-## What Subscribers Say
-
-[Testimonial placeholder] "MCB has genuinely changed how I approach CPD. I used to dread the reading section of my appraisal portfolio. Now it fills itself." - GP, West Yorkshire
-
-[Testimonial placeholder] "The clinical commentary is what makes it. Knowing not just what the paper found, but whether it matters for my patients." - Consultant Physician, NHS Trust
-
-[Testimonial placeholder] "I read it every Monday between my first two clinics. Fifteen minutes and I know I have not missed anything important." - Specialty Registrar, London
-
 __Start Your Free Trial Today__
 
 Start every Monday informed, current, and CPD-ready. 15 minutes. Zero overwhelm.

@@ -40,12 +40,12 @@ Pricing ranges from free to several hundred pounds annually. Consider both the d
 
 ### The Monday Clinical Brief
 
-**What is it?** A curated daily digest designed specifically for UK doctors, summarising the most clinically significant research published overnight. MCB focuses on major journals and emerging evidence across general medicine, surgery, psychiatry, and specialised fields. Each summary is written by a qualified clinician in plain language and linked to the original abstract.
+**What is it?** A curated weekly digest designed specifically for UK doctors, summarising the most clinically significant research from the previous week. MCB focuses on major journals and emerging evidence across general medicine, surgery, psychiatry, and specialised fields. Each summary is written by a qualified clinician in plain language and linked to the original abstract.
 
 **Strengths:**
 - UK-focused content and clinical context (references NHS guidance, NICE recommendations, UK prevalence data)
 - Summaries written by practising clinicians across multiple specialties
-- Mobile-friendly format; can be read in 2–3 minutes daily
+- Mobile-friendly format; the whole issue reads in about 15 minutes a week
 - Integrates clinical significance with practical next steps
 - Transparent editorial process
 - Free trial available
@@ -204,11 +204,11 @@ Pricing ranges from free to several hundred pounds annually. Consider both the d
 
 ## Final Thoughts
 
-No single service is "best" for all clinicians. Most UK doctors benefit from a *combination*: institutional access (UpToDate, BMJ Best Practice) for reference and deep dives, plus a curated daily digest for passive, efficient staying current.
+No single service is "best" for all clinicians. Most UK doctors benefit from a *combination*: institutional access (UpToDate, BMJ Best Practice) for reference and deep dives, plus a curated weekly digest for passive, efficient staying current.
 
 If you're currently skipping summaries because you're overwhelmed, or reading abstracts at 10 pm and falling behind, a good digest service isn't a luxury—it's essential protected learning time.
 
-The Monday Clinical Brief offers a **free 14-day trial** with no credit card required. It's an easy way to see if a UK-focused, clinician-written daily digest fits your workflow. Start the trial and see if those 2–3 minutes daily make a difference to how informed and confident you feel in your practice.
+The Monday Clinical Brief offers a **free 4-week trial** with no credit card required. It's an easy way to see if a UK-focused, clinician-written weekly digest fits your workflow. Start the trial and see if those 15 minutes a week make a difference to how informed and confident you feel in your practice.
 
 For a broader introduction to managing medical literature, see our [guide to medical journal digests](../guide/) and [how to stay current with medical literature](../how-to-keep-up-with-medical-literature/).
 
