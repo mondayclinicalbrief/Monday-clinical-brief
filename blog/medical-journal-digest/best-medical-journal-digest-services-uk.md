@@ -53,12 +53,12 @@ Pricing ranges from free to several hundred pounds annually. Consider both the d
 **Limitations:**
 - Smaller team means less coverage volume than some competitors
 - Limited specialty depth in some areas (surgical specialties less comprehensive than general medicine)
-- No formal CPD credit structure yet, though this is being developed
-- Subscriber base smaller than established players
+- Not a formally accredited CPD provider (reading is logged via the free MCB CPD Tracker or your own portfolio)
+- Newer service than established players
 
 **Pricing:** Free trial; from £20/year for individuals
 
-**CPD Support:** Structured learning summaries being introduced; intended for appraisal portfolios
+**CPD Support:** Each issue is structured for easy CPD logging; reflective notes ready for your appraisal portfolio
 
 ---
 
@@ -181,7 +181,7 @@ Pricing ranges from free to several hundred pounds annually. Consider both the d
 
 | Service | Journals Covered | Frequency | CPD Credits | Price |
 |---------|-----------------|-----------|------------|-------|
-| **The Monday Clinical Brief** | 50+ major journals | Weekly | Being developed | From £20/year |
+| **The Monday Clinical Brief** | 50+ major journals | Weekly | Easy to log | From £20/year |
 | **BMJ Best Practice** | BMJ journals + integrated guidelines | Daily updates | Yes | £200–500/year |
 | **DynaMed** | 500+ journals (summarised) | Continuous updates | Limited | From £150/year |
 | **UpToDate** | 500+ journals (summarised) | Continuous updates | Limited | From £600/year |
@@ -196,7 +196,7 @@ Pricing ranges from free to several hundred pounds annually. Consider both the d
 
 **For specialty practice:** Consider NEJM Clinician if your specialty is well-covered; otherwise, combination approach (your trust's institutional access + a curated daily digest) works best.
 
-**For CPD and appraisal:** BMJ Best Practice remains strongest for formal CPD documentation; MCB is developing this capability for UK revalidation workflows.
+**For CPD and appraisal:** BMJ Best Practice remains strongest for formal accredited CPD; MCB makes it easy to log your reading and reflections for UK revalidation workflows.
 
 **For thoroughness:** DynaMed or UpToDate for reference; The Monday Clinical Brief for staying current.
 

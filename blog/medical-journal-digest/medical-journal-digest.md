@@ -1,8 +1,8 @@
 ---
 title: "Medical Journal Digest"
 seoTitle: "Medical Journal Digest: The Complete Guide for Busy Clinicians | MCB"
-metaDescription: "Struggling to keep up with medical journals? Our medical journal digest delivers the key papers you need in minutes. Read the complete guide. CPD accredited."
-description: "The definitive guide to medical journal digests — what they are, how they work, and why thousands of UK clinicians rely on them to stay evidence-based."
+metaDescription: "Struggling to keep up with medical journals? Our medical journal digest delivers the key papers you need in minutes. Read the complete guide. Easy to log for CPD."
+description: "The definitive guide to medical journal digests — what they are, how they work, and how UK clinicians use them to stay evidence-based."
 date: 2026-03-17
 permalink: /blog/medical-journal-digest/guide/
 cluster: "Medical Journal Digest"
@@ -35,7 +35,7 @@ This guide explains what a medical journal digest is, why it matters for your cl
 
 __Try Monday Clinical Brief Free__
 
-Get the key papers from The Lancet, BMJ, NEJM, and 20+ journals. CPD accredited. Delivered weekly.
+Get the key papers from The Lancet, BMJ, NEJM, and 20+ journals. Easy to log for CPD. Delivered weekly.
 
 __[Start Your Free Trial]__
 
@@ -45,7 +45,7 @@ A medical journal digest is a curated summary service that monitors the major cl
 
 Unlike a journal subscription, which gives you access to full-text papers, a digest does the filtering and distillation work. Each summary typically covers the study question, methodology, key findings, and what it means for clinical practice, all condensed into a few hundred words.
 
-The best digests go further. They add clinical commentary, placing findings in the context of existing guidelines and real-world practice. They flag when a paper challenges current thinking or when a new treatment shows genuine promise. And increasingly, they link directly to CPD accreditation, meaning you earn professional development credit simply by reading.
+The best digests go further. They add clinical commentary, placing findings in the context of existing guidelines and real-world practice. They flag when a paper challenges current thinking or when a new treatment shows genuine promise. And increasingly, they make it easy to log your reading as CPD, so the professional development credit follows the reading you already do.
 
 ### How a Journal Digest Differs from Other Medical Information Sources
 
@@ -65,9 +65,9 @@ A medical journal digest closes that gap. Instead of needing two hours to scan j
 
 ### GMC Revalidation and the CPD Imperative
 
-Every doctor on the GMC register must demonstrate ongoing CPD as part of their annual appraisal and five-yearly revalidation cycle. Reading medical literature counts towards CPD, but only if it is evidenced. A CPD-accredited journal digest creates a natural paper trail: you read it, you log it, and the accreditation confirms its educational value.
+Every doctor on the GMC register must demonstrate ongoing CPD as part of their annual appraisal and five-yearly revalidation cycle. Reading medical literature counts towards CPD, but only if it is evidenced. A journal digest creates a natural paper trail: you read it, you log it with a short reflection, and you have your evidence for appraisal.
 
-For doctors who find the CPD portfolio a chore, a digest that automatically counts towards their reading hours removes a significant friction point. It turns an obligation into something genuinely useful.
+For doctors who find the CPD portfolio a chore, a digest that makes logging your reading effortless removes a significant friction point. It turns an obligation into something genuinely useful.
 
 ### Information Overload and Decision Fatigue
 
@@ -77,7 +77,7 @@ A digest eliminates decision fatigue by making the selection for you. An editori
 
 __Stop Missing Critical Papers__
 
-Join 5,000+ UK doctors who read Monday Clinical Brief every week. 15 minutes. All the papers that matter.
+Read Monday Clinical Brief every week. 15 minutes. All the papers that matter.
 
 __[Subscribe Now]__
 
@@ -89,9 +89,9 @@ Not all digests are created equal. When evaluating options, consider these facto
 
 The best digest services monitor a wide range of high-impact journals. At minimum, look for coverage of The Lancet, BMJ, NEJM, and JAMA. Ideally, the service should also cover specialty journals relevant to your practice area. Ask how many journals are monitored, and how papers are selected.
 
-### CPD Accreditation
+### CPD Logging
 
-If you are a UK doctor, CPD accreditation is essential. Check that the service is accredited by a recognised body (such as the Royal College of General Practitioners, the Federation of the Royal Colleges of Physicians, or equivalent). Accreditation means each issue has been independently verified as educationally valuable, and the CPD points count towards your appraisal portfolio.
+If you are a UK doctor, look at how easily a service lets you log your reading for CPD. The GMC accepts reading with reflection as a valid CPD activity — it does not have to be formally accredited, but it does have to be evidenced. The best services make that record-keeping effortless: a dated log of what you read, with room for a short reflection you can export for appraisal.
 
 ### Clinical Commentary
 
@@ -114,59 +114,15 @@ Monday Clinical Brief is a weekly medical journal digest designed specifically f
 - Key paper summaries: structured summaries of the 8-12 most impactful papers from The Lancet, BMJ, NEJM, JAMA, and specialist journals.
 - Clinical commentary: each summary includes expert commentary on what the findings mean for UK practice, written by practising clinicians.
 - Guideline updates: flagged whenever a paper has implications for current NICE or specialty guidelines.
-- CPD accreditation: each issue carries CPD points accredited by a recognised body, with automatic logging for your portfolio.
+- Easy CPD logging: each issue is structured so you can log it as a CPD activity in minutes, with a short reflection ready for your portfolio.
 - Reading time: approximately 15 minutes per issue.
 
 ### Who It Is For
 
 MCB is used by GPs, hospital consultants, specialty trainees, and other healthcare professionals across the UK. The content is curated to be relevant across specialties, with the editorial focus on papers that affect clinical decision-making rather than niche academic research. Whether you are a GP in Cumbria or a registrar in central London, the papers that matter to your patients are the papers MCB covers.
 
-## Related Reading
-
-Explore more from the MCB blog on staying current with medical literature:
-
-- # How to Keep Up with Medical Literature in 2026
-- # Best Medical Journal Summaries: A 2026 Comparison Guide
-- # Weekly Medical Journal Roundup: This Week's Key Papers
-- # Journal Club Summaries Online: Resources for Medical Teams
-- # Medical Research Digest for GPs: Specialty-Filtered Reading
-- # Clinical Evidence Summary: What Changed This Month
-- # Too Many Medical Journals to Read? Here Is What Smart Doctors Do
-
-## Frequently Asked Questions
-
-[Implement as FAQPage schema]
-
-### What is a medical journal digest?
-
-A medical journal digest is a curated summary service that monitors the major clinical journals, identifies the most relevant papers for practising doctors, and delivers structured summaries with clinical commentary. It is designed to keep busy clinicians up to date without requiring hours of reading time.
-
-### How is a digest different from a journal subscription?
-
-A journal subscription gives you access to full-text papers, but you still need to find, select, and read them yourself. A digest does the filtering and distillation for you, presenting only the most impactful findings in a concise format with expert commentary on what they mean for practice.
-
-### Does reading a medical journal digest count towards CPD?
-
-If the digest is CPD accredited, yes. Monday Clinical Brief is accredited by a recognised CPD body, meaning each weekly issue earns you CPD points that count towards your annual appraisal and GMC revalidation. You can log your reading directly in your CPD portfolio.
-
-### How many journals does Monday Clinical Brief cover?
-
-MCB monitors more than 20 major medical journals every week, including The Lancet, BMJ, NEJM, JAMA, and a range of specialist publications. Papers are selected based on their potential impact on UK clinical practice.
-
-### How long does it take to read each issue?
-
-Each weekly issue is designed to be read in approximately 15 minutes. Summaries are structured for quick scanning, so you can read in full or focus on the papers most relevant to your specialty.
-
-### Is Monday Clinical Brief suitable for hospital doctors and GPs?
-
-Yes. The editorial focus is on papers that affect clinical decision-making across specialties. Both GPs and hospital consultants use MCB as their primary way to stay current with the medical literature. Specialty-specific content is clearly labelled so you can prioritise what matters most to your practice.
-
-### Can I try it before subscribing?
-
-Yes. MCB offers a free trial so you can experience the format, depth, and relevance of the summaries before committing to a subscription. There is no obligation, and you can cancel at any time.
-
 __Start Reading Smarter__
 
-Join thousands of UK doctors who trust Monday Clinical Brief to keep them current. CPD accredited. 15 minutes per week. Zero information overload.
+Stay current with Monday Clinical Brief. Easy to log for CPD. 15 minutes per week. Zero information overload.
 
 __[Start Your Free Trial]__

@@ -60,11 +60,9 @@ This is exactly what Monday Clinical Brief does. Instead of you spending hours t
 
 ## Related Reading
 
-→ How to Keep Up with Medical Literature in 2026: [INTERNAL LINK: /blog/how-to-keep-up-with-medical-literature/]
-
-→ CPD Reading for Doctors UK: Everything You Need to Know: [INTERNAL LINK: /blog/cpd-reading-tool/cpd-reading-for-doctors-uk/]
-
-→ Join Monday Clinical Brief: [INTERNAL LINK: /]
+- [How to Keep Up with Medical Literature in 2026](/blog/medical-journal-digest/how-to-keep-up-with-medical-literature/)
+- [CPD Reading for Doctors UK: Everything You Need to Know](/blog/cpd-reading-tool/cpd-reading-for-doctors-uk/)
+- [Join Monday Clinical Brief](/)
 
 ## Frequently Asked Questions
 

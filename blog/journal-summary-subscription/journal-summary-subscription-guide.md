@@ -1,7 +1,7 @@
 ---
 title: "Journal Summary Subscription"
 seoTitle: "Journal Summary Subscription: Clinical Digests Delivered Weekly | MCB"
-metaDescription: "Subscribe to Monday Clinical Brief for weekly journal summaries from The Lancet, BMJ, NEJM and 20+ journals. CPD accredited. Written for UK doctors."
+metaDescription: "Subscribe to Monday Clinical Brief for weekly journal summaries from The Lancet, BMJ, NEJM and 20+ journals. Easy to log for CPD. Written for UK doctors."
 description: "Compare journal summary subscription services for UK doctors. What to look for, how they work, and why The Monday Clinical Brief covers 31 specialties for £20/year."
 date: 2026-03-17
 permalink: /blog/journal-summary-subscription/guide/
@@ -25,11 +25,11 @@ faqs:
 
 You did not become a doctor to spend your evenings reading abstracts. But staying current with the evidence is not optional. Your patients deserve decisions grounded in the latest research. Your appraiser expects documented CPD. And you need to know when a paper changes the game for your specialty.
 
-Monday Clinical Brief is a weekly journal summary subscription that delivers the papers that matter, summarised by clinicians, accredited for CPD, and designed to be read in 15 minutes.
+Monday Clinical Brief is a weekly journal summary subscription that delivers the papers that matter, summarised by clinicians, easy to log for CPD, and designed to be read in 15 minutes.
 
 __Try It Free for 4 Weeks__
 
-No credit card required. Cancel anytime. See why 5,000+ UK doctors start their week with MCB.
+No credit card required. Cancel anytime. See why UK doctors start their week with MCB.
 
 __[Start Free Trial]__
 
@@ -39,7 +39,7 @@ Each Monday morning, your inbox receives a single, focused issue containing ever
 
 - 8-12 key paper summaries from The Lancet, BMJ, NEJM, JAMA, and 20+ specialist journals, selected by a clinical editorial team for their relevance to UK practice.
 - Expert clinical commentary with each summary, explaining what the findings mean for your patients, whether they change existing guidelines, and what the limitations are.
-- CPD points automatically logged against your reading. Each issue is independently accredited, and your CPD record is maintained for you.
+- Easy CPD logging. Each issue is structured so you can log your reading in minutes, via the free MCB CPD Tracker or your existing portfolio.
 - Guideline alerts flagged whenever a paper has implications for NICE guidance, Royal College recommendations, or standard practice protocols.
 - 15-minute reading time. Every issue is structured for efficient reading. Scan the headlines, read what is relevant, reflect, and move on with your day.
 
@@ -47,7 +47,7 @@ Each Monday morning, your inbox receives a single, focused issue containing ever
 
 1. Subscribe: sign up in under a minute. Choose weekly email delivery, and optionally enable the web portal and mobile access.
 2. Read: every Monday morning, your clinical digest arrives. Open it on your phone between patients, on your laptop at home, or on the train. It takes 15 minutes.
-3. Earn CPD: your reading is automatically logged as accredited CPD. Add reflective notes using our structured templates, or simply let the record build.
+3. Log CPD: record your reading in minutes using the free MCB CPD Tracker or your existing portfolio. Add reflective notes using our structured templates.
 
 ## How MCB Compares
 
@@ -79,7 +79,7 @@ Curated (20+ journals)
 
 15 mins/week
 
-Accredited (automatic)
+Easy to log
 
 Summaries + commentary
 
@@ -121,49 +121,8 @@ Alerts only, no summaries
 
 [Testimonial placeholder] "I read it every Monday between my first two clinics. Fifteen minutes and I know I have not missed anything important." - Specialty Registrar, London
 
-## Frequently Asked Questions
-
-[Implement as FAQPage schema]
-
-### What journals are covered?
-
-MCB monitors more than 20 major medical journals including The Lancet, BMJ, NEJM, JAMA, and a range of specialty publications. Papers are selected based on their potential to affect UK clinical practice.
-
-### How much does a subscription cost?
-
-[Pricing placeholder - insert current pricing with monthly and annual options. Annual subscription saves X% compared to monthly.]
-
-### Is it CPD accredited?
-
-Yes. Every issue of Monday Clinical Brief carries CPD points from a recognised accrediting body. Your reading is automatically logged and can be exported for your appraisal portfolio.
-
-### Can I cancel at any time?
-
-Yes. There is no lock-in contract. You can cancel your subscription at any time and retain access until the end of your current billing period.
-
-### Is MCB suitable for my specialty?
-
-MCB covers papers across specialties, with an editorial focus on findings that affect clinical decision-making. Content is clearly labelled by specialty area, so you can prioritise papers most relevant to your practice. MCB is used by GPs, hospital consultants, trainees, and other healthcare professionals.
-
-### How is MCB different from NEJM Journal Watch?
-
-NEJM Journal Watch is a US-focused product written for American healthcare. MCB is designed specifically for UK doctors, with commentary contextualised around NHS practice, NICE guidelines, and UK prescribing. MCB also includes CPD accreditation recognised by UK Royal Colleges.
-
-### Is there a free trial?
-
-Yes. MCB offers a free trial so you can experience the format, depth, and relevance of the summaries before subscribing. No credit card is required to start your trial.
-
 __Start Your Free Trial Today__
 
-Join thousands of UK doctors who start every Monday informed, current, and CPD-ready. 15 minutes. Zero overwhelm.
+Start every Monday informed, current, and CPD-ready. 15 minutes. Zero overwhelm.
 
 __[Start Free Trial - No Card Required]__
-
-## Related Reading
-
-- # Medical Journal Digest: The Complete Guide for Busy Clinicians
-- # CPD Reading Tool: How to Earn CPD Points by Reading Medical Journals
-- # Best Medical Journal Summaries: A 2026 Comparison Guide
-- # MCB vs NEJM Journal Watch: Which Digest Is Right for UK Doctors?
-- # Evidence-Based Medicine Newsletter: Top Options Compared
-- # Affordable Medical Journal Access UK: Options for Every Budget

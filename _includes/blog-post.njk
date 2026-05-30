@@ -225,6 +225,7 @@
 <nav>
   <a href="/" class="nav-brand">The Monday Clinical Brief</a>
   <div class="nav-links">
+    <a href="/samples/">Samples</a>
     <a href="/blog/">Blog</a>
     <a href="/#how">How it works</a>
     <a href="/#subscribe" class="nav-cta">Start free trial</a>
@@ -276,6 +277,26 @@
     <p>Weekly journal digests for 31 medical specialties. Structured summaries, every Monday.</p>
     <a href="/#subscribe" class="btn-primary">Start your free trial →</a>
   </div>
+
+  <!-- ═══ RELATED IN THIS CLUSTER (hub-and-spoke internal linking) ═══ -->
+  {% if cluster %}
+  <div class="related-posts">
+    <h3>More on {{ cluster }}</h3>
+    <ul>
+      {%- for post in collections.posts %}
+        {%- if post.data.cluster == cluster and post.data.pillar and post.url != page.url %}
+      <li><a href="{{ post.url }}">{{ post.data.title }}</a> — the complete guide</li>
+        {%- endif %}
+      {%- endfor %}
+      {%- for post in collections.posts %}
+        {%- if post.data.cluster == cluster and not post.data.pillar and post.url != page.url %}
+      <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+        {%- endif %}
+      {%- endfor %}
+    </ul>
+    <p style="margin-top:1rem;margin-bottom:0;"><a href="/samples/">Browse sample digests for all 31 specialties →</a></p>
+  </div>
+  {% endif %}
 </article>
 
 <!-- ═══ AUTHOR ═══ -->

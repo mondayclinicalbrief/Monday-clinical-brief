@@ -98,11 +98,9 @@ Monday Clinical Brief is specifically designed to support UK doctors' CPD readin
 
 ## Related Reading
 
-→ How to Keep Up with Medical Literature in 2026: [INTERNAL LINK: /blog/how-to-keep-up-with-medical-literature/]
-
-→ Too Many Medical Journals to Read? Here Is What Smart Doctors Do: [INTERNAL LINK: /blog/too-many-medical-journals-to-read/]
-
-→ Join Monday Clinical Brief: [INTERNAL LINK: /]
+- [How to Keep Up with Medical Literature in 2026](/blog/medical-journal-digest/how-to-keep-up-with-medical-literature/)
+- [Too Many Medical Journals to Read? Here Is What Smart Doctors Do](/blog/medical-journal-digest/too-many-medical-journals-to-read/)
+- [Join Monday Clinical Brief](/)
 
 ## Frequently Asked Questions
 
