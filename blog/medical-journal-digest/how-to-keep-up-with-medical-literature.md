@@ -4,12 +4,15 @@ seoTitle: "How to Keep Up with Medical Literature in 2026 | Monday Clinical Brie
 metaDescription: "Over 7,000 medical papers published weekly. How do busy UK doctors stay current? Five practical strategies for efficient journal reading that count towards CPD."
 description: "Five practical strategies for busy UK doctors to stay current with the medical literature — without sacrificing every evening and weekend."
 date: 2026-03-24
+updated: 2026-06-02
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
 ---
 
 # How to Keep Up with Medical Literature in 2026
+
+> **June 2026 update:** The tools for staying current have multiplied this year, and most of them are query tools, not reading tools. The UK-relevant landscape now includes [Praxis Medicine](/blog/medical-journal-digest/praxis-medicine-uk/) (a Balderton-backed clinical AI search), [Heidi Evidence](/blog/medical-journal-digest/heidi-evidence-vs-monday-clinical-brief/) (Claude-built, but its answer feature does not enrol UK NHS emails), and EBSCO's Dyna AI Mode (institutional). They help you *ask* a question. None of them keeps you current with what you did not think to ask — which is the job a weekly digest does, and the reason the strategies below still hold. For the honest run-down of the ad-free options, see our [ad-free clinical AI for UK doctors](/blog/medical-journal-digest/ad-free-clinical-ai-uk-2026/) guide.
 
 ## The Scale of the Problem
 
