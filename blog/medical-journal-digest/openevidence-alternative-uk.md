@@ -61,6 +61,8 @@ When OpenEvidence withdrew in April, the field of UK-usable replacements was thi
 
 The query tools — iatroX, Heidi Evidence, Praxis, Vera — help you ask a question. None of them keep you current. That is a different job, and it is the one MCB does. Think of the digest as the reading layer none of these replace: it tells you what changed this week, so you know what to ask the query tool about in the first place.
 
+One loop worth closing: Heidi Evidence now publishes its own "OpenEvidence alternative" comparison — while its answer feature still does not enrol UK NHS emails. So a UK NHS doctor who follows that recommendation lands on a tool they cannot actually use. If that is you, the usable options above (and a weekly digest for the reading) are the practical answer.
+
 ## For clinical Q&A: what's still available in the UK
 
 [iatroX](https://iatrox.com) is UK-based, holds MHRA registration and UKCA marking, and is positioning as the UK alternative for AI clinical Q&A. It's the closest direct replacement for OpenEvidence's core use case within the UK regulatory environment.

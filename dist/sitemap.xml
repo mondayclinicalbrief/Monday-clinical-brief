@@ -223,6 +223,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/this-week-in-medical-journals-june-2026/</loc>
+    <lastmod>2026-06-02T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/tirzepatide-gp-qof-2026/</loc>
     <lastmod>2026-06-02T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
@@ -248,7 +254,7 @@
   </url>
   <url>
     <loc>https://mondayclinicalbrief.co.uk/blog/cpd-reading-tool/log-journal-reading-for-gmc-revalidation/</loc>
-    <lastmod>2026-05-19T00:00:00.000Z</lastmod>
+    <lastmod>2026-06-02T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

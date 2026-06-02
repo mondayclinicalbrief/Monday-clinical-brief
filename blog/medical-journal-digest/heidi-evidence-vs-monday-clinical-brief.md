@@ -25,7 +25,7 @@ Heidi Evidence launched in February 2026 and immediately changed the conversatio
 
 If you are a UK doctor wondering whether Heidi Evidence replaces your need for a journal digest subscription, the honest answer is: no. But the reason is not that Heidi is bad. It is that Heidi and a weekly digest do fundamentally different jobs.
 
-> **June 2026 update:** The position is unchanged. *Heidi Evidence* — the citation-backed clinical-answer feature — still does not enrol UK NHS email addresses, so NHS clinicians cannot use it. This is specific to the Evidence feature: *Heidi Scribe*, the AI clinical documentation tool, is separately MHRA-cleared and remains available to UK clinicians. See our explainer on [the Heidi Evidence UK NHS exclusion](/blog/medical-journal-digest/heidi-evidence-uk-nhs-excluded/) for the detail and what UK clinicians can use in the meantime.
+> **June 2026 update:** The position is unchanged. *Heidi Evidence* — the citation-backed clinical-answer feature — still does not enrol UK NHS email addresses, so NHS clinicians cannot use it. This is specific to the Evidence feature: *Heidi Scribe*, the AI clinical documentation tool, is separately MHRA-cleared and remains available to UK clinicians. Heidi Evidence has now passed roughly 2 million queries globally — the category economics are proven; the UK NHS door is the part that is still shut. See our explainer on [the Heidi Evidence UK NHS exclusion](/blog/medical-journal-digest/heidi-evidence-uk-nhs-excluded/) for the detail and what UK clinicians can use in the meantime.
 
 ## The Core Difference: Pull vs Push
 

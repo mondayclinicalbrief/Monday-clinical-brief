@@ -53,6 +53,8 @@ UpToDate Pro Plus AI is currently available only to personal subscribers in the 
 
 This is the same regulatory pattern driving OpenEvidence's withdrawal and ChatGPT for Clinicians' UK exclusion. US vendors are restricting AI healthcare features in markets where the regulatory path is uncertain. The UK is currently one of those markets.
 
+UpToDate's main institutional rival, DynaMed, has moved the same way: its Dyna AI Mode (a retrieval-grounded AI answer layer) launched in 2026 but sits inside the institutional product, not an individual UK subscription. The pattern is consistent — the AI layer in these big reference tools is, for now, something your Trust might buy, not something a UK individual can. None of it is a digest, either: "DynaMed AI for your Trust, MCB for your inbox" is the honest split.
+
 ## What The Monday Clinical Brief does
 
 MCB is a push tool. Every Monday morning, it sends you five of the most important peer-reviewed papers published in your specialty that week. Plain-language summaries. Links to the originals. Nothing else.
