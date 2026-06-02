@@ -1,7 +1,7 @@
 ---
 title: "MCB vs NEJM Clinician (formerly NEJM Journal Watch)"
 seoTitle: "Monday Clinical Brief vs NEJM Clinician (NEJM Journal Watch): 2026 Comparison"
-metaDescription: "NEJM Journal Watch rebranded to NEJM Clinician in November 2025. How does it compare to The Monday Clinical Brief in 2026? Price, specialty coverage, UK fit, and which one UK doctors actually need."
+metaDescription: "NEJM Clinician (formerly NEJM Journal Watch) costs ~£75/year per specialty track and covers 12 editions. The Monday Clinical Brief covers all 31 specialties for £20/year. Here's how they compare on price, coverage and UK fit in 2026."
 description: "NEJM Journal Watch is now NEJM Clinician. Here's how it compares to The Monday Clinical Brief in 2026 — price, coverage, UK alignment, and which one fits your workflow."
 date: 2026-05-04
 updated: 2026-06-02
@@ -24,6 +24,8 @@ faqs:
 NEJM Journal Watch rebranded to [NEJM Clinician](https://www.nejm.org) in November 2025. If you're searching for the old name, this is the same product under a new brand with updated pricing and a redesigned platform.
 
 Both NEJM Clinician and The Monday Clinical Brief are journal digest products — but they are built on different editorial philosophies, cover different numbers of specialties, and sit at very different price points. Here is an honest comparison.
+
+**In short:** NEJM Clinician offers 12 specialty editions at about £75/year per track, with expert-picked commentary from named US editors. The Monday Clinical Brief covers all 31 specialties for £20/year, with systematic top-5 selection and a UK focus. If you want one editor's commentary in one of the 12 editions, NEJM Clinician is strong. If you want broad, UK-relevant coverage at a fraction of the price — especially across more than one specialty — MCB is the better fit.
 
 ## What changed with the rebrand
 
