@@ -4,8 +4,9 @@ seoTitle: "OpenEvidence Alternative UK: What to Use Instead | The Monday Clinica
 metaDescription: "OpenEvidence withdrew from the UK in April 2026. Here's what UK doctors can use instead — for clinical Q&A and for keeping up with the medical literature."
 description: "OpenEvidence is gone from the UK. Here's what actually fills the gap — and why staying current with the literature is a different problem from clinical Q&A."
 date: 2026-05-03
+updated: 2026-06-02
 cluster: "Medical Journal Digest"
-schemaType: "Article"
+schemaType: "MedicalWebPage"
 pillar: false
 faqs:
   - question: "Why did OpenEvidence leave the UK?"
@@ -26,7 +27,7 @@ OpenEvidence is no longer available to UK doctors. The platform withdrew from th
 
 If you used it, you'll have noticed the gap.
 
-> **Update — 25 May 2026 (one month on):** OpenEvidence is still unavailable to UK clinicians. No re-entry signal has been published. The UK regulatory framework that triggered the withdrawal remains mid-flight — the MHRA Medical Devices (Amendment) Regulations consultation closes 19 June 2026; the International Reliance Framework is expected in Autumn. Meanwhile a third clinical AI tool, Heidi Evidence, joined the UK-exclusion pattern in May 2026 by blocking NHS email addresses at enrolment. For the wider context across all three withdrawals, see our anchor post on [the three AI tools UK doctors lost in six weeks](/blog/medical-journal-digest/uk-doctors-lost-ai-tools-2026/).
+> **Update — 25 May 2026 (one month on):** OpenEvidence is still unavailable to UK clinicians. No re-entry signal has been published. The UK regulatory framework that triggered the withdrawal remains mid-flight — the [MHRA](https://www.gov.uk/government/organisations/medicines-and-healthcare-products-regulatory-agency) Medical Devices (Amendment) Regulations consultation closes 19 June 2026; the International Reliance Framework is expected in Autumn. Meanwhile a third clinical AI tool, Heidi Evidence, joined the UK-exclusion pattern in May 2026 by blocking NHS email addresses at enrolment. For the wider context across all three withdrawals, see our anchor post on [the three AI tools UK doctors lost in six weeks](/blog/medical-journal-digest/uk-doctors-lost-ai-tools-2026/).
 
 ## What happened
 

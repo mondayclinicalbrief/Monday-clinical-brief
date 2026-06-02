@@ -5,7 +5,7 @@ metaDescription: "After the February 2026 NICE NG28 update, SGLT2 inhibitors are
 description: "The 2026 NICE NG28 update made SGLT2 inhibitors first-line for most adults with type 2 diabetes. A practical guide to UK primary-care prescribing — agents, eligibility, cautions, sick-day rules, and what still requires metformin."
 date: 2026-05-19
 cluster: "Medical Journal Digest"
-schemaType: "Article"
+schemaType: "MedicalWebPage"
 pillar: false
 faqs:
   - question: "Which SGLT2 inhibitors are licensed for type 2 diabetes in the UK?"

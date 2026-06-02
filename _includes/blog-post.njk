@@ -144,10 +144,18 @@
   "datePublished": "{{ date | isoDate }}",
   {% if updated %}"dateModified": "{{ updated | isoDate }}",{% endif %}
   "author": {
-    "@type": "Organization",
-    "name": "The Monday Clinical Brief",
-    "url": "https://mondayclinicalbrief.co.uk"
+    "@type": "Person",
+    "name": "{{ author }}",
+    "jobTitle": "Consultant in Palliative Medicine",
+    "worksFor": { "@type": "MedicalOrganization", "name": "NHS Wales" },
+    "url": "https://mondayclinicalbrief.co.uk/#about"
   },
+  "reviewedBy": {
+    "@type": "Person",
+    "name": "{{ author }}",
+    "jobTitle": "Consultant in Palliative Medicine"
+  },
+  {% if updated %}"lastReviewed": "{{ updated | isoDate }}",{% endif %}
   "publisher": {
     "@type": "Organization",
     "name": "The Monday Clinical Brief",
@@ -251,7 +259,7 @@
   <div class="article-meta">
     <time datetime="{{ date | isoDate }}">{{ date | readableDate }}</time>
     <span>{{ content | readingTime }}</span>
-    {% if author %}<span>By {{ author }}</span>{% endif %}
+    {% if author %}<span>By {{ author }}{% if authorRole %}, {{ authorRole }}{% endif %}</span>{% endif %}
   </div>
 </header>
 
@@ -303,9 +311,9 @@
 {% if author %}
 <div style="max-width: 760px; margin: 0 auto; padding: 0 2rem;">
   <div class="author-box">
-    <div class="author-avatar">MCB</div>
+    <div class="author-avatar">TH</div>
     <div class="author-info">
-      <h4>{{ author }}</h4>
+      <h4>{{ author }}{% if authorRole %} · {{ authorRole }}{% endif %}</h4>
       <p>{{ authorBio or "The Monday Clinical Brief — AI-powered weekly journal digests for UK clinicians." }}</p>
     </div>
   </div>

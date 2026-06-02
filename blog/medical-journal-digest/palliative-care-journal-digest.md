@@ -6,7 +6,7 @@ metaDescription: "Stay current with palliative care evidence — the five most i
 description: "Five peer-reviewed palliative care papers, every Monday. Plain-language summaries, written for NHS clinicians by a serving consultant in the specialty."
 date: 2026-05-11
 cluster: "Medical Journal Digest"
-schemaType: "Article"
+schemaType: "MedicalWebPage"
 pillar: false
 author: "Tim Hamilton"
 authorBio: "Consultant in Palliative Medicine, Aneurin Bevan University Health Board (ABUHB), NHS Wales. Founder, The Monday Clinical Brief."

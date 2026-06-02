@@ -5,7 +5,7 @@ metaDescription: "This week's most important medical journal papers across speci
 description: "The most notable papers published this week across major medical journals — quick clinical summaries for doctors who don't have time to read everything."
 date: 2026-03-30
 cluster: "Medical Journal Digest"
-schemaType: "Article"
+schemaType: "MedicalWebPage"
 pillar: false
 ---
 

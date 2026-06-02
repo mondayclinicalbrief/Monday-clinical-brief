@@ -5,7 +5,7 @@ metaDescription: "NICE updated NG28 on 18 February 2026 to make SGLT2 inhibitors
 description: "The 18 February 2026 NICE NG28 update is the biggest change to UK type 2 diabetes prescribing in years. SGLT2 inhibitors are now first-line for almost all adults. Here's a plain-English summary for busy UK clinicians."
 date: 2026-05-17
 cluster: "Medical Journal Digest"
-schemaType: "Article"
+schemaType: "MedicalWebPage"
 pillar: false
 faqs:
   - question: "What is the most important change in the 2026 NICE NG28 update?"

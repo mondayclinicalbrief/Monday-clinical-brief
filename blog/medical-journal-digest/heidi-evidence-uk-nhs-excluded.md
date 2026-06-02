@@ -5,7 +5,7 @@ metaDescription: "Heidi Evidence is free, citation-backed, and partnered with NI
 description: "Heidi Evidence is the most-anticipated UK-relevant clinical AI tool of 2026 — and NHS email addresses are blocked from signing up. This is the third UK AI exclusion in six weeks. Here's what to do."
 date: 2026-05-17
 cluster: "Medical Journal Digest"
-schemaType: "Article"
+schemaType: "MedicalWebPage"
 pillar: false
 faqs:
   - question: "Can UK NHS clinicians use Heidi Evidence?"

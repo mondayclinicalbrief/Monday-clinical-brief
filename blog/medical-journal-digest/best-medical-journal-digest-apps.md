@@ -5,7 +5,7 @@ metaDescription: "The best medical journal digest apps for UK doctors in 2026. M
 description: "The best medical journal digest apps for iOS and Android in 2026 — compared on offline reading, CPD logging, and what actually works on an NHS commute."
 date: 2026-06-02
 cluster: "Medical Journal Digest"
-schemaType: "Article"
+schemaType: "MedicalWebPage"
 pillar: false
 ---
 

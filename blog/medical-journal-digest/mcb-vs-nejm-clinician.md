@@ -4,8 +4,9 @@ seoTitle: "Monday Clinical Brief vs NEJM Clinician (NEJM Journal Watch): 2026 Co
 metaDescription: "NEJM Journal Watch rebranded to NEJM Clinician in November 2025. How does it compare to The Monday Clinical Brief in 2026? Price, specialty coverage, UK fit, and which one UK doctors actually need."
 description: "NEJM Journal Watch is now NEJM Clinician. Here's how it compares to The Monday Clinical Brief in 2026 — price, coverage, UK alignment, and which one fits your workflow."
 date: 2026-05-04
+updated: 2026-06-02
 cluster: "Medical Journal Digest"
-schemaType: "Article"
+schemaType: "MedicalWebPage"
 pillar: false
 faqs:
   - question: "Is NEJM Journal Watch still available?"
@@ -20,7 +21,7 @@ faqs:
 
 # MCB vs NEJM Clinician (formerly NEJM Journal Watch)
 
-NEJM Journal Watch rebranded to NEJM Clinician in November 2025. If you're searching for the old name, this is the same product under a new brand with updated pricing and a redesigned platform.
+NEJM Journal Watch rebranded to [NEJM Clinician](https://www.nejm.org) in November 2025. If you're searching for the old name, this is the same product under a new brand with updated pricing and a redesigned platform.
 
 Both NEJM Clinician and The Monday Clinical Brief are journal digest products — but they are built on different editorial philosophies, cover different numbers of specialties, and sit at very different price points. Here is an honest comparison.
 

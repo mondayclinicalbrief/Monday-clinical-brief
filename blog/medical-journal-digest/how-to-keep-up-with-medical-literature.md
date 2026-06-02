@@ -5,7 +5,7 @@ metaDescription: "Over 7,000 medical papers published weekly. How do busy UK doc
 description: "Five practical strategies for busy UK doctors to stay current with the medical literature — without sacrificing every evening and weekend."
 date: 2026-03-24
 cluster: "Medical Journal Digest"
-schemaType: "Article"
+schemaType: "MedicalWebPage"
 pillar: false
 ---
 

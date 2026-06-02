@@ -1,5 +1,6 @@
 {
   "layout": "blog-post.njk",
-  "author": "The Monday Clinical Brief",
-  "authorBio": "AI-powered weekly journal digests for UK clinicians across 31 medical specialties."
+  "author": "Dr Tim Hamilton",
+  "authorRole": "Consultant in Palliative Medicine, NHS Wales",
+  "authorBio": "Dr Tim Hamilton is a Consultant in Palliative Medicine in NHS Wales and the founder of The Monday Clinical Brief. He built MCB to help busy UK clinicians keep up with the literature across 31 specialties."
 }

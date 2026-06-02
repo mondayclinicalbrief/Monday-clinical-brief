@@ -4,8 +4,9 @@ seoTitle: "Heidi Evidence Alternative: Why a Weekly Digest Still Matters | MCB"
 metaDescription: "Heidi Evidence is free, UK-focused, and powered by Claude. Does it replace a weekly journal digest? We compare pull vs push, ad-hoc vs structured, and explain why UK doctors need both."
 description: "Heidi Evidence is free and powerful — but it solves a different problem. Here's why UK doctors still need a weekly digest alongside evidence lookup tools."
 date: 2026-04-25
+updated: 2026-06-02
 cluster: "Medical Journal Digest"
-schemaType: "Article"
+schemaType: "MedicalWebPage"
 pillar: false
 faqs:
   - question: "Is Heidi Evidence a good alternative to a journal digest?"
@@ -24,7 +25,7 @@ Heidi Evidence launched in February 2026 and immediately changed the conversatio
 
 If you are a UK doctor wondering whether Heidi Evidence replaces your need for a journal digest subscription, the honest answer is: no. But the reason is not that Heidi is bad. It is that Heidi and a weekly digest do fundamentally different jobs.
 
-> **May 2026 update:** Heidi Evidence is currently blocking UK NHS email addresses at enrolment. NHS clinicians cannot sign up. See our explainer on [the Heidi Evidence UK NHS exclusion](/blog/medical-journal-digest/heidi-evidence-uk-nhs-excluded/) for what changed and what UK clinicians can use in the meantime.
+> **June 2026 update:** The position is unchanged. *Heidi Evidence* — the citation-backed clinical-answer feature — still does not enrol UK NHS email addresses, so NHS clinicians cannot use it. This is specific to the Evidence feature: *Heidi Scribe*, the AI clinical documentation tool, is separately MHRA-cleared and remains available to UK clinicians. See our explainer on [the Heidi Evidence UK NHS exclusion](/blog/medical-journal-digest/heidi-evidence-uk-nhs-excluded/) for the detail and what UK clinicians can use in the meantime.
 
 ## The Core Difference: Pull vs Push
 
@@ -42,7 +43,7 @@ The first kind of ignorance is reactive. The second is structural. Both matter.
 
 ## What Heidi Evidence Does Well
 
-Credit where it is due. Heidi Evidence is a strong product and it is genuinely useful for UK clinicians.
+Credit where it is due. Heidi Evidence is a strong product and a useful one for UK clinicians.
 
 **UK-specific sources.** The partnership with NICE and BMJ Group means answers reflect UK guidelines, not FDA recommendations or American clinical pathways. For UK GPs especially, this is a meaningful advantage over US-centric tools like UpToDate or OpenEvidence.
 
@@ -51,6 +52,8 @@ Credit where it is due. Heidi Evidence is a strong product and it is genuinely u
 **Integrated with the Heidi platform.** If you already use Heidi as an AI scribe for clinical documentation, Evidence sits inside the same interface. No context switching.
 
 **MHRA-adjacent credibility.** Through the AutoMedica acquisition, Heidi has a regulatory signal via the MHRA AI Airlock pilot. For institutions evaluating clinical AI tools, this matters.
+
+**Ad-free, and built on Claude.** Heidi Evidence carries no advertising and is ISO 42001 audited — its answers are not shaped by who is paying. We have run on the same principle since launch, and MCB is also Claude-summarised. On posture, the two products agree: no ads, no algorithmic feed deciding what you see. The difference is the job, not the values — Heidi answers the question you bring; the digest brings you the questions you did not know to ask.
 
 ## What Heidi Evidence Cannot Do
 

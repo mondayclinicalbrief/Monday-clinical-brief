@@ -4,8 +4,9 @@ seoTitle: "Monday Clinical Brief vs UpToDate: Which Do UK Doctors Actually Need?
 metaDescription: "UpToDate is the gold standard clinical reference. The Monday Clinical Brief is a weekly literature digest. They do different jobs — here's how to think about both, including why UK doctors don't get UpToDate's new AI features."
 description: "UpToDate and MCB solve different problems. One is a reference you consult. The other is a digest that keeps you current. Most UK doctors need both — here's why."
 date: 2026-05-04
+updated: 2026-06-02
 cluster: "Medical Journal Digest"
-schemaType: "Article"
+schemaType: "MedicalWebPage"
 pillar: false
 faqs:
   - question: "Is The Monday Clinical Brief a cheaper alternative to UpToDate?"
@@ -64,7 +65,7 @@ We cover 31 specialties. £20 a year. No AI features to be excluded from.
 
 For most UK NHS doctors, the practical setup is:
 
-**UpToDate** (via institutional access): use at the point of care when a patient presents with something you want to check. Excellent reference. Almost certainly free through your trust.
+**UpToDate** (via institutional access): use at the point of care when a patient presents with something you want to check. Excellent reference. Almost certainly free through your trust — check the [NHS Knowledge and Library Hub](https://library.nhs.uk) or your local library service.
 
 **The Monday Clinical Brief**: use every Monday morning to see what was published last week in your specialty. Fifteen minutes. Five papers. CPD evidence built in.
 

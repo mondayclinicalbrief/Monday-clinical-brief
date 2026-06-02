@@ -5,7 +5,7 @@ metaDescription: "Comparing the best medical journal digest services for UK clin
 description: "A head-to-head comparison of journal digest services available to UK doctors — features, pricing, CPD integration, and specialty coverage."
 date: 2026-04-14
 cluster: "Medical Journal Digest"
-schemaType: "Article"
+schemaType: "MedicalWebPage"
 pillar: false
 ---
 

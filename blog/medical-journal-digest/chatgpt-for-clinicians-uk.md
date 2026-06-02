@@ -5,7 +5,7 @@ metaDescription: "OpenAI launched ChatGPT for Clinicians on 23 April 2026 — an
 description: "ChatGPT for Clinicians launched in April 2026 but explicitly excludes the UK and EEA. Here's what it does, why UK doctors are locked out, and what's actually available."
 date: 2026-05-13
 cluster: "Medical Journal Digest"
-schemaType: "Article"
+schemaType: "MedicalWebPage"
 pillar: false
 faqs:
   - question: "What is ChatGPT for Clinicians?"

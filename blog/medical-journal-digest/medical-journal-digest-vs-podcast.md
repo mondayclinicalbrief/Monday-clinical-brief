@@ -5,7 +5,7 @@ metaDescription: "Should UK doctors learn from journal digests or medical podcas
 description: "Journal digest or medical podcast — which is the better way for UK doctors to keep current? A practical comparison of retention, CPD value, and time efficiency."
 date: 2026-06-09
 cluster: "Medical Journal Digest"
-schemaType: "Article"
+schemaType: "MedicalWebPage"
 pillar: false
 ---
 

@@ -5,7 +5,7 @@ metaDescription: "Between 23 April and May 2026, UK NHS clinicians lost access t
 description: "OpenEvidence withdrew. ChatGPT for Clinicians launched with UK excluded. Heidi Evidence blocked NHS emails. UK doctors lost three credible AI tools in six weeks. Here's the pattern — and the two-tool setup we recommend instead."
 date: 2026-05-25
 cluster: "Medical Journal Digest"
-schemaType: "Article"
+schemaType: "MedicalWebPage"
 pillar: false
 faqs:
   - question: "Which AI tools have UK doctors lost access to in 2026?"
