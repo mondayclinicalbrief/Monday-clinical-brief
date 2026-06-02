@@ -71,7 +71,7 @@ specialties:
   {%- for post in collections.posts %}
   <url>
     <loc>https://mondayclinicalbrief.co.uk{{ post.url }}</loc>
-    <lastmod>{{ post.date | isoDate }}</lastmod>
+    <lastmod>{{ (post.data.updated or post.date) | isoDate }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
