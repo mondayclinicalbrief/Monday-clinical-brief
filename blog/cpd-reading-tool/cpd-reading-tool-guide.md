@@ -89,7 +89,7 @@ CPD reading is only valuable if the content is relevant to your practice. A CPD 
 Monday Clinical Brief is designed from the ground up as a CPD reading tool for UK doctors. Every element of the service, from content selection to delivery format, is built around making journal reading count towards professional development.
 
 - Easy CPD logging: every weekly issue is structured so you can log it as a CPD activity in minutes, with no quiz or assessment to complete first.
-- Simple reading record: log each issue you read with the date, content covered, and time spent — via the free MCB CPD Tracker or your existing portfolio (such as FourteenFish).
+- Simple reading record: log each issue you read with the date, content covered, and time spent — via the free [MCB CPD Tracker](https://cpd.mondayclinicalbrief.co.uk) or your existing portfolio (such as FourteenFish).
 - Reflective reading prompts: each issue includes structured questions designed to prompt reflection on how the papers relate to your practice. These notes become part of your CPD evidence.
 - Portfolio-ready exports: generate a CPD reading summary for any date range, formatted for appraisal. Includes papers read, dates, time logged, and reflective notes.
 - UK-focused clinical content: all summaries are contextualised for NHS practice, referencing NICE guidelines, BNF recommendations, and UK prescribing contexts where relevant.

@@ -76,7 +76,7 @@ You have four realistic options for where the log lives.
 - **Royal College portfolio.** If your college offers one (RCGP, RCPCH, RCP London), use it. Entries sync to your appraisal summary automatically.
 - **NHS appraisal platform.** SARD, PReP, L2P, or a trust-specific system. Usually requires manual entry.
 - **A spreadsheet.** Five columns matching the fields above. Simple, portable, searchable. Good for doctors between systems or with multi-site work.
-- **A dedicated CPD reading tool.** Purpose-built for journal reading, with reflection prompts and export to appraisal formats.
+- **A dedicated CPD reading tool.** The free [MCB CPD Tracker](https://cpd.mondayclinicalbrief.co.uk) is purpose-built for logging journal reading, with reflection prompts and export to appraisal formats.
 
 The best format is whichever one you will actually use. A perfect RCGP portfolio that sits empty is worth less than a scruffy Google Sheet filled in weekly.
 
