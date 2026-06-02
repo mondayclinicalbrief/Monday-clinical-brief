@@ -5,10 +5,11 @@ seoTitle: "Palliative Care Journal Digest for NHS Clinicians | The Monday Clinic
 metaDescription: "Stay current with palliative care evidence — the five most important papers from your specialty, every Monday. Written by a Consultant in Palliative Medicine, NHS Wales."
 description: "Five peer-reviewed palliative care papers, every Monday. Plain-language summaries, written for NHS clinicians by a serving consultant in the specialty."
 date: 2026-05-11
+updated: 2026-06-02
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
-author: "Tim Hamilton"
+author: "Dr Tim Hamilton"
 authorBio: "Consultant in Palliative Medicine, Aneurin Bevan University Health Board (ABUHB), NHS Wales. Founder, The Monday Clinical Brief."
 faqs:
   - question: "What palliative care journals does The Monday Clinical Brief cover?"
@@ -22,6 +23,8 @@ faqs:
 ---
 
 # Palliative Care Journal Digest
+
+The Monday Clinical Brief is a weekly palliative care journal digest, curated by a serving NHS consultant in the specialty. Every Monday it sends the five most important new peer-reviewed papers in palliative care — summarised in plain language, formatted for CPD, for £20 a year. Here is what it covers and why it exists.
 
 Palliative care evidence moves fast. Symptom management protocols, opioid titration guidelines, advance care planning frameworks, and the evidence base for early specialist referral have all changed materially in the last five years. Most practising clinicians haven't had time to keep up. I built The Monday Clinical Brief because I was one of them.
 
