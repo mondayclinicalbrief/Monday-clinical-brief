@@ -4,6 +4,7 @@ seoTitle: "ChatGPT for Clinicians UK: Why It's Not Available and What to Use Ins
 metaDescription: "OpenAI launched ChatGPT for Clinicians on 23 April 2026 — and immediately excluded UK and EEA doctors. Here's what the exclusion means, and what UK clinicians can use instead."
 description: "ChatGPT for Clinicians launched in April 2026 but explicitly excludes the UK and EEA. Here's what it does, why UK doctors are locked out, and what's actually available."
 date: 2026-05-13
+updated: 2026-06-02
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
@@ -24,6 +25,8 @@ On 23 April 2026, OpenAI launched ChatGPT for Clinicians. Two days later, OpenEv
 
 UK doctors received both announcements in the same week. Neither had good news for them.
 
+> **Update — June 2026:** ChatGPT for Clinicians remains excluded from the UK and EEA. Nothing has changed since launch — there is no UK enrolment, and OpenAI has announced no UK timeline. The wider regulatory picture is still settling (the [MHRA](https://www.gov.uk/government/organisations/medicines-and-healthcare-products-regulatory-agency) Medical Devices (Amendment) Regulations consultation closes 19 June 2026), so the exclusion is unlikely to lift in the near term.
+
 ## What ChatGPT for Clinicians actually does
 
 ChatGPT for Clinicians is OpenAI's attempt to bring its AI capabilities directly into clinical practice. It answers clinical questions with cited, peer-reviewed sources. Think point-of-care decision support — you ask a question, it returns a synthesised answer grounded in the medical literature.
@@ -43,6 +46,12 @@ The US is one of those markets. The UK currently is not.
 This is the same logic that drove OpenEvidence's withdrawal. It is also the reason that UpToDate Pro Plus AI — launched with much fanfare in early 2026 — remains US and Canada only.
 
 UK doctors are not being forgotten. They are being deliberately excluded while the regulatory picture clears.
+
+### The bar a clinical AI tool has to clear in the UK
+
+It helps to be specific about what "regulatory caution" means here. A tool that advises on a clinical decision — answers a diagnostic or treatment question — is likely a medical device in the UK, and has to clear two separate gates. The first is [MHRA](https://www.gov.uk/government/organisations/medicines-and-healthcare-products-regulatory-agency) medical-device registration and UKCA marking. The second, for anything deployed in the NHS, is the clinical safety standard **DCB 0129** (and its deployment counterpart DCB 0160) — which requires a named clinical safety officer, a hazard log, and a documented safety case. That is a high bar, and it is the right one for software that tells a doctor what to do.
+
+This is also why The Monday Clinical Brief sits in a different category by design. MCB summarises what was published; it does not advise on what to do with any individual patient. It is a current-awareness digest, not decision support — so it is not a medical device, and it is not affected by the regulatory pause that has shut out the Q&A tools.
 
 ## The pattern UK clinicians should know about
 

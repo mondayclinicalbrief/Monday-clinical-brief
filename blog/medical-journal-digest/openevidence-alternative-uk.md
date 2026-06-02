@@ -27,7 +27,7 @@ OpenEvidence is no longer available to UK doctors. The platform withdrew from th
 
 If you used it, you'll have noticed the gap.
 
-> **Update — 25 May 2026 (one month on):** OpenEvidence is still unavailable to UK clinicians. No re-entry signal has been published. The UK regulatory framework that triggered the withdrawal remains mid-flight — the [MHRA](https://www.gov.uk/government/organisations/medicines-and-healthcare-products-regulatory-agency) Medical Devices (Amendment) Regulations consultation closes 19 June 2026; the International Reliance Framework is expected in Autumn. Meanwhile a third clinical AI tool, Heidi Evidence, joined the UK-exclusion pattern in May 2026 by blocking NHS email addresses at enrolment. For the wider context across all three withdrawals, see our anchor post on [the three AI tools UK doctors lost in six weeks](/blog/medical-journal-digest/uk-doctors-lost-ai-tools-2026/).
+> **Update — 1 June 2026 (five weeks on):** OpenEvidence is still unavailable to UK clinicians, and no re-entry signal has been published. The UK regulatory framework that triggered the withdrawal remains mid-flight — the [MHRA](https://www.gov.uk/government/organisations/medicines-and-healthcare-products-regulatory-agency) Medical Devices (Amendment) Regulations consultation closes 19 June 2026; the International Reliance Framework is expected in Autumn. The clinical-AI press has caught up with the issue: [The Lancet Regional Health – Europe](https://www.thelancet.com/journals/lanepe) has published a position piece on the geoblocking of clinical AI tools and the EU AI Act. What has changed since April is the alternatives — see the table below.
 
 ## What happened
 
@@ -46,6 +46,20 @@ It was a point-of-care Q&A tool. Useful when you wanted a referenced answer fast
 It was not a tool for keeping up with the literature. It didn't surface what was new. It answered what you already knew to ask about.
 
 That distinction matters, because these are two different problems.
+
+## The alternatives have matured (June 2026)
+
+When OpenEvidence withdrew in April, the field of UK-usable replacements was thin. Five weeks on, it is fuller — but the picture is still uneven, because most of these are query tools and several are not actually open to UK NHS clinicians yet.
+
+| Tool | What it is | UK status (June 2026) | Cost |
+|---|---|---|---|
+| **iatroX** | UK clinical Q&A, NICE/CKS/SmPC-grounded | Available — MHRA-registered, UKCA-marked | Free core; Premium ~£99/yr |
+| **Heidi Evidence** | Citation-backed clinical answers, BMJ/NICE-partnered | *Evidence* feature does not enrol UK NHS emails; *Scribe* available | Free for individuals |
+| **Praxis Medicine** | Clinical AI search, NICE/CKS/NHS Digital-grounded | Newly launched (Apr 2026); individual access still settling | Not yet public |
+| **Vera Health** | Evidence answers + calculators, US-leaning | UK guideline localisation unclear | Free for clinicians |
+| **The Monday Clinical Brief** | Weekly literature digest, 31 specialties | Available now | £20/yr |
+
+The query tools — iatroX, Heidi Evidence, Praxis, Vera — help you ask a question. None of them keep you current. That is a different job, and it is the one MCB does. Think of the digest as the reading layer none of these replace: it tells you what changed this week, so you know what to ask the query tool about in the first place.
 
 ## For clinical Q&A: what's still available in the UK
 
