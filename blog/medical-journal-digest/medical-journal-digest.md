@@ -4,6 +4,7 @@ seoTitle: "Medical Journal Digest: The Complete Guide for Busy Clinicians | MCB"
 metaDescription: "Struggling to keep up with medical journals? Our medical journal digest delivers the key papers you need in minutes. Read the complete guide. Easy to log for CPD."
 description: "The definitive guide to medical journal digests — what they are, how they work, and how UK clinicians use them to stay evidence-based."
 date: 2026-03-17
+updated: 2026-06-02
 permalink: /blog/medical-journal-digest/guide/
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
@@ -104,6 +105,10 @@ Consider how you prefer to consume content. Email delivery is the most common an
 ### UK Relevance
 
 Many journal digests originate in the US and focus on American guidelines, drug approvals, and healthcare systems. For UK practice, ensure the digest is written with NHS context in mind, references NICE guidelines where relevant, and covers UK-relevant therapeutic decisions.
+
+## A Weekly Journal Summary Email for UK Clinicians
+
+The simplest form of a medical journal digest is a weekly journal summary email: one message, on the same day each week, with the most important new papers in your field summarised and linked. For UK clinicians the format works because it fits the week rather than competing with it — the reading comes to you, in NHS context, with no app to open and no feed to scroll. It is the model The Monday Clinical Brief is built on.
 
 ## How Monday Clinical Brief Works
 
