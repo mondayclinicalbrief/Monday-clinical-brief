@@ -23,6 +23,7 @@ const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
 const TRIAL_DAYS = 28;
 const DEFAULT_PRICE = "£20";
+const ABUHB_PRICE = "£15";   // Aneurin Bevan UHB cohort — matches any coupon whose id/name contains "ABUHB"
 const SUPPORT_EMAIL = "mondayclinicalbrief@gmail.com";
 const STRIPE_CUSTOMER_PORTAL = "https://billing.stripe.com/p/login/dRm28k4rI5LYaoh3qaefC00";
 
@@ -81,7 +82,7 @@ function getSpecialtyName(slug) {
 
 // ── Email HTML ─────────────────────────────────────────────────────────────────
 
-function buildWelcomeHtml(email, specialtySlug, trialStart, trialEnd, price) {
+function buildWelcomeHtml(email, specialtySlug, trialStart, trialEnd, priceLine) {
   const specialtyName = getSpecialtyName(specialtySlug);
   const startStr = formatDate(trialStart);
   const endStr = formatDate(trialEnd);
@@ -141,7 +142,7 @@ function buildWelcomeHtml(email, specialtySlug, trialStart, trialEnd, price) {
                   </tr>
                   <tr>
                     <td style="padding:6px 0;font-size:14px;color:#555;">After trial</td>
-                    <td style="padding:6px 0;font-size:14px;color:#1a2e44;font-weight:bold;">${price}/year — cancel anytime</td>
+                    <td style="padding:6px 0;font-size:14px;color:#1a2e44;font-weight:bold;">${priceLine} — cancel anytime</td>
                   </tr>
                 </table>
               </td>
@@ -168,7 +169,7 @@ function buildWelcomeHtml(email, specialtySlug, trialStart, trialEnd, price) {
                 <div style="width:22px;height:22px;background:#005eb8;border-radius:50%;text-align:center;line-height:22px;font-size:12px;color:#fff;font-weight:bold;">2</div>
               </td>
               <td style="vertical-align:top;padding:8px 0 8px 10px;font-size:14px;color:#444;line-height:1.5;">
-                On <strong>${endStr}</strong> your 4-week free trial ends. If you haven't cancelled, your annual subscription of <strong>${price}</strong> will begin.
+                On <strong>${endStr}</strong> your 4-week free trial ends. If you haven't cancelled, your subscription will begin at <strong>${priceLine}</strong>.
               </td>
             </tr>
             <tr>
@@ -228,13 +229,13 @@ function buildWelcomeHtml(email, specialtySlug, trialStart, trialEnd, price) {
 
 // ── Send welcome email ─────────────────────────────────────────────────────────
 
-async function sendWelcomeEmail(toEmail, specialtySlug, price) {
+async function sendWelcomeEmail(toEmail, specialtySlug, priceLine) {
   const trialStart = new Date();
   const trialEnd = new Date(trialStart);
   trialEnd.setDate(trialEnd.getDate() + TRIAL_DAYS);
 
   const specialtyName = getSpecialtyName(specialtySlug);
-  const html = buildWelcomeHtml(toEmail, specialtySlug, trialStart, trialEnd, price);
+  const html = buildWelcomeHtml(toEmail, specialtySlug, trialStart, trialEnd, priceLine);
 
   const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
@@ -250,11 +251,11 @@ async function sendWelcomeEmail(toEmail, specialtySlug, price) {
     from: `"The Monday Clinical Brief" <${process.env.GMAIL_USER}>`,
     to: toEmail,
     subject: "Welcome to The Monday Clinical Brief — your free trial has started",
-    text: `Welcome to The Monday Clinical Brief!\n\nYou're subscribed to: ${specialtyName}\nTrial ends: ${formatDate(trialEnd)}\n\nYour first digest arrives next Monday morning.\n\nAfter your 4-week trial, your annual subscription of ${price} begins automatically. Cancel any time before ${formatDate(trialEnd)} at no cost.\n\nManage subscription: ${STRIPE_CUSTOMER_PORTAL}\n\nQuestions? ${SUPPORT_EMAIL}`,
+    text: `Welcome to The Monday Clinical Brief!\n\nYou're subscribed to: ${specialtyName}\nTrial ends: ${formatDate(trialEnd)}\n\nYour first digest arrives next Monday morning.\n\nAfter your 4-week trial, your subscription begins at ${priceLine}. Cancel any time before ${formatDate(trialEnd)} at no cost.\n\nManage subscription: ${STRIPE_CUSTOMER_PORTAL}\n\nQuestions? ${SUPPORT_EMAIL}`,
     html,
   });
 
-  console.log(`✓ Welcome email sent to ${toEmail} (${specialtyName}, ${price})`);
+  console.log(`✓ Welcome email sent to ${toEmail} (${specialtyName}, ${priceLine})`);
 }
 
 // ── Netlify handler ────────────────────────────────────────────────────────────
@@ -312,7 +313,7 @@ exports.handler = async (event) => {
   }
 
   // Determine price — check for discount coupons first
-  // FAF2026 coupon = £2 first year; standard trial = £20/year
+  // FAF2026 coupon = £2 first year; ABUHB coupon = £15/year; standard trial = £20/year
   let price = DEFAULT_PRICE;
   try {
     // 1. Check session.discount (included in webhook payload)
@@ -351,9 +352,31 @@ exports.handler = async (event) => {
       }
     }
 
+    // 4. A coupon attached to a Payment Link / the subscription itself does NOT
+    //    appear on the checkout session — pull it from the subscription. This is
+    //    the path ABUHB Payment Link signups take.
+    if (couponCodes.length === 0 && session.subscription) {
+      try {
+        const sub = await stripe.subscriptions.retrieve(session.subscription, {
+          expand: ["discounts"],
+        });
+        const subDiscounts = sub.discounts || (sub.discount ? [sub.discount] : []);
+        for (const d of subDiscounts) {
+          const c = (d && typeof d === "object") ? d.coupon : null;
+          if (c?.id) couponCodes.push(c.id);
+          if (c?.name) couponCodes.push(c.name);
+        }
+      } catch (subErr) {
+        console.log("Could not retrieve subscription discounts:", subErr.message);
+      }
+    }
+
     console.log("Coupon codes detected:", couponCodes);
-    if (couponCodes.some(c => c.toUpperCase().includes("FAF2026"))) {
+    const norm = couponCodes.map(c => String(c).toUpperCase());
+    if (norm.some(c => c.includes("FAF2026"))) {
       price = "£2";
+    } else if (norm.some(c => c.includes("ABUHB"))) {
+      price = ABUHB_PRICE;
     } else if (session.amount_total && session.amount_total > 0) {
       price = formatPrice(session.amount_total);
     }
@@ -367,8 +390,20 @@ exports.handler = async (event) => {
     price = `£${totalPounds}`;
   }
 
+  // Build the human price phrase for the email. The FAF2026 and ABUHB coupons are
+  // one-time (first year only), so spell out the renewal rather than implying the
+  // discounted figure recurs.
+  let priceLine;
+  if (price === "£2") {
+    priceLine = `£2 for the first year, then ${DEFAULT_PRICE}/year`;
+  } else if (price === ABUHB_PRICE) {
+    priceLine = `${ABUHB_PRICE} for the first year, then ${DEFAULT_PRICE}/year`;
+  } else {
+    priceLine = `${price}/year`;
+  }
+
   try {
-    await sendWelcomeEmail(email, specialtySlug, price);
+    await sendWelcomeEmail(email, specialtySlug, priceLine);
     return {
       statusCode: 200,
       body: JSON.stringify({ ok: true, email, specialties: specialtySlugs, price }),
