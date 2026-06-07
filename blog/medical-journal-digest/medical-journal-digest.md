@@ -21,7 +21,7 @@ faqs:
   - question: "Are journal digests suitable for all medical specialties?"
     answer: "The Monday Clinical Brief covers 31 medical specialties, from General Practice to Neurosurgery. Each specialty tracks the top 5 journals in that field, so the content is always relevant to your practice."
   - question: "How do I choose between different journal summary services?"
-    answer: "Look for three things: clinical accuracy (are summaries written or reviewed by clinicians?), breadth of coverage (how many journals and specialties?), and CPD integration (can you easily log your reading for revalidation?)."
+    answer: "Look for three things: clinical accuracy (are summaries accurate and clinically relevant?), breadth of coverage (how many journals and specialties?), and CPD integration (can you easily log your reading for revalidation?)."
   - question: "Is a journal digest a replacement for reading full papers?"
     answer: "No. A digest is a triage tool — it helps you identify which papers are most relevant to your practice so you can read those in full. It replaces the hours spent scanning tables of contents, not the deep reading itself."
 ---
@@ -112,12 +112,12 @@ The simplest form of a medical journal digest is a weekly journal summary email:
 
 ## How Monday Clinical Brief Works
 
-Monday Clinical Brief is a weekly medical journal digest designed specifically for UK clinicians. Each issue arrives by email every Monday morning and covers the most significant papers published in the previous week across more than 20 major medical journals.
+Monday Clinical Brief is a weekly medical journal digest designed specifically for UK clinicians. You choose your specialty, and each Monday morning's issue summarises the most significant new research from the top five journals in that field. Across 31 specialties, MCB tracks 155 journals in total.
 
 ### What Each Issue Contains
 
-- Key paper summaries: structured summaries of the 8-12 most impactful papers from The Lancet, BMJ, NEJM, JAMA, and specialist journals.
-- Clinical commentary: each summary includes expert commentary on what the findings mean for UK practice, written by practising clinicians.
+- Key paper summaries: structured summaries of the most clinically significant new papers from your specialty's top five journals.
+- Clinical relevance: each summary highlights what the findings mean for UK practice.
 - Guideline updates: flagged whenever a paper has implications for current NICE or specialty guidelines.
 - Easy CPD logging: each issue is structured so you can log it as a CPD activity in minutes, with a short reflection ready for your portfolio.
 - Reading time: approximately 15 minutes per issue.

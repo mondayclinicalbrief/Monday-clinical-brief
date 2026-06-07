@@ -66,7 +66,7 @@ A CPD reading tool addresses every one of these barriers. It provides clinically
 
 ### Clinical Relevance and Quality
 
-The content must be relevant to your scope of practice and grounded in good evidence. CPD reading does not need to be formally accredited to count — the GMC accepts reading with reflection as a valid activity — but the material does need to be worth reflecting on. Look for content selected and written by clinicians, framed around the decisions you actually make.
+The content must be relevant to your scope of practice and grounded in good evidence. CPD reading does not need to be formally accredited to count — the GMC accepts reading with reflection as a valid activity — but the material does need to be worth reflecting on. Look for content that is summarised accurately and clinically relevant, framed around the decisions you actually make.
 
 ### Easy Logging
 
