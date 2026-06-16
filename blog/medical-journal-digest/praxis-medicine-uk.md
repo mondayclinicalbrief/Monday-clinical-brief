@@ -18,7 +18,7 @@ faqs:
   - question: "Does Praxis Medicine replace a journal digest?"
     answer: "No. Praxis is a pull tool — it answers questions you ask. A weekly journal digest is a push tool — it tells you what was published in your specialty before you know to ask. They solve different problems. Praxis helps you answer a question at the point of care; The Monday Clinical Brief helps you stay current with the literature."
   - question: "How is Praxis Medicine different from iatroX or Heidi Evidence?"
-    answer: "All three are UK-oriented clinical AI query tools grounded in NICE and related sources. iatroX is MHRA-registered and UKCA-marked and available now. Heidi Evidence is strong but its answer feature does not currently enrol UK NHS emails. Praxis is the newest and best-funded entrant, but pricing and individual access are still settling. None of them is a literature digest."
+    answer: "All three are UK-oriented clinical AI query tools grounded in NICE and related sources. iatroX is MHRA-registered and UKCA-marked and available now. Heidi Evidence is strong but, for UK and EU clinicians, its answer feature is restricted to out-of-session use — it cannot answer during a live consultation. Praxis is the newest and best-funded entrant, but pricing and individual access are still settling. None of them is a literature digest."
 ---
 
 # Praxis Medicine UK: What It Is, What It Costs, and Where It Fits
@@ -44,7 +44,7 @@ Praxis joins a field that filled out quickly in 2026. The honest summary:
 | Tool | What it is | UK status (June 2026) | Cost |
 |---|---|---|---|
 | **iatroX** | UK clinical Q&A, NICE/CKS-grounded | Available — MHRA-registered, UKCA-marked | Free core; Premium ~£99/yr |
-| **Heidi Evidence** | Citation-backed answers, BMJ/NICE-partnered | *Evidence* feature not open to UK NHS emails | Free for individuals |
+| **Heidi Evidence** | Citation-backed answers, BMJ/NICE-partnered | *Evidence* restricted to out-of-session use (UK/EU) | Free tier + paid |
 | **Praxis Medicine** | Clinical AI search, NICE/NHS-grounded | Newly launched; access still settling | Not yet public |
 | **The Monday Clinical Brief** | Weekly literature digest, 31 specialties | Available now | £20/yr |
 

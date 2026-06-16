@@ -1,34 +1,35 @@
 ---
-title: "Heidi Evidence Is Excellent. UK NHS Clinicians Are Excluded."
-seoTitle: "Heidi Evidence UK: NHS Email Excluded — What UK Doctors Can Use Instead"
-metaDescription: "Heidi Evidence is free, citation-backed, and partnered with NICE, BMJ Group and MIMS. UK NHS email addresses are excluded from enrolment. Here's what the block means and what UK clinicians can use instead."
-description: "Heidi Evidence is the most-anticipated UK-relevant clinical AI tool of 2026 — and NHS email addresses are blocked from signing up. This is the third UK AI exclusion in six weeks. Here's what to do."
+title: "Heidi Evidence Is Excellent. In the UK, It Won't Answer Mid-Consultation."
+seoTitle: "Heidi Evidence UK: The In-Session Restriction — and What to Use Instead"
+metaDescription: "Heidi Evidence is free, citation-backed, and partnered with NICE, BMJ Group and MIMS. In the UK and EU it works only outside live consultations. Here's what the in-session restriction means and what UK clinicians can use alongside it."
+description: "Heidi Evidence is one of 2026's most capable UK-relevant clinical AI tools — but in the UK and EU it can't be used during a live patient session. Here's what the in-session restriction means and how to work around it."
 date: 2026-05-17
+updated: 2026-06-15
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
 faqs:
-  - question: "Can UK NHS clinicians use Heidi Evidence?"
-    answer: "Not currently. Heidi Evidence enrolment blocks email addresses on UK NHS domains (nhs.net, nhs.uk, NHS Wales, NHS Scotland and HSC Northern Ireland). Australian, US and Singapore clinicians can sign up; UK NHS staff cannot. Heidi Scribe — the AI clinical scribe product — is separately MHRA-cleared and remains available to UK clinicians."
-  - question: "Why is Heidi Evidence not available to UK NHS clinicians?"
-    answer: "Heidi Evidence offers AI-generated clinical decision support, which under UK MHRA classification likely meets the threshold for a regulated medical device. Heidi Health's UK partnerships with NICE, BMJ Group, MIMS and HealthPathways are content partnerships, not regulatory clearances. The exclusion is almost certainly a precautionary measure while UK AI-in-healthcare regulation is being finalised."
+  - question: "Can UK clinicians use Heidi Evidence?"
+    answer: "Yes, with one limit. Heidi Evidence works for UK and EU clinicians outside live patient sessions. In-session evidence querying — using it during a consultation — is disabled under current compliance settings, so it cannot answer in the moment. Heidi Scribe, the AI clinical scribe product, is separately MHRA-cleared and is unaffected."
+  - question: "Why can't Heidi Evidence be used during a live session in the UK?"
+    answer: "Heidi Evidence offers AI-generated clinical decision support, which under UK MHRA classification can meet the threshold for a regulated medical device when used at the point of care. Heidi Health's UK partnerships with NICE, BMJ Group, MIMS and HealthPathways are content partnerships, not regulatory clearances. The in-session restriction is almost certainly a precautionary measure while UK AI-in-healthcare regulation is being finalised."
   - question: "Is Heidi Evidence the same as Heidi Scribe?"
-    answer: "No. Heidi Scribe is an AI clinical scribe that drafts consultation notes — it is separately MHRA-cleared and remains available to UK clinicians. Heidi Evidence is a citation-backed clinical decision support tool that answers clinical questions. Heidi Evidence is the product UK NHS accounts cannot currently enrol in."
-  - question: "What can UK clinicians use instead of Heidi Evidence?"
-    answer: "For point-of-care clinical Q&A, iatroX is the UK-based alternative with MHRA registration and UKCA marking. For staying current with the medical literature — knowing what was published in your specialty each week — The Monday Clinical Brief sends a weekly email digest covering 31 specialties for £20 a year. The two tools solve different problems and work well alongside each other."
-  - question: "How many AI tools have UK doctors lost access to in 2026?"
-    answer: "Three in six weeks. ChatGPT for Clinicians launched on 23 April 2026 with UK and EEA excluded. OpenEvidence withdrew from the UK and EU on 28 April 2026. Heidi Evidence — launched February 2026 — confirmed in May 2026 that UK NHS email addresses are blocked from enrolment."
+    answer: "No. Heidi Scribe is an AI clinical scribe that drafts consultation notes — it is separately MHRA-cleared and remains available to UK clinicians, including in-session. Heidi Evidence is a citation-backed clinical decision support tool that answers clinical questions. Heidi Evidence is the feature carrying the UK and EU in-session restriction."
+  - question: "What can UK clinicians use for point-of-care Q&A during a consultation?"
+    answer: "For clinical Q&A in the moment, iatroX is the UK-based option with MHRA registration and UKCA marking. Heidi Evidence covers out-of-session questions well. For staying current with the medical literature — knowing what was published in your specialty each week — The Monday Clinical Brief sends a weekly email digest covering 31 specialties for £20 a year. The tools solve different problems and work well alongside each other."
+  - question: "What changed for UK access to clinical AI tools in 2026?"
+    answer: "Two tools withdrew and one was restricted, in six weeks. ChatGPT for Clinicians launched on 23 April 2026 with UK and EEA excluded. OpenEvidence withdrew from the UK and EU on 28 April 2026. Heidi Evidence — launched February 2026 — operates in the UK and EU but only outside live sessions, restricting its in-session use."
 ---
 
-# Heidi Evidence Is Excellent. UK NHS Clinicians Are Excluded.
+# Heidi Evidence Is Excellent. In the UK, It Won't Answer Mid-Consultation.
 
-Heidi Evidence is the most strategically interesting clinical AI tool to land in 2026. It is free for individual clinicians. It is citation-backed. It is partnered with NICE, BMJ Group, MIMS and HealthPathways — the four most credible UK clinical-content sources a tool in this space could pair with. We have read the output carefully. It is good.
+Heidi Evidence is the most strategically interesting clinical AI tool to land in 2026. It is free at the individual tier. It is citation-backed. It is partnered with NICE, BMJ Group, MIMS and HealthPathways — the four most credible UK clinical-content sources a tool in this space could pair with. We have read the output carefully. It is good.
 
-UK NHS clinicians cannot use it.
+In the UK, it will not answer during a live consultation.
 
-Heidi Evidence enrolment blocks email addresses on the major NHS domains. Try signing up with an `nhs.net`, `nhs.uk`, NHS Wales, NHS Scotland or HSC Northern Ireland address and you do not get in. Australian, US and Singapore clinicians can sign up. UK NHS staff cannot.
+Heidi documents Evidence as available to UK and EU users only *outside* live patient sessions. In-session evidence querying is disabled under current compliance settings. You can use it to read up between patients, to prepare, or to check a question after clinic — but not in the room, with the patient in front of you, at the moment the question arises.
 
-This is the third UK AI exclusion in six weeks. We think it matters.
+That is a real limitation for a point-of-care tool. We think it matters, and it is worth being precise about.
 
 ## What Heidi Evidence actually does
 
@@ -42,49 +43,51 @@ The first is that the citations are honest. Click any reference and you land on 
 
 The second is that there is no advertising and no sponsored content. The product is free at the individual tier and the funding model does not depend on shaping which answers surface.
 
-For UK NHS clinicians, the catch is that none of this matters yet. The sign-up page does not let you in.
+For UK clinicians, the catch is *when* you can use it. Out of session, it is available. In session, it is not.
 
-## What "excluded" actually looks like
+## What the in-session restriction actually looks like
 
-The block is at enrolment, not at access. There is no message saying "Heidi Evidence will arrive in the UK on…". There is no waitlist. There is no UK regional page with a release timeline.
+The restriction is on context of use, not on access. A UK or EU clinician can hold a Heidi Evidence account. What they cannot do is run an evidence query during a live patient session.
 
-If you try to sign up with a UK NHS email, the enrolment flow rejects the domain. If you try a personal Gmail or Outlook address, you can register — but the product is plainly intended for verified clinicians and the workflow is engineered around clinician-domain emails. UK NHS staff are not the target user.
+In practice that splits Heidi Evidence's usefulness in two. The "I have ten minutes between patients and want to check the current line on a drug interaction" use case is supported. The "the patient is in front of me and I need an answer now" use case — the defining point-of-care moment — is the one the compliance configuration holds back in the UK and EU.
 
-Heidi Scribe — the AI clinical scribe that drafts consultation notes — is a different story. Heidi Scribe is **separately MHRA-cleared** and remains available to UK clinicians, including NHS staff. If you have been using Heidi Scribe, you keep that. The exclusion is specific to Heidi Evidence.
+Heidi Scribe — the AI clinical scribe that drafts consultation notes — is a different story. Heidi Scribe is **separately MHRA-cleared** and remains available to UK clinicians, including NHS staff, in session. If you have been using Heidi Scribe, that is unaffected. The restriction is specific to Heidi Evidence's in-session use.
 
-## Why the exclusion is happening
+## Why the restriction is in place
 
-Heidi Health has not publicly explained the UK NHS block. The most likely explanation is regulatory.
+Heidi Health has not published a detailed rationale. The most likely explanation is regulatory.
 
-Heidi Evidence generates AI-synthesised clinical recommendations from a clinical query. Under MHRA classification, that is the kind of output that pushes a tool toward Software as a Medical Device territory. The NICE, BMJ Group, MIMS and HealthPathways partnerships are content arrangements — they describe what the model is grounded in, not how the model is classified.
+Heidi Evidence generates AI-synthesised clinical recommendations from a clinical query. Used at the point of care, that is the kind of output that pushes a tool toward Software as a Medical Device territory under MHRA classification. The NICE, BMJ Group, MIMS and HealthPathways partnerships are content arrangements — they describe what the model is grounded in, not how the model is classified for live clinical use.
 
-The UK regulatory framework for AI in healthcare is mid-flight. The Medical Devices (Amendment) Regulations consultation closes 19 June 2026. The International Reliance Framework is planned for Autumn 2026. The National Commission on AI in Healthcare report is due later in the year. Until these land, an internationally launched clinical AI product that operates fine in Australia, the US and Singapore is unlikely to risk UK NHS deployment.
+The UK regulatory framework for AI in healthcare is mid-flight. The Medical Devices (Amendment) Regulations consultation closes 19 June 2026. The International Reliance Framework is planned for Autumn 2026. The National Commission on AI in Healthcare report is due later in the year. Until these land, restricting an AI decision-support tool to out-of-session use is a cautious reading of an unsettled rulebook.
 
-This is the same logic that took OpenEvidence out of the UK on 28 April 2026 and the same logic that has kept ChatGPT for Clinicians US-first since 23 April. None of these companies has cited the UK as a strategic concern. The UK has been deferred while the rules are being written.
+This sits in the same regulatory current that took OpenEvidence out of the UK and EU on 28 April 2026 and has kept ChatGPT for Clinicians US-first since 23 April. The difference is one of degree: those two stepped back entirely; Heidi Evidence stayed, with a limit on how it can be used.
 
 ## The pattern UK clinicians should be aware of
 
-In the space of six weeks, three clinical AI tools in the same category have stepped back from the UK:
+In the space of six weeks, three clinical AI tools in the same category changed their UK footing:
 
 - **23 April 2026:** ChatGPT for Clinicians launches. UK and EEA excluded at the verification step.
 - **28 April 2026:** OpenEvidence withdraws from the UK and EU.
-- **May 2026:** Heidi Evidence confirmed blocking UK NHS email addresses at enrolment.
+- **2026:** Heidi Evidence operates in the UK and EU, but only outside live sessions — its in-session point-of-care use is restricted.
 
-All three offered the same broad use case — point-of-care clinical Q&A grounded in cited sources. UK doctors have lost three credible options for that job in less than two months.
+All three offered the same broad use case — point-of-care clinical Q&A grounded in cited sources. Two are now unavailable to UK clinicians; the third is available, but not in the one moment a point-of-care tool is most wanted.
 
-We have written separately about [the OpenEvidence withdrawal](/blog/medical-journal-digest/openevidence-alternative-uk/) and [the ChatGPT for Clinicians exclusion](/blog/medical-journal-digest/chatgpt-for-clinicians-uk/). Heidi Evidence is the third post in what is now a clear sequence.
+We have written separately about [the OpenEvidence withdrawal](/blog/medical-journal-digest/openevidence-alternative-uk/) and [the ChatGPT for Clinicians exclusion](/blog/medical-journal-digest/chatgpt-for-clinicians-uk/). Heidi Evidence is the third chapter in the same regulatory story.
 
-What is striking is that Heidi Evidence — unlike the other two — is the one product that did everything right on the UK content side. NICE partnership. BMJ Group partnership. UK-relevant prescribing data. And it still cannot be used by NHS staff. That is the regulatory environment talking, not the product.
+What is striking is that Heidi Evidence — unlike the other two — is the one product that did everything right on the UK content side. NICE partnership. BMJ Group partnership. UK-relevant prescribing data. And it still pulls back from live point-of-care use. That is the regulatory environment talking, not the product.
 
 ## What UK clinicians can use right now
 
-For **clinical Q&A at the point of care**: [iatroX](https://iatrox.com) is the UK-based option. It holds MHRA registration as a Class I device, carries UKCA marking, and is built around UK guideline retrieval (NICE, CKS, SmPC) with calculators and Q-banks attached. It is not a perfect substitute for Heidi Evidence's model quality, but it is the most credible UK-regulatory-compliant tool in this space today.
+For **clinical Q&A at the point of care** — in the room, in the moment: [iatroX](https://iatrox.com) is the UK-based option. It holds MHRA registration as a Class I device, carries UKCA marking, and is built around UK guideline retrieval (NICE, CKS, SmPC) with calculators and Q-banks attached. It is not a perfect substitute for Heidi Evidence's model quality, but it is the most credible UK-regulatory-compliant in-session tool today.
 
-For **AI clinical documentation**: Heidi Scribe remains available and MHRA-cleared. If you have not yet looked at clinical scribe tools and you write a lot of consultation notes, this is worth your time.
+For **out-of-session evidence questions**: Heidi Evidence itself is available and worth using — between patients, before clinic, after a consultation.
+
+For **AI clinical documentation**: Heidi Scribe remains available and MHRA-cleared, in session included.
 
 For **staying current with the medical literature** — knowing what was published in your specialty each week — that is a different job altogether. Q&A tools answer questions you have already thought to ask. They cannot tell you about the practice-changing trial that landed last Tuesday. That is the gap The Monday Clinical Brief is built to close.
 
-We have written more on [how Heidi Evidence and a weekly digest fit together when both are available](/blog/medical-journal-digest/heidi-evidence-vs-monday-clinical-brief/). For UK NHS clinicians, only one of the two is currently usable.
+We have written more on [how Heidi Evidence and a weekly digest fit together](/blog/medical-journal-digest/heidi-evidence-vs-monday-clinical-brief/) — push and pull, current awareness and point-of-care.
 
 ## A short note on Claude
 
@@ -100,8 +103,8 @@ We cover 31 specialties. We are reader-paid at £20 a year. No advertising, no s
 
 ## The bottom line
 
-Heidi Evidence is excellent. UK NHS clinicians cannot use it yet. This will probably change once the UK regulatory framework for clinical AI lands — but the timeline is months, not weeks.
+Heidi Evidence is excellent. In the UK and EU, it works outside live sessions but not during them — so the defining point-of-care moment is the one it currently holds back from. This will probably ease once the UK regulatory framework for clinical AI lands, but the timeline is months, not weeks.
 
-In the meantime: iatroX for UK clinical Q&A, Heidi Scribe for documentation if you want it, and MCB for keeping current with the literature itself. Each tool does one job well. Together they cover most of what the absent products would have done.
+In the meantime: iatroX for in-session UK clinical Q&A, Heidi Evidence for out-of-session questions, Heidi Scribe for documentation if you want it, and MCB for keeping current with the literature itself. Each tool does one job well. Together they cover most of the ground.
 
-We will update this post when Heidi Evidence becomes available to UK NHS accounts. Evidence suggests that will be after the Medical Devices (Amendment) Regulations consultation closes in June 2026 — but until then, the block is firm.
+We will update this post as Heidi Evidence's UK position changes. Evidence suggests any change will follow the Medical Devices (Amendment) Regulations consultation that closes in June 2026 — but until then, the in-session restriction holds.

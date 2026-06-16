@@ -4,7 +4,7 @@ seoTitle: "Monday Clinical Brief vs UpToDate: Which Do UK Doctors Actually Need?
 metaDescription: "UpToDate is the gold standard clinical reference. The Monday Clinical Brief is a weekly literature digest. They do different jobs — here's how to think about both, including why UK doctors don't get UpToDate's new AI features."
 description: "UpToDate and MCB solve different problems. One is a reference you consult. The other is a digest that keeps you current. Most UK doctors need both — here's why."
 date: 2026-05-04
-updated: 2026-06-02
+updated: 2026-06-15
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
@@ -49,11 +49,13 @@ In 2026, Wolters Kluwer launched UpToDate Pro Plus AI — a generative AI layer 
 
 **UK individual subscribers cannot use it.**
 
-UpToDate Pro Plus AI is currently available only to personal subscribers in the US and Canada. A UK doctor paying £440 per year for individual UpToDate access is paying the same price as a US doctor but receiving a materially different product.
+UpToDate Pro Plus AI is currently available only to personal subscribers in the US and Canada. A UK doctor paying £440 per year for individual UpToDate access pays a comparable price to a US subscriber but receives a materially different product.
 
-This is the same regulatory pattern driving OpenEvidence's withdrawal and ChatGPT for Clinicians' UK exclusion. US vendors are restricting AI healthcare features in markets where the regulatory path is uncertain. The UK is currently one of those markets.
+The gap widened in June 2026. Wolters Kluwer and OpenAI expanded their collaboration, and UpToDate Expert AI — the enterprise generative-AI layer — is now embedded across the Microsoft Copilot ecosystem, including Dragon Copilot, Microsoft 365 Copilot and Teams. Wolters Kluwer reports more than half of its US enterprise customers signed, with a target near 70% by mid-2026. This is the deeper AI integration, and it is sold to institutions through Microsoft — not to a UK individual through a personal subscription.
 
-UpToDate's main institutional rival, DynaMed, has moved the same way: its Dyna AI Mode (a retrieval-grounded AI answer layer) launched in 2026 but sits inside the institutional product, not an individual UK subscription. The pattern is consistent — the AI layer in these big reference tools is, for now, something your Trust might buy, not something a UK individual can. None of it is a digest, either: "DynaMed AI for your Trust, MCB for your inbox" is the honest split.
+This is the same regulatory pattern driving OpenEvidence's withdrawal and ChatGPT for Clinicians' UK exclusion. US vendors are routing AI healthcare features through enterprise channels and markets where the regulatory path is clearer. The UK individual is, for now, outside both.
+
+UpToDate's main institutional rival, DynaMed, has moved the same way: its Dyna AI Mode (a retrieval-grounded AI answer layer) launched in 2026 but sits inside the institutional product, not an individual UK subscription. The pattern is consistent — the AI layer in these big reference tools is something your Trust or your Microsoft licence might carry, not something a UK individual can buy on its own. None of it is a digest, either: "DynaMed AI for your Trust, MCB for your inbox" is the honest split.
 
 ## What The Monday Clinical Brief does
 
@@ -84,7 +86,7 @@ The gap UpToDate cannot fill is the one MCB is built for: the trial published la
 | **New paper discovery** | No — reactive only | Yes — proactive, weekly |
 | **UK individual price** | ~£440/year | £20/year |
 | **NHS trust access** | Usually free via institution | Individual subscription |
-| **AI features (UK)** | Pro Plus AI not available in UK | N/A |
+| **AI features (UK)** | Pro Plus AI / Expert AI not available to UK individuals | N/A |
 | **CPD logging** | Not designed for it | UK revalidation-focused |
 | **Best for** | Answering clinical questions at the point of care | Staying current with the literature |
 

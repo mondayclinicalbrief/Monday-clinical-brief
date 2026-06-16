@@ -17,8 +17,8 @@ faqs:
     answer: "No — and it doesn't claim to. OpenEvidence answered clinical questions. The Monday Clinical Brief surfaces new peer-reviewed papers in your specialty each week. These are different problems. MCB is for keeping up with what's new before you need to ask a question about it."
   - question: "Is ChatGPT for Clinicians available in the UK?"
     answer: "No. ChatGPT for Clinicians launched on 23 April 2026 and explicitly excludes UK and EEA users."
-  - question: "Has any other AI tool been excluded from the UK since OpenEvidence withdrew?"
-    answer: "Yes. In May 2026, Heidi Evidence — the clinical decision support arm of Heidi Health, partnered with NICE, BMJ Group, MIMS and HealthPathways — confirmed it was blocking UK NHS email addresses from enrolment. Three credible clinical AI tools have now stepped back from UK NHS access in six weeks: ChatGPT for Clinicians (23 April), OpenEvidence (28 April), and Heidi Evidence (May)."
+  - question: "Has any other clinical AI tool changed its UK access since OpenEvidence withdrew?"
+    answer: "Yes. In 2026, Heidi Evidence — the clinical decision support arm of Heidi Health, partnered with NICE, BMJ Group, MIMS and HealthPathways — restricted its UK and EU evidence querying to out-of-session use only, so it cannot answer during a live consultation. Three credible clinical AI tools have now pulled back from UK point-of-care use in six weeks: ChatGPT for Clinicians (23 April, UK/EEA excluded), OpenEvidence (28 April, UK/EU withdrawn), and Heidi Evidence (in-session restricted)."
 ---
 
 # Looking for an OpenEvidence Alternative in the UK?
@@ -33,9 +33,9 @@ If you used it, you'll have noticed the gap.
 
 OpenEvidence was the leading AI clinical Q&A tool in the US — used by over 40% of American physicians. In January 2026 it raised $250m at a $12 billion valuation. By the end of April, it was gone from the UK.
 
-The stated reason was regulatory uncertainty around AI in healthcare. The EU AI Act and the UK's AI regulatory landscape are unsettled enough that several US AI health tools have paused UK expansion or withdrawn entirely. ChatGPT for Clinicians launched the same week and explicitly excluded UK and EEA users. Heidi Evidence — the clinical decision support tool partnered with NICE, BMJ Group, MIMS and HealthPathways — joined the pattern in May 2026 by blocking UK NHS email addresses at enrolment.
+The stated reason was regulatory uncertainty around AI in healthcare. The EU AI Act and the UK's AI regulatory landscape are unsettled enough that several US AI health tools have paused UK expansion or withdrawn entirely. ChatGPT for Clinicians launched the same week and explicitly excluded UK and EEA users. Heidi Evidence — the clinical decision support tool partnered with NICE, BMJ Group, MIMS and HealthPathways — joined the pattern in 2026 by restricting its UK and EU evidence querying to out-of-session use only.
 
-UK doctors have now lost three credible clinical AI tools in six weeks.
+UK doctors have now seen three credible clinical AI tools pull back from point-of-care use in six weeks — two withdrawn, one restricted to out-of-session use.
 
 ## What OpenEvidence actually did
 
@@ -54,14 +54,14 @@ When OpenEvidence withdrew in April, the field of UK-usable replacements was thi
 | Tool | What it is | UK status (June 2026) | Cost |
 |---|---|---|---|
 | **iatroX** | UK clinical Q&A, NICE/CKS/SmPC-grounded | Available — MHRA-registered, UKCA-marked | Free core; Premium ~£99/yr |
-| **Heidi Evidence** | Citation-backed clinical answers, BMJ/NICE-partnered | *Evidence* feature does not enrol UK NHS emails; *Scribe* available | Free for individuals |
+| **Heidi Evidence** | Citation-backed clinical answers, BMJ/NICE-partnered | *Evidence* restricted to out-of-session use (UK/EU); *Scribe* available | Free tier + paid |
 | **Praxis Medicine** | Clinical AI search, NICE/CKS/NHS Digital-grounded | Newly launched (Apr 2026); individual access still settling | Not yet public |
 | **Vera Health** | Evidence answers + calculators, US-leaning | UK guideline localisation unclear | Free for clinicians |
 | **The Monday Clinical Brief** | Weekly literature digest, 31 specialties | Available now | £20/yr |
 
 The query tools — iatroX, Heidi Evidence, Praxis, Vera — help you ask a question. None of them keep you current. That is a different job, and it is the one MCB does. Think of the digest as the reading layer none of these replace: it tells you what changed this week, so you know what to ask the query tool about in the first place.
 
-One loop worth closing: Heidi Evidence now publishes its own "OpenEvidence alternative" comparison — while its answer feature still does not enrol UK NHS emails. So a UK NHS doctor who follows that recommendation lands on a tool they cannot actually use. If that is you, the usable options above (and a weekly digest for the reading) are the practical answer.
+One loop worth closing: Heidi Evidence now publishes its own "OpenEvidence alternative" comparison — while its own answer feature is restricted to out-of-session use for UK and EU clinicians. So a UK doctor who follows that recommendation lands on a tool they cannot use in the consultation itself. If that is you, the usable options above (and a weekly digest for the reading) are the practical answer.
 
 ## For clinical Q&A: what's still available in the UK
 
@@ -93,6 +93,6 @@ But staying current with the literature — knowing what questions to ask in the
 
 ## Related reading
 
-- [Three AI tools UK doctors lost in six weeks — and what works in their place](/blog/medical-journal-digest/uk-doctors-lost-ai-tools-2026/) — the wider pattern, with a practical two-tool setup for UK clinicians.
+- [Two AI tools UK doctors lost, one restricted — and what works in their place](/blog/medical-journal-digest/uk-doctors-lost-ai-tools-2026/) — the wider pattern, with a practical two-tool setup for UK clinicians.
 - [ChatGPT for Clinicians launched — and UK doctors are excluded](/blog/medical-journal-digest/chatgpt-for-clinicians-uk/)
-- [Heidi Evidence is excellent — and UK NHS clinicians are excluded](/blog/medical-journal-digest/heidi-evidence-uk-nhs-excluded/)
+- [Heidi Evidence is excellent — and in the UK it won't answer mid-consultation](/blog/medical-journal-digest/heidi-evidence-uk-nhs-excluded/)
