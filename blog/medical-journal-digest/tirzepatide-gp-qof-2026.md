@@ -61,6 +61,12 @@ The headline for primary care: tirzepatide for obesity is now a QOF-recognised p
 
 For eligible patients where it is commissioned, remember the wrap-around: diet, physical activity, and the monitoring and titration set out in the BNF are part of the package, not optional.
 
+## Related reading
+
+- [NICE NG28 February 2026: SGLT2 inhibitors first-line for type 2 diabetes](/blog/medical-journal-digest/nice-ng28-type-2-diabetes-2026/) — the year's other major diabetes prescribing shift.
+- [SGLT2 inhibitors in UK primary care 2026: the practical prescribing guide](/blog/medical-journal-digest/sglt2-inhibitors-uk-primary-care-2026/) — the operational detail behind the NG28 change.
+- [Menopause and HRT guidance UK 2026 (NICE NG23)](/blog/medical-journal-digest/menopause-hrt-nice-ng23-2026/) — another 2026 NICE update that reshapes a common general-practice conversation.
+
 ## A note on what this post is — and is not
 
 This is a guideline and policy summary for awareness. It is not a substitute for [NICE TA1026](https://www.nice.org.uk/guidance/ta1026), the [NHS England interim commissioning guidance](https://www.england.nhs.uk/long-read/interim-commissioning-guidance-nice-ta1026-tirzepatide/), the BNF, or local prescribing policy. Clinical and prescribing decisions remain the responsibility of the prescribing clinician.

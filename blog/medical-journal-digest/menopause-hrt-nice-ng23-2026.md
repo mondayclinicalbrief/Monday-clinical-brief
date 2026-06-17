@@ -58,6 +58,12 @@ For GPs and menopause clinics, the 2026 picture is: HRT first, as before; fezoli
 
 The highest-yield action is small: update your HRT-initiation safety-netting to the current NG23 wording, and add fezolinetant — with its monitoring requirement — to your local pathway for patients who cannot use HRT. Local formulary and ICB or Health Board positions should be checked before prescribing.
 
+## Related reading
+
+- [NICE NG28 February 2026: SGLT2 inhibitors first-line for type 2 diabetes](/blog/medical-journal-digest/nice-ng28-type-2-diabetes-2026/) — another major 2026 NICE update for UK primary care.
+- [SGLT2 inhibitors in UK primary care 2026: the practical prescribing guide](/blog/medical-journal-digest/sglt2-inhibitors-uk-primary-care-2026/) — the practical companion to the NG28 diabetes update.
+- [Tirzepatide in the GP QOF 2026/27](/blog/medical-journal-digest/tirzepatide-gp-qof-2026/) — the 2026 obesity-prescribing change now in the GP contract.
+
 ## A note on what this post is — and is not
 
 This is a guideline summary for awareness. It is not a substitute for the NICE guidance itself, the BNF, or local prescribing policy. Where there is doubt, [NICE TA1143](https://www.nice.org.uk/guidance/ta1143) and [NICE NG23](https://www.nice.org.uk/guidance/ng23), plus the BNF entry for fezolinetant, should be consulted. Clinical decisions remain the responsibility of the prescribing clinician.

@@ -66,6 +66,12 @@ Local formularies will need updating. Most ICB and Health Board formularies in t
 
 The W1 NG28 summary is a top-of-funnel piece. For UK GPs, trainees, and pharmacists wanting the operational detail — eligibility criteria, dose selection between agents, the cautions in practice, and the workflow at the GP-appointment level — we have published a longer companion post: [SGLT2 inhibitors in UK primary care 2026: what NICE NG28 means in practice](/blog/medical-journal-digest/sglt2-inhibitors-uk-primary-care-2026/).
 
+## Related reading
+
+- [SGLT2 inhibitors in UK primary care 2026: the practical prescribing guide](/blog/medical-journal-digest/sglt2-inhibitors-uk-primary-care-2026/) — the operational companion to this summary: agents, eligibility, cautions, and the initiation workflow.
+- [Tirzepatide in the GP QOF 2026/27](/blog/medical-journal-digest/tirzepatide-gp-qof-2026/) — the year's other major primary-care prescribing change.
+- [Menopause and HRT guidance UK 2026 (NICE NG23)](/blog/medical-journal-digest/menopause-hrt-nice-ng23-2026/) — another 2026 NICE update that reshapes a common general-practice conversation.
+
 ## A note on what this post is — and is not
 
 This is a guideline summary for awareness. It is not a substitute for the NICE guideline itself, the BNF, or local prescribing policy. Where there is doubt, NICE's published visual summary at [nice.org.uk/guidance/ng28](https://www.nice.org.uk/guidance/ng28) and the BNF entry for each agent should be consulted. Clinical decisions remain the responsibility of the prescribing clinician.

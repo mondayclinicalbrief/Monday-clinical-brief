@@ -84,6 +84,12 @@ A practical sequence for a new type 2 diabetes diagnosis under NG28 2026:
 
 For existing patients on metformin monotherapy, the workflow is different. Targeted register review — patients with cardiovascular comorbidity, CKD, or rising HbA1c — is the highest-yield use of clinical time. Not every patient on stable metformin monotherapy needs their regimen changed because the guideline has moved. Many of them, however, will benefit from SGLT2 addition once the conversation is had.
 
+## Related reading
+
+- [NICE NG28 February 2026: SGLT2 inhibitors move first-line for type 2 diabetes](/blog/medical-journal-digest/nice-ng28-type-2-diabetes-2026/) — the guideline summary this prescribing guide builds on.
+- [Tirzepatide in the GP QOF 2026/27](/blog/medical-journal-digest/tirzepatide-gp-qof-2026/) — the year's other major primary-care prescribing change.
+- [Menopause and HRT guidance UK 2026 (NICE NG23)](/blog/medical-journal-digest/menopause-hrt-nice-ng23-2026/) — another 2026 NICE update that reshapes a common general-practice conversation.
+
 ## A note on what this post is — and is not
 
 This is a practical summary of the 2026 NICE NG28 update aimed at UK primary-care clinicians. It is not a substitute for the NICE guideline, the BNF entry for each licensed agent, or local prescribing policy. Clinical decisions remain the responsibility of the prescribing clinician. Where doubt exists, the NICE visual summary at [nice.org.uk/guidance/ng28](https://www.nice.org.uk/guidance/ng28) and the BNF are the references to consult.
