@@ -246,7 +246,10 @@
   footer a { color: var(--sage); text-decoration: none; }
 
   @media (max-width: 640px) {
-    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; }
+    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; gap: 0.75rem; }
+    .nav-brand { font-size: 1.3rem; line-height: 1.05; gap: 0.45rem; }
+    .nav-mark { height: 2rem; }
+    .nav-cta { white-space: nowrap; flex-shrink: 0; }
     .nav-links a:not(.nav-cta) { display: none; }
     body { padding-bottom: 60px; }
     .hero { min-height: calc(100vh - 60px); padding-top: 3rem; }
