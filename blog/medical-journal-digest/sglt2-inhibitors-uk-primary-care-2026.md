@@ -89,6 +89,8 @@ For existing patients on metformin monotherapy, the workflow is different. Targe
 - [NICE NG28 February 2026: SGLT2 inhibitors move first-line for type 2 diabetes](/blog/medical-journal-digest/nice-ng28-type-2-diabetes-2026/) — the guideline summary this prescribing guide builds on.
 - [Tirzepatide in the GP QOF 2026/27](/blog/medical-journal-digest/tirzepatide-gp-qof-2026/) — the year's other major primary-care prescribing change.
 - [Menopause and HRT guidance UK 2026 (NICE NG23)](/blog/medical-journal-digest/menopause-hrt-nice-ng23-2026/) — another 2026 NICE update that reshapes a common general-practice conversation.
+- [SGLT2 inhibitors for CKD in UK primary care 2026 (TA1075)](/blog/medical-journal-digest/sglt2-inhibitors-ckd-uk-primary-care-2026/) — the same drug class for kidney protection, now including CKD without diabetes.
+- [Statins and CVD prevention in UK primary care 2026 (NICE NG238)](/blog/medical-journal-digest/statins-cvd-prevention-uk-primary-care-2026/) — lipid management in the same high-cardiovascular-risk population.
 
 ## A note on what this post is — and is not
 
