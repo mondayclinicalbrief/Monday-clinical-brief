@@ -51,12 +51,12 @@ The list below is limited to tools that meet two tests: no advertising, and a cr
 **UK status:** available. UK-built, MHRA-registered as a Class I device, UKCA-marked. In 2026 it is the pull tool a UK NHS reader can reliably sign up for.
 **Not for:** systematic weekly coverage. It responds to queries, not calendars. We have no commercial relationship with iatroX — we list it because it is the option that works.
 
-### Heidi Evidence — strong, but check your email domain
+### Heidi Evidence — strong, but not mid-consultation in the UK
 
 **Job:** citation-backed clinical answers grounded in NICE, BMJ Group, MIMS and HealthPathways. Ad-free, ISO 42001 audited, built on Claude.
 **Cost:** free for individuals.
-**UK status:** restricted. For UK and EU clinicians the *Evidence* feature works only outside live sessions — in-session querying is disabled, so it cannot answer during a consultation. *Heidi Scribe* — the AI documentation tool — is separately MHRA-cleared and remains fully available. See our [Heidi Evidence vs MCB comparison](/blog/medical-journal-digest/heidi-evidence-vs-monday-clinical-brief/) and the [in-session restriction explainer](/blog/medical-journal-digest/heidi-evidence-uk-nhs-excluded/).
-**Not for:** UK NHS accounts, today. The product is good; the door is not open.
+**UK status:** restricted. For UK and EU clinicians the *Evidence* feature works only outside live sessions — in-session querying is disabled, so it cannot answer during a consultation. *Heidi Scribe* — the AI documentation tool — is separately MHRA-cleared and remains fully available. See our [Heidi Evidence vs MCB comparison](/blog/medical-journal-digest/heidi-evidence-vs-monday-clinical-brief/) and the [in-session restriction explainer](/blog/medical-journal-digest/heidi-evidence-uk-in-session-restriction/).
+**Not for:** point-of-care questions in the UK and EU — it won't answer mid-consultation. Out of session, it's fully usable.
 
 ### Praxis Medicine — new, well-funded, worth watching
 

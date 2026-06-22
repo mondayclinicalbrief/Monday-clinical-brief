@@ -37,7 +37,7 @@ This post sets out what happened, why it happened, and — more usefully — wha
 - **28 April 2026** — OpenEvidence withdraws from the UK and EU. No replacement announced. No UK handoff. The platform that 40 % of US physicians were reportedly using disappears from UK access overnight.
 - **May 2026** — Heidi Evidence (the clinical decision support arm of Heidi Health) operates in the UK and EU but restricts evidence querying to out-of-session use. It cannot be used during a live patient consultation.
 
-We have written individual explainers for each: [the OpenEvidence withdrawal](/blog/medical-journal-digest/openevidence-alternative-uk/), [the ChatGPT for Clinicians exclusion](/blog/medical-journal-digest/chatgpt-for-clinicians-uk/), and [the Heidi Evidence in-session restriction](/blog/medical-journal-digest/heidi-evidence-uk-nhs-excluded/). This post pulls the thread.
+We have written individual explainers for each: [the OpenEvidence withdrawal](/blog/medical-journal-digest/openevidence-alternative-uk/), [the ChatGPT for Clinicians exclusion](/blog/medical-journal-digest/chatgpt-for-clinicians-uk/), and [the Heidi Evidence in-session restriction](/blog/medical-journal-digest/heidi-evidence-uk-in-session-restriction/). This post pulls the thread.
 
 ## Why this is happening
 

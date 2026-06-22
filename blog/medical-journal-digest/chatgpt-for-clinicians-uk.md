@@ -97,4 +97,4 @@ But neither of those tools — available or not — tells you what was published
 ## Related reading
 
 - [Looking for an OpenEvidence alternative in the UK?](/blog/medical-journal-digest/openevidence-alternative-uk/)
-- [Heidi Evidence is excellent — and in the UK it won't answer mid-consultation](/blog/medical-journal-digest/heidi-evidence-uk-nhs-excluded/)
+- [Heidi Evidence is excellent — and in the UK it won't answer mid-consultation](/blog/medical-journal-digest/heidi-evidence-uk-in-session-restriction/)

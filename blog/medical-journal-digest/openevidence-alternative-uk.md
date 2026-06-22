@@ -95,4 +95,4 @@ But staying current with the literature — knowing what questions to ask in the
 
 - [Two AI tools UK doctors lost, one restricted — and what works in their place](/blog/medical-journal-digest/uk-doctors-lost-ai-tools-2026/) — the wider pattern, with a practical two-tool setup for UK clinicians.
 - [ChatGPT for Clinicians launched — and UK doctors are excluded](/blog/medical-journal-digest/chatgpt-for-clinicians-uk/)
-- [Heidi Evidence is excellent — and in the UK it won't answer mid-consultation](/blog/medical-journal-digest/heidi-evidence-uk-nhs-excluded/)
+- [Heidi Evidence is excellent — and in the UK it won't answer mid-consultation](/blog/medical-journal-digest/heidi-evidence-uk-in-session-restriction/)
