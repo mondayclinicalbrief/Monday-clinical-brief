@@ -1,7 +1,7 @@
 ---
 title: "NICE CKS Round-Up — May 2026: Recent Updates for UK Primary Care"
 seoTitle: "NICE CKS Round-Up May 2026: Updated Topics for UK GPs Explained"
-metaDescription: "A monthly summary of recently updated NICE Clinical Knowledge Summaries (CKS) topics for UK primary care — seasonal flu, iron-deficiency anaemia, Addison's, ME/CFS, sciatica and insomnia — with one-line clinical takeaways."
+metaDescription: "A monthly summary of recently updated NICE Clinical Knowledge Summaries (CKS) topics for UK primary care — delirium, DMARDs, compression stockings and Morton's neuroma — with one-line clinical takeaways."
 description: "Our monthly NICE CKS round-up: the recently updated Clinical Knowledge Summaries topics that matter in UK primary care, each with a one-line takeaway and a link to the source."
 date: 2026-06-02
 cluster: "Medical Journal Digest"
@@ -24,12 +24,12 @@ This is the first in a recurring monthly series. We summarise the changes; we do
 
 ## The updates that matter this month
 
-- **Immunisations — seasonal influenza.** Updated for the 2025–26 season. *Takeaway:* check the current at-risk groups and the season's recommended vaccines before your autumn clinics plan.
-- **Anaemia — iron deficiency.** New information on normal haemoglobin with low ferritin in menstruating pre-menopausal women. *Takeaway:* a low ferritin can warrant action even when haemoglobin is normal — worth revisiting your threshold for treating.
-- **Addison's disease.** Recommendations from the NICE adrenal insufficiency guideline incorporated. *Takeaway:* sick-day rules and steroid-cover advice now align with the NICE guideline — re-check your patient-facing guidance.
-- **Myalgic encephalomyelitis / chronic fatigue syndrome (new topic), and Tiredness/fatigue in adults.** A new ME/CFS topic, with the tiredness/fatigue topic updated to match. *Takeaway:* the assessment pathway for unexplained fatigue has a clearer ME/CFS branch.
-- **Sciatica / lumbar radiculopathy.** New information on bilateral radicular pain and referral to musculoskeletal triage. *Takeaway:* bilateral radicular pain has specific red-flag and referral implications — know the route.
-- **Insomnia.** Information added on SNRIs, ADHD, autism spectrum disorder, menopausal symptoms and tinnitus as contributors. *Takeaway:* widen the differential for the causes you screen for before reaching for a hypnotic.
+- **Delirium.** The prescribing-information section has been removed to underline that antipsychotic medication is **not** routinely recommended and should only be started on specialist assessment or advice. *Takeaway:* reach for non-pharmacological management first; treat any antipsychotic as a specialist-advised exception, not a default.
+- **DMARDs.** Updated to align with the 2025 British Society for Rheumatology guideline on prescribing and monitoring conventional synthetic disease-modifying anti-rheumatic drugs. *Takeaway:* re-check your shared-care monitoring intervals against the current BSR schedule.
+- **Compression stockings.** Reviewed and aligned with the National Wound Care Strategy Programme recommendations and the Wounds UK best-practice statements on compression hosiery — including compression in heart-failure oedema and preventing recurrent leg ulceration. *Takeaway:* a good prompt to check your venous-compression and leg-ulcer pathway against current Wounds UK / NWCSP guidance.
+- **Morton's neuroma.** No major change to the recommendations, but there's a new section summarising the complications that can occur if Morton's neuroma is left untreated. *Takeaway:* useful when counselling patients who are weighing up — or declining — referral and intervention.
+
+*Also reviewed this month with no major changes to recommendations: female- and male-pattern hair loss, head lice, and temporomandibular disorders (TMDs).*
 
 ## How to use this
 
