@@ -4,7 +4,7 @@ seoTitle: "Praxis Medicine UK: What It Does and What It Doesn't Replace | MCB"
 metaDescription: "Praxis Medicine is a new, Balderton-backed clinical AI search tool grounded in NICE and NHS sources. Here's what it does, what it costs, and how it sits alongside the other UK clinical AI tools in 2026."
 description: "Praxis Medicine launched in 2026 as a UK-focused clinical AI search tool. Here's what it does, where its sources come from, and the one job it does not do — keeping you current with the literature."
 date: 2026-06-02
-updated: 2026-06-02
+updated: 2026-06-30
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
@@ -60,7 +60,7 @@ This is not a criticism of Praxis. It is a different job. Pull tools, by design,
 
 ## How The Monday Clinical Brief fits alongside it
 
-If Praxis becomes the UK query tool you reach for, pair it with a reading habit. Every Monday morning, The Monday Clinical Brief sends the five most important peer-reviewed papers in your specialty that week — plain-language summaries, links to the originals, across 31 specialties, for £20 a year. The digest keeps you current; the query tool answers the specifics. One is preventive; the other is acute.
+If Praxis becomes the UK query tool you reach for, pair it with a reading habit. Every Monday morning, The Monday Clinical Brief sends every new peer-reviewed paper published that week in your specialty's five highest-impact journals — plain-language summaries, links to the originals, across 31 specialties, for £20 a year. The digest keeps you current; the query tool answers the specifics. One is preventive; the other is acute.
 
 [Start a four-week free trial →](/#subscribe)
 

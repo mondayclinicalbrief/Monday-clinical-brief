@@ -4,7 +4,7 @@ seoTitle: "Monday Clinical Brief vs NEJM Clinician (NEJM Journal Watch): 2026 Co
 metaDescription: "NEJM Clinician (formerly NEJM Journal Watch) costs ~£75/year per specialty track and covers 12 editions. The Monday Clinical Brief covers all 31 specialties for £20/year. Here's how they compare on price, coverage and UK fit in 2026."
 description: "NEJM Journal Watch is now NEJM Clinician. Here's how it compares to The Monday Clinical Brief in 2026 — price, coverage, UK alignment, and which one fits your workflow."
 date: 2026-05-04
-updated: 2026-06-02
+updated: 2026-06-30
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
@@ -25,7 +25,7 @@ NEJM Journal Watch rebranded to [NEJM Clinician](https://www.nejm.org) in Novemb
 
 Both NEJM Clinician and The Monday Clinical Brief are journal digest products — but they are built on different editorial philosophies, cover different numbers of specialties, and sit at very different price points. Here is an honest comparison.
 
-**In short:** NEJM Clinician offers 12 specialty editions at about £75/year per track, with expert-picked commentary from named US editors. The Monday Clinical Brief covers all 31 specialties for £20/year, with systematic top-5 selection and a UK focus. If you want one editor's commentary in one of the 12 editions, NEJM Clinician is strong. If you want broad, UK-relevant coverage at a fraction of the price — especially across more than one specialty — MCB is the better fit.
+**In short:** NEJM Clinician offers 12 specialty editions at about £75/year per track, with expert-picked commentary from named US editors. The Monday Clinical Brief covers all 31 specialties for £20/year, with systematic journal-level selection and a UK focus. If you want one editor's commentary in one of the 12 editions, NEJM Clinician is strong. If you want broad, UK-relevant coverage at a fraction of the price — especially across more than one specialty — MCB is the better fit.
 
 ## What changed with the rebrand
 
@@ -61,7 +61,7 @@ This is the deeper distinction, and it matters more than price.
 
 NEJM Clinician uses **expert picks**: editors read the literature and select the papers they think are most important. You see what the editorial board has decided to surface.
 
-MCB uses **systematic top-5 selection**: every week, we identify the five highest-impact papers from the top journals in each of 31 specialties. You see a consistent, structured picture of what was published — not a curated selection of what one editor found interesting.
+MCB uses **systematic journal-level selection**: every week, we surface every new paper from the five highest-impact journals in each of 31 specialties. You see a consistent, structured picture of what was published — not a curated selection of what one editor found interesting.
 
 Neither philosophy is wrong. Expert picks give you commentary and context. Systematic selection gives you confidence that you haven't missed something because an editor made a different call.
 
@@ -72,7 +72,7 @@ Neither philosophy is wrong. Expert picks give you commentary and context. Syste
 | **Price (single specialty)** | ~£75/year | £20/year |
 | **Price (multiple specialties)** | £75 per track | £20 for all 31 |
 | **Specialties covered** | 12 | 31 |
-| **Editorial model** | Expert picks | Systematic top-5 per specialty |
+| **Editorial model** | Expert picks | Systematic; top 5 journals/specialty |
 | **UK-specific context** | Limited | Built in |
 | **CPD / revalidation** | US CME | UK revalidation-focused |
 | **Available in UK** | Yes | Yes |

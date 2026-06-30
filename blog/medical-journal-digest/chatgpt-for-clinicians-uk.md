@@ -4,7 +4,7 @@ seoTitle: "ChatGPT for Clinicians UK: Why It's Not Available and What to Use Ins
 metaDescription: "OpenAI launched ChatGPT for Clinicians on 23 April 2026 — and immediately excluded UK and EEA doctors. Here's what the exclusion means, and what UK clinicians can use instead."
 description: "ChatGPT for Clinicians launched in April 2026 but explicitly excludes the UK and EEA. Here's what it does, why UK doctors are locked out, and what's actually available."
 date: 2026-05-13
-updated: 2026-06-02
+updated: 2026-06-30
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
@@ -80,7 +80,7 @@ That is the problem we built The Monday Clinical Brief to address.
 
 ## What The Monday Clinical Brief offers
 
-Every Monday morning, we send you the five most important peer-reviewed papers published in your specialty that week. Plain-language summaries. Links to the originals. Nothing else.
+Every Monday morning, we send you every new peer-reviewed paper published that week in the five highest-impact journals in your specialty. Plain-language summaries. Links to the originals. Nothing else.
 
 We cover 31 specialties. We do the curation. You stay current.
 

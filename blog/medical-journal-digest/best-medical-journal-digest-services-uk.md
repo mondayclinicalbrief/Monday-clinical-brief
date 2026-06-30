@@ -4,7 +4,7 @@ seoTitle: "Best Medical Publications & Journal Digests for UK Doctors (2026)"
 metaDescription: "Compare the best medical journal digests for UK doctors on coverage, CPD and price. The Monday Clinical Brief covers the top 5 journals across 31 specialties from £20/year — free 4-week trial."
 description: "A head-to-head comparison of journal digest services available to UK doctors — features, pricing, CPD integration, and specialty coverage."
 date: 2026-04-14
-updated: 2026-06-07
+updated: 2026-06-30
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
@@ -23,7 +23,7 @@ faqs:
 
 # Best Medical Journal Digest Services for UK Doctors
 
-The best medical journal digests and publications for UK doctors in 2026 are The Monday Clinical Brief, BMJ Best Practice, UpToDate, DynaMed, NEJM Clinician and Evidence Alerts. There is no single best choice for everyone. It depends on whether you want a passive weekly digest or a searchable reference tool, how much UK and NHS context you need, whether you require formal CPD credits, and your budget, which ranges from free to over £400 a year. The Monday Clinical Brief covers the top 5 journals across 31 specialties and lands every Monday from £20/year. This guide compares each service on coverage, format, CPD support and price so you can match one to your specialty and workflow.
+The best medical journal digests and publications for UK doctors in 2026 are The Monday Clinical Brief, BMJ Best Practice, UpToDate, DynaMed, ClinicalKey AI, NEJM Clinician and Evidence Alerts. There is no single best choice for everyone. It depends on whether you want a passive weekly digest or a searchable reference tool, how much UK and NHS context you need, whether you require formal CPD credits, and your budget, which ranges from free to over £400 a year. The Monday Clinical Brief covers the top 5 journals across 31 specialties and lands every Monday from £20/year. This guide compares each service on coverage, format, CPD support and price so you can match one to your specialty and workflow.
 
 Keeping up with medical literature is essential for clinical practice, but it's also increasingly impossible. The volume of published research grows exponentially each year, and while quality journals are vital sources of evidence, clinicians face the brutal reality: there simply aren't enough hours in a week to review everything relevant to your specialty.
 
@@ -145,6 +145,27 @@ Pricing ranges from free to several hundred pounds annually. Consider both the d
 
 ---
 
+### ClinicalKey AI
+
+**What is it?** Elsevier's clinical search and decision-support platform with a generative AI layer. You ask a clinical question in natural language and get a summarised, citation-backed answer drawn from Elsevier's full-text books and journals (recently expanded to include titles such as *The Lancet* and *NEJM*). Like UpToDate, it is a look-up tool rather than a digest — it answers what you ask, not what is new.
+
+**Strengths:**
+- Natural-language clinical Q&A grounded in a large, peer-reviewed, full-text library
+- Citation-backed answers; toggles between adult and paediatric contexts
+- Available to individual UK clinicians (free 14-day trial), not only via institutions
+- Mobile app with voice-to-text
+
+**Limitations:**
+- A reference/answer tool, not a current-awareness digest — it will not tell you what was published this week
+- Paid individual subscription; UK pricing varies
+- Newer AI layer; answer quality depends on how the question is framed
+
+**Pricing:** Individual subscription with a free 14-day trial; ~US$349/year list (UK pricing varies). Institutional access also available.
+
+**CPD Support:** Limited; not designed primarily as a CPD tool
+
+---
+
 ### NEJM Clinician
 
 **What is it?** A curated daily digest of significant articles from New England Journal of Medicine and other major journals, with commentary by specialist physicians.
@@ -199,6 +220,7 @@ Pricing ranges from free to several hundred pounds annually. Consider both the d
 | **BMJ Best Practice** | BMJ journals + integrated guidelines | Daily updates | Yes | £200–500/year |
 | **DynaMed** | 500+ journals (summarised) | Continuous updates | Limited | From £150/year |
 | **UpToDate** | 500+ journals (summarised) | Continuous updates | Limited | From £440/year |
+| **ClinicalKey AI** | Elsevier books + journals + AI search | On-demand (look-up) | Limited | Individual (free trial); ~US$349/yr |
 | **NEJM Clinician** | Major journals (expert picks) | Weekly | Minimal | ~£75/year per specialty |
 | **Evidence Alerts** | High-quality evidence (RCTs, reviews) | 2–3 times/week | Minimal | Free–£50/year |
 

@@ -4,7 +4,7 @@ seoTitle: "Monday Clinical Brief vs UpToDate: Which Do UK Doctors Actually Need?
 metaDescription: "UpToDate is the gold standard clinical reference. The Monday Clinical Brief is a weekly literature digest. They do different jobs — here's how to think about both, including why UK doctors don't get UpToDate's new AI features."
 description: "UpToDate and MCB solve different problems. One is a reference you consult. The other is a digest that keeps you current. Most UK doctors need both — here's why."
 date: 2026-05-04
-updated: 2026-06-15
+updated: 2026-06-30
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
@@ -16,7 +16,7 @@ faqs:
   - question: "Is UpToDate Pro Plus AI available in the UK?"
     answer: "No. UpToDate Pro Plus AI is currently restricted to US and Canada personal subscribers. UK individual subscribers pay the same price but do not receive access to the AI features."
   - question: "What does The Monday Clinical Brief cost?"
-    answer: "£20 per year, with a four-week free trial. It covers 31 specialties and delivers the five most important peer-reviewed papers in your chosen specialty every Monday morning."
+    answer: "£20 per year, with a four-week free trial. It covers 31 specialties and delivers every new peer-reviewed paper published that week in your chosen specialty's five highest-impact journals, every Monday morning."
 ---
 
 # MCB vs UpToDate: Reference Tool vs Weekly Digest
@@ -59,7 +59,7 @@ UpToDate's main institutional rival, DynaMed, has moved the same way: its Dyna A
 
 ## What The Monday Clinical Brief does
 
-MCB is a push tool. Every Monday morning, it sends you five of the most important peer-reviewed papers published in your specialty that week. Plain-language summaries. Links to the originals. Nothing else.
+MCB is a push tool. Every Monday morning, it sends you every new peer-reviewed paper published that week in the five highest-impact journals in your specialty. Plain-language summaries. Links to the originals. Nothing else.
 
 The job is current awareness — making sure that when a practice-changing trial is published in your field, you know about it that week rather than six months later.
 
@@ -71,7 +71,7 @@ For most UK NHS doctors, the practical setup is:
 
 **UpToDate** (via institutional access): use at the point of care when a patient presents with something you want to check. Excellent reference. Almost certainly free through your trust — check the [NHS Knowledge and Library Hub](https://library.nhs.uk) or your local library service.
 
-**The Monday Clinical Brief**: use every Monday morning to see what was published last week in your specialty. Fifteen minutes. Five papers. CPD evidence built in.
+**The Monday Clinical Brief**: use every Monday morning to see what was published last week in your specialty. Fifteen minutes. Five journals. CPD evidence built in.
 
 UpToDate keeps you safe when a question arises. MCB keeps you current so you know the questions are arising.
 

@@ -2,10 +2,10 @@
 layout: blog-post.njk
 title: "Palliative Care Journal Digest"
 seoTitle: "Palliative Care Journal Digest for NHS Clinicians | The Monday Clinical Brief"
-metaDescription: "Stay current with palliative care evidence — the five most important papers from your specialty, every Monday. Written by a Consultant in Palliative Medicine, NHS Wales."
-description: "Five peer-reviewed palliative care papers, every Monday. Plain-language summaries, written for NHS clinicians by a serving consultant in the specialty."
+metaDescription: "Stay current with palliative care evidence — every new paper from the field's five leading journals, every Monday. Written by a Consultant in Palliative Medicine, NHS Wales."
+description: "Every new palliative care paper from the field's five leading journals, every Monday. Plain-language summaries, written for NHS clinicians by a serving consultant in the specialty."
 date: 2026-05-11
-updated: 2026-06-02
+updated: 2026-06-30
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
@@ -24,11 +24,11 @@ faqs:
 
 # Palliative Care Journal Digest
 
-The Monday Clinical Brief is a weekly palliative care journal digest, curated by a serving NHS consultant in the specialty. Every Monday it sends the five most important new peer-reviewed papers in palliative care — summarised in plain language, formatted for CPD, for £20 a year. Here is what it covers and why it exists.
+The Monday Clinical Brief is a weekly palliative care journal digest, curated by a serving NHS consultant in the specialty. Every Monday it sends every new peer-reviewed paper published that week in palliative care's five leading journals — summarised in plain language, formatted for CPD, for £20 a year. Here is what it covers and why it exists.
 
 Palliative care evidence moves fast. Symptom management protocols, opioid titration guidelines, advance care planning frameworks, and the evidence base for early specialist referral have all changed materially in the last five years. Most practising clinicians haven't had time to keep up. I built The Monday Clinical Brief because I was one of them.
 
-Every Monday morning, we send palliative care clinicians the five most important peer-reviewed papers published in the specialty that week.
+Every Monday morning, we send palliative care clinicians every new peer-reviewed paper published that week in the specialty's five leading journals.
 
 Concise summaries. Links to the originals. Nothing else.
 

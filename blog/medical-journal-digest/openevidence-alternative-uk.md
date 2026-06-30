@@ -4,7 +4,7 @@ seoTitle: "OpenEvidence Alternative UK: What to Use Instead | The Monday Clinica
 metaDescription: "OpenEvidence withdrew from the UK in April 2026. Here's what UK doctors can use instead — for clinical Q&A and for keeping up with the medical literature."
 description: "OpenEvidence is gone from the UK. Here's what actually fills the gap — and why staying current with the literature is a different problem from clinical Q&A."
 date: 2026-05-03
-updated: 2026-06-02
+updated: 2026-06-30
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
@@ -15,6 +15,8 @@ faqs:
     answer: "For clinical Q&A — questions you ask at the point of care — iatroX is a UK-based alternative with MHRA registration and UKCA marking. For staying current with the medical literature — knowing what's new in your specialty each week — The Monday Clinical Brief is a weekly email digest covering 31 specialties for £20 a year."
   - question: "Does The Monday Clinical Brief replace OpenEvidence?"
     answer: "No — and it doesn't claim to. OpenEvidence answered clinical questions. The Monday Clinical Brief surfaces new peer-reviewed papers in your specialty each week. These are different problems. MCB is for keeping up with what's new before you need to ask a question about it."
+  - question: "Can UK doctors use ClinicalKey AI or UpToDate Expert AI?"
+    answer: "Partly. ClinicalKey AI (Elsevier) is available to individual UK clinicians (paid, with a free trial) and to institutions, and answers clinical questions from Elsevier's peer-reviewed library. UpToDate Expert AI is different: standard UpToDate is widely used across the NHS through institutional access, but its generative AI layer — Pro Plus AI for individuals (US and Canada only) and Expert AI for enterprise (limited availability outside the US) — is not reachable by a UK individual today. Both ClinicalKey AI and standard UpToDate answer the questions you bring them — they don't surface what's newly published, which is the gap The Monday Clinical Brief fills."
   - question: "Is ChatGPT for Clinicians available in the UK?"
     answer: "No. ChatGPT for Clinicians launched on 23 April 2026 and explicitly excludes UK and EEA users."
   - question: "Has any other clinical AI tool changed its UK access since OpenEvidence withdrew?"
@@ -57,15 +59,19 @@ When OpenEvidence withdrew in April, the field of UK-usable replacements was thi
 | **Heidi Evidence** | Citation-backed clinical answers, BMJ/NICE-partnered | *Evidence* restricted to out-of-session use (UK/EU); *Scribe* available | Free tier + paid |
 | **Praxis Medicine** | Clinical AI search, NICE/CKS/NHS Digital-grounded | Newly launched (Apr 2026); individual access still settling | Not yet public |
 | **Vera Health** | Evidence answers + calculators, US-leaning | UK guideline localisation unclear | Free for clinicians |
+| **ClinicalKey AI** | Elsevier AI clinical Q&A, full-text books + journals, citation-backed | Available in UK — individual + institutional | Paid individual; free 14-day trial |
+| **UpToDate** | Point-of-care reference; Pro Plus / Expert AI is its Q&A layer | Standard available (often via NHS trust); AI Q&A layer not for UK individuals | ~£440/yr individual, or via trust |
 | **The Monday Clinical Brief** | Weekly literature digest, 31 specialties | Available now | £20/yr |
 
-The query tools — iatroX, Heidi Evidence, Praxis, Vera — help you ask a question. None of them keep you current. That is a different job, and it is the one MCB does. Think of the digest as the reading layer none of these replace: it tells you what changed this week, so you know what to ask the query tool about in the first place.
+The query tools above — iatroX, Heidi Evidence, Praxis, Vera, ClinicalKey AI and UpToDate — help you ask a question. None of them keep you current. That is a different job, and it is the one MCB does. Think of the digest as the reading layer none of these replace: it tells you what changed this week, so you know what to ask the query tool about in the first place.
 
 One loop worth closing: Heidi Evidence now publishes its own "OpenEvidence alternative" comparison — while its own answer feature is restricted to out-of-session use for UK and EU clinicians. So a UK doctor who follows that recommendation lands on a tool they cannot use in the consultation itself. If that is you, the usable options above (and a weekly digest for the reading) are the practical answer.
 
 ## For clinical Q&A: what's still available in the UK
 
 [iatroX](https://iatrox.com) is UK-based, holds MHRA registration and UKCA marking, and is positioning as the UK alternative for AI clinical Q&A. It's the closest direct replacement for OpenEvidence's core use case within the UK regulatory environment.
+
+Two established names belong here too, with an important difference between them. **ClinicalKey AI** (Elsevier) is the genuinely UK-available one — individual UK clinicians can subscribe (there's a free trial), and it answers from Elsevier's peer-reviewed library. **UpToDate** is the other: the standard reference is everywhere in the NHS via institutional access, but its generative AI Q&A layer — Pro Plus AI for individuals (US and Canada only) and Expert AI for enterprise (limited availability outside the US) — isn't something a UK individual can reach today (see [MCB vs UpToDate](/blog/medical-journal-digest/mcb-vs-uptodate/)). So for an AI answer you can actually use in the UK, ClinicalKey AI counts; UpToDate's AI layer mostly doesn't, yet. Either way, both answer what you *ask* — not what's *new*.
 
 ## For keeping up with the literature: that's a different problem
 
@@ -77,7 +83,7 @@ That is the problem we built The Monday Clinical Brief to solve.
 
 ## What The Monday Clinical Brief offers
 
-Every Monday morning, we send you five of the most important peer-reviewed papers published in your specialty that week. Plain-language summaries. Links to the originals. Nothing else.
+Every Monday morning, we send you every new peer-reviewed paper published that week in the five highest-impact journals in your specialty. Plain-language summaries. Links to the originals. Nothing else.
 
 We cover 31 specialties. We do the curation. You stay current.
 
