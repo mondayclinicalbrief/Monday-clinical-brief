@@ -1,7 +1,7 @@
 ---
 title: "MRCP PACES 2026: Fee Rise, Part 1 In-Centre, and a 12-Week Study Plan for Working Trainees"
-seoTitle: "MRCP PACES 2026 Study Plan UK: New Fees, Part 1 Changes, 12-Week Plan"
-metaDescription: "MRCP(UK) fees rise 3.6% from July 2026 and Part 1 moves to in-centre delivery from September. Here's what changed — plus a realistic 12-week PACES study plan for trainees working full clinical weeks."
+seoTitle: "MRCP PACES 2026: A 12-Week Study Plan for Working Trainees (UK)"
+metaDescription: "A station-by-station 12-week PACES plan for registrars working full weeks — plus 2026's changes: fees up 3.6% (July) and Part 1 in-centre (September)."
 description: "Two MRCP(UK) changes land in 2026: a 3.6% fee rise from July and Part 1 moving in-centre from September. Plus a station-by-station 12-week PACES plan built for working registrars."
 date: 2026-06-02
 cluster: "Medical Journal Digest"

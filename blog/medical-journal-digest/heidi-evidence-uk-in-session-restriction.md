@@ -1,7 +1,7 @@
 ---
 title: "Heidi Evidence Is Excellent. In the UK, It Won't Answer Mid-Consultation."
-seoTitle: "Heidi Evidence UK: The In-Session Restriction — and What to Use Instead"
-metaDescription: "Heidi Evidence is free, citation-backed, and partnered with NICE, BMJ Group and MIMS. In the UK and EU it works only outside live consultations. Here's what the in-session restriction means and what UK clinicians can use alongside it."
+seoTitle: "Heidi Evidence UK: Free and Citation-Backed — but Not In-Session"
+metaDescription: "Heidi Evidence is free, citation-backed and partnered with NICE and BMJ Group — but in the UK it won't answer mid-consultation. The in-session limit, explained."
 description: "Heidi Evidence is one of 2026's most capable UK-relevant clinical AI tools — but in the UK and EU it can't be used during a live patient session. Here's what the in-session restriction means and how to work around it."
 date: 2026-05-17
 updated: 2026-06-15

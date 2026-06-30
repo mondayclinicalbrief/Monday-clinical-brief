@@ -1,7 +1,7 @@
 ---
 title: "Tirzepatide in the GP QOF 2026/27: What the Mounjaro Obesity Change Means in Primary Care"
-seoTitle: "Tirzepatide (Mounjaro) GP QOF 2026/27: Obesity Prescribing in Primary Care Explained"
-metaDescription: "From 1 April 2026, tirzepatide (Mounjaro) obesity prescribing entered the 2026/27 GP contract via new QOF indicators. Here's what NICE TA1026 requires, who's eligible, and what it means for UK GPs."
+seoTitle: "Mounjaro (Tirzepatide) on the GP QOF 2026/27: Who's Eligible?"
+metaDescription: "Tirzepatide (Mounjaro) obesity prescribing entered the 2026/27 GP QOF on 1 April. NICE TA1026 eligibility, the BMI thresholds, and what it means for UK GPs."
 description: "Tirzepatide for obesity moved into the 2026/27 GP QOF on 1 April 2026. A plain-English summary of NICE TA1026 eligibility, the primary-care prescribing model, and what UK GPs need to know."
 date: 2026-06-02
 cluster: "Medical Journal Digest"

@@ -1,7 +1,7 @@
 ---
 title: "Heidi Evidence vs The Monday Clinical Brief: Pull vs Push for UK Clinicians"
-seoTitle: "Heidi Evidence Alternative: Why a Weekly Digest Still Matters | MCB"
-metaDescription: "Heidi Evidence is free, UK-focused, and powered by Claude. Does it replace a weekly journal digest? We compare pull vs push, ad-hoc vs structured, and explain why UK doctors need both."
+seoTitle: "Heidi Evidence vs a Weekly Digest: Do UK Doctors Need Both?"
+metaDescription: "Heidi Evidence is free, UK-focused and powered by Claude — but it's a pull tool, not a weekly push. Here's why UK doctors get the most from using both."
 description: "Heidi Evidence is free and powerful — but it solves a different problem. Here's why UK doctors still need a weekly digest alongside evidence lookup tools."
 date: 2026-04-25
 updated: 2026-06-15
