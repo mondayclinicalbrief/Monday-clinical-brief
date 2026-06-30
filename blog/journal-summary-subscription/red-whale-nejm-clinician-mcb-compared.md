@@ -1,16 +1,16 @@
 ---
-title: "Red Whale, NEJM Clinician and The Monday Clinical Brief: the £20, £75 and £205 Question"
+title: "Red Whale, NEJM Clinician and The Monday Clinical Brief: the £20, £75 and £210 Question"
 seoTitle: "Red Whale vs NEJM Clinician vs MCB (2026): Which to Use, or Use Together | MCB"
-metaDescription: "Red Whale (£205 a course), NEJM Clinician (£75 a year) and The Monday Clinical Brief (£20 a year) do three different jobs. A 2026 UK comparison — and why most clinicians use a combination, not just one."
+metaDescription: "Red Whale (£210 a course), NEJM Clinician (£75 a year) and The Monday Clinical Brief (£20 a year) do three different jobs. A 2026 UK comparison — and why most clinicians use a combination, not just one."
 description: "A 2026 UK comparison of Red Whale, NEJM Clinician and The Monday Clinical Brief. Three price points, three different jobs — and an honest case for using them together rather than choosing one."
 date: 2026-05-29
-updated: 2026-06-02
+updated: 2026-06-19
 cluster: "Journal Summary Subscription"
 schemaType: "Article"
 pillar: false
 faqs:
   - question: "Is Red Whale better value than NEJM Clinician or The Monday Clinical Brief?"
-    answer: "They are not the same product, so 'better value' depends on the job. Red Whale (around £205 per twice-yearly course) is an intensive update course with a CPD certificate, weighted to primary care. NEJM Clinician (~£75/year per specialty track) is expert commentary on selected papers. The Monday Clinical Brief (£20/year) is a weekly current-awareness digest covering 31 specialties. Many clinicians use a combination because each solves a different problem."
+    answer: "They are not the same product, so 'better value' depends on the job. Red Whale (around £210 per twice-yearly online course, or about £250 in person) is an intensive update course with a CPD certificate, weighted to primary care. NEJM Clinician (~£75/year per specialty track) is expert commentary on selected papers. The Monday Clinical Brief (£20/year) is a weekly current-awareness digest covering 31 specialties. Many clinicians use a combination because each solves a different problem."
   - question: "Can I use Red Whale, NEJM Clinician and MCB together?"
     answer: "Yes, and most readers who use more than one do exactly that. A twice-yearly course (Red Whale) refreshes and certifies; expert commentary (NEJM Clinician) goes deep in one specialty; a weekly digest (MCB) keeps you current between courses. The total cost of all three is still below a single UpToDate individual subscription."
   - question: "Does Red Whale give a CPD certificate?"
@@ -21,9 +21,9 @@ faqs:
     answer: "No. As of 2026, UpToDate Expert AI is available to individual subscribers in the US and Canada only. UK individuals pay roughly £455/year for standard UpToDate without the Expert AI layer — the same price for a more limited product than US subscribers receive."
 ---
 
-# Red Whale, NEJM Clinician and The Monday Clinical Brief: the £20, £75 and £205 Question
+# Red Whale, NEJM Clinician and The Monday Clinical Brief: the £20, £75 and £210 Question
 
-Three of the products UK clinicians ask us about most sit at three very different price points: The Monday Clinical Brief at £20 a year, NEJM Clinician at around £75 a year, and Red Whale at roughly £205 per course, twice a year.
+Three of the products UK clinicians ask us about most sit at three very different price points: The Monday Clinical Brief at £20 a year, NEJM Clinician at around £75 a year, and Red Whale at roughly £210 per course, twice a year.
 
 The instinct is to read that as a quality ladder — pay more, get more. It is not. These three products do three different jobs. The price difference reflects what each one *is*, not how good it is.
 
@@ -31,7 +31,7 @@ This guide explains what each does, where each earns its keep, and why most clin
 
 We run The Monday Clinical Brief, so we are not neutral. We will still tell you plainly when one of the other two is the right tool for the job.
 
-**Last updated:** 2 June 2026
+**Last updated:** 19 June 2026
 
 ## The Short Version
 
@@ -41,9 +41,9 @@ We run The Monday Clinical Brief, so we are not neutral. We will still tell you 
 
 Different jobs. Different cadences. Different things to do with the result.
 
-## Red Whale (~£205 per course)
+## Red Whale (~£210 per course)
 
-Red Whale runs update courses — most famously the GP Update — delivered in person and online, twice a year, with a written handbook of "pearls" and a CPD certificate on completion. The Spring/Summer 2026 GP Update is around £205. NB Medical's Hot Topics course occupies the same niche at a similar price — the Spring 2026 course is around £195.
+Red Whale runs update courses — most famously the GP Update — delivered in person and online, twice a year, with a written handbook of "pearls" and a CPD certificate on completion. The Spring/Summer 2026 GP Update is around £210 online, or about £250 in person — the in-person price adds a printed handbook, lunch and a year of Red Whale's online library. Red Whale also sells all-access memberships: Red Whale Unlimited at £420 a year covers every course plus the online library, and Red Whale Knowledge at £130 a year covers the searchable article library alone. NB Medical's Hot Topics course occupies the same niche at a similar price — the Spring 2026 course is around £195.
 
 **What you are buying:** a structured, taught refresh. Someone has done the synthesis, decided what changed in the last six months, and built it into a day you sit through. You come out with a handbook, a certificate, and the reassurance of having been brought up to date in one concentrated hit.
 
@@ -58,7 +58,7 @@ Red Whale runs update courses — most famously the GP Update — delivered in p
 
 - It is periodic, not continuous. A practice-changing trial published the week after your course waits up to six months for the next one.
 - Primary-care weighting means narrower value for hospital specialists.
-- £205 per course, twice a year, is the highest sticker price of the three by a wide margin.
+- £210 per course, twice a year, is the highest sticker price of the three by a wide margin.
 
 **Best for:** GPs and generalists who want a taught, certified, twice-yearly refresh — and who pair it with something that fills the months in between.
 
@@ -114,7 +114,7 @@ Here is the part the price ladder hides. These three are not competing for the s
 
 A worked example. A GP does the Red Whale GP Update in spring and autumn — that is the certified refresh and the appraisal evidence. They read MCB every Monday to catch the practice-changing papers that land in the 24 weeks between courses, before a patient or a colleague forces the question. If they have a special interest — say, diabetes after the [February 2026 NICE NG28 update made SGLT2 inhibitors first-line](/blog/medical-journal-digest/nice-ng28-type-2-diabetes-2026/) — they add an NEJM Clinician track for depth there, or an extra MCB specialty for £5 if breadth matters more than commentary.
 
-The maths. Two Red Whale courses a year (~£410) plus MCB (£20) is about **£430 — roughly the cost of a single standard UpToDate individual subscription** (~£455, see the sidebar), but covering a certified twice-yearly refresh *and* weekly current awareness rather than point-of-care lookup. Add one NEJM Clinician track for specialty depth and you are at around £505. The point is not that the bundle is cheap — it is that the money is spread across three genuinely different reading needs rather than paying a premium price for overlap.
+The maths. Two Red Whale courses a year (~£420 — which, not coincidentally, is the same as Red Whale's all-access Unlimited annual membership) plus MCB (£20) is about **£440 — roughly the cost of a single standard UpToDate individual subscription** (~£455, see the sidebar), but covering a certified twice-yearly refresh *and* weekly current awareness rather than point-of-care lookup. Add one NEJM Clinician track for specialty depth and you are at around £515. The point is not that the bundle is cheap — it is that the money is spread across three genuinely different reading needs rather than paying a premium price for overlap.
 
 You do not need all three. But if you already pay for one, the honest question is not "which is best" — it is "what does the one I have leave uncovered, and what is the cheapest way to cover it." More often than not, the gap is weekly current awareness, and £20 closes it.
 
@@ -131,7 +131,7 @@ Expert AI remains **available to individual subscribers in the US and Canada onl
 | | **Red Whale** | **NEJM Clinician** | **The Monday Clinical Brief** |
 |---|---|---|---|
 | **What it is** | Intensive update course | Expert journal commentary | Weekly current-awareness digest |
-| **UK price** | ~£205 per course (twice yearly) | ~£75/year per track | £20/year (+£5 per extra specialty) |
+| **UK price** | ~£210 per course (twice yearly) | ~£75/year per track | £20/year (+£5 per extra specialty) |
 | **Cadence** | Twice a year | Continuous (weekly) | Weekly (Monday) |
 | **Coverage** | Primary-care weighted | 12 specialty editions, expert picks | 31 specialties, top journals (complete) |
 | **Delivery** | Taught course + handbook | Push commentary | Push email |
@@ -141,7 +141,7 @@ Expert AI remains **available to individual subscribers in the US and Canada onl
 
 ## Our Honest Position
 
-If you want a taught, certified, twice-yearly refresh and you work in primary care, Red Whale earns its £205 — and we would not pretend a £20 digest does the same thing.
+If you want a taught, certified, twice-yearly refresh and you work in primary care, Red Whale earns its £210 — and we would not pretend a £20 digest does the same thing.
 
 If you want named-editor depth in one specialty, NEJM Clinician at £75 is genuinely competitive now.
 
