@@ -1,6 +1,6 @@
 ---
 title: "Best Medical Journal Digest Apps for UK Doctors"
-seoTitle: "Best Medical Journal Digest Apps (iOS and Android, 2026) | MCB"
+seoTitle: "Best Medical Journal Digest Apps for UK Doctors 2026 | MCB"
 metaDescription: "The best medical journal digest apps for UK doctors in 2026. Mobile apps compared for commute reading, CPD logging, and offline access."
 description: "The best medical journal digest apps for iOS and Android in 2026 — compared on offline reading, CPD logging, and what actually works on an NHS commute."
 date: 2026-06-02

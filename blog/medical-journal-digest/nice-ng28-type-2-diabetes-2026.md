@@ -1,7 +1,7 @@
 ---
 title: "NICE NG28 Update February 2026: SGLT2 Inhibitors Move to First-Line for Most Adults with Type 2 Diabetes"
-seoTitle: "NICE NG28 Type 2 Diabetes 2026: What Changed — SGLT2 First-Line Update Explained"
-metaDescription: "NICE updated NG28 on 18 February 2026 to make SGLT2 inhibitors first-line for almost all adults with type 2 diabetes. Here's what changed, what hasn't, and what UK clinicians need to know."
+seoTitle: "NICE NG28 2026: SGLT2 First-Line for Type 2 Diabetes"
+metaDescription: "On 18 Feb 2026 NICE made SGLT2 inhibitors first-line for almost all adults with type 2 diabetes. What changed, what hasn't, and what it means for UK GPs."
 description: "The 18 February 2026 NICE NG28 update is the biggest change to UK type 2 diabetes prescribing in years. SGLT2 inhibitors are now first-line for almost all adults. Here's a plain-English summary for busy UK clinicians."
 date: 2026-05-17
 cluster: "Medical Journal Digest"
