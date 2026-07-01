@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Paediatrics Sample Digest — The Monday Clinical Brief</title>
-<meta name="description" content="See what Paediatrics clinicians received in this Monday's digest: 19 new articles from The Journal of pediatrics, JAMA pediatrics, Pediatrics summarised every Monday by The Monday Clinical Brief.">
+<title>Paediatrics Digest — The Monday Clinical Brief</title>
+<meta name="description" content="The Paediatrics digest from The Monday Clinical Brief — a weekly summary of every new paper from the top journals in Paediatrics. Free 4-week trial.">
 <link rel="canonical" href="https://mondayclinicalbrief.co.uk/samples/paediatrics/">
-<meta property="og:title" content="Paediatrics — Monday Clinical Brief Sample Digest">
-<meta property="og:description" content="19 new Paediatrics papers summarised this week. Free 4-week trial.">
+<meta property="og:title" content="Paediatrics — Monday Clinical Brief">
+<meta property="og:description" content="Every new Paediatrics paper, summarised every Monday. Free 4-week trial.">
 <meta property="og:url" content="https://mondayclinicalbrief.co.uk/samples/paediatrics/">
-<meta property="og:type" content="article">
+<meta property="og:type" content="website">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -45,35 +45,18 @@
   .page-header h1 { font-family: 'Instrument Serif', serif; font-size: clamp(2.2rem, 4.5vw, 3.2rem); font-weight: 400; color: var(--charcoal); line-height: 1.2; letter-spacing: -0.02em; margin-bottom: 1rem; max-width: 720px; margin-left: auto; margin-right: auto; }
   .page-header h1 em { font-style: italic; color: var(--sage-deep); }
   .page-header .lede { font-size: 1.05rem; color: var(--text-muted); max-width: 560px; margin: 0 auto 1.75rem; }
-  .stat-bar { display: inline-flex; gap: 2.5rem; padding: 1rem 1.75rem; background: white; border: 1px solid var(--border); border-radius: 60px; font-size: 0.85rem; }
-  .stat-bar .stat strong { display: block; font-family: 'Instrument Serif', serif; font-size: 1.6rem; color: var(--sage-deep); line-height: 1; margin-bottom: 0.2rem; }
-  .stat-bar .stat span { color: var(--text-muted); font-size: 0.78rem; }
 
-  /* ── DISCLAIMER ── */
-  .disclaimer { max-width: 800px; margin: 2rem auto 0; padding: 0.85rem 1.25rem; background: var(--gold-light); border-left: 3px solid var(--gold); font-size: 0.85rem; color: var(--text); border-radius: 4px; }
-  .disclaimer strong { color: var(--charcoal); }
-
-  /* ── ARTICLES ── */
+  /* ── BODY ── */
   section { padding: 3rem 2rem 5rem; }
-  .container { max-width: 800px; margin: 0 auto; }
-  .sample-card { background: white; border: 1px solid var(--border); border-radius: 8px; padding: 2rem; margin-bottom: 1.5rem; }
-  .sample-badge { display: inline-block; background: var(--sage-light); color: var(--sage-deep); padding: 0.2rem 0.7rem; border-radius: 4px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 1rem; }
-  .sample-card h3 { font-family: 'Instrument Serif', serif; font-size: 1.3rem; font-weight: 400; color: var(--charcoal); margin-bottom: 0.5rem; line-height: 1.35; }
-  .sample-meta { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1.25rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--border); }
-  .summary-field { margin-bottom: 0.75rem; font-size: 0.9rem; line-height: 1.6; }
-  .summary-label { font-weight: 600; color: var(--sage-deep); }
-  .summary-field ul { list-style: none; margin: 0.4rem 0 0 0; padding: 0; }
-  .summary-field ul li { padding-left: 1.1rem; position: relative; margin-bottom: 0.3rem; }
-  .summary-field ul li::before { content: '•'; position: absolute; left: 0.2rem; color: var(--sage); font-weight: 700; }
-  .source-links { margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 0.8rem; }
-  .source-links a { color: var(--sage-deep); text-decoration: none; margin-right: 1rem; font-weight: 500; }
-  .source-links a:hover { text-decoration: underline; }
+  .container { max-width: 720px; margin: 0 auto; }
+  .soon-card { background: white; border: 1px solid var(--border); border-radius: 8px; padding: 2.5rem 2rem; text-align: center; margin-bottom: 2rem; }
+  .soon-card p { font-size: 1rem; color: var(--text); margin-bottom: 1rem; }
+  .soon-card p:last-child { margin-bottom: 0; }
+  .soon-card .preview-link { display: inline-block; margin-top: 0.5rem; background: var(--sage-light); color: var(--sage-deep); padding: 0.9rem 1.75rem; border-radius: 40px; font-weight: 600; text-decoration: none; font-size: 0.95rem; transition: all 0.2s; }
+  .soon-card .preview-link:hover { background: var(--sage-deep); color: white; transform: translateY(-1px); }
 
-  /* ── TEASE ── */
-  .tease { text-align: center; padding: 2rem; background: var(--cream); border: 1px dashed var(--border); border-radius: 8px; margin-top: 1rem; }
-  .tease p { font-family: 'Instrument Serif', serif; font-size: 1.4rem; color: var(--charcoal); line-height: 1.4; margin-bottom: 0.5rem; }
-  .tease p em { color: var(--sage-deep); }
-  .tease small { color: var(--text-muted); font-size: 0.9rem; }
+  .what-we-cover { background: var(--cream); border-left: 3px solid var(--sage); padding: 1.25rem 1.5rem; border-radius: 4px; margin-bottom: 2rem; font-size: 0.95rem; color: var(--text); }
+  .what-we-cover strong { color: var(--charcoal); }
 
   /* ── CTA ── */
   .cta-section { background: var(--charcoal); color: white; padding: 4rem 2rem; text-align: center; }
@@ -94,8 +77,7 @@
     body { padding-bottom: 60px; }
     .page-header { padding: 3.5rem 1.5rem 2.5rem; }
     section { padding: 2rem 1.5rem 3.5rem; }
-    .sample-card { padding: 1.5rem; }
-    .stat-bar { flex-direction: column; gap: 1rem; padding: 1.25rem 1.75rem; }
+    .soon-card { padding: 2rem 1.5rem; }
     .cta-section { padding: 3rem 1.5rem; }
   }
 </style>
@@ -114,187 +96,21 @@
 
 <!-- ═══ HEADER ═══ -->
 <header class="page-header">
-  <div class="eyebrow">Sample Digest · Monday 1 June 2026</div>
-  <h1>A recent Paediatrics digest,<br><em>as sent to subscribers</em></h1>
-  <p class="lede">This is the real Monday digest from Monday 1 June 2026. Showing the first 8 of 19 articles from that week — every new paper from the top journals in Paediatrics.</p>
-  <div class="stat-bar">
-    <div class="stat"><strong>19</strong><span>articles that week</span></div>
-    <div class="stat"><strong>4</strong><span>journals covered</span></div>
-    <div class="stat"><strong>£0</strong><span>for your first 4 weeks</span></div>
-  </div>
-  <div class="disclaimer">
-    <strong>Note:</strong> Summaries are AI-generated from publicly available PubMed abstracts. Always verify against the source article before clinical use.
-  </div>
+  <div class="eyebrow">Paediatrics · Sample Digest</div>
+  <h1>A <em>Paediatrics</em> sample is on the way.</h1>
+  <p class="lede">Subscribers already receive the Paediatrics digest every Monday. While we prepare a public sample for this specialty, here's a full example from another field &mdash; the format is identical.</p>
 </header>
 
-<!-- ═══ ARTICLES ═══ -->
+<!-- ═══ BODY ═══ -->
 <section>
   <div class="container">
-    <div class="sample-card">
-      <div class="sample-badge">JAMA pediatrics</div>
-      <h3>What Parents Need to Know About Screening for Cystic Fibrosis in Newborns</h3>
-      <div class="sample-meta">Bradford LE, Peterson-Carmichael SL, Thompson LA · 2026 May 26</div>
-      <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42189566/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1001/jamapediatrics.2026.1812" target="_blank" rel="noopener">DOI →</a>      </div>
+    <div class="soon-card">
+      <p>The next <strong>Paediatrics</strong> digest will include every new paper published that week in the field's top journals, each summarised in a consistent clinical format.</p>
+      <p>In the meantime, here's a full sample from a recent week:</p>
+      <a href="/samples/palliative-care/" class="preview-link">See a full Palliative Care sample &rarr;</a>
     </div>
-    <div class="sample-card">
-      <div class="sample-badge">JAMA pediatrics</div>
-      <h3>Inequities Along the Early Intervention Care Cascade for Very Preterm Infants</h3>
-      <div class="sample-meta">Fraiman YS, Keith JF, O&#39;Donoghue AL et al. · 2026 May 26</div>
-      <div class="summary-field">
-        <span class="summary-label">Study Type:</span>
-        Retrospective cohort study
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Question:</span>
-        What racial and ethnic inequities exist in accessing early intervention services for very preterm infants (&lt;32 weeks gestation)?
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Findings:</span>
-        <ul>
-<li>Among 7,169 very preterm infants in Massachusetts, overall rates were 84% referred, 71.3% evaluated, and 64.5% received individualized plans</li><li>Non-Hispanic Black infants had lower rates at each step compared to non-Hispanic White infants: referral (81.3% vs 84.6%), evaluation (62.5% vs 75.4%), and receiving services (55.0% vs 68.4%)</li><li>Inequities were partially explained by social determinants but persisted after adjustment</li>        </ul>
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Clinical Relevance:</span>
-        This highlights systematic barriers preventing equitable access to proven developmental interventions for high-risk preterm infants, with potential implications for UK early intervention pathways and health visiting services.
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Limitations:</span>
-        Single-state US data may not generalise to other healthcare systems, and residual confounding from unmeasured social factors likely remains.
-      </div>
-      <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42189552/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1001/jamapediatrics.2026.1822" target="_blank" rel="noopener">DOI →</a>      </div>
-    </div>
-    <div class="sample-card">
-      <div class="sample-badge">JAMA pediatrics</div>
-      <h3>Prevalence of Invasive Bacterial Infections Among Febrile Infants Aged 60 to 90 Days: A Systematic Review and Meta-Analysis</h3>
-      <div class="sample-meta">Dionisopoulos Z, Sabhaney V, D&#39;Arienzo D et al. · 2026 May 26</div>
-      <div class="summary-field">
-        <span class="summary-label">Study Type:</span>
-        Systematic review and meta-analysis
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Question:</span>
-        What is the prevalence of invasive bacterial infections among well-appearing febrile infants aged 60-90 days presenting to emergency departments or outpatient settings?
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Findings:</span>
-        <ul>
-<li>Pooled prevalence of invasive bacterial infection was 1.11% (95% CI 0.84%-1.47%) among 34,835 infants from 59 studies</li><li>Bacteraemia accounted for most cases at 1.01% (95% CI 0.76%-1.34%), while bacterial meningitis was rare at 0.11% (95% CI 0.08%-0.16%)</li><li>Results remained consistent across multiple sensitivity analyses excluding retrospective studies, fever without source cohorts, and studies with shorter follow-up</li>        </ul>
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Clinical Relevance:</span>
-        These contemporary prevalence estimates provide evidence-based data to inform UK guideline development and support shared decision-making between clinicians and parents when managing well-appearing febrile infants in their third month of life.
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Limitations:</span>
-        The analysis was limited to studies published after 2000, potentially excluding earlier data, and included predominantly retrospective cohorts which may introduce selection bias.
-      </div>
-      <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42189531/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1001/jamapediatrics.2026.1815" target="_blank" rel="noopener">DOI →</a>      </div>
-    </div>
-    <div class="sample-card">
-      <div class="sample-badge">JAMA pediatrics</div>
-      <h3>Prevalence of Diagnosed Type 2 Diabetes Among US Children and Adolescents</h3>
-      <div class="sample-meta">Zang X, Chen M, Li N et al. · 2026 May 26</div>
-      <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42189528/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1001/jamapediatrics.2026.1539" target="_blank" rel="noopener">DOI →</a>      </div>
-    </div>
-    <div class="sample-card">
-      <div class="sample-badge">JAMA pediatrics</div>
-      <h3>Caffeine for Hypoxic-Ischemic Encephalopathy-Throwing Fuel on the Fire?</h3>
-      <div class="sample-meta">Robertson NJ, Zhou KQ, Pang R et al. · 2026 May 26</div>
-      <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42189522/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1001/jamapediatrics.2026.1542" target="_blank" rel="noopener">DOI →</a>      </div>
-    </div>
-    <div class="sample-card">
-      <div class="sample-badge">Pediatrics</div>
-      <h3>Gender Pay Equity in Pediatrics: Policy Statement</h3>
-      <div class="sample-meta">Catenaccio E, Lightdale JR, Bline K et al. · 2026 May 26</div>
-      <div class="summary-field">
-        <span class="summary-label">Study Type:</span>
-        Policy statement
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Question:</span>
-        What are the causes of gender-based pay inequities in pediatrics and what strategies can address them?
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Findings:</span>
-        <ul>
-<li>Gender pay gaps persist across pediatric subspecialties even after controlling for work hours, duties, and productivity</li><li>Contributing factors include systemic bias, unequal access to mentorship/leadership roles, inadequate parental leave policies, and part-time work patterns</li><li>Subspecialties with higher proportions of women face workforce shortages and lower overall salaries</li>        </ul>
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Clinical Relevance:</span>
-        This highlights systemic issues affecting pediatric workforce sustainability that UK clinicians should recognise, particularly given similar gender demographics in NHS pediatrics and potential parallels with UK pay equity challenges.
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Limitations:</span>
-        As a policy statement rather than original research, it synthesises existing evidence without presenting new empirical data on the magnitude or specific mechanisms of pay inequities.
-      </div>
-      <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42184985/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1542/peds.2026-077023" target="_blank" rel="noopener">DOI →</a>      </div>
-    </div>
-    <div class="sample-card">
-      <div class="sample-badge">Pediatrics</div>
-      <h3>Generic and Biosimilar Prescribing in Children and Adolescents: Technical Report</h3>
-      <div class="sample-meta">Reigart JR, Cash J, Siu A et al. · 2026 May 26</div>
-      <div class="summary-field">
-        <span class="summary-label">Study Type:</span>
-        Technical report/guidance document
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Question:</span>
-        What should paediatric clinicians know about prescribing generic drugs and biosimilars in children and adolescents?
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Findings:</span>
-        <ul>
-<li>Generic drugs are identical to brand-name drugs and must demonstrate bioequivalence, while biosimilars are &#34;highly similar&#34; but may differ in clinically inactive components</li><li>FDA requires extensive evidence for both generics and biosimilars to ensure equivalent safety and effectiveness profiles</li><li>Current regulatory standards should provide confidence for clinicians to substitute with generics and biosimilars</li>        </ul>
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Clinical Relevance:</span>
-        Updates 1987 guidance on generic prescribing for UK paediatric clinicians, particularly relevant given increasing use of biologics and biosimilars in paediatric practice and NHS cost-containment priorities.
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Limitations:</span>
-        This is US-focused guidance that may not fully align with MHRA/EMA regulatory frameworks used in the UK.
-      </div>
-      <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42184972/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1542/peds.2026-077028" target="_blank" rel="noopener">DOI →</a>      </div>
-    </div>
-    <div class="sample-card">
-      <div class="sample-badge">Pediatrics</div>
-      <h3>Prenatal Substance Exposure and Birth Weight: Findings From the HEALthy Brain and Child Development Study</h3>
-      <div class="sample-meta">Bandoli G, Psaras C, Bakhireva LN et al. · 2026 May 26</div>
-      <div class="summary-field">
-        <span class="summary-label">Study Type:</span>
-        Prospective cohort study
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Question:</span>
-        What are the associations between prenatal exposure to nicotine, alcohol, cannabis, and opioids with birth weight and gestational age outcomes?
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Findings:</span>
-        <ul>
-<li>Cannabis exposure was associated with 272g lower birth weight (95% CI -445 to -100g) and 8.2 lower birth weight centiles (95% CI -15.3 to -1.1)</li><li>Opioid exposure was associated with 295g lower birth weight (95% CI -575 to -16g) and 14.4 lower birth weight centiles (95% CI -25.5 to -3.4)</li><li>No significant associations were found between any substance exposure and gestational age at delivery</li>        </ul>
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Clinical Relevance:</span>
-        This provides quantified evidence for counselling families about fetal growth restriction risks from prenatal cannabis and opioid use, supporting existing UK guidance on substance use in pregnancy.
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Limitations:</span>
-        Results were sensitive to model specifications, suggesting potential confounding or methodological issues affecting the robustness of findings.
-      </div>
-      <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42184970/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1542/peds.2025-074604" target="_blank" rel="noopener">DOI →</a>      </div>
-    </div>
-
-    <div class="tease">
-      <p>…and <em>11 more</em> Paediatrics articles in that week's digest.</p>
-      <small>Subscribers get the complete brief, every Monday.</small>
+    <div class="what-we-cover">
+      <strong>What you'll get in the Paediatrics digest:</strong> every new paper from the top five journals in the field, summarised into Study Type, Key Question, Key Findings, Clinical Relevance, and Limitations &mdash; delivered to your inbox every Monday.
     </div>
   </div>
 </section>
@@ -302,15 +118,15 @@
 <!-- ═══ CTA ═══ -->
 <section class="cta-section">
   <h2>Get the Paediatrics digest in your inbox every Monday</h2>
-  <p>4 weeks completely free, then £20/year. Cancel any time during your trial — no charge.</p>
-  <a href="/?specialty=paediatrics&ref=samples#subscribe" class="cta-btn">Start your free trial — Paediatrics →</a>
+  <p>4 weeks completely free, then &pound;20/year. Cancel any time during your trial &mdash; no charge.</p>
+  <a href="/?specialty=paediatrics&ref=samples#subscribe" class="cta-btn">Start your free trial &mdash; Paediatrics &rarr;</a>
   <span class="cta-meta">No card needed to browse. We'll ask for payment details to start the trial.</span>
 </section>
 
 <!-- ═══ FOOTER ═══ -->
 <footer>
   <p>&copy; 2026 The Monday Clinical Brief</p>
-  <p><a href="/">Home</a> · <a href="mailto:info@mondayclinicalbrief.co.uk">Contact</a> · <a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms</a></p>
+  <p><a href="/">Home</a> &middot; <a href="mailto:info@mondayclinicalbrief.co.uk">Contact</a> &middot; <a href="/privacy.html">Privacy Policy</a> &middot; <a href="/terms.html">Terms</a></p>
 </footer>
 
 </body>
