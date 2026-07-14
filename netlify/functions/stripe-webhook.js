@@ -23,7 +23,8 @@ const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
 const TRIAL_DAYS = 28;
 const DEFAULT_PRICE = "£20";
-const ABUHB_PRICE = "£15";   // Aneurin Bevan UHB cohort — matches any coupon whose id/name contains "ABUHB"
+const ABUHB_PRICE = "£15";   // Aneurin Bevan UHB cohort — matches any coupon whose id/name contains "ABUHB" (£5 off ONCE)
+const APM_PRICE = "£15";     // APM member rate — matches any coupon whose id/name contains "APM" (£5 off FOREVER — recurring £15/yr)
 const SUPPORT_EMAIL = "mondayclinicalbrief@gmail.com";
 const STRIPE_CUSTOMER_PORTAL = "https://billing.stripe.com/p/login/dRm28k4rI5LYaoh3qaefC00";
 
@@ -313,8 +314,9 @@ exports.handler = async (event) => {
   }
 
   // Determine price — check for discount coupons first
-  // FAF2026 coupon = £2 first year; ABUHB coupon = £15/year; standard trial = £20/year
+  // FAF2026 coupon = £2 first year; ABUHB coupon = £15 first year; APM coupon = £15/yr recurring; standard = £20/year
   let price = DEFAULT_PRICE;
+  let couponKind = null; // "FAF2026" | "ABUHB" | "APM" — drives the priceLine wording below
   try {
     // 1. Check session.discount (included in webhook payload)
     const couponCodes = [];
@@ -375,8 +377,13 @@ exports.handler = async (event) => {
     const norm = couponCodes.map(c => String(c).toUpperCase());
     if (norm.some(c => c.includes("FAF2026"))) {
       price = "£2";
+      couponKind = "FAF2026";
     } else if (norm.some(c => c.includes("ABUHB"))) {
       price = ABUHB_PRICE;
+      couponKind = "ABUHB";
+    } else if (norm.some(c => c.includes("APM"))) {
+      price = APM_PRICE;
+      couponKind = "APM";
     } else if (session.amount_total && session.amount_total > 0) {
       price = formatPrice(session.amount_total);
     }
@@ -390,14 +397,16 @@ exports.handler = async (event) => {
     price = `£${totalPounds}`;
   }
 
-  // Build the human price phrase for the email. The FAF2026 and ABUHB coupons are
-  // one-time (first year only), so spell out the renewal rather than implying the
-  // discounted figure recurs.
+  // Build the human price phrase for the email. FAF2026 and ABUHB are one-time
+  // (first year only), so spell out the renewal. The APM coupon is duration:forever,
+  // so the £15 genuinely recurs — say so, and never imply a £20 renewal.
   let priceLine;
-  if (price === "£2") {
+  if (couponKind === "FAF2026") {
     priceLine = `£2 for the first year, then ${DEFAULT_PRICE}/year`;
-  } else if (price === ABUHB_PRICE) {
+  } else if (couponKind === "ABUHB") {
     priceLine = `${ABUHB_PRICE} for the first year, then ${DEFAULT_PRICE}/year`;
+  } else if (couponKind === "APM") {
+    priceLine = `${APM_PRICE}/year — your APM member rate`;
   } else {
     priceLine = `${price}/year`;
   }
