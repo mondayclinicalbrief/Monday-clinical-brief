@@ -185,6 +185,15 @@ function buildWelcomeHtml(email, specialtySlug, trialStart, trialEnd, priceLine)
         </td>
       </tr>
 
+      <!-- Institutional email tip -->
+      <tr>
+        <td style="padding:0 40px 20px;">
+          <p style="margin:0;font-size:13px;color:#666;line-height:1.6;">
+            <strong style="color:#1a2e44;">Tip:</strong> if you signed up with a personal address, just reply with your NHS or institutional email and we'll switch your subscription across — the journal links in each digest then open as full text through your institution's access. Same specialty, same Monday delivery.
+          </p>
+        </td>
+      </tr>
+
       <!-- Cancel CTA -->
       <tr>
         <td style="padding:10px 40px 30px;">
