@@ -11,7 +11,7 @@ faqs:
   - question: "What is NICE CKS?"
     answer: "NICE Clinical Knowledge Summaries (CKS) are concise, regularly updated summaries of the evidence base and best-practice guidance for over 370 primary-care topics, free to access in the UK. They are one of the most-used point-of-care references in UK general practice."
   - question: "Which CKS topics were updated in June 2026?"
-    answer: "Five topics changed in June 2026: gingivitis and periodontitis (updated terminology and new prescribing guidance in pregnancy and breastfeeding), seasonal influenza immunisation (aligned with the NHS 2026 to 2027 programme), insect bites and stings, olecranon bursitis, and sciatica (expanded clinical definition and a new referral section)."
+    answer: "Five topics changed in June 2026: gingivitis and periodontitis (new mouth-cancer detail supporting urgent-referral decisions, pregnancy and breastfeeding prescribing guidance, and updated terminology — ANUG is now necrotizing gingivitis), seasonal influenza immunisation (aligned with the NHS 2026 to 2027 programme), insect bites and stings, olecranon bursitis, and sciatica (expanded clinical definition and a new referral section)."
   - question: "Where can I see the full list of recent CKS changes?"
     answer: "The authoritative source is the NICE CKS website, which lists new and updated topics with dates. This post is a summary for awareness — always confirm the current recommendation against the CKS topic page before acting on it."
 ---
@@ -24,11 +24,11 @@ This is the latest in our recurring monthly series — the [May 2026 edition](/b
 
 ## The updates that matter this month
 
-- **Gingivitis and periodontitis.** Updated to adopt international terminology, with expanded information on mouth ulcers and new guidance on prescribing in pregnancy and breastfeeding. *Takeaway:* if you prescribe for dental presentations, check your choices for pregnant and breastfeeding patients against the updated prescribing section.
+- **Gingivitis and periodontitis.** Updated with further detail on **mouth cancer** — to support the decision on when to consider an urgent suspected-cancer pathway referral — plus pregnancy and breastfeeding detail in the prescribing sections, an updated prevalence section, and a terminology change: acute necrotizing ulcerative gingivitis (ANUG) is now **necrotizing gingivitis (NG)** throughout, aligning with the international classification. *Takeaway:* two things to note — the new mouth-cancer detail sharpens the urgent-referral threshold, and prescribing choices for pregnant and breastfeeding patients now have their own guidance.
 - **Immunizations — seasonal influenza.** Revised to align with the NHS immunisation programme for 2026 to 2027. *Takeaway:* before autumn planning starts, check eligible cohorts and vaccine recommendations against the 2026-27 programme rather than last year's.
-- **Sciatica.** The clinical definition has been expanded — acknowledging inconsistent terminology across the literature — the differential diagnosis section reorganised, and a **new referral section** added. *Takeaway:* the referral section is the practical addition; worth a read against your local MSK pathway before the next radicular-pain consultation.
-- **Insect bites and stings.** Minor structural and layout changes; no change to the recommendations. *Takeaway:* no practice change — but a timely prompt to re-read the topic as bite season peaks.
-- **Olecranon bursitis.** Minor structural and layout changes; no change to the recommendations. *Takeaway:* no practice change.
+- **Sciatica.** The clinical definition has been expanded — reflecting the recognition in recent literature that the term "sciatica" is not used consistently — the differential diagnosis section reorganised, and a **new referral section** added. No significant changes to the management recommendations. *Takeaway:* the referral section is the practical addition; worth a read against your local MSK pathway before the next radicular-pain consultation.
+- **Insect bites and stings.** Restructured to improve flow and usability; no major changes to the recommendations. *Takeaway:* no practice change — but a timely prompt to re-read the topic as bite season peaks.
+- **Olecranon bursitis.** Reviewed against a June 2026 literature search; no major changes to the recommendations. *Takeaway:* no practice change.
 
 ## How to use this
 
