@@ -1,10 +1,10 @@
 ---
 title: "Looking for an OpenEvidence Alternative in the UK?"
-seoTitle: "OpenEvidence Alternative UK: What to Use Instead | The Monday Clinical Brief"
-metaDescription: "OpenEvidence withdrew from the UK in April 2026. Here's what UK doctors can use instead — for clinical Q&A and for keeping up with the medical literature."
+seoTitle: "OpenEvidence Alternative UK: What to Use Now It's Gone"
+metaDescription: "What happened to OpenEvidence? It withdrew from the UK in April 2026 and hasn't returned. What UK doctors actually use instead in July 2026 — and what none of the replacements do."
 description: "OpenEvidence is gone from the UK. Here's what actually fills the gap — and why staying current with the literature is a different problem from clinical Q&A."
 date: 2026-05-03
-updated: 2026-06-30
+updated: 2026-07-16
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
@@ -31,6 +31,8 @@ If you used it, you'll have noticed the gap.
 
 > **Update — 1 June 2026 (five weeks on):** OpenEvidence is still unavailable to UK clinicians, and no re-entry signal has been published. The UK regulatory framework that triggered the withdrawal remains mid-flight — the [MHRA](https://www.gov.uk/government/organisations/medicines-and-healthcare-products-regulatory-agency) Medical Devices (Amendment) Regulations consultation closes 19 June 2026; the International Reliance Framework is expected in Autumn. The clinical-AI press has caught up with the issue: a position piece in *The Lancet Regional Health – Europe* — [The Need for Regulatory Certainty on Medical AI: Lessons From the OpenEvidence Geoblocking in the EU and UK Over the EU AI Act](https://www.thelancet.com/journals/lanepe/article/PIIS2666-7762%2826%2900130-4/fulltext) (De Angelis L, Sacchi F, Pappalardo C, et al., 2026) — examines the geoblocking of clinical AI tools and the EU AI Act. What has changed since April is the alternatives — see the table below.
 
+> **Update — 16 July 2026:** OpenEvidence remains unavailable to UK clinicians, with no re-entry signal in any coverage we have found. The alternatives table below now reflects the July picture — including Vera Health, a free clinical AI that has entered this space with no geographic restrictions.
+
 ## What happened
 
 OpenEvidence was the leading AI clinical Q&A tool in the US — used by over 40% of American physicians. In January 2026 it raised $250m at a $12 billion valuation. By the end of April, it was gone from the UK.
@@ -49,16 +51,16 @@ It was not a tool for keeping up with the literature. It didn't surface what was
 
 That distinction matters, because these are two different problems.
 
-## The alternatives have matured (June 2026)
+## The alternatives have matured (July 2026)
 
-When OpenEvidence withdrew in April, the field of UK-usable replacements was thin. Five weeks on, it is fuller — but the picture is still uneven, because most of these are query tools and several are not actually open to UK NHS clinicians yet.
+When OpenEvidence withdrew in April, the field of UK-usable replacements was thin. Three months on, it is fuller — but the picture is still uneven, because most of these are query tools and several are not actually open to UK NHS clinicians yet.
 
-| Tool | What it is | UK status (June 2026) | Cost |
+| Tool | What it is | UK status (July 2026) | Cost |
 |---|---|---|---|
 | **iatroX** | UK clinical Q&A, NICE/CKS/SmPC-grounded | Available — MHRA-registered, UKCA-marked | Free core; Premium ~£99/yr |
 | **Heidi Evidence** | Citation-backed clinical answers, BMJ/NICE-partnered | *Evidence* restricted to out-of-session use (UK/EU); *Scribe* available | Free tier + paid |
 | **Praxis Medicine** | Clinical AI search, NICE/CKS/NHS Digital-grounded | Newly launched (Apr 2026); individual access still settling | Not yet public |
-| **Vera Health** | Evidence answers + calculators, US-leaning | UK guideline localisation unclear | Free for clinicians |
+| **Vera Health** | Evidence answers + calculators; claims 300,000+ clinician users | Available — no geographic restrictions; UK guideline localisation still unclear | Free for verified clinicians |
 | **ClinicalKey AI** | Elsevier AI clinical Q&A, full-text books + journals, citation-backed | Available in UK — individual + institutional | Paid individual; free 14-day trial |
 | **UpToDate** | Point-of-care reference; Pro Plus / Expert AI is its Q&A layer | Standard available (often via NHS trust); AI Q&A layer not for UK individuals | ~£440/yr individual, or via trust |
 | **The Monday Clinical Brief** | Weekly literature digest, 31 specialties | Available now | £20/yr |

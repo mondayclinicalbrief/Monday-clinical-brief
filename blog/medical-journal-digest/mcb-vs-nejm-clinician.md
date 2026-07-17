@@ -4,7 +4,7 @@ seoTitle: "Monday Clinical Brief vs NEJM Clinician (NEJM Journal Watch): 2026 Co
 metaDescription: "NEJM Clinician (formerly NEJM Journal Watch) costs ~£75/year per specialty track and covers 12 editions. The Monday Clinical Brief covers all 31 specialties for £20/year. Here's how they compare on price, coverage and UK fit in 2026."
 description: "NEJM Journal Watch is now NEJM Clinician. Here's how it compares to The Monday Clinical Brief in 2026 — price, coverage, UK alignment, and which one fits your workflow."
 date: 2026-05-04
-updated: 2026-06-30
+updated: 2026-07-16
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
@@ -12,7 +12,7 @@ faqs:
   - question: "Is NEJM Journal Watch still available?"
     answer: "NEJM Journal Watch was rebranded to NEJM Clinician in November 2025. The product still exists under the new name with a redesigned platform and updated pricing. Search traffic for the old name remains high, but the product is now called NEJM Clinician."
   - question: "How much does NEJM Clinician cost in the UK?"
-    answer: "Approximately £75 per year for a single specialty track. Multiple specialty tracks are purchased separately, so costs rise quickly for generalists or those with broad interests."
+    answer: "Approximately £75 per year, or £7.50 per month, for a single specialty track (2026 published rates). Multiple specialty tracks are purchased separately, so costs rise quickly for generalists or those with broad interests."
   - question: "How many specialties does NEJM Clinician cover?"
     answer: "NEJM Clinician offers 12 specialty editions. The Monday Clinical Brief covers 31 specialties."
   - question: "Is NEJM Clinician available in the UK?"
@@ -32,7 +32,7 @@ Both NEJM Clinician and The Monday Clinical Brief are journal digest products �
 The rebrand from NEJM Journal Watch to NEJM Clinician in November 2025 brought three meaningful changes:
 
 - **New name and platform.** The interface was redesigned, and broader clinical context was added to summaries.
-- **Price reduction.** The old UK price was in the £150–£250 range. NEJM Clinician now costs approximately £75 per year per specialty track — a material reduction that makes it more competitive.
+- **Price reduction.** The old UK price was in the £150–£250 range. NEJM Clinician now costs approximately £75 per year per specialty track — £7.50 a month on the monthly option — a material reduction that makes it more competitive.
 - **Clearer positioning.** The new name signals that this is a clinical tool, not a journal alert service.
 
 The editorial model has not changed: named senior clinicians curate selected papers from across the major journals (not just NEJM) and add commentary.

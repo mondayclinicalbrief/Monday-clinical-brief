@@ -4,7 +4,7 @@ seoTitle: "Red Whale vs NEJM Clinician vs MCB (2026): Which to Use, or Use Toget
 metaDescription: "Red Whale (£210 a course), NEJM Clinician (£75 a year) and The Monday Clinical Brief (£20 a year) do three different jobs. A 2026 UK comparison — and why most clinicians use a combination, not just one."
 description: "A 2026 UK comparison of Red Whale, NEJM Clinician and The Monday Clinical Brief. Three price points, three different jobs — and an honest case for using them together rather than choosing one."
 date: 2026-05-29
-updated: 2026-06-19
+updated: 2026-07-16
 cluster: "Journal Summary Subscription"
 schemaType: "Article"
 pillar: false
@@ -16,7 +16,7 @@ faqs:
   - question: "Does Red Whale give a CPD certificate?"
     answer: "Yes. Red Whale courses attach a downloadable CPD certificate to each completed activity, which is one of their main draws. NEJM Clinician offers CME (US-oriented). The Monday Clinical Brief does not issue a certificate; reading time is logged as CPD through the free MCB CPD Tracker or a platform such as FourteenFish."
   - question: "How much does NEJM Clinician cost in the UK in 2026?"
-    answer: "Approximately £75 per year for a single specialty track, following the November 2025 rebrand from NEJM Journal Watch and a UK price cut. Additional specialty tracks are purchased separately."
+    answer: "Approximately £75 per year, or £7.50 per month, for a single specialty track — the 2026 published rates, following the November 2025 rebrand from NEJM Journal Watch and a UK price cut. Additional specialty tracks are purchased separately."
   - question: "Is UpToDate Expert AI available in the UK?"
     answer: "No. As of 2026, UpToDate Expert AI is available to individual subscribers in the US and Canada only. UK individuals pay roughly £455/year for standard UpToDate without the Expert AI layer — the same price for a more limited product than US subscribers receive."
 ---
@@ -64,7 +64,7 @@ Red Whale runs update courses — most famously the GP Update — delivered in p
 
 ## NEJM Clinician (~£75/year per track)
 
-NEJM Journal Watch rebranded to **NEJM Clinician** in November 2025, with a redesigned platform, a broader clinical-context layer, and a UK price cut to around **£75 per year** for a single specialty track. It is expert-curated commentary: named senior clinicians read across the literature — Lancet, JAMA, BMJ, specialty journals, not only NEJM — and write up the papers they judge worth your attention.
+NEJM Journal Watch rebranded to **NEJM Clinician** in November 2025, with a redesigned platform, a broader clinical-context layer, and a UK price cut to around **£75 per year** (or £7.50 a month) for a single specialty track. It is expert-curated commentary: named senior clinicians read across the literature — Lancet, JAMA, BMJ, specialty journals, not only NEJM — and write up the papers they judge worth your attention.
 
 **Strengths:**
 

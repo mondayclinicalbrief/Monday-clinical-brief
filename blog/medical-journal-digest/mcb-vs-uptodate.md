@@ -4,7 +4,7 @@ seoTitle: "Monday Clinical Brief vs UpToDate: Which Do UK Doctors Actually Need?
 metaDescription: "UpToDate is the gold standard clinical reference. The Monday Clinical Brief is a weekly literature digest. They do different jobs — here's how to think about both, including why UK doctors don't get UpToDate's new AI features."
 description: "UpToDate and MCB solve different problems. One is a reference you consult. The other is a digest that keeps you current. Most UK doctors need both — here's why."
 date: 2026-05-04
-updated: 2026-06-30
+updated: 2026-07-16
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
@@ -52,6 +52,8 @@ In 2026, Wolters Kluwer launched UpToDate Pro Plus AI — a generative AI layer 
 UpToDate Pro Plus AI is currently available only to personal subscribers in the US and Canada. A UK doctor paying £440 per year for individual UpToDate access pays a comparable price to a US subscriber but receives a materially different product.
 
 The gap widened in June 2026. Wolters Kluwer and OpenAI expanded their collaboration, and UpToDate Expert AI — the enterprise generative-AI layer — is now embedded across the Microsoft Copilot ecosystem, including Dragon Copilot, Microsoft 365 Copilot and Teams. Wolters Kluwer reports more than half of its US enterprise customers signed, with a target near 70% by mid-2026. This is the deeper AI integration, and it is sold to institutions through Microsoft — not to a UK individual through a personal subscription.
+
+Re-verified 15 July 2026: Expert AI and Pro Plus AI remain a US and Canada limited market release. Wolters Kluwer describes the wider rollout as gradual, and no UK availability date has been published — a UK individual still cannot buy the AI layer at any price.
 
 This is the same regulatory pattern driving OpenEvidence's withdrawal and ChatGPT for Clinicians' UK exclusion. US vendors are routing AI healthcare features through enterprise channels and markets where the regulatory path is clearer. The UK individual is, for now, outside both.
 

@@ -4,7 +4,7 @@ seoTitle: "Heidi Evidence vs a Weekly Digest: Do UK Doctors Need Both?"
 metaDescription: "Heidi Evidence is free, UK-focused and powered by Claude — but it's a pull tool, not a weekly push. Here's why UK doctors get the most from using both."
 description: "Heidi Evidence is free and powerful — but it solves a different problem. Here's why UK doctors still need a weekly digest alongside evidence lookup tools."
 date: 2026-04-25
-updated: 2026-06-15
+updated: 2026-07-16
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
@@ -26,6 +26,8 @@ Heidi Evidence launched in February 2026 and immediately changed the conversatio
 If you are a UK doctor wondering whether Heidi Evidence replaces your need for a journal digest subscription, the honest answer is: no. But the reason is not that Heidi is bad. It is that Heidi and a weekly digest do fundamentally different jobs.
 
 > **June 2026 update:** The UK position is unchanged in substance, but two things have firmed up. BMJ Group is now a *named* Heidi Evidence content partner, with a dedicated UK page — so Evidence answers draw on BMJ Group content alongside NICE and HealthPathways. And Heidi's paid tiers are now public: Evidence Plus runs at about $30 per user per month (~$360/year), the cheapest paid Evidence tier — against £20/year for a full MCB subscription. Access for UK clinicians is still limited, but the limit is specific: Heidi documents Evidence as available to UK and EU users only *outside* live patient sessions. In-session evidence querying is disabled under current compliance settings, so Heidi cannot answer during the consultation itself. This is specific to the Evidence feature: *Heidi Scribe*, the AI clinical documentation tool, is separately MHRA-cleared and remains available to UK clinicians. Heidi Evidence has now passed roughly 2 million queries globally — the category economics are proven; the in-session door is the part that is still shut for UK and EU users. See our explainer on [Heidi Evidence's UK and EU restrictions](/blog/medical-journal-digest/heidi-evidence-uk-in-session-restriction/) for the detail and what UK clinicians can use in the meantime.
+
+> **July 2026 update:** Heidi Evidence formally launched on 10 July 2026 — with a $65M raise, the acquisition of UK clinical AI firm AutoMedica (which brings access to the MHRA's AI Airlock pilot), and a new communications product, Heidi Comms. Its named content partners now span NICE, BMJ Group, MIMS and HealthPathways. The UK and EU in-session restriction is unchanged — we re-verified it against Heidi's own help pages on 15 July 2026 — so the comparison below still holds: Heidi is the best-resourced pull tool in the category, and it is still a pull tool.
 
 ## The Core Difference: Pull vs Push
 

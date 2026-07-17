@@ -4,7 +4,7 @@ seoTitle: "How to Log Journal Reading for GMC Revalidation (2026) | MCB"
 metaDescription: "A step-by-step guide to logging medical journal reading for GMC revalidation. What counts, what to include, and how to present it to your appraiser."
 description: "How to turn the reading you already do into documented CPD your appraiser will accept — with exact examples and a template."
 date: 2026-05-19
-updated: 2026-06-02
+updated: 2026-07-16
 cluster: "CPD Reading Tool"
 schemaType: "Article"
 pillar: false
@@ -78,6 +78,7 @@ You have four realistic options for where the log lives.
 - **NHS appraisal platform.** SARD, PReP, L2P, or a trust-specific system. Usually requires manual entry.
 - **A spreadsheet.** Five columns matching the fields above. Simple, portable, searchable. Good for doctors between systems or with multi-site work.
 - **A dedicated CPD reading tool.** The free [MCB CPD Tracker](https://cpd.mondayclinicalbrief.co.uk) is purpose-built for logging journal reading, with reflection prompts and export to appraisal formats.
+- **BMJ Portfolio.** Newly launched in 2026, a free CPD-recording platform from BMJ Group that records CPD from any source, alongside BMJ Learning and Learner+. A credible general-purpose home for the log — and evidence exported from the MCB CPD Tracker can feed it, the same as any other portfolio.
 
 The best format is whichever one you will actually use. A perfect RCGP portfolio that sits empty is worth less than a scruffy Google Sheet filled in weekly.
 
@@ -105,6 +106,6 @@ You can export or screenshot a digest to your appraisal system. Over a year, a w
 
 The most common UK revalidation portfolio is FourteenFish. The workflow is short: read the digest, then in FourteenFish add a CPD entry, choose "reading" or "self-directed learning" as the activity type, paste the citation, write two sentences against the reflection prompt, and record the time spent (a 15-minute read is 15 minutes of CPD). The [free MCB CPD Tracker](https://cpd.mondayclinicalbrief.co.uk) keeps the running record if you would rather log as you go and transfer in a batch at appraisal time.
 
-It is worth knowing the wider direction of travel here: in May 2026, BMJ Future Health partnered with Learner+ to use AI to turn informal learning into structured, FourteenFish-compatible CPD. The tooling around CPD reflection is getting easier across the board — but the underlying requirement is unchanged, and a weekly reading habit with a two-sentence reflection still satisfies it cleanly.
+It is worth knowing the wider direction of travel here: in May 2026, BMJ Future Health partnered with Learner+ to use AI to turn informal learning into structured, FourteenFish-compatible CPD, and BMJ Group has since launched BMJ Portfolio, a free platform that records CPD from any source. The tooling around CPD reflection is getting easier across the board — but the underlying requirement is unchanged, and a weekly reading habit with a two-sentence reflection still satisfies it cleanly.
 
 [Start your four-week trial](/#subscribe) and see whether your reading log starts writing itself.

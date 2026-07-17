@@ -1,9 +1,10 @@
 ---
-title: "Tirzepatide in the GP QOF 2026/27: What the Mounjaro Obesity Change Means in Primary Care"
-seoTitle: "Mounjaro (Tirzepatide) on the GP QOF 2026/27: Who's Eligible?"
-metaDescription: "Tirzepatide (Mounjaro) obesity prescribing entered the 2026/27 GP QOF on 1 April. NICE TA1026 eligibility, the BMI thresholds, and what it means for UK GPs."
-description: "Tirzepatide for obesity moved into the 2026/27 GP QOF on 1 April 2026. A plain-English summary of NICE TA1026 eligibility, the primary-care prescribing model, and what UK GPs need to know."
+title: "Can You Prescribe Tirzepatide Under QOF 2026/27? The Mounjaro Decision Facing GPs"
+seoTitle: "Can GPs Prescribe Tirzepatide (Mounjaro) Under QOF 2026/27?"
+metaDescription: "Yes — if your ICB commissions it. The decision GPs face under the 2026/27 QOF tirzepatide change: TA1026 eligibility, BMI thresholds, and the local-commissioning catch."
+description: "Tirzepatide for obesity moved into the 2026/27 GP QOF on 1 April 2026. Whether you can actually prescribe it is a local question — a plain-English summary of NICE TA1026 eligibility, the primary-care prescribing model, and what UK GPs need to know."
 date: 2026-06-02
+updated: 2026-07-16
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
@@ -20,7 +21,7 @@ faqs:
     answer: "NICE TA1026 sets out the eligibility criteria, and the NHS England interim commissioning guidance covers implementation. The BNF entry for tirzepatide is the authoritative reference for dosing, titration, and cautions. Local formulary and ICB or Health Board positions determine what can be prescribed in each area."
 ---
 
-# Tirzepatide in the GP QOF 2026/27: What the Mounjaro Obesity Change Means in Primary Care
+# Can You Prescribe Tirzepatide Under QOF 2026/27? The Mounjaro Decision Facing GPs
 
 From 1 April 2026, NHS England incorporated [tirzepatide](https://www.nice.org.uk/guidance/ta1026) (Mounjaro) prescribing for obesity into the 2026/27 GP contract through new QOF indicators. NICE TA1026 recommends it for adults with a BMI of at least 35 kg/m² (2.5 kg/m² lower for several ethnic groups), alongside a reduced-calorie diet and increased physical activity. GPs are not mandated to prescribe it, and what you can actually prescribe depends on local commissioning. Here is the operational summary.
 

@@ -1,10 +1,10 @@
 ---
 title: "Heidi Evidence Is Excellent. In the UK, It Won't Answer Mid-Consultation."
-seoTitle: "Heidi Evidence UK: Free and Citation-Backed — but Not In-Session"
-metaDescription: "Heidi Evidence is free, citation-backed and partnered with NICE and BMJ Group — but in the UK it won't answer mid-consultation. The in-session limit, explained."
+seoTitle: "Heidi Evidence UK: Free, Citation-Backed — but Not Mid-Consultation"
+metaDescription: "Heidi Evidence is free, citation-backed and NICE/BMJ-partnered — but in the UK it won't answer mid-consultation. The in-session limit, and how to work around it."
 description: "Heidi Evidence is one of 2026's most capable UK-relevant clinical AI tools — but in the UK and EU it can't be used during a live patient session. Here's what the in-session restriction means and how to work around it."
 date: 2026-05-17
-updated: 2026-06-15
+updated: 2026-07-16
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
@@ -30,6 +30,8 @@ In the UK, it will not answer during a live consultation.
 Heidi documents Evidence as available to UK and EU users only *outside* live patient sessions. In-session evidence querying is disabled under current compliance settings. You can use it to read up between patients, to prepare, or to check a question after clinic — but not in the room, with the patient in front of you, at the moment the question arises.
 
 That is a real limitation for a point-of-care tool. We think it matters, and it is worth being precise about.
+
+> **Update — 16 July 2026:** Heidi Evidence formally launched on 10 July 2026, alongside a $65M raise, the acquisition of AutoMedica — a UK clinical AI firm with a place in the MHRA's AI Airlock pilot — and a new communications product, Heidi Comms. None of it changes the UK position described below: Heidi's own help pages still document Evidence as available to UK and EU clinicians only *outside* live sessions (re-verified 15 July 2026). If anything, the AutoMedica acquisition is the clearest signal yet that Heidi intends to resolve the UK regulatory question properly. We will update this post when the in-session restriction changes.
 
 ## What Heidi Evidence actually does
 
@@ -59,7 +61,9 @@ Heidi Health has not published a detailed rationale. The most likely explanation
 
 Heidi Evidence generates AI-synthesised clinical recommendations from a clinical query. Used at the point of care, that is the kind of output that pushes a tool toward Software as a Medical Device territory under MHRA classification. The NICE, BMJ Group, MIMS and HealthPathways partnerships are content arrangements — they describe what the model is grounded in, not how the model is classified for live clinical use.
 
-The UK regulatory framework for AI in healthcare is mid-flight. The Medical Devices (Amendment) Regulations consultation closes 19 June 2026. The International Reliance Framework is planned for Autumn 2026. The National Commission on AI in Healthcare report is due later in the year. Until these land, restricting an AI decision-support tool to out-of-session use is a cautious reading of an unsettled rulebook.
+The UK regulatory framework for AI in healthcare is mid-flight. The Medical Devices (Amendment) Regulations consultation closed on 19 June 2026. The International Reliance Framework is planned for Autumn 2026. The National Commission on AI in Healthcare report is due later in the year. Until these land, restricting an AI decision-support tool to out-of-session use is a cautious reading of an unsettled rulebook.
+
+The July 2026 acquisition of AutoMedica points the same way. AutoMedica holds a place in the MHRA's AI Airlock pilot — the regulator's sandbox for AI medical devices — which gives Heidi a direct working relationship with the process that will decide how tools like Evidence are classified for live clinical use. That is not a clearance, but it is the posture of a company planning to lift the restriction properly rather than sidestep it.
 
 This sits in the same regulatory current that took OpenEvidence out of the UK and EU on 28 April 2026 and has kept ChatGPT for Clinicians US-first since 23 April. The difference is one of degree: those two stepped back entirely; Heidi Evidence stayed, with a limit on how it can be used.
 
@@ -107,4 +111,4 @@ Heidi Evidence is excellent. In the UK and EU, it works outside live sessions bu
 
 In the meantime: iatroX for in-session UK clinical Q&A, Heidi Evidence for out-of-session questions, Heidi Scribe for documentation if you want it, and MCB for keeping current with the literature itself. Each tool does one job well. Together they cover most of the ground.
 
-We will update this post as Heidi Evidence's UK position changes. Evidence suggests any change will follow the Medical Devices (Amendment) Regulations consultation that closes in June 2026 — but until then, the in-session restriction holds.
+We will update this post as Heidi Evidence's UK position changes. Evidence suggests any change will follow the UK regulatory process now in train — the Medical Devices (Amendment) Regulations consultation closed on 19 June 2026, and Heidi's acquisition of AutoMedica gives it MHRA AI Airlock access and a seat close to that process. Until something lands, the in-session restriction holds.

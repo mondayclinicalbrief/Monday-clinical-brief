@@ -1,9 +1,10 @@
 ---
 title: "Menopause and HRT Guidance UK 2026: NICE Recommends Fezolinetant and Updates NG23"
 seoTitle: "Menopause HRT Guidance UK 2026: Fezolinetant (TA1143) and NICE NG23 Update Explained"
-metaDescription: "NICE recommended fezolinetant for menopausal hot flushes (TA1143, March 2026) and updated NG23 in April 2026. Here's what changed for UK clinicians — and what hasn't. HRT remains first-line."
+metaDescription: "NICE recommended fezolinetant for menopausal hot flushes (TA1143, March 2026), NG23 was updated in April, and the SMC accepted fezolinetant for Scotland in July 2026. What changed for UK clinicians — and what hasn't. HRT remains first-line."
 description: "Two menopause guidance changes landed in 2026: NICE recommended fezolinetant as a non-hormonal option for vasomotor symptoms, and updated NG23 on unscheduled bleeding. A plain-English summary for UK clinicians."
 date: 2026-06-02
+updated: 2026-07-16
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
@@ -16,6 +17,8 @@ faqs:
     answer: "Fezolinetant (brand name Veoza, made by Astellas) is a non-hormonal tablet, 45mg once daily. It is a neurokinin-3 (NK3) receptor antagonist — it blocks the brain pathway that triggers hot flushes and night sweats. Because it has been associated with liver injury, NICE advises liver function tests before starting and periodically during treatment."
   - question: "What changed in NICE NG23 in April 2026?"
     answer: "The 15 April 2026 update to NG23 was a targeted amendment, not a full revision. It clarified the advice on when to seek medical help for unscheduled vaginal bleeding while taking systemic HRT, within the section on starting HRT. The rest of the guideline structure was unchanged."
+  - question: "Is fezolinetant available on the NHS in Scotland?"
+    answer: "Yes, on a restricted basis. The Scottish Medicines Consortium accepted fezolinetant for restricted use within NHS Scotland (SMC2898, published 13 July 2026) for moderate to severe vasomotor symptoms associated with menopause, in patients for whom HRT is not deemed suitable. This was a resubmission — the SMC did not accept fezolinetant on first submission in 2025. The decision brings Scotland broadly in line with the NICE position for England."
   - question: "When does the NHS have to fund fezolinetant?"
     answer: "Where fezolinetant is the most suitable option for an eligible patient, NICE technology appraisal guidance requires NHS funding in England within 90 days of final publication. The authoritative detail is in NICE TA1143 and the BNF entry for the drug."
 ---
@@ -25,6 +28,8 @@ faqs:
 Two pieces of UK menopause guidance changed in 2026. NICE recommended [fezolinetant](https://www.nice.org.uk/guidance/ta1143) (Veoza) as a non-hormonal option for moderate to severe vasomotor symptoms when HRT is unsuitable — technology appraisal TA1143, published 31 March 2026, with around 500,000 people estimated to be eligible. And NICE updated [NG23](https://www.nice.org.uk/guidance/ng23), the menopause guideline, on 15 April 2026 with revised advice on unscheduled bleeding while taking systemic HRT. HRT remains first-line throughout.
 
 This post is a plain-English summary for busy clinicians. We summarise; we do not replace NICE, and nothing here substitutes for clinical judgement on individual patients.
+
+> **Update — 16 July 2026:** the Scottish Medicines Consortium has now accepted fezolinetant for restricted use in NHS Scotland (SMC2898, published 13 July 2026). The detail — who qualifies, and what it does not change for England and Wales — is in the new section below.
 
 ## The headline: a non-hormonal option for vasomotor symptoms
 
@@ -45,6 +50,18 @@ For most patients with vasomotor symptoms and no contraindication, the first con
 ## The safety point that will shape prescribing
 
 Fezolinetant has been associated with hepatotoxicity. NICE advises liver function tests **before** starting and **periodically during** treatment. In practice this is the operational detail that distinguishes it from a simple swap-in: it carries a monitoring schedule, and that schedule needs to be set up at initiation. The BNF entry for fezolinetant is the authoritative source for the monitoring interval and cautions.
+
+## Fezolinetant in Scotland: the SMC decision (July 2026)
+
+Scotland now has its own route to fezolinetant. The [Scottish Medicines Consortium accepted it for restricted use](https://scottishmedicines.org.uk/medicines-advice/fezolinetant-veoza-resubmission-smc2898/) within NHS Scotland — advice SMC2898, published 13 July 2026 — for moderate to severe vasomotor symptoms associated with menopause. The restriction: patients for whom HRT is **not deemed suitable**.
+
+Three points worth being precise about:
+
+- **This was a resubmission.** The SMC did not accept fezolinetant on first submission in 2025. The July 2026 decision reverses that, on the restricted basis above.
+- **The Scottish restriction mirrors the NICE positioning.** Both frame fezolinetant as the option when HRT is unsuitable — not a first-line alternative to it. HRT remains first-line on both sides of the border.
+- **Nothing changes for England and Wales.** Prescribers there already work from NICE TA1143 (published 31 March 2026), which applies in both nations. The SMC decision closes the gap for Scotland; it does not alter eligibility, the LFT monitoring requirement, or the funding position anywhere else in the UK.
+
+For Scottish prescribers, the practical work is the same as the English pathway plus one check: local Health Board formulary uptake, and the liver-function monitoring schedule at initiation.
 
 ## The NG23 update (15 April 2026)
 
