@@ -31,6 +31,8 @@
   .steps-list li { padding: 0.75rem 0; border-bottom: 1px solid var(--border); font-size: 0.95rem; color: var(--text); display: flex; gap: 0.75rem; align-items: baseline; }
   .steps-list li:last-child { border-bottom: none; }
   .step-icon { font-weight: 700; color: var(--sage-deep); flex-shrink: 0; }
+  .steps-list a { color: var(--sage-deep); font-weight: 600; text-decoration: none; }
+  .steps-list a:hover { text-decoration: underline; }
 
   .upsell { margin: 2rem 0; padding: 1.5rem; background: var(--charcoal); color: white; border-radius: 10px; text-align: left; position: relative; overflow: hidden; }
   .upsell::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(ellipse at 50% 0%, rgba(90,122,106,0.15) 0%, transparent 60%); }
@@ -69,7 +71,8 @@
     <li><span class="step-icon">1.</span> You'll receive a confirmation email from Stripe. No payment is taken today.</li>
     <li><span class="step-icon">2.</span> We'll set up your digest within 24 hours and send you a welcome email.</li>
     <li><span class="step-icon">3.</span> Your first Monday Clinical Brief will arrive on the next Monday morning.</li>
-    <li><span class="step-icon">4.</span> After 4 weeks, your subscription continues at £20/year (or your discounted member rate, if you used a code). Cancel any time before then at no cost.</li>
+    <li><span class="step-icon">4.</span><span>Every article in your digest has a <strong>"Log as CPD"</strong> button. One click records your reading in the free <a href="https://cpd.mondayclinicalbrief.co.uk">MCB CPD Tracker</a> — with an AI-drafted reflection to personalise, and export ready for appraisal.</span></li>
+    <li><span class="step-icon">5.</span> After 4 weeks, your subscription continues at £20/year (or your discounted member rate, if you used a code). Cancel any time before then at no cost.</li>
   </ol>
 
   <p class="note"><strong>One quick thing:</strong> our emails come from <strong>info@mondayclinicalbrief.co.uk</strong>. If the welcome email isn't in your inbox, check your junk folder — and add us to your safe senders so your Monday digest always arrives.</p>

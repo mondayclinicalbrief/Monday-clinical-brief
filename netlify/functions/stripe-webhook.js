@@ -8,8 +8,9 @@
 //   2. Add a netlify.toml if you don't have one (see bottom of file)
 //   3. Set these environment variables in Netlify dashboard → Site settings → Environment variables:
 //        STRIPE_WEBHOOK_SECRET   (from Stripe dashboard → Webhooks → your endpoint → Signing secret)
-//        GMAIL_USER              mondayclinicalbrief@gmail.com
-//        GMAIL_APP_PASSWORD      your 16-char app password
+//        GMAIL_USER              info@mondayclinicalbrief.co.uk (Workspace account —
+//                                keeps From/SPF/DKIM aligned with the domain's DMARC)
+//        GMAIL_APP_PASSWORD      a 16-char app password for that Workspace account
 //   4. Deploy the site — Netlify will expose this function at:
 //        https://mondayclinicalbrief.co.uk/.netlify/functions/stripe-webhook
 //   5. In Stripe dashboard → Developers → Webhooks → Add endpoint:
@@ -25,7 +26,7 @@ const TRIAL_DAYS = 28;
 const DEFAULT_PRICE = "£20";
 const ABUHB_PRICE = "£15";   // Aneurin Bevan UHB cohort — matches any coupon whose id/name contains "ABUHB" (£5 off ONCE)
 const APM_PRICE = "£15";     // APM member rate — matches any coupon whose id/name contains "APM" (£5 off FOREVER — recurring £15/yr)
-const SUPPORT_EMAIL = "mondayclinicalbrief@gmail.com";
+const SUPPORT_EMAIL = "info@mondayclinicalbrief.co.uk";
 const STRIPE_CUSTOMER_PORTAL = "https://billing.stripe.com/p/login/dRm28k4rI5LYaoh3qaefC00";
 
 // Map specialty slugs to display names
@@ -170,12 +171,20 @@ function buildWelcomeHtml(email, specialtySlug, trialStart, trialEnd, priceLine)
                 <div style="width:22px;height:22px;background:#005eb8;border-radius:50%;text-align:center;line-height:22px;font-size:12px;color:#fff;font-weight:bold;">2</div>
               </td>
               <td style="vertical-align:top;padding:8px 0 8px 10px;font-size:14px;color:#444;line-height:1.5;">
-                On <strong>${endStr}</strong> your 4-week free trial ends. If you haven't cancelled, your subscription will begin at <strong>${priceLine}</strong>.
+                Every article has a <strong>"Log as CPD"</strong> button — one click records your reading in the free <a href="https://cpd.mondayclinicalbrief.co.uk" style="color:#005eb8;font-weight:bold;">MCB CPD Tracker</a>, with an AI-drafted reflection to personalise and export ready for appraisal.
               </td>
             </tr>
             <tr>
               <td style="vertical-align:top;padding:8px 0;width:28px;">
                 <div style="width:22px;height:22px;background:#005eb8;border-radius:50%;text-align:center;line-height:22px;font-size:12px;color:#fff;font-weight:bold;">3</div>
+              </td>
+              <td style="vertical-align:top;padding:8px 0 8px 10px;font-size:14px;color:#444;line-height:1.5;">
+                On <strong>${endStr}</strong> your 4-week free trial ends. If you haven't cancelled, your subscription will begin at <strong>${priceLine}</strong>.
+              </td>
+            </tr>
+            <tr>
+              <td style="vertical-align:top;padding:8px 0;width:28px;">
+                <div style="width:22px;height:22px;background:#005eb8;border-radius:50%;text-align:center;line-height:22px;font-size:12px;color:#fff;font-weight:bold;">4</div>
               </td>
               <td style="vertical-align:top;padding:8px 0 8px 10px;font-size:14px;color:#444;line-height:1.5;">
                 You can <strong>cancel at any time</strong> before ${endStr} at no cost. No payment is taken during the trial.
@@ -261,7 +270,7 @@ async function sendWelcomeEmail(toEmail, specialtySlug, priceLine) {
     from: `"The Monday Clinical Brief" <${process.env.GMAIL_USER}>`,
     to: toEmail,
     subject: "Welcome to The Monday Clinical Brief — your free trial has started",
-    text: `Welcome to The Monday Clinical Brief!\n\nYou're subscribed to: ${specialtyName}\nTrial ends: ${formatDate(trialEnd)}\n\nYour first digest arrives next Monday morning.\n\nAfter your 4-week trial, your subscription begins at ${priceLine}. Cancel any time before ${formatDate(trialEnd)} at no cost.\n\nManage subscription: ${STRIPE_CUSTOMER_PORTAL}\n\nQuestions? ${SUPPORT_EMAIL}`,
+    text: `Welcome to The Monday Clinical Brief!\n\nYou're subscribed to: ${specialtyName}\nTrial ends: ${formatDate(trialEnd)}\n\nYour first digest arrives next Monday morning.\n\nEvery article has a "Log as CPD" button — one click records your reading in the free MCB CPD Tracker (https://cpd.mondayclinicalbrief.co.uk), with an AI-drafted reflection to personalise and export ready for appraisal.\n\nAfter your 4-week trial, your subscription begins at ${priceLine}. Cancel any time before ${formatDate(trialEnd)} at no cost.\n\nManage subscription: ${STRIPE_CUSTOMER_PORTAL}\n\nQuestions? ${SUPPORT_EMAIL}`,
     html,
   });
 
