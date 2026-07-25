@@ -1,10 +1,11 @@
 ---
 title: "Using AI for Reflective Practice: The Rules for UK Doctors"
 seoTitle: "Using AI for CPD Reflection: The Rules for UK Doctors"
-metaDescription: "You can use AI to help with CPD reflection — but not to reflect for you. The GMC and Royal College position, the three lines not to cross, and a safe workflow."
+metaDescription: "You can use AI to help with CPD reflection — but not to reflect for you. The GMC and Royal College position, the three lines not to cross, and a workflow."
 description: "Can UK doctors use AI to help write reflective practice and appraisal reflections? Yes — within limits. Here is what the GMC and Royal Colleges say, the three lines not to cross, and a workflow that keeps AI on the right side of them."
 date: 2026-07-03
-cluster: "CPD Reading Tool"
+cluster: "CPD and Revalidation"
+clusterSlug: "cpd-reading-tool"
 schemaType: "Article"
 pillar: false
 ---
@@ -55,7 +56,7 @@ The distinction in every case is the same: AI does the scaffolding, you do the r
 
 ## How the MCB CPD Tracker fits
 
-We built the [MCB CPD Tracker](https://cpd.mondayclinicalbrief.co.uk) around exactly these lines. Its optional "Generate AI draft" feature sends only the article's details — title, journal, category, summary — to the AI. It does not send your name, your patients' data, or your own words. And it will not let a draft stand as your reflection: you have to review and personalise it before it is saved, because reflection has to be personal to count. It is AI-assisted reflection that keeps the insight, and the accountability, with you.
+We built the MCB CPD Tracker — included free with an annual [Monday Clinical Brief subscription](/#subscribe) — around exactly these lines. Its optional "Generate AI draft" feature sends only the article's details — title, journal, category, summary — to the AI. It does not send your name, your patients' data, or your own words. And it will not let a draft stand as your reflection: you have to review and personalise it before it is saved, because reflection has to be personal to count. It is AI-assisted reflection that keeps the insight, and the accountability, with you.
 
 For the reflection itself, our [CPD reflection template](/blog/cpd-reading-tool/cpd-reflection-template-journal-reading/) and the guide to [logging journal reading for GMC revalidation](/blog/cpd-reading-tool/log-journal-reading-for-gmc-revalidation/) cover the wider workflow.
 

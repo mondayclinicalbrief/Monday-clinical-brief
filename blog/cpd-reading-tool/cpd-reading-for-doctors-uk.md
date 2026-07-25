@@ -1,15 +1,16 @@
 ---
-title: "CPD Reading for Doctors UK"
-seoTitle: "CPD Reading for Doctors UK: Everything You Need to Know"
-metaDescription: "Everything UK doctors need to know about CPD reading. What counts, how to log it, how many points you earn, and how to make every reading minute count for revalidation."
+title: "What Counts as CPD for UK Doctors"
+seoTitle: "What Counts as CPD for UK Doctors"
+metaDescription: "What counts as CPD for UK doctors — journal reading, courses, audit, teaching and informal learning — and how to log each one so your appraiser accepts it."
 description: "Everything UK doctors need to know about CPD reading — what counts, how to log it, and how to make every reading minute count for revalidation."
 date: 2026-04-07
-cluster: "CPD Reading Tool"
+cluster: "CPD and Revalidation"
+clusterSlug: "cpd-reading-tool"
 schemaType: "Article"
 pillar: false
 ---
 
-# CPD Reading for Doctors UK: Everything You Need to Know
+# What Counts as CPD for UK Doctors
 
 ## What Counts as CPD Reading in the UK
 

@@ -1,15 +1,16 @@
 ---
-title: "Best CPD Reading Tools for Doctors in the UK"
-seoTitle: "Best CPD Reading Tools for Doctors in the UK (2026) | MCB"
-metaDescription: "Comparing the best CPD reading tools for UK doctors. Track reading hours, earn CPD credits, and prepare for appraisal with the right tool for your workflow."
+title: "Best CPD Tools for UK Doctors"
+seoTitle: "Best CPD Tools for UK Doctors (2026)"
+metaDescription: "CPD tools for UK doctors compared: portfolios, reading logs and trackers. What each one records, how it feeds your appraisal, and which fits your workflow."
 description: "A practical comparison of CPD reading tools for UK doctors — what they track, how they integrate with appraisal portfolios, and which suits your workflow."
 date: 2026-04-21
-cluster: "CPD Reading Tool"
+cluster: "CPD and Revalidation"
+clusterSlug: "cpd-reading-tool"
 schemaType: "Article"
 pillar: false
 ---
 
-# Best CPD Reading Tools for Doctors in the UK
+# Best CPD Tools for UK Doctors
 
 Keeping up with medical literature is non-negotiable. But the actual mechanics of *proving* that you've kept up—logging hours, reflecting meaningfully, and presenting evidence to your appraiser—often feels like a second job. You finish a journal article at 11 p.m., close the PDF, and then face a choice: spend fifteen more minutes documenting what you've just learned, or let it slip into the background.
 
@@ -50,45 +51,25 @@ Is it free or subscription-based? Does your trust or professional body already p
 
 ## Comparing CPD Reading Tools for UK Doctors
 
-### Fourteen Fish
+### FourteenFish Appraisal Toolkit
 
-**What it does:** A web-based platform for logging and managing CPD activities, including reading. You log the activity, reflect on its impact, and track how it relates to your professional development outcomes.
+**What it does:** The most widely used appraisal and revalidation portfolio among UK GPs. You log CPD activities — including reading — reflect on their impact, and build the portfolio you submit to your appraiser. The CPD diary is a section within the Toolkit, not a separate product.
 
 **Strengths:**
 - Clean, straightforward interface
 - Reflection prompts aligned with GMC standards
 - Time tracking built in
-- Exports summaries suitable for appraisal portfolios
+- Produces the actual appraisal submission, not just a reading log
 - Mobile-friendly
 
 **Limitations:**
 - Requires manual entry of most readings (no direct journal integration)
-- No direct browser plugin to clip articles
-- Subscription model (costs apply, though some trusts negotiate group rates)
+- No browser plugin to clip articles
+- Built around the appraisal cycle rather than around weekly reading
 
-**Cost:** Typically £150–300 per year, depending on trust negotiations.
+**Cost:** Around £40–50 per year at list price, with a 30% discount for RCGP members. The RCGP fully funds the Toolkit for five years for GPs who gained CCT from 2021 onwards while they remain members, and there is a practice discount if a whole practice signs up. You can use it free and pay at the point you submit to your appraiser. Check [FourteenFish's pricing page](https://www.fourteenfish.com/pricing) for the current figure.
 
-**Who it suits:** Doctors who want a structured, GMC-aligned platform but can tolerate a few minutes of manual entry per reading. Good for those doing a mix of reading and other CPD and want everything in one place.
-
----
-
-### FourteenFish CPD Diary
-
-**What it does:** A more lightweight module within Fourteen Fish specifically for logging reading, practical learning, and reflection. Think of it as a focused journaling tool.
-
-**Strengths:**
-- Quick logging (designed for speed)
-- Reflection prompts specific to reading impact
-- Works as a standalone diary, but integrates into the broader Fourteen Fish platform if you use it
-- Clear record-keeping for appraisal
-
-**Limitations:**
-- Still requires manual entry
-- Limited analytics or export options compared to the full Fourteen Fish platform
-
-**Cost:** Usually included within a broader Fourteen Fish subscription, though sometimes available standalone.
-
-**Who it suits:** Doctors who read frequently and want a lightweight, dedicated reading log without the broader CPD platform overhead.
+**Who it suits:** Almost any UK GP — this is the default choice, and for the appraisal submission itself it is hard to beat. Best paired with something that reduces the reading workload upstream, because the Toolkit records reading but does not help you do it.
 
 ---
 
@@ -109,7 +90,7 @@ Is it free or subscription-based? Does your trust or professional body already p
 - Somewhat dated interface in places
 - Integration with broader appraisal portfolios requires manual export
 
-**Cost:** Free with RCGP membership (membership ~£300–500 per year for practising GPs).
+**Cost:** Free with RCGP membership. For the 2026–27 membership year the fee is banded by earnings: £645 if you earn £50,271 or above, £322 if you earn £12,571–£50,270 (or you are a member of another Royal College where your appraisal sits), and £162 if you are on a career break, retired, or on parental leave. There is a £467 discounted rate for the first two years post-qualification. Check the [RCGP fees page](https://www.rcgp.org.uk/) for current bands.
 
 **Who it suits:** GPs in full-time practice who are RCGP members and want a college-backed, inclusive tool.
 
@@ -132,7 +113,7 @@ Is it free or subscription-based? Does your trust or professional body already p
 - Limited mobile experience
 - Export functionality is basic
 
-**Cost:** Free with BMA membership (~£200–400 per year for most doctors).
+**Cost:** Free with BMA membership. Standard membership is £46.25 per month — around £555 a year, or £37 a month after tax relief. Resident doctors pay less on a sliding scale by years since qualification, starting at £10.83 a month in the first year. Students and IMGs new to the UK are free in their first year. Check the [BMA subscription rates](https://www.bma.org.uk/join/subscription-costs) for current figures.
 
 **Who it suits:** BMA members who want a straightforward, included tool without paying extra. Suitable for doctors who are comfortable with simpler interfaces.
 
@@ -147,14 +128,14 @@ Is it free or subscription-based? Does your trust or professional body already p
 - Structured summaries that already include reflection points
 - Applicable to real practice
 - Low cost for breadth of coverage
-- Works alongside any logging tool (you log MCB articles into Fourteen Fish, RCGP module, or your own system)
+- Works alongside any logging tool (you log MCB articles into FourteenFish, RCGP module, or your own system)
 
 **Limitations:**
 - Not a logging or portfolio tool itself
 - Selective (you're reading MCB's curated selection, not the full original papers)
 - Requires subscription
 
-**Cost:** Subscription-based; typically less than dedicated CPD platforms.
+**Cost:** £20 per year per specialty, with a four-week free trial. The MCB CPD Tracker is included.
 
 **Who it suits:** Busy NHS consultants and GPs who struggle to keep up with journals and want to ensure their reading time is spent on high-impact, clinically relevant papers. Works best when paired with a separate logging tool.
 
@@ -188,11 +169,10 @@ Is it free or subscription-based? Does your trust or professional body already p
 
 | Tool | Logging Speed | Reflection Prompts | Portfolio Integration | Price |
 |------|-------|-------------|-----------|---------|
-| **Fourteen Fish** | 3–5 min | Excellent (GMC-aligned) | Good (clean exports) | £150–300/year |
-| **FourteenFish CPD Diary** | 2–3 min | Excellent (reading-focused) | Good | Included in FF subscription |
+| **FourteenFish Appraisal Toolkit** | 3–5 min | Excellent (GMC-aligned) | Excellent (is the submission) | ~£40–50/year, 30% off for RCGP members |
 | **RCGP CPD Module** | 3–4 min | Very good (college-aligned) | Fair (manual export) | Free (with RCGP membership) |
 | **BMA CPD Tracker** | 3–4 min | Good (generic) | Fair (basic export) | Free (with BMA membership) |
-| **The Monday Clinical Brief** | N/A (reading tool) | Good (summaries include takeaways) | N/A (pairs with other tools) | Subscription (variable) |
+| **The Monday Clinical Brief** | N/A (reading tool) | Good (summaries include takeaways) | Pairs with any portfolio; CPD Tracker included | £20/year per specialty |
 | **Excel/Paper** | 5–10 min | None (you create) | Poor (manual) | Free |
 
 ---
@@ -207,7 +187,7 @@ The GMC expects doctors to provide evidence that they've engaged with ongoing le
 4. **Application** – Evidence that reading influenced your decisions or changed your approach.
 5. **Volume** – Typically 50–100 hours per year (roughly equivalent to reading one journal article per week, plus other CPD).
 
-The appraiser doesn't necessarily care *which platform* you use—they care that your reading is logged, evidenced, and reflected on in a way that demonstrates engagement with professional development. A clean, professional-looking export from Fourteen Fish or RCGP will reassure them; a handwritten notebook will raise questions.
+The appraiser doesn't necessarily care *which platform* you use—they care that your reading is logged, evidenced, and reflected on in a way that demonstrates engagement with professional development. A clean, professional-looking export from FourteenFish or RCGP will reassure them; a handwritten notebook will raise questions.
 
 ---
 
@@ -217,7 +197,7 @@ Most effective doctors don't rely on a single tool. Instead, they build a system
 
 **The Input Layer:** Choose a source (journals, newsletters, guidelines, or MCB summaries) that fits your time and clinical interests.
 
-**The Logging Layer:** Pick one of the dedicated tools above—ideally one included with your membership (RCGP, BMA) or one your trust provides. If you're a heavy reader, Fourteen Fish is worth the investment.
+**The Logging Layer:** Pick one of the dedicated tools above—ideally one included with your membership (RCGP, BMA) or one your trust provides. If you're a heavy reader, FourteenFish is worth the investment.
 
 **The Reflection Layer:** Use the tool's prompts, but add your own. As you log, ask yourself: What's new here? What will I do differently? How does this fit my patient population?
 
@@ -225,16 +205,16 @@ Most effective doctors don't rely on a single tool. Instead, they build a system
 
 **The Source Amplifier:** If you're struggling to find time for reading, consider MCB or similar curated sources. They reduce reading time without sacrificing clinical impact, freeing up minutes for reflection and logging.
 
-For a practical walkthrough of how to set up a reading routine and align it with your appraisal requirements, see our [guide to CPD reading for doctors in the UK](/blog/cpd-reading-tool/cpd-reading-for-doctors-uk/).
+For a practical walkthrough of how to set up a reading routine and align it with your appraisal requirements, see our guide to [what counts as CPD for UK doctors](/blog/cpd-reading-tool/cpd-reading-for-doctors-uk/).
 
 ---
 
 ## Final Thought
 
-The best CPD reading tool is the one you'll actually use consistently. If you're already an RCGP or BMA member, start with the included platform—no additional cost, and appraisers recognise it. If you're a consultant or want more features, Fourteen Fish justifies its cost through clean portfolio integration and GMC-aligned prompts. And regardless of which platform you choose, pairing it with a curated reading source like MCB keeps your reading time high-impact and reduces the log-entry burden.
+The best CPD reading tool is the one you'll actually use consistently. If you're already an RCGP or BMA member, start with the included platform—no additional cost, and appraisers recognise it. If you're a consultant or want more features, FourteenFish justifies its cost through clean portfolio integration and GMC-aligned prompts. And regardless of which platform you choose, pairing it with a curated reading source like MCB keeps your reading time high-impact and reduces the log-entry burden.
 
 Your reading matters. So does proving that you've done it and reflected on it. The right tool makes that proof effortless—and revalidation preparation far less painful.
 
 ---
 
-For more on CPD strategy and how to prepare for appraisal, explore our [CPD reading tool cluster](/blog/cpd-reading-tool/guide/) for comprehensive resources tailored to UK medical practice.
+For more on CPD strategy and how to prepare for appraisal, see our guide to [earning CPD points by reading medical journals](/blog/cpd-reading-tool/guide/).

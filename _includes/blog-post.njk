@@ -189,7 +189,7 @@
       "@type": "ListItem",
       "position": 3,
       "name": "{{ cluster }}",
-      "item": "https://mondayclinicalbrief.co.uk/blog/{{ cluster | slugify }}/"
+      "item": "https://mondayclinicalbrief.co.uk/blog/{{ clusterSlug or (cluster | slugify) }}/"
     },
     {
       "@type": "ListItem",
@@ -245,7 +245,7 @@
   <ol>
     <li><a href="/">Home</a></li>
     <li><a href="/blog/">Blog</a></li>
-    {% if cluster %}<li><a href="/blog/{{ cluster | slugify }}/">{{ cluster }}</a></li>{% endif %}
+    {% if cluster %}<li><a href="/blog/{{ clusterSlug or (cluster | slugify) }}/">{{ cluster }}</a></li>{% endif %}
     <li>{{ title }}</li>
   </ol>
 </div>
@@ -253,7 +253,7 @@
 <!-- ═══ ARTICLE HEADER ═══ -->
 <header class="article-header">
   {% if cluster %}
-  <a href="/blog/{{ cluster | slugify }}/" class="article-cluster">{{ cluster }}</a>
+  <a href="/blog/{{ clusterSlug or (cluster | slugify) }}/" class="article-cluster">{{ cluster }}</a>
   {% endif %}
   <h1>{{ title }}</h1>
   <div class="article-meta">

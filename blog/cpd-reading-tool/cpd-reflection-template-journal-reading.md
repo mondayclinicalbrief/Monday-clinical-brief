@@ -1,11 +1,12 @@
 ---
 title: "CPD Reflection Template for Journal Reading"
-seoTitle: "CPD Reflection Template for Journal Reading (Free, UK) | MCB"
+seoTitle: "CPD Reflection Template for UK Doctors (Free)"
 metaDescription: "A free CPD reflection template for UK doctors, designed for journal reading. Fill-in fields, worked examples, and guidance on what appraisers want to see."
 description: "A simple CPD reflection template for UK doctors logging journal reading — with worked examples and guidance for appraisal-ready entries."
 date: 2026-05-26
 updated: 2026-06-02
-cluster: "CPD Reading Tool"
+cluster: "CPD and Revalidation"
+clusterSlug: "cpd-reading-tool"
 schemaType: "Article"
 pillar: false
 ---
@@ -14,7 +15,7 @@ pillar: false
 
 Reflection is the part of CPD most doctors avoid. Not because they cannot do it, but because the templates they are given are bloated, repetitive, and designed by committees who have never been through an appraisal themselves.
 
-This guide gives you a lean reflection template built around what the GMC and UK Royal Colleges actually want to see. You can copy it into any system — the free [MCB CPD Tracker](https://cpd.mondayclinicalbrief.co.uk), RCGP Toolkit, SARD, PReP, a spreadsheet, or a Word document.
+This guide gives you a lean reflection template built around what the GMC and UK Royal Colleges actually want to see. You can copy it into any system — the MCB CPD Tracker (included with an annual subscription), RCGP Toolkit, SARD, PReP, a spreadsheet, or a Word document.
 
 ## What Makes Reflection "Good Enough"
 

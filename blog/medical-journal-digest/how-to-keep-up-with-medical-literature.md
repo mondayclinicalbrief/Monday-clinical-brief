@@ -69,7 +69,7 @@ Monday Clinical Brief distils the week's key medical literature into a single, d
 ## Related Reading
 
 - [Too Many Medical Journals to Read? Here Is What Smart Doctors Do](/blog/medical-journal-digest/too-many-medical-journals-to-read/)
-- [CPD Reading for Doctors UK: Everything You Need to Know](/blog/cpd-reading-tool/cpd-reading-for-doctors-uk/)
+- [What Counts as CPD for UK Doctors](/blog/cpd-reading-tool/cpd-reading-for-doctors-uk/)
 - [Monday Clinical Brief: the weekly digest for busy doctors](/)
 
 ## Frequently Asked Questions

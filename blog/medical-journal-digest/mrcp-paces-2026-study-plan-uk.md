@@ -84,7 +84,7 @@ Read through your PACES notes. Sleep. Do not sit a new mock in the last five day
 
 ## Staying clinically current while you prepare
 
-PACES rewards candidates who are clinically current — who recognise the conditions and know the up-to-date management. The reading habit that keeps you current for the exam is the same one that keeps you safe on the ward. Our guide on [CPD reading for doctors](/blog/cpd-reading-tool/cpd-reading-for-doctors-uk/) covers how to build it without adding hours to the week.
+PACES rewards candidates who are clinically current — who recognise the conditions and know the up-to-date management. The reading habit that keeps you current for the exam is the same one that keeps you safe on the ward. Our guide to [what counts as CPD for UK doctors](/blog/cpd-reading-tool/cpd-reading-for-doctors-uk/) covers how to build it without adding hours to the week.
 
 The authoritative source for dates, fees, and exam structure is the [Federation / MRCP(UK)](https://www.thefederation.uk/examinations/paces/exam-dates-and-fees). This post is preparation guidance, not official exam regulation — always confirm the current rules with the Federation.
 

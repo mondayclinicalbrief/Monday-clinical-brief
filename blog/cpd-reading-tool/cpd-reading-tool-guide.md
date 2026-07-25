@@ -1,11 +1,12 @@
 ---
-title: "CPD Reading Tool"
-seoTitle: "CPD Reading Tool: How to Earn CPD Points by Reading Medical Journals | MCB"
-metaDescription: "Turn your medical journal reading into CPD credits. Our CPD reading tool tracks your hours, links to your portfolio, and counts towards GMC revalidation. Learn how."
+title: "How to Earn CPD Points by Reading Medical Journals"
+seoTitle: "How to Earn CPD Points by Reading Journals"
+metaDescription: "Journal reading counts towards CPD if you log it properly. How UK doctors turn reading they already do into appraisal-ready CPD points, with examples."
 description: "How to turn your journal reading into verifiable CPD credits — with tools, templates, and strategies for UK doctors preparing for appraisal and revalidation."
 date: 2026-03-17
 permalink: /blog/cpd-reading-tool/guide/
-cluster: "CPD Reading Tool"
+cluster: "CPD and Revalidation"
+clusterSlug: "cpd-reading-tool"
 schemaType: "MedicalWebPage"
 pillar: true
 faqs:
@@ -21,7 +22,7 @@ faqs:
     answer: "Yes. Each weekly digest includes structured summaries that make it easy to identify relevant papers, reflect on their implications, and document your reading for CPD purposes."
 ---
 
-# CPD Reading Tool: How to Earn CPD Points by Reading Medical Journals
+# How to Earn CPD Points by Reading Medical Journals
 
 You already read medical journals. You scan The BMJ over lunch. You skim a Lancet paper between clinics. You read the abstract a colleague shared in the WhatsApp group. But does any of it count towards your CPD?
 
@@ -78,7 +79,7 @@ Reflection is where CPD reading becomes genuinely valuable, both for your practi
 
 ### Portfolio Export
 
-Your CPD reading data needs to reach your appraisal portfolio. The ideal tool exports directly to your ePortfolio system (such as RCGP ePortfolio, Fourteen Fish, or equivalent). At minimum, it should produce a clean summary document that you can upload or print for your appraiser.
+Your CPD reading data needs to reach your appraisal portfolio. The ideal tool exports directly to your ePortfolio system (such as RCGP ePortfolio, FourteenFish, or equivalent). At minimum, it should produce a clean summary document that you can upload or print for your appraiser.
 
 ### Content Relevance
 
@@ -89,7 +90,7 @@ CPD reading is only valuable if the content is relevant to your practice. A CPD 
 Monday Clinical Brief is designed from the ground up as a CPD reading tool for UK doctors. Every element of the service, from content selection to delivery format, is built around making journal reading count towards professional development.
 
 - Easy CPD logging: every weekly issue is structured so you can log it as a CPD activity in minutes, with no quiz or assessment to complete first.
-- Simple reading record: log each issue you read with the date, content covered, and time spent — via the free [MCB CPD Tracker](https://cpd.mondayclinicalbrief.co.uk) or your existing portfolio (such as FourteenFish).
+- Simple reading record: log each issue you read with the date, content covered, and time spent — via the MCB CPD Tracker, included free with an annual subscription, or your existing portfolio (such as FourteenFish).
 - Reflective reading prompts: each issue includes structured questions designed to prompt reflection on how the papers relate to your practice. These notes become part of your CPD evidence.
 - Portfolio-ready exports: generate a CPD reading summary for any date range, formatted for appraisal. Includes papers read, dates, time logged, and reflective notes.
 - UK-focused clinical content: all summaries are contextualised for NHS practice, referencing NICE guidelines, BNF recommendations, and UK prescribing contexts where relevant.

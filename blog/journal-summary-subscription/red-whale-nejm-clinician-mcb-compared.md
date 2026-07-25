@@ -94,7 +94,7 @@ Every Monday morning, MCB sends the most important peer-reviewed papers publishe
 - Written for the UK reader, with NICE and Royal College context built in.
 - Push delivery — it arrives in your inbox; there is no app, no query, no algorithm to fight.
 - Reader-paid and ad-free: no sponsored papers, no pharmaceutical partnerships shaping what surfaces.
-- Reading time logs as CPD through the free [MCB CPD Tracker](https://cpd.mondayclinicalbrief.co.uk).
+- Reading time logs as CPD through the MCB CPD Tracker — a companion tool included free with an annual subscription.
 
 **Weaknesses:**
 
@@ -136,7 +136,7 @@ Expert AI remains **available to individual subscribers in the US and Canada onl
 | **Coverage** | Primary-care weighted | 12 specialty editions, expert picks | 31 specialties, top journals (complete) |
 | **Delivery** | Taught course + handbook | Push commentary | Push email |
 | **UK context (NICE)** | Strong (UK-built) | Limited (US voice) | Built in |
-| **CPD certificate** | Yes | CME (US-oriented) | Logged via [MCB CPD Tracker](https://cpd.mondayclinicalbrief.co.uk) / FourteenFish |
+| **CPD certificate** | Yes | CME (US-oriented) | Logged via the included MCB CPD Tracker / FourteenFish |
 | **Best job** | Certified periodic refresh | Specialty depth | Staying current between everything else |
 
 ## Our Honest Position
