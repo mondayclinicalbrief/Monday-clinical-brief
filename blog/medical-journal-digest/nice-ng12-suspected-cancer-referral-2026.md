@@ -61,3 +61,5 @@ This gives an anchor to one of the harder presentations in general practice: the
 Two of these are refinements of familiar pathways; the ovarian CA125 change is the one worth a note on the wall. The threshold you act on now depends on the patient's age, and for much of the at-risk range it is lower than the number most of us memorised.
 
 Referral guidance changes rarely make headlines and reliably catch people out at exactly the wrong moment. A weekly read of what actually changed is how an update like this reaches you before a missed referral does — which is what we built [The Monday Clinical Brief](/#subscribe) to do. Our pillar guide on [keeping up with the medical literature](/blog/medical-journal-digest/how-to-keep-up-with-medical-literature/) sets out the wider habit.
+
+A recent general practice issue is online in full, with no sign-up required: [read a free sample](/samples/general-practice/).

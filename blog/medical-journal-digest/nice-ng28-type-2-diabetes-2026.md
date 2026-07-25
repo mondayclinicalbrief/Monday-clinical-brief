@@ -84,4 +84,6 @@ This is a guideline summary for awareness. It is not a substitute for the NICE g
 
 The Monday Clinical Brief publishes weekly summaries of the most important new papers and guideline updates across 31 UK medical specialties. We do not replace the source documents. We surface them, summarise them, and link to them — so the practice-changing material does not get missed in a busy clinical week.
 
+Before you subscribe, read a recent general practice issue in full — no sign-up required: [see a free sample](/samples/general-practice/).
+
 [Subscribe to The Monday Clinical Brief](/#subscribe) — £20 a year, no advertising, no sponsored content, just every week's most important reading delivered to your inbox on Monday morning.

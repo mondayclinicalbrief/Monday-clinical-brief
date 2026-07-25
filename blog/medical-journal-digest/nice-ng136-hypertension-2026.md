@@ -81,3 +81,5 @@ For most UK clinicians the 26 February 2026 update changes very little on paper 
 The practical version is a single sentence added to an existing consultation: the reading is up, it is not yet hypertension, and here is what would help keep it that way. It costs nothing, it needs no new system, and it is exactly the kind of small, repeatable act that a busy week tends to swallow.
 
 That is also the argument for a routine that surfaces changes like this one before a patient or an appraisal does. A once-a-week read of what actually changed in your specialty is how a one-line guideline update becomes a change in practice rather than a change you meant to make. That is what we built [The Monday Clinical Brief](/#subscribe) to do, and it is the theme of our pillar guide on [keeping up with the medical literature](/blog/medical-journal-digest/how-to-keep-up-with-medical-literature/).
+
+A recent general practice issue is online in full, with no sign-up required: [read a free sample](/samples/general-practice/).

@@ -69,3 +69,5 @@ For primary and community care, the practical shift is the preserved-ejection-fr
 It also confirms where SGLT2 inhibitors have landed: no longer a diabetes drug that turned out to help the heart and kidney, but a cross-cutting cardio-renal-metabolic therapy. The same class runs through our summaries of [SGLT2 inhibitors in chronic kidney disease](/blog/medical-journal-digest/sglt2-inhibitors-ckd-uk-primary-care-2026/) and the [2026 NICE NG28 diabetes update](/blog/medical-journal-digest/nice-ng28-type-2-diabetes-2026/), where the same drugs do overlapping work. When one class earns a place in three guidelines at once, the monitoring and the contraindications are worth knowing cold.
 
 A one-line guideline change — "consider an SGLT2 inhibitor for preserved ejection fraction" — is exactly the kind of update that reshapes a common consultation without making headlines. A weekly read of what actually changed is how it becomes practice rather than a note you meant to act on. That is what we built [The Monday Clinical Brief](/#subscribe) to do.
+
+A recent cardiology issue is online in full, with no sign-up required: [read a free sample](/samples/cardiology/).

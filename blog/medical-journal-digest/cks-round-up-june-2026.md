@@ -42,4 +42,6 @@ This is a summary for awareness. It is not a substitute for the [NICE CKS](https
 
 Reading a round-up like this one counts towards CPD once you have reflected on it — see [does reading count as CPD?](/blog/cpd-reading-tool/does-reading-count-as-cpd/) for what a credit-bearing entry needs, and [how many CPD points UK doctors need](/blog/cpd-reading-tool/how-many-cpd-points-do-i-need/) for the wider picture.
 
+Before you subscribe, read a recent general practice issue in full — no sign-up required: [see a free sample](/samples/general-practice/).
+
 [Subscribe to The Monday Clinical Brief](/#subscribe) — a weekly digest of the most important new research and guidance across 31 UK specialties, £20 a year, no advertising.

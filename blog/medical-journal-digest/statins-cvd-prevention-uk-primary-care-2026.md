@@ -71,4 +71,6 @@ The Monday Clinical Brief publishes weekly summaries of the most important new p
 - [Anticoagulation in atrial fibrillation: a UK primary-care guide (NG196)](/blog/medical-journal-digest/atrial-fibrillation-anticoagulation-uk-primary-care-2026/) — the other major stroke-prevention decision in primary care.
 - [Does reading count as CPD?](/blog/cpd-reading-tool/does-reading-count-as-cpd/) — a guideline update you have read and reflected on is a credit-bearing CPD entry. Most doctors never log it.
 
+Before you subscribe, read a recent general practice issue in full — no sign-up required: [see a free sample](/samples/general-practice/).
+
 [Subscribe to The Monday Clinical Brief](/#subscribe) — £20 a year, no advertising, no sponsored content, just every week's most important reading delivered to your inbox on Monday morning.

@@ -100,4 +100,6 @@ This is a practical summary of the 2026 NICE NG28 update aimed at UK primary-car
 
 We publish a weekly summary of the most important papers and guideline updates across 31 UK medical specialties. Type 2 diabetes is one of them; primary care more broadly is another. The 2026 NG28 update is the kind of practice-changing news that lands in a busy clinical week and gets missed by the clinicians it most affects. That is the problem we are built to fix.
 
+Before you subscribe, read a recent general practice issue in full — no sign-up required: [see a free sample](/samples/general-practice/).
+
 [Subscribe to The Monday Clinical Brief](/#subscribe) — £20 a year, no advertising, no sponsored content. One email every Monday morning with the practice-changing material from your specialty, summarised and linked.

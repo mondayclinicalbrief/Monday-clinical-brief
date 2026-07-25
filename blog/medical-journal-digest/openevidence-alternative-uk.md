@@ -73,7 +73,7 @@ One loop worth closing: Heidi Evidence now publishes its own "OpenEvidence alter
 
 [iatroX](https://iatrox.com) is UK-based, holds MHRA registration and UKCA marking, and is positioning as the UK alternative for AI clinical Q&A. It's the closest direct replacement for OpenEvidence's core use case within the UK regulatory environment.
 
-Two established names belong here too, with an important difference between them. **ClinicalKey AI** (Elsevier) is the genuinely UK-available one — individual UK clinicians can subscribe (there's a free trial), and it answers from Elsevier's peer-reviewed library. **UpToDate** is the other: the standard reference is everywhere in the NHS via institutional access, but its generative AI Q&A layer — Pro Plus AI for individuals (US and Canada only) and Expert AI for enterprise (limited availability outside the US) — isn't something a UK individual can reach today (see [MCB vs UpToDate](/blog/medical-journal-digest/mcb-vs-uptodate/)). So for an AI answer you can actually use in the UK, ClinicalKey AI counts; UpToDate's AI layer mostly doesn't, yet. Either way, both answer what you *ask* — not what's *new*.
+Two established names belong here too, with an important difference between them. **ClinicalKey AI** (Elsevier) is the genuinely UK-available one — individual UK clinicians can subscribe (there's a free trial), and it answers from Elsevier's peer-reviewed library. There is a twist worth knowing: Elsevier co-developed it with OpenEvidence, so the tool UK clinicians can still reach shares its origins with the one that left — see [ClinicalKey AI vs OpenEvidence](/blog/medical-journal-digest/clinicalkey-ai-vs-openevidence/). **UpToDate** is the other: the standard reference is everywhere in the NHS via institutional access, but its generative AI Q&A layer — Pro Plus AI for individuals (US and Canada only) and Expert AI for enterprise (limited availability outside the US) — isn't something a UK individual can reach today (see [MCB vs UpToDate](/blog/medical-journal-digest/mcb-vs-uptodate/)). So for an AI answer you can actually use in the UK, ClinicalKey AI counts; UpToDate's AI layer mostly doesn't, yet. Either way, both answer what you *ask* — not what's *new*.
 
 ## For keeping up with the literature: that's a different problem
 
@@ -101,6 +101,7 @@ But staying current with the literature — knowing what questions to ask in the
 
 ## Related reading
 
+- [ClinicalKey AI vs OpenEvidence](/blog/medical-journal-digest/clinicalkey-ai-vs-openevidence/) — the head-to-head, including the partnership behind both tools and why the UK comparison resolves itself.
 - [Two AI tools UK doctors lost, one restricted — and what works in their place](/blog/medical-journal-digest/uk-doctors-lost-ai-tools-2026/) — the wider pattern, with a practical two-tool setup for UK clinicians.
 - [ChatGPT for Clinicians launched — and UK doctors are excluded](/blog/medical-journal-digest/chatgpt-for-clinicians-uk/)
 - [Heidi Evidence is excellent — and in the UK it won't answer mid-consultation](/blog/medical-journal-digest/heidi-evidence-uk-in-session-restriction/)

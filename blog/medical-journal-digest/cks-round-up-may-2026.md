@@ -41,4 +41,6 @@ For the bigger picture on staying current across guidance and the journals, see 
 
 This is a summary for awareness. It is not a substitute for the [NICE CKS](https://cks.nice.org.uk/) topic pages, which are the authoritative and current source. Always confirm the recommendation on the CKS topic page before acting on it. Clinical decisions remain the responsibility of the treating clinician.
 
+Before you subscribe, read a recent general practice issue in full — no sign-up required: [see a free sample](/samples/general-practice/).
+
 [Subscribe to The Monday Clinical Brief](/#subscribe) — a weekly digest of the most important new research and guidance across 31 UK specialties, £20 a year, no advertising.

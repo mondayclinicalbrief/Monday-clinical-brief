@@ -66,4 +66,6 @@ The Monday Clinical Brief publishes weekly summaries of the most important new p
 - [SGLT2 inhibitors for CKD in UK primary care 2026 (TA1075)](/blog/medical-journal-digest/sglt2-inhibitors-ckd-uk-primary-care-2026/) — renal function drives DOAC choice, and these patients often overlap.
 - [NICE NG28 February 2026: SGLT2 inhibitors first-line for type 2 diabetes](/blog/medical-journal-digest/nice-ng28-type-2-diabetes-2026/) — diabetes is part of the CHA2DS2-VASc score and a common comorbidity in AF.
 
+Before you subscribe, read a recent general practice issue in full — no sign-up required: [see a free sample](/samples/general-practice/).
+
 [Subscribe to The Monday Clinical Brief](/#subscribe) — £20 a year, no advertising, no sponsored content, just every week's most important reading delivered to your inbox on Monday morning.
