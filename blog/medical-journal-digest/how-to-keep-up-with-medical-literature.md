@@ -70,6 +70,8 @@ Monday Clinical Brief distils the week's key medical literature into a single, d
 
 - [Too Many Medical Journals to Read? Here Is What Smart Doctors Do](/blog/medical-journal-digest/too-many-medical-journals-to-read/)
 - [What Counts as CPD for UK Doctors](/blog/cpd-reading-tool/cpd-reading-for-doctors-uk/)
+- [Does Reading Count as CPD?](/blog/cpd-reading-tool/does-reading-count-as-cpd/) — turning the reading you already do into credit-bearing evidence
+- [How Many CPD Points Do UK Doctors Need?](/blog/cpd-reading-tool/how-many-cpd-points-do-i-need/) — the 50-credit figure, and why it is not a GMC requirement
 - [Monday Clinical Brief: the weekly digest for busy doctors](/)
 
 ## Frequently Asked Questions

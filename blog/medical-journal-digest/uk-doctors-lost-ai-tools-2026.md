@@ -109,7 +109,7 @@ A practical structure for UK clinicians who want both halves of the problem solv
 
 **During the week — use iatroX for the questions that come up.** A patient presents with something unfamiliar. A colleague asks a question you cannot answer from memory. A guideline you used to know has changed. iatroX gives you a UK-guideline-grounded answer in seconds.
 
-**Friday afternoon — five minutes to log and reflect.** What did you read? What changed in how you think about it? One sentence on each. CPD evidence in five minutes. The MCB CPD Tracker — included free with an annual subscription — is built around exactly this rhythm; FourteenFish works if you already use it.
+**Friday afternoon — five minutes to log and reflect.** What did you read? What changed in how you think about it? One sentence on each. CPD evidence in five minutes. The MCB CPD Tracker — included free with an annual subscription — is built around exactly this rhythm; [FourteenFish](/blog/cpd-reading-tool/fourteenfish-alternatives-cpd-logging/) works if you already use it.
 
 Total time: under 30 minutes most weeks, with the pull-tool time scaling to however many real clinical questions arise.
 

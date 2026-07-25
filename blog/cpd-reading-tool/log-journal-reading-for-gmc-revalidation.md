@@ -105,7 +105,7 @@ You can export or screenshot a digest to your appraisal system. Over a year, a w
 
 ### Logging it into FourteenFish
 
-The most common UK revalidation portfolio is FourteenFish. The workflow is short: read the digest, then in FourteenFish add a CPD entry, choose "reading" or "self-directed learning" as the activity type, paste the citation, write two sentences against the reflection prompt, and record the time spent (a 15-minute read is 15 minutes of CPD). The MCB CPD Tracker, included with an annual subscription, keeps the running record if you would rather log as you go and transfer in a batch at appraisal time.
+The most common UK revalidation portfolio is FourteenFish — and if you are considering something else, we compare [the alternatives for logging CPD](/blog/cpd-reading-tool/fourteenfish-alternatives-cpd-logging/). The workflow is short: read the digest, then in FourteenFish add a CPD entry, choose "reading" or "self-directed learning" as the activity type, paste the citation, write two sentences against the reflection prompt, and record the time spent (a 15-minute read is 15 minutes of CPD). The MCB CPD Tracker, included with an annual subscription, keeps the running record if you would rather log as you go and transfer in a batch at appraisal time.
 
 It is worth knowing the wider direction of travel here: in May 2026, BMJ Future Health partnered with Learner+ to use AI to turn informal learning into structured, FourteenFish-compatible CPD, and BMJ Group has since launched BMJ Portfolio, a free platform that records CPD from any source. The tooling around CPD reflection is getting easier across the board — but the underlying requirement is unchanged, and a weekly reading habit with a two-sentence reflection still satisfies it cleanly.
 

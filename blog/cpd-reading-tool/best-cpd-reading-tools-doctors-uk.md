@@ -69,7 +69,7 @@ Is it free or subscription-based? Does your trust or professional body already p
 
 **Cost:** Around £40–50 per year at list price, with a 30% discount for RCGP members. The RCGP fully funds the Toolkit for five years for GPs who gained CCT from 2021 onwards while they remain members, and there is a practice discount if a whole practice signs up. You can use it free and pay at the point you submit to your appraiser. Check [FourteenFish's pricing page](https://www.fourteenfish.com/pricing) for the current figure.
 
-**Who it suits:** Almost any UK GP — this is the default choice, and for the appraisal submission itself it is hard to beat. Best paired with something that reduces the reading workload upstream, because the Toolkit records reading but does not help you do it.
+**Who it suits:** Almost any UK GP — this is the default choice, and for the appraisal submission itself it is hard to beat. Best paired with something that reduces the reading workload upstream, because the Toolkit records reading but does not help you do it. If you are weighing it against other platforms, see [FourteenFish alternatives for logging CPD](/blog/cpd-reading-tool/fourteenfish-alternatives-cpd-logging/).
 
 ---
 

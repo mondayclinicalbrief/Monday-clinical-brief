@@ -69,5 +69,6 @@ The Monday Clinical Brief publishes weekly summaries of the most important new p
 - [NICE NG28 February 2026: SGLT2 inhibitors first-line for type 2 diabetes](/blog/medical-journal-digest/nice-ng28-type-2-diabetes-2026/) — the diabetes update that sits alongside lipid management in cardiovascular risk reduction.
 - [SGLT2 inhibitors for CKD in UK primary care 2026 (TA1075)](/blog/medical-journal-digest/sglt2-inhibitors-ckd-uk-primary-care-2026/) — kidney protection in the same high-cardiovascular-risk population.
 - [Anticoagulation in atrial fibrillation: a UK primary-care guide (NG196)](/blog/medical-journal-digest/atrial-fibrillation-anticoagulation-uk-primary-care-2026/) — the other major stroke-prevention decision in primary care.
+- [Does reading count as CPD?](/blog/cpd-reading-tool/does-reading-count-as-cpd/) — a guideline update you have read and reflected on is a credit-bearing CPD entry. Most doctors never log it.
 
 [Subscribe to The Monday Clinical Brief](/#subscribe) — £20 a year, no advertising, no sponsored content, just every week's most important reading delivered to your inbox on Monday morning.

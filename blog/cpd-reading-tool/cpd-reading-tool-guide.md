@@ -34,7 +34,7 @@ __Make Your Reading Count__
 
 Monday Clinical Brief makes CPD logging easy. Every issue is structured so you can log it towards your revalidation in minutes. Zero extra effort.
 
-__[Start Your Free Trial]__
+[Start your four-week free trial](/#subscribe)
 
 ## How Reading-Based CPD Works Under GMC Guidelines
 
@@ -95,14 +95,34 @@ Monday Clinical Brief is designed from the ground up as a CPD reading tool for U
 - Portfolio-ready exports: generate a CPD reading summary for any date range, formatted for appraisal. Includes papers read, dates, time logged, and reflective notes.
 - UK-focused clinical content: all summaries are contextualised for NHS practice, referencing NICE guidelines, BNF recommendations, and UK prescribing contexts where relevant.
 
-__Download Free CPD Reading Templates__
+__A free reflection template__
 
-Get our CPD Journal Reading Log Template and Reflective Reading Template. Track your reading hours and build your appraisal evidence.
+Our [CPD reflection template for journal reading](/blog/cpd-reading-tool/cpd-reflection-template-journal-reading/) gives you the exact fields to copy into any system, with a worked example. No sign-up required.
 
-__[Download Free Templates]__
+## The rest of this guide
 
-__Turn Your Reading into CPD__
+Everything below sits under this one. Start wherever your question is:
 
-Every issue of Monday Clinical Brief is easy to log as CPD. No extra modules. No quizzes. Just clinically relevant reading that counts.
+**The requirements**
 
-__[Subscribe Now]__
+- [How many CPD points do UK doctors need?](/blog/cpd-reading-tool/how-many-cpd-points-do-i-need/) — the 50-credit figure, and why the GMC mandates no number at all
+- [What counts as CPD for UK doctors](/blog/cpd-reading-tool/cpd-reading-for-doctors-uk/) — journal reading, courses, audit, teaching and informal learning
+- [Does reading count as CPD?](/blog/cpd-reading-tool/does-reading-count-as-cpd/) — yes, with reflection; what a credit-bearing entry has to contain
+
+**Doing it**
+
+- [How to log journal reading for GMC revalidation](/blog/cpd-reading-tool/log-journal-reading-for-gmc-revalidation/) — the five fields, with a worked example
+- [CPD reflection template for journal reading](/blog/cpd-reading-tool/cpd-reflection-template-journal-reading/) — a template to copy, and the mistakes to avoid
+- [Using AI for CPD reflection](/blog/cpd-reading-tool/using-ai-for-cpd-reflection-uk/) — what the regulators allow, and the three lines not to cross
+
+**Choosing a tool**
+
+- [Best CPD tools for UK doctors](/blog/cpd-reading-tool/best-cpd-reading-tools-doctors-uk/) — portfolios, logs and trackers compared
+- [Free CPD trackers for UK doctors](/blog/cpd-reading-tool/free-cpd-trackers-uk-doctors/) — the genuinely free options, and where the cost really sits
+- [FourteenFish alternatives for logging CPD](/blog/cpd-reading-tool/fourteenfish-alternatives-cpd-logging/) — and when to stay put
+
+__Turn your reading into CPD__
+
+Every issue of The Monday Clinical Brief is easy to log as CPD. No extra modules, no quizzes — clinically relevant reading that counts. The MCB CPD Tracker is included free with an annual subscription.
+
+[Subscribe to The Monday Clinical Brief](/#subscribe) — £20 a year, no advertising, no sponsored content.

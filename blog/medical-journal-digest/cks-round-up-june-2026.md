@@ -40,4 +40,6 @@ For the bigger picture on staying current across guidance and the journals, see 
 
 This is a summary for awareness. It is not a substitute for the [NICE CKS](https://cks.nice.org.uk/) topic pages, which are the authoritative and current source. Always confirm the recommendation on the CKS topic page before acting on it. Clinical decisions remain the responsibility of the treating clinician.
 
+Reading a round-up like this one counts towards CPD once you have reflected on it — see [does reading count as CPD?](/blog/cpd-reading-tool/does-reading-count-as-cpd/) for what a credit-bearing entry needs, and [how many CPD points UK doctors need](/blog/cpd-reading-tool/how-many-cpd-points-do-i-need/) for the wider picture.
+
 [Subscribe to The Monday Clinical Brief](/#subscribe) — a weekly digest of the most important new research and guidance across 31 UK specialties, £20 a year, no advertising.
