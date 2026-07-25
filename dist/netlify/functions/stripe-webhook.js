@@ -8,8 +8,9 @@
 //   2. Add a netlify.toml if you don't have one (see bottom of file)
 //   3. Set these environment variables in Netlify dashboard → Site settings → Environment variables:
 //        STRIPE_WEBHOOK_SECRET   (from Stripe dashboard → Webhooks → your endpoint → Signing secret)
-//        GMAIL_USER              mondayclinicalbrief@gmail.com
-//        GMAIL_APP_PASSWORD      your 16-char app password
+//        GMAIL_USER              info@mondayclinicalbrief.co.uk (Workspace account —
+//                                keeps From/SPF/DKIM aligned with the domain's DMARC)
+//        GMAIL_APP_PASSWORD      a 16-char app password for that Workspace account
 //   4. Deploy the site — Netlify will expose this function at:
 //        https://mondayclinicalbrief.co.uk/.netlify/functions/stripe-webhook
 //   5. In Stripe dashboard → Developers → Webhooks → Add endpoint:
@@ -23,7 +24,9 @@ const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
 const TRIAL_DAYS = 28;
 const DEFAULT_PRICE = "£20";
-const SUPPORT_EMAIL = "mondayclinicalbrief@gmail.com";
+const ABUHB_PRICE = "£15";   // Aneurin Bevan UHB cohort — matches any coupon whose id/name contains "ABUHB" (£5 off ONCE)
+const APM_PRICE = "£15";     // APM member rate — matches any coupon whose id/name contains "APM" (£5 off FOREVER — recurring £15/yr)
+const SUPPORT_EMAIL = "info@mondayclinicalbrief.co.uk";
 const STRIPE_CUSTOMER_PORTAL = "https://billing.stripe.com/p/login/dRm28k4rI5LYaoh3qaefC00";
 
 // Map specialty slugs to display names
@@ -81,7 +84,7 @@ function getSpecialtyName(slug) {
 
 // ── Email HTML ─────────────────────────────────────────────────────────────────
 
-function buildWelcomeHtml(email, specialtySlug, trialStart, trialEnd, price) {
+function buildWelcomeHtml(email, specialtySlug, trialStart, trialEnd, priceLine) {
   const specialtyName = getSpecialtyName(specialtySlug);
   const startStr = formatDate(trialStart);
   const endStr = formatDate(trialEnd);
@@ -141,7 +144,7 @@ function buildWelcomeHtml(email, specialtySlug, trialStart, trialEnd, price) {
                   </tr>
                   <tr>
                     <td style="padding:6px 0;font-size:14px;color:#555;">After trial</td>
-                    <td style="padding:6px 0;font-size:14px;color:#1a2e44;font-weight:bold;">${price}/year — cancel anytime</td>
+                    <td style="padding:6px 0;font-size:14px;color:#1a2e44;font-weight:bold;">${priceLine} — cancel anytime</td>
                   </tr>
                 </table>
               </td>
@@ -168,7 +171,7 @@ function buildWelcomeHtml(email, specialtySlug, trialStart, trialEnd, price) {
                 <div style="width:22px;height:22px;background:#005eb8;border-radius:50%;text-align:center;line-height:22px;font-size:12px;color:#fff;font-weight:bold;">2</div>
               </td>
               <td style="vertical-align:top;padding:8px 0 8px 10px;font-size:14px;color:#444;line-height:1.5;">
-                On <strong>${endStr}</strong> your 4-week free trial ends. If you haven't cancelled, your annual subscription of <strong>${price}</strong> will begin.
+                Every article has a <strong>"Log as CPD"</strong> button — one click records your reading in the free <a href="https://cpd.mondayclinicalbrief.co.uk" style="color:#005eb8;font-weight:bold;">MCB CPD Tracker</a>, with an AI-drafted reflection to personalise and export ready for appraisal.
               </td>
             </tr>
             <tr>
@@ -176,10 +179,27 @@ function buildWelcomeHtml(email, specialtySlug, trialStart, trialEnd, price) {
                 <div style="width:22px;height:22px;background:#005eb8;border-radius:50%;text-align:center;line-height:22px;font-size:12px;color:#fff;font-weight:bold;">3</div>
               </td>
               <td style="vertical-align:top;padding:8px 0 8px 10px;font-size:14px;color:#444;line-height:1.5;">
+                On <strong>${endStr}</strong> your 4-week free trial ends. If you haven't cancelled, your subscription will begin at <strong>${priceLine}</strong>.
+              </td>
+            </tr>
+            <tr>
+              <td style="vertical-align:top;padding:8px 0;width:28px;">
+                <div style="width:22px;height:22px;background:#005eb8;border-radius:50%;text-align:center;line-height:22px;font-size:12px;color:#fff;font-weight:bold;">4</div>
+              </td>
+              <td style="vertical-align:top;padding:8px 0 8px 10px;font-size:14px;color:#444;line-height:1.5;">
                 You can <strong>cancel at any time</strong> before ${endStr} at no cost. No payment is taken during the trial.
               </td>
             </tr>
           </table>
+        </td>
+      </tr>
+
+      <!-- Institutional email tip -->
+      <tr>
+        <td style="padding:0 40px 20px;">
+          <p style="margin:0;font-size:13px;color:#666;line-height:1.6;">
+            <strong style="color:#1a2e44;">Tip:</strong> if you signed up with a personal address, just reply with your NHS or institutional email and we'll switch your subscription across — the journal links in each digest then open as full text through your institution's access. Same specialty, same Monday delivery.
+          </p>
         </td>
       </tr>
 
@@ -228,13 +248,13 @@ function buildWelcomeHtml(email, specialtySlug, trialStart, trialEnd, price) {
 
 // ── Send welcome email ─────────────────────────────────────────────────────────
 
-async function sendWelcomeEmail(toEmail, specialtySlug, price) {
+async function sendWelcomeEmail(toEmail, specialtySlug, priceLine) {
   const trialStart = new Date();
   const trialEnd = new Date(trialStart);
   trialEnd.setDate(trialEnd.getDate() + TRIAL_DAYS);
 
   const specialtyName = getSpecialtyName(specialtySlug);
-  const html = buildWelcomeHtml(toEmail, specialtySlug, trialStart, trialEnd, price);
+  const html = buildWelcomeHtml(toEmail, specialtySlug, trialStart, trialEnd, priceLine);
 
   const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
@@ -250,11 +270,11 @@ async function sendWelcomeEmail(toEmail, specialtySlug, price) {
     from: `"The Monday Clinical Brief" <${process.env.GMAIL_USER}>`,
     to: toEmail,
     subject: "Welcome to The Monday Clinical Brief — your free trial has started",
-    text: `Welcome to The Monday Clinical Brief!\n\nYou're subscribed to: ${specialtyName}\nTrial ends: ${formatDate(trialEnd)}\n\nYour first digest arrives next Monday morning.\n\nAfter your 4-week trial, your annual subscription of ${price} begins automatically. Cancel any time before ${formatDate(trialEnd)} at no cost.\n\nManage subscription: ${STRIPE_CUSTOMER_PORTAL}\n\nQuestions? ${SUPPORT_EMAIL}`,
+    text: `Welcome to The Monday Clinical Brief!\n\nYou're subscribed to: ${specialtyName}\nTrial ends: ${formatDate(trialEnd)}\n\nYour first digest arrives next Monday morning.\n\nEvery article has a "Log as CPD" button — one click records your reading in the free MCB CPD Tracker (https://cpd.mondayclinicalbrief.co.uk), with an AI-drafted reflection to personalise and export ready for appraisal.\n\nAfter your 4-week trial, your subscription begins at ${priceLine}. Cancel any time before ${formatDate(trialEnd)} at no cost.\n\nManage subscription: ${STRIPE_CUSTOMER_PORTAL}\n\nQuestions? ${SUPPORT_EMAIL}`,
     html,
   });
 
-  console.log(`✓ Welcome email sent to ${toEmail} (${specialtyName}, ${price})`);
+  console.log(`✓ Welcome email sent to ${toEmail} (${specialtyName}, ${priceLine})`);
 }
 
 // ── Netlify handler ────────────────────────────────────────────────────────────
@@ -312,8 +332,9 @@ exports.handler = async (event) => {
   }
 
   // Determine price — check for discount coupons first
-  // FAF2026 coupon = £2 first year; standard trial = £20/year
+  // FAF2026 coupon = £2 first year; ABUHB coupon = £15 first year; APM coupon = £15/yr recurring; standard = £20/year
   let price = DEFAULT_PRICE;
+  let couponKind = null; // "FAF2026" | "ABUHB" | "APM" — drives the priceLine wording below
   try {
     // 1. Check session.discount (included in webhook payload)
     const couponCodes = [];
@@ -351,9 +372,36 @@ exports.handler = async (event) => {
       }
     }
 
+    // 4. A coupon attached to a Payment Link / the subscription itself does NOT
+    //    appear on the checkout session — pull it from the subscription. This is
+    //    the path ABUHB Payment Link signups take.
+    if (couponCodes.length === 0 && session.subscription) {
+      try {
+        const sub = await stripe.subscriptions.retrieve(session.subscription, {
+          expand: ["discounts"],
+        });
+        const subDiscounts = sub.discounts || (sub.discount ? [sub.discount] : []);
+        for (const d of subDiscounts) {
+          const c = (d && typeof d === "object") ? d.coupon : null;
+          if (c?.id) couponCodes.push(c.id);
+          if (c?.name) couponCodes.push(c.name);
+        }
+      } catch (subErr) {
+        console.log("Could not retrieve subscription discounts:", subErr.message);
+      }
+    }
+
     console.log("Coupon codes detected:", couponCodes);
-    if (couponCodes.some(c => c.toUpperCase().includes("FAF2026"))) {
+    const norm = couponCodes.map(c => String(c).toUpperCase());
+    if (norm.some(c => c.includes("FAF2026"))) {
       price = "£2";
+      couponKind = "FAF2026";
+    } else if (norm.some(c => c.includes("ABUHB"))) {
+      price = ABUHB_PRICE;
+      couponKind = "ABUHB";
+    } else if (norm.some(c => c.includes("APM"))) {
+      price = APM_PRICE;
+      couponKind = "APM";
     } else if (session.amount_total && session.amount_total > 0) {
       price = formatPrice(session.amount_total);
     }
@@ -367,8 +415,22 @@ exports.handler = async (event) => {
     price = `£${totalPounds}`;
   }
 
+  // Build the human price phrase for the email. FAF2026 and ABUHB are one-time
+  // (first year only), so spell out the renewal. The APM coupon is duration:forever,
+  // so the £15 genuinely recurs — say so, and never imply a £20 renewal.
+  let priceLine;
+  if (couponKind === "FAF2026") {
+    priceLine = `£2 for the first year, then ${DEFAULT_PRICE}/year`;
+  } else if (couponKind === "ABUHB") {
+    priceLine = `${ABUHB_PRICE} for the first year, then ${DEFAULT_PRICE}/year`;
+  } else if (couponKind === "APM") {
+    priceLine = `${APM_PRICE}/year — your APM member rate`;
+  } else {
+    priceLine = `${price}/year`;
+  }
+
   try {
-    await sendWelcomeEmail(email, specialtySlug, price);
+    await sendWelcomeEmail(email, specialtySlug, priceLine);
     return {
       statusCode: 200,
       body: JSON.stringify({ ok: true, email, specialties: specialtySlugs, price }),

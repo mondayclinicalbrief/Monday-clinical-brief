@@ -58,3 +58,5 @@ TA1152 is another step in the same direction as this year's other cardiometaboli
 For primary care, the practical work is identifying the eligible patients — established vascular disease plus a BMI of 27 or more — and folding the conversation into existing secondary-prevention reviews. A change like this reshapes a common consultation quietly. A weekly read of what actually changed is how it becomes practice rather than a headline you half-remember. That is what we built [The Monday Clinical Brief](/#subscribe) to do.
 
 A recent cardiology issue is online in full, with no sign-up required: [read a free sample](/samples/cardiology/).
+
+And if you reflected on this while reading it, that is a CPD entry — see [does reading count as CPD?](/blog/cpd-reading-tool/does-reading-count-as-cpd/) for what to write down.

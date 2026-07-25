@@ -87,6 +87,8 @@ This is a guideline summary for awareness. It is not a substitute for the NICE g
 
 The Monday Clinical Brief publishes weekly summaries of the most important new papers and guideline updates across 31 UK medical specialties — including the kind of guideline change covered here. We do not replace the source documents. We surface them, summarise them, and link to them, so practice-changing material does not get missed in a busy clinical week. For the wider picture on staying current, see our pillar guide on [how to keep up with the medical literature](/blog/medical-journal-digest/how-to-keep-up-with-medical-literature/).
 
+Reading a guideline change like this one counts towards CPD the moment you reflect on it — see [what a credit-bearing entry actually needs](/blog/cpd-reading-tool/does-reading-count-as-cpd/).
+
 Before you subscribe, read a recent general practice issue in full — no sign-up required: [see a free sample](/samples/general-practice/).
 
 [Subscribe to The Monday Clinical Brief](/#subscribe) — £20 a year, no advertising, no sponsored content, just every week's most important reading delivered to your inbox on Monday morning.

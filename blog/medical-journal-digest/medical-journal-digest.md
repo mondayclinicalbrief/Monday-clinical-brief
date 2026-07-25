@@ -36,9 +36,9 @@ This guide explains what a medical journal digest is, why it matters for your cl
 
 __Try Monday Clinical Brief Free__
 
-Get the key papers from The Lancet, BMJ, NEJM, and 20+ journals. Easy to log for CPD. Delivered weekly.
+Every new paper from the five highest-impact journals in your specialty, across 31 UK specialties. Easy to log for CPD. Delivered every Monday.
 
-__[Start Your Free Trial]__
+[Start your four-week free trial](/#subscribe)
 
 ## What Is a Medical Journal Digest?
 
@@ -78,9 +78,9 @@ A digest eliminates decision fatigue by making the selection for you. An editori
 
 __Stop Missing Critical Papers__
 
-Read Monday Clinical Brief every week. 15 minutes. All the papers that matter.
+Read The Monday Clinical Brief every week. Fifteen minutes. All the papers that matter in your specialty.
 
-__[Subscribe Now]__
+[Subscribe to The Monday Clinical Brief](/#subscribe) — £20 a year, no advertising.
 
 ## How to Choose the Right Medical Journal Digest
 
@@ -128,6 +128,6 @@ MCB is used by GPs, hospital consultants, specialty trainees, and other healthca
 
 __Start Reading Smarter__
 
-Stay current with Monday Clinical Brief. Easy to log for CPD. 15 minutes per week. Zero information overload.
+Stay current with The Monday Clinical Brief. Easy to log for CPD, fifteen minutes a week, nothing you do not need.
 
-__[Start Your Free Trial]__
+[Start your four-week free trial](/#subscribe)

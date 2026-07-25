@@ -31,7 +31,7 @@ __Try It Free for 4 Weeks__
 
 No credit card required. Cancel anytime. See why UK doctors start their week with MCB.
 
-__[Start Free Trial]__
+[Start your four-week free trial](/#subscribe)
 
 ## What You Get Every Week
 
@@ -115,6 +115,6 @@ Alerts only, no summaries
 
 __Start Your Free Trial Today__
 
-Start every Monday informed, current, and CPD-ready. 15 minutes. Zero overwhelm.
+Start every Monday informed, current, and CPD-ready. Fifteen minutes, no credit card required.
 
-__[Start Free Trial - No Card Required]__
+[Start your four-week free trial](/#subscribe)

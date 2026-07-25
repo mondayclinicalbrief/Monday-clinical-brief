@@ -181,6 +181,102 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mondayclinicalbrief.co.uk/blog/cpd-reading-tool/does-reading-count-as-cpd/</loc>
+    <lastmod>2026-07-25T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mondayclinicalbrief.co.uk/blog/cpd-reading-tool/fourteenfish-alternatives-cpd-logging/</loc>
+    <lastmod>2026-07-25T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mondayclinicalbrief.co.uk/blog/cpd-reading-tool/free-cpd-trackers-uk-doctors/</loc>
+    <lastmod>2026-07-25T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mondayclinicalbrief.co.uk/blog/cpd-reading-tool/how-many-cpd-points-do-i-need/</loc>
+    <lastmod>2026-07-25T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/clinicalkey-ai-vs-openevidence/</loc>
+    <lastmod>2026-07-25T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/cks-round-up-june-2026/</loc>
+    <lastmod>2026-07-16T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mondayclinicalbrief.co.uk/blog/cpd-reading-tool/using-ai-for-cpd-reflection-uk/</loc>
+    <lastmod>2026-07-03T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/how-to-keep-up-in-palliative-medicine/</loc>
+    <lastmod>2026-07-03T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/nice-ng106-heart-failure-2025-update/</loc>
+    <lastmod>2026-07-03T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/nice-ng12-suspected-cancer-referral-2026/</loc>
+    <lastmod>2026-07-03T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/semaglutide-cardiovascular-risk-nice-2026/</loc>
+    <lastmod>2026-07-16T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/nice-ng136-hypertension-2026/</loc>
+    <lastmod>2026-07-02T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/asthma-bts-nice-sign-ng245-uk-2026/</loc>
+    <lastmod>2026-06-17T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/atrial-fibrillation-anticoagulation-uk-primary-care-2026/</loc>
+    <lastmod>2026-06-17T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/sglt2-inhibitors-ckd-uk-primary-care-2026/</loc>
+    <lastmod>2026-06-16T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/statins-cvd-prevention-uk-primary-care-2026/</loc>
+    <lastmod>2026-06-16T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/medical-journal-digest-vs-podcast/</loc>
     <lastmod>2026-06-09T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
@@ -206,7 +302,7 @@
   </url>
   <url>
     <loc>https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/menopause-hrt-nice-ng23-2026/</loc>
-    <lastmod>2026-06-02T00:00:00.000Z</lastmod>
+    <lastmod>2026-07-16T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -218,7 +314,7 @@
   </url>
   <url>
     <loc>https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/praxis-medicine-uk/</loc>
-    <lastmod>2026-06-02T00:00:00.000Z</lastmod>
+    <lastmod>2026-06-30T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -230,13 +326,13 @@
   </url>
   <url>
     <loc>https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/tirzepatide-gp-qof-2026/</loc>
-    <lastmod>2026-06-02T00:00:00.000Z</lastmod>
+    <lastmod>2026-07-16T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://mondayclinicalbrief.co.uk/blog/journal-summary-subscription/red-whale-nejm-clinician-mcb-compared/</loc>
-    <lastmod>2026-06-02T00:00:00.000Z</lastmod>
+    <lastmod>2026-07-16T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -248,13 +344,13 @@
   </url>
   <url>
     <loc>https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/uk-doctors-lost-ai-tools-2026/</loc>
-    <lastmod>2026-05-25T00:00:00.000Z</lastmod>
+    <lastmod>2026-06-15T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://mondayclinicalbrief.co.uk/blog/cpd-reading-tool/log-journal-reading-for-gmc-revalidation/</loc>
-    <lastmod>2026-06-02T00:00:00.000Z</lastmod>
+    <lastmod>2026-07-16T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -265,26 +361,26 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/heidi-evidence-uk-nhs-excluded/</loc>
-    <lastmod>2026-05-17T00:00:00.000Z</lastmod>
+    <loc>https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/heidi-evidence-uk-in-session-restriction/</loc>
+    <lastmod>2026-07-16T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/nice-ng28-type-2-diabetes-2026/</loc>
-    <lastmod>2026-05-17T00:00:00.000Z</lastmod>
+    <lastmod>2026-07-03T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/chatgpt-for-clinicians-uk/</loc>
-    <lastmod>2026-06-02T00:00:00.000Z</lastmod>
+    <lastmod>2026-06-30T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/palliative-care-journal-digest/</loc>
-    <lastmod>2026-06-02T00:00:00.000Z</lastmod>
+    <lastmod>2026-06-30T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -296,19 +392,19 @@
   </url>
   <url>
     <loc>https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/mcb-vs-nejm-clinician/</loc>
-    <lastmod>2026-06-02T00:00:00.000Z</lastmod>
+    <lastmod>2026-07-16T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/mcb-vs-uptodate/</loc>
-    <lastmod>2026-06-02T00:00:00.000Z</lastmod>
+    <lastmod>2026-07-16T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/openevidence-alternative-uk/</loc>
-    <lastmod>2026-06-02T00:00:00.000Z</lastmod>
+    <lastmod>2026-07-16T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -326,7 +422,7 @@
   </url>
   <url>
     <loc>https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/heidi-evidence-vs-monday-clinical-brief/</loc>
-    <lastmod>2026-06-02T00:00:00.000Z</lastmod>
+    <lastmod>2026-07-16T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -338,7 +434,7 @@
   </url>
   <url>
     <loc>https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/best-medical-journal-digest-services-uk/</loc>
-    <lastmod>2026-04-14T00:00:00.000Z</lastmod>
+    <lastmod>2026-06-30T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

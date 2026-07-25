@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How Many CPD Points Do UK Doctors Need? — The Monday Clinical Brief</title>
+<meta name="description" content="The GMC sets no minimum number of CPD credits. Most Royal Colleges recommend 50 a year and 250 over a cycle. What that means, and how to reach it.">
+<link rel="canonical" href="https://mondayclinicalbrief.co.uk/blog/cpd-reading-tool/how-many-cpd-points-do-i-need/">
+
+
+<!-- Open Graph -->
+<meta property="og:title" content="How Many CPD Points Do UK Doctors Need?">
+<meta property="og:description" content="The GMC sets no minimum number of CPD credits. Most Royal Colleges recommend 50 a year and 250 over a cycle. What that means, and how to reach it.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://mondayclinicalbrief.co.uk/blog/cpd-reading-tool/how-many-cpd-points-do-i-need/">
+
+<meta property="og:site_name" content="The Monday Clinical Brief">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How Many CPD Points Do UK Doctors Need?">
+<meta name="twitter:description" content="The GMC sets no minimum number of CPD credits. Most Royal Colleges recommend 50 a year and 250 over a cycle. What that means, and how to reach it.">
+
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --charcoal: #1c1c1c;
+    --cream: #f7f5f0;
+    --warm-white: #fdfcf9;
+    --sage: #5a7a6a;
+    --sage-light: #e8efeb;
+    --sage-deep: #3d5a4c;
+    --gold: #c4994c;
+    --gold-light: #f5edd8;
+    --text: #3a3a38;
+    --text-muted: #7a7a76;
+    --border: #e2dfd8;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Figtree', sans-serif; color: var(--text); background: var(--warm-white); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+
+  /* ── NAV ── */
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; background: rgba(247,245,240,0.9); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(226,223,216,0.5); }
+  .nav-brand { font-family: 'Instrument Serif', serif; font-size: 1.8rem; font-weight: 700; color: var(--charcoal); text-decoration: none; letter-spacing: -0.02em; }
+  .nav-links { display: flex; gap: 1.5rem; align-items: center; }
+  .nav-links a { font-size: 0.85rem; color: var(--text-muted); text-decoration: none; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--sage-deep); }
+  .nav-cta { background: var(--sage-deep); color: white !important; padding: 0.5rem 1.25rem; border-radius: 40px; font-size: 0.85rem; }
+  .nav-cta:hover { background: var(--charcoal); }
+
+  /* ── BREADCRUMB ── */
+  .breadcrumb { padding: 6rem 2rem 0; max-width: 760px; margin: 0 auto; }
+  .breadcrumb ol { list-style: none; display: flex; flex-wrap: wrap; gap: 0.25rem; font-size: 0.8rem; color: var(--text-muted); }
+  .breadcrumb ol li::after { content: '/'; margin-left: 0.4rem; opacity: 0.4; }
+  .breadcrumb ol li:last-child::after { content: ''; }
+  .breadcrumb a { color: var(--sage); text-decoration: none; }
+  .breadcrumb a:hover { text-decoration: underline; }
+
+  /* ── ARTICLE ── */
+  .article-header { max-width: 760px; margin: 0 auto; padding: 2rem 2rem 0; }
+  .article-cluster { display: inline-block; background: var(--sage-light); color: var(--sage-deep); padding: 0.2rem 0.7rem; border-radius: 4px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 1rem; text-decoration: none; }
+  .article-cluster:hover { background: var(--sage); color: white; }
+  .article-header h1 { font-family: 'Instrument Serif', serif; font-size: clamp(2rem, 4.5vw, 2.8rem); font-weight: 400; color: var(--charcoal); line-height: 1.2; letter-spacing: -0.02em; margin-bottom: 1rem; }
+  .article-meta { font-size: 0.85rem; color: var(--text-muted); display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  .article-meta time { font-weight: 500; }
+
+  /* ── CONTENT ── */
+  .article-content { max-width: 760px; margin: 0 auto; padding: 2.5rem 2rem 4rem; }
+  .article-content h2 { font-family: 'Instrument Serif', serif; font-size: 1.6rem; font-weight: 400; color: var(--charcoal); line-height: 1.3; margin: 2.5rem 0 1rem; }
+  .article-content h3 { font-size: 1.15rem; font-weight: 600; color: var(--charcoal); margin: 2rem 0 0.75rem; }
+  .article-content p { margin-bottom: 1.25rem; font-size: 1.02rem; }
+  .article-content ul, .article-content ol { margin-bottom: 1.25rem; padding-left: 1.5rem; }
+  .article-content li { margin-bottom: 0.4rem; font-size: 1.02rem; }
+  .article-content a { color: var(--sage-deep); text-decoration: underline; text-underline-offset: 2px; }
+  .article-content a:hover { color: var(--charcoal); }
+  .article-content blockquote { border-left: 3px solid var(--sage); padding: 1rem 1.5rem; margin: 1.5rem 0; background: var(--sage-light); border-radius: 0 6px 6px 0; font-style: italic; color: var(--text-muted); }
+  .article-content img { max-width: 100%; height: auto; border-radius: 8px; margin: 1.5rem 0; }
+  .article-content table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.92rem; }
+  .article-content th { background: var(--sage-light); color: var(--sage-deep); font-weight: 600; text-align: left; padding: 0.75rem 1rem; border-bottom: 2px solid var(--sage); }
+  .article-content td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); }
+  .article-content tr:hover td { background: var(--cream); }
+  .article-content code { font-size: 0.9em; background: var(--cream); padding: 0.15em 0.4em; border-radius: 3px; }
+  .article-content pre { background: var(--charcoal); color: var(--cream); padding: 1.25rem; border-radius: 8px; overflow-x: auto; margin: 1.5rem 0; }
+  .article-content pre code { background: none; padding: 0; color: inherit; }
+
+  /* ── CTA BOX ── */
+  .cta-box { background: var(--sage-light); border: 1px solid var(--sage); border-radius: 8px; padding: 1.5rem 2rem; margin: 2rem 0; text-align: center; }
+  .cta-box h3 { font-family: 'Instrument Serif', serif; font-size: 1.3rem; font-weight: 400; color: var(--sage-deep); margin-bottom: 0.5rem; }
+  .cta-box p { color: var(--text-muted); margin-bottom: 1rem; font-size: 0.95rem; }
+  .cta-box .btn-primary { display: inline-block; background: var(--sage-deep); color: white; text-decoration: none; padding: 0.75rem 2rem; border-radius: 60px; font-family: 'Figtree', sans-serif; font-size: 0.95rem; font-weight: 600; transition: all 0.3s ease; }
+  .cta-box .btn-primary:hover { background: var(--charcoal); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
+
+  /* ── FAQ SECTION ── */
+  .faq-section { margin: 3rem 0 2rem; }
+  .faq-section h2 { font-family: 'Instrument Serif', serif; font-size: 1.6rem; color: var(--charcoal); margin-bottom: 1.5rem; }
+  .faq-item { border-bottom: 1px solid var(--border); padding: 1.25rem 0; }
+  .faq-item summary { font-weight: 600; font-size: 1rem; color: var(--charcoal); cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+  .faq-item summary::after { content: '+'; font-size: 1.3rem; color: var(--sage); transition: transform 0.2s; }
+  .faq-item[open] summary::after { content: '−'; }
+  .faq-item p { margin-top: 0.75rem; color: var(--text-muted); font-size: 0.95rem; }
+
+  /* ── RELATED POSTS ── */
+  .related-posts { background: var(--cream); border-radius: 8px; padding: 2rem; margin: 3rem 0; }
+  .related-posts h3 { font-family: 'Instrument Serif', serif; font-size: 1.3rem; color: var(--charcoal); margin-bottom: 1rem; }
+  .related-posts ul { list-style: none; padding: 0; }
+  .related-posts li { padding: 0.5rem 0; border-bottom: 1px solid var(--border); }
+  .related-posts li:last-child { border-bottom: none; }
+  .related-posts a { color: var(--sage-deep); text-decoration: none; font-weight: 500; }
+  .related-posts a:hover { text-decoration: underline; }
+
+  /* ── AUTHOR BOX ── */
+  .author-box { display: flex; gap: 1.5rem; align-items: center; background: var(--cream); border-radius: 8px; padding: 1.5rem; margin: 3rem 0; }
+  .author-avatar { width: 64px; height: 64px; background: var(--sage-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Instrument Serif', serif; font-size: 1.5rem; color: var(--sage); flex-shrink: 0; }
+  .author-info h4 { font-size: 0.95rem; color: var(--charcoal); margin-bottom: 0.25rem; }
+  .author-info p { font-size: 0.85rem; color: var(--text-muted); margin: 0; }
+
+  /* ── FOOTER ── */
+  footer { padding: 3rem 2rem; text-align: center; border-top: 1px solid var(--border); }
+  footer p { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+  footer a { color: var(--sage); text-decoration: none; }
+
+  @media (max-width: 640px) {
+    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; }
+    .nav-links a:not(.nav-cta) { display: none; }
+    body { padding-bottom: 60px; }
+    .breadcrumb { padding-top: 2rem; }
+    .article-header { padding-top: 1rem; }
+    .article-header h1 { font-size: 1.8rem; }
+    .article-content { padding: 1.5rem 1.5rem 3rem; }
+    .author-box { flex-direction: column; text-align: center; }
+  }
+</style>
+
+<!-- Schema.org Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "headline": "How Many CPD Points Do UK Doctors Need?",
+  "description": "The GMC sets no minimum number of CPD credits. Most Royal Colleges recommend 50 a year and 250 over a cycle. What that means, and how to reach it.",
+  "url": "https://mondayclinicalbrief.co.uk/blog/cpd-reading-tool/how-many-cpd-points-do-i-need/",
+  "datePublished": "2026-07-25T00:00:00.000Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Dr Tim Hamilton",
+    "jobTitle": "Consultant in Palliative Medicine",
+    "worksFor": { "@type": "MedicalOrganization", "name": "NHS Wales" },
+    "url": "https://mondayclinicalbrief.co.uk/#about"
+  },
+  "reviewedBy": {
+    "@type": "Person",
+    "name": "Dr Tim Hamilton",
+    "jobTitle": "Consultant in Palliative Medicine"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Monday Clinical Brief",
+    "url": "https://mondayclinicalbrief.co.uk"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://mondayclinicalbrief.co.uk/blog/cpd-reading-tool/how-many-cpd-points-do-i-need/"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://mondayclinicalbrief.co.uk/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://mondayclinicalbrief.co.uk/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "CPD and Revalidation",
+      "item": "https://mondayclinicalbrief.co.uk/blog/cpd-reading-tool/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "How Many CPD Points Do UK Doctors Need?"
+    }
+  ]
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    
+    {
+      "@type": "Question",
+      "name": "How many CPD points do UK doctors need each year?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The GMC sets no minimum number. Most Royal Colleges recommend an average of 50 credits per year and 250 across a five-year revalidation cycle. That recommendation is guidance, not a regulatory threshold — what the GMC requires is that you participate in annual appraisal and can show reflective learning relevant to your scope of practice."
+      }
+    },
+    
+    {
+      "@type": "Question",
+      "name": "Does the GMC require 50 CPD credits a year?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. This is the most common misunderstanding in UK CPD. The GMC&#39;s CPD guidance deliberately avoids setting a credit target, because a fixed number encourages counting hours rather than reflecting on learning. The 50-credit figure comes from Royal College schemes — the RCGP, RCP and RCS all use it."
+      }
+    },
+    
+    {
+      "@type": "Question",
+      "name": "How long is one CPD credit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Roughly one hour of learning activity with reflection. Some college schemes allow more than one credit per hour where the learning clearly changed your practice — the impact is what earns the uplift, and you have to document it."
+      }
+    },
+    
+    {
+      "@type": "Question",
+      "name": "What happens if I fall short of 50 credits?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nothing automatic. Because 50 is a college recommendation rather than a GMC threshold, falling short is a conversation at appraisal, not a revalidation failure. An appraiser will want to understand why, and will look at whether your learning covered your actual scope of practice. Forty well-reflected credits across the right areas is a stronger portfolio than sixty tick-box ones."
+      }
+    },
+    
+    {
+      "@type": "Question",
+      "name": "Can I catch up on CPD at the end of the year?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can, but reconstructed reflections read as reconstructed, and appraisers see thousands of them. Fifteen minutes a week is less total work than a weekend of catch-up, and produces evidence that holds up."
+      }
+    }
+    
+  ]
+}
+</script>
+
+
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav>
+  <a href="/" class="nav-brand">The Monday Clinical Brief</a>
+  <div class="nav-links">
+    <a href="/samples/">Samples</a>
+    <a href="/blog/">Blog</a>
+    <a href="/#how">How it works</a>
+    <a href="/#subscribe" class="nav-cta">Start free trial</a>
+  </div>
+</nav>
+
+<!-- ═══ BREADCRUMB ═══ -->
+<div class="breadcrumb" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="/">Home</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/blog/cpd-reading-tool/">CPD and Revalidation</a></li>
+    <li>How Many CPD Points Do UK Doctors Need?</li>
+  </ol>
+</div>
+
+<!-- ═══ ARTICLE HEADER ═══ -->
+<header class="article-header">
+  
+  <a href="/blog/cpd-reading-tool/" class="article-cluster">CPD and Revalidation</a>
+  
+  <h1>How Many CPD Points Do UK Doctors Need?</h1>
+  <div class="article-meta">
+    <time datetime="2026-07-25T00:00:00.000Z">25 July 2026</time>
+    <span>5 min read</span>
+    <span>By Dr Tim Hamilton, Consultant in Palliative Medicine, NHS Wales</span>
+  </div>
+</header>
+
+<!-- ═══ ARTICLE CONTENT ═══ -->
+<article class="article-content">
+  <p>Most UK doctors believe the GMC requires 50 CPD credits a year. It does not.</p>
+<p>This matters more than it sounds, because the misunderstanding drives the wrong behaviour — counting hours to reach a number, rather than recording learning that changed something. Getting the requirement right makes CPD both less work and more defensible.</p>
+<h2 id="what-the-gmc-actually-requires" tabindex="-1">What the GMC actually requires</h2>
+<p>The GMC's position is that reflection, not volume, is the point. Its CPD guidance states plainly that reflection drives change in performance and is the key to effective CPD. There is no mandated credit total anywhere in it.</p>
+<p>What the GMC does require is straightforward:</p>
+<ul>
+<li>You participate in <strong>annual appraisal</strong> and revalidate every five years.</li>
+<li>Your CPD covers <strong>your whole scope of practice</strong> — including the parts you do occasionally.</li>
+<li>Each activity is accompanied by <strong>reflection</strong>: what you learned, and what it changed.</li>
+</ul>
+<p>That is the regulatory floor. Notice what is absent: any number.</p>
+<h2 id="where-the-50-credit-figure-comes-from" tabindex="-1">Where the 50-credit figure comes from</h2>
+<p>The 50-a-year figure is real, but it is <strong>Royal College guidance, not GMC regulation</strong>. Most colleges have converged on the same shape:</p>
+<table>
+<thead>
+<tr>
+<th>Body</th>
+<th>Recommendation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RCGP</td>
+<td>50 credits a year, 250 over a five-year cycle</td>
+</tr>
+<tr>
+<td>Royal College of Physicians</td>
+<td>An average of 50 credits a year, 250 over five years</td>
+</tr>
+<tr>
+<td>Royal College of Surgeons</td>
+<td>50 hours a year, at least 250 across a cycle</td>
+</tr>
+</tbody>
+</table>
+<p>One credit is roughly one hour of learning with reflection. Some schemes allow more than one credit per hour where the learning demonstrably changed your practice — but you have to show the change, not assert it.</p>
+<p>So the honest answer to &quot;how many do I need&quot; is: <strong>50 a year is the number to plan around, but it is a target you are aiming at, not a line you fail below.</strong> An appraiser confronted with 42 well-reflected credits that map onto your actual clinical work will not blink. Sixty thin ones invite questions.</p>
+<h2 id="check-your-own-college-first" tabindex="-1">Check your own college first</h2>
+<p>The convergence on 50 is not universal, and the detail differs. Some schemes split the total between formal and personal learning; the psychiatry and radiology schemes each have their own structure. If you hold membership of more than one college, the appraisal usually sits with the one covering your main specialty.</p>
+<p>Check your college's current scheme before you plan the year. We summarise the shape of it here; we do not replace it.</p>
+<h2 id="a-realistic-50-credit-year" tabindex="-1">A realistic 50-credit year</h2>
+<p>Here is one way to reach 50 credits from the work of an ordinary clinical year. These are illustrative, not a quota.</p>
+<p><strong>Case-based learning — around 15 credits.</strong> One interesting case a fortnight, with 100 words on what you learned and what you would do differently. Twenty-five reflections at 0.5–1 credit each.</p>
+<p><strong>Reading — around 12 credits.</strong> This is the most under-claimed category by a wide margin, and we have given it <a href="/blog/cpd-reading-tool/cpd-reading-for-doctors-uk/">its own guide</a>. A doctor reading two relevant papers a week has done roughly 100 hours of focused reading over a year. You do not need to claim 100 credits. You do need to claim more than zero.</p>
+<p><strong>Significant event analysis — around 6 credits.</strong> Two or three a year is standard. Each one well-reflected, with the change documented, earns 2 credits comfortably.</p>
+<p><strong>MDT and departmental meetings — around 6 credits.</strong> Attended with reflection, logged the same day. The logging is the part people skip.</p>
+<p><strong>Audit and quality improvement — around 6 credits.</strong> One cycle with demonstrable change and a re-audit counts twice: as supporting information and as learning.</p>
+<p><strong>Formal learning — around 5 credits.</strong> A college update, an online module, a half-day course. This is how most doctors still picture CPD. It is the smallest slice.</p>
+<p>That is 50 without a weekend course or an extra evening.</p>
+<h2 id="the-categories-doctors-routinely-under-claim" tabindex="-1">The categories doctors routinely under-claim</h2>
+<p><strong>Teaching.</strong> Supervising a trainee, teaching at a departmental meeting, running an induction session — all count when reflected on.</p>
+<p><strong>Complaints and patient feedback.</strong> A revalidation paradox: the thing you least want to revisit is a dense source of reflective learning. A well-handled complaint with documented learning is worth 2–3 credits and satisfies a supporting-information requirement at the same time.</p>
+<p><strong>Committee, PCN and appraisal work.</strong> Reflective learning from service and governance work counts. Most doctors doing it forget to claim it.</p>
+<h2 id="what-does-not-count" tabindex="-1">What does not count</h2>
+<p>Passive activity without reflection. Sitting through a webinar and clicking &quot;complete&quot; is not CPD. The same webinar with two sentences on what you will do differently is.</p>
+<p>That distinction is the whole game, and it is why the credit number matters less than doctors think.</p>
+<h2 id="making-the-admin-survivable" tabindex="-1">Making the admin survivable</h2>
+<ul>
+<li><strong>One document, updated weekly.</strong> Date, activity, reflection, impact. Fifteen minutes, same slot every week.</li>
+<li><strong>Write short.</strong> Three sentences per entry is usually enough.</li>
+<li><strong>Use the sentence pattern that earns credit.</strong> &quot;Read X. Changed my approach to Y. Expect to see Z.&quot; Specific, applied, honest.</li>
+<li><strong>Do not reconstruct in March.</strong> Reconstructed reflection is thin, and it is obvious.</li>
+</ul>
+<p>For the mechanics of logging reading specifically, see our guide to <a href="/blog/cpd-reading-tool/log-journal-reading-for-gmc-revalidation/">logging journal reading for GMC revalidation</a>, and the <a href="/blog/cpd-reading-tool/cpd-reflection-template-journal-reading/">reflection template</a> if you want a structure to copy.</p>
+<h2 id="sources" tabindex="-1">Sources</h2>
+<ul>
+<li>GMC — <a href="https://www.gmc-uk.org/education/standards-guidance-and-curricula/guidance/continuing-professional-development">Continuing professional development: guidance for all doctors</a></li>
+<li>GMC — <a href="https://www.gmc-uk.org/registration-and-licensing/managing-your-registration/revalidation/guidance-on-supporting-information-for-revalidation/continuing-professional-development">CPD and supporting information for revalidation</a></li>
+<li>Academy of Medical Royal Colleges — <a href="https://www.aomrc.org.uk/wp-content/uploads/2023/05/Core_Principles_for_CPD_110523.pdf">Core Principles for CPD</a></li>
+</ul>
+<p>Check the current position with the GMC and your own college before relying on any of it. This area moves.</p>
+<hr>
+<p>The Monday Clinical Brief summarises every new paper from the five highest-impact journals in your specialty, every Monday, across 31 UK specialties. Each summary carries the citation and a reflection prompt, so the reading you already do turns into a CPD entry in about five minutes. The MCB CPD Tracker is included free with an annual subscription.</p>
+<p><a href="/#subscribe">Subscribe to The Monday Clinical Brief</a> — £20 a year, no advertising, no sponsored content.</p>
+
+
+  
+  <div class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    
+    <details class="faq-item">
+      <summary>How many CPD points do UK doctors need each year?</summary>
+      <p>The GMC sets no minimum number. Most Royal Colleges recommend an average of 50 credits per year and 250 across a five-year revalidation cycle. That recommendation is guidance, not a regulatory threshold — what the GMC requires is that you participate in annual appraisal and can show reflective learning relevant to your scope of practice.</p>
+    </details>
+    
+    <details class="faq-item">
+      <summary>Does the GMC require 50 CPD credits a year?</summary>
+      <p>No. This is the most common misunderstanding in UK CPD. The GMC&#39;s CPD guidance deliberately avoids setting a credit target, because a fixed number encourages counting hours rather than reflecting on learning. The 50-credit figure comes from Royal College schemes — the RCGP, RCP and RCS all use it.</p>
+    </details>
+    
+    <details class="faq-item">
+      <summary>How long is one CPD credit?</summary>
+      <p>Roughly one hour of learning activity with reflection. Some college schemes allow more than one credit per hour where the learning clearly changed your practice — the impact is what earns the uplift, and you have to document it.</p>
+    </details>
+    
+    <details class="faq-item">
+      <summary>What happens if I fall short of 50 credits?</summary>
+      <p>Nothing automatic. Because 50 is a college recommendation rather than a GMC threshold, falling short is a conversation at appraisal, not a revalidation failure. An appraiser will want to understand why, and will look at whether your learning covered your actual scope of practice. Forty well-reflected credits across the right areas is a stronger portfolio than sixty tick-box ones.</p>
+    </details>
+    
+    <details class="faq-item">
+      <summary>Can I catch up on CPD at the end of the year?</summary>
+      <p>You can, but reconstructed reflections read as reconstructed, and appraisers see thousands of them. Fifteen minutes a week is less total work than a weekend of catch-up, and produces evidence that holds up.</p>
+    </details>
+    
+  </div>
+  
+
+  <!-- CTA Box -->
+  <div class="cta-box">
+    <h3>Stay on top of the evidence</h3>
+    <p>Weekly journal digests for 31 medical specialties. Structured summaries, every Monday.</p>
+    <a href="/#subscribe" class="btn-primary">Start your free trial →</a>
+  </div>
+
+  <!-- ═══ RELATED IN THIS CLUSTER (hub-and-spoke internal linking) ═══ -->
+  
+  <div class="related-posts">
+    <h3>More on CPD and Revalidation</h3>
+    <ul>
+      <li><a href="/blog/cpd-reading-tool/guide/">How to Earn CPD Points by Reading Medical Journals</a> — the complete guide</li>
+      <li><a href="/blog/cpd-reading-tool/does-reading-count-as-cpd/">Does Reading Count as CPD?</a></li>
+      <li><a href="/blog/cpd-reading-tool/fourteenfish-alternatives-cpd-logging/">FourteenFish Alternatives for Logging CPD</a></li>
+      <li><a href="/blog/cpd-reading-tool/free-cpd-trackers-uk-doctors/">Free CPD Trackers for UK Doctors: The Options</a></li>
+      <li><a href="/blog/cpd-reading-tool/using-ai-for-cpd-reflection-uk/">Using AI for Reflective Practice: The Rules for UK Doctors</a></li>
+      <li><a href="/blog/cpd-reading-tool/cpd-reflection-template-journal-reading/">CPD Reflection Template for Journal Reading</a></li>
+      <li><a href="/blog/cpd-reading-tool/log-journal-reading-for-gmc-revalidation/">How to Log Journal Reading for GMC Revalidation</a></li>
+      <li><a href="/blog/cpd-reading-tool/best-cpd-reading-tools-doctors-uk/">Best CPD Tools for UK Doctors</a></li>
+      <li><a href="/blog/cpd-reading-tool/cpd-reading-for-doctors-uk/">What Counts as CPD for UK Doctors</a></li>
+    </ul>
+    <p style="margin-top:1rem;margin-bottom:0;"><a href="/samples/">Browse sample digests for all 31 specialties →</a></p>
+  </div>
+  
+</article>
+
+<!-- ═══ AUTHOR ═══ -->
+
+<div style="max-width: 760px; margin: 0 auto; padding: 0 2rem;">
+  <div class="author-box">
+    <div class="author-avatar">TH</div>
+    <div class="author-info">
+      <h4>Dr Tim Hamilton · Consultant in Palliative Medicine, NHS Wales</h4>
+      <p>Dr Tim Hamilton is a Consultant in Palliative Medicine in NHS Wales and the founder of The Monday Clinical Brief. He built MCB to help busy UK clinicians keep up with the literature across 31 specialties.</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <p>&copy; 2025 The Monday Clinical Brief. All rights reserved.</p>
+  <p><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/blog/">Blog</a></p>
+</footer>
+
+</body>
+</html>

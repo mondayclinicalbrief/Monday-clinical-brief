@@ -74,6 +74,8 @@ This is a guideline and policy summary for awareness. It is not a substitute for
 
 The Monday Clinical Brief publishes weekly summaries of the most important new papers and guideline updates across 31 UK medical specialties — including prescribing and policy changes like this one. We surface them, summarise them, and link to them, so practice-changing material does not get missed in a busy week. For the bigger picture, see our pillar guide on [how to keep up with the medical literature](/blog/medical-journal-digest/how-to-keep-up-with-medical-literature/).
 
+Worth logging while it is fresh: a guideline or QOF change you have read and acted on is exactly the kind of entry appraisers want. Our guide to [logging journal reading for GMC revalidation](/blog/cpd-reading-tool/log-journal-reading-for-gmc-revalidation/) sets out the five fields it needs.
+
 Before you subscribe, read a recent general practice issue in full — no sign-up required: [see a free sample](/samples/general-practice/).
 
 [Subscribe to The Monday Clinical Brief](/#subscribe) — £20 a year, no advertising, no sponsored content, just every week's most important reading delivered to your inbox on Monday morning.

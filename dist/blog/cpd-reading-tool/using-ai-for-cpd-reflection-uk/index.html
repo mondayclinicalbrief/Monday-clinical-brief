@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Using AI for CPD Reflection: The Rules for UK Doctors — The Monday Clinical Brief</title>
+<meta name="description" content="You can use AI to help with CPD reflection — but not to reflect for you. The GMC and Royal College position, the three lines not to cross, and a workflow.">
+<link rel="canonical" href="https://mondayclinicalbrief.co.uk/blog/cpd-reading-tool/using-ai-for-cpd-reflection-uk/">
+
+
+<!-- Open Graph -->
+<meta property="og:title" content="Using AI for CPD Reflection: The Rules for UK Doctors">
+<meta property="og:description" content="You can use AI to help with CPD reflection — but not to reflect for you. The GMC and Royal College position, the three lines not to cross, and a workflow.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://mondayclinicalbrief.co.uk/blog/cpd-reading-tool/using-ai-for-cpd-reflection-uk/">
+
+<meta property="og:site_name" content="The Monday Clinical Brief">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Using AI for CPD Reflection: The Rules for UK Doctors">
+<meta name="twitter:description" content="You can use AI to help with CPD reflection — but not to reflect for you. The GMC and Royal College position, the three lines not to cross, and a workflow.">
+
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --charcoal: #1c1c1c;
+    --cream: #f7f5f0;
+    --warm-white: #fdfcf9;
+    --sage: #5a7a6a;
+    --sage-light: #e8efeb;
+    --sage-deep: #3d5a4c;
+    --gold: #c4994c;
+    --gold-light: #f5edd8;
+    --text: #3a3a38;
+    --text-muted: #7a7a76;
+    --border: #e2dfd8;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Figtree', sans-serif; color: var(--text); background: var(--warm-white); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+
+  /* ── NAV ── */
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; background: rgba(247,245,240,0.9); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(226,223,216,0.5); }
+  .nav-brand { font-family: 'Instrument Serif', serif; font-size: 1.8rem; font-weight: 700; color: var(--charcoal); text-decoration: none; letter-spacing: -0.02em; }
+  .nav-links { display: flex; gap: 1.5rem; align-items: center; }
+  .nav-links a { font-size: 0.85rem; color: var(--text-muted); text-decoration: none; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--sage-deep); }
+  .nav-cta { background: var(--sage-deep); color: white !important; padding: 0.5rem 1.25rem; border-radius: 40px; font-size: 0.85rem; }
+  .nav-cta:hover { background: var(--charcoal); }
+
+  /* ── BREADCRUMB ── */
+  .breadcrumb { padding: 6rem 2rem 0; max-width: 760px; margin: 0 auto; }
+  .breadcrumb ol { list-style: none; display: flex; flex-wrap: wrap; gap: 0.25rem; font-size: 0.8rem; color: var(--text-muted); }
+  .breadcrumb ol li::after { content: '/'; margin-left: 0.4rem; opacity: 0.4; }
+  .breadcrumb ol li:last-child::after { content: ''; }
+  .breadcrumb a { color: var(--sage); text-decoration: none; }
+  .breadcrumb a:hover { text-decoration: underline; }
+
+  /* ── ARTICLE ── */
+  .article-header { max-width: 760px; margin: 0 auto; padding: 2rem 2rem 0; }
+  .article-cluster { display: inline-block; background: var(--sage-light); color: var(--sage-deep); padding: 0.2rem 0.7rem; border-radius: 4px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 1rem; text-decoration: none; }
+  .article-cluster:hover { background: var(--sage); color: white; }
+  .article-header h1 { font-family: 'Instrument Serif', serif; font-size: clamp(2rem, 4.5vw, 2.8rem); font-weight: 400; color: var(--charcoal); line-height: 1.2; letter-spacing: -0.02em; margin-bottom: 1rem; }
+  .article-meta { font-size: 0.85rem; color: var(--text-muted); display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  .article-meta time { font-weight: 500; }
+
+  /* ── CONTENT ── */
+  .article-content { max-width: 760px; margin: 0 auto; padding: 2.5rem 2rem 4rem; }
+  .article-content h2 { font-family: 'Instrument Serif', serif; font-size: 1.6rem; font-weight: 400; color: var(--charcoal); line-height: 1.3; margin: 2.5rem 0 1rem; }
+  .article-content h3 { font-size: 1.15rem; font-weight: 600; color: var(--charcoal); margin: 2rem 0 0.75rem; }
+  .article-content p { margin-bottom: 1.25rem; font-size: 1.02rem; }
+  .article-content ul, .article-content ol { margin-bottom: 1.25rem; padding-left: 1.5rem; }
+  .article-content li { margin-bottom: 0.4rem; font-size: 1.02rem; }
+  .article-content a { color: var(--sage-deep); text-decoration: underline; text-underline-offset: 2px; }
+  .article-content a:hover { color: var(--charcoal); }
+  .article-content blockquote { border-left: 3px solid var(--sage); padding: 1rem 1.5rem; margin: 1.5rem 0; background: var(--sage-light); border-radius: 0 6px 6px 0; font-style: italic; color: var(--text-muted); }
+  .article-content img { max-width: 100%; height: auto; border-radius: 8px; margin: 1.5rem 0; }
+  .article-content table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.92rem; }
+  .article-content th { background: var(--sage-light); color: var(--sage-deep); font-weight: 600; text-align: left; padding: 0.75rem 1rem; border-bottom: 2px solid var(--sage); }
+  .article-content td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); }
+  .article-content tr:hover td { background: var(--cream); }
+  .article-content code { font-size: 0.9em; background: var(--cream); padding: 0.15em 0.4em; border-radius: 3px; }
+  .article-content pre { background: var(--charcoal); color: var(--cream); padding: 1.25rem; border-radius: 8px; overflow-x: auto; margin: 1.5rem 0; }
+  .article-content pre code { background: none; padding: 0; color: inherit; }
+
+  /* ── CTA BOX ── */
+  .cta-box { background: var(--sage-light); border: 1px solid var(--sage); border-radius: 8px; padding: 1.5rem 2rem; margin: 2rem 0; text-align: center; }
+  .cta-box h3 { font-family: 'Instrument Serif', serif; font-size: 1.3rem; font-weight: 400; color: var(--sage-deep); margin-bottom: 0.5rem; }
+  .cta-box p { color: var(--text-muted); margin-bottom: 1rem; font-size: 0.95rem; }
+  .cta-box .btn-primary { display: inline-block; background: var(--sage-deep); color: white; text-decoration: none; padding: 0.75rem 2rem; border-radius: 60px; font-family: 'Figtree', sans-serif; font-size: 0.95rem; font-weight: 600; transition: all 0.3s ease; }
+  .cta-box .btn-primary:hover { background: var(--charcoal); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
+
+  /* ── FAQ SECTION ── */
+  .faq-section { margin: 3rem 0 2rem; }
+  .faq-section h2 { font-family: 'Instrument Serif', serif; font-size: 1.6rem; color: var(--charcoal); margin-bottom: 1.5rem; }
+  .faq-item { border-bottom: 1px solid var(--border); padding: 1.25rem 0; }
+  .faq-item summary { font-weight: 600; font-size: 1rem; color: var(--charcoal); cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+  .faq-item summary::after { content: '+'; font-size: 1.3rem; color: var(--sage); transition: transform 0.2s; }
+  .faq-item[open] summary::after { content: '−'; }
+  .faq-item p { margin-top: 0.75rem; color: var(--text-muted); font-size: 0.95rem; }
+
+  /* ── RELATED POSTS ── */
+  .related-posts { background: var(--cream); border-radius: 8px; padding: 2rem; margin: 3rem 0; }
+  .related-posts h3 { font-family: 'Instrument Serif', serif; font-size: 1.3rem; color: var(--charcoal); margin-bottom: 1rem; }
+  .related-posts ul { list-style: none; padding: 0; }
+  .related-posts li { padding: 0.5rem 0; border-bottom: 1px solid var(--border); }
+  .related-posts li:last-child { border-bottom: none; }
+  .related-posts a { color: var(--sage-deep); text-decoration: none; font-weight: 500; }
+  .related-posts a:hover { text-decoration: underline; }
+
+  /* ── AUTHOR BOX ── */
+  .author-box { display: flex; gap: 1.5rem; align-items: center; background: var(--cream); border-radius: 8px; padding: 1.5rem; margin: 3rem 0; }
+  .author-avatar { width: 64px; height: 64px; background: var(--sage-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Instrument Serif', serif; font-size: 1.5rem; color: var(--sage); flex-shrink: 0; }
+  .author-info h4 { font-size: 0.95rem; color: var(--charcoal); margin-bottom: 0.25rem; }
+  .author-info p { font-size: 0.85rem; color: var(--text-muted); margin: 0; }
+
+  /* ── FOOTER ── */
+  footer { padding: 3rem 2rem; text-align: center; border-top: 1px solid var(--border); }
+  footer p { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+  footer a { color: var(--sage); text-decoration: none; }
+
+  @media (max-width: 640px) {
+    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; }
+    .nav-links a:not(.nav-cta) { display: none; }
+    body { padding-bottom: 60px; }
+    .breadcrumb { padding-top: 2rem; }
+    .article-header { padding-top: 1rem; }
+    .article-header h1 { font-size: 1.8rem; }
+    .article-content { padding: 1.5rem 1.5rem 3rem; }
+    .author-box { flex-direction: column; text-align: center; }
+  }
+</style>
+
+<!-- Schema.org Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Using AI for CPD Reflection: The Rules for UK Doctors",
+  "description": "You can use AI to help with CPD reflection — but not to reflect for you. The GMC and Royal College position, the three lines not to cross, and a workflow.",
+  "url": "https://mondayclinicalbrief.co.uk/blog/cpd-reading-tool/using-ai-for-cpd-reflection-uk/",
+  "datePublished": "2026-07-03T00:00:00.000Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Dr Tim Hamilton",
+    "jobTitle": "Consultant in Palliative Medicine",
+    "worksFor": { "@type": "MedicalOrganization", "name": "NHS Wales" },
+    "url": "https://mondayclinicalbrief.co.uk/#about"
+  },
+  "reviewedBy": {
+    "@type": "Person",
+    "name": "Dr Tim Hamilton",
+    "jobTitle": "Consultant in Palliative Medicine"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Monday Clinical Brief",
+    "url": "https://mondayclinicalbrief.co.uk"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://mondayclinicalbrief.co.uk/blog/cpd-reading-tool/using-ai-for-cpd-reflection-uk/"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://mondayclinicalbrief.co.uk/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://mondayclinicalbrief.co.uk/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "CPD and Revalidation",
+      "item": "https://mondayclinicalbrief.co.uk/blog/cpd-reading-tool/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Using AI for Reflective Practice: The Rules for UK Doctors"
+    }
+  ]
+}
+</script>
+
+
+
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav>
+  <a href="/" class="nav-brand">The Monday Clinical Brief</a>
+  <div class="nav-links">
+    <a href="/samples/">Samples</a>
+    <a href="/blog/">Blog</a>
+    <a href="/#how">How it works</a>
+    <a href="/#subscribe" class="nav-cta">Start free trial</a>
+  </div>
+</nav>
+
+<!-- ═══ BREADCRUMB ═══ -->
+<div class="breadcrumb" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="/">Home</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/blog/cpd-reading-tool/">CPD and Revalidation</a></li>
+    <li>Using AI for Reflective Practice: The Rules for UK Doctors</li>
+  </ol>
+</div>
+
+<!-- ═══ ARTICLE HEADER ═══ -->
+<header class="article-header">
+  
+  <a href="/blog/cpd-reading-tool/" class="article-cluster">CPD and Revalidation</a>
+  
+  <h1>Using AI for Reflective Practice: The Rules for UK Doctors</h1>
+  <div class="article-meta">
+    <time datetime="2026-07-03T00:00:00.000Z">3 July 2026</time>
+    <span>5 min read</span>
+    <span>By Dr Tim Hamilton, Consultant in Palliative Medicine, NHS Wales</span>
+  </div>
+</header>
+
+<!-- ═══ ARTICLE CONTENT ═══ -->
+<article class="article-content">
+  <h1>Using AI for Reflective Practice: The Rules for UK Doctors</h1>
+<p>Plenty of doctors already open a general-purpose AI tool to help with an appraisal reflection. The question is not whether it happens — it does — but whether it is allowed, and where the line sits.</p>
+<p>The short version: you can use AI to help you reflect. You cannot use it to reflect <em>for</em> you. The insight has to be yours, patient-identifiable data has to stay out, and you are accountable for whatever you submit. This post sets out what the regulators say, the three lines not to cross, and a workflow that keeps AI on the right side of them.</p>
+<p>We summarise the guidance; we do not replace it. Check the current GMC position and your own college's rules before you rely on anything here — this area is moving quickly.</p>
+<h2 id="what-the-regulators-say" tabindex="-1">What the regulators say</h2>
+<p>No UK regulator bans the use of AI in reflective practice. None mandates it either. The common thread is narrower, and more useful, than a yes or no.</p>
+<p><strong>The GMC</strong> does not prescribe <em>how</em> you reflect. Its reflective-practice guidance is clear that reflection must be meaningful and demonstrate insight and learning — not a mechanical record of events. And the accountability principle at the heart of <em>Good Medical Practice</em> (2024) carries straight across to reflection: you are responsible for your professional record, so whatever you write, you own.</p>
+<p><strong>The Royal Colleges</strong> have gone further on AI specifically. The RCPCH's guidance on AI in portfolios and assessments puts it plainly: it is &quot;neither possible nor desirable to mandate that doctors should never use AI&quot; — but AI should <em>supplement</em>, not replace, reflective writing. Entries &quot;must relate to real events and cases.&quot; It warns against a &quot;purely mechanistic 'cut and paste' approach,&quot; and states that feedback and self-reflection &quot;should not be generated by AI,&quot; because the value is in the authenticity.</p>
+<p>Put together, the position is consistent: AI can support the <em>process</em> of reflecting. It cannot supply the <em>substance</em>. The learning has to be real, and it has to be yours.</p>
+<h2 id="the-three-lines-you-don't-cross" tabindex="-1">The three lines you don't cross</h2>
+<p><strong>1. Don't let AI write the reflection for you.</strong> A reflection is evidence that <em>you</em> thought about something and changed how you practise. An AI-generated paragraph is neither. Submitting AI-written reflection as though it were your own is treated as a probity matter, not a question of style.</p>
+<p><strong>2. Keep patient-identifiable information out of AI tools.</strong> This is a confidentiality duty and a data-protection one at once. Many general-purpose AI tools retain and train on what you type. Anonymise fully before any clinical detail goes near one — the same standard you already apply to written reflection.</p>
+<p><strong>3. You are accountable for accuracy.</strong> General-purpose AI can state things confidently and wrongly. If a tool helps you summarise a paper or a guideline, the responsibility for what you record — and then act on — is still yours. Check anything factual against the source.</p>
+<h2 id="where-ai-genuinely-helps" tabindex="-1">Where AI genuinely helps</h2>
+<p>Within those lines, there is real and legitimate use:</p>
+<ul>
+<li><strong>Prompting your thinking.</strong> &quot;What might be worth reflecting on after reading this paper?&quot; is a fair way to get unstuck — as long as the answer you write is your own.</li>
+<li><strong>Structuring a draft you have already thought through.</strong> You supply the insight; the tool helps you order it.</li>
+<li><strong>Summarising an article</strong> so you can spend your limited time on the reflection rather than the reading.</li>
+</ul>
+<p>The distinction in every case is the same: AI does the scaffolding, you do the reflecting.</p>
+<h2 id="a-workflow-that-stays-inside-the-rules" tabindex="-1">A workflow that stays inside the rules</h2>
+<ol>
+<li>Read the paper or guideline and form your own one-line takeaway — what, if anything, changes for your practice.</li>
+<li>If it helps, use AI to prompt or tidy — never to invent the takeaway.</li>
+<li>Write the reflection in your own words, tied to your real, anonymised cases and decisions.</li>
+<li>Keep all patient-identifiable detail out of any tool.</li>
+<li>Own the final entry. It should read like you, because it is you.</li>
+</ol>
+<h2 id="how-the-mcb-cpd-tracker-fits" tabindex="-1">How the MCB CPD Tracker fits</h2>
+<p>We built the MCB CPD Tracker — included free with an annual <a href="/#subscribe">Monday Clinical Brief subscription</a> — around exactly these lines. Its optional &quot;Generate AI draft&quot; feature sends only the article's details — title, journal, category, summary — to the AI. It does not send your name, your patients' data, or your own words. And it will not let a draft stand as your reflection: you have to review and personalise it before it is saved, because reflection has to be personal to count. It is AI-assisted reflection that keeps the insight, and the accountability, with you.</p>
+<p>For the reflection itself, our <a href="/blog/cpd-reading-tool/cpd-reflection-template-journal-reading/">CPD reflection template</a> and the guide to <a href="/blog/cpd-reading-tool/log-journal-reading-for-gmc-revalidation/">logging journal reading for GMC revalidation</a> cover the wider workflow.</p>
+<h2 id="frequently-asked-questions" tabindex="-1">Frequently Asked Questions</h2>
+<h3 id="can-i-use-chatgpt-to-write-my-appraisal-reflection%3F" tabindex="-1">Can I use ChatGPT to write my appraisal reflection?</h3>
+<p>You can use it to help — to prompt your thinking or tidy a draft — but not to generate the reflection itself. The entry has to reflect your own insight and learning, and you are accountable for it. Submitting AI-written text as your own reflection is a probity issue. And never paste patient-identifiable information into a general-purpose tool.</p>
+<h3 id="is-using-ai-for-reflection-against-gmc-rules%3F" tabindex="-1">Is using AI for reflection against GMC rules?</h3>
+<p>No UK regulator bans it. The GMC does not prescribe how you reflect, only that reflection is meaningful and shows insight; the Royal Colleges accept that AI will be used but require that it supplements rather than replaces your own reflection. Check the current GMC and college guidance, as the position is developing.</p>
+<h3 id="is-it-safe-to-put-patient-details-into-an-ai-tool%3F" tabindex="-1">Is it safe to put patient details into an AI tool?</h3>
+<p>No. Treat it as you would any confidentiality decision and anonymise fully first. Many AI tools retain and train on what you enter, so identifiable clinical detail should never go in.</p>
+<h3 id="will-my-appraiser-mind-that-i-used-ai%3F" tabindex="-1">Will my appraiser mind that I used AI?</h3>
+<p>There is no rule against AI assistance. What an appraiser looks for is a reflection that shows genuine insight and a change in practice. If the entry does that and is truly yours, the tool you used to structure it is not the issue. A generic, insight-free entry is the problem — whoever, or whatever, wrote it.</p>
+
+
+  
+
+  <!-- CTA Box -->
+  <div class="cta-box">
+    <h3>Stay on top of the evidence</h3>
+    <p>Weekly journal digests for 31 medical specialties. Structured summaries, every Monday.</p>
+    <a href="/#subscribe" class="btn-primary">Start your free trial →</a>
+  </div>
+
+  <!-- ═══ RELATED IN THIS CLUSTER (hub-and-spoke internal linking) ═══ -->
+  
+  <div class="related-posts">
+    <h3>More on CPD and Revalidation</h3>
+    <ul>
+      <li><a href="/blog/cpd-reading-tool/guide/">How to Earn CPD Points by Reading Medical Journals</a> — the complete guide</li>
+      <li><a href="/blog/cpd-reading-tool/does-reading-count-as-cpd/">Does Reading Count as CPD?</a></li>
+      <li><a href="/blog/cpd-reading-tool/fourteenfish-alternatives-cpd-logging/">FourteenFish Alternatives for Logging CPD</a></li>
+      <li><a href="/blog/cpd-reading-tool/free-cpd-trackers-uk-doctors/">Free CPD Trackers for UK Doctors: The Options</a></li>
+      <li><a href="/blog/cpd-reading-tool/how-many-cpd-points-do-i-need/">How Many CPD Points Do UK Doctors Need?</a></li>
+      <li><a href="/blog/cpd-reading-tool/cpd-reflection-template-journal-reading/">CPD Reflection Template for Journal Reading</a></li>
+      <li><a href="/blog/cpd-reading-tool/log-journal-reading-for-gmc-revalidation/">How to Log Journal Reading for GMC Revalidation</a></li>
+      <li><a href="/blog/cpd-reading-tool/best-cpd-reading-tools-doctors-uk/">Best CPD Tools for UK Doctors</a></li>
+      <li><a href="/blog/cpd-reading-tool/cpd-reading-for-doctors-uk/">What Counts as CPD for UK Doctors</a></li>
+    </ul>
+    <p style="margin-top:1rem;margin-bottom:0;"><a href="/samples/">Browse sample digests for all 31 specialties →</a></p>
+  </div>
+  
+</article>
+
+<!-- ═══ AUTHOR ═══ -->
+
+<div style="max-width: 760px; margin: 0 auto; padding: 0 2rem;">
+  <div class="author-box">
+    <div class="author-avatar">TH</div>
+    <div class="author-info">
+      <h4>Dr Tim Hamilton · Consultant in Palliative Medicine, NHS Wales</h4>
+      <p>Dr Tim Hamilton is a Consultant in Palliative Medicine in NHS Wales and the founder of The Monday Clinical Brief. He built MCB to help busy UK clinicians keep up with the literature across 31 specialties.</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <p>&copy; 2025 The Monday Clinical Brief. All rights reserved.</p>
+  <p><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/blog/">Blog</a></p>
+</footer>
+
+</body>
+</html>

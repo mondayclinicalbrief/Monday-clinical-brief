@@ -23,7 +23,7 @@ const SITE_URL = process.env.URL || "https://mondayclinicalbrief.co.uk";
 
 const SPECIALTY_NAMES = {
   "acute-medicine": "Acute Medicine",
-  "anaesthesiology": "Anaesthetics",
+  "anaesthetics": "Anaesthetics",
   "cardiology": "Cardiology",
   "cardiothoracic-surgery": "Cardiothoracic Surgery",
   "dermatology": "Dermatology",
