@@ -20,3 +20,10 @@
 /ad-free  /  301
 /why-uk/  /  301
 /why-uk  /  301
+
+# 2026-07-26: /specialty/palliative-care/ was an orphan in dist/ with no source
+# file — unlinked, absent from the sitemap, and duplicating the H1 and title of
+# the real post below. Removed from dist/; redirected so any external inbound
+# links still land somewhere correct.
+/specialty/palliative-care/  /blog/medical-journal-digest/palliative-care-journal-digest/  301!
+/specialty/palliative-care  /blog/medical-journal-digest/palliative-care-journal-digest/  301!

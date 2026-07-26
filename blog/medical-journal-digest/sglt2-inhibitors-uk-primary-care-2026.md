@@ -20,8 +20,6 @@ faqs:
     answer: "Not automatically. Patients on metformin monotherapy with HbA1c at target, no cardiovascular or renal indication for SGLT2 addition, and no specific clinical reason to change do not need their regimen changed. The NG28 2026 update changes the default for new prescribing decisions; existing therapy should be reviewed at the usual cycle. That said, many patients on the existing diabetes register will now qualify for SGLT2 addition and a targeted review is the highest-yield response."
 ---
 
-# SGLT2 Inhibitors in UK Primary Care 2026: What NICE NG28 Means in Practice
-
 The February 2026 NICE NG28 update moved SGLT2 inhibitors to first-line therapy for most adults with type 2 diabetes. We covered the headline shift in our [NG28 update summary](/blog/medical-journal-digest/nice-ng28-type-2-diabetes-2026/). This post is the operational companion piece — the agents, the eligibility, the cautions, and the workflow at the GP-appointment level.
 
 It is written for UK GPs, GP registrars, GP pharmacists, advanced clinical practitioners, and trainees in primary care and general medicine. The NICE guideline and the BNF entry for each licensed agent remain the authoritative references. This post summarises and links; it does not substitute for clinical judgement.

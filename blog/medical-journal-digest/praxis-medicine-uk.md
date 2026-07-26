@@ -21,8 +21,6 @@ faqs:
     answer: "All three are UK-oriented clinical AI query tools grounded in NICE and related sources. iatroX is MHRA-registered and UKCA-marked and available now. Heidi Evidence is strong but, for UK and EU clinicians, its answer feature is restricted to out-of-session use — it cannot answer during a live consultation. Praxis is the newest and best-funded entrant, but pricing and individual access are still settling. None of them is a literature digest."
 ---
 
-# Praxis Medicine UK: What It Is, What It Costs, and Where It Fits
-
 Praxis Medicine is a new UK-focused clinical AI search tool, backed by Balderton Capital and Creandum and founded by Voi co-founder Douglas Stark. It answers clinical questions using UK-first sources — NICE Guidelines, NICE CKS, NHS Digital and Europe PMC. Pricing is not yet public as of June 2026. It is a query tool, not a literature digest — useful for the question you bring, but it will not tell you what changed in your specialty this week.
 
 If you have searched for "Praxis Medicine UK" and found very little, that is because the product is new. Here is a clear account of what it does and where it sits.

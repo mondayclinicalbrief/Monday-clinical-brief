@@ -23,8 +23,6 @@ faqs:
     answer: "Yes. In 2026, Heidi Evidence — the clinical decision support arm of Heidi Health, partnered with NICE, BMJ Group, MIMS and HealthPathways — restricted its UK and EU evidence querying to out-of-session use only, so it cannot answer during a live consultation. Three credible clinical AI tools have now pulled back from UK point-of-care use in six weeks: ChatGPT for Clinicians (23 April, UK/EEA excluded), OpenEvidence (28 April, UK/EU withdrawn), and Heidi Evidence (in-session restricted)."
 ---
 
-# Looking for an OpenEvidence Alternative in the UK?
-
 OpenEvidence is no longer available to UK doctors. The platform withdrew from the UK and EU on 28 April 2026, citing uncertainty around AI regulation. It went quietly — no replacement announced, no UK handoff.
 
 If you used it, you'll have noticed the gap.

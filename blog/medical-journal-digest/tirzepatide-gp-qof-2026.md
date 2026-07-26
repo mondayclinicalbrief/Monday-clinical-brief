@@ -21,8 +21,6 @@ faqs:
     answer: "NICE TA1026 sets out the eligibility criteria, and the NHS England interim commissioning guidance covers implementation. The BNF entry for tirzepatide is the authoritative reference for dosing, titration, and cautions. Local formulary and ICB or Health Board positions determine what can be prescribed in each area."
 ---
 
-# Can You Prescribe Tirzepatide Under QOF 2026/27? The Mounjaro Decision Facing GPs
-
 From 1 April 2026, NHS England incorporated [tirzepatide](https://www.nice.org.uk/guidance/ta1026) (Mounjaro) prescribing for obesity into the 2026/27 GP contract through new QOF indicators. NICE TA1026 recommends it for adults with a BMI of at least 35 kg/m² (2.5 kg/m² lower for several ethnic groups), alongside a reduced-calorie diet and increased physical activity. GPs are not mandated to prescribe it, and what you can actually prescribe depends on local commissioning. Here is the operational summary.
 
 This post is a plain-English summary for busy clinicians. We summarise; we do not replace NICE or NHS England guidance, and nothing here substitutes for clinical judgement on individual patients.

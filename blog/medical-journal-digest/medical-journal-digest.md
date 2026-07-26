@@ -1,5 +1,6 @@
 ---
 title: "Medical Journal Digest"
+heading: "Medical Journal Digest: The Complete Guide for Busy Clinicians"
 seoTitle: "Medical Journal Digest: The Complete Guide for Busy Clinicians | MCB"
 metaDescription: "Struggling to keep up with medical journals? Our medical journal digest delivers the key papers you need in minutes. Read the complete guide. Easy to log for CPD."
 description: "The definitive guide to medical journal digests — what they are, how they work, and how UK clinicians use them to stay evidence-based."
@@ -25,8 +26,6 @@ faqs:
   - question: "Is a journal digest a replacement for reading full papers?"
     answer: "No. A digest is a triage tool — it helps you identify which papers are most relevant to your practice so you can read those in full. It replaces the hours spent scanning tables of contents, not the deep reading itself."
 ---
-
-# Medical Journal Digest: The Complete Guide for Busy Clinicians
 
 More than 7,000 medical research papers are published every single week. For a practising clinician in the UK, keeping up with even a fraction of that output is not a time management problem. It is a structural impossibility.
 

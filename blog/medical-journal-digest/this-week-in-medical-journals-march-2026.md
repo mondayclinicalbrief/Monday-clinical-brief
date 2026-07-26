@@ -9,8 +9,6 @@ schemaType: "MedicalWebPage"
 pillar: false
 ---
 
-# This Week in Medical Journals: March 2026 Highlights
-
 *Note: The papers below are illustrative examples to demonstrate the format of our weekly roundup. For real weekly digests tailored to your specialty, [start your free trial](/#subscribe).*
 
 If you're keeping up with the major journals—The Lancet, BMJ, NEJM, JAMA—while juggling a full clinic, you're probably falling behind. This week has brought some noteworthy findings across cardiovascular medicine, primary care, oncology, and mental health that are worth your attention. Here's what you need to know.

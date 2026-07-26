@@ -21,8 +21,6 @@ faqs:
     answer: "No. As of 2026, UpToDate Expert AI is available to individual subscribers in the US and Canada only. UK individuals pay roughly £455/year for standard UpToDate without the Expert AI layer — the same price for a more limited product than US subscribers receive."
 ---
 
-# Red Whale, NEJM Clinician and The Monday Clinical Brief: the £20, £75 and £210 Question
-
 Three of the products UK clinicians ask us about most sit at three very different price points: The Monday Clinical Brief at £20 a year, NEJM Clinician at around £75 a year, and Red Whale at roughly £210 per course, twice a year.
 
 The instinct is to read that as a quality ladder — pay more, get more. It is not. These three products do three different jobs. The price difference reflects what each one *is*, not how good it is.

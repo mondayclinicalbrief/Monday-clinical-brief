@@ -23,8 +23,6 @@ faqs:
     answer: "Where fezolinetant is the most suitable option for an eligible patient, NICE technology appraisal guidance requires NHS funding in England within 90 days of final publication. The authoritative detail is in NICE TA1143 and the BNF entry for the drug."
 ---
 
-# Menopause and HRT Guidance UK 2026: NICE Recommends Fezolinetant and Updates NG23
-
 Two pieces of UK menopause guidance changed in 2026. NICE recommended [fezolinetant](https://www.nice.org.uk/guidance/ta1143) (Veoza) as a non-hormonal option for moderate to severe vasomotor symptoms when HRT is unsuitable — technology appraisal TA1143, published 31 March 2026, with around 500,000 people estimated to be eligible. And NICE updated [NG23](https://www.nice.org.uk/guidance/ng23), the menopause guideline, on 15 April 2026 with revised advice on unscheduled bleeding while taking systemic HRT. HRT remains first-line throughout.
 
 This post is a plain-English summary for busy clinicians. We summarise; we do not replace NICE, and nothing here substitutes for clinical judgement on individual patients.

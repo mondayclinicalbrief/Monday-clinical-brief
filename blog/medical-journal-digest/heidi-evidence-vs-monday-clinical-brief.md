@@ -19,8 +19,6 @@ faqs:
     answer: "Yes — and most clinicians who try both end up using them together. Read MCB on Monday morning to see what's new in your specialty. Use Heidi during the week when a specific clinical question arises. Push and pull, working together."
 ---
 
-# Heidi Evidence vs The Monday Clinical Brief: Pull vs Push for UK Clinicians
-
 Heidi Evidence launched in February 2026 and immediately changed the conversation for UK clinicians. It has a free tier. It is powered by Claude. It is partnered with NICE and BMJ Group. It gives you cited, UK-relevant clinical answers in seconds.
 
 If you are a UK doctor wondering whether Heidi Evidence replaces your need for a journal digest subscription, the honest answer is: no. But the reason is not that Heidi is bad. It is that Heidi and a weekly digest do fundamentally different jobs.

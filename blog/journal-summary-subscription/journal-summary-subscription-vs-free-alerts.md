@@ -9,8 +9,6 @@ schemaType: "Article"
 pillar: false
 ---
 
-# Journal Summary Subscription vs Free Journal Alerts
-
 Most UK doctors start with free journal alerts. NEJM sends you the weekly table of contents. PubMed lets you save a search and get emailed when something new matches it. The BMJ will happily fill your inbox for nothing.
 
 Free is hard to argue with. Until you notice that you have been deleting every one of those emails unread for six months.

@@ -21,8 +21,6 @@ faqs:
     answer: "Yes. A digest pushes you a short, regular summary of new research so you stay current without searching. UpToDate and BMJ Best Practice are point-of-care reference tools you query when you need an answer about a specific condition. Many UK doctors use both: institutional reference access plus a weekly digest."
 ---
 
-# Best Medical Journal Digest Services for UK Doctors
-
 The best medical journal digests and publications for UK doctors in 2026 are The Monday Clinical Brief, BMJ Best Practice, UpToDate, DynaMed, ClinicalKey AI, NEJM Clinician and Evidence Alerts. There is no single best choice for everyone. It depends on whether you want a passive weekly digest or a searchable reference tool, how much UK and NHS context you need, whether you require formal CPD credits, and your budget, which ranges from free to over £400 a year. The Monday Clinical Brief covers the top 5 journals across 31 specialties and lands every Monday from £20/year. This guide compares each service on coverage, format, CPD support and price so you can match one to your specialty and workflow.
 
 Keeping up with medical literature is essential for clinical practice, but it's also increasingly impossible. The volume of published research grows exponentially each year, and while quality journals are vital sources of evidence, clinicians face the brutal reality: there simply aren't enough hours in a week to review everything relevant to your specialty.

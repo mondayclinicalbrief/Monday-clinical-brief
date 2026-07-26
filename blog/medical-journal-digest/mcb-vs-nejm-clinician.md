@@ -19,8 +19,6 @@ faqs:
     answer: "Yes. Unlike several US clinical AI tools that have restricted UK access in 2026, NEJM Clinician remains available to UK subscribers."
 ---
 
-# MCB vs NEJM Clinician (formerly NEJM Journal Watch)
-
 NEJM Journal Watch rebranded to [NEJM Clinician](https://www.nejm.org) in November 2025. If you're searching for the old name, this is the same product under a new brand with updated pricing and a redesigned platform.
 
 Both NEJM Clinician and The Monday Clinical Brief are journal digest products — but they are built on different editorial philosophies, cover different numbers of specialties, and sit at very different price points. Here is an honest comparison.

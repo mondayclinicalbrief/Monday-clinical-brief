@@ -20,8 +20,6 @@ faqs:
     answer: "No, but most candidates who pass first time have attended at least one structured course. The value is timed mock stations with examiner-style feedback, which is hard to replicate alone."
 ---
 
-# MRCP PACES 2026: Fee Rise, Part 1 In-Centre, and a 12-Week Study Plan
-
 Two MRCP(UK) changes matter in 2026. Exam fees rise by 3.6% — in line with UK CPI — from 1 July 2026, applying to the 2026/03 diet onwards, across Part 1, Part 2 written, and PACES. And Part 1 moves to in-centre, computer-based delivery from the September 2026 (2026/03) sitting, ending remote proctoring internationally. If you are sitting this year, both affect your planning. Below is what changed, then a realistic 12-week PACES study plan for trainees working full clinical weeks.
 
 ## What changed for 2026

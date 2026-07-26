@@ -9,8 +9,6 @@ schemaType: "MedicalWebPage"
 pillar: false
 ---
 
-# This Week in Medical Journals: June 2026 Highlights
-
 *This monthly roundup pulls together the developments worth a UK clinician's attention. For weekly digests tailored to your specialty — every article from the top five journals, summarised — [start your free trial](/#subscribe).*
 
 June 2026 is dominated by guidance changes rather than single trials. Four NICE developments are reshaping prescribing across primary care this quarter. Here is what changed and where to read the detail.

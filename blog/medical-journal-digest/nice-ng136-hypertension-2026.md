@@ -20,8 +20,6 @@ faqs:
     answer: "For adults under 80, aim for a clinic target below 140/90 mmHg, or below 135/85 mmHg on ABPM or home monitoring. For adults aged 80 or over, aim for a clinic target below 150/90 mmHg, or below 145/85 mmHg on ABPM or home monitoring. Targets are individualised in frailty, multimorbidity, and conditions such as type 1 diabetes or chronic kidney disease."
 ---
 
-# NICE NG136 Hypertension Update, February 2026: New Advice for Raised Blood Pressure Before Diagnosis
-
 NICE updated NG136, its guideline on hypertension in adults, on 26 February 2026. The change is small and specific: a new recommendation to offer healthy-living advice to people who have raised blood pressure but do not have diagnosed hypertension.
 
 This is not a prescribing overhaul. The diagnosis thresholds, the treatment thresholds, the drug algorithm, and the blood pressure targets are all unchanged. But the addition is worth a moment's attention, because it formalises something good clinicians already do — and it is an easy thing to let slide in a ten-minute appointment.

@@ -20,8 +20,6 @@ faqs:
     answer: "Check renal function and electrolytes before starting an ACE inhibitor, ARB, ARNI or MRA, again 1 to 2 weeks after starting and after each dose increase, then every 3 to 6 months once stable. Beta-blockers need a 12-lead ECG before starting. NICE recommends a comprehensive review at least every 6 months for stable patients, covering functional capacity, fluid status, rhythm, renal function and iron status."
 ---
 
-# NICE Heart Failure Update (NG106): SGLT2 Inhibitors Now Span the Ejection-Fraction Spectrum
-
 NICE updated NG106, its guideline on chronic heart failure in adults, on 3 September 2025. It is a more substantial update than it first looks. NICE amended the treatment of heart failure with reduced ejection fraction and, for the first time, added drug recommendations for mildly-reduced and preserved ejection fraction.
 
 The through-line is SGLT2 inhibitors. A class that arrived in heart failure care as an add-on for reduced ejection fraction now has a place across the whole ejection-fraction spectrum. For preserved ejection fraction — long the hardest form to treat — there is finally something to offer beyond managing comorbidities and congestion.

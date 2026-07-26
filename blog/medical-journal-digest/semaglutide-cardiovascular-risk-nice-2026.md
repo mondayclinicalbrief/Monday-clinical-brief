@@ -21,8 +21,6 @@ faqs:
     answer: "NICE TA1152 does not specify the treatment setting, so where and by whom it is initiated will be decided by local pathways and commissioning. As with any GLP-1 receptor agonist, gastrointestinal side effects, supply, and cost are practical considerations."
 ---
 
-# Semaglutide for Cardiovascular Risk: NICE Backs Wegovy Beyond Weight Loss (TA1152)
-
 On 7 May 2026, NICE recommended semaglutide (Wegovy) to reduce the risk of major adverse cardiovascular events in people with established cardiovascular disease and overweight or obesity. The notable part is what it is *not* about: this is a cardiovascular indication, not a weight or glucose one, and it does not require the patient to have diabetes.
 
 This post is a plain-English summary for busy clinicians. The authoritative source is the [NICE appraisal itself](https://www.nice.org.uk/guidance/ta1152). We summarise; we do not replace NICE, and nothing here substitutes for clinical judgement on an individual patient.

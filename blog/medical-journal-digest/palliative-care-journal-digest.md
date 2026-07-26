@@ -22,8 +22,6 @@ faqs:
     answer: "Yes. Each issue is formatted to support CPD documentation for UK revalidation. Summaries include clinical relevance prompts designed to support reflective practice entries."
 ---
 
-# Palliative Care Journal Digest
-
 The Monday Clinical Brief is a weekly palliative care journal digest, curated by a serving NHS consultant in the specialty. Every Monday it sends every new peer-reviewed paper published that week in palliative care's five leading journals — summarised in plain language, formatted for CPD, for £20 a year. Here is what it covers and why it exists.
 
 Palliative care evidence moves fast. Symptom management protocols, opioid titration guidelines, advance care planning frameworks, and the evidence base for early specialist referral have all changed materially in the last five years. Most practising clinicians haven't had time to keep up. I built The Monday Clinical Brief because I was one of them.

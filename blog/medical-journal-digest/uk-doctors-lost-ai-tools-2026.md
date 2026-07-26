@@ -23,8 +23,6 @@ faqs:
     answer: "No. MCB is a weekly literature digest, not a clinical decision-support tool. It is not classified as a medical device and is unaffected by the UK regulatory situation that has paused pull-tools. The digest continues to deliver UK-clinician-relevant peer-reviewed content from the five highest-impact journals per specialty, every Monday morning, to UK subscribers."
 ---
 
-# Two AI Tools UK Doctors Lost, One Restricted — And What Works in Their Place
-
 In six weeks between late April and May 2026, three of the most credible clinical AI tools in the world pulled back from UK point-of-care use. ChatGPT for Clinicians launched with the UK and EEA excluded at the verification step. OpenEvidence withdrew from the UK and EU entirely. Heidi Evidence — UK-partnered with NICE, BMJ Group, MIMS, and HealthPathways — stayed available in the UK and EU but restricted to out-of-session use, so it cannot answer during a live consultation.
 
 If you are a UK NHS clinician, you may not have noticed all three. They happened quietly, in adjacent news cycles, each treated as a one-off rather than a pattern. The pattern is the point.

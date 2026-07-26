@@ -10,8 +10,6 @@ schemaType: "Article"
 pillar: false
 ---
 
-# Using AI for Reflective Practice: The Rules for UK Doctors
-
 Plenty of doctors already open a general-purpose AI tool to help with an appraisal reflection. The question is not whether it happens — it does — but whether it is allowed, and where the line sits.
 
 The short version: you can use AI to help you reflect. You cannot use it to reflect *for* you. The insight has to be yours, patient-identifiable data has to stay out, and you are accountable for whatever you submit. This post sets out what the regulators say, the three lines not to cross, and a workflow that keeps AI on the right side of them.

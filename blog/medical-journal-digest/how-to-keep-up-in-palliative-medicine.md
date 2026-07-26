@@ -18,8 +18,6 @@ faqs:
     answer: "Yes. Reading peer-reviewed papers and reflecting on how they change your practice is recognised CPD for UK revalidation. The requirement is reflection and a record, not volume — a short note on what you read and what it changes is what your appraiser is looking for."
 ---
 
-# How Does a Palliative Care Clinician Keep Up With the Evidence?
-
 Palliative care asks us to hold uncertainty with patients every day. What I did not expect was how much of my own professional uncertainty would come from a quieter source: the steady, unrelenting growth of the literature I was supposed to have read but hadn't.
 
 This is a piece about that problem, and about the small, unglamorous habit I built to deal with it. I offer it in case it is useful to a colleague somewhere — particularly someone early in their palliative care career, juggling a busy caseload and wondering how anyone keeps up.

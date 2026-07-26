@@ -9,8 +9,6 @@ schemaType: "Article"
 pillar: false
 ---
 
-# How Much Does a Medical Journal Summary Subscription Cost?
-
 Pricing is the question most doctors want answered first and most websites answer last. This guide gives you actual numbers in pounds sterling, what each tier includes, and how to judge whether a subscription is worth paying for at all.
 
 All figures are accurate as of 2026. Where a service lists prices in USD we have converted at a representative rate; verify before subscribing.

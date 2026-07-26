@@ -20,8 +20,6 @@ faqs:
     answer: "Both are recommended by NICE for chronic kidney disease — dapagliflozin under TA1075 and empagliflozin under TA942. Where a patient and clinician consider both suitable after discussing the options, NICE advises using the least expensive. In practice, local-formulary preference and the patient's other licensed indications (heart failure, type 2 diabetes) usually settle the choice."
 ---
 
-# SGLT2 Inhibitors for CKD in UK Primary Care 2026: What NICE TA1075 Means in Practice
-
 One change has quietly widened the SGLT2 story well beyond diabetes. In July 2025, NICE technology appraisal TA1075 recommended dapagliflozin for chronic kidney disease in adults — including those without type 2 diabetes — replacing the narrower TA775. The drug class that moved to first-line for diabetes is now a kidney-protection therapy for a much larger population, and most of those patients sit on a primary-care CKD register.
 
 This post is the practical UK primary-care picture: who is now eligible, what dapagliflozin is added to, the eGFR dip that catches clinicians out, and how to find the patients who qualify but are not yet treated. It is written for UK GPs, GP registrars, GP pharmacists, advanced clinical practitioners, and trainees. The NICE guidance and the BNF entry for each agent remain the authoritative references; this post summarises and links, it does not substitute for clinical judgement.

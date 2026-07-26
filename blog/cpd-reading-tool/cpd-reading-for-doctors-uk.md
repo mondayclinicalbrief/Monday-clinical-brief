@@ -10,8 +10,6 @@ schemaType: "Article"
 pillar: false
 ---
 
-# What Counts as CPD for UK Doctors
-
 ## What Counts as CPD Reading in the UK
 
 The GMC definition of CPD is broad: continuing professional development comprises any learning activity undertaken by a doctor to improve practice. For many doctors, a significant portion of this learning happens through reading.

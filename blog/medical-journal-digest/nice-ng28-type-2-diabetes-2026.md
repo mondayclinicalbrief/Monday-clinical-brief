@@ -21,8 +21,6 @@ faqs:
     answer: "Review the type 2 diabetes register for adults on metformin monotherapy who would now be candidates for an SGLT2 inhibitor, prioritising those with cardiovascular or renal disease. For new diagnoses, the default is now modified-release metformin plus an SGLT2 inhibitor. Check the BNF and local formulary for agent choice and dosing."
 ---
 
-# NICE NG28 Update, February 2026: Metformin Plus an SGLT2 Inhibitor Is the New Starting Point
-
 NICE updated NG28 on 18 February 2026. It is the biggest change to UK type 2 diabetes prescribing in years — though not the one a quick reading suggests. Metformin has not been replaced. What changed is that, for most adults, an SGLT2 inhibitor is now started *alongside* metformin from diagnosis, rather than added later once cardiovascular or renal risk has been assessed.
 
 This post is a plain-English summary for busy clinicians. The authoritative source is the [NICE guideline itself](https://www.nice.org.uk/guidance/ng28). We summarise; we do not replace NICE, and nothing here substitutes for clinical judgement on individual patients.

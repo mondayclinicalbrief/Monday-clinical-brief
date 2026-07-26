@@ -11,8 +11,6 @@ schemaType: "Article"
 pillar: false
 ---
 
-# CPD Reflection Template for Journal Reading
-
 Reflection is the part of CPD most doctors avoid. Not because they cannot do it, but because the templates they are given are bloated, repetitive, and designed by committees who have never been through an appraisal themselves.
 
 This guide gives you a lean reflection template built around what the GMC and UK Royal Colleges actually want to see. You can copy it into any system — the MCB CPD Tracker (included with an annual subscription), RCGP Toolkit, SARD, PReP, a spreadsheet, or a Word document.

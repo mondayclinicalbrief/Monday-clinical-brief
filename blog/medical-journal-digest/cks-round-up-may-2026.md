@@ -16,8 +16,6 @@ faqs:
     answer: "The authoritative source is the NICE CKS website, which lists new and updated topics with dates. This post is a summary for awareness — always confirm the current recommendation against the CKS topic page before acting on it."
 ---
 
-# NICE CKS Round-Up — May 2026: Recent Updates for UK Primary Care
-
 NICE Clinical Knowledge Summaries (CKS) are updated on a rolling basis, and several primary-care topics have changed recently. This round-up gives a one-line takeaway for each of the most clinically relevant, with a link to the source. The authoritative record is the [NICE CKS site](https://cks.nice.org.uk/); this is a summary for awareness, not a substitute for the topic page itself.
 
 This is the first in a recurring monthly series. We summarise the changes; we do not replace NICE, and clinical decisions remain the responsibility of the treating clinician.

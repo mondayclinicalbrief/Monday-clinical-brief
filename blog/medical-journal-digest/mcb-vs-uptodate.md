@@ -19,8 +19,6 @@ faqs:
     answer: "£20 per year, with a four-week free trial. It covers 31 specialties and delivers every new peer-reviewed paper published that week in your chosen specialty's five highest-impact journals, every Monday morning."
 ---
 
-# MCB vs UpToDate: Reference Tool vs Weekly Digest
-
 UpToDate is one of the most widely used clinical resources in the NHS. The Monday Clinical Brief is a weekly journal digest for UK clinicians. They are not in direct competition — they solve different problems — but it is worth being precise about what each one does and does not do.
 
 This comparison is honest about both. We built MCB and we will tell you when UpToDate is the better fit.

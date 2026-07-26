@@ -20,8 +20,6 @@ faqs:
     answer: "You can. NICE NG238 explicitly says not to rule out atorvastatin 20mg simply because the QRISK3 score is below 10%, where the person has an informed preference after discussing the benefits and risks. This reframes the 10% figure as the point at which a statin is proactively offered, not a barrier below which it is withheld. The decision is a shared one."
 ---
 
-# Statins and CVD Prevention in UK Primary Care 2026: What NICE NG238 Means in Practice
-
 One guideline shapes how UK primary care prescribes statins in 2026: NICE NG238. Its lipid pathway reframed the QRISK3 threshold as a prompt for a shared decision rather than a gate, and it sets clear cholesterol aims for both primary and secondary prevention. None of it is a wholesale rewrite — but it sharpens a decision GPs make many times a week.
 
 This is the practical picture: who to offer a statin to, at what dose, what to aim for, and where the conversation usually stalls. It is written for UK GPs, GP registrars, GP pharmacists, advanced clinical practitioners, and trainees. The NICE guideline and the BNF remain the authoritative references; this post summarises and links, it does not substitute for clinical judgement.

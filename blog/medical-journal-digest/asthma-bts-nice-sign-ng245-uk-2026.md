@@ -20,8 +20,6 @@ faqs:
     answer: "Yes. From November 2025, a budesonide/formoterol dry powder inhaler (100 micrograms/6 micrograms per actuation) was licensed for MART in children aged 6 to 11, extending the anti-inflammatory reliever approach to younger children. The diagnostic pathway and treatment steps differ by age group, so the guideline itself should be consulted for the under-16 and under-12 pathways."
 ---
 
-# Asthma Diagnosis and Treatment in UK Primary Care 2026: What the BTS/NICE/SIGN Guideline (NG245) Changed
-
 In November 2024, the British Thoracic Society, NICE, and SIGN published a single joint asthma guideline — NG245 — replacing three separate sets of advice that had drifted apart for years. Two changes stand out for primary care, and both are large: how asthma is diagnosed, and what the reliever inhaler now contains.
 
 This post covers what changed and what it means at the appointment level in 2026. It is written for UK GPs, GP registrars, practice nurses, GP pharmacists, and trainees. The guideline and the BNF remain the authoritative references; this post summarises and links, it does not substitute for clinical judgement.

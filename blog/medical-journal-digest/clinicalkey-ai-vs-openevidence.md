@@ -20,8 +20,6 @@ faqs:
     answer: "Not in the way a digest does. ClinicalKey AI answers questions you ask it, drawing on a knowledge base Elsevier refreshes daily. It does not arrive each week with what is new in your field. Keeping current with the literature is a separate problem from point-of-care question answering — it is the one The Monday Clinical Brief covers, across the five highest-impact journals in each of 31 specialties."
 ---
 
-# ClinicalKey AI vs OpenEvidence: In the UK, It's Not a Choice
-
 This is a comparison with an awkward answer: if you are a UK clinician, there is nothing to compare.
 
 OpenEvidence withdrew from the UK and EU on 28 April 2026. ClinicalKey AI did not. So the practical answer to "ClinicalKey AI or OpenEvidence?" in the UK is ClinicalKey AI, by default rather than by merit.

@@ -22,8 +22,6 @@ faqs:
     answer: "Yes. Each weekly digest includes structured summaries that make it easy to identify relevant papers, reflect on their implications, and document your reading for CPD purposes."
 ---
 
-# How to Earn CPD Points by Reading Medical Journals
-
 You already read medical journals. You scan The BMJ over lunch. You skim a Lancet paper between clinics. You read the abstract a colleague shared in the WhatsApp group. But does any of it count towards your CPD?
 
 For most UK doctors, the answer is: probably not. Not because the reading lacks educational value, but because it is not captured, evidenced, or logged. The reading happens, but the CPD record does not.

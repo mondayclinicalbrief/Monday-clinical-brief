@@ -9,8 +9,6 @@ schemaType: "MedicalWebPage"
 pillar: false
 ---
 
-# Best Medical Journal Digest Apps for UK Doctors
-
 Most medical journal reading happens on a phone. On the train, between clinic lists, on the sofa at 10pm. A well-designed digest app is the difference between weekly reading that sticks and a subscription you forgot you paid for.
 
 This guide covers the apps UK doctors actually use in 2026 — iOS, Android, and browser-based — and which ones fit which reading habit.

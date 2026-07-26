@@ -9,8 +9,6 @@ schemaType: "MedicalWebPage"
 pillar: false
 ---
 
-# Too Many Medical Journals to Read? Here Is What Smart Doctors Do
-
 ## You Are Not Alone
 
 The guilt is familiar. You open your email on Monday morning and see dozens of journal alerts. A few look interesting; most look irrelevant. You close the email, intending to read them later. Later never comes. By Friday, you have deleted or archived them all, feeling vaguely inadequate.

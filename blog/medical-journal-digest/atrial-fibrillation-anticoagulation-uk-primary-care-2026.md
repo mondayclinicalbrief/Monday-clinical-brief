@@ -20,8 +20,6 @@ faqs:
     answer: "Yes. Renal function influences both the choice of DOAC and the dose, and it should be checked before starting and monitored periodically — more often as eGFR falls. Dabigatran is the most renally cleared of the options. The BNF is the authoritative source for the renal thresholds and dose adjustments for each agent."
 ---
 
-# Anticoagulation in Atrial Fibrillation: A UK Primary-Care Guide (NICE NG196)
-
 Stroke prevention in atrial fibrillation is one of the highest-value decisions made in general practice, and NICE NG196 settled most of the arguments. Direct-acting oral anticoagulants are first-line. Aspirin has no role. Bleeding risk is assessed with ORBIT, and a high score is a prompt to optimise, not to withhold. The detection, risk scoring, initiation, and monitoring all sit largely in primary care.
 
 This is the practical picture in 2026: who to anticoagulate, what to start, how to think about bleeding risk, and the patients on your register who are on the wrong thing. It is written for UK GPs, GP registrars, GP pharmacists, advanced clinical practitioners, and trainees. NICE NG196 and the BNF remain the authoritative references; this post summarises and links, it does not substitute for clinical judgement.

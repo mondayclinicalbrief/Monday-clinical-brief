@@ -9,8 +9,6 @@ schemaType: "MedicalWebPage"
 pillar: false
 ---
 
-# Medical Journal Digest vs Medical Podcast: Which Is Better for CPD?
-
 Most UK doctors now consume medical education through a mix of formats. Reading is no longer the only way to keep current. Podcasts have moved from a fringe novelty in 2015 to a serious part of many clinicians' weekly learning.
 
 The question is no longer whether podcasts are useful. They are. The question is how they compare with reading-based digests for the specific job of keeping current and producing CPD evidence.

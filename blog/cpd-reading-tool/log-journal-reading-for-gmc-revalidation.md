@@ -11,8 +11,6 @@ schemaType: "Article"
 pillar: false
 ---
 
-# How to Log Journal Reading for GMC Revalidation
-
 Most UK doctors do more reading than they log. Journal articles read on a train, guideline updates scanned during handover, digest summaries read over coffee — almost none of it makes it into the appraisal portfolio in a form the appraiser will accept.
 
 The GMC does not require a specific format. It requires evidence of reflective learning. That gives you room to build a log that works for your clinical life rather than against it.

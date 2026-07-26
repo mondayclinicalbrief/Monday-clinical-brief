@@ -10,8 +10,6 @@ schemaType: "Article"
 pillar: false
 ---
 
-# Best CPD Tools for UK Doctors
-
 Keeping up with medical literature is non-negotiable. But the actual mechanics of *proving* that you've kept up—logging hours, reflecting meaningfully, and presenting evidence to your appraiser—often feels like a second job. You finish a journal article at 11 p.m., close the PDF, and then face a choice: spend fifteen more minutes documenting what you've just learned, or let it slip into the background.
 
 By revalidation time, those unmemorated articles become invisible. Your appraiser asks: where's the evidence? What did you learn? How did it change your practice?

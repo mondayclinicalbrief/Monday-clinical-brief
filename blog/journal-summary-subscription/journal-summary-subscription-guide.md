@@ -1,5 +1,6 @@
 ---
 title: "Journal Summary Subscription"
+heading: "Journal Summary Subscription: Clinical Digests Delivered Weekly"
 seoTitle: "Journal Summary Subscription: Clinical Digests Delivered Weekly | MCB"
 metaDescription: "Subscribe to Monday Clinical Brief for weekly journal summaries from The Lancet, BMJ, NEJM and 20+ journals. Easy to log for CPD. Written for UK doctors."
 description: "Compare journal summary subscription services for UK doctors. What to look for, how they work, and why The Monday Clinical Brief covers 31 specialties for £20/year."
@@ -20,8 +21,6 @@ faqs:
   - question: "How is a journal summary different from an abstract?"
     answer: "An abstract is written by the paper authors and follows a rigid format. A journal summary is written for the reader — it highlights clinical relevance, puts findings in context, and tells you why the paper matters for your practice."
 ---
-
-# Journal Summary Subscription: Clinical Digests Delivered Weekly
 
 You did not become a doctor to spend your evenings reading abstracts. But staying current with the evidence is not optional. Your patients deserve decisions grounded in the latest research. Your appraiser expects documented CPD. And you need to know when a paper changes the game for your specialty.
 

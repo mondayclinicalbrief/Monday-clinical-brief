@@ -21,8 +21,6 @@ faqs:
     answer: "Clinical decisions carry weight that a shopping recommendation does not. If a summary, answer or alert is shaped by who paid for placement, the doctor cannot fully trust that it reflects the evidence rather than the market. Ad-free is not a guarantee of quality, but it removes one source of bias from the output."
 ---
 
-# Ad-Free Clinical AI for UK Doctors (2026): The Short List
-
 If you want clinical AI that carries no advertising and is available to UK doctors, the practical list in 2026 is short: **iatroX** for point-of-care questions, **The Monday Clinical Brief** for keeping up with the literature, and **Heidi Evidence** for out-of-session questions. **Praxis Medicine** and **Umbil** are newer UK-focused entrants worth watching. This page explains what each one does, what it costs, and the job it is built for.
 
 "Ad-free" became a category claim in 2026. We think it is worth taking seriously — but only alongside an honest account of what each tool actually does.

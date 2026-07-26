@@ -9,8 +9,6 @@ schemaType: "Article"
 pillar: false
 ---
 
-# BMJ, NEJM Clinician and Independent Journal Digests Compared (2026)
-
 The clinical evidence market has changed faster in the last six months than in the previous five years. NEJM Journal Watch rebranded to NEJM Clinician and cut its UK price. UpToDate launched Expert AI — but only in the US and Canada for individual subscribers. Heidi Evidence arrived free for UK doctors with NICE and BMJ Group partnerships. OpenEvidence reached a $12 billion valuation and signalled UK expansion. ChatGPT for Clinicians launched in the US two days before this article was written.
 
 Every one of these products is good. None of them does the same thing as the others.

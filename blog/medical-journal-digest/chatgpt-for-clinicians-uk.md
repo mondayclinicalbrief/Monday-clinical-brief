@@ -19,8 +19,6 @@ faqs:
     answer: "Yes. OpenEvidence withdrew from the UK and EU on 25 April 2026 — two days after ChatGPT for Clinicians launched and excluded UK users. UK doctors lost both tools in the same fortnight."
 ---
 
-# ChatGPT for Clinicians Launched. UK Doctors Are Excluded.
-
 On 23 April 2026, OpenAI launched ChatGPT for Clinicians. Two days later, OpenEvidence — the tool it most closely resembles — withdrew from the UK entirely.
 
 UK doctors received both announcements in the same week. Neither had good news for them.

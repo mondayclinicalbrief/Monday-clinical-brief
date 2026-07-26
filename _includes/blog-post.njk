@@ -255,7 +255,11 @@
   {% if cluster %}
   <a href="/blog/{{ clusterSlug or (cluster | slugify) }}/" class="article-cluster">{{ cluster }}</a>
   {% endif %}
-  <h1>{{ title }}</h1>
+  {#- This is the page's ONLY h1. Post bodies must NOT start with a "# ..."
+      heading — that produced two h1s on every post until July 2026.
+      Use `heading:` in frontmatter when the visible heading should be richer
+      than `title` (which is kept short for breadcrumbs and related-post links). -#}
+  <h1>{{ heading or title }}</h1>
   <div class="article-meta">
     <time datetime="{{ date | isoDate }}">{{ date | readableDate }}</time>
     <span>{{ content | readingTime }}</span>

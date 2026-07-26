@@ -21,8 +21,6 @@ faqs:
     answer: "Two tools withdrew and one was restricted, in six weeks. ChatGPT for Clinicians launched on 23 April 2026 with UK and EEA excluded. OpenEvidence withdrew from the UK and EU on 28 April 2026. Heidi Evidence — launched February 2026 — operates in the UK and EU but only outside live sessions, restricting its in-session use."
 ---
 
-# Heidi Evidence Is Excellent. In the UK, It Won't Answer Mid-Consultation.
-
 Heidi Evidence is the most strategically interesting clinical AI tool to land in 2026. It is free at the individual tier. It is citation-backed. It is partnered with NICE, BMJ Group, MIMS and HealthPathways — the four most credible UK clinical-content sources a tool in this space could pair with. We have read the output carefully. It is good.
 
 In the UK, it will not answer during a live consultation.
