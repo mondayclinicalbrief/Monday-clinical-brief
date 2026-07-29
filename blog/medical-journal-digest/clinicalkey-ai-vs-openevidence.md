@@ -28,7 +28,7 @@ There is a second thing worth knowing, and it is stranger. Elsevier built Clinic
 
 ## The shared history
 
-In November 2023, Elsevier Health [announced a partnership with OpenEvidence](https://www.elsevier.com/about/press-releases/elsevier-health-partners-with-openevidence-to-deliver-trusted-evidence-based) to develop ClinicalKey AI — a generative-AI clinical decision support tool built on Elsevier's medical content. The development drew on input from Cone Health, the University of New Mexico, and more than 30,000 US physicians.
+In November 2023, Elsevier [announced it was working with OpenEvidence](https://www.elsevier.com/connect/exclusive-new-partnership-aims-to-help-doctors-harness-ai-to-diagnose) to create ClinicalKey AI — a generative-AI clinical decision support tool built on Elsevier's medical content, with the Cambridge, Massachusetts startup training on Elsevier's journal library. It entered early access with 1,000 clinicians that month, and [launched across the US](https://www.elsevier.com/about/press-releases/elsevier-health-launches-clinicalkey-ai-the-most-advanced-gen-ai-powered) in February 2024.
 
 Two things follow from that, and it is worth being precise about both.
 
