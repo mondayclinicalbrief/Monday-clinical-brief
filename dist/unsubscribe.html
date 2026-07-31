@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unsubscribe — The Monday Clinical Brief</title>
+  <meta name="robots" content="noindex,nofollow">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f8f8f5;
+      color: #1B365D;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .card {
+      background: #ffffff;
+      max-width: 480px;
+      width: calc(100% - 32px);
+      padding: 32px 28px;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    }
+    h1 { font-size: 20px; margin: 0 0 12px; color: #005eb8; }
+    p { line-height: 1.5; margin: 0 0 16px; font-size: 15px; }
+    .target {
+      background: #f0f4f9;
+      padding: 12px 14px;
+      border-radius: 4px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 13px;
+      word-break: break-all;
+    }
+    button {
+      background: #005eb8; color: white; border: none;
+      padding: 11px 22px; border-radius: 4px;
+      font-size: 15px; font-weight: 600;
+      cursor: pointer;
+    }
+    button:hover { background: #004a93; }
+    button:disabled { background: #999; cursor: not-allowed; }
+    .secondary { color: #999; font-size: 13px; }
+    .error { color: #b00020; }
+    .success { color: #2e7d32; }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div id="confirm-view">
+      <h1>Unsubscribe?</h1>
+      <p>You're about to unsubscribe from:</p>
+      <div class="target">
+        <strong id="email-line">…</strong><br>
+        <span id="specialty-line" class="secondary">…</span>
+      </div>
+      <p style="margin-top:20px">
+        You'll stop receiving the weekly digest immediately. You can resubscribe any time at
+        <a href="https://mondayclinicalbrief.co.uk/#subscribe">mondayclinicalbrief.co.uk</a>.
+      </p>
+      <button id="confirm-btn" type="button">Yes, unsubscribe me</button>
+    </div>
+
+    <div id="success-view" style="display:none">
+      <h1 class="success">You're unsubscribed</h1>
+      <p>You won't receive any more digests for <strong id="success-specialty">this specialty</strong>.</p>
+      <p class="secondary">Changed your mind? <a href="https://mondayclinicalbrief.co.uk/#subscribe">Resubscribe here</a>.</p>
+    </div>
+
+    <div id="error-view" style="display:none">
+      <h1 class="error">Something went wrong</h1>
+      <p id="error-message">We couldn't process this unsubscribe request.</p>
+      <p>Please email <a href="mailto:info@mondayclinicalbrief.co.uk">info@mondayclinicalbrief.co.uk</a> and we'll remove you manually.</p>
+    </div>
+  </main>
+
+  <script>
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      const token = params.get('t') || params.get('token');
+      const confirmView = document.getElementById('confirm-view');
+      const successView = document.getElementById('success-view');
+      const errorView = document.getElementById('error-view');
+
+      function showError(msg) {
+        confirmView.style.display = 'none';
+        successView.style.display = 'none';
+        errorView.style.display = 'block';
+        if (msg) document.getElementById('error-message').textContent = msg;
+      }
+
+      function showSuccess(specialty) {
+        confirmView.style.display = 'none';
+        errorView.style.display = 'none';
+        successView.style.display = 'block';
+        if (specialty) document.getElementById('success-specialty').textContent = specialty;
+      }
+
+      function b64urlDecode(s) {
+        s = s.replace(/-/g, '+').replace(/_/g, '/');
+        while (s.length % 4) s += '=';
+        try { return atob(s); } catch (_) { return null; }
+      }
+
+      if (!token) {
+        showError('This unsubscribe link is missing its token. Please use the link from your email.');
+        return;
+      }
+
+      // Decode payload for display only — the server does the real verification.
+      const payloadB64 = token.split('.')[0];
+      const payload = payloadB64 ? b64urlDecode(payloadB64) : null;
+      if (!payload || !payload.includes('|')) {
+        showError('This unsubscribe link looks malformed.');
+        return;
+      }
+      const [email, specialty] = payload.split('|', 2);
+      document.getElementById('email-line').textContent = email;
+      document.getElementById('specialty-line').textContent =
+        specialty.replace(/-/g, ' ').replace(/\b\w/g, (l) => l.toUpperCase()) + ' brief';
+
+      document.getElementById('confirm-btn').addEventListener('click', async function () {
+        const btn = this;
+        btn.disabled = true;
+        btn.textContent = 'Unsubscribing…';
+        try {
+          const res = await fetch('/api/unsubscribe?t=' + encodeURIComponent(token), {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+          });
+          if (!res.ok) {
+            const text = await res.text();
+            showError(text || ('Server returned ' + res.status));
+            return;
+          }
+          showSuccess(specialty.replace(/-/g, ' '));
+        } catch (e) {
+          showError(e.message);
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

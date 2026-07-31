@@ -27,3 +27,10 @@
 # links still land somewhere correct.
 /specialty/palliative-care/  /blog/medical-journal-digest/palliative-care-journal-digest/  301!
 /specialty/palliative-care  /blog/medical-journal-digest/palliative-care-journal-digest/  301!
+
+# 2026-07-31: "How does a palliative care clinician keep up with the evidence?"
+# unpublished while a closely related piece is under consideration at BMJ
+# Supportive & Palliative Care. TEMPORARY (302, not 301) — the post may return,
+# so the URL should keep its place in the index. Remove this block to restore.
+/blog/medical-journal-digest/how-to-keep-up-in-palliative-medicine/  /blog/medical-journal-digest/palliative-care-journal-digest/  302!
+/blog/medical-journal-digest/how-to-keep-up-in-palliative-medicine  /blog/medical-journal-digest/palliative-care-journal-digest/  302!

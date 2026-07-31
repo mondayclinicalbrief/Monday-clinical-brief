@@ -1,4 +1,9 @@
 ---
+# 2026-07-31: Unpublished pending submission of a closely related piece to BMJ
+# Supportive & Palliative Care. Not built, not in any collection, not in the
+# sitemap. To restore, delete these two keys and the /_redirects entry.
+permalink: false
+eleventyExcludeFromCollections: true
 title: "How Does a Palliative Care Clinician Keep Up With the Evidence?"
 seoTitle: "Keeping Up in Palliative Medicine: The Habit That Worked"
 metaDescription: "A palliative medicine consultant on the small weekly habit that finally kept him current with the evidence — and the digest I built to make it stick."
