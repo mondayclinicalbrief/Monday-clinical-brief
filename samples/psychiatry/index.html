@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Psychiatry Sample Digest — The Monday Clinical Brief</title>
-<meta name="description" content="See what Psychiatry clinicians received in this Monday's digest: 27 new articles from Molecular psychiatry, JAMA psychiatry, The American journal of psychiatry summarised every Monday by The Monday Clinical Brief.">
+<title>Psychiatry Digest — The Monday Clinical Brief</title>
+<meta name="description" content="The Psychiatry digest from The Monday Clinical Brief — a weekly summary of every new paper from the top journals in Psychiatry. Free 4-week trial.">
 <link rel="canonical" href="https://mondayclinicalbrief.co.uk/samples/psychiatry/">
-<meta property="og:title" content="Psychiatry — Monday Clinical Brief Sample Digest">
-<meta property="og:description" content="27 new Psychiatry papers summarised this week. Free 4-week trial.">
+<meta property="og:title" content="Psychiatry — Monday Clinical Brief">
+<meta property="og:description" content="Every new Psychiatry paper, summarised every Monday. Free 4-week trial.">
 <meta property="og:url" content="https://mondayclinicalbrief.co.uk/samples/psychiatry/">
-<meta property="og:type" content="article">
+<meta property="og:type" content="website">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -45,35 +45,18 @@
   .page-header h1 { font-family: 'Instrument Serif', serif; font-size: clamp(2.2rem, 4.5vw, 3.2rem); font-weight: 400; color: var(--charcoal); line-height: 1.2; letter-spacing: -0.02em; margin-bottom: 1rem; max-width: 720px; margin-left: auto; margin-right: auto; }
   .page-header h1 em { font-style: italic; color: var(--sage-deep); }
   .page-header .lede { font-size: 1.05rem; color: var(--text-muted); max-width: 560px; margin: 0 auto 1.75rem; }
-  .stat-bar { display: inline-flex; gap: 2.5rem; padding: 1rem 1.75rem; background: white; border: 1px solid var(--border); border-radius: 60px; font-size: 0.85rem; }
-  .stat-bar .stat strong { display: block; font-family: 'Instrument Serif', serif; font-size: 1.6rem; color: var(--sage-deep); line-height: 1; margin-bottom: 0.2rem; }
-  .stat-bar .stat span { color: var(--text-muted); font-size: 0.78rem; }
 
-  /* ── DISCLAIMER ── */
-  .disclaimer { max-width: 800px; margin: 2rem auto 0; padding: 0.85rem 1.25rem; background: var(--gold-light); border-left: 3px solid var(--gold); font-size: 0.85rem; color: var(--text); border-radius: 4px; }
-  .disclaimer strong { color: var(--charcoal); }
-
-  /* ── ARTICLES ── */
+  /* ── BODY ── */
   section { padding: 3rem 2rem 5rem; }
-  .container { max-width: 800px; margin: 0 auto; }
-  .sample-card { background: white; border: 1px solid var(--border); border-radius: 8px; padding: 2rem; margin-bottom: 1.5rem; }
-  .sample-badge { display: inline-block; background: var(--sage-light); color: var(--sage-deep); padding: 0.2rem 0.7rem; border-radius: 4px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 1rem; }
-  .sample-card h3 { font-family: 'Instrument Serif', serif; font-size: 1.3rem; font-weight: 400; color: var(--charcoal); margin-bottom: 0.5rem; line-height: 1.35; }
-  .sample-meta { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1.25rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--border); }
-  .summary-field { margin-bottom: 0.75rem; font-size: 0.9rem; line-height: 1.6; }
-  .summary-label { font-weight: 600; color: var(--sage-deep); }
-  .summary-field ul { list-style: none; margin: 0.4rem 0 0 0; padding: 0; }
-  .summary-field ul li { padding-left: 1.1rem; position: relative; margin-bottom: 0.3rem; }
-  .summary-field ul li::before { content: '•'; position: absolute; left: 0.2rem; color: var(--sage); font-weight: 700; }
-  .source-links { margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 0.8rem; }
-  .source-links a { color: var(--sage-deep); text-decoration: none; margin-right: 1rem; font-weight: 500; }
-  .source-links a:hover { text-decoration: underline; }
+  .container { max-width: 720px; margin: 0 auto; }
+  .soon-card { background: white; border: 1px solid var(--border); border-radius: 8px; padding: 2.5rem 2rem; text-align: center; margin-bottom: 2rem; }
+  .soon-card p { font-size: 1rem; color: var(--text); margin-bottom: 1rem; }
+  .soon-card p:last-child { margin-bottom: 0; }
+  .soon-card .preview-link { display: inline-block; margin-top: 0.5rem; background: var(--sage-light); color: var(--sage-deep); padding: 0.9rem 1.75rem; border-radius: 40px; font-weight: 600; text-decoration: none; font-size: 0.95rem; transition: all 0.2s; }
+  .soon-card .preview-link:hover { background: var(--sage-deep); color: white; transform: translateY(-1px); }
 
-  /* ── TEASE ── */
-  .tease { text-align: center; padding: 2rem; background: var(--cream); border: 1px dashed var(--border); border-radius: 8px; margin-top: 1rem; }
-  .tease p { font-family: 'Instrument Serif', serif; font-size: 1.4rem; color: var(--charcoal); line-height: 1.4; margin-bottom: 0.5rem; }
-  .tease p em { color: var(--sage-deep); }
-  .tease small { color: var(--text-muted); font-size: 0.9rem; }
+  .what-we-cover { background: var(--cream); border-left: 3px solid var(--sage); padding: 1.25rem 1.5rem; border-radius: 4px; margin-bottom: 2rem; font-size: 0.95rem; color: var(--text); }
+  .what-we-cover strong { color: var(--charcoal); }
 
   /* ── CTA ── */
   .cta-section { background: var(--charcoal); color: white; padding: 4rem 2rem; text-align: center; }
@@ -94,8 +77,7 @@
     body { padding-bottom: 60px; }
     .page-header { padding: 3.5rem 1.5rem 2.5rem; }
     section { padding: 2rem 1.5rem 3.5rem; }
-    .sample-card { padding: 1.5rem; }
-    .stat-bar { flex-direction: column; gap: 1rem; padding: 1.25rem 1.75rem; }
+    .soon-card { padding: 2rem 1.5rem; }
     .cta-section { padding: 3rem 1.5rem; }
   }
 </style>
@@ -114,250 +96,21 @@
 
 <!-- ═══ HEADER ═══ -->
 <header class="page-header">
-  <div class="eyebrow">Sample Digest · Wednesday 1 July 2026</div>
-  <h1>A recent Psychiatry digest,<br><em>as sent to subscribers</em></h1>
-  <p class="lede">This is the real Monday digest from Wednesday 1 July 2026. Showing the first 8 of 27 articles from that week — every new paper from the top journals in Psychiatry.</p>
-  <div class="stat-bar">
-    <div class="stat"><strong>27</strong><span>articles that week</span></div>
-    <div class="stat"><strong>4</strong><span>journals covered</span></div>
-    <div class="stat"><strong>£0</strong><span>for your first 4 weeks</span></div>
-  </div>
-  <div class="disclaimer">
-    <strong>Note:</strong> Summaries are AI-generated from publicly available PubMed abstracts. Always verify against the source article before clinical use.
-  </div>
+  <div class="eyebrow">Psychiatry · Sample Digest</div>
+  <h1>A <em>Psychiatry</em> sample is on the way.</h1>
+  <p class="lede">Subscribers already receive the Psychiatry digest every Monday. While we prepare a public sample for this specialty, here's a full example from another field &mdash; the format is identical.</p>
 </header>
 
-<!-- ═══ ARTICLES ═══ -->
+<!-- ═══ BODY ═══ -->
 <section>
   <div class="container">
-    <div class="sample-card">
-      <div class="sample-badge">JAMA psychiatry</div>
-      <h3>Use and Misuse of GLP-1 Receptor Agonists Among People With Eating Disorders</h3>
-      <div class="sample-meta">Peiper NC, Zibbell JE, LaJoie AS et al. · 2026 Jun 24</div>
-      <div class="summary-field">
-        <span class="summary-label">Study Type:</span>
-        Insufficient information — abstract content not provided; cannot determine study type or findings.
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Question:</span>
-        What are the patterns of use and misuse of GLP-1 receptor agonists (e.g., semaglutide, liraglutide) among individuals with eating disorders?
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Findings:</span>
-        <ul>
-<li>Abstract text was not supplied; specific findings, effect sizes, or prevalence data cannot be extracted.</li><li>The title suggests the study examines both therapeutic use and potential misuse/diversion in an eating disorder population.</li><li>No further detail available from the information provided.</li>        </ul>
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Clinical Relevance:</span>
-        Directly relevant to UK psychiatry practice given widespread NHS prescribing of GLP-1 agonists for obesity and emerging concerns about their potential for misuse in patients with restrictive or purging eating disorders.
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Limitations:</span>
-        Abstract not provided; full assessment of methodology and limitations is not possible.
-      </div>
-      <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42340738/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1001/jamapsychiatry.2026.1716" target="_blank" rel="noopener">DOI →</a>      </div>
+    <div class="soon-card">
+      <p>The next <strong>Psychiatry</strong> digest will include every new paper published that week in the field's top journals, each summarised in a consistent clinical format.</p>
+      <p>In the meantime, here's a full sample from a recent week:</p>
+      <a href="/samples/palliative-care/" class="preview-link">See a full Palliative Care sample &rarr;</a>
     </div>
-    <div class="sample-card">
-      <div class="sample-badge">JAMA psychiatry</div>
-      <h3>Connectivity- vs Scalp-Based Targeting of Accelerated Transcranial Magnetic Stimulation for Depression: A Randomized Clinical Trial</h3>
-      <div class="sample-meta">Taylor JJ, Kare MR, Haj-Darwish D et al. · 2026 Jun 24</div>
-      <div class="summary-field">
-        <span class="summary-label">Study Type:</span>
-        RCT (double-blind, single-centre)
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Question:</span>
-        Does functional connectivity neuroimaging-guided targeting of accelerated TMS produce superior antidepressant outcomes compared to standard scalp-based targeting in treatment-resistant depression?
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Findings:</span>
-        <ul>
-<li>Connectivity-based targeting produced a greater median MADRS reduction than scalp-based targeting (24 vs 18 points; p=0.02) at one month post-treatment</li><li>Effect size was moderate-to-large (Cohen&#39;s d=0.8, 95% CI 0.26–1.54), with a number needed to scan of 5</li><li>Individualised targets were reproducible within participants (4.47mm split-half distance) but meaningfully distinct between participants (12.97mm), supporting the biological rationale for personalisation</li>        </ul>
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Clinical Relevance:</span>
-        As NHS services evaluate TMS pathways for treatment-resistant depression, this trial suggests neuroimaging-guided targeting may meaningfully enhance outcomes, informing future commissioning and cost-effectiveness decisions.
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Limitations:</span>
-        Small sample (n=40) at a single US academic centre limits generalisability; a larger confirmatory trial is explicitly acknowledged as necessary.
-      </div>
-      <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42340706/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1001/jamapsychiatry.2026.1100" target="_blank" rel="noopener">DOI →</a>      </div>
-    </div>
-    <div class="sample-card">
-      <div class="sample-badge">JAMA psychiatry</div>
-      <h3>Neurometabolites and Antipsychotic Response in Psychosis: A Mega-Analysis</h3>
-      <div class="sample-meta">King B, Bojesen KB, Crisp C et al. · 2026 Jun 24</div>
-      <div class="summary-field">
-        <span class="summary-label">Study Type:</span>
-        Mega-analysis with individual participant data (IPD) and accompanying meta-analysis
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Question:</span>
-        Are specific brain neurometabolites measurable by MRS associated with antipsychotic non-response in psychosis?
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Findings:</span>
-        <ul>
-<li>Antipsychotic non-responders showed significantly elevated medial frontal glutamate (Glass Δ=0.21), glutamate+glutamine (Δ=0.29), choline (Δ=0.22), and myo-inositol (Δ=0.35) compared to responders (n=1,189 across 18 studies)</li><li>Elevated medial frontal glutamate+glutamine predicted non-response prospectively in first-episode psychosis (Δ=0.41), suggesting potential pre-treatment biomarker utility</li><li>Myo-inositol elevations were most pronounced in treatment-resistant schizophrenia (Δ=0.64), implicating neuroinflammatory pathways</li>        </ul>
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Clinical Relevance:</span>
-        These findings support neuroimaging-based stratification of treatment resistance at first episode, directly relevant to early clozapine decision-making pathways in NHS Early Intervention in Psychosis services.
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Limitations:</span>
-        Effect sizes are small-to-moderate and MRS is not yet clinically scalable across NHS settings, limiting immediate translational application.
-      </div>
-      <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42340705/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1001/jamapsychiatry.2026.1674" target="_blank" rel="noopener">DOI →</a>      </div>
-    </div>
-    <div class="sample-card">
-      <div class="sample-badge">JAMA psychiatry</div>
-      <h3>Assessing Drug Efficacy After Multiple Negative Trials-Gepirone&#39;s Journey Through the FDA</h3>
-      <div class="sample-meta">Turner EH, Powers JH, Ahn-Horst RY et al. · 2026 Jun 24</div>
-      <div class="summary-field">
-        <span class="summary-label">Study Type:</span>
-        Commentary / regulatory case analysis
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Question:</span>
-        How did the FDA evaluate and ultimately approve gepirone ER for major depressive disorder despite predominantly negative trial evidence?
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Findings:</span>
-        <ul>
-<li>Of 13 preapproval trials, only 2 acute treatment trials were judged positive; gepirone ER failed to beat placebo in the remainder, and showed statistical inferiority to active comparators in 3 trials.</li><li>The FDA rejected the application four times (1999–2007) and its own Advisory Committee voted against approval in 2015; approval was nonetheless granted following senior FDA leadership intervention.</li><li>Authors argue current regulations permit &#34;regulatory flexibility&#34; prioritising statistical over clinical significance, and that product labelling omits negative trials, limiting informed prescribing.</li>        </ul>
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Clinical Relevance:</span>
-        UK clinicians evaluating antidepressant evidence should be aware that FDA-approved status does not guarantee a robust evidence base; similar publication/approval biases may affect MHRA-licensed agents.
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Limitations:</span>
-        Single-drug case analysis limits generalisability to broader regulatory patterns.
-      </div>
-      <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42340691/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1001/jamapsychiatry.2026.1438" target="_blank" rel="noopener">DOI →</a>      </div>
-    </div>
-    <div class="sample-card">
-      <div class="sample-badge">JAMA psychiatry</div>
-      <h3>A New CMS Payment Model for AI-Delivered Behavioral Health Care</h3>
-      <div class="sample-meta">Gorrindo T, Livesey C, Torous J · 2026 Jun 24</div>
-      <div class="summary-field">
-        <span class="summary-label">Study Type:</span>
-        Commentary/Editorial
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Question:</span>
-        How might the new CMS (US Medicare/Medicaid) reimbursement framework for AI-delivered behavioural health interventions reshape clinical practice and payment structures?
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Findings:</span>
-        <ul>
-<li>CMS has introduced a payment model specifically enabling reimbursement for AI-delivered behavioural health care, representing a significant policy shift in the US</li><li>The authors discuss implications for clinical accountability, quality oversight, and the integration of AI tools within existing care pathways</li><li>Concerns are raised regarding equitable access and the evidence base required to justify AI-delivered interventions under this framework</li>        </ul>
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Clinical Relevance:</span>
-        Although US-specific, this commentary is directly relevant to UK clinicians as NHS England and NICE are actively developing frameworks for AI-enabled mental health tools; understanding CMS precedents may inform UK commissioning and regulatory approaches.
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Limitations:</span>
-        As an editorial, no primary data are presented; conclusions reflect author opinion rather than empirical evidence.
-      </div>
-      <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42340690/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1001/jamapsychiatry.2026.1681" target="_blank" rel="noopener">DOI →</a>      </div>
-    </div>
-    <div class="sample-card">
-      <div class="sample-badge">Molecular psychiatry</div>
-      <h3>Transdiagnostic mapping of brain structural abnormalities and network-constrained gray matter atrophy patterns across affective and psychotic disorders</h3>
-      <div class="sample-meta">Qin K, Zhu P, Chen X et al. · 2026 Jun 22</div>
-      <div class="summary-field">
-        <span class="summary-label">Study Type:</span>
-        Systematic review and meta-analysis (with network-based neuroimaging analysis)
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Question:</span>
-        Are there shared and disorder-specific patterns of grey matter volume (GMV) reduction across MDD, bipolar disorder, and schizophrenia, and can these be mapped onto functional brain networks?
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Findings:</span>
-        <ul>
-<li>Across 221 VBM studies (10,485 patients; 12,128 controls), transdiagnostic GMV reductions were consistently identified in the medial prefrontal cortex and superior temporal gyrus</li><li>Schizophrenia showed greater limbic/paralimbic and temporoparietal junction atrophy versus MDD; the ventrolateral PFC was a shared disease epicenter across all three diagnoses</li><li>The precuneus acted as a common structural buffer, with visual and dorsal attention networks showing the strongest buffering effects</li>        </ul>
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Clinical Relevance:</span>
-        These transdiagnostic neuroimaging findings may support future biomarker-informed diagnostic frameworks relevant to UK services moving towards stratified psychiatry.
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Limitations:</span>
-        VBM meta-analyses are constrained by heterogeneity in acquisition protocols, medication status, and illness duration across contributing studies.
-      </div>
-      <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42332027/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1038/s41380-026-03701-5" target="_blank" rel="noopener">DOI →</a>      </div>
-    </div>
-    <div class="sample-card">
-      <div class="sample-badge">Molecular psychiatry</div>
-      <h3>Deep brain stimulation of the nucleus accumbens for severe self-injurious behaviour in children: long-term outcomes from a first-in-human pilot trial</h3>
-      <div class="sample-meta">Mithani K, Breitbart S, Dinger T et al. · 2026 Jun 22</div>
-      <div class="summary-field">
-        <span class="summary-label">Study Type:</span>
-        First-in-human pilot trial (prospective, single-centre, uncontrolled)
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Question:</span>
-        Can deep brain stimulation (DBS) targeting the nucleus accumbens safely and durably reduce severe self-injurious behaviour in children with profound autism?
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Findings:</span>
-        <ul>
-<li>Six participants (aged 7–14) underwent bilateral NAc-DBS with mean follow-up of 32.5 months; sustained reductions in SIB frequency/severity and repetitive behaviours were reported across the cohort</li><li>One serious adverse event (device infection requiring explantation) caused relapse to baseline; re-implantation produced rapid SIB improvement, providing withdrawal-rechallenge evidence of treatment-specific effect</li><li>Clinically meaningful quality-of-life improvements were reported over multi-year follow-up</li>        </ul>
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Clinical Relevance:</span>
-        For UK clinicians managing treatment-refractory SIB in neurodevelopmental disorders — where pharmacological and behavioural options are often exhausted — this provides preliminary evidence that circuit-targeted neuromodulation warrants further investigation.
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Limitations:</span>
-        Extremely small, uncontrolled sample (n=6) without a comparator group severely limits generalisability and causal inference at cohort level.
-      </div>
-      <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42332026/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1038/s41380-026-03710-4" target="_blank" rel="noopener">DOI →</a>      </div>
-    </div>
-    <div class="sample-card">
-      <div class="sample-badge">Molecular psychiatry</div>
-      <h3>A new hope: locus coeruleus-norepinephrine system at the nexus of neuropsychiatric symptoms</h3>
-      <div class="sample-meta">Korukonda A, Weinshenker D · 2026 Jun 22</div>
-      <div class="summary-field">
-        <span class="summary-label">Study Type:</span>
-        Commentary/narrative review
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Question:</span>
-        Does LC-NE system hyperactivity underlie neuropsychiatric symptoms in early Alzheimer&#39;s disease, and can it serve as a therapeutic target?
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Findings:</span>
-        <ul>
-<li>Neuropsychiatric symptoms (anxiety, agitation, depression, sleep disturbance) commonly precede cognitive decline in AD and are proposed to reflect LC-NE hyperactivity across amygdala, thalamus, hypothalamus, PFC, and anterior cingulate circuits</li><li>Neuroimaging and physiological biomarkers now enable in vivo assessment of LC integrity and noradrenergic transmission, potentially allowing earlier detection of dysfunction</li><li>Authors propose biomarker-driven, stage-specific pharmacological and neuromodulatory interventions targeting LC-NE tone to reduce NPS burden and augment disease-modifying therapies</li>        </ul>
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Clinical Relevance:</span>
-        Psychiatrists managing dementia-related neuropsychiatric symptoms in NHS memory services may find noradrenergic targets relevant to treatment-refractory agitation, anxiety, and sleep disturbance where current options are limited.
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Limitations:</span>
-        As a narrative review without systematic methodology, conclusions reflect authors&#39; interpretive framing rather than synthesised evidence; no original data are presented.
-      </div>
-      <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42332025/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1038/s41380-026-03696-z" target="_blank" rel="noopener">DOI →</a>      </div>
-    </div>
-
-    <div class="tease">
-      <p>…and <em>19 more</em> Psychiatry articles in that week's digest.</p>
-      <small>Subscribers get the complete brief, every Monday.</small>
+    <div class="what-we-cover">
+      <strong>What you'll get in the Psychiatry digest:</strong> every new paper from the top five journals in the field, summarised into Study Type, Key Question, Key Findings, Clinical Relevance, and Limitations &mdash; delivered to your inbox every Monday.
     </div>
   </div>
 </section>
@@ -365,15 +118,15 @@
 <!-- ═══ CTA ═══ -->
 <section class="cta-section">
   <h2>Get the Psychiatry digest in your inbox every Monday</h2>
-  <p>4 weeks completely free, then £20/year. Cancel any time during your trial — no charge.</p>
-  <a href="/?specialty=psychiatry&ref=samples#subscribe" class="cta-btn">Start your free trial — Psychiatry →</a>
+  <p>4 weeks completely free, then &pound;20/year. Cancel any time during your trial &mdash; no charge.</p>
+  <a href="/?specialty=psychiatry&ref=samples#subscribe" class="cta-btn">Start your free trial &mdash; Psychiatry &rarr;</a>
   <span class="cta-meta">No card needed to browse. We'll ask for payment details to start the trial.</span>
 </section>
 
 <!-- ═══ FOOTER ═══ -->
 <footer>
   <p>&copy; 2026 The Monday Clinical Brief</p>
-  <p><a href="/">Home</a> · <a href="mailto:info@mondayclinicalbrief.co.uk">Contact</a> · <a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms</a></p>
+  <p><a href="/">Home</a> &middot; <a href="mailto:info@mondayclinicalbrief.co.uk">Contact</a> &middot; <a href="/privacy.html">Privacy Policy</a> &middot; <a href="/terms.html">Terms</a></p>
 </footer>
 
 </body>

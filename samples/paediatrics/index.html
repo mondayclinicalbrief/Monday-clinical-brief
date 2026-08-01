@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Paediatrics Digest — The Monday Clinical Brief</title>
-<meta name="description" content="The Paediatrics digest from The Monday Clinical Brief — a weekly summary of every new paper from the top journals in Paediatrics. Free 4-week trial.">
+<title>Paediatrics Sample Digest — The Monday Clinical Brief</title>
+<meta name="description" content="See what Paediatrics clinicians received in this Monday's digest: 24 new articles from Pediatrics, The Journal of pediatrics, JAMA pediatrics summarised every Monday by The Monday Clinical Brief.">
 <link rel="canonical" href="https://mondayclinicalbrief.co.uk/samples/paediatrics/">
-<meta property="og:title" content="Paediatrics — Monday Clinical Brief">
-<meta property="og:description" content="Every new Paediatrics paper, summarised every Monday. Free 4-week trial.">
+<meta property="og:title" content="Paediatrics — Monday Clinical Brief Sample Digest">
+<meta property="og:description" content="24 new Paediatrics papers summarised this week. Free 4-week trial.">
 <meta property="og:url" content="https://mondayclinicalbrief.co.uk/samples/paediatrics/">
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -45,18 +45,35 @@
   .page-header h1 { font-family: 'Instrument Serif', serif; font-size: clamp(2.2rem, 4.5vw, 3.2rem); font-weight: 400; color: var(--charcoal); line-height: 1.2; letter-spacing: -0.02em; margin-bottom: 1rem; max-width: 720px; margin-left: auto; margin-right: auto; }
   .page-header h1 em { font-style: italic; color: var(--sage-deep); }
   .page-header .lede { font-size: 1.05rem; color: var(--text-muted); max-width: 560px; margin: 0 auto 1.75rem; }
+  .stat-bar { display: inline-flex; gap: 2.5rem; padding: 1rem 1.75rem; background: white; border: 1px solid var(--border); border-radius: 60px; font-size: 0.85rem; }
+  .stat-bar .stat strong { display: block; font-family: 'Instrument Serif', serif; font-size: 1.6rem; color: var(--sage-deep); line-height: 1; margin-bottom: 0.2rem; }
+  .stat-bar .stat span { color: var(--text-muted); font-size: 0.78rem; }
 
-  /* ── BODY ── */
+  /* ── DISCLAIMER ── */
+  .disclaimer { max-width: 800px; margin: 2rem auto 0; padding: 0.85rem 1.25rem; background: var(--gold-light); border-left: 3px solid var(--gold); font-size: 0.85rem; color: var(--text); border-radius: 4px; }
+  .disclaimer strong { color: var(--charcoal); }
+
+  /* ── ARTICLES ── */
   section { padding: 3rem 2rem 5rem; }
-  .container { max-width: 720px; margin: 0 auto; }
-  .soon-card { background: white; border: 1px solid var(--border); border-radius: 8px; padding: 2.5rem 2rem; text-align: center; margin-bottom: 2rem; }
-  .soon-card p { font-size: 1rem; color: var(--text); margin-bottom: 1rem; }
-  .soon-card p:last-child { margin-bottom: 0; }
-  .soon-card .preview-link { display: inline-block; margin-top: 0.5rem; background: var(--sage-light); color: var(--sage-deep); padding: 0.9rem 1.75rem; border-radius: 40px; font-weight: 600; text-decoration: none; font-size: 0.95rem; transition: all 0.2s; }
-  .soon-card .preview-link:hover { background: var(--sage-deep); color: white; transform: translateY(-1px); }
+  .container { max-width: 800px; margin: 0 auto; }
+  .sample-card { background: white; border: 1px solid var(--border); border-radius: 8px; padding: 2rem; margin-bottom: 1.5rem; }
+  .sample-badge { display: inline-block; background: var(--sage-light); color: var(--sage-deep); padding: 0.2rem 0.7rem; border-radius: 4px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 1rem; }
+  .sample-card h3 { font-family: 'Instrument Serif', serif; font-size: 1.3rem; font-weight: 400; color: var(--charcoal); margin-bottom: 0.5rem; line-height: 1.35; }
+  .sample-meta { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1.25rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--border); }
+  .summary-field { margin-bottom: 0.75rem; font-size: 0.9rem; line-height: 1.6; }
+  .summary-label { font-weight: 600; color: var(--sage-deep); }
+  .summary-field ul { list-style: none; margin: 0.4rem 0 0 0; padding: 0; }
+  .summary-field ul li { padding-left: 1.1rem; position: relative; margin-bottom: 0.3rem; }
+  .summary-field ul li::before { content: '•'; position: absolute; left: 0.2rem; color: var(--sage); font-weight: 700; }
+  .source-links { margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 0.8rem; }
+  .source-links a { color: var(--sage-deep); text-decoration: none; margin-right: 1rem; font-weight: 500; }
+  .source-links a:hover { text-decoration: underline; }
 
-  .what-we-cover { background: var(--cream); border-left: 3px solid var(--sage); padding: 1.25rem 1.5rem; border-radius: 4px; margin-bottom: 2rem; font-size: 0.95rem; color: var(--text); }
-  .what-we-cover strong { color: var(--charcoal); }
+  /* ── TEASE ── */
+  .tease { text-align: center; padding: 2rem; background: var(--cream); border: 1px dashed var(--border); border-radius: 8px; margin-top: 1rem; }
+  .tease p { font-family: 'Instrument Serif', serif; font-size: 1.4rem; color: var(--charcoal); line-height: 1.4; margin-bottom: 0.5rem; }
+  .tease p em { color: var(--sage-deep); }
+  .tease small { color: var(--text-muted); font-size: 0.9rem; }
 
   /* ── CTA ── */
   .cta-section { background: var(--charcoal); color: white; padding: 4rem 2rem; text-align: center; }
@@ -77,7 +94,8 @@
     body { padding-bottom: 60px; }
     .page-header { padding: 3.5rem 1.5rem 2.5rem; }
     section { padding: 2rem 1.5rem 3.5rem; }
-    .soon-card { padding: 2rem 1.5rem; }
+    .sample-card { padding: 1.5rem; }
+    .stat-bar { flex-direction: column; gap: 1rem; padding: 1.25rem 1.75rem; }
     .cta-section { padding: 3rem 1.5rem; }
   }
 </style>
@@ -96,21 +114,250 @@
 
 <!-- ═══ HEADER ═══ -->
 <header class="page-header">
-  <div class="eyebrow">Paediatrics · Sample Digest</div>
-  <h1>A <em>Paediatrics</em> sample is on the way.</h1>
-  <p class="lede">Subscribers already receive the Paediatrics digest every Monday. While we prepare a public sample for this specialty, here's a full example from another field &mdash; the format is identical.</p>
+  <div class="eyebrow">Sample Digest · Monday 27 July 2026</div>
+  <h1>A recent Paediatrics digest,<br><em>as sent to subscribers</em></h1>
+  <p class="lede">This is the real Monday digest from Monday 27 July 2026. Showing the first 8 of 24 articles from that week — every new paper from the top journals in Paediatrics.</p>
+  <div class="stat-bar">
+    <div class="stat"><strong>24</strong><span>articles that week</span></div>
+    <div class="stat"><strong>3</strong><span>journals covered</span></div>
+    <div class="stat"><strong>£0</strong><span>for your first 4 weeks</span></div>
+  </div>
+  <div class="disclaimer">
+    <strong>Note:</strong> Summaries are AI-generated from publicly available PubMed abstracts. Always verify against the source article before clinical use.
+  </div>
 </header>
 
-<!-- ═══ BODY ═══ -->
+<!-- ═══ ARTICLES ═══ -->
 <section>
   <div class="container">
-    <div class="soon-card">
-      <p>The next <strong>Paediatrics</strong> digest will include every new paper published that week in the field's top journals, each summarised in a consistent clinical format.</p>
-      <p>In the meantime, here's a full sample from a recent week:</p>
-      <a href="/samples/palliative-care/" class="preview-link">See a full Palliative Care sample &rarr;</a>
+    <div class="sample-card">
+      <div class="sample-badge">JAMA pediatrics</div>
+      <h3>Childhood Antimicrobial Resistance With Global Forecasts</h3>
+      <div class="sample-meta">Hu YJ, Qiu H, Harwell JI et al. · 2026 Jul 20</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Multiregional surveillance study (retrospective analysis of laboratory database, 2004–2022)
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        How has antimicrobial resistance in children changed globally over nearly two decades, and what are the projected trends to 2035?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Watch-group antibiotic resistance in PICUs more than doubled (15%→33%, P&lt;.001), with similar rises in infants aged 0–2 years, sepsis, and respiratory infections.</li><li>*Acinetobacter baumannii* had the highest resistance overall (&gt;55% across all AWaRe categories); *Klebsiella* species showed the fastest rise in cephalosporin/carbapenem resistance, notably in Southeast Asia, Eastern Europe, and the Western Pacific.</li><li>By 2035, carbapenem resistance is projected to reach 35% (Klebsiella) and 82% (A. baumannii), while Access-group resistance appears to be stabilising.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        Rising Gram-negative resistance to Watch/Reserve antibiotics threatens empiric sepsis and pneumonia management in PICUs, reinforcing the need for robust UK antimicrobial stewardship, surveillance, and judicious Reserve-antibiotic use aligned with NHS AWaRe-based prescribing policies.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Reliance on a convenience-sample surveillance database (ATLAS) may introduce selection bias and uneven regional representation, limiting generalisability of absolute resistance estimates.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42475107/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1001/jamapediatrics.2026.2808" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
-    <div class="what-we-cover">
-      <strong>What you'll get in the Paediatrics digest:</strong> every new paper from the top five journals in the field, summarised into Study Type, Key Question, Key Findings, Clinical Relevance, and Limitations &mdash; delivered to your inbox every Monday.
+    <div class="sample-card">
+      <div class="sample-badge">JAMA pediatrics</div>
+      <h3>Making Vaccine Policy Values and Trade-Offs Transparent-Rebuilding a Consensus Supporting Immunization</h3>
+      <div class="sample-meta">Marcuse EK, Poland GA · 2026 Jul 20</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Commentary/opinion piece
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        How can transparency about the values and trade-offs underlying vaccine policy help rebuild public and professional consensus supporting immunisation?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>No abstract data provided; the piece appears to argue for explicit acknowledgment of the ethical, scientific, and societal trade-offs embedded in vaccine policymaking.</li><li>Likely advocates that transparent communication of uncertainty and value judgements (rather than presenting recommendations as purely technical) may strengthen public trust.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        UK paediatric clinicians navigating vaccine hesitancy and JCVI policy communication may find relevance in framing immunisation guidance around transparent value trade-offs rather than authority alone.
+
+*(No limitations section applicable — this is a commentary, not original research.)*
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42475106/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1001/jamapediatrics.2026.2831" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">JAMA pediatrics</div>
+      <h3>GLP-1 Receptor Agonist and Bariatric Surgery Utilization Among Adolescents and Young Adults</h3>
+      <div class="sample-meta">Messiah SE, Ernest DK, Elnakieb Y et al. · 2026 Jul 20</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Likely a retrospective cohort or database analysis (cannot confirm without abstract).
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Likely examines trends or patterns in GLP-1 receptor agonist prescribing versus bariatric surgery uptake among adolescents/young adults with obesity.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        Not available — abstract text required.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        If confirmed, this would be relevant to UK paediatric obesity services given increasing GLP-1 agonist use (e.g., liraglutide/semaglutide) in adolescents and NICE guidance on bariatric surgery thresholds.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Cannot be assessed without the full abstract.
+
+Please provide the abstract text and I&#39;ll generate the complete, accurate summary.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42475086/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1001/jamapediatrics.2026.2828" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">JAMA pediatrics</div>
+      <h3>Clesrovimab in Infants at Increased Risk For Severe Disease During 2 RSV Seasons: A Randomized Clinical Trial</h3>
+      <div class="sample-meta">Zar HJ, Bont LJ, Manzoni P et al. · 2026 Jul 20</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Randomised, partially masked, active-controlled phase 3 clinical trial
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Is clesrovimab safe and effective for RSV prevention across two consecutive seasons in infants at increased risk of severe RSV disease (including those with prematurity, chronic lung disease, or significant congenital heart disease)?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Season 1: adverse event rates comparable between clesrovimab 105 mg (n=498) and palivizumab (n=499); RSV-associated MALRI incidence similar (3.2%, 95% CI 1.8–5.2% vs 3.4%, 95% CI 2.0–5.6%) through day 150.</li><li>Season 2: open-label clesrovimab 210 mg (n=276) was well tolerated, with RSV-associated MALRI incidence of 7.3% (95% CI 4.4–11.4%) through day 180.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        Supports extending single-dose clesrovimab use into a second RSV season for high-risk infants, potentially simplifying NHS RSV prophylaxis pathways currently reliant on monthly palivizumab dosing.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Season 2 data were open-label without a concurrent control arm, limiting direct efficacy comparison.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42475081/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1001/jamapediatrics.2026.2760" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">JAMA pediatrics</div>
+      <h3>Trends in School Firearm Carriage Among US 12th-Grade Students, 1994-2023</h3>
+      <div class="sample-meta">Lee E, Thulin E, Patrick ME et al. · 2026 Jul 20</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Likely a repeated cross-sectional/trend analysis (using Monitoring the Future survey data).
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        How has the prevalence of firearm carriage in school among US 12th-grade students changed between 1994 and 2023?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        Not available — abstract text was not supplied, so no specific figures, trends, or subgroup data can be reported.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        While US-focused, findings on adolescent firearm carriage trends may inform UK paediatric safeguarding, youth violence prevention, and school health policy discussions, particularly given increasing knife-crime parallels in UK settings.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Cannot be assessed without the original abstract; findings would in any case have limited direct generalisability to the UK given differing firearm access and legislation.
+
+*Please provide the full abstract text to enable an accurate, data-specific clinical summary.*
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42475068/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1001/jamapediatrics.2026.2824" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">JAMA pediatrics</div>
+      <h3>Childhood Factors and Positive Functioning Among Adults Born Very Preterm or With Very Low Birth Weight</h3>
+      <div class="sample-meta">Gönen E, Twilhaar ES, Tsalacopoulos N et al. · 2026 Jul 20</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Longitudinal cohort study
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        What childhood factors predict distinct profiles of positive adult functioning (risk avoidance, wealth, relationships) among adults born very preterm/very low birth weight (VP/VLBW) versus term-born controls?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Three functioning profiles identified at age 34: optimal (63%), moderate with poor partner relationships (26%), and low economic/social functioning (12%); VP/VLBW individuals were overrepresented in the low-functioning group (18% vs 12% overall).</li><li>Optimal-functioning profile had substantially higher life satisfaction than the low-functioning profile (mean difference 7.71, 95% CI 5.17–10.24, d=1.46).</li><li>Higher childhood IQ (per 1-SD increase) was strongly associated with reduced odds of low functioning vs optimal functioning (OR 0.21, 95% CI 0.13–0.34), after adjustment.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        Identifies childhood cognitive functioning as a modifiable target for early intervention services (e.g., neonatal follow-up, educational support) to improve long-term psychosocial outcomes in VP/VLBW children within UK developmental follow-up pathways.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Single geographic cohort (Bavaria, Germany) born in 1985–86, limiting generalisability to contemporary UK neonatal populations and current NICU practices.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42475067/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1001/jamapediatrics.2026.2877" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Pediatrics</div>
+      <h3>Disagreement About Withholding Treatment on the Basis of Disability</h3>
+      <div class="sample-meta">Shearer E, Janvier A, Sullivan JC et al. · 2026 Jul 21</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Commentary/ethics case analysis (multi-perspective discussion, not original research)
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        How should clinicians respond when parents of an infant with a serious congenital disability (arthrogryposis multiplex congenita) request withdrawal of feeding and life-preserving treatment based on their view of &#34;quality of life,&#34; while the care team disagrees?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>A lived-experience perspective from an adult with AMC challenges assumptions that the condition precludes a worthwhile life.</li><li>A neonatologist-ethicist argues clinicians must present both expected impairments and potential abilities/family integration, avoiding one-sided prognostic framing.</li><li>Ethicists examine the boundaries of parental discretion, weighing potential harm to the child against societal disability bias influencing both parental and clinical decision-making.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        UK neonatal and paediatric teams frequently navigate best-interests disputes involving disability and treatment limitation; this case offers a structured ethical framework relevant to MDT and clinical ethics committee discussions under GMC and RCPCH guidance.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        As a commentary/case discussion rather than empirical research, it offers reasoned perspectives without generalisable data.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42476582/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1542/peds.2025-071427" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Pediatrics</div>
+      <h3>A Brief Tool to Predict Agitation in Pediatric Emergency Psychiatric Patients</h3>
+      <div class="sample-meta">Babcock L, Klein L, Zhang Y et al. · 2026 Jul 21</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Prospective observational prognostic validation study
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Can a 5-item nurse-completed triage tool (BRACHA-S) predict which paediatric ED mental/behavioural health patients will require pharmacologic or physical intervention for agitation (ARI)?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Among 472 encounters, 11.7% had ARI; BRACHA-S showed moderate discrimination (AUROC 0.72, 95% CI 0.64–0.79).</li><li>ARI risk rose with score: 3.3% at score 0 vs 36.0% at score 5; scores 4–5 carried a relative risk of 5.9 (95% CI 3.3–10.7) vs scores 0–2.</li><li>Low scores (0–1) had high negative predictive value (96.7%) but poor specificity (13.9%); high scores (4–5) had specificity ≥89% and PPV &gt;33%.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        A quick triage-based score could help UK paediatric EDs stratify agitation risk early, supporting proactive safety planning and staffing/resource allocation for MBH presentations.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Two-centre design and modest discrimination limit generalisability and standalone clinical utility, particularly given low specificity in the low-risk group.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42476577/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1542/peds.2026-076729" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+
+    <div class="tease">
+      <p>…and <em>16 more</em> Paediatrics articles in that week's digest.</p>
+      <small>Subscribers get the complete brief, every Monday.</small>
     </div>
   </div>
 </section>
@@ -118,15 +365,15 @@
 <!-- ═══ CTA ═══ -->
 <section class="cta-section">
   <h2>Get the Paediatrics digest in your inbox every Monday</h2>
-  <p>4 weeks completely free, then &pound;20/year. Cancel any time during your trial &mdash; no charge.</p>
-  <a href="/?specialty=paediatrics&ref=samples#subscribe" class="cta-btn">Start your free trial &mdash; Paediatrics &rarr;</a>
+  <p>4 weeks completely free, then £20/year. Cancel any time during your trial — no charge.</p>
+  <a href="/?specialty=paediatrics&ref=samples#subscribe" class="cta-btn">Start your free trial — Paediatrics →</a>
   <span class="cta-meta">No card needed to browse. We'll ask for payment details to start the trial.</span>
 </section>
 
 <!-- ═══ FOOTER ═══ -->
 <footer>
   <p>&copy; 2026 The Monday Clinical Brief</p>
-  <p><a href="/">Home</a> &middot; <a href="mailto:info@mondayclinicalbrief.co.uk">Contact</a> &middot; <a href="/privacy.html">Privacy Policy</a> &middot; <a href="/terms.html">Terms</a></p>
+  <p><a href="/">Home</a> · <a href="mailto:info@mondayclinicalbrief.co.uk">Contact</a> · <a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms</a></p>
 </footer>
 
 </body>
