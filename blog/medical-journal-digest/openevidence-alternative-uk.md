@@ -4,7 +4,7 @@ seoTitle: "OpenEvidence Alternative UK: What to Use Now It's Gone"
 metaDescription: "What happened to OpenEvidence? It withdrew from the UK in April 2026 and hasn't returned. What UK doctors actually use instead in July 2026 — and what none of the replacements do."
 description: "OpenEvidence is gone from the UK. Here's what actually fills the gap — and why staying current with the literature is a different problem from clinical Q&A."
 date: 2026-05-03
-updated: 2026-07-16
+updated: 2026-08-02
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
@@ -19,6 +19,8 @@ faqs:
     answer: "Partly. ClinicalKey AI (Elsevier) is available to individual UK clinicians (paid, with a free trial) and to institutions, and answers clinical questions from Elsevier's peer-reviewed library. UpToDate Expert AI is different: standard UpToDate is widely used across the NHS through institutional access, but its generative AI layer — Pro Plus AI for individuals (US and Canada only) and Expert AI for enterprise (limited availability outside the US) — is not reachable by a UK individual today. Both ClinicalKey AI and standard UpToDate answer the questions you bring them — they don't surface what's newly published, which is the gap The Monday Clinical Brief fills."
   - question: "Is ChatGPT for Clinicians available in the UK?"
     answer: "No. ChatGPT for Clinicians launched on 23 April 2026 and explicitly excludes UK and EEA users."
+  - question: "Is Medscape AI a good OpenEvidence alternative for UK doctors?"
+    answer: "It is free and reachable from the UK, but check what you are getting. Medscape AI launched in November 2025 as a generative clinical reference for Medscape's 13 million-plus members, specialty-personalised and source-traced. It carries no UK regulatory status: it is not UKCA-marked, not MHRA-registered, and has not been assessed against DTAC. Its parent, WebMD, is advertising-funded. Like every other tool in the table it answers the question you bring it — it does not tell you what was published in your specialty this week."
   - question: "Has any other clinical AI tool changed its UK access since OpenEvidence withdrew?"
     answer: "Yes. In 2026, Heidi Evidence — the clinical decision support arm of Heidi Health, partnered with NICE, BMJ Group, MIMS and HealthPathways — restricted its UK and EU evidence querying to out-of-session use only, so it cannot answer during a live consultation. Three credible clinical AI tools have now pulled back from UK point-of-care use in six weeks: ChatGPT for Clinicians (23 April, UK/EEA excluded), OpenEvidence (28 April, UK/EU withdrawn), and Heidi Evidence (in-session restricted)."
 ---
@@ -30,6 +32,8 @@ If you used it, you'll have noticed the gap.
 > **Update — 1 June 2026 (five weeks on):** OpenEvidence is still unavailable to UK clinicians, and no re-entry signal has been published. The UK regulatory framework that triggered the withdrawal remains mid-flight — the [MHRA](https://www.gov.uk/government/organisations/medicines-and-healthcare-products-regulatory-agency) Medical Devices (Amendment) Regulations consultation closes 19 June 2026; the International Reliance Framework is expected in Autumn. The clinical-AI press has caught up with the issue: a position piece in *The Lancet Regional Health – Europe* — [The Need for Regulatory Certainty on Medical AI: Lessons From the OpenEvidence Geoblocking in the EU and UK Over the EU AI Act](https://www.thelancet.com/journals/lanepe/article/PIIS2666-7762%2826%2900130-4/fulltext) (De Angelis L, Sacchi F, Pappalardo C, et al., 2026) — examines the geoblocking of clinical AI tools and the EU AI Act. What has changed since April is the alternatives — see the table below.
 
 > **Update — 16 July 2026:** OpenEvidence remains unavailable to UK clinicians, with no re-entry signal in any coverage we have found. The alternatives table below now reflects the July picture — including Vera Health, a free clinical AI that has entered this space with no geographic restrictions.
+
+> **Update — 2 August 2026:** Still no re-entry signal. The pattern in the table below is now clear enough to name: the gap OpenEvidence left is being filled by free, ad-funded query tools rather than by anything regulated for UK point-of-care use. Medscape AI joins the table this month — free to Medscape's 13 million-plus members, and carrying no UK regulatory status. Vera Health has continued expanding in Europe. Both answer questions; neither tells you what was published this week.
 
 ## What happened
 
@@ -49,21 +53,22 @@ It was not a tool for keeping up with the literature. It didn't surface what was
 
 That distinction matters, because these are two different problems.
 
-## The alternatives have matured (July 2026)
+## The alternatives have matured (August 2026)
 
-When OpenEvidence withdrew in April, the field of UK-usable replacements was thin. Three months on, it is fuller — but the picture is still uneven, because most of these are query tools and several are not actually open to UK NHS clinicians yet.
+When OpenEvidence withdrew in April, the field of UK-usable replacements was thin. Four months on, it is fuller — but the picture is still uneven, because most of these are query tools and several are not actually open to UK NHS clinicians yet.
 
-| Tool | What it is | UK status (July 2026) | Cost |
+| Tool | What it is | UK status (August 2026) | Cost |
 |---|---|---|---|
 | **iatroX** | UK clinical Q&A, NICE/CKS/SmPC-grounded | Available — MHRA-registered, UKCA-marked | Free core; Premium ~£99/yr |
 | **Heidi Evidence** | Citation-backed clinical answers, BMJ/NICE-partnered | *Evidence* restricted to out-of-session use (UK/EU); *Scribe* available | Free tier + paid |
 | **Praxis Medicine** | Clinical AI search, NICE/CKS/NHS Digital-grounded | Newly launched (Apr 2026); individual access still settling | Not yet public |
-| **Vera Health** | Evidence answers + calculators; claims 300,000+ clinician users | Available — no geographic restrictions; UK guideline localisation still unclear | Free for verified clinicians |
+| **Vera Health** | Evidence answers + calculators; claims 300,000+ clinician users; ACEP clinical-policy integration | Available — no geographic restrictions; expanding in Europe (Italy, July 2026); UK guideline localisation still unclear | Free for verified clinicians |
+| **Medscape AI** | Generative clinical reference for Medscape members; specialty-personalised, source-traced | Available — but no UK regulatory status: not UKCA-marked, not MHRA-registered, not DTAC-assessed | Free (ad-funded parent) |
 | **ClinicalKey AI** | Elsevier AI clinical Q&A, full-text books + journals, citation-backed | Available in UK — individual + institutional | Paid individual; free 14-day trial |
 | **UpToDate** | Point-of-care reference; Pro Plus / Expert AI is its Q&A layer | Standard available (often via NHS trust); AI Q&A layer not for UK individuals | ~£440/yr individual, or via trust |
 | **The Monday Clinical Brief** | Weekly literature digest, 31 specialties | Available now | £20/yr |
 
-The query tools above — iatroX, Heidi Evidence, Praxis, Vera, ClinicalKey AI and UpToDate — help you ask a question. None of them keep you current. That is a different job, and it is the one MCB does. Think of the digest as the reading layer none of these replace: it tells you what changed this week, so you know what to ask the query tool about in the first place.
+The query tools above — iatroX, Heidi Evidence, Praxis, Vera, Medscape AI, ClinicalKey AI and UpToDate — help you ask a question. None of them keep you current. That is a different job, and it is the one MCB does. Think of the digest as the reading layer none of these replace: it tells you what changed this week, so you know what to ask the query tool about in the first place.
 
 One loop worth closing: Heidi Evidence now publishes its own "OpenEvidence alternative" comparison — while its own answer feature is restricted to out-of-session use for UK and EU clinicians. So a UK doctor who follows that recommendation lands on a tool they cannot use in the consultation itself. If that is you, the usable options above (and a weekly digest for the reading) are the practical answer.
 

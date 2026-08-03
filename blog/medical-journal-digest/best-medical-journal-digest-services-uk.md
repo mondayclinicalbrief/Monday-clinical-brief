@@ -4,7 +4,7 @@ seoTitle: "Best Medical Publications & Journal Digests for UK Doctors (2026)"
 metaDescription: "Compare the best medical journal digests for UK doctors on coverage, CPD and price. The Monday Clinical Brief covers the top 5 journals across 31 specialties from £20/year — free 4-week trial."
 description: "A head-to-head comparison of journal digest services available to UK doctors — features, pricing, CPD integration, and specialty coverage."
 date: 2026-04-14
-updated: 2026-06-30
+updated: 2026-08-02
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
@@ -13,6 +13,8 @@ faqs:
     answer: "There is no single best service for everyone. For passive, UK-focused weekly reading, The Monday Clinical Brief suits most clinicians. For a searchable reference tool, UpToDate and BMJ Best Practice lead. For tightly filtered primary-care evidence, Evidence Alerts works well. The right choice depends on whether you want to stay current or look things up, and on your budget."
   - question: "Are there any free medical journal digest services?"
     answer: "Yes. Evidence Alerts has a free tier, and The Monday Clinical Brief offers a free four-week trial with no credit card required. Many NHS clinicians also reach UpToDate and BMJ Best Practice at no personal cost through an NHS trust or institutional subscription."
+  - question: "Is Medscape AI a free alternative to a paid journal digest?"
+    answer: "Not really — it solves a different problem. Medscape AI is free to Medscape members and answers clinical questions you put to it, but it does not push you what is new in your specialty, so it cannot do a digest's job. It also holds no UK regulatory status: it is not UKCA-marked, not MHRA-registered, and has not been assessed against DTAC, and its parent WebMD is advertising-funded. If your problem is keeping up rather than looking up, a digest is the tool that fits — Evidence Alerts has a free tier, and The Monday Clinical Brief offers a free four-week trial."
   - question: "Which journal digest services count towards CPD or revalidation?"
     answer: "BMJ Best Practice has the strongest formal, accredited CPD modules. The Monday Clinical Brief is not an accredited provider, but each issue is structured so you can log your reading and reflections for appraisal, via the free MCB CPD Tracker or your own portfolio. UpToDate, DynaMed and NEJM Clinician offer limited CPD integration for UK revalidation."
   - question: "How much do medical journal digest services cost in the UK?"
@@ -210,6 +212,28 @@ Pricing ranges from free to several hundred pounds annually. Consider both the d
 
 ---
 
+### Medscape AI
+
+**What is it?** A generative clinical reference launched in November 2025 and free to Medscape's 13 million-plus registered members. It answers clinical questions in natural language, personalises to your specialty, and traces its answers back to sources. Like ClinicalKey AI and UpToDate, it is a look-up tool rather than a digest — it is here because it is the free option UK clinicians are most likely to meet, not because it keeps you current.
+
+**Strengths:**
+- Free at the point of use, with no subscription
+- Very large existing user base; many UK clinicians already hold a Medscape account
+- Specialty-personalised answers, traced back to sources
+- Broad general-medicine coverage
+
+**Limitations:**
+- No UK regulatory status — not UKCA-marked, not MHRA-registered, and not assessed against DTAC
+- A look-up tool: it answers what you ask, and will not tell you what was published this week
+- Parent company WebMD is advertising-funded, so the surrounding platform carries commercial content
+- US-centric clinical context; limited NICE and NHS alignment
+
+**Pricing:** Free (advertising-funded parent)
+
+**CPD Support:** Minimal; no logging or reflection features for UK revalidation
+
+---
+
 ## Comparison Table
 
 | Service | Journals Covered | Frequency | CPD Credits | Price |
@@ -221,6 +245,7 @@ Pricing ranges from free to several hundred pounds annually. Consider both the d
 | **ClinicalKey AI** | Elsevier books + journals + AI search | On-demand (look-up) | Limited | Individual (free trial); ~US$349/yr |
 | **NEJM Clinician** | Major journals (expert picks) | Weekly | Minimal | ~£75/year per specialty |
 | **Evidence Alerts** | High-quality evidence (RCTs, reviews) | 2–3 times/week | Minimal | Free–£50/year |
+| **Medscape AI** | General medical literature via AI look-up | On-demand (look-up) | Minimal | Free (ad-funded) |
 
 ## How to Choose the Right Service for You
 
@@ -248,4 +273,4 @@ For a broader introduction to managing medical literature, see our [guide to med
 
 ---
 
-*Last updated: June 2026. Pricing and features current as of publication. Services and their offerings change; please verify current details with providers.*
+*Last updated: August 2026. Pricing and features current as of publication. Services and their offerings change; please verify current details with providers.*

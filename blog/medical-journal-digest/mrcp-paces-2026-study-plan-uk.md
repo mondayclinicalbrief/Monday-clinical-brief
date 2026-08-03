@@ -1,13 +1,16 @@
 ---
-title: "MRCP PACES 2026: Fee Rise, Part 1 In-Centre, and a 12-Week Study Plan for Working Trainees"
-seoTitle: "MRCP PACES 2026: A 12-Week Study Plan for Working Trainees (UK)"
-metaDescription: "A station-by-station 12-week PACES plan for registrars working full weeks — plus 2026's changes: fees up 3.6% (July) and Part 1 in-centre (September)."
-description: "Two MRCP(UK) changes land in 2026: a 3.6% fee rise from July and Part 1 moving in-centre from September. Plus a station-by-station 12-week PACES plan built for working registrars."
+title: "Can You Pass MRCP PACES While Working Full Time? A 12-Week Plan for 2026"
+seoTitle: "Can You Pass MRCP PACES in 2026 While Working Full Time?"
+metaDescription: "Yes — twelve focused weeks works if you're clinically current. A station-by-station PACES plan for registrars working full weeks, plus 2026's exam changes."
+description: "Yes — twelve focused weeks is enough if you are already clinically current and can protect some bedside time. A station-by-station PACES plan built for registrars working full clinical weeks, plus what changed in 2026: fees up 3.6% from July and Part 1 moving in-centre from September."
 date: 2026-06-02
+updated: 2026-08-02
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
 faqs:
+  - question: "Can you pass MRCP PACES while working full time?"
+    answer: "Yes, and most successful candidates do exactly that. Twelve focused weeks is enough if you are already clinically current, can protect some bedside practice time each week, and weight your preparation toward your three weakest stations. One weekday hour when you can get it, plus two weekend half-days, is a realistic shape for a registrar working full clinical weeks. Allow longer if you are returning from a non-clinical post or an extended break."
   - question: "How much are MRCP(UK) exam fees in 2026?"
     answer: "MRCP(UK) examination fees rise by 3.6% — in line with the UK Consumer Price Index — from 1 July 2026, applying to the 2026/03 examination diet onwards. This affects Part 1, Part 2 written, and PACES, in the UK and internationally. The Federation's exam fees pages hold the exact current amounts; check them before budgeting."
   - question: "What is changing about MRCP Part 1 in September 2026?"
@@ -20,7 +23,9 @@ faqs:
     answer: "No, but most candidates who pass first time have attended at least one structured course. The value is timed mock stations with examiner-style feedback, which is hard to replicate alone."
 ---
 
-Two MRCP(UK) changes matter in 2026. Exam fees rise by 3.6% — in line with UK CPI — from 1 July 2026, applying to the 2026/03 diet onwards, across Part 1, Part 2 written, and PACES. And Part 1 moves to in-centre, computer-based delivery from the September 2026 (2026/03) sitting, ending remote proctoring internationally. If you are sitting this year, both affect your planning. Below is what changed, then a realistic 12-week PACES study plan for trainees working full clinical weeks.
+Yes — on conditions. Twelve focused weeks is enough to prepare for PACES around full clinical weeks if you are already clinically current, can protect some bedside practice time, and weight your effort toward your three worst stations rather than revising evenly. If you are coming back from a non-clinical post or an extended break, plan for longer. What does not work is a question bank and good intentions.
+
+Two MRCP(UK) changes also matter in 2026. Exam fees rise by 3.6% — in line with UK CPI — from 1 July 2026, applying to the 2026/03 diet onwards, across Part 1, Part 2 written, and PACES. And Part 1 moves to in-centre, computer-based delivery from the September 2026 (2026/03) sitting, ending remote proctoring internationally. If you are sitting this year, both affect your planning. Below is what changed, then the 12-week plan itself.
 
 ## What changed for 2026
 
