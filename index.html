@@ -74,6 +74,7 @@
   "jobTitle": "Consultant in Palliative Medicine",
   "worksFor": { "@type": "MedicalOrganization", "name": "NHS Wales" },
   "url": "https://mondayclinicalbrief.co.uk/#about",
+  "image": "https://mondayclinicalbrief.co.uk/assets/brand/tim-hamilton-800.jpg",
   "sameAs": [
     "https://www.linkedin.com/in/tim-hamilton-6328473b4/"
   ],
@@ -237,6 +238,8 @@
   .about-section { background: var(--cream); }
   .about-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 2.5rem; align-items: start; margin-top: 2rem; }
   .about-photo { width: 100%; aspect-ratio: 1; background: var(--sage-light); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-family: 'Instrument Serif', serif; font-size: 3rem; color: var(--sage); }
+  .about-photo picture { display: block; width: 100%; height: 100%; }
+  .about-photo img { width: 100%; height: 100%; object-fit: cover; border-radius: 8px; display: block; }
   .about-text p { margin-bottom: 1rem; color: var(--text-muted); font-size: 0.95rem; }
   .about-text strong { color: var(--text); }
 
@@ -255,8 +258,8 @@
     .hero { min-height: calc(100vh - 60px); padding-top: 3rem; }
     section { padding: 3.5rem 1.5rem; }
     .specialties-grid { grid-template-columns: 1fr 1fr; }
-    .about-grid { grid-template-columns: 1fr; }
-    .about-photo { max-width: 160px; }
+    .about-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+    .about-photo { max-width: 160px; margin-left: auto; margin-right: auto; }
     .step { grid-template-columns: 40px 1fr; gap: 1rem; }
     .subscribe-features { grid-template-columns: 1fr; }
   }
@@ -832,10 +835,18 @@ Please provide the full abstract text so I can generate an accurate structured s
   <div class="container">
     <div class="section-label">About</div>
     <h2>Built by a clinician, for clinicians</h2>
-    <div class="about-text" style="margin-top: 2rem;">
+    <div class="about-grid">
+      <div class="about-photo">
+        <picture>
+          <source srcset="/assets/brand/tim-hamilton-800.webp" type="image/webp">
+          <img src="/assets/brand/tim-hamilton-800.jpg" width="800" height="800" loading="lazy" decoding="async" alt="Dr Tim Hamilton, Consultant in Palliative Medicine and founder of The Monday Clinical Brief">
+        </picture>
+      </div>
+      <div class="about-text">
         <p><strong>Dr Tim Hamilton</strong> is a Consultant in Palliative Medicine working in NHS Wales. He built The Monday Clinical Brief to solve a problem he and his colleagues shared: keeping up with the literature alongside a busy clinical workload.</p>
         <p>The digest uses publicly available PubMed abstracts summarised by AI. Summaries are a starting point for identifying relevant articles — not a substitute for reading the original papers. No patient data is involved at any stage.</p>
         <p style="margin-bottom:0;">Questions? <a href="mailto:info@mondayclinicalbrief.co.uk" style="color: var(--sage-deep);">info@mondayclinicalbrief.co.uk</a></p>
+      </div>
     </div>
   </div>
 </section>
