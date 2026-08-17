@@ -1,6 +1,6 @@
 ---
 title: "This Week in Medical Journals: March 2026 Highlights"
-seoTitle: "This Week in Medical Journals: Key Papers March 2026 | MCB"
+seoTitle: "This Week in Medical Journals: Key Papers March 2026"
 metaDescription: "This week's most important medical journal papers across specialties. Key findings from The Lancet, BMJ, NEJM, and JAMA — summarised for busy UK clinicians."
 description: "The most notable papers published this week across major medical journals — quick clinical summaries for doctors who don't have time to read everything."
 date: 2026-03-30

@@ -1,7 +1,7 @@
 ---
 title: "Journal Summary Subscription vs Free Journal Alerts"
-seoTitle: "Journal Summary Subscription vs Free Alerts: Which Is Better? | MCB"
-metaDescription: "Free journal alerts or a paid summary subscription? We compare coverage, signal-to-noise, CPD value, and time cost for UK doctors. Make the right choice for your practice."
+seoTitle: "Journal Summary Subscription vs Free Alerts"
+metaDescription: "Free journal alerts or a paid summary subscription? We compare coverage, signal-to-noise, CPD value and time cost for UK doctors."
 description: "Free journal alerts or a paid summary subscription? A practical comparison of coverage, signal-to-noise, and time cost for busy UK doctors."
 date: 2026-04-28
 cluster: "Journal Summary Subscription"

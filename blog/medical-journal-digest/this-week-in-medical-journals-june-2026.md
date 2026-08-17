@@ -1,7 +1,7 @@
 ---
 title: "This Week in Medical Journals: June 2026 Highlights"
-seoTitle: "This Week in Medical Journals: Key Updates June 2026 | MCB"
-metaDescription: "June 2026's most important UK guidance and journal developments — NICE NG23 menopause, fezolinetant, tirzepatide in the GP QOF, and SGLT2 first-line — summarised for busy UK clinicians."
+seoTitle: "This Week in Medical Journals: Key Updates June 2026"
+metaDescription: "June 2026's most important UK guidance — NICE NG23 menopause, fezolinetant, tirzepatide in the GP QOF, and SGLT2 first-line."
 description: "The guideline changes and developments worth a UK clinician's attention this month — menopause, obesity prescribing, diabetes — each summarised with a link to the detail."
 date: 2026-06-02
 cluster: "Medical Journal Digest"

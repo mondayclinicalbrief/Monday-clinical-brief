@@ -1,7 +1,7 @@
 ---
 title: "BMJ, NEJM Clinician and Independent Journal Digests Compared (2026)"
-seoTitle: "BMJ vs NEJM Clinician vs Independent Journal Digests: Which Is Best? | MCB"
-metaDescription: "How do BMJ summaries, NEJM Clinician (rebranded from Journal Watch), and independent UK digests compare in 2026? Updated with NEJM's £75 price, UpToDate Expert AI's UK availability, Heidi Evidence, and OpenEvidence."
+seoTitle: "BMJ vs NEJM Clinician vs Independent Digests (2026)"
+metaDescription: "How BMJ summaries, NEJM Clinician (£75/yr) and independent UK digests compare in 2026 — coverage, cost, and UK fit for busy clinicians."
 description: "A 2026 comparison of BMJ summaries, NEJM Clinician, UpToDate Expert AI, Heidi Evidence, OpenEvidence, ChatGPT for Clinicians, and independent digests like MCB — pricing, coverage, UK availability, and value for UK clinicians."
 date: 2026-04-25
 cluster: "Journal Summary Subscription"

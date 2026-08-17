@@ -1,7 +1,7 @@
 ---
 title: "Journal Summary Subscription"
 heading: "Journal Summary Subscription: Clinical Digests Delivered Weekly"
-seoTitle: "Journal Summary Subscription: Clinical Digests Delivered Weekly | MCB"
+seoTitle: "Journal Summary Subscription: Weekly Clinical Digests"
 metaDescription: "Subscribe to Monday Clinical Brief for weekly journal summaries from The Lancet, BMJ, NEJM and 20+ journals. Easy to log for CPD. Written for UK doctors."
 description: "Compare journal summary subscription services for UK doctors. What to look for, how they work, and why The Monday Clinical Brief covers 31 specialties for £20/year."
 date: 2026-03-17

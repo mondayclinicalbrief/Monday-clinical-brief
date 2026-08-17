@@ -1,7 +1,7 @@
 ---
 title: "Can You Prescribe Tirzepatide Under QOF 2026/27? The Mounjaro Decision Facing GPs"
 seoTitle: "Can GPs Prescribe Tirzepatide (Mounjaro) Under QOF 2026/27?"
-metaDescription: "Yes — if your ICB commissions it. The decision GPs face under the 2026/27 QOF tirzepatide change: TA1026 eligibility, BMI thresholds, and the local-commissioning catch."
+metaDescription: "Yes — if your ICB commissions it. The decision GPs face under the 2026/27 QOF tirzepatide change: TA1026 eligibility and BMI thresholds."
 description: "Tirzepatide for obesity moved into the 2026/27 GP QOF on 1 April 2026. Whether you can actually prescribe it is a local question — a plain-English summary of NICE TA1026 eligibility, the primary-care prescribing model, and what UK GPs need to know."
 date: 2026-06-02
 updated: 2026-07-16

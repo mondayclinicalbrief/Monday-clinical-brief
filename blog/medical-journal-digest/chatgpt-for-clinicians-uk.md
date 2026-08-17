@@ -1,7 +1,7 @@
 ---
 title: "ChatGPT for Clinicians Launched. UK Doctors Are Excluded."
-seoTitle: "ChatGPT for Clinicians UK: Why It's Not Available and What to Use Instead"
-metaDescription: "OpenAI launched ChatGPT for Clinicians on 23 April 2026 — and immediately excluded UK and EEA doctors. Here's what the exclusion means, and what UK clinicians can use instead."
+seoTitle: "ChatGPT for Clinicians UK: Why It Is Not Available"
+metaDescription: "OpenAI launched ChatGPT for Clinicians on 23 April 2026 and excluded UK and EEA doctors. What the exclusion means, and what to use instead."
 description: "ChatGPT for Clinicians launched in April 2026 but explicitly excludes the UK and EEA. Here's what it does, why UK doctors are locked out, and what's actually available."
 date: 2026-05-13
 updated: 2026-06-30

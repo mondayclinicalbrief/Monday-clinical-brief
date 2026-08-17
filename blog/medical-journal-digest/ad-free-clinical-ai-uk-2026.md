@@ -1,7 +1,7 @@
 ---
 title: "Ad-Free Clinical AI for UK Doctors (2026): The Short List"
-seoTitle: "Ad-Free Clinical AI for UK Doctors (2026) | The Monday Clinical Brief"
-metaDescription: "A short, honest list of clinical AI tools for UK doctors that don't sell your attention — what each one does, what it costs, and the job it is built for. Updated June 2026."
+seoTitle: "Ad-Free Clinical AI for UK Doctors (2026)"
+metaDescription: "A short, honest list of clinical AI tools for UK doctors that do not sell your attention — what each does, what it costs, and the job it is built for."
 description: "Ad-free clinical AI is becoming its own category. Here is the short list of tools UK doctors can use that carry no advertising — and the specific job each one does."
 date: 2026-06-02
 updated: 2026-06-02

@@ -1,7 +1,7 @@
 ---
 title: "ClinicalKey AI vs OpenEvidence: In the UK, It's Not a Choice"
 seoTitle: "ClinicalKey AI vs OpenEvidence (2026): The UK Comparison"
-metaDescription: "ClinicalKey AI vs OpenEvidence for UK clinicians in 2026. One withdrew from the UK in April; the other is still available — and Elsevier built it with OpenEvidence. What that means in practice."
+metaDescription: "ClinicalKey AI vs OpenEvidence for UK clinicians in 2026. One withdrew from the UK; the other is still available — and Elsevier built it with OpenEvidence."
 description: "A comparison with an unusual answer: OpenEvidence left the UK, ClinicalKey AI didn't — and Elsevier co-developed ClinicalKey AI with OpenEvidence in the first place."
 date: 2026-07-25
 cluster: "Medical Journal Digest"

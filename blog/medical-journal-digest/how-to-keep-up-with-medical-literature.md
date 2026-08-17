@@ -1,6 +1,6 @@
 ---
 title: "How to Keep Up with Medical Literature in 2026"
-seoTitle: "How to Keep Up with Medical Literature in 2026 | Monday Clinical Brief"
+seoTitle: "How to Keep Up with Medical Literature in 2026"
 metaDescription: "Over 7,000 medical papers published weekly. How do busy UK doctors stay current? Five practical strategies for efficient journal reading that count towards CPD."
 description: "Five practical strategies for busy UK doctors to stay current with the medical literature — without sacrificing every evening and weekend."
 date: 2026-03-24

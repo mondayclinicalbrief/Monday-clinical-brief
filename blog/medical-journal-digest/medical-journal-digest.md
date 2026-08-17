@@ -1,8 +1,8 @@
 ---
 title: "Medical Journal Digest"
 heading: "Medical Journal Digest: The Complete Guide for Busy Clinicians"
-seoTitle: "Medical Journal Digest: The Complete Guide for Busy Clinicians | MCB"
-metaDescription: "Struggling to keep up with medical journals? Our medical journal digest delivers the key papers you need in minutes. Read the complete guide. Easy to log for CPD."
+seoTitle: "Medical Journal Digest: The Complete Guide"
+metaDescription: "Struggling to keep up with medical journals? A digest delivers the key papers in minutes. The complete guide, and how to log it for CPD."
 description: "The definitive guide to medical journal digests — what they are, how they work, and how UK clinicians use them to stay evidence-based."
 date: 2026-03-17
 updated: 2026-06-02

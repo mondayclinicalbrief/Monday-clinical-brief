@@ -1,7 +1,7 @@
 ---
 title: "SGLT2 Inhibitors in UK Primary Care 2026: What NICE NG28 Means in Practice"
-seoTitle: "SGLT2 Inhibitor Guidelines UK 2026: Practical NICE NG28 Prescribing Guide"
-metaDescription: "After the February 2026 NICE NG28 update, SGLT2 inhibitors are first-line for most adults with type 2 diabetes. Here's the practical UK primary-care prescribing flow — agents, eligibility, cautions, and the new initiation pathway."
+seoTitle: "SGLT2 Inhibitors UK 2026: NICE NG28 Prescribing"
+metaDescription: "After the February 2026 NG28 update, SGLT2 inhibitors are first-line for most adults with type 2 diabetes. The practical UK prescribing flow."
 description: "The 2026 NICE NG28 update made SGLT2 inhibitors first-line for most adults with type 2 diabetes. A practical guide to UK primary-care prescribing — agents, eligibility, cautions, sick-day rules, and what still requires metformin."
 date: 2026-05-19
 cluster: "Medical Journal Digest"

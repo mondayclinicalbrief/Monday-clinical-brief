@@ -1,7 +1,7 @@
 ---
 title: "NICE CKS Round-Up — June 2026: Recent Updates for UK Primary Care"
-seoTitle: "NICE CKS Round-Up June 2026: Updated Topics for UK GPs Explained"
-metaDescription: "A monthly summary of recently updated NICE Clinical Knowledge Summaries (CKS) topics for UK primary care — gingivitis and periodontitis, seasonal influenza 2026-27, insect bites, olecranon bursitis and sciatica — with one-line clinical takeaways."
+seoTitle: "NICE CKS Round-Up June 2026: Updated Topics for UK GPs"
+metaDescription: "June 2026's NICE CKS updates for UK primary care — gingivitis and periodontitis, seasonal influenza, sciatica, insect bites and olecranon bursitis."
 description: "Our monthly NICE CKS round-up: the June 2026 Clinical Knowledge Summaries updates that matter in UK primary care, each with a one-line takeaway and a link to the source."
 date: 2026-07-16
 cluster: "Medical Journal Digest"

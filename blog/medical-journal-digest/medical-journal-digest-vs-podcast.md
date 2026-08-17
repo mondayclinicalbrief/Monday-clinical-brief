@@ -1,6 +1,6 @@
 ---
 title: "Medical Journal Digest vs Medical Podcast: Which Is Better for CPD?"
-seoTitle: "Medical Journal Digest vs Podcast: Which Is Better for CPD? | MCB"
+seoTitle: "Medical Journal Digest vs Podcast: Which for CPD?"
 metaDescription: "Should UK doctors learn from journal digests or medical podcasts? A practical comparison of retention, CPD value, and time efficiency for busy clinicians."
 description: "Journal digest or medical podcast — which is the better way for UK doctors to keep current? A practical comparison of retention, CPD value, and time efficiency."
 date: 2026-06-09

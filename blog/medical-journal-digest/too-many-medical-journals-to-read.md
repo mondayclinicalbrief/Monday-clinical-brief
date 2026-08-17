@@ -1,6 +1,6 @@
 ---
 title: "Too Many Medical Journals to Read? Here Is What Smart Doctors Do"
-seoTitle: "Too Many Medical Journals to Read? Here Is What Smart Doctors Do"
+seoTitle: "Too Many Medical Journals to Read? What Doctors Do"
 metaDescription: "Feeling overwhelmed by medical journals? You are not alone. Discover what evidence-based doctors actually do to stay current without burning out."
 description: "Feeling overwhelmed by the volume of medical journals? You are not alone. Here is what evidence-based doctors actually do to stay current."
 date: 2026-03-31

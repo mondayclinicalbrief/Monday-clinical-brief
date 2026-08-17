@@ -1,8 +1,8 @@
 ---
 layout: blog-post.njk
 title: "Palliative Care Journal Digest"
-seoTitle: "Palliative Care Journal Digest for NHS Clinicians | The Monday Clinical Brief"
-metaDescription: "Stay current with palliative care evidence — every new paper from the field's five leading journals, every Monday. Written by a Consultant in Palliative Medicine, NHS Wales."
+seoTitle: "Palliative Care Journal Digest for NHS Clinicians"
+metaDescription: "Every new paper from palliative care's five leading journals, every Monday. Written by a Consultant in Palliative Medicine, NHS Wales."
 description: "Every new palliative care paper from the field's five leading journals, every Monday. Plain-language summaries, written for NHS clinicians by a serving consultant in the specialty."
 date: 2026-05-11
 updated: 2026-06-30

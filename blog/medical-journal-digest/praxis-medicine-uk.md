@@ -1,7 +1,7 @@
 ---
 title: "Praxis Medicine UK: What It Is, What It Costs, and Where It Fits"
-seoTitle: "Praxis Medicine UK: What It Does and What It Doesn't Replace | MCB"
-metaDescription: "Praxis Medicine is a new, Balderton-backed clinical AI search tool grounded in NICE and NHS sources. Here's what it does, what it costs, and how it sits alongside the other UK clinical AI tools in 2026."
+seoTitle: "Praxis Medicine UK: What It Does and What It Costs"
+metaDescription: "Praxis Medicine is a new clinical AI search tool grounded in NICE and NHS sources. What it does, what it costs, and where it fits in 2026."
 description: "Praxis Medicine launched in 2026 as a UK-focused clinical AI search tool. Here's what it does, where its sources come from, and the one job it does not do — keeping you current with the literature."
 date: 2026-06-02
 updated: 2026-06-30

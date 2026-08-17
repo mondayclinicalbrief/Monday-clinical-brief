@@ -1,7 +1,7 @@
 ---
 title: "Anticoagulation in Atrial Fibrillation: A UK Primary-Care Guide (NICE NG196)"
-seoTitle: "AF Anticoagulation UK Primary Care 2026: DOACs, CHA2DS2-VASc and ORBIT (NG196)"
-metaDescription: "NICE NG196 makes DOACs first-line over warfarin for stroke prevention in atrial fibrillation, uses CHA2DS2-VASc to decide who to anticoagulate and ORBIT for bleeding risk, and drops aspirin. Here's the practical UK primary-care picture in 2026, including the move to edoxaban on many formularies."
+seoTitle: "AF Anticoagulation UK 2026: DOACs and NICE NG196"
+metaDescription: "NICE NG196 makes DOACs first-line over warfarin in AF, uses CHA2DS2-VASc to decide who to anticoagulate and ORBIT for bleeding risk, and drops aspirin."
 description: "DOACs first-line, CHA2DS2-VASc to decide who to treat, ORBIT for bleeding risk, and no role for aspirin — NICE NG196 reshaped AF stroke prevention, and the work sits in primary care. A plain-English UK guide, including DOAC choice and the edoxaban-first formulary shift."
 date: 2026-06-17
 cluster: "Medical Journal Digest"

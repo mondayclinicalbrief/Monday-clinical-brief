@@ -1,7 +1,7 @@
 ---
 title: "How Much Does a Medical Journal Summary Subscription Cost?"
-seoTitle: "Medical Journal Summary Subscription Cost (2026 UK Guide) | MCB"
-metaDescription: "What you actually pay for a medical journal summary subscription in 2026. UK pricing compared across major services, what's included, and how to judge value for money."
+seoTitle: "Medical Journal Summary Subscription Cost (2026 UK)"
+metaDescription: "What you actually pay for a journal summary subscription in 2026. UK pricing compared, what is included, and how to judge value."
 description: "A transparent breakdown of journal summary subscription pricing in the UK — what you pay, what you get, and how to judge value against time saved."
 date: 2026-05-05
 cluster: "Journal Summary Subscription"

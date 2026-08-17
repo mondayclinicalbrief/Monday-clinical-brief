@@ -1,7 +1,7 @@
 ---
 title: "SGLT2 Inhibitors for CKD in UK Primary Care 2026: What NICE TA1075 Means in Practice"
-seoTitle: "SGLT2 Inhibitors for CKD UK 2026: Dapagliflozin (TA1075) Primary-Care Guide"
-metaDescription: "NICE TA1075 (July 2025) made dapagliflozin an option for chronic kidney disease — including in adults without type 2 diabetes. Here's the practical UK primary-care picture: who's now eligible by eGFR and uACR, the ACEi/ARB add-on rule, the expected early eGFR dip, and finding patients on the CKD register."
+seoTitle: "SGLT2 for CKD UK 2026: Dapagliflozin (TA1075)"
+metaDescription: "NICE TA1075 made dapagliflozin an option for CKD — including without type 2 diabetes. Who is eligible by eGFR and uACR, and the ACEi/ARB add-on rule."
 description: "TA1075 expanded dapagliflozin for CKD to adults without type 2 diabetes, and prescribing SGLT2 inhibitors for kidney protection is now largely a primary-care job. A plain-English guide for UK clinicians — eligibility, the standard-care add-on rule, the early eGFR dip, cautions, and the register review that finds eligible patients."
 date: 2026-06-16
 cluster: "Medical Journal Digest"

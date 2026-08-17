@@ -1,7 +1,7 @@
 ---
 title: "Red Whale, NEJM Clinician and The Monday Clinical Brief: the £20, £75 and £210 Question"
-seoTitle: "Red Whale vs NEJM Clinician vs MCB (2026): Which to Use, or Use Together | MCB"
-metaDescription: "Red Whale (£210 a course), NEJM Clinician (£75 a year) and The Monday Clinical Brief (£20 a year) do three different jobs. A 2026 UK comparison — and why most clinicians use a combination, not just one."
+seoTitle: "Red Whale vs NEJM Clinician vs MCB (2026)"
+metaDescription: "Red Whale (£210 a course), NEJM Clinician (£75/yr) and MCB (£20/yr) do three different jobs. A 2026 UK comparison — and why most combine them."
 description: "A 2026 UK comparison of Red Whale, NEJM Clinician and The Monday Clinical Brief. Three price points, three different jobs — and an honest case for using them together rather than choosing one."
 date: 2026-05-29
 updated: 2026-07-16

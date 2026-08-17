@@ -1,7 +1,7 @@
 ---
 title: "Two AI Tools UK Doctors Lost, One Restricted — And What Works in Their Place"
-seoTitle: "UK Doctors' AI Tools 2026: Two Withdrawn, One Restricted — and What Replaces Them"
-metaDescription: "Between 23 April and May 2026, UK clinicians lost OpenEvidence and ChatGPT for Clinicians, while Heidi Evidence pulled back to out-of-session use only. Here's what happened, why, and the UK-regulatory-compliant tools that still work."
+seoTitle: "UK Doctors' AI Tools 2026: Withdrawn and Restricted"
+metaDescription: "UK clinicians lost OpenEvidence and ChatGPT for Clinicians in 2026, and Heidi Evidence pulled back to out-of-session use. What still works."
 description: "OpenEvidence withdrew. ChatGPT for Clinicians launched with the UK excluded. Heidi Evidence restricted its in-session use. Three credible AI tools pulled back from UK point-of-care use in six weeks. Here's the pattern — and the two-tool setup we recommend instead."
 date: 2026-05-25
 updated: 2026-06-15

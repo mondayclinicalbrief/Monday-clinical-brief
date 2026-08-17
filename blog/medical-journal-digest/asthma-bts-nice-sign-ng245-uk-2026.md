@@ -1,7 +1,7 @@
 ---
 title: "Asthma Diagnosis and Treatment in UK Primary Care 2026: What the BTS/NICE/SIGN Guideline (NG245) Changed"
-seoTitle: "Asthma Guideline 2026 UK (NG245): FeNO Diagnosis, AIR and MART Explained"
-metaDescription: "The 2024 BTS/NICE/SIGN asthma guideline (NG245) changed how UK primary care diagnoses and treats asthma: eosinophilic markers and FeNO first, and ICS/formoterol as anti-inflammatory reliever (AIR) and MART instead of SABA-only. Here's what it means in practice in 2026."
+seoTitle: "Asthma Guideline 2026 UK (NG245): FeNO, AIR and MART"
+metaDescription: "The BTS/NICE/SIGN asthma guideline (NG245) changed UK diagnosis and treatment: FeNO first, and ICS/formoterol as AIR and MART instead of SABA-only."
 description: "NG245 — the joint BTS, NICE and SIGN asthma guideline — overhauled diagnosis (blood eosinophils and FeNO first) and treatment (AIR and MART, the end of SABA-only) for people aged 12 and over. A plain-English guide for UK primary care."
 date: 2026-06-17
 cluster: "Medical Journal Digest"
