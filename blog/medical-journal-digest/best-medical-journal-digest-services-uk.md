@@ -1,10 +1,10 @@
 ---
 title: "Best Medical Journal Digest Services for UK Doctors"
-seoTitle: "Best Medical Publications & Journal Digests for UK Doctors (2026)"
-metaDescription: "Compare the best medical journal digests for UK doctors on coverage, CPD and price. The Monday Clinical Brief covers the top 5 journals across 31 specialties from £20/year — free 4-week trial."
+seoTitle: "Best Medical Journal Digests for UK Doctors (2026)"
+metaDescription: "Compare the best medical journal digests for UK doctors on coverage, CPD and price — the top 5 journals across 31 specialties from £20/year."
 description: "A head-to-head comparison of journal digest services available to UK doctors — features, pricing, CPD integration, and specialty coverage."
 date: 2026-04-14
-updated: 2026-08-02
+updated: 2026-08-17
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
@@ -214,7 +214,7 @@ Pricing ranges from free to several hundred pounds annually. Consider both the d
 
 ### Medscape AI
 
-**What is it?** A generative clinical reference launched in November 2025 and free to Medscape's 13 million-plus registered members. It answers clinical questions in natural language, personalises to your specialty, and traces its answers back to sources. Like ClinicalKey AI and UpToDate, it is a look-up tool rather than a digest — it is here because it is the free option UK clinicians are most likely to meet, not because it keeps you current.
+**What is it?** A generative clinical reference launched in November 2025 and free to Medscape's 13 million-plus registered members. It answers clinical questions in natural language, personalises to your specialty, and traces its answers back to sources. Medscape added AI Search in August 2026 — a chat-based layer drawing on 6,000-plus physician-reviewed articles, launched US-first. Like ClinicalKey AI and UpToDate, it is a look-up tool rather than a digest — it is here because it is the free option UK clinicians are most likely to meet, not because it keeps you current.
 
 **Strengths:**
 - Free at the point of use, with no subscription

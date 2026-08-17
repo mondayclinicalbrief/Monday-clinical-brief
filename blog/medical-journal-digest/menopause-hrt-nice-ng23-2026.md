@@ -1,10 +1,10 @@
 ---
-title: "Menopause and HRT Guidance UK 2026: NICE Recommends Fezolinetant and Updates NG23"
-seoTitle: "Menopause HRT Guidance UK 2026: Fezolinetant (TA1143) and NICE NG23 Update Explained"
-metaDescription: "NICE recommended fezolinetant for menopausal hot flushes (TA1143, March 2026), NG23 was updated in April, and the SMC accepted fezolinetant for Scotland in July 2026. What changed for UK clinicians — and what hasn't. HRT remains first-line."
+title: "What Can You Offer When HRT Isn't Suitable? Fezolinetant and NG23 in 2026"
+seoTitle: "Menopause 2026: What to Offer When HRT Isn't Suitable"
+metaDescription: "Fezolinetant (Veoza) — NICE TA1143 recommends it for moderate to severe hot flushes when HRT is unsuitable. HRT stays first-line. Plus the NG23 update."
 description: "Two menopause guidance changes landed in 2026: NICE recommended fezolinetant as a non-hormonal option for vasomotor symptoms, and updated NG23 on unscheduled bleeding. A plain-English summary for UK clinicians."
 date: 2026-06-02
-updated: 2026-07-16
+updated: 2026-08-17
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
@@ -22,6 +22,8 @@ faqs:
   - question: "When does the NHS have to fund fezolinetant?"
     answer: "Where fezolinetant is the most suitable option for an eligible patient, NICE technology appraisal guidance requires NHS funding in England within 90 days of final publication. The authoritative detail is in NICE TA1143 and the BNF entry for the drug."
 ---
+
+**When HRT is unsuitable, there is now a non-hormonal option on the NHS: fezolinetant (Veoza), recommended by NICE for moderate to severe hot flushes and night sweats.** For everyone else HRT remains first-line — that has not changed.
 
 Two pieces of UK menopause guidance changed in 2026. NICE recommended [fezolinetant](https://www.nice.org.uk/guidance/ta1143) (Veoza) as a non-hormonal option for moderate to severe vasomotor symptoms when HRT is unsuitable — technology appraisal TA1143, published 31 March 2026, with around 500,000 people estimated to be eligible. And NICE updated [NG23](https://www.nice.org.uk/guidance/ng23), the menopause guideline, on 15 April 2026 with revised advice on unscheduled bleeding while taking systemic HRT. HRT remains first-line throughout.
 

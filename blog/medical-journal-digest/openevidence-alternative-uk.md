@@ -1,10 +1,10 @@
 ---
 title: "Looking for an OpenEvidence Alternative in the UK?"
 seoTitle: "OpenEvidence Alternative UK: What to Use Now It's Gone"
-metaDescription: "What happened to OpenEvidence? It withdrew from the UK in April 2026 and hasn't returned. What UK doctors actually use instead in July 2026 — and what none of the replacements do."
+metaDescription: "OpenEvidence withdrew from the UK in April 2026 and has not returned. What UK doctors actually use instead — and what none of the replacements do."
 description: "OpenEvidence is gone from the UK. Here's what actually fills the gap — and why staying current with the literature is a different problem from clinical Q&A."
 date: 2026-05-03
-updated: 2026-08-02
+updated: 2026-08-17
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
@@ -62,8 +62,8 @@ When OpenEvidence withdrew in April, the field of UK-usable replacements was thi
 | **iatroX** | UK clinical Q&A, NICE/CKS/SmPC-grounded | Available — MHRA-registered, UKCA-marked | Free core; Premium ~£99/yr |
 | **Heidi Evidence** | Citation-backed clinical answers, BMJ/NICE-partnered | *Evidence* restricted to out-of-session use (UK/EU); *Scribe* available | Free tier + paid |
 | **Praxis Medicine** | Clinical AI search, NICE/CKS/NHS Digital-grounded | Newly launched (Apr 2026); individual access still settling | Not yet public |
-| **Vera Health** | Evidence answers + calculators; claims 300,000+ clinician users; ACEP clinical-policy integration | Available — no geographic restrictions; expanding in Europe (Italy, July 2026); UK guideline localisation still unclear | Free for verified clinicians |
-| **Medscape AI** | Generative clinical reference for Medscape members; specialty-personalised, source-traced | Available — but no UK regulatory status: not UKCA-marked, not MHRA-registered, not DTAC-assessed | Free (ad-funded parent) |
+| **Vera Health** | Evidence answers + calculators; claims 300,000+ clinician users; ACEP clinical-policy integration; Deep Research Mode (Aug 2026) generates systematic-review-style reports across ~60 million papers | Available — no geographic restrictions; expanding in Europe (Italy, July 2026); UK guideline localisation still unclear | Free for verified clinicians |
+| **Medscape AI** | Generative clinical reference for Medscape members; specialty-personalised, source-traced; AI Search added August 2026, US-first | Available — but no UK regulatory status: not UKCA-marked, not MHRA-registered, not DTAC-assessed | Free (ad-funded parent) |
 | **ClinicalKey AI** | Elsevier AI clinical Q&A, full-text books + journals, citation-backed | Available in UK — individual + institutional | Paid individual; free 14-day trial |
 | **UpToDate** | Point-of-care reference; Pro Plus / Expert AI is its Q&A layer | Standard available (often via NHS trust); AI Q&A layer not for UK individuals | ~£440/yr individual, or via trust |
 | **The Monday Clinical Brief** | Weekly literature digest, 31 specialties | Available now | £20/yr |

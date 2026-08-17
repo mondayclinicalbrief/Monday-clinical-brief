@@ -1,10 +1,10 @@
 ---
 title: "MCB vs UpToDate: Reference Tool vs Weekly Digest"
-seoTitle: "Monday Clinical Brief vs UpToDate: Which Do UK Doctors Actually Need?"
-metaDescription: "UpToDate is the gold standard clinical reference. The Monday Clinical Brief is a weekly literature digest. They do different jobs — here's how to think about both, including why UK doctors don't get UpToDate's new AI features."
+seoTitle: "Monday Clinical Brief vs UpToDate: Which Do You Need?"
+metaDescription: "UpToDate is a clinical reference; The Monday Clinical Brief is a weekly literature digest. They do different jobs — here is how to think about both."
 description: "UpToDate and MCB solve different problems. One is a reference you consult. The other is a digest that keeps you current. Most UK doctors need both — here's why."
 date: 2026-05-04
-updated: 2026-07-16
+updated: 2026-08-17
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
@@ -51,7 +51,7 @@ UpToDate Pro Plus AI is currently available only to personal subscribers in the 
 
 The gap widened in June 2026. Wolters Kluwer and OpenAI expanded their collaboration, and UpToDate Expert AI — the enterprise generative-AI layer — is now embedded across the Microsoft Copilot ecosystem, including Dragon Copilot, Microsoft 365 Copilot and Teams. Wolters Kluwer reports more than half of its US enterprise customers signed, with a target near 70% by mid-2026. This is the deeper AI integration, and it is sold to institutions through Microsoft — not to a UK individual through a personal subscription.
 
-Re-verified 15 July 2026: Expert AI and Pro Plus AI remain a US and Canada limited market release. Wolters Kluwer describes the wider rollout as gradual, and no UK availability date has been published — a UK individual still cannot buy the AI layer at any price.
+Re-verified 17 August 2026: Expert AI now awards CME credits directly in the clinical workflow, and Wolters Kluwer reports it in use across roughly a third of its enterprise customers — around 1,600 US hospitals. The published availability list runs US, Canada, Australia, Hong Kong, Lebanon, Mongolia, Qatar and South Korea. The UK is still absent from it, no UK availability date has been published, and a UK individual still cannot buy the AI layer at any price.
 
 This is the same regulatory pattern driving OpenEvidence's withdrawal and ChatGPT for Clinicians' UK exclusion. US vendors are routing AI healthcare features through enterprise channels and markets where the regulatory path is clearer. The UK individual is, for now, outside both.
 
