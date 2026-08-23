@@ -82,12 +82,120 @@ function getSpecialtyName(slug) {
   return SPECIALTY_NAMES[slug] || slug.replace(/-/g, " ").replace(/\b\w/g, l => l.toUpperCase());
 }
 
+// Consumer mailbox providers, mapped to the name we use in the note.
+//
+// Deliberately a blocklist of known consumer providers rather than an
+// allowlist of NHS/institutional domains: subscribers receive at plenty of
+// legitimate non-NHS institutional addresses (mariecurie.org.uk,
+// sthelena.org.uk, health.nsw.gov.au, sfh.ie, aphp.fr), and an allowlist
+// would wrongly nudge every one of them. Anything not listed here falls
+// through to the generic tip — i.e. to today's behaviour.
+const CONSUMER_PROVIDERS = {
+  "gmail.com": "Gmail",
+  "googlemail.com": "Gmail",
+  "yahoo.com": "Yahoo",
+  "yahoo.co.uk": "Yahoo",
+  "yahoo.ie": "Yahoo",
+  "ymail.com": "Yahoo",
+  "y7mail.com": "Yahoo",
+  "rocketmail.com": "Yahoo",
+  "hotmail.com": "Hotmail",
+  "hotmail.co.uk": "Hotmail",
+  "live.com": "Outlook",
+  "live.co.uk": "Outlook",
+  "outlook.com": "Outlook",
+  "outlook.co.uk": "Outlook",
+  "msn.com": "Outlook",
+  "icloud.com": "iCloud",
+  "me.com": "iCloud",
+  "mac.com": "iCloud",
+  "aol.com": "AOL",
+  "btinternet.com": "BT",
+  "sky.com": "Sky",
+  "virginmedia.com": "Virgin Media",
+  "talktalk.net": "TalkTalk",
+  "ntlworld.com": "NTL",
+  "blueyonder.co.uk": "Blueyonder",
+  "tiscali.co.uk": "Tiscali",
+  "protonmail.com": "Proton",
+  "proton.me": "Proton",
+  "gmx.com": "GMX",
+  "gmx.co.uk": "GMX",
+  "mail.com": "Mail.com",
+};
+
+// Returns the friendly provider name for a known consumer address, else null.
+// Anything malformed, missing, or unrecognised returns null so the caller
+// falls back to the generic tip.
+function consumerProvider(email) {
+  if (typeof email !== "string") return null;
+  const at = email.lastIndexOf("@");
+  if (at === -1) return null;
+  const domain = email.slice(at + 1).trim().toLowerCase();
+  return CONSUMER_PROVIDERS[domain] || null;
+}
+
+// Stripe populates customer_details.name for card payments, but it isn't
+// guaranteed — the greeting drops the name rather than rendering an empty gap.
+// Cardholder names in this audience often carry a title ("Dr Sam Reed"), which
+// would otherwise greet them as "Dr", so leading titles are skipped.
+const NAME_TITLES = new Set([
+  "dr", "dr.", "mr", "mr.", "mrs", "mrs.", "ms", "ms.", "miss",
+  "prof", "prof.", "professor", "sir", "dame", "mx", "mx.",
+]);
+
+function firstName(name) {
+  if (typeof name !== "string") return null;
+  const parts = name.trim().split(/\s+/).filter(Boolean);
+  while (parts.length > 1 && NAME_TITLES.has(parts[0].toLowerCase())) parts.shift();
+  const first = parts[0];
+  return first && /^[\p{L}][\p{L}'-]*$/u.test(first) ? first : null;
+}
+
 // ── Email HTML ─────────────────────────────────────────────────────────────────
 
-function buildWelcomeHtml(email, specialtySlug, trialStart, trialEnd, priceLine) {
+function buildWelcomeHtml(email, specialtySlug, trialStart, trialEnd, priceLine, customerName) {
   const specialtyName = getSpecialtyName(specialtySlug);
   const startStr = formatDate(trialStart);
   const endStr = formatDate(trialEnd);
+  const provider = consumerProvider(email);
+  const greetName = firstName(customerName);
+
+  // Consumer addresses get the ask made properly and by name; everyone else
+  // keeps the generic tip. Anything uncertain lands in the `else` branch.
+  const emailTipBlock = provider
+    ? `      <!-- Work-email suggestion (consumer address) -->
+      <tr>
+        <td style="padding:0 40px 20px;">
+          <table width="100%" cellpadding="0" cellspacing="0" style="background:#f8f9fb;border-left:4px solid #7a9bbf;">
+            <tr>
+              <td style="padding:20px 24px;">
+                <p style="margin:0 0 10px;font-size:15px;color:#1a2e44;font-weight:bold;">One quick suggestion${greetName ? `, ${greetName}` : ""}</p>
+                <p style="margin:0 0 10px;font-size:14px;color:#444;line-height:1.6;">
+                  I noticed your subscription came through on a ${provider} address. If you were happy to use your work email, it's worth switching.
+                </p>
+                <p style="margin:0 0 10px;font-size:14px;color:#444;line-height:1.6;">
+                  Each summary links straight to the original paper. Through your institutional access those links take you through to the full article rather than a paywall or abstract. That's where a lot of the value sits.
+                </p>
+                <p style="margin:0 0 10px;font-size:14px;color:#444;line-height:1.6;">
+                  Switching takes ten seconds: just reply with your work address and I'll move your subscription across. Nothing else changes — same specialty, same Monday delivery. If you wanted to use both emails that's also fine.
+                </p>
+                <p style="margin:0;font-size:14px;color:#1a2e44;">— Tim</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+`
+    : `      <!-- Institutional email tip -->
+      <tr>
+        <td style="padding:0 40px 20px;">
+          <p style="margin:0;font-size:13px;color:#666;line-height:1.6;">
+            <strong style="color:#1a2e44;">Tip:</strong> if you signed up with a personal address, just reply with your NHS or institutional email and we'll switch your subscription across — the journal links in each digest then open as full text through your institution's access. Same specialty, same Monday delivery.
+          </p>
+        </td>
+      </tr>
+`;
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -194,15 +302,7 @@ function buildWelcomeHtml(email, specialtySlug, trialStart, trialEnd, priceLine)
         </td>
       </tr>
 
-      <!-- Institutional email tip -->
-      <tr>
-        <td style="padding:0 40px 20px;">
-          <p style="margin:0;font-size:13px;color:#666;line-height:1.6;">
-            <strong style="color:#1a2e44;">Tip:</strong> if you signed up with a personal address, just reply with your NHS or institutional email and we'll switch your subscription across — the journal links in each digest then open as full text through your institution's access. Same specialty, same Monday delivery.
-          </p>
-        </td>
-      </tr>
-
+${emailTipBlock}
       <!-- Cancel CTA -->
       <tr>
         <td style="padding:10px 40px 30px;">
@@ -248,13 +348,20 @@ function buildWelcomeHtml(email, specialtySlug, trialStart, trialEnd, priceLine)
 
 // ── Send welcome email ─────────────────────────────────────────────────────────
 
-async function sendWelcomeEmail(toEmail, specialtySlug, priceLine) {
+async function sendWelcomeEmail(toEmail, specialtySlug, priceLine, customerName) {
   const trialStart = new Date();
   const trialEnd = new Date(trialStart);
   trialEnd.setDate(trialEnd.getDate() + TRIAL_DAYS);
 
   const specialtyName = getSpecialtyName(specialtySlug);
-  const html = buildWelcomeHtml(toEmail, specialtySlug, trialStart, trialEnd, priceLine);
+  const html = buildWelcomeHtml(toEmail, specialtySlug, trialStart, trialEnd, priceLine, customerName);
+
+  // Plain-text alternative carries the same suggestion, same conditions.
+  const provider = consumerProvider(toEmail);
+  const greetName = firstName(customerName);
+  const textTip = provider
+    ? `\n\nOne quick suggestion${greetName ? `, ${greetName}` : ""} — I noticed your subscription came through on a ${provider} address. If you were happy to use your work email, it's worth switching. Each summary links straight to the original paper, and through your institutional access those links take you through to the full article rather than a paywall or abstract. That's where a lot of the value sits.\n\nSwitching takes ten seconds: just reply with your work address and I'll move your subscription across. Nothing else changes — same specialty, same Monday delivery. If you wanted to use both emails that's also fine.\n\n— Tim`
+    : "";
 
   const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
@@ -270,7 +377,7 @@ async function sendWelcomeEmail(toEmail, specialtySlug, priceLine) {
     from: `"The Monday Clinical Brief" <${process.env.GMAIL_USER}>`,
     to: toEmail,
     subject: "Welcome to The Monday Clinical Brief — your free trial has started",
-    text: `Welcome to The Monday Clinical Brief!\n\nYou're subscribed to: ${specialtyName}\nTrial ends: ${formatDate(trialEnd)}\n\nYour first digest arrives next Monday morning.\n\nEvery article has a "Log as CPD" button — one click records your reading in the free MCB CPD Tracker (https://cpd.mondayclinicalbrief.co.uk), with an AI-drafted reflection to personalise and export ready for appraisal.\n\nAfter your 4-week trial, your subscription begins at ${priceLine}. Cancel any time before ${formatDate(trialEnd)} at no cost.\n\nManage subscription: ${STRIPE_CUSTOMER_PORTAL}\n\nQuestions? ${SUPPORT_EMAIL}`,
+    text: `Welcome to The Monday Clinical Brief!\n\nYou're subscribed to: ${specialtyName}\nTrial ends: ${formatDate(trialEnd)}\n\nYour first digest arrives next Monday morning.\n\nEvery article has a "Log as CPD" button — one click records your reading in the free MCB CPD Tracker (https://cpd.mondayclinicalbrief.co.uk), with an AI-drafted reflection to personalise and export ready for appraisal.${textTip}\n\nAfter your 4-week trial, your subscription begins at ${priceLine}. Cancel any time before ${formatDate(trialEnd)} at no cost.\n\nManage subscription: ${STRIPE_CUSTOMER_PORTAL}\n\nQuestions? ${SUPPORT_EMAIL}`,
     html,
   });
 
@@ -308,6 +415,7 @@ exports.handler = async (event) => {
 
   // Extract email
   const email = session.customer_details?.email || session.customer_email;
+  const customerName = session.customer_details?.name || null;
   if (!email) {
     console.error("No email found in session:", session.id);
     return { statusCode: 200, body: "No email — skipped" };
@@ -430,7 +538,7 @@ exports.handler = async (event) => {
   }
 
   try {
-    await sendWelcomeEmail(email, specialtySlug, priceLine);
+    await sendWelcomeEmail(email, specialtySlug, priceLine, customerName);
     return {
       statusCode: 200,
       body: JSON.stringify({ ok: true, email, specialties: specialtySlugs, price }),
