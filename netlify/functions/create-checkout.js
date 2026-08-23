@@ -141,6 +141,16 @@ exports.handler = async (event) => {
       success_url: SITE_URL + "/welcome.html?specialties=" + encodeURIComponent(clientRefId),
       cancel_url: SITE_URL + "/#subscribe",
       allow_promotion_codes: true,
+      // Renders above the Subscribe button — Stripe has no slot attached to
+      // the email field itself, so this is the last prompt before committing.
+      // Keep in step with the same message on the single-specialty Payment
+      // Link (set in the Stripe dashboard) and the tip on index.html.
+      custom_text: {
+        submit: {
+          message:
+            "Tip: use your NHS or institutional email — the journal links in each digest then open as full text through your institution's access, not a paywall.",
+        },
+      },
     });
 
     return {
