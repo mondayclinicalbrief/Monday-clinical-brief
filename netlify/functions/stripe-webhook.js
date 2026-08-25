@@ -92,6 +92,16 @@ function getSpecialtyName(slug) {
   return SPECIALTY_NAMES[slug] || slug.replace(/-/g, " ").replace(/\b\w/g, l => l.toUpperCase());
 }
 
+// Multi-specialty subscribers pay for every specialty they picked, so the welcome
+// email names all of them — listing only the primary left the rest unconfirmed.
+// "A and B"; "A, B and C" — Oxford comma omitted to match the house style.
+function listSpecialtyNames(slugs) {
+  const names = (slugs || []).filter(Boolean).map(getSpecialtyName);
+  if (names.length === 0) return "";
+  if (names.length === 1) return names[0];
+  return `${names.slice(0, -1).join(", ")} and ${names[names.length - 1]}`;
+}
+
 // Consumer mailbox providers, mapped to the name we use in the note.
 //
 // Deliberately a blocklist of known consumer providers rather than an
@@ -164,8 +174,16 @@ function firstName(name) {
 
 // ── Email HTML ─────────────────────────────────────────────────────────────────
 
-function buildWelcomeHtml(email, specialtySlug, trialStart, trialEnd, priceLine, customerName) {
-  const specialtyName = getSpecialtyName(specialtySlug);
+function buildWelcomeHtml(email, specialtySlugs, trialStart, trialEnd, priceLine, customerName) {
+  const slugs = Array.isArray(specialtySlugs) ? specialtySlugs : [specialtySlugs];
+  const specialtyName = listSpecialtyNames(slugs);
+  const multi = slugs.length > 1;
+  const digestWord = multi ? "digests" : "digest";
+  const issueLine = multi ? "Your first issues will arrive" : "Your first issue will arrive";
+  const specialtyLabel = multi ? "Specialties" : "Specialty";
+  const researchLine = multi
+    ? `a separate digest for each of your specialties — ${specialtyName} — covering the latest peer-reviewed research`
+    : `a digest of the latest peer-reviewed research in ${specialtyName}`;
   const startStr = formatDate(trialStart);
   const endStr = formatDate(trialEnd);
   const provider = consumerProvider(email);
@@ -234,8 +252,8 @@ function buildWelcomeHtml(email, specialtySlug, trialStart, trialEnd, priceLine,
           <div style="width:56px;height:56px;background:#eef4ee;border-radius:50%;margin:0 auto 20px;line-height:56px;font-size:26px;">✓</div>
           <h2 style="margin:0 0 12px;font-size:22px;color:#1a2e44;font-weight:normal;">Your free trial has started</h2>
           <p style="margin:0;font-size:15px;color:#555;line-height:1.6;">
-            Welcome aboard. You're now subscribed to the <strong>${specialtyName}</strong> digest.
-            Your first issue will arrive next Monday morning.
+            Welcome aboard. You're now subscribed to the <strong>${specialtyName}</strong> ${digestWord}.
+            ${issueLine} next Monday morning.
           </p>
         </td>
       </tr>
@@ -257,7 +275,7 @@ function buildWelcomeHtml(email, specialtySlug, trialStart, trialEnd, priceLine,
                     <td style="padding:6px 0;font-size:14px;color:#1a2e44;font-weight:bold;">${endStr}</td>
                   </tr>
                   <tr>
-                    <td style="padding:6px 0;font-size:14px;color:#555;">Specialty</td>
+                    <td style="padding:6px 0;font-size:14px;color:#555;">${specialtyLabel}</td>
                     <td style="padding:6px 0;font-size:14px;color:#1a2e44;font-weight:bold;">${specialtyName}</td>
                   </tr>
                   <tr>
@@ -281,7 +299,7 @@ function buildWelcomeHtml(email, specialtySlug, trialStart, trialEnd, priceLine,
                 <div style="width:22px;height:22px;background:#005eb8;border-radius:50%;text-align:center;line-height:22px;font-size:12px;color:#fff;font-weight:bold;">1</div>
               </td>
               <td style="vertical-align:top;padding:8px 0 8px 10px;font-size:14px;color:#444;line-height:1.5;">
-                Every <strong>Monday morning</strong> you'll receive a digest of the latest peer-reviewed research in ${specialtyName}, summarised by AI and reviewed for clinical relevance.
+                Every <strong>Monday morning</strong> you'll receive ${researchLine}, summarised by AI and reviewed for clinical relevance.
               </td>
             </tr>
             <tr>
@@ -358,13 +376,15 @@ ${emailTipBlock}
 
 // ── Send welcome email ─────────────────────────────────────────────────────────
 
-async function sendWelcomeEmail(toEmail, specialtySlug, priceLine, customerName) {
+async function sendWelcomeEmail(toEmail, specialtySlugs, priceLine, customerName) {
   const trialStart = new Date();
   const trialEnd = new Date(trialStart);
   trialEnd.setDate(trialEnd.getDate() + TRIAL_DAYS);
 
-  const specialtyName = getSpecialtyName(specialtySlug);
-  const html = buildWelcomeHtml(toEmail, specialtySlug, trialStart, trialEnd, priceLine, customerName);
+  const slugs = Array.isArray(specialtySlugs) ? specialtySlugs : [specialtySlugs];
+  const specialtyName = listSpecialtyNames(slugs);
+  const multi = slugs.length > 1;
+  const html = buildWelcomeHtml(toEmail, slugs, trialStart, trialEnd, priceLine, customerName);
 
   // Plain-text alternative carries the same suggestion, same conditions.
   const provider = consumerProvider(toEmail);
@@ -387,7 +407,7 @@ async function sendWelcomeEmail(toEmail, specialtySlug, priceLine, customerName)
     from: `"The Monday Clinical Brief" <${process.env.GMAIL_USER}>`,
     to: toEmail,
     subject: "Welcome to The Monday Clinical Brief — your free trial has started",
-    text: `Welcome to The Monday Clinical Brief!\n\nYou're subscribed to: ${specialtyName}\nTrial ends: ${formatDate(trialEnd)}\n\nYour first digest arrives next Monday morning.\n\nEvery article has a "Log as CPD" button — one click records your reading in the free MCB CPD Tracker (https://cpd.mondayclinicalbrief.co.uk), with an AI-drafted reflection to personalise and export ready for appraisal.${textTip}\n\nAfter your 4-week trial, your subscription begins at ${priceLine}. Cancel any time before ${formatDate(trialEnd)} at no cost.\n\nManage subscription: ${STRIPE_CUSTOMER_PORTAL}\n\nQuestions? ${SUPPORT_EMAIL}`,
+    text: `Welcome to The Monday Clinical Brief!\n\nYou're subscribed to: ${specialtyName}\nTrial ends: ${formatDate(trialEnd)}\n\n${multi ? "Your first digests arrive" : "Your first digest arrives"} next Monday morning.\n\nEvery article has a "Log as CPD" button — one click records your reading in the free MCB CPD Tracker (https://cpd.mondayclinicalbrief.co.uk), with an AI-drafted reflection to personalise and export ready for appraisal.${textTip}\n\nAfter your 4-week trial, your subscription begins at ${priceLine}. Cancel any time before ${formatDate(trialEnd)} at no cost.\n\nManage subscription: ${STRIPE_CUSTOMER_PORTAL}\n\nQuestions? ${SUPPORT_EMAIL}`,
     html,
   });
 
@@ -552,7 +572,7 @@ exports.handler = async (event) => {
   }
 
   try {
-    await sendWelcomeEmail(email, specialtySlug, priceLine, customerName);
+    await sendWelcomeEmail(email, specialtySlugs, priceLine, customerName);
     return {
       statusCode: 200,
       body: JSON.stringify({ ok: true, email, specialties: specialtySlugs, price }),
