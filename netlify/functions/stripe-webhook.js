@@ -24,9 +24,18 @@ const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
 const TRIAL_DAYS = 28;
 const DEFAULT_PRICE = "£20";
-const ABUHB_PRICE = "£15";   // Aneurin Bevan UHB cohort — matches any coupon whose id/name contains "ABUHB" (£5 off ONCE)
-const APM_PRICE = "£15";     // APM member rate — matches any coupon whose id/name contains "APM" (£5 off FOREVER — recurring £15/yr)
-const NASGP_PRICE = "£15";   // NASGP member rate — matches any coupon whose id/name contains "NASGP" (£5 off FOREVER — recurring £15/yr)
+const PRIMARY_PRICE_GBP = 20;      // primary specialty
+const EXTRA_SPECIALTY_GBP = 5;     // each additional specialty
+
+// Member-rate coupons all take a flat £5 off the whole order — so a member with
+// two specialties pays £20, not a flat £15. Matched on the coupon id/name, so the
+// Stripe coupon ID must contain the code; the promotion code string is not visible here.
+//   ABUHB — duration: ONCE    (first year only, then full list price)
+//   APM   — duration: FOREVER (the discounted rate recurs)
+//   NASGP — duration: FOREVER (the discounted rate recurs)
+const MEMBER_RATE_DISCOUNT_GBP = 5;
+const MEMBER_RATE_COUPONS = ["ABUHB", "APM", "NASGP"];
+const RECURRING_MEMBER_RATES = ["APM", "NASGP"];
 const SUPPORT_EMAIL = "info@mondayclinicalbrief.co.uk";
 const STRIPE_CUSTOMER_PORTAL = "https://billing.stripe.com/p/login/dRm28k4rI5LYaoh3qaefC00";
 
@@ -440,9 +449,12 @@ exports.handler = async (event) => {
     return { statusCode: 200, body: "No specialty — skipped" };
   }
 
-  // Determine price — check for discount coupons first
-  // FAF2026 coupon = £2 first year; ABUHB coupon = £15 first year; APM and NASGP coupons = £15/yr recurring; standard = £20/year
-  let price = DEFAULT_PRICE;
+  // Determine price. The list price is £20 for the primary specialty plus £5 for
+  // each additional one; a member-rate coupon takes £5 off that total. Deriving both
+  // from the specialty count keeps multi-specialty signups correct — quoting a flat
+  // £15 to someone buying two specialties would understate what they actually pay.
+  const listTotalGbp = PRIMARY_PRICE_GBP + Math.max(0, specialtySlugs.length - 1) * EXTRA_SPECIALTY_GBP;
+  let price = `£${listTotalGbp}`;
   let couponKind = null; // "FAF2026" | "ABUHB" | "APM" | "NASGP" — drives the priceLine wording below
   try {
     // 1. Check session.discount (included in webhook payload)
@@ -503,42 +515,38 @@ exports.handler = async (event) => {
     console.log("Coupon codes detected:", couponCodes);
     const norm = couponCodes.map(c => String(c).toUpperCase());
     if (norm.some(c => c.includes("FAF2026"))) {
-      price = "£2";
       couponKind = "FAF2026";
     } else if (norm.some(c => c.includes("ABUHB"))) {
-      price = ABUHB_PRICE;
       couponKind = "ABUHB";
     } else if (norm.some(c => c.includes("APM"))) {
-      price = APM_PRICE;
       couponKind = "APM";
     } else if (norm.some(c => c.includes("NASGP"))) {
-      price = NASGP_PRICE;
       couponKind = "NASGP";
-    } else if (session.amount_total && session.amount_total > 0) {
+    }
+
+    // Stripe reports amount_total of 0 for the whole 28-day trial, so it is only
+    // trustworthy once it is actually populated. Otherwise derive the figure.
+    if (session.amount_total && session.amount_total > 0) {
       price = formatPrice(session.amount_total);
+    } else if (couponKind === "FAF2026") {
+      // Flat first-year promo price, independent of the specialty count.
+      price = "£2";
+    } else if (MEMBER_RATE_COUPONS.includes(couponKind)) {
+      price = `£${listTotalGbp - MEMBER_RATE_DISCOUNT_GBP}`;
     }
   } catch (e) {
-    console.log("Could not parse discounts, using default price:", e.message);
+    console.log("Could not parse discounts, using list price:", e.message);
   }
 
-  // For multi-specialty signups, calculate total price if not discounted
-  if (specialtySlugs.length > 1 && price === DEFAULT_PRICE) {
-    const totalPounds = 20 + ((specialtySlugs.length - 1) * 5);
-    price = `£${totalPounds}`;
-  }
-
-  // Build the human price phrase for the email. FAF2026 and ABUHB are one-time
-  // (first year only), so spell out the renewal. The APM coupon is duration:forever,
-  // so the £15 genuinely recurs — say so, and never imply a £20 renewal.
+  // Build the human price phrase for the email. FAF2026 and ABUHB apply to the first
+  // year only, so spell out the renewal at the full list price. APM and NASGP are
+  // duration:forever, so their rate genuinely recurs — say so, and never imply that
+  // the member reverts to list price.
   let priceLine;
-  if (couponKind === "FAF2026") {
-    priceLine = `£2 for the first year, then ${DEFAULT_PRICE}/year`;
-  } else if (couponKind === "ABUHB") {
-    priceLine = `${ABUHB_PRICE} for the first year, then ${DEFAULT_PRICE}/year`;
-  } else if (couponKind === "APM") {
-    priceLine = `${APM_PRICE}/year — your APM member rate`;
-  } else if (couponKind === "NASGP") {
-    priceLine = `${NASGP_PRICE}/year — your NASGP member rate`;
+  if (couponKind === "FAF2026" || couponKind === "ABUHB") {
+    priceLine = `${price} for the first year, then £${listTotalGbp}/year`;
+  } else if (RECURRING_MEMBER_RATES.includes(couponKind)) {
+    priceLine = `${price}/year — your ${couponKind} member rate`;
   } else {
     priceLine = `${price}/year`;
   }
