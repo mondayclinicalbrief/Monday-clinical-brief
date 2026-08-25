@@ -26,6 +26,7 @@ const TRIAL_DAYS = 28;
 const DEFAULT_PRICE = "£20";
 const ABUHB_PRICE = "£15";   // Aneurin Bevan UHB cohort — matches any coupon whose id/name contains "ABUHB" (£5 off ONCE)
 const APM_PRICE = "£15";     // APM member rate — matches any coupon whose id/name contains "APM" (£5 off FOREVER — recurring £15/yr)
+const NASGP_PRICE = "£15";   // NASGP member rate — matches any coupon whose id/name contains "NASGP" (£5 off FOREVER — recurring £15/yr)
 const SUPPORT_EMAIL = "info@mondayclinicalbrief.co.uk";
 const STRIPE_CUSTOMER_PORTAL = "https://billing.stripe.com/p/login/dRm28k4rI5LYaoh3qaefC00";
 
@@ -440,9 +441,9 @@ exports.handler = async (event) => {
   }
 
   // Determine price — check for discount coupons first
-  // FAF2026 coupon = £2 first year; ABUHB coupon = £15 first year; APM coupon = £15/yr recurring; standard = £20/year
+  // FAF2026 coupon = £2 first year; ABUHB coupon = £15 first year; APM and NASGP coupons = £15/yr recurring; standard = £20/year
   let price = DEFAULT_PRICE;
-  let couponKind = null; // "FAF2026" | "ABUHB" | "APM" — drives the priceLine wording below
+  let couponKind = null; // "FAF2026" | "ABUHB" | "APM" | "NASGP" — drives the priceLine wording below
   try {
     // 1. Check session.discount (included in webhook payload)
     const couponCodes = [];
@@ -510,6 +511,9 @@ exports.handler = async (event) => {
     } else if (norm.some(c => c.includes("APM"))) {
       price = APM_PRICE;
       couponKind = "APM";
+    } else if (norm.some(c => c.includes("NASGP"))) {
+      price = NASGP_PRICE;
+      couponKind = "NASGP";
     } else if (session.amount_total && session.amount_total > 0) {
       price = formatPrice(session.amount_total);
     }
@@ -533,6 +537,8 @@ exports.handler = async (event) => {
     priceLine = `${ABUHB_PRICE} for the first year, then ${DEFAULT_PRICE}/year`;
   } else if (couponKind === "APM") {
     priceLine = `${APM_PRICE}/year — your APM member rate`;
+  } else if (couponKind === "NASGP") {
+    priceLine = `${NASGP_PRICE}/year — your NASGP member rate`;
   } else {
     priceLine = `${price}/year`;
   }
