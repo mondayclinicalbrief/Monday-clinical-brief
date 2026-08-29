@@ -195,20 +195,20 @@ function buildWelcomeHtml(email, specialtySlugs, trialStart, trialEnd, priceLine
     ? `      <!-- Work-email suggestion (consumer address) -->
       <tr>
         <td style="padding:0 40px 20px;">
-          <table width="100%" cellpadding="0" cellspacing="0" style="background:#f8f9fb;border-left:4px solid #7a9bbf;">
+          <table width="100%" cellpadding="0" cellspacing="0" style="background:#fdfcf9;border:1px solid #e2dfd8;border-radius:8px;">
             <tr>
               <td style="padding:20px 24px;">
-                <p style="margin:0 0 10px;font-size:15px;color:#1a2e44;font-weight:bold;">One quick suggestion${greetName ? `, ${greetName}` : ""}</p>
-                <p style="margin:0 0 10px;font-size:14px;color:#444;line-height:1.6;">
+                <p style="margin:0 0 10px;font-size:15px;color:#1c1c1c;font-weight:bold;">One quick suggestion${greetName ? `, ${greetName}` : ""}</p>
+                <p style="margin:0 0 10px;font-size:14px;color:#5f5f5b;line-height:1.6;">
                   I noticed your subscription came through on a ${provider} address. If you were happy to use your work email, it's worth switching.
                 </p>
-                <p style="margin:0 0 10px;font-size:14px;color:#444;line-height:1.6;">
+                <p style="margin:0 0 10px;font-size:14px;color:#5f5f5b;line-height:1.6;">
                   Each summary links straight to the original paper. Through your institutional access those links take you through to the full article rather than a paywall or abstract. That's where a lot of the value sits.
                 </p>
-                <p style="margin:0 0 10px;font-size:14px;color:#444;line-height:1.6;">
+                <p style="margin:0 0 10px;font-size:14px;color:#5f5f5b;line-height:1.6;">
                   Switching takes ten seconds: just reply with your work address and I'll move your subscription across. Nothing else changes — same specialty, same Monday delivery. If you wanted to use both emails that's also fine.
                 </p>
-                <p style="margin:0;font-size:14px;color:#1a2e44;">— Tim</p>
+                <p style="margin:0;font-size:14px;color:#1c1c1c;">— Tim</p>
               </td>
             </tr>
           </table>
@@ -218,8 +218,8 @@ function buildWelcomeHtml(email, specialtySlugs, trialStart, trialEnd, priceLine
     : `      <!-- Institutional email tip -->
       <tr>
         <td style="padding:0 40px 20px;">
-          <p style="margin:0;font-size:13px;color:#666;line-height:1.6;">
-            <strong style="color:#1a2e44;">Tip:</strong> if you signed up with a personal address, just reply with your NHS or institutional email and we'll switch your subscription across — the journal links in each digest then open as full text through your institution's access. Same specialty, same Monday delivery.
+          <p style="margin:0;font-size:13px;color:#6e6e66;line-height:1.6;">
+            <strong style="color:#1c1c1c;">Tip:</strong> if you signed up with a personal address, just reply with your NHS or institutional email and we'll switch your subscription across — the journal links in each digest then open as full text through your institution's access. Same specialty, same Monday delivery.
           </p>
         </td>
       </tr>
@@ -231,27 +231,32 @@ function buildWelcomeHtml(email, specialtySlugs, trialStart, trialEnd, priceLine
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Welcome to The Monday Clinical Brief</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&amp;family=Figtree:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 </head>
-<body style="margin:0;padding:0;background:#f4f4f0;font-family:Georgia,serif;">
-<table width="100%" cellpadding="0" cellspacing="0" style="background:#f4f4f0;padding:40px 20px;">
+<body style="margin:0;padding:0;background:#e9e4da;font-family:'Figtree', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;">
+<table width="100%" cellpadding="0" cellspacing="0" style="background:#e9e4da;padding:40px 20px;">
   <tr><td align="center">
-    <table width="600" cellpadding="0" cellspacing="0" style="background:#ffffff;border-radius:8px;overflow:hidden;max-width:600px;width:100%;">
+    <table width="600" cellpadding="0" cellspacing="0" style="background:#f4f1e9;border:1px solid #e2dfd8;border-radius:8px;overflow:hidden;max-width:600px;width:100%;">
 
       <!-- Header -->
       <tr>
-        <td style="background:#1a2e44;padding:32px 40px;text-align:center;">
-          <p style="margin:0;font-size:11px;letter-spacing:3px;color:#7a9bbf;text-transform:uppercase;">The</p>
-          <h1 style="margin:4px 0 0;font-size:26px;color:#ffffff;font-weight:normal;letter-spacing:1px;">Monday Clinical Brief</h1>
-          <p style="margin:8px 0 0;font-size:13px;color:#7a9bbf;">Weekly journal digests for busy clinicians</p>
+        <td align="center" style="background:#f4f1e9;padding:26px 32px 22px;border-bottom:1px solid #e2dfd8;">
+          <!-- The full lockup, not a mark plus HTML text: Instrument Serif is stripped by
+               Outlook and several Gmail clients, so a text wordmark renders in Georgia for a
+               large share of recipients. Must stay the TRANSPARENT export — the brand-kit
+               "light" lockups are flattened onto opaque #f7f5f0 and seam against this cream. -->
+          <img src="https://mondayclinicalbrief.co.uk/assets/brand/mcb-lockup-email.png"
+               width="536" height="207" alt="The Monday Clinical Brief"
+               style="display:block;width:536px;max-width:100%;height:auto;border:0;margin:0 auto;font-family:'Instrument Serif', Georgia, serif;font-size:26px;color:#1c1c1c;">
         </td>
       </tr>
 
       <!-- Tick + Headline -->
       <tr>
         <td style="padding:40px 40px 20px;text-align:center;">
-          <div style="width:56px;height:56px;background:#eef4ee;border-radius:50%;margin:0 auto 20px;line-height:56px;font-size:26px;">✓</div>
-          <h2 style="margin:0 0 12px;font-size:22px;color:#1a2e44;font-weight:normal;">Your free trial has started</h2>
-          <p style="margin:0;font-size:15px;color:#555;line-height:1.6;">
+          <div style="width:56px;height:56px;background:#5a7a6a;border-radius:50%;margin:0 auto 20px;line-height:56px;font-size:26px;color:#ffffff;">✓</div>
+          <h2 style="margin:0 0 12px;font-family:'Instrument Serif', Georgia, 'Times New Roman', serif;font-size:26px;color:#b8873a;font-weight:400;letter-spacing:-0.01em;">Your free trial has started</h2>
+          <p style="margin:0;font-size:15px;color:#5f5f5b;line-height:1.6;">
             Welcome aboard. You're now subscribed to the <strong>${specialtyName}</strong> ${digestWord}.
             ${issueLine} next Monday morning.
           </p>
@@ -261,26 +266,26 @@ function buildWelcomeHtml(email, specialtySlugs, trialStart, trialEnd, priceLine
       <!-- Trial details box -->
       <tr>
         <td style="padding:20px 40px;">
-          <table width="100%" cellpadding="0" cellspacing="0" style="background:#f8f9fb;border-radius:6px;border-left:4px solid #005eb8;">
+          <table width="100%" cellpadding="0" cellspacing="0" style="background:#fdfcf9;border:1px solid #5a7a6a;border-radius:8px;">
             <tr>
               <td style="padding:24px;">
-                <p style="margin:0 0 12px;font-size:13px;font-weight:bold;color:#1a2e44;text-transform:uppercase;letter-spacing:1px;">Your trial details</p>
+                <p style="margin:0 0 14px;"><span style="display:inline-block;background:#5a7a6a;color:#ffffff;padding:5px 12px;border-radius:4px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;">Your trial details</span></p>
                 <table width="100%" cellpadding="0" cellspacing="0">
                   <tr>
-                    <td style="padding:6px 0;font-size:14px;color:#555;width:50%;">Trial started</td>
-                    <td style="padding:6px 0;font-size:14px;color:#1a2e44;font-weight:bold;">${startStr}</td>
+                    <td style="padding:6px 0;font-size:14px;color:#5f5f5b;width:50%;">Trial started</td>
+                    <td style="padding:6px 0;font-size:14px;color:#1c1c1c;font-weight:bold;">${startStr}</td>
                   </tr>
                   <tr>
-                    <td style="padding:6px 0;font-size:14px;color:#555;">Trial ends</td>
-                    <td style="padding:6px 0;font-size:14px;color:#1a2e44;font-weight:bold;">${endStr}</td>
+                    <td style="padding:6px 0;font-size:14px;color:#5f5f5b;">Trial ends</td>
+                    <td style="padding:6px 0;font-size:14px;color:#1c1c1c;font-weight:bold;">${endStr}</td>
                   </tr>
                   <tr>
-                    <td style="padding:6px 0;font-size:14px;color:#555;">${specialtyLabel}</td>
-                    <td style="padding:6px 0;font-size:14px;color:#1a2e44;font-weight:bold;">${specialtyName}</td>
+                    <td style="padding:6px 0;font-size:14px;color:#5f5f5b;">${specialtyLabel}</td>
+                    <td style="padding:6px 0;font-size:14px;color:#1c1c1c;font-weight:bold;">${specialtyName}</td>
                   </tr>
                   <tr>
-                    <td style="padding:6px 0;font-size:14px;color:#555;">After trial</td>
-                    <td style="padding:6px 0;font-size:14px;color:#1a2e44;font-weight:bold;">${priceLine} — cancel anytime</td>
+                    <td style="padding:6px 0;font-size:14px;color:#5f5f5b;">After trial</td>
+                    <td style="padding:6px 0;font-size:14px;color:#1c1c1c;font-weight:bold;">${priceLine} — cancel anytime</td>
                   </tr>
                 </table>
               </td>
@@ -292,37 +297,37 @@ function buildWelcomeHtml(email, specialtySlugs, trialStart, trialEnd, priceLine
       <!-- What happens next -->
       <tr>
         <td style="padding:10px 40px 20px;">
-          <p style="margin:0 0 16px;font-size:15px;font-weight:bold;color:#1a2e44;">What happens next</p>
+          <p style="margin:0 0 16px;font-size:15px;font-weight:bold;color:#1c1c1c;">What happens next</p>
           <table width="100%" cellpadding="0" cellspacing="0">
             <tr>
               <td style="vertical-align:top;padding:8px 0;width:28px;">
-                <div style="width:22px;height:22px;background:#005eb8;border-radius:50%;text-align:center;line-height:22px;font-size:12px;color:#fff;font-weight:bold;">1</div>
+                <div style="width:22px;height:22px;background:#5a7a6a;border-radius:50%;text-align:center;line-height:22px;font-size:12px;color:#fff;font-weight:bold;">1</div>
               </td>
-              <td style="vertical-align:top;padding:8px 0 8px 10px;font-size:14px;color:#444;line-height:1.5;">
+              <td style="vertical-align:top;padding:8px 0 8px 10px;font-size:14px;color:#5f5f5b;line-height:1.5;">
                 Every <strong>Monday morning</strong> you'll receive ${researchLine}, summarised by AI and reviewed for clinical relevance.
               </td>
             </tr>
             <tr>
               <td style="vertical-align:top;padding:8px 0;width:28px;">
-                <div style="width:22px;height:22px;background:#005eb8;border-radius:50%;text-align:center;line-height:22px;font-size:12px;color:#fff;font-weight:bold;">2</div>
+                <div style="width:22px;height:22px;background:#5a7a6a;border-radius:50%;text-align:center;line-height:22px;font-size:12px;color:#fff;font-weight:bold;">2</div>
               </td>
-              <td style="vertical-align:top;padding:8px 0 8px 10px;font-size:14px;color:#444;line-height:1.5;">
-                Every article has a <strong>"Log as CPD"</strong> button — one click records your reading in the free <a href="https://cpd.mondayclinicalbrief.co.uk" style="color:#005eb8;font-weight:bold;">MCB CPD Tracker</a>, with an AI-drafted reflection to personalise and export ready for appraisal.
+              <td style="vertical-align:top;padding:8px 0 8px 10px;font-size:14px;color:#5f5f5b;line-height:1.5;">
+                Every article has a <strong>"Log as CPD"</strong> button — one click records your reading in the free <a href="https://cpd.mondayclinicalbrief.co.uk" style="color:#3d5a4c;font-weight:bold;">MCB CPD Tracker</a>, with an AI-drafted reflection to personalise and export ready for appraisal.
               </td>
             </tr>
             <tr>
               <td style="vertical-align:top;padding:8px 0;width:28px;">
-                <div style="width:22px;height:22px;background:#005eb8;border-radius:50%;text-align:center;line-height:22px;font-size:12px;color:#fff;font-weight:bold;">3</div>
+                <div style="width:22px;height:22px;background:#5a7a6a;border-radius:50%;text-align:center;line-height:22px;font-size:12px;color:#fff;font-weight:bold;">3</div>
               </td>
-              <td style="vertical-align:top;padding:8px 0 8px 10px;font-size:14px;color:#444;line-height:1.5;">
+              <td style="vertical-align:top;padding:8px 0 8px 10px;font-size:14px;color:#5f5f5b;line-height:1.5;">
                 On <strong>${endStr}</strong> your 4-week free trial ends. If you haven't cancelled, your subscription will begin at <strong>${priceLine}</strong>.
               </td>
             </tr>
             <tr>
               <td style="vertical-align:top;padding:8px 0;width:28px;">
-                <div style="width:22px;height:22px;background:#005eb8;border-radius:50%;text-align:center;line-height:22px;font-size:12px;color:#fff;font-weight:bold;">4</div>
+                <div style="width:22px;height:22px;background:#5a7a6a;border-radius:50%;text-align:center;line-height:22px;font-size:12px;color:#fff;font-weight:bold;">4</div>
               </td>
-              <td style="vertical-align:top;padding:8px 0 8px 10px;font-size:14px;color:#444;line-height:1.5;">
+              <td style="vertical-align:top;padding:8px 0 8px 10px;font-size:14px;color:#5f5f5b;line-height:1.5;">
                 You can <strong>cancel at any time</strong> before ${endStr} at no cost. No payment is taken during the trial.
               </td>
             </tr>
@@ -334,18 +339,20 @@ ${emailTipBlock}
       <!-- Cancel CTA -->
       <tr>
         <td style="padding:10px 40px 30px;">
-          <table width="100%" cellpadding="0" cellspacing="0" style="background:#fff8f0;border-radius:6px;border:1px solid #ffe0b2;">
+          <table width="100%" cellpadding="0" cellspacing="0" style="background:#fdfcf9;border:1px solid #e2dfd8;border-radius:8px;">
             <tr>
               <td style="padding:20px 24px;">
-                <p style="margin:0 0 8px;font-size:14px;color:#1a2e44;font-weight:bold;">Want to cancel?</p>
-                <p style="margin:0 0 14px;font-size:13px;color:#666;line-height:1.5;">
+                <p style="margin:0 0 8px;font-size:14px;color:#1c1c1c;font-weight:bold;">Want to cancel?</p>
+                <p style="margin:0 0 14px;font-size:13px;color:#6e6e66;line-height:1.5;">
                   Cancel before <strong>${endStr}</strong> and you won't be charged a penny.
                 </p>
-                <a href="${STRIPE_CUSTOMER_PORTAL}"
-                   style="display:inline-block;background:#1a2e44;color:#ffffff;padding:10px 20px;border-radius:4px;text-decoration:none;font-size:13px;font-weight:bold;">
-                  Manage Subscription →
-                </a>
-                <p style="margin:12px 0 0;font-size:12px;color:#999;">
+                <div style="text-align:center;">
+                  <a href="${STRIPE_CUSTOMER_PORTAL}"
+                     style="display:inline-block;background:#5a7a6a;color:#ffffff;padding:10px 22px;border-radius:40px;text-decoration:none;font-size:13px;font-weight:bold;">
+                    Manage Subscription
+                  </a>
+                </div>
+                <p style="margin:12px 0 0;font-size:12px;color:#6e6e66;text-align:center;">
                   Or simply reply to this email and we'll cancel for you.
                 </p>
               </td>
@@ -356,12 +363,12 @@ ${emailTipBlock}
 
       <!-- Footer -->
       <tr>
-        <td style="background:#f8f9fb;padding:24px 40px;border-top:1px solid #eee;text-align:center;">
-          <p style="margin:0 0 6px;font-size:13px;color:#888;">
+        <td style="background:#fdfcf9;padding:24px 40px;border-top:1px solid #e2dfd8;text-align:center;">
+          <p style="margin:0 0 6px;font-size:13px;color:#6e6e66;">
             Questions? Reply to this email or contact
-            <a href="mailto:${SUPPORT_EMAIL}" style="color:#005eb8;">${SUPPORT_EMAIL}</a>
+            <a href="mailto:${SUPPORT_EMAIL}" style="color:#3d5a4c;">${SUPPORT_EMAIL}</a>
           </p>
-          <p style="margin:0;font-size:11px;color:#aaa;">
+          <p style="margin:0;font-size:11px;color:#6e6e66;">
             The Monday Clinical Brief · AI-assisted summaries are for information only and are not a substitute for reading original articles or clinical judgement.
           </p>
         </td>
