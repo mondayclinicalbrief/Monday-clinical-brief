@@ -12,7 +12,7 @@ faqs:
   - question: "What does 'ad-free clinical AI' mean?"
     answer: "It means the tool carries no advertising and its outputs are not shaped by who is paying. You get the same answer, summary or guideline whether or not a sponsor has an interest in it. Ad-supported tools are not inherently bad, but a doctor relying on a tool at the point of care has a reasonable interest in knowing the output was not influenced by a paying advertiser."
   - question: "Which ad-free clinical AI tools can UK doctors actually use in 2026?"
-    answer: "For point-of-care clinical questions, iatroX is UK-built, MHRA-registered and UKCA-marked. For staying current with the literature, The Monday Clinical Brief sends a weekly digest across 31 specialties for £20 a year. Heidi Evidence is ad-free and strong, but for UK and EU clinicians its clinical-answer feature is restricted to out-of-session use. Praxis Medicine and Umbil are newer UK-focused entrants."
+    answer: "For point-of-care clinical questions, iatroX is UK-built, MHRA-registered and UKCA-marked. For staying current with the literature, The Monday Clinical Brief sends a weekly digest across 31 specialties for £20 a year. Heidi Evidence is ad-free and strong, but for UK and EU clinicians its clinical-answer feature is restricted to out-of-session use, and NHS UK accounts are excluded from it entirely. Praxis Medicine and Umbil are newer UK-focused entrants."
   - question: "Can UK clinicians use Heidi Evidence?"
     answer: "Yes, with a limit. For UK and EU clinicians the Evidence feature works only outside live sessions — in-session querying is restricted, so it cannot answer during a consultation. Heidi Scribe, the AI clinical documentation product, is separately MHRA-cleared and remains fully available to UK clinicians."
   - question: "Is The Monday Clinical Brief ad-free?"
@@ -49,12 +49,12 @@ The list below is limited to tools that meet two tests: no advertising, and a cr
 **UK status:** available. UK-built, MHRA-registered as a Class I device, UKCA-marked. In 2026 it is the pull tool a UK NHS reader can reliably sign up for.
 **Not for:** systematic weekly coverage. It responds to queries, not calendars. We have no commercial relationship with iatroX — we list it because it is the option that works.
 
-### Heidi Evidence — strong, but not mid-consultation in the UK
+### Heidi Evidence — strong, but not inside a session, and not on NHS accounts
 
 **Job:** citation-backed clinical answers grounded in NICE, BMJ Group, MIMS and HealthPathways. Ad-free, ISO 42001 audited, built on Claude.
 **Cost:** free for individuals.
 **UK status:** restricted. For UK and EU clinicians the *Evidence* feature works only outside live sessions — in-session querying is disabled, so it cannot answer during a consultation. *Heidi Scribe* — the AI documentation tool — is separately MHRA-cleared and remains fully available. See our [Heidi Evidence vs MCB comparison](/blog/medical-journal-digest/heidi-evidence-vs-monday-clinical-brief/) and the [in-session restriction explainer](/blog/medical-journal-digest/heidi-evidence-uk-in-session-restriction/).
-**Not for:** point-of-care questions in the UK and EU — it won't answer mid-consultation. Out of session, it's fully usable.
+**Not for:** questions that need the patient's context in the UK and EU — Evidence cannot be invoked from inside an active session or see session details. The sidebar tool is fully usable, including during clinic. Not available at all on an NHS UK account, which Heidi excludes from Evidence.
 
 ### Praxis Medicine — new, well-funded, worth watching
 
@@ -74,7 +74,7 @@ The list below is limited to tools that meet two tests: no advertising, and a cr
 
 Most UK doctors do not need to pick one. The two jobs are different, and the strongest setup covers both:
 
-- **A pull tool for questions you bring** — iatroX for in-session questions; Heidi Evidence for out-of-session questions.
+- **A pull tool for questions you bring** — iatroX for questions needing the patient's context; Heidi Evidence's sidebar for general ones, if you are not on an NHS account.
 - **A push tool for questions you did not know to ask** — a weekly digest, so a guideline change or landmark trial does not pass you by.
 
 One is preventive; the other is acute. Evidence suggests doctors who keep a fixed weekly reading habit produce more consistent CPD portfolios than those who read only reactively — so if you have to invest in one habit, make it the reading.

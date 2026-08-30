@@ -82,4 +82,4 @@ Choose ClinicalKey AI on its merits — the library is deep and the citations ar
 - [Looking for an OpenEvidence alternative in the UK?](/blog/medical-journal-digest/openevidence-alternative-uk/) — the full picture of what UK clinicians can use now, with every alternative compared.
 - [Two AI tools UK doctors lost, one restricted — and what works in their place](/blog/medical-journal-digest/uk-doctors-lost-ai-tools-2026/) — the wider regulatory pattern behind the withdrawals.
 - [MCB vs UpToDate](/blog/medical-journal-digest/mcb-vs-uptodate/) — the other established reference tool, and why its AI layer is still out of reach for UK individuals.
-- [Heidi Evidence is excellent — and in the UK it won't answer mid-consultation](/blog/medical-journal-digest/heidi-evidence-uk-in-session-restriction/) — a third tool, restricted rather than withdrawn.
+- [Heidi Evidence in the UK: what the in-session restriction actually blocks](/blog/medical-journal-digest/heidi-evidence-uk-in-session-restriction/) — a third tool, restricted rather than withdrawn.

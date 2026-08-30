@@ -54,7 +54,7 @@ Its UK position is more layered than "available" or "not available", and Heidi's
 
 **3. NHS UK accounts are excluded from Evidence altogether.** Heidi states that NHS UK accounts are excluded from Heidi Evidence, and from free trials that include it, and that an account registered with an NHS UK email address stays on its current plan. For a large share of UK clinicians, that turns a partial restriction into a complete one on their work account.
 
-We covered the in-session restriction in more depth in [Heidi Evidence is excellent — in the UK, it won't answer mid-consultation](/blog/medical-journal-digest/heidi-evidence-uk-in-session-restriction/). ⚠️ That article predates Heidi's current documentation and states the restriction more broadly than the position above; treat this page as the current one.
+We covered the in-session restriction in more depth in [Heidi Evidence in the UK: what the in-session restriction actually blocks](/blog/medical-journal-digest/heidi-evidence-uk-in-session-restriction/).
 
 ## Side by side, for a UK clinician
 
