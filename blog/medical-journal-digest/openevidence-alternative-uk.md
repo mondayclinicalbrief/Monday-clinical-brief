@@ -70,7 +70,7 @@ When OpenEvidence withdrew in April, the field of UK-usable replacements was thi
 
 The query tools above — iatroX, Heidi Evidence, Praxis, Vera, Medscape AI, ClinicalKey AI and UpToDate — help you ask a question. None of them keep you current. That is a different job, and it is the one MCB does. Think of the digest as the reading layer none of these replace: it tells you what changed this week, so you know what to ask the query tool about in the first place.
 
-One loop worth closing: Heidi Evidence now publishes its own "OpenEvidence alternative" comparison — while its own answer feature is restricted to out-of-session use for UK and EU clinicians, and excluded entirely on NHS UK accounts. So a UK doctor who follows that recommendation lands on a tool they cannot use in the consultation itself. If that is you, the usable options above (and a weekly digest for the reading) are the practical answer.
+One loop worth closing: Heidi Evidence now publishes its own "OpenEvidence alternative" comparison — while its own answer feature is restricted to out-of-session use for UK and EU clinicians, and excluded entirely on NHS UK accounts. So a UK doctor who follows that recommendation lands on a tool they cannot use in the consultation itself. We have put the two side by side in [Heidi Evidence vs OpenEvidence](/blog/medical-journal-digest/heidi-evidence-vs-openevidence-uk/), which sets out what each one actually allows a UK account to do. If that is you, the usable options above (and a weekly digest for the reading) are the practical answer.
 
 ## For clinical Q&A: what's still available in the UK
 
@@ -108,4 +108,5 @@ But staying current with the literature — knowing what questions to ask in the
 - [Two AI tools UK doctors lost, one restricted — and what works in their place](/blog/medical-journal-digest/uk-doctors-lost-ai-tools-2026/) — the wider pattern, with a practical two-tool setup for UK clinicians.
 - [ChatGPT for Clinicians launched — and UK doctors are excluded](/blog/medical-journal-digest/chatgpt-for-clinicians-uk/)
 - [Heidi Evidence in the UK: what the in-session restriction actually blocks](/blog/medical-journal-digest/heidi-evidence-uk-in-session-restriction/)
+- [Heidi Evidence vs OpenEvidence](/blog/medical-journal-digest/heidi-evidence-vs-openevidence-uk/) — the direct comparison for UK clinicians, and why an NHS email settles it.
 - [Does reading count as CPD?](/blog/cpd-reading-tool/does-reading-count-as-cpd/) — every tool above answers what you ask it. None of them turns the reading you already do into appraisal evidence; this is how you do that.

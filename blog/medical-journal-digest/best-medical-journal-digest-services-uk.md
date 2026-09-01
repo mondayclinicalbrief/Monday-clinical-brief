@@ -4,7 +4,7 @@ seoTitle: "Best Medical Journal Digests for UK Doctors (2026)"
 metaDescription: "Compare the best medical journal digests for UK doctors on coverage, CPD and price — the top 5 journals across 31 specialties from £20/year."
 description: "A head-to-head comparison of journal digest services available to UK doctors — features, pricing, CPD integration, and specialty coverage."
 date: 2026-04-14
-updated: 2026-08-17
+updated: 2026-09-01
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
@@ -212,6 +212,30 @@ Pricing ranges from free to several hundred pounds annually. Consider both the d
 
 ---
 
+### MediSummary
+
+**What is it?** A US subscription service that summarises papers across more than 70 specialties. Since mid-2026 it has marketed a weekly specialty digest — "the papers that matter in your field, ranked and ready" — offered as a three-minute read or an eight-minute audio briefing, alongside iOS and Android apps. It is the newest product to use the language this page is about, which is why we have included it.
+
+One caveat before the detail. MediSummary's marketing describes the digest as weekly and says it "just arrives", but the delivery channel is not stated anywhere on the site, and its own terms of service — last updated on 21 May 2026 — still describe "Monthly Specialty Updates: curated audio and written summaries of newly published studies in your specialty", with no weekly digest mentioned. We could not confirm that it arrives by email, or that it arrives weekly. Both are best read as marketing claims dated September 2026 rather than settled product behaviour.
+
+**Strengths:**
+- Very broad specialty coverage — more than 70 fields
+- Summaries in both read and audio formats, with mobile apps on both stores
+- Ranked selection, which suits a reader who wants a filtered shortlist rather than everything
+- Seven-day free trial and a 60-day money-back guarantee
+
+**Limitations:**
+- No UK positioning — operated by ODAKCO, LLC of Dover, Delaware, with no UK entity, no UK pricing and no UK regulatory statement we could find
+- Ranked selection puts an editorial filter between you and the literature: you see what the ranking surfaces, not everything that was published
+- Delivery channel and frequency are unconfirmed (see above)
+- Scale claims are company-reported and inconsistent — 6,000-plus physicians in one place, 3,000-plus in another; we have not independently verified either
+
+**Pricing:** US$16/month, billed as US$197/year
+
+**CPD Support:** None stated for UK revalidation
+
+---
+
 ### Medscape AI
 
 **What is it?** A generative clinical reference launched in November 2025 and free to Medscape's 13 million-plus registered members. It answers clinical questions in natural language, personalises to your specialty, and traces its answers back to sources. Medscape added AI Search in August 2026 — a chat-based layer drawing on 6,000-plus physician-reviewed articles, launched US-first. Like ClinicalKey AI and UpToDate, it is a look-up tool rather than a digest — it is here because it is the free option UK clinicians are most likely to meet, not because it keeps you current.
@@ -246,6 +270,7 @@ Pricing ranges from free to several hundred pounds annually. Consider both the d
 | **NEJM Clinician** | Major journals (expert picks) | Weekly | Minimal | ~£75/year per specialty |
 | **Evidence Alerts** | High-quality evidence (RCTs, reviews) | 2–3 times/week | Minimal | Free–£50/year |
 | **Medscape AI** | General medical literature via AI look-up | On-demand (look-up) | Minimal | Free (ad-funded) |
+| **MediSummary** | Ranked selection across 70+ specialties | Weekly (company claim; unconfirmed) | Not stated | ~US$197/year |
 
 ## How to Choose the Right Service for You
 
@@ -273,4 +298,4 @@ For a broader introduction to managing medical literature, see our [guide to med
 
 ---
 
-*Last updated: August 2026. Pricing and features current as of publication. Services and their offerings change; please verify current details with providers.*
+*Last updated: September 2026. Pricing and features current as of publication. Services and their offerings change; please verify current details with providers.*

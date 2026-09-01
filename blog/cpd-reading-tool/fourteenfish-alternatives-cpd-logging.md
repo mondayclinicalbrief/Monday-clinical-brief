@@ -4,6 +4,7 @@ seoTitle: "FourteenFish Alternatives for Logging CPD"
 metaDescription: "Looking for a FourteenFish alternative? An honest comparison of Clarity, BMJ Portfolio, GP Tools and spreadsheets — and when to just stay put."
 description: "The realistic alternatives to FourteenFish for UK doctors, what each does better, and the cases where FourteenFish is still the right answer."
 date: 2026-07-25
+updated: 2026-09-01
 cluster: "CPD and Revalidation"
 clusterSlug: "cpd-reading-tool"
 schemaType: "Article"
@@ -12,7 +13,7 @@ faqs:
   - question: "What are the main alternatives to FourteenFish?"
     answer: "For the full appraisal portfolio, Clarity (Agilio) is the main commercial rival, and GP Tools is a free option for NHS GPs. For logging and reflection only, BMJ Portfolio, your Royal College diary, or a spreadsheet all work. Which is right depends on whether you need the appraisal submission or just the log."
   - question: "Is there a free alternative to FourteenFish?"
-    answer: "Yes — GP Tools is free for NHS GPs and includes patient survey and MSF feedback, and BMJ Portfolio is free for logging CPD from any source. It is also worth knowing that FourteenFish itself is free until you submit your appraisal, which makes the cost comparison closer than it looks."
+    answer: "Yes — GP Tools is free for NHS GPs and includes patient survey and MSF feedback, and BMJ Portfolio is free for logging CPD from any source, and since July 2026 it integrates directly with FourteenFish and offers AI-assisted reflection. It is also worth knowing that FourteenFish itself is free until you submit your appraisal, which makes the cost comparison closer than it looks."
   - question: "Should I switch away from FourteenFish?"
     answer: "Usually not, if it is working. It is the most widely used GP appraisal toolkit in the UK, your appraiser will know it, and the effective cost is low — 30% off for RCGP members, and fully funded for five years for GPs who gained CCT from 2021 onwards. Switching portfolio platforms mid-cycle costs you continuity for little gain."
   - question: "Can I use more than one tool?"
@@ -69,10 +70,12 @@ SARD, PReP, L2P, or MARS in Wales, provided through your employer or deanery.
 
 ### BMJ Portfolio
 
-Free, launched in 2026, records CPD from any source. Not tied to a college or an appraisal platform.
+Free for all healthcare professionals, with no subscription. It relaunched in July 2026 carrying rather more than it did before: AI-powered reflection support to draft and refine reflective entries, personalised CPD recommendations by role, automatic tracking of BMJ Learning activity alongside CPD from any other provider, and export of portfolio summaries for appraisal.
 
-**Choose it if:** you want a free, source-agnostic running log.
-**Against:** not your appraisal submission — evidence still has to move across at appraisal time.
+The fact that matters most on this page is the newest one: **BMJ Portfolio now integrates directly with FourteenFish.** That changes what "alternative" means here. It does not have to replace FourteenFish — it can sit alongside it, which is a different proposition from everything else on this list.
+
+**Choose it if:** you want a free, source-agnostic running log — particularly if you are staying on FourteenFish for the appraisal itself and simply want the week-to-week logging to happen somewhere better.
+**Against:** it is still not the appraisal submission if your appraisal runs elsewhere.
 
 ### Your Royal College diary
 
@@ -95,7 +98,7 @@ Five columns — date, source, time spent, what you learned, impact on practice.
 | Clarity (Agilio) | Paid | Yes | Good | Bundles CPD content |
 | GP Tools | Free | Yes | Fair | NHS GPs only; MSF included |
 | NHS platform | Employer-funded | Yes | Basic | SARD, PReP, L2P, MARS |
-| BMJ Portfolio | Free | No | Good | Any source, not college-tied |
+| BMJ Portfolio | Free | No | Good | Any source; integrates directly with FourteenFish |
 | College diary | With membership | Partly | Good | College-aligned prompts |
 | Spreadsheet | Free | No | Good | You supply the structure |
 

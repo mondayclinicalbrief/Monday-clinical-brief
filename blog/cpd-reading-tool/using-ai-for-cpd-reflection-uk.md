@@ -4,6 +4,7 @@ seoTitle: "Using AI for CPD Reflection: The Rules for UK Doctors"
 metaDescription: "You can use AI to help with CPD reflection — but not to reflect for you. The GMC and Royal College position, the three lines not to cross, and a workflow."
 description: "Can UK doctors use AI to help write reflective practice and appraisal reflections? Yes — within limits. Here is what the GMC and Royal Colleges say, the three lines not to cross, and a workflow that keeps AI on the right side of them."
 date: 2026-07-03
+updated: 2026-09-01
 cluster: "CPD and Revalidation"
 clusterSlug: "cpd-reading-tool"
 schemaType: "Article"
@@ -51,6 +52,14 @@ The distinction in every case is the same: AI does the scaffolding, you do the r
 3. Write the reflection in your own words, tied to your real, anonymised cases and decisions.
 4. Keep all patient-identifiable detail out of any tool.
 5. Own the final entry. It should read like you, because it is you.
+
+## The tooling changed in July 2026
+
+BMJ Group relaunched BMJ Portfolio in July 2026 with AI-powered reflection support — help drafting, improving and refining reflective entries — free to all healthcare professionals, with no subscription. It also integrates directly with FourteenFish and tracks BMJ Learning activity automatically.
+
+That is worth knowing if you are deciding where to keep your log. It does not change any of the rules above. If anything it makes them matter more: the easier it becomes to produce a well-formed reflective entry, the more work the GMC's accountability principle is doing. A reflection that reads well but is not yours does not become acceptable because a reputable tool wrote it.
+
+The test is unchanged. Whatever produces the first draft, the insight has to be yours, the cases have to be real and anonymised, and you own whatever is saved under your name.
 
 ## How the MCB CPD Tracker fits
 

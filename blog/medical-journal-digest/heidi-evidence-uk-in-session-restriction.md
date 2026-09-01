@@ -81,7 +81,7 @@ In the space of six weeks, three clinical AI tools in the same category changed 
 
 All three offered the same broad use case — clinical Q&A grounded in cited sources. Two are now unavailable to UK clinicians; the third is available, but not in the mode that would let it see the patient in front of you, and not at all on an NHS account.
 
-We have written separately about [the OpenEvidence withdrawal](/blog/medical-journal-digest/openevidence-alternative-uk/) and [the ChatGPT for Clinicians exclusion](/blog/medical-journal-digest/chatgpt-for-clinicians-uk/). Heidi Evidence is the third chapter in the same regulatory story.
+We have written separately about [the OpenEvidence withdrawal](/blog/medical-journal-digest/openevidence-alternative-uk/) and [the ChatGPT for Clinicians exclusion](/blog/medical-journal-digest/chatgpt-for-clinicians-uk/). Heidi Evidence is the third chapter in the same regulatory story. If you are choosing between the two directly, see [Heidi Evidence vs OpenEvidence](/blog/medical-journal-digest/heidi-evidence-vs-openevidence-uk/).
 
 What is striking is that Heidi Evidence — unlike the other two — is the one product that did everything right on the UK content side. NICE partnership. BMJ Group partnership. UK-relevant prescribing data. And it still holds back the patient-context mode. That is device regulation talking, not the product.
 

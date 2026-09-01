@@ -4,13 +4,14 @@ seoTitle: "Free CPD Trackers for UK Doctors (2026)"
 metaDescription: "The genuinely free ways for UK doctors to track CPD — BMJ Portfolio, college diaries, NHS platforms and spreadsheets — and what each costs you elsewhere."
 description: "A straight comparison of the free CPD tracking options open to UK doctors, what each one actually covers, and where the hidden cost sits."
 date: 2026-07-25
+updated: 2026-09-01
 cluster: "CPD and Revalidation"
 clusterSlug: "cpd-reading-tool"
 schemaType: "Article"
 pillar: false
 faqs:
   - question: "Is there a genuinely free CPD tracker for UK doctors?"
-    answer: "Yes, several. BMJ Portfolio is free and records CPD from any source. GP Tools is free for NHS GPs. Most Royal Colleges include a CPD diary with membership, and NHS appraisal platforms are provided by your employer or deanery at no personal cost. A spreadsheet is free and, for logging reading, entirely adequate."
+    answer: "Yes, several. BMJ Portfolio is free and records CPD from any source, and since its July 2026 relaunch it integrates directly with FourteenFish and offers AI-assisted reflection. GP Tools is free for NHS GPs. Most Royal Colleges include a CPD diary with membership, and NHS appraisal platforms are provided by your employer or deanery at no personal cost. A spreadsheet is free and, for logging reading, entirely adequate."
   - question: "Is FourteenFish free?"
     answer: "Partly. You can use the Appraisal Toolkit without paying and only pay at the point you submit your appraisal to your appraiser. RCGP members get 30% off, and the RCGP fully funds it for five years for GPs who gained CCT from 2021 onwards while they remain members."
   - question: "Do I need a dedicated CPD tool at all?"
@@ -39,10 +40,12 @@ Knowing which job you are trying to solve makes the choice obvious.
 
 ### BMJ Portfolio — free, any source
 
-Launched by BMJ Group in 2026, this records CPD from any source in one place, alongside BMJ Learning and Learner+. It is a credible general-purpose home for a log, and it is not tied to a single college.
+Free for all healthcare professionals, with no subscription. BMJ Group relaunched it in July 2026, and it now records CPD from any source alongside BMJ Learning activity, which it tracks automatically. It is not tied to a single college, and it is the strongest free option on this list.
 
-**Covers:** logging, reflection, organisation across the year.
-**Doesn't cover:** it is not your appraisal submission platform, so evidence still has to move across.
+Three things arrived with the relaunch and are worth knowing: **it integrates directly with FourteenFish**, it offers AI-powered reflection support to help draft and refine reflective entries, and it makes personalised CPD recommendations by role. Portfolio summaries export for appraisal.
+
+**Covers:** logging, reflection, automatic BMJ Learning tracking, organisation across the year, export for appraisal.
+**Doesn't cover:** it is not itself an appraisal submission platform, though BMJ describes the FourteenFish integration as reducing manual data entry.
 **Best for:** doctors who want a free, source-agnostic log that is not locked to one membership.
 
 ### Your Royal College diary — free with membership
@@ -87,7 +90,7 @@ Five columns: date, source, time spent, what you learned, impact on practice. Th
 
 | Option | Cost | Logging | Full portfolio | Notes |
 |---|---|---|---|---|
-| BMJ Portfolio | Free | Yes | No | Source-agnostic, not college-tied |
+| BMJ Portfolio | Free | Yes | No | Source-agnostic; direct FourteenFish integration; AI reflection support |
 | College diary | Free with membership | Yes | Partly | Membership £162–£645 (RCGP, 2026–27) |
 | NHS platform | Employer-funded | Basic | Yes | SARD, PReP, L2P, MARS (Wales) |
 | GP Tools | Free | Yes | Yes | NHS GPs only; includes MSF and survey |
