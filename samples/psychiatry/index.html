@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Psychiatry Digest — The Monday Clinical Brief</title>
-<meta name="description" content="The Psychiatry digest from The Monday Clinical Brief — a weekly summary of every new paper from the top journals in Psychiatry. Free 4-week trial.">
+<title>Psychiatry Sample Digest — The Monday Clinical Brief</title>
+<meta name="description" content="See what Psychiatry clinicians received in this Monday's digest: 19 new articles from Molecular psychiatry, JAMA psychiatry, The American journal of psychiatry summarised every Monday by The Monday Clinical Brief.">
 <link rel="canonical" href="https://mondayclinicalbrief.co.uk/samples/psychiatry/">
-<meta property="og:title" content="Psychiatry — Monday Clinical Brief">
-<meta property="og:description" content="Every new Psychiatry paper, summarised every Monday. Free 4-week trial.">
+<meta property="og:title" content="Psychiatry — Monday Clinical Brief Sample Digest">
+<meta property="og:description" content="19 new Psychiatry papers summarised this week. Free 4-week trial.">
 <meta property="og:url" content="https://mondayclinicalbrief.co.uk/samples/psychiatry/">
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -45,18 +45,35 @@
   .page-header h1 { font-family: 'Instrument Serif', serif; font-size: clamp(2.2rem, 4.5vw, 3.2rem); font-weight: 400; color: var(--charcoal); line-height: 1.2; letter-spacing: -0.02em; margin-bottom: 1rem; max-width: 720px; margin-left: auto; margin-right: auto; }
   .page-header h1 em { font-style: italic; color: var(--sage-deep); }
   .page-header .lede { font-size: 1.05rem; color: var(--text-muted); max-width: 560px; margin: 0 auto 1.75rem; }
+  .stat-bar { display: inline-flex; gap: 2.5rem; padding: 1rem 1.75rem; background: white; border: 1px solid var(--border); border-radius: 60px; font-size: 0.85rem; }
+  .stat-bar .stat strong { display: block; font-family: 'Instrument Serif', serif; font-size: 1.6rem; color: var(--sage-deep); line-height: 1; margin-bottom: 0.2rem; }
+  .stat-bar .stat span { color: var(--text-muted); font-size: 0.78rem; }
 
-  /* ── BODY ── */
+  /* ── DISCLAIMER ── */
+  .disclaimer { max-width: 800px; margin: 2rem auto 0; padding: 0.85rem 1.25rem; background: var(--gold-light); border-left: 3px solid var(--gold); font-size: 0.85rem; color: var(--text); border-radius: 4px; }
+  .disclaimer strong { color: var(--charcoal); }
+
+  /* ── ARTICLES ── */
   section { padding: 3rem 2rem 5rem; }
-  .container { max-width: 720px; margin: 0 auto; }
-  .soon-card { background: white; border: 1px solid var(--border); border-radius: 8px; padding: 2.5rem 2rem; text-align: center; margin-bottom: 2rem; }
-  .soon-card p { font-size: 1rem; color: var(--text); margin-bottom: 1rem; }
-  .soon-card p:last-child { margin-bottom: 0; }
-  .soon-card .preview-link { display: inline-block; margin-top: 0.5rem; background: var(--sage-light); color: var(--sage-deep); padding: 0.9rem 1.75rem; border-radius: 40px; font-weight: 600; text-decoration: none; font-size: 0.95rem; transition: all 0.2s; }
-  .soon-card .preview-link:hover { background: var(--sage-deep); color: white; transform: translateY(-1px); }
+  .container { max-width: 800px; margin: 0 auto; }
+  .sample-card { background: white; border: 1px solid var(--border); border-radius: 8px; padding: 2rem; margin-bottom: 1.5rem; }
+  .sample-badge { display: inline-block; background: var(--sage-light); color: var(--sage-deep); padding: 0.2rem 0.7rem; border-radius: 4px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 1rem; }
+  .sample-card h3 { font-family: 'Instrument Serif', serif; font-size: 1.3rem; font-weight: 400; color: var(--charcoal); margin-bottom: 0.5rem; line-height: 1.35; }
+  .sample-meta { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1.25rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--border); }
+  .summary-field { margin-bottom: 0.75rem; font-size: 0.9rem; line-height: 1.6; }
+  .summary-label { font-weight: 600; color: var(--sage-deep); }
+  .summary-field ul { list-style: none; margin: 0.4rem 0 0 0; padding: 0; }
+  .summary-field ul li { padding-left: 1.1rem; position: relative; margin-bottom: 0.3rem; }
+  .summary-field ul li::before { content: '•'; position: absolute; left: 0.2rem; color: var(--sage); font-weight: 700; }
+  .source-links { margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 0.8rem; }
+  .source-links a { color: var(--sage-deep); text-decoration: none; margin-right: 1rem; font-weight: 500; }
+  .source-links a:hover { text-decoration: underline; }
 
-  .what-we-cover { background: var(--cream); border-left: 3px solid var(--sage); padding: 1.25rem 1.5rem; border-radius: 4px; margin-bottom: 2rem; font-size: 0.95rem; color: var(--text); }
-  .what-we-cover strong { color: var(--charcoal); }
+  /* ── TEASE ── */
+  .tease { text-align: center; padding: 2rem; background: var(--cream); border: 1px dashed var(--border); border-radius: 8px; margin-top: 1rem; }
+  .tease p { font-family: 'Instrument Serif', serif; font-size: 1.4rem; color: var(--charcoal); line-height: 1.4; margin-bottom: 0.5rem; }
+  .tease p em { color: var(--sage-deep); }
+  .tease small { color: var(--text-muted); font-size: 0.9rem; }
 
   /* ── CTA ── */
   .cta-section { background: var(--charcoal); color: white; padding: 4rem 2rem; text-align: center; }
@@ -77,7 +94,8 @@
     body { padding-bottom: 60px; }
     .page-header { padding: 3.5rem 1.5rem 2.5rem; }
     section { padding: 2rem 1.5rem 3.5rem; }
-    .soon-card { padding: 2rem 1.5rem; }
+    .sample-card { padding: 1.5rem; }
+    .stat-bar { flex-direction: column; gap: 1rem; padding: 1.25rem 1.75rem; }
     .cta-section { padding: 3rem 1.5rem; }
   }
 </style>
@@ -96,21 +114,249 @@
 
 <!-- ═══ HEADER ═══ -->
 <header class="page-header">
-  <div class="eyebrow">Psychiatry · Sample Digest</div>
-  <h1>A <em>Psychiatry</em> sample is on the way.</h1>
-  <p class="lede">Subscribers already receive the Psychiatry digest every Monday. While we prepare a public sample for this specialty, here's a full example from another field &mdash; the format is identical.</p>
+  <div class="eyebrow">Sample Digest · Monday 31 August 2026</div>
+  <h1>A recent Psychiatry digest,<br><em>as sent to subscribers</em></h1>
+  <p class="lede">This is the real Monday digest from Monday 31 August 2026. Showing the first 8 of 19 articles from that week — every new paper from the top journals in Psychiatry.</p>
+  <div class="stat-bar">
+    <div class="stat"><strong>19</strong><span>articles that week</span></div>
+    <div class="stat"><strong>4</strong><span>journals covered</span></div>
+    <div class="stat"><strong>£0</strong><span>for your first 4 weeks</span></div>
+  </div>
+  <div class="disclaimer">
+    <strong>Note:</strong> Summaries are AI-generated from publicly available PubMed abstracts. Always verify against the source article before clinical use.
+  </div>
 </header>
 
-<!-- ═══ BODY ═══ -->
+<!-- ═══ ARTICLES ═══ -->
 <section>
   <div class="container">
-    <div class="soon-card">
-      <p>The next <strong>Psychiatry</strong> digest will include every new paper published that week in the field's top journals, each summarised in a consistent clinical format.</p>
-      <p>In the meantime, here's a full sample from a recent week:</p>
-      <a href="/samples/palliative-care/" class="preview-link">See a full Palliative Care sample &rarr;</a>
+    <div class="sample-card">
+      <div class="sample-badge">JAMA psychiatry</div>
+      <h3>Glucagon-Like Peptide 1 Receptor Agonists, Mortality, and Cardiovascular Outcomes in Serious Mental Illness</h3>
+      <div class="sample-meta">McIntyre RS, Zhang-James Y, Kwan ATH · 2026 Aug 26</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Retrospective target trial emulation using propensity-matched cohorts from a federated electronic health record network (TriNetX).
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Does initiating GLP-1 receptor agonists versus SGLT2 inhibitors reduce all-cause mortality and cardiovascular events in adults with serious mental illness (SMI)?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Among SMI patients, 4-year mortality was lower with GLP-1RA vs SGLT2 inhibitor (4.91% vs 6.45%; HR 0.76, 95% CI 0.74–0.78); 1-year mortality similarly reduced (RR 0.52, 95% CI 0.49–0.54).</li><li>In diabetic SMI patients, semaglutide reduced 3-point MACE (HR 0.77) and individual cardiovascular endpoints versus SGLT2 inhibitors.</li><li>Mortality benefit persisted across bipolar disorder (RR 0.57), schizophrenia (RR 0.67), and MDD (RR 0.55) subgroups at 10 years; effects driven by semaglutide/tirzepatide.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        Given the high cardiovascular mortality burden in SMI populations under NHS mental health services, GLP-1RAs may offer a metabolic and mortality benefit beyond glycaemic control, supporting consideration in physical health optimisation pathways pending RCT confirmation.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Observational design with residual confounding by indication despite propensity matching; causal inference requires prospective randomised trials.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42647034/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1001/jamapsychiatry.2026.2574" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
-    <div class="what-we-cover">
-      <strong>What you'll get in the Psychiatry digest:</strong> every new paper from the top five journals in the field, summarised into Study Type, Key Question, Key Findings, Clinical Relevance, and Limitations &mdash; delivered to your inbox every Monday.
+    <div class="sample-card">
+      <div class="sample-badge">JAMA psychiatry</div>
+      <h3>Adapting Family-Based Psychosis Care to the Digital Home</h3>
+      <div class="sample-meta">Parikh A, Russell G, Kane JM et al. · 2026 Aug 26</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Unable to determine — likely commentary/viewpoint (no abstract text supplied); not an original research study.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        How can family-based psychosocial interventions for psychosis be adapted for delivery via digital/telehealth platforms in the home setting?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        Insufficient data provided in the abstract to extract specific findings, effect sizes, or outcomes; title suggests a discussion of adapting family-focused therapy models (e.g., Family-Focused Therapy) to remote/digital delivery formats.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        UK psychiatry services expanding digital and home-based care pathways (e.g., early intervention in psychosis teams) may find relevant considerations for adapting family interventions to remote delivery, aligning with NHS Long Term Plan digital transformation goals.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        No abstract text was available to assess methodology, evidence quality, or study limitations.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42646922/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1001/jamapsychiatry.2026.2570" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">JAMA psychiatry</div>
+      <h3>Potential for Genomics to Help Guide Preventive Strategies in Psychiatry</h3>
+      <div class="sample-meta">Musliner KL, Schulte EC, Breen G et al. · 2026 Aug 26</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Special Communication (expert opinion/narrative review, not original research)
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Can genomic information (polygenic scores and rare variants) be used to guide preventive strategies in psychiatric clinical practice?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Universal or selective population-wide genomic screening is not currently supported due to modest absolute risk differences, poor individual-level predictive performance, and risk of psychological harm.</li><li>Greatest clinical value lies in early psychiatric care during diagnostic uncertainty, where rare variant testing may shorten diagnostic delay and guide monitoring; polygenic scores may add value only when combined with non-genetic risk factors in high-risk populations.</li><li>Pharmacogenomics offers established benefit for medication choice/safety; genomic testing may also help identify somatic comorbidity risk, addressing excess mortality in severe mental illness.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        Informs UK psychiatrists on the current limits and targeted opportunities for genomic testing (e.g., pharmacogenomics, rare variant testing) within NHS pathways, cautioning against premature adoption of population-level genomic screening.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        As a narrative/opinion piece, it synthesises existing evidence rather than presenting new primary data, limiting the strength of specific clinical recommendations.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42646907/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1001/jamapsychiatry.2026.2583" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Molecular psychiatry</div>
+      <h3>Dysregulation of local inhibitory inputs onto laterodorsal tegmental nucleus cholinergic neurons drives depression-like behaviors in mice</h3>
+      <div class="sample-meta">Xu Y, Du J, Li X et al. · 2026 Aug 25</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Preclinical (rodent) mechanistic study
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        How do local inhibitory circuits regulate laterodorsal tegmental (LDTg) cholinergic neuron activity in the development of stress-induced depression-like behaviour?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Chronic unpredictable mild stress (CUMS) reduced SST+ interneuron inhibitory input onto LDTg cholinergic neurons, weakening synaptic connectivity and causing cholinergic hyperactivity.</li><li>Chemogenetic inhibition of LDTg SST+ interneurons disinhibited cholinergic neurons and increased susceptibility to stress-induced depressive behaviours.</li><li>Preventive chemogenetic activation of SST+ interneurons preserved inhibitory synaptic strength and reduced development of depression-like behaviours.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        Identifies a novel brainstem cholinergic-GABAergic circuit as a potential future target for stress-related depression, relevant to NHS efforts to develop mechanistically-informed, non-monoaminergic antidepressant strategies.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Findings are based entirely on mouse models and chemogenetic manipulation, with no direct evidence yet of translational relevance to human depression.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42642467/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1038/s41380-026-03833-8" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Molecular psychiatry</div>
+      <h3>Empirical evidence for gut microbial influence on human brain neurochemistry via the gut-brain axis</h3>
+      <div class="sample-meta">Johnstone N, Cohen Kadosh K · 2026 Aug 25</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Cross-sectional observational study (¹H-MRS neuroimaging combined with metagenomic profiling)
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Does gut microbial functional potential (for neuroactive metabolite pathways) correlate with regional brain GABA/glutamate levels and psychological wellbeing in healthy humans?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Region-specific associations found between microbial pathway potential and cortical E/I balance; microbial glutamate degradation and inositol synthesis potential correlated with IOG excitatory/inhibitory balance.</li><li>Distinct microbial pathways (GABA metabolism, p-cresol production, SCFA synthesis) associated with neurochemistry across different cortical regions (dlPFC, ACC, IOG).</li><li>Exploratory analyses linked microbial functional potential to anxiety, depressive symptoms, and sleep quality, though these were secondary/hypothesis-generating.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        Provides early human mechanistic evidence supporting the gut-brain axis, relevant to future microbiome-targeted adjunctive treatments for mood and anxiety disorders within NHS mental health pathways.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Cross-sectional design in healthy young females limits causal inference and generalisability to clinical psychiatric populations.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42642466/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1038/s41380-026-03813-y" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Molecular psychiatry</div>
+      <h3>Cognitive and synaptic impairment induced by deficiency of autism risk gene Smarcc2 and its rescue by histone deacetylase inhibition</h3>
+      <div class="sample-meta">Li P, Men S, Patel PJ et al. · 2026 Aug 26</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Preclinical translational study (combined human postmortem/iPSC and mouse model research)
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Does SMARCC2 haploinsufficiency, an autism risk gene, cause cognitive and synaptic deficits, and can these be reversed by HDAC inhibition?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>SMARCC2 expression was reduced in postmortem ASD prefrontal cortex and ASD-derived iPSC neurons; Smarcc2-deficient mice showed impaired working memory with preserved social/anxiety behaviour.</li><li>Smarcc2 deficiency downregulated synaptic transmission genes and impaired GABAergic/glutamatergic synaptic currents, linked to reduced histone acetylation (H3K9ac) at synaptic gene promoters via HDAC2 interaction.</li><li>Romidepsin (class I HDAC inhibitor) normalised histone acetylation, synaptic gene expression, synaptic currents, and working memory deficits in mice.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        Identifies a plausible epigenetic mechanism and druggable target (HDAC inhibition) for cognitive impairment in SMARCC2-related neurodevelopmental disorder, relevant to future precision psychiatry approaches for genetically defined ASD subtypes in NHS practice.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Findings are based on animal and in vitro models with small human postmortem/iPSC samples, limiting direct clinical translation and safety inference for HDAC inhibitor use in humans.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42649243/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1038/s41380-026-03848-1" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Molecular psychiatry</div>
+      <h3>A prefrontal cortex-piriform cortex circuit mediates diminished interest</h3>
+      <div class="sample-meta">Xia T, Chen J, Zhang H et al. · 2026 Aug 26</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Preclinical (animal model) mechanistic neuroscience study
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        What neural circuit underlies diminished interest, a core symptom seen across neuropsychiatric disorders (e.g., anhedonia in depression)?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>A distinct vmPFC-to-posterior piriform cortex (PPC) glutamatergic circuit—separate from the vmPFC-anterior piriform cortex pathway—specifically drives interest-related engagement behaviour without affecting olfaction, via AMPAR-dependent burst firing in PPC neurons.</li><li>Chronic stress selectively weakens this pathway (reduced glutamatergic transmission and burst firing), producing interest-related behavioural deficits in mice.</li><li>Optogenetic/chemogenetic reactivation of the vmPFC-PPC circuit reverses these deficits.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        Identifies a novel, circuit-specific target (vmPFC–PPC) potentially relevant to anhedonia/diminished interest in depression and other disorders, offering a mechanistic basis for future neuromodulation or pharmacological interventions relevant to NHS mental health research pipelines.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Findings are from murine models only; translational validity to human interest/anhedonia symptomatology remains unestablished.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42649242/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1038/s41380-026-03836-5" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Molecular psychiatry</div>
+      <h3>CSF p-tau205: a biomarker of Alzheimer&#39;s disease progression and biological staging</h3>
+      <div class="sample-meta">Lantero-Rodriguez J, Janelidze S, Palmqvist S et al. · 2026 Aug 27</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Cohort study (cross-sectional and longitudinal biomarker analysis; BioFINDER-1 and BioFINDER-2 cohorts, n=2069)
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Can CSF p-tau205 serve as a biomarker for staging Alzheimer&#39;s disease progression alongside established markers (Aβ42/40, p-tau217)?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Baseline p-tau205 correlated with Aβ-PET (R²=0.28), tau-PET (R²=0.29–0.35), atrophy (R²=0.15), and MMSE (R²=0.15); it predicted future Aβ (R²=0.44) and tau (R²=0.33) accumulation.</li><li>Longitudinal p-tau205 rose more steeply in Aβ-positive individuals (β=0.16, 95% CI 0.12–0.21) and tracked cortical thinning (R²=0.32) and cognitive decline (R²≥0.41).</li><li>A staging model incorporating Aβ42/40, p-tau217, and p-tau205 identified a &#34;p-tau205-positive&#34; late stage with strongest association with dementia progression (HR=6.40, 95% CI 4.28–9.59).</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        Adds to the expanding CSF biomarker toolkit relevant to NHS memory services, potentially refining biological staging and prognostication for AD beyond current amyloid/tau ratios.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        In-house immunoassay limits immediate generalisability/standardisation for routine NHS diagnostic laboratory use.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42661061/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1038/s41380-026-03838-3" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+
+    <div class="tease">
+      <p>…and <em>11 more</em> Psychiatry articles in that week's digest.</p>
+      <small>Subscribers get the complete brief, every Monday.</small>
     </div>
   </div>
 </section>
@@ -118,15 +364,15 @@
 <!-- ═══ CTA ═══ -->
 <section class="cta-section">
   <h2>Get the Psychiatry digest in your inbox every Monday</h2>
-  <p>4 weeks completely free, then &pound;20/year. Cancel any time during your trial &mdash; no charge.</p>
-  <a href="/?specialty=psychiatry&ref=samples#subscribe" class="cta-btn">Start your free trial &mdash; Psychiatry &rarr;</a>
+  <p>4 weeks completely free, then £20/year. Cancel any time during your trial — no charge.</p>
+  <a href="/?specialty=psychiatry&ref=samples#subscribe" class="cta-btn">Start your free trial — Psychiatry →</a>
   <span class="cta-meta">No card needed to browse. We'll ask for payment details to start the trial.</span>
 </section>
 
 <!-- ═══ FOOTER ═══ -->
 <footer>
   <p>&copy; 2026 The Monday Clinical Brief</p>
-  <p><a href="/">Home</a> &middot; <a href="mailto:info@mondayclinicalbrief.co.uk">Contact</a> &middot; <a href="/privacy.html">Privacy Policy</a> &middot; <a href="/terms.html">Terms</a></p>
+  <p><a href="/">Home</a> · <a href="mailto:info@mondayclinicalbrief.co.uk">Contact</a> · <a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms</a></p>
 </footer>
 
 </body>
