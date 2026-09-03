@@ -33,9 +33,10 @@ const EXTRA_SPECIALTY_GBP = 5;     // each additional specialty
 //   ABUHB — duration: ONCE    (first year only, then full list price)
 //   APM   — duration: FOREVER (the discounted rate recurs)
 //   NASGP — duration: FOREVER (the discounted rate recurs)
+//   SAM   — duration: FOREVER (the discounted rate recurs)
 const MEMBER_RATE_DISCOUNT_GBP = 5;
-const MEMBER_RATE_COUPONS = ["ABUHB", "APM", "NASGP"];
-const RECURRING_MEMBER_RATES = ["APM", "NASGP"];
+const MEMBER_RATE_COUPONS = ["ABUHB", "APM", "NASGP", "SAM"];
+const RECURRING_MEMBER_RATES = ["APM", "NASGP", "SAM"];
 const SUPPORT_EMAIL = "info@mondayclinicalbrief.co.uk";
 const STRIPE_CUSTOMER_PORTAL = "https://billing.stripe.com/p/login/dRm28k4rI5LYaoh3qaefC00";
 
@@ -482,7 +483,7 @@ exports.handler = async (event) => {
   // £15 to someone buying two specialties would understate what they actually pay.
   const listTotalGbp = PRIMARY_PRICE_GBP + Math.max(0, specialtySlugs.length - 1) * EXTRA_SPECIALTY_GBP;
   let price = `£${listTotalGbp}`;
-  let couponKind = null; // "FAF2026" | "ABUHB" | "APM" | "NASGP" — drives the priceLine wording below
+  let couponKind = null; // "FAF2026" | "ABUHB" | "APM" | "NASGP" | "SAM" — drives the priceLine wording below
   try {
     // 1. Check session.discount (included in webhook payload)
     const couponCodes = [];
@@ -549,6 +550,8 @@ exports.handler = async (event) => {
       couponKind = "APM";
     } else if (norm.some(c => c.includes("NASGP"))) {
       couponKind = "NASGP";
+    } else if (norm.some(c => c.includes("SAM"))) {
+      couponKind = "SAM";
     }
 
     // Stripe reports amount_total of 0 for the whole 28-day trial, so it is only
