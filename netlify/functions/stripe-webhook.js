@@ -214,12 +214,22 @@ function buildWelcomeHtml(email, specialtySlugs, trialStart, trialEnd, priceLine
     : `a digest of the latest peer-reviewed research in ${specialtyName}`;
   const startStr = formatDate(trialStart);
   const endStr = formatDate(trialEnd);
-  const provider = isDentalOnly(slugs) ? null : consumerProvider(email);
+  const dentalOnly = isDentalOnly(slugs);
+  const provider = dentalOnly ? null : consumerProvider(email);
   const greetName = firstName(customerName);
 
   // Consumer addresses get the ask made properly and by name; everyone else
   // keeps the generic tip. Anything uncertain lands in the `else` branch.
-  const emailTipBlock = provider
+  //
+  // Dental-only orders get NEITHER — most UK dentists are practice-based with
+  // no institutional journal access and no NHS mailbox, so the advice is
+  // unhelpful and signals the product was built for hospital doctors. Note
+  // this has to short-circuit ahead of `provider`: nulling provider alone
+  // would fall through to the generic tip below, which is exactly the bug a
+  // live dental signup surfaced on 4 Sep.
+  const emailTipBlock = dentalOnly
+    ? ""
+    : provider
     ? `      <!-- Work-email suggestion (consumer address) -->
       <tr>
         <td style="padding:0 40px 20px;">
