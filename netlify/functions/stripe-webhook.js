@@ -34,9 +34,10 @@ const EXTRA_SPECIALTY_GBP = 5;     // each additional specialty
 //   APM   — duration: FOREVER (the discounted rate recurs)
 //   NASGP — duration: FOREVER (the discounted rate recurs)
 //   SAM   — duration: FOREVER (the discounted rate recurs)
+//   MDDUS — duration: FOREVER (the discounted rate recurs)
 const MEMBER_RATE_DISCOUNT_GBP = 5;
-const MEMBER_RATE_COUPONS = ["ABUHB", "APM", "NASGP", "SAM"];
-const RECURRING_MEMBER_RATES = ["APM", "NASGP", "SAM"];
+const MEMBER_RATE_COUPONS = ["ABUHB", "APM", "NASGP", "SAM", "MDDUS"];
+const RECURRING_MEMBER_RATES = ["APM", "NASGP", "SAM", "MDDUS"];
 const SUPPORT_EMAIL = "info@mondayclinicalbrief.co.uk";
 const STRIPE_CUSTOMER_PORTAL = "https://billing.stripe.com/p/login/dRm28k4rI5LYaoh3qaefC00";
 
