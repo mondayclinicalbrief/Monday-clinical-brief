@@ -81,7 +81,28 @@
 
   <p class="note"><strong>One quick thing:</strong> our emails come from <strong>info@mondayclinicalbrief.co.uk</strong>. If the welcome email isn't in your inbox, check your junk folder — and add us to your safe senders so your Monday digest always arrives.</p>
 
-  <p class="note"><strong>Signed up with a personal email?</strong> Consider your NHS or institutional address instead — the journal links in each digest then open as full text through your institution's access. Just reply to your welcome email and we'll switch you across. Same specialty, same Monday delivery.</p>
+  <p class="note" id="nhs-email-note"><strong>Signed up with a personal email?</strong> Consider your NHS or institutional address instead — the journal links in each digest then open as full text through your institution's access. Just reply to your welcome email and we'll switch you across. Same specialty, same Monday delivery.</p>
+
+  <script>
+  // Hide the NHS/institutional-email note for dental-only signups. Dentists are
+  // largely practice-based and often self-employed, with no institutional
+  // journal access — the suggestion is unhelpful and signals the product was
+  // built for hospital doctors. A MIXED order still sees it.
+  // Canonical slug list lives in backend/journals.yaml; mirrored in the two
+  // Netlify functions and here. Four strings — keep them in step.
+  (function () {
+    var DENTAL = ['dentistry', 'oral-surgery', 'orthodontics', 'dental-hygiene-therapy'];
+    try {
+      var raw = new URLSearchParams(window.location.search).get('specialties') || '';
+      var slugs = raw.split(',').map(function (s) { return s.trim(); }).filter(Boolean);
+      var dentalOnly = slugs.length > 0 && slugs.every(function (s) { return DENTAL.indexOf(s) !== -1; });
+      if (dentalOnly) {
+        var el = document.getElementById('nhs-email-note');
+        if (el) el.remove();
+      }
+    } catch (e) { /* leave the note in place if anything goes wrong */ }
+  })();
+  </script>
 
   <div class="upsell">
     <div class="upsell-tag">Subscriber exclusive</div>

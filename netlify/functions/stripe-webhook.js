@@ -46,6 +46,8 @@ const SPECIALTY_NAMES = {
   "anaesthetics": "Anaesthetics",
   "cardiology": "Cardiology",
   "cardiothoracic-surgery": "Cardiothoracic Surgery",
+  "dental-hygiene-therapy": "Dental Hygiene & Therapy",
+  "dentistry": "Dentistry",
   "dermatology": "Dermatology",
   "emergency-medicine": "Emergency Medicine",
   "endocrinology": "Endocrinology",
@@ -62,6 +64,8 @@ const SPECIALTY_NAMES = {
   "obstetrics-gynaecology": "Obstetrics & Gynaecology",
   "oncology": "Oncology",
   "ophthalmology": "Ophthalmology",
+  "oral-surgery": "Oral & Maxillofacial Surgery",
+  "orthodontics": "Orthodontics",
   "orthopaedic-surgery": "Orthopaedic Surgery",
   "paediatrics": "Paediatrics",
   "palliative-care": "Palliative Care",
@@ -145,6 +149,28 @@ const CONSUMER_PROVIDERS = {
   "mail.com": "Mail.com",
 };
 
+// Dental panels. Dentists are largely practice-based and often self-employed,
+// with no institutional journal access and frequently no NHS mailbox — so the
+// "use your NHS or institutional email" prompt is unhelpful to them and signals
+// the product was built for hospital doctors. Suppressed for dental-only orders.
+// A MIXED order (e.g. oral-surgery + general-surgery, a dual-qualified OMFS
+// clinician) still gets the prompt, because that reader probably does have
+// hospital access.
+// Canonical list: backend/journals.yaml. Mirrored here, in the other
+// Netlify function, and in welcome.html — keep the four in step.
+const DENTAL_SLUGS = new Set([
+  "dentistry",
+  "oral-surgery",
+  "orthodontics",
+  "dental-hygiene-therapy",
+]);
+
+// True only when EVERY slug in the order is dental.
+function isDentalOnly(slugs) {
+  const list = Array.isArray(slugs) ? slugs : [slugs];
+  return list.length > 0 && list.every((s) => DENTAL_SLUGS.has(s));
+}
+
 // Returns the friendly provider name for a known consumer address, else null.
 // Anything malformed, missing, or unrecognised returns null so the caller
 // falls back to the generic tip.
@@ -187,7 +213,7 @@ function buildWelcomeHtml(email, specialtySlugs, trialStart, trialEnd, priceLine
     : `a digest of the latest peer-reviewed research in ${specialtyName}`;
   const startStr = formatDate(trialStart);
   const endStr = formatDate(trialEnd);
-  const provider = consumerProvider(email);
+  const provider = isDentalOnly(slugs) ? null : consumerProvider(email);
   const greetName = firstName(customerName);
 
   // Consumer addresses get the ask made properly and by name; everyone else
@@ -395,7 +421,7 @@ async function sendWelcomeEmail(toEmail, specialtySlugs, priceLine, customerName
   const html = buildWelcomeHtml(toEmail, slugs, trialStart, trialEnd, priceLine, customerName);
 
   // Plain-text alternative carries the same suggestion, same conditions.
-  const provider = consumerProvider(toEmail);
+  const provider = isDentalOnly(slugs) ? null : consumerProvider(toEmail);
   const greetName = firstName(customerName);
   const textTip = provider
     ? `\n\nOne quick suggestion${greetName ? `, ${greetName}` : ""} — I noticed your subscription came through on a ${provider} address. If you were happy to use your work email, it's worth switching. Each summary links straight to the original paper, and through your institutional access those links take you through to the full article rather than a paywall or abstract. That's where a lot of the value sits.\n\nSwitching takes ten seconds: just reply with your work address and I'll move your subscription across. Nothing else changes — same specialty, same Monday delivery. If you wanted to use both emails that's also fine.\n\n— Tim`

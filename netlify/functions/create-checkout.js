@@ -26,6 +26,8 @@ const SPECIALTY_NAMES = {
   "anaesthetics": "Anaesthetics",
   "cardiology": "Cardiology",
   "cardiothoracic-surgery": "Cardiothoracic Surgery",
+  "dental-hygiene-therapy": "Dental Hygiene & Therapy",
+  "dentistry": "Dentistry",
   "dermatology": "Dermatology",
   "emergency-medicine": "Emergency Medicine",
   "endocrinology": "Endocrinology",
@@ -42,6 +44,8 @@ const SPECIALTY_NAMES = {
   "obstetrics-gynaecology": "Obstetrics & Gynaecology",
   "oncology": "Oncology",
   "ophthalmology": "Ophthalmology",
+  "oral-surgery": "Oral & Maxillofacial Surgery",
+  "orthodontics": "Orthodontics",
   "orthopaedic-surgery": "Orthopaedic Surgery",
   "paediatrics": "Paediatrics",
   "palliative-care": "Palliative Care",
@@ -54,6 +58,28 @@ const SPECIALTY_NAMES = {
   "rheumatology": "Rheumatology",
   "urology": "Urology",
 };
+
+// Dental panels. Dentists are largely practice-based and often self-employed,
+// with no institutional journal access and frequently no NHS mailbox — so the
+// "use your NHS or institutional email" prompt is unhelpful to them and signals
+// the product was built for hospital doctors. Suppressed for dental-only orders.
+// A MIXED order (e.g. oral-surgery + general-surgery, a dual-qualified OMFS
+// clinician) still gets the prompt, because that reader probably does have
+// hospital access.
+// Canonical list: backend/journals.yaml. Mirrored here, in the other
+// Netlify function, and in welcome.html — keep the four in step.
+const DENTAL_SLUGS = new Set([
+  "dentistry",
+  "oral-surgery",
+  "orthodontics",
+  "dental-hygiene-therapy",
+]);
+
+// True only when EVERY slug in the order is dental.
+function isDentalOnly(slugs) {
+  const list = Array.isArray(slugs) ? slugs : [slugs];
+  return list.length > 0 && list.every((s) => DENTAL_SLUGS.has(s));
+}
 
 function getSpecialtyName(slug) {
   return SPECIALTY_NAMES[slug] || slug.replace(/-/g, " ").replace(/\b\w/g, l => l.toUpperCase());
@@ -145,12 +171,17 @@ exports.handler = async (event) => {
       // the email field itself, so this is the last prompt before committing.
       // Keep in step with the same message on the single-specialty Payment
       // Link (set in the Stripe dashboard) and the tip on index.html.
-      custom_text: {
-        submit: {
-          message:
-            "Tip: use your NHS or institutional email — the journal links in each digest then open as full text through your institution's access, not a paywall.",
-        },
-      },
+      // Omitted entirely for dental-only orders — see DENTAL_SLUGS above.
+      ...(isDentalOnly(allSlugs)
+        ? {}
+        : {
+            custom_text: {
+              submit: {
+                message:
+                  "Tip: use your NHS or institutional email — the journal links in each digest then open as full text through your institution's access, not a paywall.",
+              },
+            },
+          }),
     });
 
     return {
