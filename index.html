@@ -972,6 +972,29 @@ extrasToggle.addEventListener('click', function() {
     : '\u2212 Hide additional specialties';
 });
 
+// ── Preselect from ?specialty=<slug> ──
+// Every /samples/<slug>/ page links here as /?specialty=<slug>#subscribe.
+// Without this the parameter was ignored and the dropdown stayed on its
+// default (General Practice), so a cardiologist arriving from their own
+// sample page saw a form pre-set to someone else's specialty — and could
+// subscribe to the wrong one.
+//
+// Reuses the same path as the specialty tiles below: set the value, then
+// dispatch 'change' so the extras grid, pricing and button state all follow.
+// An unknown slug is ignored, leaving the default untouched.
+(function () {
+  try {
+    var wanted = new URLSearchParams(window.location.search).get('specialty');
+    if (!wanted) return;
+    var match = Array.prototype.some.call(select.options, function (o) {
+      return o.value === wanted;
+    });
+    if (!match) return;
+    select.value = wanted;
+    select.dispatchEvent(new Event('change'));
+  } catch (e) { /* leave the default selection in place */ }
+})();
+
 // ── Specialty tiles: auto-select + scroll ──
 document.querySelectorAll('.specialty-pill[data-slug]').forEach(function(pill) {
   pill.addEventListener('click', function() {
