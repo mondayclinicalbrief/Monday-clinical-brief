@@ -143,6 +143,10 @@
       <option value="respiratory">Respiratory Medicine</option>
       <option value="rheumatology">Rheumatology</option>
       <option value="urology">Urology</option>
+      <option value="dentistry">Dentistry</option>
+      <option value="oral-surgery">Oral &amp; Maxillofacial Surgery</option>
+      <option value="orthodontics">Orthodontics</option>
+      <option value="dental-hygiene-therapy">Dental Hygiene &amp; Therapy</option>
     </select>
 
     <button class="upsell-btn" id="extra-btn" disabled onclick="addExtra()">
@@ -172,6 +176,37 @@ const EXTRA_STRIPE_LINK = 'https://buy.stripe.com/eVqaEQ1fwfmy0NHd0KefC01';
 
 const extraSelect = document.getElementById('extra-specialty');
 const extraBtn = document.getElementById('extra-btn');
+
+// Tailor the upsell list to the order just completed. Two things were wrong
+// before: a dentist was offered 31 medical specialties and no second dental
+// panel, and everyone was offered specialties they had just bought.
+//
+// Family rules: a dental-only order sees dental panels, a medical-only order
+// sees medical ones, and a mixed order (e.g. oral surgery plus general
+// surgery) sees both. No parameter at all falls back to medical, which is the
+// pre-existing behaviour.
+(function () {
+  var DENTAL = ['dentistry', 'oral-surgery', 'orthodontics', 'dental-hygiene-therapy'];
+  function isDental(slug) { return DENTAL.indexOf(slug) !== -1; }
+  try {
+    var owned = (new URLSearchParams(window.location.search).get('specialties') || '')
+      .split(',').map(function (x) { return x.trim(); }).filter(Boolean);
+    var showDental  = owned.length > 0 && owned.some(isDental);
+    var showMedical = owned.length === 0 || owned.some(function (x) { return !isDental(x); });
+
+    Array.prototype.slice.call(extraSelect.options).forEach(function (o) {
+      if (!o.value) return;                                  // keep the placeholder
+      if (owned.indexOf(o.value) !== -1) { o.remove(); return; }   // already subscribed
+      if (isDental(o.value) ? !showDental : !showMedical) o.remove();
+    });
+
+    // Nothing left to sell — hide the whole block rather than show an empty menu.
+    if (extraSelect.options.length <= 1) {
+      var panel = extraSelect.closest('.upsell');
+      if (panel) panel.style.display = 'none';
+    }
+  } catch (e) { /* leave the full list in place */ }
+})();
 
 extraSelect.addEventListener('change', function() {
   if (this.value) {
