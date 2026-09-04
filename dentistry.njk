@@ -98,6 +98,13 @@ description: "A weekly digest of every new paper from the top five journals in y
   .dent-hero h1 em { font-style: italic; color: var(--sage-deep); }
   .dent-hero p { font-size: 1.1rem; color: var(--text-muted); margin: 0 0 1rem; }
 
+  .dent-hero-cta { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.75rem; }
+  .btn-hero-primary, .btn-hero-secondary { display: inline-block; padding: 0.85rem 1.6rem; border-radius: 60px; font-size: 0.95rem; font-weight: 600; text-decoration: none; transition: all 0.25s; }
+  .btn-hero-primary { background: var(--charcoal); color: #fff; }
+  .btn-hero-primary:hover { background: var(--sage-deep); transform: translateY(-2px); }
+  .btn-hero-secondary { background: transparent; color: var(--charcoal); border: 1px solid var(--border); }
+  .btn-hero-secondary:hover { border-color: var(--sage); color: var(--sage-deep); }
+
   .panels { max-width: 1000px; margin: 0 auto; padding: 2.5rem 2rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
   .panel { background: var(--warm-white); border: 1px solid var(--border); border-top: 3px solid var(--sage); padding: 1.6rem; display: flex; flex-direction: column; }
   .panel-core { border-top-color: var(--gold); }
@@ -115,6 +122,8 @@ description: "A weekly digest of every new paper from the top five journals in y
   .dent-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; }
   .dent-steps h3 { font-size: 0.95rem; margin: 0 0 0.35rem; color: var(--charcoal); }
   .dent-steps p { font-size: 0.88rem; color: var(--text-muted); margin: 0; }
+
+  .dent-disclosure { margin: 2rem 0 0; padding: 1rem 1.25rem; background: var(--warm-white); border-left: 3px solid var(--gold); font-size: 0.87rem; color: var(--text); line-height: 1.65; }
 
   .dent-sub { background: var(--charcoal); color: #fff; }
   .dent-sub-inner { max-width: 560px; margin: 0 auto; padding: 3.5rem 2rem; }
@@ -136,6 +145,11 @@ description: "A weekly digest of every new paper from the top five journals in y
 
   @media (max-width: 640px) {
     .dent-hero, .panels, .dent-how-inner, .dent-sub-inner { padding-left: 1.2rem; padding-right: 1.2rem; }
+    /* Without these the brand keeps its 1.8rem desktop size, wraps to two lines
+       and pushes the bottom bar to ~123px — 15% of a 375px-tall viewport.
+       Mirrors the homepage's own mobile nav rules. */
+    .nav-brand { font-size: 1.3rem; line-height: 1.05; }
+    .nav-cta { white-space: nowrap; flex-shrink: 0; }
   }
 </style>
 </head>
@@ -146,7 +160,7 @@ description: "A weekly digest of every new paper from the top five journals in y
   <div class="nav-links">
     <a href="/samples/">Samples</a>
     <a href="/blog/">Blog</a>
-    <a href="/">For doctors</a>
+    <a href="/">Medical specialties</a>
     <a href="#subscribe" class="nav-cta">Start free trial</a>
   </div>
 </nav>
@@ -158,11 +172,16 @@ description: "A weekly digest of every new paper from the top five journals in y
   </ol>
 </div>
 
+<main>
 <div class="dent-hero">
   <div class="eyebrow">For dental professionals</div>
   <h1>The dental literature,<br><em>read for you every Monday</em></h1>
   <p>Every new paper from the top five journals in your area of practice, summarised into a structured clinical brief and waiting in your inbox on Monday morning. No advertising, no sponsored content, no app.</p>
   <p>Built by a UK clinician, funded entirely by its readers. &pound;20 a year, free for the first four weeks.</p>
+  <div class="dent-hero-cta">
+    <a href="/samples/dentistry/" class="btn-hero-primary">Read a real Dentistry issue</a>
+    <a href="#subscribe" class="btn-hero-secondary">Start your 4-week free trial</a>
+  </div>
 </div>
 
 <div class="panels">
@@ -177,7 +196,7 @@ description: "A weekly digest of every new paper from the top five journals in y
           <li>International Dental Journal</li>
           <li>Journal of Oral Rehabilitation</li>
         </ul>
-        <a class="panel-sample" href="/samples/dentistry/">See a real issue <span class="arrow">&rarr;</span></a>
+        <a class="panel-sample" href="/samples/dentistry/">See a Dentistry sample issue <span class="arrow">&rarr;</span></a>
       </article>
       <article class="panel">
         
@@ -190,7 +209,7 @@ description: "A weekly digest of every new paper from the top five journals in y
           <li>Journal of Cranio-Maxillofacial Surgery</li>
           <li>Oral Surgery, Oral Medicine, Oral Pathology and Oral Radiology</li>
         </ul>
-        <a class="panel-sample" href="/samples/oral-surgery/">See a real issue <span class="arrow">&rarr;</span></a>
+        <a class="panel-sample" href="/samples/oral-surgery/">See an Oral &amp; Maxillofacial Surgery sample issue <span class="arrow">&rarr;</span></a>
       </article>
       <article class="panel">
         
@@ -203,7 +222,7 @@ description: "A weekly digest of every new paper from the top five journals in y
           <li>Orthodontics &amp; Craniofacial Research</li>
           <li>Journal of Orthodontics</li>
         </ul>
-        <a class="panel-sample" href="/samples/orthodontics/">See a real issue <span class="arrow">&rarr;</span></a>
+        <a class="panel-sample" href="/samples/orthodontics/">See a Orthodontics sample issue <span class="arrow">&rarr;</span></a>
       </article>
       <article class="panel">
         
@@ -216,7 +235,7 @@ description: "A weekly digest of every new paper from the top five journals in y
           <li>Caries Research</li>
           <li>Special Care in Dentistry</li>
         </ul>
-        <a class="panel-sample" href="/samples/dental-hygiene-therapy/">See a real issue <span class="arrow">&rarr;</span></a>
+        <a class="panel-sample" href="/samples/dental-hygiene-therapy/">See a Dental Hygiene &amp; Therapy sample issue <span class="arrow">&rarr;</span></a>
       </article>
 </div>
 
@@ -229,8 +248,8 @@ description: "A weekly digest of every new paper from the top five journals in y
         <p>We query PubMed for everything newly published in your panel's five journals. Nothing is hand-picked, so nothing is quietly dropped.</p>
       </div>
       <div>
-        <h3>Structured summaries</h3>
-        <p>Each paper gets study type, the clinical question, findings with real numbers, relevance to UK practice, and the main limitation.</p>
+        <h3>Structured summaries, written by AI</h3>
+        <p>Each paper gets study type, the clinical question, findings with real numbers, relevance to UK practice, and the main limitation &mdash; generated by AI from the published abstract.</p>
       </div>
       <div>
         <h3>This week at a glance</h3>
@@ -241,6 +260,7 @@ description: "A weekly digest of every new paper from the top five journals in y
         <p>Every summary links to the PubMed record and the DOI, so following something up is one click.</p>
       </div>
     </div>
+    <p class="dent-disclosure">Summaries are generated by AI from the abstract of each paper, not from the full text, and are not reviewed by a clinician before sending. They are a way of deciding what deserves your attention &mdash; not a substitute for reading the paper. Check anything you intend to act on against the linked original.</p>
   </div>
 </section>
 
@@ -268,13 +288,16 @@ description: "A weekly digest of every new paper from the top five journals in y
     <p class="dent-note">Card details are taken by Stripe at signup so your subscription continues automatically after the trial. Cancel before it ends and you pay nothing.</p>
   </div>
 </section>
+</main>
 
 <footer>
-  <p>&copy; 2025 The Monday Clinical Brief. All rights reserved.</p>
-  <p><a href="/">For doctors</a> &middot; <a href="/samples/">Samples</a> &middot; <a href="/blog/">Blog</a> &middot; <a href="/privacy.html">Privacy</a> &middot; <a href="/terms.html">Terms</a></p>
+  <p>&copy; <span id="year">2026</span> The Monday Clinical Brief. All rights reserved.</p>
+  <p><a href="/">Medical specialties</a> &middot; <a href="/samples/">Samples</a> &middot; <a href="/blog/">Blog</a> &middot; <a href="/privacy.html">Privacy</a> &middot; <a href="/terms.html">Terms</a> &middot; <a href="mailto:info@mondayclinicalbrief.co.uk">Contact</a></p>
 </footer>
 
 <script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
 // Dental checkout. Unlike the homepage this ALWAYS posts to create-checkout,
 // including for a single panel. The single-specialty Stripe Payment Link
 // carries a fixed "use your NHS or institutional email" tip set in the Stripe
