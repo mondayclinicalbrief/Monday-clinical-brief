@@ -13,7 +13,10 @@
 <meta property="og:description" content="The genuinely free ways for UK doctors to track CPD — BMJ Portfolio, college diaries, NHS platforms and spreadsheets — and what each costs you elsewhere.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://mondayclinicalbrief.co.uk/blog/cpd-reading-tool/free-cpd-trackers-uk-doctors/">
-
+<meta property="og:image" content="https://mondayclinicalbrief.co.uk/assets/brand/mcb-og-1200x630-v2.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free CPD Trackers for UK Doctors (2026) — The Monday Clinical Brief">
 <meta property="og:site_name" content="The Monday Clinical Brief">
 
 <!-- Twitter Card -->
@@ -122,9 +125,15 @@
   footer a { color: var(--sage); text-decoration: none; }
 
   @media (max-width: 640px) {
-    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; }
+    /* Fixed bottom bar on mobile. The brand used to wrap to two lines at
+       390px, making the bar ~123px tall while the body reserved only 60px —
+       so the footer sat underneath it. Keep the brand on one line and reserve
+       the bar's measured height via a custom property. */
+    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; align-items: center; gap: 0.75rem; }
     .nav-links a:not(.nav-cta) { display: none; }
-    body { padding-bottom: 60px; }
+    .nav-brand { font-size: 0.9rem; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+    .nav-cta { flex-shrink: 0; }
+    body { padding-bottom: calc(var(--bottom-nav-h, 64px) + env(safe-area-inset-bottom, 0px)); }
     .breadcrumb { padding-top: 2rem; }
     .article-header { padding-top: 1rem; }
     .article-header h1 { font-size: 1.8rem; }
@@ -142,7 +151,7 @@
   "description": "The genuinely free ways for UK doctors to track CPD — BMJ Portfolio, college diaries, NHS platforms and spreadsheets — and what each costs you elsewhere.",
   "url": "https://mondayclinicalbrief.co.uk/blog/cpd-reading-tool/free-cpd-trackers-uk-doctors/",
   "datePublished": "2026-07-25T00:00:00.000Z",
-  
+  "dateModified": "2026-09-01T00:00:00.000Z",
   "author": {
     "@type": "Person",
     "name": "Dr Tim Hamilton",
@@ -155,7 +164,7 @@
     "name": "Dr Tim Hamilton",
     "jobTitle": "Consultant in Palliative Medicine"
   },
-  
+  "lastReviewed": "2026-09-01T00:00:00.000Z",
   "publisher": {
     "@type": "Organization",
     "name": "The Monday Clinical Brief",
@@ -212,7 +221,7 @@
       "name": "Is there a genuinely free CPD tracker for UK doctors?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, several. BMJ Portfolio is free and records CPD from any source. GP Tools is free for NHS GPs. Most Royal Colleges include a CPD diary with membership, and NHS appraisal platforms are provided by your employer or deanery at no personal cost. A spreadsheet is free and, for logging reading, entirely adequate."
+        "text": "Yes, several. BMJ Portfolio is free and records CPD from any source, and since its July 2026 relaunch it integrates directly with FourteenFish and offers AI-assisted reflection. GP Tools is free for NHS GPs. Most Royal Colleges include a CPD diary with membership, and NHS appraisal platforms are provided by your employer or deanery at no personal cost. A spreadsheet is free and, for logging reading, entirely adequate."
       }
     },
     
@@ -263,6 +272,7 @@
 </nav>
 
 <!-- ═══ BREADCRUMB ═══ -->
+<main id="main">
 <div class="breadcrumb" aria-label="Breadcrumb">
   <ol>
     <li><a href="/">Home</a></li>
@@ -299,9 +309,10 @@
 <p>Knowing which job you are trying to solve makes the choice obvious.</p>
 <h2 id="the-free-options" tabindex="-1">The free options</h2>
 <h3 id="bmj-portfolio-%E2%80%94-free%2C-any-source" tabindex="-1">BMJ Portfolio — free, any source</h3>
-<p>Launched by BMJ Group in 2026, this records CPD from any source in one place, alongside BMJ Learning and Learner+. It is a credible general-purpose home for a log, and it is not tied to a single college.</p>
-<p><strong>Covers:</strong> logging, reflection, organisation across the year.
-<strong>Doesn't cover:</strong> it is not your appraisal submission platform, so evidence still has to move across.
+<p>Free for all healthcare professionals, with no subscription. BMJ Group relaunched it in July 2026, and it now records CPD from any source alongside BMJ Learning activity, which it tracks automatically. It is not tied to a single college, and it is the strongest free option on this list.</p>
+<p>Three things arrived with the relaunch and are worth knowing: <strong>it integrates directly with FourteenFish</strong>, it offers AI-powered reflection support to help draft and refine reflective entries, and it makes personalised CPD recommendations by role. Portfolio summaries export for appraisal.</p>
+<p><strong>Covers:</strong> logging, reflection, automatic BMJ Learning tracking, organisation across the year, export for appraisal.
+<strong>Doesn't cover:</strong> it is not itself an appraisal submission platform, though BMJ describes the FourteenFish integration as reducing manual data entry.
 <strong>Best for:</strong> doctors who want a free, source-agnostic log that is not locked to one membership.</p>
 <h3 id="your-royal-college-diary-%E2%80%94-free-with-membership" tabindex="-1">Your Royal College diary — free with membership</h3>
 <p>Most colleges include a CPD diary. RCGP members get theirs at no extra cost, along with a substantial library of free CPD content. The RCP, RCS and others run equivalent schemes.</p>
@@ -343,7 +354,7 @@
 <td>Free</td>
 <td>Yes</td>
 <td>No</td>
-<td>Source-agnostic, not college-tied</td>
+<td>Source-agnostic; direct FourteenFish integration; AI reflection support</td>
 </tr>
 <tr>
 <td>College diary</td>
@@ -404,7 +415,7 @@
     
     <details class="faq-item">
       <summary>Is there a genuinely free CPD tracker for UK doctors?</summary>
-      <p>Yes, several. BMJ Portfolio is free and records CPD from any source. GP Tools is free for NHS GPs. Most Royal Colleges include a CPD diary with membership, and NHS appraisal platforms are provided by your employer or deanery at no personal cost. A spreadsheet is free and, for logging reading, entirely adequate.</p>
+      <p>Yes, several. BMJ Portfolio is free and records CPD from any source, and since its July 2026 relaunch it integrates directly with FourteenFish and offers AI-assisted reflection. GP Tools is free for NHS GPs. Most Royal Colleges include a CPD diary with membership, and NHS appraisal platforms are provided by your employer or deanery at no personal cost. A spreadsheet is free and, for logging reading, entirely adequate.</p>
     </details>
     
     <details class="faq-item">
@@ -458,18 +469,41 @@
   <div class="author-box">
     <div class="author-avatar">TH</div>
     <div class="author-info">
-      <h4>Dr Tim Hamilton · Consultant in Palliative Medicine, NHS Wales</h4>
+      <h4><a href="/about/" style="color:inherit;">Dr Tim Hamilton</a> · Consultant in Palliative Medicine, NHS Wales</h4>
       <p>Dr Tim Hamilton is a Consultant in Palliative Medicine in NHS Wales and the founder of The Monday Clinical Brief. He built MCB to help busy UK clinicians keep up with the literature across 31 specialties.</p>
+      <p style="margin-top:0.5rem;"><a href="/about/">Credentials, editorial policy and conflicts of interest →</a></p>
     </div>
   </div>
 </div>
 
+</main>
 
 <!-- ═══ FOOTER ═══ -->
 <footer>
-  <p>&copy; 2025 The Monday Clinical Brief. All rights reserved.</p>
-  <p><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/blog/">Blog</a></p>
+  <p>&copy; 2026 The Monday Clinical Brief. All rights reserved.</p>
+  <p><a href="/samples/">Samples</a> · <a href="/blog/">Blog</a> · <a href="/methodology/">Methodology</a> · <a href="/about/">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p>
 </footer>
+
+<script>
+// The mobile bottom bar is fixed, so the body must reserve exactly its height
+// or the footer ends up underneath it. Measure it rather than guessing: brand
+// length, font loading and text-size settings all move this number.
+(function () {
+  var nav = document.querySelector('nav');
+  if (!nav) return;
+  function sync() {
+    var fixed = getComputedStyle(nav).position === 'fixed';
+    document.documentElement.style.setProperty(
+      '--bottom-nav-h', fixed ? nav.offsetHeight + 'px' : '0px'
+    );
+  }
+  sync();
+  addEventListener('resize', sync);
+  addEventListener('orientationchange', sync);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(sync);
+  if (window.ResizeObserver) new ResizeObserver(sync).observe(nav);
+})();
+</script>
 
 </body>
 </html>

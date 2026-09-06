@@ -6,6 +6,20 @@
 <title>Medical Journal Digest — The Monday Clinical Brief</title>
 <meta name="description" content="Guides to reading, filtering, and staying on top of the medical literature — without drowning in journals.">
 <link rel="canonical" href="https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/">
+<meta property="og:title" content="Medical Journal Digest">
+<meta property="og:description" content="Guides to reading, filtering, and staying on top of the medical literature — without drowning in journals.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/">
+<meta property="og:site_name" content="The Monday Clinical Brief">
+<meta property="og:image" content="https://mondayclinicalbrief.co.uk/assets/brand/mcb-og-1200x630-v2.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Monday Clinical Brief — weekly journal digests for UK clinicians">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Medical Journal Digest">
+<meta name="twitter:description" content="Guides to reading, filtering, and staying on top of the medical literature — without drowning in journals.">
+<meta name="twitter:image" content="https://mondayclinicalbrief.co.uk/assets/brand/mcb-og-1200x630-v2.png">
+
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
@@ -58,9 +72,13 @@
   footer a { color: var(--sage); text-decoration: none; }
 
   @media (max-width: 640px) {
-    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); }
+    /* Fixed bottom bar on mobile — reserve its measured height, not a flat
+       60px, or the two-line brand hides the footer at ~390px. */
+    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); align-items: center; gap: 0.75rem; }
+    .nav-brand { font-size: 0.9rem; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+    .nav-cta { flex-shrink: 0; }
     .nav-links a:not(.nav-cta) { display: none; }
-    body { padding-bottom: 60px; }
+    body { padding-bottom: calc(var(--bottom-nav-h, 64px) + env(safe-area-inset-bottom, 0px)); }
     .blog-hero { padding-top: 3rem; }
   }
 </style>
@@ -77,6 +95,7 @@
   </div>
 </nav>
 
+<main id="main">
 <div class="blog-hero">
   <h1>Medical Journal Digest</h1>
   <p>Guides to reading, filtering, and staying on top of the medical literature — without drowning in journals.</p>
@@ -91,6 +110,39 @@
 
 <div class="posts-grid">
   
+
+<div class="post-card">
+  <span class="post-card-cluster">Medical Journal Digest</span>
+  
+  <h2><a href="/blog/medical-journal-digest/heidi-evidence-vs-openevidence-uk/">Heidi Evidence vs OpenEvidence: Which One Can UK Doctors Actually Use?</a></h2>
+  <p>For UK clinicians the choice between Heidi Evidence and OpenEvidence is mostly settled by availability rather than quality: one withdrew from the UK, and the other works here with limits that fall hardest on NHS accounts. Here is where each stands, checked against both vendors&#39; own documentation.</p>
+  <div class="post-card-meta">
+    <time datetime="2026-08-30T00:00:00.000Z">30 August 2026</time>
+    <span>5 min read</span>
+  </div>
+</div>
+
+<div class="post-card">
+  <span class="post-card-cluster">Medical Journal Digest</span>
+  
+  <h2><a href="/blog/medical-journal-digest/this-week-in-medical-journals-august-2026/">This Week in Medical Journals: August 2026 Highlights</a></h2>
+  <p>The guidance changes worth a UK clinician&#39;s attention this month — migraine, hyperkalaemia, giant cell arteritis and multiple sclerosis — each summarised with a link to the detail.</p>
+  <div class="post-card-meta">
+    <time datetime="2026-08-17T00:00:00.000Z">17 August 2026</time>
+    <span>5 min read</span>
+  </div>
+</div>
+
+<div class="post-card">
+  <span class="post-card-cluster">Medical Journal Digest</span>
+  
+  <h2><a href="/blog/medical-journal-digest/cks-round-up-july-2026/">NICE CKS Round-Up — July 2026: Recent Updates for UK Primary Care</a></h2>
+  <p>Our monthly NICE CKS round-up: the July 2026 Clinical Knowledge Summaries updates that matter in UK primary care, each with a one-line takeaway and a link to the source.</p>
+  <div class="post-card-meta">
+    <time datetime="2026-08-12T00:00:00.000Z">12 August 2026</time>
+    <span>5 min read</span>
+  </div>
+</div>
 
 <div class="post-card">
   <span class="post-card-cluster">Medical Journal Digest</span>
@@ -194,7 +246,7 @@
 <div class="post-card">
   <span class="post-card-cluster">Medical Journal Digest</span>
   
-  <h2><a href="/blog/medical-journal-digest/statins-cvd-prevention-uk-primary-care-2026/">Statins and CVD Prevention in UK Primary Care 2026: What NICE NG238 Means in Practice</a></h2>
+  <h2><a href="/blog/medical-journal-digest/statins-cvd-prevention-uk-primary-care-2026/">Who Gets a Statin in 2026? The NICE NG238 Thresholds UK GPs Actually Use</a></h2>
   <p>The NICE NG238 lipid pathway shapes how UK primary care prescribes statins. A plain-English guide — QRISK3 thresholds, shared decisions below 10%, atorvastatin 20mg and 80mg, the greater-than-40% non-HDL aim for primary prevention, and the LDL and non-HDL targets for secondary prevention.</p>
   <div class="post-card-meta">
     <time datetime="2026-06-16T00:00:00.000Z">16 June 2026</time>
@@ -249,7 +301,7 @@
 <div class="post-card">
   <span class="post-card-cluster">Medical Journal Digest</span>
   
-  <h2><a href="/blog/medical-journal-digest/menopause-hrt-nice-ng23-2026/">Menopause and HRT Guidance UK 2026: NICE Recommends Fezolinetant and Updates NG23</a></h2>
+  <h2><a href="/blog/medical-journal-digest/menopause-hrt-nice-ng23-2026/">What Can You Offer When HRT Isn&#39;t Suitable? Fezolinetant and NG23 in 2026</a></h2>
   <p>Two menopause guidance changes landed in 2026: NICE recommended fezolinetant as a non-hormonal option for vasomotor symptoms, and updated NG23 on unscheduled bleeding. A plain-English summary for UK clinicians.</p>
   <div class="post-card-meta">
     <time datetime="2026-06-02T00:00:00.000Z">2 June 2026</time>
@@ -260,8 +312,8 @@
 <div class="post-card">
   <span class="post-card-cluster">Medical Journal Digest</span>
   
-  <h2><a href="/blog/medical-journal-digest/mrcp-paces-2026-study-plan-uk/">MRCP PACES 2026: Fee Rise, Part 1 In-Centre, and a 12-Week Study Plan for Working Trainees</a></h2>
-  <p>Two MRCP(UK) changes land in 2026: a 3.6% fee rise from July and Part 1 moving in-centre from September. Plus a station-by-station 12-week PACES plan built for working registrars.</p>
+  <h2><a href="/blog/medical-journal-digest/mrcp-paces-2026-study-plan-uk/">Can You Pass MRCP PACES While Working Full Time? A 12-Week Plan for 2026</a></h2>
+  <p>Yes — twelve focused weeks is enough if you are already clinically current and can protect some bedside time. A station-by-station PACES plan built for registrars working full clinical weeks, plus what changed in 2026: fees up 3.6% from July and Part 1 moving in-centre from September.</p>
   <div class="post-card-meta">
     <time datetime="2026-06-02T00:00:00.000Z">2 June 2026</time>
     <span>5 min read</span>
@@ -326,8 +378,8 @@
 <div class="post-card">
   <span class="post-card-cluster">Medical Journal Digest</span>
   
-  <h2><a href="/blog/medical-journal-digest/heidi-evidence-uk-in-session-restriction/">Heidi Evidence Is Excellent. In the UK, It Won&#39;t Answer Mid-Consultation.</a></h2>
-  <p>Heidi Evidence is one of 2026&#39;s most capable UK-relevant clinical AI tools — but in the UK and EU it can&#39;t be used during a live patient session. Here&#39;s what the in-session restriction means and how to work around it.</p>
+  <h2><a href="/blog/medical-journal-digest/heidi-evidence-uk-in-session-restriction/">Heidi Evidence in the UK: What the In-Session Restriction Actually Blocks</a></h2>
+  <p>Heidi Evidence is available to UK and EU clinicians outside a patient session, including during clinic. What is blocked is querying from inside an active session with patient context — and NHS UK accounts are excluded from Evidence entirely.</p>
   <div class="post-card-meta">
     <time datetime="2026-05-17T00:00:00.000Z">17 May 2026</time>
     <span>5 min read</span>
@@ -468,11 +520,31 @@
 
 
 </div>
+</main>
 
 <footer>
-  <p>&copy; 2025 The Monday Clinical Brief. All rights reserved.</p>
-  <p><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/blog/">Blog</a></p>
+  <p>&copy; 2026 The Monday Clinical Brief. All rights reserved.</p>
+  <p><a href="/samples/">Samples</a> · <a href="/blog/">Blog</a> · <a href="/methodology/">Methodology</a> · <a href="/about/">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p>
 </footer>
+
+<script>
+// Measure the fixed mobile bottom bar so the body reserves its true height.
+(function () {
+  var nav = document.querySelector('nav');
+  if (!nav) return;
+  function sync() {
+    var fixed = getComputedStyle(nav).position === 'fixed';
+    document.documentElement.style.setProperty(
+      '--bottom-nav-h', fixed ? nav.offsetHeight + 'px' : '0px'
+    );
+  }
+  sync();
+  addEventListener('resize', sync);
+  addEventListener('orientationchange', sync);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(sync);
+  if (window.ResizeObserver) new ResizeObserver(sync).observe(nav);
+})();
+</script>
 
 </body>
 </html>

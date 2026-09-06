@@ -16,6 +16,21 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://mondayclinicalbrief.co.uk/dentistry/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mondayclinicalbrief.co.uk/methodology/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mondayclinicalbrief.co.uk/about/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://mondayclinicalbrief.co.uk/privacy.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
@@ -42,6 +57,16 @@
   </url>
   <url>
     <loc>https://mondayclinicalbrief.co.uk/samples/cardiothoracic-surgery/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mondayclinicalbrief.co.uk/samples/dental-hygiene-therapy/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mondayclinicalbrief.co.uk/samples/dentistry/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -126,6 +151,16 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mondayclinicalbrief.co.uk/samples/oral-surgery/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mondayclinicalbrief.co.uk/samples/orthodontics/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mondayclinicalbrief.co.uk/samples/orthopaedic-surgery/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -181,6 +216,24 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/heidi-evidence-vs-openevidence-uk/</loc>
+    <lastmod>2026-08-30T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/this-week-in-medical-journals-august-2026/</loc>
+    <lastmod>2026-08-17T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/cks-round-up-july-2026/</loc>
+    <lastmod>2026-08-12T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://mondayclinicalbrief.co.uk/blog/cpd-reading-tool/does-reading-count-as-cpd/</loc>
     <lastmod>2026-07-25T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
@@ -188,13 +241,13 @@
   </url>
   <url>
     <loc>https://mondayclinicalbrief.co.uk/blog/cpd-reading-tool/fourteenfish-alternatives-cpd-logging/</loc>
-    <lastmod>2026-07-25T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-01T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://mondayclinicalbrief.co.uk/blog/cpd-reading-tool/free-cpd-trackers-uk-doctors/</loc>
-    <lastmod>2026-07-25T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-01T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -218,7 +271,7 @@
   </url>
   <url>
     <loc>https://mondayclinicalbrief.co.uk/blog/cpd-reading-tool/using-ai-for-cpd-reflection-uk/</loc>
-    <lastmod>2026-07-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-01T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -266,7 +319,7 @@
   </url>
   <url>
     <loc>https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/statins-cvd-prevention-uk-primary-care-2026/</loc>
-    <lastmod>2026-06-16T00:00:00.000Z</lastmod>
+    <lastmod>2026-08-17T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -296,13 +349,13 @@
   </url>
   <url>
     <loc>https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/menopause-hrt-nice-ng23-2026/</loc>
-    <lastmod>2026-07-16T00:00:00.000Z</lastmod>
+    <lastmod>2026-08-17T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/mrcp-paces-2026-study-plan-uk/</loc>
-    <lastmod>2026-06-02T00:00:00.000Z</lastmod>
+    <lastmod>2026-08-02T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -344,7 +397,7 @@
   </url>
   <url>
     <loc>https://mondayclinicalbrief.co.uk/blog/cpd-reading-tool/log-journal-reading-for-gmc-revalidation/</loc>
-    <lastmod>2026-07-16T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-01T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -356,7 +409,7 @@
   </url>
   <url>
     <loc>https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/heidi-evidence-uk-in-session-restriction/</loc>
-    <lastmod>2026-07-16T00:00:00.000Z</lastmod>
+    <lastmod>2026-08-30T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -392,13 +445,13 @@
   </url>
   <url>
     <loc>https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/mcb-vs-uptodate/</loc>
-    <lastmod>2026-07-16T00:00:00.000Z</lastmod>
+    <lastmod>2026-08-17T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/openevidence-alternative-uk/</loc>
-    <lastmod>2026-07-16T00:00:00.000Z</lastmod>
+    <lastmod>2026-08-17T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -428,7 +481,7 @@
   </url>
   <url>
     <loc>https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/best-medical-journal-digest-services-uk/</loc>
-    <lastmod>2026-06-30T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-01T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

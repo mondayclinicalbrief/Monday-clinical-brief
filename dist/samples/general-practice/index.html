@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>General Practice Sample Digest — The Monday Clinical Brief</title>
-<meta name="description" content="See what General Practice clinicians received in this Monday's digest: 11 new articles from Family practice, Journal of general internal medicine, BMJ (Clinical research ed.) summarised every Monday by The Monday Clinical Brief.">
+<meta name="description" content="See what General Practice clinicians received in this Monday's digest: 16 new articles from Journal of general internal medicine, BMJ (Clinical research ed.), Family practice summarised every Monday by The Monday Clinical Brief.">
 <link rel="canonical" href="https://mondayclinicalbrief.co.uk/samples/general-practice/">
 <meta property="og:title" content="General Practice — Monday Clinical Brief Sample Digest">
-<meta property="og:description" content="11 new General Practice papers summarised this week. Free 4-week trial.">
+<meta property="og:description" content="16 new General Practice papers summarised this week. Free 4-week trial.">
 <meta property="og:url" content="https://mondayclinicalbrief.co.uk/samples/general-practice/">
 <meta property="og:type" content="article">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -89,9 +89,12 @@
   footer a { color: var(--sage); text-decoration: none; }
 
   @media (max-width: 640px) {
-    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; }
+    /* Fixed bottom bar — reserve its measured height, not a flat 60px. */
+    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; align-items: center; gap: 0.75rem; }
     .nav-links a:not(.nav-cta) { display: none; }
-    body { padding-bottom: 60px; }
+    .nav-brand { font-size: 0.9rem; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+    .nav-cta { flex-shrink: 0; }
+    body { padding-bottom: calc(var(--bottom-nav-h, 64px) + env(safe-area-inset-bottom, 0px)); }
     .page-header { padding: 3.5rem 1.5rem 2.5rem; }
     section { padding: 2rem 1.5rem 3.5rem; }
     .sample-card { padding: 1.5rem; }
@@ -106,24 +109,25 @@
 <nav>
   <a href="/" class="nav-brand">The Monday Clinical Brief</a>
   <div class="nav-links">
+    <a href="/samples/">Samples</a>
+    <a href="/blog/">Blog</a>
     <a href="/#how">How it works</a>
-    <a href="/#about">About</a>
     <a href="/?specialty=general-practice#subscribe" class="nav-cta">Start free trial</a>
   </div>
 </nav>
 
 <!-- ═══ HEADER ═══ -->
 <header class="page-header">
-  <div class="eyebrow">Sample Digest · Monday 29 June 2026</div>
+  <div class="eyebrow">Sample Digest · Monday 31 August 2026</div>
   <h1>A recent General Practice digest,<br><em>as sent to subscribers</em></h1>
-  <p class="lede">This is the real Monday digest from Monday 29 June 2026. Showing the first 8 of 11 articles from that week — every new paper from the top journals in General Practice.</p>
+  <p class="lede">This is the real Monday digest from Monday 31 August 2026. Showing the first 8 of 16 articles from that week — every new paper from the top 5 journals in General Practice, 4 of which published that week.</p>
   <div class="stat-bar">
-    <div class="stat"><strong>11</strong><span>articles that week</span></div>
-    <div class="stat"><strong>3</strong><span>journals covered</span></div>
+    <div class="stat"><strong>16</strong><span>articles that week</span></div>
+    <div class="stat"><strong>5</strong><span><a href="/methodology/">journals monitored</a></span></div>
     <div class="stat"><strong>£0</strong><span>for your first 4 weeks</span></div>
   </div>
   <div class="disclaimer">
-    <strong>Note:</strong> Summaries are AI-generated from publicly available PubMed abstracts. Always verify against the source article before clinical use.
+    <strong>Note:</strong> Summaries are AI-generated from publicly available PubMed abstracts. Always verify against the source article before clinical use. <a href="/methodology/">How we choose journals and write summaries →</a>
   </div>
 </header>
 
@@ -132,231 +136,227 @@
   <div class="container">
     <div class="sample-card">
       <div class="sample-badge">BMJ (Clinical research ed.)</div>
-      <h3>Assessing early effects of Australia&#39;s Social Media Minimum Age Act on adolescents&#39; social media use: observational study</h3>
-      <div class="sample-meta">Barnes C, Hall A, Mantach S et al. · 2026 Jun 24</div>
+      <h3>Prevalence of chronic traumatic encephalopathy at death in National Football League players: retrospective population based cohort study, 2008-21</h3>
+      <div class="sample-meta">Daneshvar DH, Nowinski CJ, Abdolmohammadi B et al. · 2026 Aug 25</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Observational study (pre-post with regression discontinuity design)
+        Retrospective population-based cohort study
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Did Australia&#39;s minimum age-16 social media legislation meaningfully reduce social media use in under-16s within three months of implementation?
+        What is the plausible prevalence of chronic traumatic encephalopathy (CTE) among deceased former NFL players, and how does CTE severity relate to dementia risk?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>Over 85% of under-16s still reported using regulated platforms at follow-up, predominantly via their own accounts (54–68%)</li><li>Daily use reduced modestly in 14–15 year olds (78% → 69%) but was stable in 12–13 year olds; regression discontinuity analysis found no statistically significant discontinuity at the age threshold (p≥0.60)</li><li>Circumvention was common: fake accounts (15–19%) and private browsing (6–11%); age verification was mostly self-declared age or selfie upload</li>        </ul>
+<li>Among all 1712 deceased NFL players (2008-21), possible CTE prevalence ranged widely (18.5%–98.7%); during 2016-21 (peak donation period), the range narrowed to 24.5%–97.7%, suggesting a true minimum of roughly one-quarter.</li><li>Among 338 brain donors, 93.2% had CTE and 30.8% had stage IV disease; stage IV CTE was associated with a 44% higher risk of clinician-diagnosed dementia (RR 1.44, 95% CI 1.16–1.78, p&lt;0.001).</li><li>Neurodegenerative disease was recorded as cause of death in only 18.6% of donors and in just 40.6% of those with confirmed dementia, indicating substantial under-recognition on death certificates.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        As UK policymakers consider similar age-restriction legislation, this signals that minimum-age laws alone are unlikely to achieve short-term reductions in adolescent social media exposure without robust enforcement mechanisms.
+        Highlights that repetitive head impact-related neurodegeneration is likely underdiagnosed and under-certified, reinforcing the need for GPs to consider CTE/dementia risk when assessing cognitive symptoms in patients with significant contact-sport histories (relevant to UK rugby/football concussion pathways).
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Small sample (n=408), short follow-up (~3 months), and self-reported outcomes limit conclusions about longer-term policy effects.
+        Selection bias is substantial, as brain donation was voluntary and likely over-represents symptomatic players, limiting generalisability of prevalence estimates.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42342272/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1136/bmj-2026-363695" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42642105/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1136/bmj-2026-100418" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">BMJ (Clinical research ed.)</div>
+      <h3>Schizophrenia: advances in pathophysiology, management, and precision medicine</h3>
+      <div class="sample-meta">Sawa A, Chiappelli J, Hamrah OP et al. · 2026 Aug 28</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Narrative review
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        What is the current state of knowledge on schizophrenia&#39;s pathophysiology and management, and how might precision medicine improve future treatment?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Schizophrenia arises from combined genetic and environmental factors with neurodevelopmental underpinnings; onset typically occurs in late adolescence/young adulthood.</li><li>Established antipsychotic drugs reduce positive symptoms and relapse risk, while psychosocial/cognitive interventions support functional recovery and early psychosis management; neuromodulation and digital health interventions remain investigational.</li><li>Current diagnostic criteria capture a biologically heterogeneous population, limiting drug development; biomarker-driven patient stratification is proposed as the next step toward precision medicine.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        UK GPs manage patients with schizophrenia long-term in primary care (physical health monitoring, relapse recognition, medication adherence) and should anticipate future shifts toward biomarker-based, stratified treatment approaches within shared care pathways.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        As a narrative review, it does not systematically appraise evidence quality or provide pooled effect estimates for specific interventions.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42665310/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1136/bmj-2026-635470" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">Family practice</div>
-      <h3>Effect of direct access to physiotherapy on prescribing and imaging in primary care for musculoskeletal disorders: a systematic review and meta-analysis</h3>
-      <div class="sample-meta">Fischer M, Bui E, Besombes L et al. · 2026 Jun 11</div>
+      <h3>Guideline adherence for the management of cardiovascular disease in primary care: a scoping review</h3>
+      <div class="sample-meta">Zink E, Traulsen P, Strumann C et al. · 2026 Jul 31</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Systematic review and meta-analysis
+        Scoping review (37 studies included, PRISMA-ScR methodology)
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Does direct access (DA) to physiotherapy reduce medication and imaging prescriptions compared with GP-led care for musculoskeletal disorders in primary care?
+        How well do general practitioners adhere to cardiovascular disease clinical practice guidelines, and what factors influence this adherence?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>DA was associated with 43% fewer medication prescriptions vs GP-led pathways (RR 0.57, 95% CI 0.40–0.83; I² 60%; GRADE: low certainty; n=2,993 across 4 studies)</li><li>Sensitivity analysis was consistent (RR 0.56, 95% CI 0.43–0.73; I² 45%)</li><li>Imaging outcomes were inconclusive due to sparse data; a multi-modality analysis suggested reduced imaging but was non-significant (RR 0.48, 95% CI 0.16–1.41; very low certainty)</li>        </ul>
+<li>Reported guideline adherence varied widely (4%–100%) depending on disease area, guideline, and measurement method.</li><li>Key barriers included time constraints, systemic/organisational factors, and guideline limitations (e.g., poor applicability to complex or multimorbid patients).</li><li>Complex cases often prompted deliberate deviation from guidelines due to concerns about side effects and treatment burden.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        With musculoskeletal conditions among the most common GP presentations in NHS primary care, DA physiotherapy may meaningfully reduce prescribing burden, supporting existing NHS First Contact Practitioner physiotherapy models.
+        Highlights that despite good awareness of CVD guidelines, UK GPs managing multimorbid patients face legitimate, recurring barriers to strict adherence—supporting calls for more pragmatic, GP-informed guideline design (relevant to NICE guideline development and QOF-type adherence metrics).
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Only four studies contributed to the primary outcome, with low GRADE certainty, limiting confidence in effect size estimates.
+        Predominantly cross-sectional, heterogeneous studies with inconsistent adherence definitions limit direct comparability and causal inference.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42348720/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1093/fampra/cmag046" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42640943/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1093/fampra/cmag061" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">Family practice</div>
-      <h3>Virtual and in-person interpretation: a qualitative study from the perspective of professional medical interpreters</h3>
-      <div class="sample-meta">Freeman K, Melloy M, Aziz F et al. · 2026 Jun 11</div>
+      <h3>Validation of an artificial intelligence-based drawing platform against the Clock Drawing Test for cognitive screening: a comparative study between Alzheimer&#39;s disease and healthy controls</h3>
+      <div class="sample-meta">Sur Ünal Ü, Karabaş HA, Yadigar A et al. · 2026 Jul 31</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Qualitative study (focus groups)
+        Cross-sectional diagnostic validation study
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        How does interpreter modality (virtual vs. in-person) affect the care experience for patients with non-English language preferences, from professional medical interpreters&#39; perspectives?
+        Can an AI-based, symbol-driven drawing platform match or improve upon manual Clock Drawing Test scoring for distinguishing Alzheimer&#39;s disease from healthy ageing in primary care?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>Four themes emerged: relationship development; understanding and accuracy; accessibility/flexibility/flow; and care quality</li><li>Interpreters predominantly favoured in-person interpretation for fostering human connection, ensuring accuracy, and promoting health equity</li><li>Virtual interpretation was seen as acceptable in specific circumstances where access or flexibility were priorities (e.g., rare languages, urgent availability)</li>        </ul>
+<li>AI model achieved AUC 0.868, with a cut-off &lt;27 points yielding 83.6% sensitivity and 75.0% specificity; substantial agreement with clinical diagnosis (κ = 0.586, P&lt;0.001).</li><li>AI score was an independent predictor of AD status after adjusting for age/gender (OR 0.940, 95% CI 0.904–0.979, P&lt;0.001).</li><li>AI flagged 25% of &#34;cognitively intact&#34; controls (per manual CDT) as at-risk, suggesting greater sensitivity to subtle visuoconstructional deficits.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        In UK general practice, where language barriers affect significant patient populations and remote consultations are now routine, this supports careful consideration of when telephone/video interpretation is clinically appropriate versus when in-person interpreters should be prioritised.
+        This tool could offer GPs an objective, language- and literacy-independent, low-cost tablet-based triage aid to identify patients needing earlier memory clinic referral, potentially improving early AD detection within NHS primary care pathways.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Findings reflect interpreter perspectives only — patient and clinician views are absent, limiting transferability of conclusions.
+        Cross-sectional design with modest sample size (n=111) limits generalisability and cannot establish longitudinal predictive validity or real-world implementation outcomes.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42348719/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1093/fampra/cmag033" target="_blank" rel="noopener">DOI →</a>      </div>
-    </div>
-    <div class="sample-card">
-      <div class="sample-badge">Family practice</div>
-      <h3>Temporal changes in chronic disease management in primary care in relation to telehealth policy changes: Australian whole-of-population interrupted time-series analysis</h3>
-      <div class="sample-meta">Butler DC, Lazarevic N, Joshy G et al. · 2026 Jun 11</div>
-      <div class="summary-field">
-        <span class="summary-label">Study Type:</span>
-        Whole-of-population interrupted time-series analysis (cohort study using linked national administrative data)
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Question:</span>
-        Did Australian telehealth policy changes affect uptake and timeliness of GP chronic disease management (CDM) services between 2018 and 2022?
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Findings:</span>
-        <ul>
-<li>Universal telehealth introduction (March 2020) maintained CDM service uptake; trends were stable compared to pre-pandemic</li><li>Removing subsidised telephone CDM (July 2021) caused a significant drop: −4.0 users and −6.9 services per 1000 population/month (95% CI −6.3 to −1.7 and −10.5 to −3.3 respectively)</li><li>Telehealth uptake peaked at 38.7% in month one (predominantly telephone at 37%), falling to 2.2–5.4%/month once telephone-only access was removed; timeliness improvements also stalled</li>        </ul>
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Clinical Relevance:</span>
-        This supports the case for retaining telephone (not just video) as a subsidised modality for CDM reviews in UK general practice, where digital exclusion remains a significant equity concern.
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Limitations:</span>
-        Australian Medicare data may not generalise directly to NHS commissioning structures or UK population demographics.
-      </div>
-      <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42348718/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1093/fampra/cmag042" target="_blank" rel="noopener">DOI →</a>      </div>
-    </div>
-    <div class="sample-card">
-      <div class="sample-badge">Family practice</div>
-      <h3>Herpes zoster as a potential clinical marker of undiagnosed Type 2 diabetes in older adults: a retrospective cohort study</h3>
-      <div class="sample-meta">Lai SW, Liao KF · 2026 Jun 11</div>
-      <div class="summary-field">
-        <span class="summary-label">Study Type:</span>
-        Retrospective cohort study
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Question:</span>
-        Does herpes zoster serve as a clinical marker for undiagnosed Type 2 diabetes in adults aged 65–84?
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Findings:</span>
-        <ul>
-<li>Cumulative 1-year incidence of new T2DM was 2.4% in the herpes zoster group vs 0.3% in matched controls</li><li>Herpes zoster was associated with a markedly elevated risk of newly diagnosed T2DM (HR 6.52; 95% CI 4.92–8.63) after propensity score matching</li><li>Authors propose herpes zoster may reflect underlying immune-metabolic disruption preceding T2DM diagnosis</li>        </ul>
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Clinical Relevance:</span>
-        In UK general practice, a new herpes zoster diagnosis in older adults may warrant opportunistic HbA1c screening, potentially identifying undiagnosed T2DM earlier and enabling timely intervention.
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Limitations:</span>
-        Retrospective US database design limits causal inference and generalisability to NHS populations; residual confounding cannot be excluded despite propensity score matching.
-      </div>
-      <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42348717/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1093/fampra/cmag043" target="_blank" rel="noopener">DOI →</a>      </div>
-    </div>
-    <div class="sample-card">
-      <div class="sample-badge">Family practice</div>
-      <h3>Co-creation and interprofessional collaborative practice for the local management of osteoporosis: a qualitative study in primary healthcare</h3>
-      <div class="sample-meta">Nilsson J, Salminen H, Toth-Pal E et al. · 2026 Jun 11</div>
-      <div class="summary-field">
-        <span class="summary-label">Study Type:</span>
-        Qualitative study (participatory health research with workshop intervention and mixed-method evaluation)
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Question:</span>
-        How does a co-creation interprofessional collaborative practice intervention affect osteoporosis management in primary care, as experienced by nurses and physicians?
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Findings:</span>
-        <ul>
-<li>Three workshop sessions across five primary care centres (12 participants) enabled staff to co-create locally tailored osteoporosis care protocols</li><li>Participants reported an expanded nursing role in osteoporosis management and improved interprofessional collaboration as key perceived outcomes</li><li>Organisational, professional, and resource-related factors were identified as critical barriers or enablers to sustaining procedural change</li>        </ul>
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Clinical Relevance:</span>
-        With osteoporosis management increasingly task-shifted in UK general practice, this supports structured interprofessional co-design as a practical model for developing nurse-led pathways within primary care teams.
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Limitations:</span>
-        Small sample (12 participants across 5 centres in Sweden) limits transferability to NHS primary care contexts with different workforce structures and commissioning arrangements.
-      </div>
-      <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42333441/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1093/fampra/cmag045" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42639755/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1093/fampra/cmag066" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">Journal of general internal medicine</div>
-      <h3>The Impact of Urban Hospital Closures on Surrounding Communities: A Systematic Review</h3>
-      <div class="sample-meta">Anjum P, Younker M, Lawson A et al. · 2026 Jun 24</div>
+      <h3>Evaluation of Internal Medicine Point-of-Care Ultrasound Curricula in Canada Through a Quality Improvement Framework Using Education Indicators</h3>
+      <div class="sample-meta">Montague SJ, Hart L, Beyaert M et al. · 2026 Aug 25</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Systematic review (24 studies: 17 quantitative, 7 qualitative; US literature 1961–2024)
+        National cross-sectional survey/quality improvement evaluation (not an RCT or systematic review).
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        What are the effects of urban hospital closures on population health, healthcare access, and community stability?
+        How consistent is point-of-care ultrasound (POCUS) education across Canadian internal medicine residency programmes when assessed using standardised education indicators?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>Closures disproportionately affected socioeconomically deprived, racially diverse neighbourhoods, with greatest impact on uninsured, Medicaid, elderly, and minority populations</li><li>Quantitative outcomes consistently showed increased travel distances, longer wait times, and reduced emergency and specialist access; mortality findings were mixed</li><li>Qualitative evidence identified disrupted care continuity, significant workforce displacement, and loss of hospitals as social anchors within communities</li>        </ul>
+<li>All 17 Canadian IM programmes participated; median POCUS faculty was 1 (range 0–5), with median 18 hours annual teaching time (range 0–204 hours).</li><li>Only 1 programme had assessment processes for all learners; 59% lacked any image archiving or feedback system; only 35% conducted formal programme evaluation.</li><li>Enhanced (&#34;superuser&#34;) streams existed in 35% of programmes, offering substantially more teaching time (median 161 extra hours), but feedback provision remained inconsistent even within these.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        Although US-focused, findings are directly relevant to UK debates around district general hospital reconfiguration and NHS site consolidation, particularly regarding inequitable impacts on deprived communities already facing access barriers.
+        Highlights marked variability in POCUS training quality and oversight, relevant to UK GP/IM educators considering POCUS integration into curricula, particularly regarding governance, competency assessment, and quality assurance standards akin to RCP/RCGP ultrasound accreditation frameworks.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        All included studies are from the US healthcare context, limiting direct transferability to NHS or other universal-coverage systems.
+        Findings are specific to the Canadian training context and rely on self-reported programme-level data, limiting direct generalisability and objectivity.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42343058/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1007/s11606-026-10410-w" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42642707/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1007/s11606-026-10715-w" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">Journal of general internal medicine</div>
-      <h3>Trends in General Internal Medicine Patient and Care Complexity from 2017 to 2022 Across 21 Hospitals</h3>
-      <div class="sample-meta">Ghahtarani A, Roberts SB, Wodchis WP et al. · 2026 Jun 24</div>
+      <h3>Leveraging Individualized Electronic Health Record Learner Analytics to Improve Resident Inbasket Management</h3>
+      <div class="sample-meta">Boggs Z, Frazier H, Martindale J et al. · 2026 Aug 25</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Retrospective cohort study
+        Longitudinal cohort evaluation (single-centre curriculum intervention study)
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Have General Internal Medicine inpatients become more complex over time, and does this explain increasing pressure on hospital resources?
+        Does individualized, analytics-informed coaching improve residents&#39; EHR inbasket efficiency and reduce burnout?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>GIM admissions across 21 Ontario hospitals rose 17% (103,851 to 121,103) between 2015–16 and 2021–22, but most patient complexity metrics (comorbidity burden, outcomes) did not consistently increase.</li><li>CT and MRI use rose substantially: CT from 49% to 61% of admissions (aRR 1.45, CI 1.40–1.50); MRI from 11% to 14% (aRR 1.46, CI 1.39–1.54).</li><li>COVID-19 period was associated with increased length of stay, in-hospital mortality, laboratory use, and costs — representing an atypical complexity spike.</li>        </ul>
+<li>Turnaround time for patient calls improved significantly (–2.2 days, p&lt;0.001); mean time in patient calls decreased (0.99→0.74 min/day, p=0.03).</li><li>Resident-perceived burnout, confidence, and efficiency showed no significant change (p=0.09, 0.18, 0.56 respectively).</li><li>Faculty (6/7) rated EHR analytics as at least moderately useful for coaching and improving feedback quality.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        For NHS general practice, this challenges the assumption that rising hospital pressures are driven by sicker patients; escalating diagnostic imaging intensity may be a modifiable contributor to resource strain.
+        As NHS trainees face similar EHR-related administrative burden and burnout pressures, this model demonstrates a feasible, structured coaching approach using objective data to improve measurable efficiency, relevant to UK postgraduate training and workplace-based feedback frameworks.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Canadian single-province administrative data may not generalise to NHS hospital settings.
+        Single-centre, small sample with self-reported secondary outcomes limits generalisability and ability to detect burnout/confidence changes.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42343057/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1007/s11606-026-10586-1" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42642706/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1007/s11606-026-10720-z" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Journal of general internal medicine</div>
+      <h3>Receipt of Pharmacotherapy and Association with Healthcare Utilization Among US Adults with Alcohol or Opioid Use Disorder, 2022-2023</h3>
+      <div class="sample-meta">Pham DX, Nagavally S, Hawks LC · 2026 Aug 25</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Cross-sectional analysis of nationally representative survey data (US, NSDUH 2022–2023)
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Among US adults with alcohol or opioid use disorder, who receives pharmacotherapy, and how is receipt associated with healthcare utilisation?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Only 4.8% of adults with AUD/OUD reported receiving addiction pharmacotherapy in the past 12 months.</li><li>Pharmacotherapy receipt was associated with higher, not lower, healthcare utilisation: ED visits (IRR 1.57, 95% CI 1.16–2.14), nights hospitalised (IRR 2.79, 95% CI 1.10–4.87), and outpatient visits (IRR 1.28, 95% CI 1.02–1.60).</li><li>Findings likely reflect reverse causation—pharmacotherapy often initiated after acute decompensation rather than pre-emptively in primary/outpatient care.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        Despite differing systems, this highlights a UK-relevant gap—low uptake of evidence-based pharmacotherapy (e.g., naltrexone, acamprosate, buprenorphine) in primary care, reinforcing the case for proactive screening and treatment initiation in general practice before crisis-driven acute care presentations.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Cross-sectional, self-reported data preclude causal inference and cannot rule out confounding by indication or reverse causality.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42642705/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1007/s11606-026-10738-3" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Journal of general internal medicine</div>
+      <h3>MODELing Growth: Effect of Targeted Faculty Development for Rural and Urban Veterans Health Administration Clinician Educators</h3>
+      <div class="sample-meta">Armendariz J, Soltys M, Huang L et al. · 2026 Aug 25</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Program evaluation (pilot faculty development intervention, pre/post survey design)
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>36 VA sites (14 rural, 22 nonrural), 417 attendees participated in a 5-hour virtual faculty development series pairing rural/urban sites for shared learning.</li><li>Post-series surveys showed significantly higher affinity for teaching, improved understanding of educator roles, and increased teaching confidence.</li><li>Participants reported intent to increase behaviours associated with effective clinician educators.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        While US Veterans Health Administration-specific, this model of low-cost, scalable virtual faculty development pairing rural and urban sites offers a transferable framework for UK GP trainers and educational supervisors, particularly relevant to addressing rural-urban disparities in postgraduate teaching capacity within the NHS.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Evaluation relies on self-reported attitudes and intentions immediately post-intervention, without objective measures of teaching behaviour change or patient/trainee outcomes.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42642704/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1007/s11606-026-10703-0" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
 
     <div class="tease">
-      <p>…and <em>3 more</em> General Practice articles in that week's digest.</p>
+      <p>…and <em>8 more</em> General Practice articles in that week's digest.</p>
       <small>Subscribers get the complete brief, every Monday.</small>
     </div>
   </div>
@@ -373,8 +373,25 @@
 <!-- ═══ FOOTER ═══ -->
 <footer>
   <p>&copy; 2026 The Monday Clinical Brief</p>
-  <p><a href="/">Home</a> · <a href="mailto:info@mondayclinicalbrief.co.uk">Contact</a> · <a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms</a></p>
+  <p><a href="/samples/">Samples</a> · <a href="/blog/">Blog</a> · <a href="/methodology/">Methodology</a> · <a href="/about/">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p>
 </footer>
+
+<script>
+// Measure the fixed mobile bottom bar so the body reserves its true height.
+(function () {
+  var nav = document.querySelector('nav');
+  if (!nav) return;
+  function sync() {
+    var fixed = getComputedStyle(nav).position === 'fixed';
+    document.documentElement.style.setProperty('--bottom-nav-h', fixed ? nav.offsetHeight + 'px' : '0px');
+  }
+  sync();
+  addEventListener('resize', sync);
+  addEventListener('orientationchange', sync);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(sync);
+  if (window.ResizeObserver) new ResizeObserver(sync).observe(nav);
+})();
+</script>
 
 </body>
 </html>

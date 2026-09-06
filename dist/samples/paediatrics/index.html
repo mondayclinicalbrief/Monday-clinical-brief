@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Paediatrics Digest — The Monday Clinical Brief</title>
-<meta name="description" content="The Paediatrics digest from The Monday Clinical Brief — a weekly summary of every new paper from the top journals in Paediatrics. Free 4-week trial.">
+<title>Paediatrics Sample Digest — The Monday Clinical Brief</title>
+<meta name="description" content="See what Paediatrics clinicians received in this Monday's digest: 11 new articles from Archives of disease in childhood, JAMA pediatrics, Pediatrics summarised every Monday by The Monday Clinical Brief.">
 <link rel="canonical" href="https://mondayclinicalbrief.co.uk/samples/paediatrics/">
-<meta property="og:title" content="Paediatrics — Monday Clinical Brief">
-<meta property="og:description" content="Every new Paediatrics paper, summarised every Monday. Free 4-week trial.">
+<meta property="og:title" content="Paediatrics — Monday Clinical Brief Sample Digest">
+<meta property="og:description" content="11 new Paediatrics papers summarised this week. Free 4-week trial.">
 <meta property="og:url" content="https://mondayclinicalbrief.co.uk/samples/paediatrics/">
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -45,18 +45,35 @@
   .page-header h1 { font-family: 'Instrument Serif', serif; font-size: clamp(2.2rem, 4.5vw, 3.2rem); font-weight: 400; color: var(--charcoal); line-height: 1.2; letter-spacing: -0.02em; margin-bottom: 1rem; max-width: 720px; margin-left: auto; margin-right: auto; }
   .page-header h1 em { font-style: italic; color: var(--sage-deep); }
   .page-header .lede { font-size: 1.05rem; color: var(--text-muted); max-width: 560px; margin: 0 auto 1.75rem; }
+  .stat-bar { display: inline-flex; gap: 2.5rem; padding: 1rem 1.75rem; background: white; border: 1px solid var(--border); border-radius: 60px; font-size: 0.85rem; }
+  .stat-bar .stat strong { display: block; font-family: 'Instrument Serif', serif; font-size: 1.6rem; color: var(--sage-deep); line-height: 1; margin-bottom: 0.2rem; }
+  .stat-bar .stat span { color: var(--text-muted); font-size: 0.78rem; }
 
-  /* ── BODY ── */
+  /* ── DISCLAIMER ── */
+  .disclaimer { max-width: 800px; margin: 2rem auto 0; padding: 0.85rem 1.25rem; background: var(--gold-light); border-left: 3px solid var(--gold); font-size: 0.85rem; color: var(--text); border-radius: 4px; }
+  .disclaimer strong { color: var(--charcoal); }
+
+  /* ── ARTICLES ── */
   section { padding: 3rem 2rem 5rem; }
-  .container { max-width: 720px; margin: 0 auto; }
-  .soon-card { background: white; border: 1px solid var(--border); border-radius: 8px; padding: 2.5rem 2rem; text-align: center; margin-bottom: 2rem; }
-  .soon-card p { font-size: 1rem; color: var(--text); margin-bottom: 1rem; }
-  .soon-card p:last-child { margin-bottom: 0; }
-  .soon-card .preview-link { display: inline-block; margin-top: 0.5rem; background: var(--sage-light); color: var(--sage-deep); padding: 0.9rem 1.75rem; border-radius: 40px; font-weight: 600; text-decoration: none; font-size: 0.95rem; transition: all 0.2s; }
-  .soon-card .preview-link:hover { background: var(--sage-deep); color: white; transform: translateY(-1px); }
+  .container { max-width: 800px; margin: 0 auto; }
+  .sample-card { background: white; border: 1px solid var(--border); border-radius: 8px; padding: 2rem; margin-bottom: 1.5rem; }
+  .sample-badge { display: inline-block; background: var(--sage-light); color: var(--sage-deep); padding: 0.2rem 0.7rem; border-radius: 4px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 1rem; }
+  .sample-card h3 { font-family: 'Instrument Serif', serif; font-size: 1.3rem; font-weight: 400; color: var(--charcoal); margin-bottom: 0.5rem; line-height: 1.35; }
+  .sample-meta { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1.25rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--border); }
+  .summary-field { margin-bottom: 0.75rem; font-size: 0.9rem; line-height: 1.6; }
+  .summary-label { font-weight: 600; color: var(--sage-deep); }
+  .summary-field ul { list-style: none; margin: 0.4rem 0 0 0; padding: 0; }
+  .summary-field ul li { padding-left: 1.1rem; position: relative; margin-bottom: 0.3rem; }
+  .summary-field ul li::before { content: '•'; position: absolute; left: 0.2rem; color: var(--sage); font-weight: 700; }
+  .source-links { margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 0.8rem; }
+  .source-links a { color: var(--sage-deep); text-decoration: none; margin-right: 1rem; font-weight: 500; }
+  .source-links a:hover { text-decoration: underline; }
 
-  .what-we-cover { background: var(--cream); border-left: 3px solid var(--sage); padding: 1.25rem 1.5rem; border-radius: 4px; margin-bottom: 2rem; font-size: 0.95rem; color: var(--text); }
-  .what-we-cover strong { color: var(--charcoal); }
+  /* ── TEASE ── */
+  .tease { text-align: center; padding: 2rem; background: var(--cream); border: 1px dashed var(--border); border-radius: 8px; margin-top: 1rem; }
+  .tease p { font-family: 'Instrument Serif', serif; font-size: 1.4rem; color: var(--charcoal); line-height: 1.4; margin-bottom: 0.5rem; }
+  .tease p em { color: var(--sage-deep); }
+  .tease small { color: var(--text-muted); font-size: 0.9rem; }
 
   /* ── CTA ── */
   .cta-section { background: var(--charcoal); color: white; padding: 4rem 2rem; text-align: center; }
@@ -72,12 +89,16 @@
   footer a { color: var(--sage); text-decoration: none; }
 
   @media (max-width: 640px) {
-    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; }
+    /* Fixed bottom bar — reserve its measured height, not a flat 60px. */
+    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; align-items: center; gap: 0.75rem; }
     .nav-links a:not(.nav-cta) { display: none; }
-    body { padding-bottom: 60px; }
+    .nav-brand { font-size: 0.9rem; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+    .nav-cta { flex-shrink: 0; }
+    body { padding-bottom: calc(var(--bottom-nav-h, 64px) + env(safe-area-inset-bottom, 0px)); }
     .page-header { padding: 3.5rem 1.5rem 2.5rem; }
     section { padding: 2rem 1.5rem 3.5rem; }
-    .soon-card { padding: 2rem 1.5rem; }
+    .sample-card { padding: 1.5rem; }
+    .stat-bar { flex-direction: column; gap: 1rem; padding: 1.25rem 1.75rem; }
     .cta-section { padding: 3rem 1.5rem; }
   }
 </style>
@@ -88,29 +109,259 @@
 <nav>
   <a href="/" class="nav-brand">The Monday Clinical Brief</a>
   <div class="nav-links">
+    <a href="/samples/">Samples</a>
+    <a href="/blog/">Blog</a>
     <a href="/#how">How it works</a>
-    <a href="/#about">About</a>
     <a href="/?specialty=paediatrics#subscribe" class="nav-cta">Start free trial</a>
   </div>
 </nav>
 
 <!-- ═══ HEADER ═══ -->
 <header class="page-header">
-  <div class="eyebrow">Paediatrics · Sample Digest</div>
-  <h1>A <em>Paediatrics</em> sample is on the way.</h1>
-  <p class="lede">Subscribers already receive the Paediatrics digest every Monday. While we prepare a public sample for this specialty, here's a full example from another field &mdash; the format is identical.</p>
+  <div class="eyebrow">Sample Digest · Monday 31 August 2026</div>
+  <h1>A recent Paediatrics digest,<br><em>as sent to subscribers</em></h1>
+  <p class="lede">This is the real Monday digest from Monday 31 August 2026. Showing the first 8 of 11 articles from that week — every new paper from the top 5 journals in Paediatrics.</p>
+  <div class="stat-bar">
+    <div class="stat"><strong>11</strong><span>articles that week</span></div>
+    <div class="stat"><strong>5</strong><span><a href="/methodology/">journals monitored</a></span></div>
+    <div class="stat"><strong>£0</strong><span>for your first 4 weeks</span></div>
+  </div>
+  <div class="disclaimer">
+    <strong>Note:</strong> Summaries are AI-generated from publicly available PubMed abstracts. Always verify against the source article before clinical use. <a href="/methodology/">How we choose journals and write summaries →</a>
+  </div>
 </header>
 
-<!-- ═══ BODY ═══ -->
+<!-- ═══ ARTICLES ═══ -->
 <section>
   <div class="container">
-    <div class="soon-card">
-      <p>The next <strong>Paediatrics</strong> digest will include every new paper published that week in the field's top journals, each summarised in a consistent clinical format.</p>
-      <p>In the meantime, here's a full sample from a recent week:</p>
-      <a href="/samples/palliative-care/" class="preview-link">See a full Palliative Care sample &rarr;</a>
+    <div class="sample-card">
+      <div class="sample-badge">Archives of disease in childhood</div>
+      <h3>High oral corticosteroid use during acute attacks of preschool wheeze irrespective of clinical phenotype</h3>
+      <div class="sample-meta">Hillson K, Oritz KM, Hay S et al. · 2026 Aug 20</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Single-centre prospective observational cohort study
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Does clinical or biological (atopic/eosinophilic) phenotype influence the amount of oral corticosteroid (OCS) use during acute attacks in children with severe, recurrent preschool wheeze?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Median lifetime OCS courses per child was 10 (IQR 6–18), with 5 (IQR 3–7) in the preceding 12 months alone.</li><li>Atopic children had significantly higher blood eosinophil counts when well (0.65–0.7 ×10⁹/L vs 0.3 ×10⁹/L, p=0.003 to &lt;0.0001, depending on atopy definition).</li><li>Despite this, OCS use during acute attacks did not differ by eosinophil count, clinical atopy, or objective sensitisation status.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        Highlights indiscriminate, high-burden OCS prescribing in preschool wheeze across NHS respiratory services, unsupported by phenotype-directed evidence, underscoring need for trials to rationalise steroid use in this population.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Single-centre design with a selected tertiary referral population limits generalisability to broader primary/secondary care preschool wheeze cohorts.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42638040/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1136/archdischild-2026-330534" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
-    <div class="what-we-cover">
-      <strong>What you'll get in the Paediatrics digest:</strong> every new paper from the top five journals in the field, summarised into Study Type, Key Question, Key Findings, Clinical Relevance, and Limitations &mdash; delivered to your inbox every Monday.
+    <div class="sample-card">
+      <div class="sample-badge">Archives of disease in childhood</div>
+      <h3>Medicines for children and young people who seek support around gender: a horizon scanning study of the emerging medicines pipeline</h3>
+      <div class="sample-meta">Norman G, Fairbairn R, Dobson E et al. · 2026 Aug 24</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Horizon-scanning study with foresight analysis (clinical trial registry review)
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Will currently ongoing clinical trials meaningfully close the evidence gaps on effectiveness and safety of medicines used for children and young people with gender incongruence/dysphoria?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>15 ongoing studies identified globally (23 registries; total planned/actual n=1073), 12 based in the USA; interventions limited to GnRH analogues, cross-sex hormones, anti-androgens and progesterone.</li><li>Most studies focus on older adolescents and physiological outcomes (puberty/reproduction, cardiovascular, bone, metabolic, BMI); only 3 studies assess gender identity/dysphoria outcomes directly.</li><li>Methodological rigour is limited: no control group in 8/15 studies, no randomisation in 11/15, no blinding in 12/15.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        Highlights that robust, adequately powered evidence—such as that expected from NHS England&#39;s forthcoming puberty-suppression trial—remains essential, as the current global research pipeline is unlikely to resolve UK clinical and policy uncertainty in this area.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Registry-based horizon scanning cannot assess study quality beyond registered design features, and findings may become outdated as new trials are registered.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42637551/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1136/archdischild-2025-329435" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Archives of disease in childhood</div>
+      <h3>Texture and nutrient content of commercial baby foods supplied in spouted pouches, compared to other packaging</h3>
+      <div class="sample-meta">Garcia AL, Brand-Williamson J, Osagie R et al. · 2026 Aug 25</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Cross-sectional survey
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Do commercial baby foods sold in spouted pouches meet recommended texture and nutrient standards for complementary feeding, compared with other packaging types?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>60% of 298 UK wet baby foods were in spouted pouches; 49% were liquid in texture versus only 7% of other packaging.</li><li>Spouted pouch foods more often had higher sugar (61% vs 8%) and lower protein (49% vs 91% below breastmilk threshold) than other formats.</li><li>Only 8% of pouch foods met all desired energy/protein/sugar criteria (vs 32% of others); 29% met none (vs 2% of others).</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        UK clinicians advising parents on weaning should be aware that many spouted pouch products are nutritionally and texturally more akin to sweet drinks than appropriate complementary foods, with implications for infant nutrition and oral motor development.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Nutrient and age data relied on manufacturer packaging rather than independent laboratory analysis, and the cross-sectional design cannot assess actual infant intake or health outcomes.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42642219/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1136/archdischild-2026-330535" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">JAMA pediatrics</div>
+      <h3>Prenatal Organophosphate Exposure and Autism-Related Traits in Children</h3>
+      <div class="sample-meta">Cavalier HM, Volk HE, Kivumbi A et al. · 2026 Aug 24</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Pooled prospective cohort study (ECHO consortium, 20 US sites)
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Is prenatal organophosphate pesticide exposure associated with autism-related traits in childhood?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Among 3339 mother-child pairs, crude models suggested inverse associations between urinary OP biomarkers (TCPy, ΣDAP) and SRS scores, but these attenuated to non-significance after full adjustment (TCPy: β = -0.13; 95% CI, -0.57 to 0.31; ΣDAP: β = -0.42; 95% CI, -1.03 to 0.19).</li><li>No effect modification by child sex or maternal diet quality; findings were consistent across quantile, logistic, and sensitivity analyses.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        Provides reassurance for UK clinicians counselling families on environmental/dietary pesticide exposure concerns during pregnancy, as no independent association with autism-related traits was found at typical population exposure levels.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Exposure was based on single/limited spot urinary measurements, which may not capture true prenatal OP exposure variability, and residual confounding or unmeasured higher-exposure/mixture effects cannot be excluded.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42636007/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1001/jamapediatrics.2026.3785" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">JAMA pediatrics</div>
+      <h3>Alcohol Marketing Exposure and Youth Drinking: A Systematic Review and Meta-Analysis</h3>
+      <div class="sample-meta">Cukier S, Stoolmiller M, Hartmann-Boyce J et al. · 2026 Aug 24</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Systematic review and meta-analysis (longitudinal cohort studies)
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Is alcohol marketing exposure in youth (&lt;25 years) longitudinally associated with subsequent drinking behaviour?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Pooled analysis of 19 cohorts (23 publications, 94 relative risks, n=82,498) found high vs low marketing exposure was associated with increased risk of drinking (RR, 1.50; 95% CI, 1.37–1.63), moderate certainty evidence (upgraded for dose-response).</li><li>Television advertising showed the strongest association with drinking among exposure subtypes.</li><li>Narrative synthesis suggested the association is mediated by changes in attitudes and cognitions toward alcohol.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        Supports public health advocacy for stricter alcohol marketing regulation (e.g., watershed advertising restrictions) as a preventive lever in UK adolescent health, relevant to paediatricians engaging in population health and safeguarding discussions.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        All included studies relied on self-reported drinking outcomes, introducing risk of bias, and evidence was drawn almost exclusively from high-income countries, limiting generalisability.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42636001/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1001/jamapediatrics.2026.3706" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Pediatrics</div>
+      <h3>Trends in Pathogens Causing Late-Onset Sepsis in Very Preterm Infants: 2010-2023</h3>
+      <div class="sample-meta">Jiang S, Liu J, Schaffer K et al. · 2026 Aug 25</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Retrospective population-based cohort study
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        How has the incidence and pathogen profile of late-onset sepsis (LOS) in very preterm infants changed over 2010–2023?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Among 66,441 VPIs, 9.0% developed LOS (15.4% mortality); CoNS (34.5%), *S. aureus* (18.1%), *E. coli* (10.9%), and *Klebsiella* (7.2%) were leading pathogens.</li><li>LOS incidence fell from 15.0% to 8.2% during 2010–2017 (aAPC −5.5%), then rose from 2018–2023 (aAPC +2.1%), driven by non-CoNS gram-positive (+5.4%) and gram-negative (+5.3%) organisms.</li><li>*S. aureus* LOS increased throughout both periods (aAPC +4.3% then +7.7%); *Klebsiella* LOS rose sharply post-2018 (aAPC +9.9%).</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        UK neonatal units should be alert to a resurgence in *S. aureus* and gram-negative LOS, prompting review of local infection prevention bundles, antimicrobial stewardship, and empirical antibiotic guidance for preterm infants.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Observational data from California networks limit generalisability to UK neonatal populations and cannot establish causality for the observed trend shifts.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42637238/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1542/peds.2025-074462" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Pediatrics</div>
+      <h3>Utility of DAT in Low-Risk Neonates with ABO or RhD Incompatibility</h3>
+      <div class="sample-meta">Tsai TL, Ma T, Nester T · 2026 Aug 26</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Retrospective cohort study
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Does routine DAT screening add clinical value beyond transcutaneous bilirubin (TcB) monitoring in predicting phototherapy need for low-risk neonates with ABO or RhD incompatibility?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>In ABO-incompatible infants (n=310), TcB alone predicted phototherapy need well (AUC 0.887); adding DAT gave negligible improvement (AUC 0.896).</li><li>In ABO-compatible/RhD-incompatible infants (n=308), 14.0% had DAT positivity from passive anti-D, uncorrelated with TcB; only 1.0% required phototherapy.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        Supports adopting the 2022 AAP guidance to discontinue routine DAT in these low-risk groups, potentially reducing unnecessary neonatal blood sampling and laboratory workload in UK maternity/neonatal units, provided maternal antibody screening is complete.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Retrospective single-population design limits generalisability, particularly where maternal antenatal antibody screening practices differ from those assumed in this study.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42642037/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1542/peds.2026-076989" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">The Journal of pediatrics</div>
+      <h3>Long-Term Outcomes of Expectant Management Versus Early Ibuprofen for Patent Ductus Arteriosus: 24-Month Follow-Up of the BeNeDuctus Trial</h3>
+      <div class="sample-meta">Apers WMJ, Hundscheid T, Kooi EMW et al. · 2026 Aug 24</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        RCT (follow-up study of the BeNeDuctus trial)
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Does early ibuprofen treatment for PDA in extremely preterm infants improve survival without neurodevelopmental impairment at 24 months&#39; corrected age compared with expectant management?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Survival without neurodevelopmental impairment: 49% (51/104) expectant management vs 49% (47/96) early ibuprofen (RR 1.00; 95% CI 0.76–1.33).</li><li>No significant differences in biometry, abnormal neurological examination, or vision/hearing impairment between groups.</li><li>Follow-up data available for 85.7% of original cohort (234/273), with primary endpoint assessed in 85.5% of those.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        Supports current shift towards conservative PDA management in extremely preterm infants, reinforcing that routine early pharmacological closure with ibuprofen offers no neurodevelopmental benefit at 2 years—relevant to NHS neonatal unit PDA management guidelines.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Loss to follow-up (~14%) and missing primary outcome data in some assessed patients may introduce attrition bias affecting precision of estimates.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42637114/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.jpeds.2026.115292" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+
+    <div class="tease">
+      <p>…and <em>3 more</em> Paediatrics articles in that week's digest.</p>
+      <small>Subscribers get the complete brief, every Monday.</small>
     </div>
   </div>
 </section>
@@ -118,16 +369,33 @@
 <!-- ═══ CTA ═══ -->
 <section class="cta-section">
   <h2>Get the Paediatrics digest in your inbox every Monday</h2>
-  <p>4 weeks completely free, then &pound;20/year. Cancel any time during your trial &mdash; no charge.</p>
-  <a href="/?specialty=paediatrics&ref=samples#subscribe" class="cta-btn">Start your free trial &mdash; Paediatrics &rarr;</a>
+  <p>4 weeks completely free, then £20/year. Cancel any time during your trial — no charge.</p>
+  <a href="/?specialty=paediatrics&ref=samples#subscribe" class="cta-btn">Start your free trial — Paediatrics →</a>
   <span class="cta-meta">No card needed to browse. We'll ask for payment details to start the trial.</span>
 </section>
 
 <!-- ═══ FOOTER ═══ -->
 <footer>
   <p>&copy; 2026 The Monday Clinical Brief</p>
-  <p><a href="/">Home</a> &middot; <a href="mailto:info@mondayclinicalbrief.co.uk">Contact</a> &middot; <a href="/privacy.html">Privacy Policy</a> &middot; <a href="/terms.html">Terms</a></p>
+  <p><a href="/samples/">Samples</a> · <a href="/blog/">Blog</a> · <a href="/methodology/">Methodology</a> · <a href="/about/">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p>
 </footer>
+
+<script>
+// Measure the fixed mobile bottom bar so the body reserves its true height.
+(function () {
+  var nav = document.querySelector('nav');
+  if (!nav) return;
+  function sync() {
+    var fixed = getComputedStyle(nav).position === 'fixed';
+    document.documentElement.style.setProperty('--bottom-nav-h', fixed ? nav.offsetHeight + 'px' : '0px');
+  }
+  sync();
+  addEventListener('resize', sync);
+  addEventListener('orientationchange', sync);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(sync);
+  if (window.ResizeObserver) new ResizeObserver(sync).observe(nav);
+})();
+</script>
 
 </body>
 </html>

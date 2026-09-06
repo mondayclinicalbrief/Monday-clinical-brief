@@ -89,9 +89,12 @@
   footer a { color: var(--sage); text-decoration: none; }
 
   @media (max-width: 640px) {
-    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; }
+    /* Fixed bottom bar — reserve its measured height, not a flat 60px. */
+    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; align-items: center; gap: 0.75rem; }
     .nav-links a:not(.nav-cta) { display: none; }
-    body { padding-bottom: 60px; }
+    .nav-brand { font-size: 0.9rem; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+    .nav-cta { flex-shrink: 0; }
+    body { padding-bottom: calc(var(--bottom-nav-h, 64px) + env(safe-area-inset-bottom, 0px)); }
     .page-header { padding: 3.5rem 1.5rem 2.5rem; }
     section { padding: 2rem 1.5rem 3.5rem; }
     .sample-card { padding: 1.5rem; }
@@ -106,8 +109,9 @@
 <nav>
   <a href="/" class="nav-brand">The Monday Clinical Brief</a>
   <div class="nav-links">
+    <a href="/samples/">Samples</a>
+    <a href="/blog/">Blog</a>
     <a href="/#how">How it works</a>
-    <a href="/#about">About</a>
     <a href="/?specialty=obstetrics-gynaecology#subscribe" class="nav-cta">Start free trial</a>
   </div>
 </nav>
@@ -116,14 +120,14 @@
 <header class="page-header">
   <div class="eyebrow">Sample Digest · Monday 31 August 2026</div>
   <h1>A recent Obstetrics &amp; Gynaecology digest,<br><em>as sent to subscribers</em></h1>
-  <p class="lede">This is the real Monday digest from Monday 31 August 2026. Showing the first 8 of 18 articles from that week — every new paper from the top journals in Obstetrics &amp; Gynaecology.</p>
+  <p class="lede">This is the real Monday digest from Monday 31 August 2026. Showing the first 8 of 18 articles from that week — every new paper from the top 5 journals in Obstetrics &amp; Gynaecology.</p>
   <div class="stat-bar">
     <div class="stat"><strong>18</strong><span>articles that week</span></div>
-    <div class="stat"><strong>5</strong><span>journals covered</span></div>
+    <div class="stat"><strong>5</strong><span><a href="/methodology/">journals monitored</a></span></div>
     <div class="stat"><strong>£0</strong><span>for your first 4 weeks</span></div>
   </div>
   <div class="disclaimer">
-    <strong>Note:</strong> Summaries are AI-generated from publicly available PubMed abstracts. Always verify against the source article before clinical use.
+    <strong>Note:</strong> Summaries are AI-generated from publicly available PubMed abstracts. Always verify against the source article before clinical use. <a href="/methodology/">How we choose journals and write summaries →</a>
   </div>
 </header>
 
@@ -373,8 +377,25 @@
 <!-- ═══ FOOTER ═══ -->
 <footer>
   <p>&copy; 2026 The Monday Clinical Brief</p>
-  <p><a href="/">Home</a> · <a href="mailto:info@mondayclinicalbrief.co.uk">Contact</a> · <a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms</a></p>
+  <p><a href="/samples/">Samples</a> · <a href="/blog/">Blog</a> · <a href="/methodology/">Methodology</a> · <a href="/about/">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p>
 </footer>
+
+<script>
+// Measure the fixed mobile bottom bar so the body reserves its true height.
+(function () {
+  var nav = document.querySelector('nav');
+  if (!nav) return;
+  function sync() {
+    var fixed = getComputedStyle(nav).position === 'fixed';
+    document.documentElement.style.setProperty('--bottom-nav-h', fixed ? nav.offsetHeight + 'px' : '0px');
+  }
+  sync();
+  addEventListener('resize', sync);
+  addEventListener('orientationchange', sync);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(sync);
+  if (window.ResizeObserver) new ResizeObserver(sync).observe(nav);
+})();
+</script>
 
 </body>
 </html>

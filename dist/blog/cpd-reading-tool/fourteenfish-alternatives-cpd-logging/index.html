@@ -13,7 +13,10 @@
 <meta property="og:description" content="Looking for a FourteenFish alternative? An honest comparison of Clarity, BMJ Portfolio, GP Tools and spreadsheets — and when to just stay put.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://mondayclinicalbrief.co.uk/blog/cpd-reading-tool/fourteenfish-alternatives-cpd-logging/">
-
+<meta property="og:image" content="https://mondayclinicalbrief.co.uk/assets/brand/mcb-og-1200x630-v2.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="FourteenFish Alternatives for Logging CPD — The Monday Clinical Brief">
 <meta property="og:site_name" content="The Monday Clinical Brief">
 
 <!-- Twitter Card -->
@@ -122,9 +125,15 @@
   footer a { color: var(--sage); text-decoration: none; }
 
   @media (max-width: 640px) {
-    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; }
+    /* Fixed bottom bar on mobile. The brand used to wrap to two lines at
+       390px, making the bar ~123px tall while the body reserved only 60px —
+       so the footer sat underneath it. Keep the brand on one line and reserve
+       the bar's measured height via a custom property. */
+    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; align-items: center; gap: 0.75rem; }
     .nav-links a:not(.nav-cta) { display: none; }
-    body { padding-bottom: 60px; }
+    .nav-brand { font-size: 0.9rem; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+    .nav-cta { flex-shrink: 0; }
+    body { padding-bottom: calc(var(--bottom-nav-h, 64px) + env(safe-area-inset-bottom, 0px)); }
     .breadcrumb { padding-top: 2rem; }
     .article-header { padding-top: 1rem; }
     .article-header h1 { font-size: 1.8rem; }
@@ -142,7 +151,7 @@
   "description": "Looking for a FourteenFish alternative? An honest comparison of Clarity, BMJ Portfolio, GP Tools and spreadsheets — and when to just stay put.",
   "url": "https://mondayclinicalbrief.co.uk/blog/cpd-reading-tool/fourteenfish-alternatives-cpd-logging/",
   "datePublished": "2026-07-25T00:00:00.000Z",
-  
+  "dateModified": "2026-09-01T00:00:00.000Z",
   "author": {
     "@type": "Person",
     "name": "Dr Tim Hamilton",
@@ -155,7 +164,7 @@
     "name": "Dr Tim Hamilton",
     "jobTitle": "Consultant in Palliative Medicine"
   },
-  
+  "lastReviewed": "2026-09-01T00:00:00.000Z",
   "publisher": {
     "@type": "Organization",
     "name": "The Monday Clinical Brief",
@@ -221,7 +230,7 @@
       "name": "Is there a free alternative to FourteenFish?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes — GP Tools is free for NHS GPs and includes patient survey and MSF feedback, and BMJ Portfolio is free for logging CPD from any source. It is also worth knowing that FourteenFish itself is free until you submit your appraisal, which makes the cost comparison closer than it looks."
+        "text": "Yes — GP Tools is free for NHS GPs and includes patient survey and MSF feedback, and BMJ Portfolio is free for logging CPD from any source, and since July 2026 it integrates directly with FourteenFish and offers AI-assisted reflection. It is also worth knowing that FourteenFish itself is free until you submit your appraisal, which makes the cost comparison closer than it looks."
       }
     },
     
@@ -263,6 +272,7 @@
 </nav>
 
 <!-- ═══ BREADCRUMB ═══ -->
+<main id="main">
 <div class="breadcrumb" aria-label="Breadcrumb">
   <ol>
     <li><a href="/">Home</a></li>
@@ -315,9 +325,10 @@
 <strong>Against:</strong> generally built for the annual cycle rather than weekly logging, and mostly manual entry.</p>
 <h2 id="alternatives-for-logging-and-reflection-only" tabindex="-1">Alternatives for logging and reflection only</h2>
 <h3 id="bmj-portfolio" tabindex="-1">BMJ Portfolio</h3>
-<p>Free, launched in 2026, records CPD from any source. Not tied to a college or an appraisal platform.</p>
-<p><strong>Choose it if:</strong> you want a free, source-agnostic running log.
-<strong>Against:</strong> not your appraisal submission — evidence still has to move across at appraisal time.</p>
+<p>Free for all healthcare professionals, with no subscription. It relaunched in July 2026 carrying rather more than it did before: AI-powered reflection support to draft and refine reflective entries, personalised CPD recommendations by role, automatic tracking of BMJ Learning activity alongside CPD from any other provider, and export of portfolio summaries for appraisal.</p>
+<p>The fact that matters most on this page is the newest one: <strong>BMJ Portfolio now integrates directly with FourteenFish.</strong> That changes what &quot;alternative&quot; means here. It does not have to replace FourteenFish — it can sit alongside it, which is a different proposition from everything else on this list.</p>
+<p><strong>Choose it if:</strong> you want a free, source-agnostic running log — particularly if you are staying on FourteenFish for the appraisal itself and simply want the week-to-week logging to happen somewhere better.
+<strong>Against:</strong> it is still not the appraisal submission if your appraisal runs elsewhere.</p>
 <h3 id="your-royal-college-diary" tabindex="-1">Your Royal College diary</h3>
 <p>Included with membership, with prompts aligned to your own college's scheme. That alignment is a genuine advantage at appraisal.</p>
 <p><strong>Choose it if:</strong> you already pay the membership. RCGP fees for 2026–27 run £162–£645 by earnings, so it is free at the margin rather than free.</p>
@@ -370,7 +381,7 @@
 <td>Free</td>
 <td>No</td>
 <td>Good</td>
-<td>Any source, not college-tied</td>
+<td>Any source; integrates directly with FourteenFish</td>
 </tr>
 <tr>
 <td>College diary</td>
@@ -415,7 +426,7 @@
     
     <details class="faq-item">
       <summary>Is there a free alternative to FourteenFish?</summary>
-      <p>Yes — GP Tools is free for NHS GPs and includes patient survey and MSF feedback, and BMJ Portfolio is free for logging CPD from any source. It is also worth knowing that FourteenFish itself is free until you submit your appraisal, which makes the cost comparison closer than it looks.</p>
+      <p>Yes — GP Tools is free for NHS GPs and includes patient survey and MSF feedback, and BMJ Portfolio is free for logging CPD from any source, and since July 2026 it integrates directly with FourteenFish and offers AI-assisted reflection. It is also worth knowing that FourteenFish itself is free until you submit your appraisal, which makes the cost comparison closer than it looks.</p>
     </details>
     
     <details class="faq-item">
@@ -464,18 +475,41 @@
   <div class="author-box">
     <div class="author-avatar">TH</div>
     <div class="author-info">
-      <h4>Dr Tim Hamilton · Consultant in Palliative Medicine, NHS Wales</h4>
+      <h4><a href="/about/" style="color:inherit;">Dr Tim Hamilton</a> · Consultant in Palliative Medicine, NHS Wales</h4>
       <p>Dr Tim Hamilton is a Consultant in Palliative Medicine in NHS Wales and the founder of The Monday Clinical Brief. He built MCB to help busy UK clinicians keep up with the literature across 31 specialties.</p>
+      <p style="margin-top:0.5rem;"><a href="/about/">Credentials, editorial policy and conflicts of interest →</a></p>
     </div>
   </div>
 </div>
 
+</main>
 
 <!-- ═══ FOOTER ═══ -->
 <footer>
-  <p>&copy; 2025 The Monday Clinical Brief. All rights reserved.</p>
-  <p><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/blog/">Blog</a></p>
+  <p>&copy; 2026 The Monday Clinical Brief. All rights reserved.</p>
+  <p><a href="/samples/">Samples</a> · <a href="/blog/">Blog</a> · <a href="/methodology/">Methodology</a> · <a href="/about/">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p>
 </footer>
+
+<script>
+// The mobile bottom bar is fixed, so the body must reserve exactly its height
+// or the footer ends up underneath it. Measure it rather than guessing: brand
+// length, font loading and text-size settings all move this number.
+(function () {
+  var nav = document.querySelector('nav');
+  if (!nav) return;
+  function sync() {
+    var fixed = getComputedStyle(nav).position === 'fixed';
+    document.documentElement.style.setProperty(
+      '--bottom-nav-h', fixed ? nav.offsetHeight + 'px' : '0px'
+    );
+  }
+  sync();
+  addEventListener('resize', sync);
+  addEventListener('orientationchange', sync);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(sync);
+  if (window.ResizeObserver) new ResizeObserver(sync).observe(nav);
+})();
+</script>
 
 </body>
 </html>

@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Respiratory Medicine Sample Digest — The Monday Clinical Brief</title>
-<meta name="description" content="See what Respiratory Medicine clinicians received in this Monday's digest: 21 new articles from Thorax, American journal of respiratory and critical care medicine, Chest summarised every Monday by The Monday Clinical Brief.">
+<meta name="description" content="See what Respiratory Medicine clinicians received in this Monday's digest: 10 new articles from Chest, The European respiratory journal, American journal of respiratory and critical care medicine summarised every Monday by The Monday Clinical Brief.">
 <link rel="canonical" href="https://mondayclinicalbrief.co.uk/samples/respiratory/">
 <meta property="og:title" content="Respiratory Medicine — Monday Clinical Brief Sample Digest">
-<meta property="og:description" content="21 new Respiratory Medicine papers summarised this week. Free 4-week trial.">
+<meta property="og:description" content="10 new Respiratory Medicine papers summarised this week. Free 4-week trial.">
 <meta property="og:url" content="https://mondayclinicalbrief.co.uk/samples/respiratory/">
 <meta property="og:type" content="article">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -89,9 +89,12 @@
   footer a { color: var(--sage); text-decoration: none; }
 
   @media (max-width: 640px) {
-    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; }
+    /* Fixed bottom bar — reserve its measured height, not a flat 60px. */
+    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; align-items: center; gap: 0.75rem; }
     .nav-links a:not(.nav-cta) { display: none; }
-    body { padding-bottom: 60px; }
+    .nav-brand { font-size: 0.9rem; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+    .nav-cta { flex-shrink: 0; }
+    body { padding-bottom: calc(var(--bottom-nav-h, 64px) + env(safe-area-inset-bottom, 0px)); }
     .page-header { padding: 3.5rem 1.5rem 2.5rem; }
     section { padding: 2rem 1.5rem 3.5rem; }
     .sample-card { padding: 1.5rem; }
@@ -106,24 +109,25 @@
 <nav>
   <a href="/" class="nav-brand">The Monday Clinical Brief</a>
   <div class="nav-links">
+    <a href="/samples/">Samples</a>
+    <a href="/blog/">Blog</a>
     <a href="/#how">How it works</a>
-    <a href="/#about">About</a>
     <a href="/?specialty=respiratory#subscribe" class="nav-cta">Start free trial</a>
   </div>
 </nav>
 
 <!-- ═══ HEADER ═══ -->
 <header class="page-header">
-  <div class="eyebrow">Sample Digest · Wednesday 1 July 2026</div>
+  <div class="eyebrow">Sample Digest · Monday 31 August 2026</div>
   <h1>A recent Respiratory Medicine digest,<br><em>as sent to subscribers</em></h1>
-  <p class="lede">This is the real Monday digest from Wednesday 1 July 2026. Showing the first 8 of 21 articles from that week — every new paper from the top journals in Respiratory Medicine.</p>
+  <p class="lede">This is the real Monday digest from Monday 31 August 2026. Showing the first 8 of 10 articles from that week — every new paper from the top 5 journals in Respiratory Medicine.</p>
   <div class="stat-bar">
-    <div class="stat"><strong>21</strong><span>articles that week</span></div>
-    <div class="stat"><strong>5</strong><span>journals covered</span></div>
+    <div class="stat"><strong>10</strong><span>articles that week</span></div>
+    <div class="stat"><strong>5</strong><span><a href="/methodology/">journals monitored</a></span></div>
     <div class="stat"><strong>£0</strong><span>for your first 4 weeks</span></div>
   </div>
   <div class="disclaimer">
-    <strong>Note:</strong> Summaries are AI-generated from publicly available PubMed abstracts. Always verify against the source article before clinical use.
+    <strong>Note:</strong> Summaries are AI-generated from publicly available PubMed abstracts. Always verify against the source article before clinical use. <a href="/methodology/">How we choose journals and write summaries →</a>
   </div>
 </header>
 
@@ -132,231 +136,231 @@
   <div class="container">
     <div class="sample-card">
       <div class="sample-badge">American journal of respiratory and critical care medicine</div>
-      <h3>Airway Mucus Plugs in Asthma and COPD: Pathobiology, Imaging, and Implications for Clinical Trials</h3>
-      <div class="sample-meta">Bosma CB, Aaron SD, Celli BR et al. · 2026 Jun 22</div>
+      <h3>Impact of a Large-Scale Mold Intervention in Public Housing on Asthma Emergency Department Visits</h3>
+      <div class="sample-meta">Flores NM, Casey JA, Lovinsky-Desir S et al. · 2026 Aug 25</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Commentary/narrative review
+        Retrospective observational study (doubly robust difference-in-differences analysis)
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        What is the pathobiological basis, clinical significance, and trial utility of airway mucus plugs in asthma and COPD?
+        Did NYCHA&#39;s citywide &#39;Mold Busters&#39; remediation programme reduce asthma-related ED visits among public housing residents?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>Mucus plug burden, quantified via CT-based scoring (e.g., bronchopulmonary segment mucus plug score), correlates with increased exacerbations, accelerated spirometric decline in both asthma and COPD, and excess mortality in COPD</li><li>Biologic therapies in asthma trials have demonstrated measurable reductions in mucus plug burden alongside spirometric improvement, supporting mucus plugging as a treatable trait</li><li>Quantitative imaging methods for mucus plug scoring are under active development but lack standardisation</li>        </ul>
+<li>The intervention was associated with an average annual reduction of 7.2 asthma-related ED visits per 1,000 residents (95% CI: -9.6, -4.8), equating to ~2,200 fewer visits annually by 2022–2023 (19% lower than expected).</li><li>Buildings with the largest reductions in mold reports saw visit rate reductions up to 12.0 per 1,000 residents (95% CI: -16.9, -7.0).</li><li>Effects were stronger in adults than children and more pronounced in winter/spring; mold reports still rose after extreme precipitation events despite overall decline.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        CT-quantified mucus plug burden may offer UK respiratory clinicians a phenotyping and treatment-monitoring tool, particularly when considering biologic therapy eligibility and response in severe asthma and COPD.
+        Supports housing-based environmental interventions as a scalable public health strategy to reduce asthma exacerbations and health inequalities in disadvantaged populations, relevant to UK social housing and asthma disparity initiatives.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        As a narrative review, no primary data are presented and evidence synthesis is not systematic.
+        Observational design using building-level (not individual-level) data limits causal inference and control for unmeasured confounders.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42330343/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1093/ajrccm/aamag309" target="_blank" rel="noopener">DOI →</a>      </div>
-    </div>
-    <div class="sample-card">
-      <div class="sample-badge">American journal of respiratory and critical care medicine</div>
-      <h3>The frequent exacerbator phenotype in bronchiectasis revisited: Data from EMBARC registry</h3>
-      <div class="sample-meta">Sibila O, Perea L, Burgel PR et al. · 2026 Jun 25</div>
-      <div class="summary-field">
-        <span class="summary-label">Study Type:</span>
-        Retrospective cohort study (registry-based)
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Question:</span>
-        Does each additional prior exacerbation incrementally increase future exacerbation risk in bronchiectasis, and is this consistent across aetiologies and regions?
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Findings:</span>
-        <ul>
-<li>Future exacerbation risk rose progressively with each prior exacerbation: IRR 1.45 (1 prior), 1.84 (2), 2.50 (3), and 3.56 (≥4), with no plateau identifying a clear threshold.</li><li>One prior severe (hospitalised) exacerbation was strongly associated with future severe exacerbations (IRR 3.96, 95% CI 3.71–4.22).</li><li>The frequent exacerbator phenotype was consistent across all aetiologies and geographic regions within the 30-country EMBARC cohort (n=19,324).</li>        </ul>
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Clinical Relevance:</span>
-        The established ≥3 exacerbations/year threshold may be overly simplistic; UK clinicians should consider even 1–2 prior exacerbations as clinically significant when stratifying risk and targeting preventive treatment.
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Limitations:</span>
-        Observational registry design precludes causal inference, and exacerbation ascertainment may vary across contributing centres.
-      </div>
-      <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42348458/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1093/ajrccm/aamag297" target="_blank" rel="noopener">DOI →</a>      </div>
-    </div>
-    <div class="sample-card">
-      <div class="sample-badge">American journal of respiratory and critical care medicine</div>
-      <h3>Spatial proteomics profiling reveals oncogene-specific immune niches and prognostic markers in NSCLC</h3>
-      <div class="sample-meta">Nandigama R, Cheikh BB, Wilhelm J et al. · 2026 Jun 26</div>
-      <div class="summary-field">
-        <span class="summary-label">Study Type:</span>
-        Retrospective cohort study (high-plex spatial proteomics)
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Question:</span>
-        Do EGFR and KRAS mutations differentially shape the spatial immune architecture of the NSCLC tumour microenvironment, and does this influence prognosis?
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Findings:</span>
-        <ul>
-<li>EGFR- and KRAS-mutant tumours showed higher tumour cell density with reduced cytotoxic T cell, dendritic cell, and granulocyte infiltration compared to wild-type tumours across 197 samples (&gt;2 million cells)</li><li>EGFR-mutant tumours were specifically enriched for M2-like tumour-associated macrophages with closer spatial clustering; KRAS-mutant tumours showed increased T-regulatory cells and TAMs in proximity to tumour cells</li><li>Spatial immune metrics (cellular neighbourhoods, nearest-neighbour distances, proximity profiling) independently correlated with survival on Cox proportional hazards modelling</li>        </ul>
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Clinical Relevance:</span>
-        This provides a mechanistic basis for immunotherapy resistance in EGFR/KRAS-mutant NSCLC — a common clinical dilemma — and suggests spatially-defined immune phenotypes could refine patient selection for immunotherapy.
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Limitations:</span>
-        Retrospective design limits causal inference and generalisability across treatment-diverse real-world populations.
-      </div>
-      <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42363408/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1093/ajrccm/aamag330" target="_blank" rel="noopener">DOI →</a>      </div>
-    </div>
-    <div class="sample-card">
-      <div class="sample-badge">American journal of respiratory and critical care medicine</div>
-      <h3>Occupational Exposure to Dust and Fumes Increases Risk for Future Adverse Clinical Outcomes</h3>
-      <div class="sample-meta">Xanthavanij N, Deshpande R, Yu J et al. · 2026 Jun 26</div>
-      <div class="summary-field">
-        <span class="summary-label">Study Type:</span>
-        Prospective cohort study (COPDGene registry)
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Question:</span>
-        Does occupational exposure to dust and/or fumes predict future respiratory, cardiovascular, and other clinical outcomes in smokers?
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Findings:</span>
-        <ul>
-<li>Combined dust-and-fumes exposure (34.4% of participants) was associated with significantly more respiratory exacerbations (aRR 1.38, 95% CI 1.26–1.52) versus unexposed individuals over up to 15 years</li><li>The same group had higher odds of ASCVD (aOR 1.35, 95% CI 1.17–1.56) and pneumonia (aOR 1.39, 95% CI 1.19–1.63)</li><li>Dust-only or fumes-only exposures were not independently highlighted as significant; cancer and venous thromboembolism showed no significant association</li>        </ul>
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Clinical Relevance:</span>
-        Occupational history taking in UK respiratory clinics should be prioritised, as combined dust-and-fumes exposure represents a modifiable risk factor influencing exacerbation burden and cardiovascular outcomes, with implications for COPD management and occupational health referral pathways.
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Limitations:</span>
-        Occupational exposure was self-reported at a single baseline timepoint, introducing potential misclassification and recall bias.
-      </div>
-      <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42360751/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1093/ajrccm/aamag334" target="_blank" rel="noopener">DOI →</a>      </div>
-    </div>
-    <div class="sample-card">
-      <div class="sample-badge">American journal of respiratory and critical care medicine</div>
-      <h3>Noninvasive Respiratory Support for Adult Patients with Acute Respiratory Failure. An Official American Thoracic Society Clinical Practice Guideline</h3>
-      <div class="sample-meta">Goel NN, Ferreyro BL, Pitre T et al. · 2026 Jun 29</div>
-      <div class="summary-field">
-        <span class="summary-label">Study Type:</span>
-        Clinical Practice Guideline (ATS; GRADE methodology, informed by systematic reviews and network meta-analyses)
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Question:</span>
-        Which noninvasive respiratory support strategy — HFNC, NIV, or CPAP — is optimal across acute hypoxemic and hypercapnic respiratory failure, pre-intubation preoxygenation, and post-extubation support?
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Findings:</span>
-        <ul>
-<li>Acute hypoxaemic failure: strong recommendation for HFNC; conditional recommendation for NIV/CPAP — both primarily based on reduced intubation rates</li><li>Acute hypercapnic failure: strong recommendation for NIV (mortality and intubation benefit); HFNC conditionally acceptable only in milder hypercapnia (pH &gt;7.25) with close monitoring</li><li>Preoxygenation: strong recommendation for HFNC or NIV to reduce peri-intubation hypoxaemia; post-extubation: HFNC for low-risk, NIV for high-risk patients to reduce re-intubation</li>        </ul>
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Clinical Relevance:</span>
-        Provides directly applicable, GRADE-rated guidance to standardise NIRS use across UK ICUs and respiratory units where practice remains variable.
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Limitations:</span>
-        Recommendations may not fully account for NHS resource constraints or differences in institutional NIV/HFNC capacity.
-      </div>
-      <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42371750/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1093/ajrccm/aamag302" target="_blank" rel="noopener">DOI →</a>      </div>
-    </div>
-    <div class="sample-card">
-      <div class="sample-badge">American journal of respiratory and critical care medicine</div>
-      <h3>Respiratory effort during sleep predicts mortality in patients with suspected obstructive sleep apnea</h3>
-      <div class="sample-meta">Nahoui H, Schirmer H, Einvik G et al. · 2026 Jun 29</div>
-      <div class="summary-field">
-        <span class="summary-label">Study Type:</span>
-        Retrospective cohort study
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Question:</span>
-        Does nocturnal respiratory effort, measured by oesophageal pressure (PES), independently predict long-term all-cause mortality in patients investigated for OSA?
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Findings:</span>
-        <ul>
-<li>In 16,083 patients followed for a median of 15 years, 9.3% died; median PES of 12.8 cmH₂O correlated with mortality across quartiles</li><li>After adjustment for age, sex, BMI, comorbidities, AHI, and oxygen saturation, 3rd quartile PES remained independently associated with mortality (HR 1.21; 95% CI 1.03–1.43)</li><li>Greater time spent at higher negative PES thresholds was dose-dependently associated with increased mortality risk, independent of conventional OSA metrics</li>        </ul>
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Clinical Relevance:</span>
-        AHI alone may underestimate OSA-related cardiovascular risk; incorporating respiratory effort monitoring could refine prognostication for patients under investigation in UK sleep services.
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Limitations:</span>
-        Oesophageal pressure monitoring is invasive and not routinely used in NHS sleep laboratories, limiting immediate clinical translation.
-      </div>
-      <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42371748/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1093/ajrccm/aamag344" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42640496/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1093/ajrccm/aamag441" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">Chest</div>
-      <h3>Phenotyping of pulmonary arterial hypertension associated with congenital heart disease using latent class analysis: insights from a national prospective registry</h3>
-      <div class="sample-meta">Li Q, Yu Q, Zhang G et al. · 2026 Jun 20</div>
+      <h3>Predictive Power of Pulmonary Artery Stiffness - Right Ventricular Interplay, but not Pulmonary Vascular Resistance, in Mild Pulmonary Hypertension: A PVRI GoDeep meta-registry analysis</h3>
+      <div class="sample-meta">Yogeswaran A, Fünderich M, Kiely DG et al. · 2026 Aug 26</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Prospective registry-based cohort study with unsupervised machine learning analysis (latent class analysis)
+        Retrospective multicentre cohort analysis (international meta-registry)
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Can data-driven phenotyping via latent class analysis improve risk stratification and predict PAH-targeted therapy responses in adults with PAH-CHD?
+        Do measures of pulmonary artery pulsatile load and RV-vascular coupling (arterial elastance [Ea], pulmonary artery compliance [PAC], stroke volume index [SVI]) predict mortality independently of PVR, particularly in mild pulmonary hypertension?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>LCA identified four clinically distinct phenogroups within both post- and pre-tricuspid shunt populations, with 2–3-fold mortality differences between best and worst-prognosis groups over 10 years</li><li>In post-tricuspid shunts, a &#34;hyperkinetic&#34; phenogroup uniquely benefited from combination PAH therapy (interaction p=0.026)</li><li>In pre-tricuspid shunts, an older male comorbidity-predominant group showed significantly higher mortality and attenuated treatment response (interaction p=0.037) despite mild haemodynamics</li>        </ul>
+<li>In mild PH (mPAP 20–25 mmHg, n=1,097), neither mPAP nor PVR predicted mortality (p&gt;0.05), but Ea, PAC, SVI, and heart rate were independently prognostic.</li><li>In the full cohort (n=16,899, PH groups 1–5), these pulsatile/RV-coupling parameters remained independently associated with survival after adjustment for confounders, including PVR/TPR.</li><li>Findings were consistent across aetiological subgroups, including IPAH/heritable PAH.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        For UK PAH centres managing complex CHD-PAH, this supports moving beyond anatomical classification toward phenotype-guided treatment decisions, potentially informing combination therapy initiation criteria.
+        These integrated haemodynamic parameters could improve risk stratification in mild/early PH—a population increasingly identified in UK PH centres following revised diagnostic thresholds—where conventional steady-flow metrics (mPAP, PVR) lack prognostic discrimination.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Single-country registry data from China limits direct generalisability to UK/European PAH-CHD populations with differing demographics and treatment pathways.
+        Retrospective registry design limits causal inference and may be affected by unmeasured confounding and variable data completeness across contributing centres.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42323108/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.chest.2026.06.019" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42648467/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.chest.2026.07.5243" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">Chest</div>
-      <h3>How I Do It: De-escalation of Prostacyclin-Based Therapy in Patients Treated With Sotatercept</h3>
-      <div class="sample-meta">Tasevac B, Cirulis MM, Dodson MW et al. · 2026 Jun 24</div>
+      <h3>Septic shock after allogeneic hematopoietic stem-cell transplantation: outcomes and prognostic factors in a multicenter ICU cohort</h3>
+      <div class="sample-meta">Subileau M, Chean D, Dupont T et al. · 2026 Aug 28</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Commentary / expert practice guidance (&#34;How I Do It&#34; format)
+        Multicenter retrospective cohort study
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Can prostacyclin therapy be safely de-escalated in PAH patients receiving sotatercept, and how should clinicians approach this decision?
+        What are the outcomes and independent prognostic factors for septic shock in allogeneic HSCT recipients admitted to ICU?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>Conventional monitoring tools (WHO functional class, 6MWD, BNP/NT-proBNP, composite risk scores) lack sufficient granularity to guide de-escalation in higher-functioning patients on sotatercept</li><li>CPET is proposed as a complementary stress-based assessment of cardiopulmonary reserve and RV-pulmonary vascular coupling to improve decision confidence</li><li>A structured, CPET-integrated decision framework is proposed for individualised, shared decision-making around prostacyclin de-escalation</li>        </ul>
+<li>Septic shock affected 38% (444/1,164) of allo-HSCT ICU admissions; 90-day and 3-year mortality were 63% and 81% respectively.</li><li>Fungal documentation (HR 1.78, 95% CI 1.19–2.67), higher SOFA score (HR 1.07 per point, 95% CI 1.02–1.13), and neutropenia (HR 3.94, 95% CI 1.18–13.1) independently predicted worse 90-day survival.</li><li>Early aminoglycoside use was associated with improved survival (HR 0.46, 95% CI 0.33–0.64) but with a non-constant, time-varying effect, precluding causal inference.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        As sotatercept enters UK PAH practice, clinicians will increasingly face requests to rationalise burdensome prostacyclin regimens; this article offers a practical framework where no established protocol currently exists.
+        These findings highlight the extremely poor prognosis of septic shock post-allo-HSCT and support risk-stratification by illness severity, neutropenic status, and fungal aetiology when planning ICU-level care in UK transplant centres.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        No original outcome data presented; guidance is expert opinion illustrated by a single case, limiting generalisability pending prospective evidence.
+        Retrospective design limits causal interpretation, particularly regarding the aminoglycoside-survival association.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42341978/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.chest.2026.06.021" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42665126/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.chest.2026.06.075" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Chest</div>
+      <h3>The impact of national health systems on lung cancer mortality</h3>
+      <div class="sample-meta">Gorantla N, Dee EC, Willmann J et al. · 2026 Aug 29</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Ecological/cross-sectional analysis using global health system databases (WHO, World Bank, DIRAC, UNDP, IARC).
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Which national health system factors are independently associated with lung cancer mortality-to-incidence ratios globally?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Higher health spending, nurse/midwife density, universal health coverage index, and radiotherapy centre density were each independently associated with lower lung cancer mortality-to-incidence ratios.</li><li>Physician density showed a small, paradoxical positive association with mortality-to-incidence ratio after adjustment.</li><li>No specific effect sizes or confidence intervals reported in the abstract.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        Highlights health system infrastructure (workforce composition, universal coverage, radiotherapy access) rather than physician numbers alone as key levers for improving lung cancer outcomes—relevant to NHS workforce and radiotherapy capacity planning amid rising lung cancer burden.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Ecological, country-level data cannot establish causation or account for confounding at the individual patient level.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42668063/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.chest.2026.08.021" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Chest</div>
+      <h3>Efficacy and safety of gabapentin for treatment of cough in idiopathic pulmonary fibrosis: a randomized, double-blinded, placebo-controlled clinical trial</h3>
+      <div class="sample-meta">Zhou Y, Ju X, Zhang Y et al. · 2026 Aug 29</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Randomised, double-blind, placebo-controlled trial (n=68)
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Does gabapentin reduce chronic cough in patients with idiopathic pulmonary fibrosis (IPF)?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Cough relief rate (≥50% reduction in Cough Symptom Score) at 12 weeks was 73.5% with gabapentin vs 26.5% with placebo (absolute difference 47.1 percentage points, 95% CI 26.1–68.0, P&lt;0.001).</li><li>Adverse events were more frequent with gabapentin (32.4% vs 8.8%), mainly drowsiness, fatigue, and dizziness; no serious safety signals reported.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        Chronic cough in IPF has no established evidence-based pharmacological therapy, and this trial provides the first randomised evidence supporting gabapentin as an option for UK clinicians managing this difficult symptom, particularly in specialist ILD services where off-label neuromodulator use for cough is already common practice.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Single-centre design with a small sample size limits generalisability and precision of safety estimates.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42668062/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.chest.2026.08.030" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Chest</div>
+      <h3>Multicenter invasive validation of the Venous Excess Ultrasound Score (VExUS) in patients referred for pulmonary hypertension</h3>
+      <div class="sample-meta">D&#39;Alto M, Cangiano N, Orlando A et al. · 2026 Aug 29</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Multicenter observational (diagnostic accuracy) study
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        How well does the VExUS score predict invasively measured right atrial pressure (RAP) in patients with suspected or confirmed pulmonary hypertension?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Mean RAP rose progressively with VExUS grade (3.9 mmHg at grade 0 to 15.8 mmHg at grade 3; p&lt;0.001).</li><li>VExUS showed excellent discrimination for RAP &gt;12 mmHg (AUC 0.97, 95% CI 0.94–0.99), outperforming isolated echocardiographic markers and matching composite echocardiographic RAP estimation.</li><li>Findings were consistent across pre-capillary, post-capillary, and normal haemodynamic phenotypes.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        VExUS offers a validated, non-invasive bedside tool to estimate RAP in PH clinics, potentially reducing reliance on right heart catheterisation for congestion assessment in UK PH services.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Cross-sectional design with modest subgroup sizes (particularly post-capillary and no-PH groups) limits generalisability and assessment of longitudinal utility.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42668061/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.chest.2026.08.031" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">The European respiratory journal</div>
+      <h3>Preventing mucus plugs in COPD: a potential role for erdosteine</h3>
+      <div class="sample-meta">Calverley PMA · 2026 Aug</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Commentary/editorial
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Does erdosteine, a muco-active agent, have a role in preventing mucus plug formation and associated exacerbations in early COPD?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Mucus plugging is highlighted as a key driver of clinical deterioration in COPD.</li><li>Erdosteine is proposed to reduce exacerbation frequency when used early in disease course.</li><li>The abstract suggests a potential (not yet confirmed) effect of erdosteine in slowing mucus plug development, without providing quantitative data.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        For NHS respiratory clinicians managing early COPD, mucoactive therapy could represent an accessible, low-cost adjunct to reduce exacerbation burden, pending confirmatory evidence.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        As an editorial/commentary, this piece offers no original trial data or effect sizes to substantiate the proposed mechanism or clinical benefit.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42660616/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1183/13993003.01274-2026" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">The European respiratory journal</div>
+      <h3>The Role of Inflammation in the Pathogenesis of Pulmonary Fibrosis: Mechanisms and Treatment Implications</h3>
+      <div class="sample-meta">Nazemi N, Crestani B, Helou DG et al. · 2026 Aug 27</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Narrative review
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        How does inflammation interact with fibrotic pathways across fibrotic interstitial lung diseases (fILDs), and what are the implications for treatment stratification?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Inflammation and fibrosis are not sequential but dynamically interlinked, forming feed-forward loops that can either propagate or, in some contexts, aid resolution of fibrosis.</li><li>IPF is characterised by dominant fibrosis with limited inflammation, whereas other fILDs show variable, disease- and phenotype-dependent inflammatory contributions.</li><li>Shared signalling pathways between inflammation and fibrosis underpin disease heterogeneity, supporting a rationale for mechanism-based rather than diagnosis-based treatment selection.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        For UK ILD services managing an increasingly diverse fILD caseload, understanding inflammation–fibrosis crosstalk supports more rational use of anti-fibrotic versus immunomodulatory therapies and informs future biomarker-driven stratification.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        As a narrative review, evidence is synthesised from experimental and translational studies rather than systematically appraised clinical trial data.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42660607/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1183/13993003.00258-2026" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
 
     <div class="tease">
-      <p>…and <em>13 more</em> Respiratory Medicine articles in that week's digest.</p>
+      <p>…and <em>2 more</em> Respiratory Medicine articles in that week's digest.</p>
       <small>Subscribers get the complete brief, every Monday.</small>
     </div>
   </div>
@@ -373,8 +377,25 @@
 <!-- ═══ FOOTER ═══ -->
 <footer>
   <p>&copy; 2026 The Monday Clinical Brief</p>
-  <p><a href="/">Home</a> · <a href="mailto:info@mondayclinicalbrief.co.uk">Contact</a> · <a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms</a></p>
+  <p><a href="/samples/">Samples</a> · <a href="/blog/">Blog</a> · <a href="/methodology/">Methodology</a> · <a href="/about/">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p>
 </footer>
+
+<script>
+// Measure the fixed mobile bottom bar so the body reserves its true height.
+(function () {
+  var nav = document.querySelector('nav');
+  if (!nav) return;
+  function sync() {
+    var fixed = getComputedStyle(nav).position === 'fixed';
+    document.documentElement.style.setProperty('--bottom-nav-h', fixed ? nav.offsetHeight + 'px' : '0px');
+  }
+  sync();
+  addEventListener('resize', sync);
+  addEventListener('orientationchange', sync);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(sync);
+  if (window.ResizeObserver) new ResizeObserver(sync).observe(nav);
+})();
+</script>
 
 </body>
 </html>

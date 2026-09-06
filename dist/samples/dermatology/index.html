@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dermatology Sample Digest — The Monday Clinical Brief</title>
-<meta name="description" content="See what Dermatology clinicians received in this Monday's digest: 16 new articles from The Journal of investigative dermatology, JAMA dermatology, Journal of the American Academy of Dermatology summarised every Monday by The Monday Clinical Brief.">
+<meta name="description" content="See what Dermatology clinicians received in this Monday's digest: 16 new articles from JAMA dermatology, Journal of the American Academy of Dermatology, Journal of the European Academy of Dermatology and Venereology : JEADV summarised every Monday by The Monday Clinical Brief.">
 <link rel="canonical" href="https://mondayclinicalbrief.co.uk/samples/dermatology/">
 <meta property="og:title" content="Dermatology — Monday Clinical Brief Sample Digest">
 <meta property="og:description" content="16 new Dermatology papers summarised this week. Free 4-week trial.">
@@ -89,9 +89,12 @@
   footer a { color: var(--sage); text-decoration: none; }
 
   @media (max-width: 640px) {
-    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; }
+    /* Fixed bottom bar — reserve its measured height, not a flat 60px. */
+    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; align-items: center; gap: 0.75rem; }
     .nav-links a:not(.nav-cta) { display: none; }
-    body { padding-bottom: 60px; }
+    .nav-brand { font-size: 0.9rem; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+    .nav-cta { flex-shrink: 0; }
+    body { padding-bottom: calc(var(--bottom-nav-h, 64px) + env(safe-area-inset-bottom, 0px)); }
     .page-header { padding: 3.5rem 1.5rem 2.5rem; }
     section { padding: 2rem 1.5rem 3.5rem; }
     .sample-card { padding: 1.5rem; }
@@ -106,24 +109,25 @@
 <nav>
   <a href="/" class="nav-brand">The Monday Clinical Brief</a>
   <div class="nav-links">
+    <a href="/samples/">Samples</a>
+    <a href="/blog/">Blog</a>
     <a href="/#how">How it works</a>
-    <a href="/#about">About</a>
     <a href="/?specialty=dermatology#subscribe" class="nav-cta">Start free trial</a>
   </div>
 </nav>
 
 <!-- ═══ HEADER ═══ -->
 <header class="page-header">
-  <div class="eyebrow">Sample Digest · Wednesday 1 July 2026</div>
+  <div class="eyebrow">Sample Digest · Tuesday 1 September 2026</div>
   <h1>A recent Dermatology digest,<br><em>as sent to subscribers</em></h1>
-  <p class="lede">This is the real Monday digest from Wednesday 1 July 2026. Showing the first 8 of 16 articles from that week — every new paper from the top journals in Dermatology.</p>
+  <p class="lede">This is a real digest, generated on Tuesday 1 September 2026. Showing the first 8 of 16 articles from that week — every new paper from the top 5 journals in Dermatology.</p>
   <div class="stat-bar">
     <div class="stat"><strong>16</strong><span>articles that week</span></div>
-    <div class="stat"><strong>5</strong><span>journals covered</span></div>
+    <div class="stat"><strong>5</strong><span><a href="/methodology/">journals monitored</a></span></div>
     <div class="stat"><strong>£0</strong><span>for your first 4 weeks</span></div>
   </div>
   <div class="disclaimer">
-    <strong>Note:</strong> Summaries are AI-generated from publicly available PubMed abstracts. Always verify against the source article before clinical use.
+    <strong>Note:</strong> Summaries are AI-generated from publicly available PubMed abstracts. Always verify against the source article before clinical use. <a href="/methodology/">How we choose journals and write summaries →</a>
   </div>
 </header>
 
@@ -132,227 +136,224 @@
   <div class="container">
     <div class="sample-card">
       <div class="sample-badge">JAMA dermatology</div>
-      <h3>Online vs In-Person Care for Atopic Dermatitis: A Randomized Clinical Trial</h3>
-      <div class="sample-meta">Armstrong AW, Roberts AM, Kostandy G et al. · 2026 Jun 24</div>
+      <h3>Characteristic Corkscrew and Comma Hairs in Tinea Capitis</h3>
+      <div class="sample-meta">Nieto-Benito LM, Carrasco-Santos L · 2026 Aug 26</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Randomised clinical equivalence trial
+        Likely a case report/case series (dermoscopy image finding), based on title and journal format — cannot confirm without abstract text.
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Does an asynchronous, online team-based connected health (TCH) model produce equivalent improvements in atopic dermatitis severity compared to conventional in-person care over 12 months?
+        Not stated; presumed focus is the diagnostic value of corkscrew and comma hairs on dermoscopy for tinea capitis.
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
-        <ul>
-<li>EASI difference between groups: −0.01 (95% CI −0.22 to 0.20); within equivalence margins</li><li>POEM and vIGA differences were similarly within prespecified equivalence bounds across 300 participants (149 TCH, 151 in-person)</li><li>Clinical equivalence was demonstrated across all three primary and secondary outcomes at 12 months</li>        </ul>
+        Insufficient data provided in the abstract to extract specific findings, numbers, or outcomes.
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        With NHS dermatology facing sustained demand pressures and geographic access inequity, this trial supports asynchronous teledermatology as a clinically equivalent alternative to in-person AD management, strengthening the evidence base for scalable remote care pathways.
+        If confirmed, trichoscopic recognition of corkscrew/comma hairs could aid UK dermatologists and GPs in rapid, non-invasive diagnosis of tinea capitis, reducing reliance on mycology culture turnaround times within NHS pathways.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        The trial was conducted across California outpatient clinics, limiting direct generalisability to NHS settings with differing workforce structures, referral pathways, and patient demographics.
+        No abstract text was available to assess study design, sample size, or evidence quality.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42340708/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1001/jamadermatol.2026.1959" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42647019/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1001/jamadermatol.2026.2480" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">JAMA dermatology</div>
-      <h3>Multiple Verrucous Plaques Along Blaschko Lines on the Left Lower Limb</h3>
-      <div class="sample-meta">Zhou Y, Chang L, Sun Z · 2026 Jun 24</div>
+      <h3>Mycosis Fungoides With γδ Immunophenotype</h3>
+      <div class="sample-meta">Ostroff E, De Jong K, Aguilar Neuville P et al. · 2026 Aug 26</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Insufficient data — the abstract contains no extractable content.
+        No abstract text provided, so study design cannot be confirmed; title/context suggest a case series or retrospective cohort study.
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Cannot be determined from the information provided.
+        Not determinable from the available abstract—likely addresses the clinical, histopathological, and prognostic features of mycosis fungoides expressing a γδ T-cell immunophenotype.
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
-        <ul>
-<li>No abstract text was supplied for analysis.</li><li>The title suggests a case report or case series describing verrucous plaques following Blaschko&#39;s lines on the lower limb, likely relating to a mosaic/epidermal naevus disorder or linear inflammatory dermatosis.</li><li>No findings, data, or conclusions can be summarised.</li>        </ul>
+        No data provided to summarise; abstract content is missing.
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        Blaschko-linear verrucous lesions are a recognised diagnostic challenge in dermatology, relevant to conditions such as epidermal naevi, ILVEN, and mosaic genodermatoses — a topic of clinical importance in secondary care.
+        γδ T-cell phenotype in mycosis fungoides is clinically important as it may be associated with atypical presentations and historically poorer prognosis, information relevant to UK dermatologists and haemato-oncology MDTs managing cutaneous lymphomas.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        No abstract was provided; this summary is based solely on the article title and cannot substitute for review of the full text.
+        No abstract data available to assess methodology, sample size, or generalisability.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42340707/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1001/jamadermatol.2026.0809" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42646904/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1001/jamadermatol.2026.3001" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">JAMA dermatology</div>
-      <h3>Progression From Acute to Chronic Urticaria: A Systematic Review</h3>
-      <div class="sample-meta">Gómez de la Fuente E, Ortiz de Frutos FJ, Álvarez-Díaz N et al. · 2026 Jun 24</div>
+      <h3>Annular and Erosive Plaques on the Back of a Male Patient</h3>
+      <div class="sample-meta">Garcia A, Poulalhon N, Ribereau-Gayon E · 2026 Aug 26</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Systematic review (qualitative synthesis; meta-analysis not performed due to heterogeneity)
+        Not determinable from available information — title format (&#34;clinicopathologic challenge&#34;–style case presentation) suggests this is likely a case report/case-based clinical quiz in JAMA Dermatology.
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Which clinical, laboratory, or treatment-related factors predict progression from acute to chronic urticaria?
+        Not stated; likely addresses the differential diagnosis and diagnostic work-up of annular, erosive plaques on the trunk in a male patient.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        No data provided in the abstract to summarise.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        Case reports of unusual annular/erosive dermatoses are educationally useful for UK dermatologists in recognising atypical presentations that may mimic more common conditions (e.g., tinea, lupus, pemphigus variants).
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        No abstract text was supplied, so critical appraisal is not possible.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42646903/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1001/jamadermatol.2026.2529" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">JAMA dermatology</div>
+      <h3>Prevalence of Vulvar Lichen Sclerosus Among Females</h3>
+      <div class="sample-meta">Shah PR, Nyamaa A, Midgette B et al. · 2026 Aug 26</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Retrospective cohort/database analysis (population-based prevalence study)
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        What is the prevalence of vulvar lichen sclerosus among females, and how does it vary across age groups?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>Progression rates varied widely (5.8–36.0%) across 16 studies (n=52,564), partly attributable to tertiary centre selection bias, variable follow-up, and inconsistent outcome definitions.</li><li>No clinical feature (disease severity, angioedema, atopy, allergic sensitisation) or laboratory marker (total IgE, eosinophil count, neutrophil-to-lymphocyte ratio, autoantibodies) was reproducibly associated with chronicity.</li><li>Systemic corticosteroid use during acute urticaria did not reduce progression risk, arguing against aggressive early treatment to prevent chronicity.</li>        </ul>
+<li>No numerical data provided in the supplied abstract—specific prevalence estimates, confidence intervals, and age-stratified rates are not available for extraction.</li><li>The study appears designed to quantify disease burden across the female lifespan, likely using a large administrative or electronic health record dataset.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        UK dermatologists and allergists cannot currently risk-stratify acute urticaria patients using available markers; structured follow-up rather than escalated acute treatment is the appropriate management approach.
+        Accurate prevalence data on vulvar lichen sclerosus would help UK dermatology and gynaecology services anticipate service demand, support earlier recognition (reducing risk of scarring and vulvar squamous cell carcinoma), and inform NHS resource allocation for chronic vulval disease clinics.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        All included studies carried moderate-to-high risk of bias, with significant methodological heterogeneity precluding quantitative pooling.
+        The abstract text provided contains no methodological or numerical detail, precluding critical appraisal of study design, data source, or findings.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42340685/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1001/jamadermatol.2026.1901" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42646847/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1001/jamadermatol.2026.2970" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">JAMA dermatology</div>
+      <h3>Global Disparities in Access to Dermatological Care</h3>
+      <div class="sample-meta">Freeman EE, Yardman-Frank JM, Kilmer J et al. · 2026 Aug 26</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Cross-sectional survey study (Delphi-derived instrument)
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        How does access to dermatological care and workforce distribution vary globally across income levels and WHO regions?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Global dermatologist density averaged 2.66/100,000, ranging from 0.37 in low-income countries to 5.05 in high-income countries; estimated 175,633 dermatologists worldwide.</li><li>Only 17% of countries met the estimated sufficiency threshold (5.63/100,000); 21% lacked any dermatology training programme; 42% reported inadequate/poor access overall.</li><li>Dermatologists were heavily urban-concentrated (mean 79%), with worse maldistribution and subspecialty access (paediatric, surgical, dermatopathology) in lower-income settings; primary care physicians and non-physician workers substantially supplement dermatological care delivery.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        Highlights stark global inequities in dermatology workforce and training relevant to UK clinicians engaged in international health partnerships, global health electives, or workforce planning/advocacy through bodies like the British Association of Dermatologists.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Findings rely on self-reported, expert-perception data (only 64% informed by objective data sources), introducing potential subjectivity and variable data quality across countries.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42646828/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1001/jamadermatol.2026.3112" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">JAMA dermatology</div>
+      <h3>Skin-Specific Outcomes of Brepocitinib in Patients With Dermatomyositis: Secondary Analysis of a Phase 3 Randomized Clinical Trial</h3>
+      <div class="sample-meta">Mangold AR, Haemel A, Shahriari N et al. · 2026 Aug 26</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Secondary analysis of a phase 3 RCT (VALOR trial)
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Does brepocitinib improve skin disease activity, itch, and quality of life in adults with dermatomyositis over 52 weeks?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Brepocitinib 30 mg outperformed placebo from week 4: CDASI-A change -6.4 vs -3.5 (difference -3.0; 95% CI -4.6 to -1.4); clinically meaningful CDASI-A response in 33.3% vs 17.7%.</li><li>Itch remission (PP-NRS ≤1) achieved in 38.3% vs 19.0%; Skindex-16 improved by -12.9 vs -0.9 points.</li><li>Among moderate-severe skin disease at baseline, higher clear/almost-clear rates (45.7% vs 21.8%) and functional skin remission (43.5% vs 20.8%) at week 52; safety consistent with class effects.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        Offers a potential oral, rapidly-acting therapy for refractory cutaneous dermatomyositis, an area of significant unmet need within NHS dermatology and rheumatology-dermatology joint clinics.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        As a secondary/exploratory analysis, findings require confirmation as primary endpoints and longer-term real-world safety data before UK licensing/adoption.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42646746/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1001/jamadermatol.2026.3199" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">Journal of the American Academy of Dermatology</div>
-      <h3>Improved Detection of Lentigo Maligna with AI-Assisted Dermoscopy: A Reader Study in Facial Pigmented Lesions</h3>
-      <div class="sample-meta">Yilmaz A, Erol Mart HM, Temelkuran B et al. · 2026 Jun 23</div>
+      <h3>Validation of the integrated 40-gene expression profile (i40-GEP) which provides prognostic and adjuvant radiation benefit for high-risk cutaneous squamous cell carcinoma</h3>
+      <div class="sample-meta">Ratner D, Singh G, Rizzo JM et al. · 2026 Aug 24</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Retrospective reader study with convolutional neural network development
+        Retrospective validation cohort study
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Does an AI-assisted deep learning model improve dermatology residents&#39; diagnostic accuracy for lentigo maligna (LM) versus other facial pigmented lesions on dermoscopy?
+        Does integrating clinicopathologic risk factors with 40-GEP testing (i40-GEP) improve risk stratification and guide adjuvant radiotherapy decisions in high-risk cutaneous SCC?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>The Xception-based model achieved 84.2% accuracy, 90.8% sensitivity, and 81.9% specificity for classifying LM, pigmented actinic keratosis, and seborrhoeic keratosis/solar lentigo</li><li>Resident diagnostic accuracy improved from 64.9% to 74.0% with AI assistance (p&lt;0.0001), with LM detection showing the greatest gain (+16.5%)</li>        </ul>
+<li>i40-GEP significantly stratified metastatic and local recurrence risk (p&lt;0.001, n=572), with Class 1A showing &gt;95% NPV across NCCN risk subsets.</li><li>Class 2B (12.9% of cohort) had the lowest 3-year metastasis-free survival (66.2%) and showed demonstrable benefit from adjuvant radiation therapy.</li><li>On multivariable analysis, i40-GEP outperformed individual clinicopathologic factors in predicting metastasis and recurrence.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        LM on chronically sun-damaged facial skin is a recognised diagnostic challenge in UK dermatology; AI-assisted dermoscopy could reduce missed diagnoses and support registrar training, relevant given workforce pressures on NHS dermatology services.
+        For UK dermatology and skin cancer MDTs managing HRcSCC, i40-GEP could help identify patients most likely to benefit from adjuvant radiotherapy, potentially reducing over- and under-treatment within NHS pathways.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Retrospective single-centre design with residents only as readers limits generalisability to consultant-level practice and real-world clinical workflows.
+        Retrospective design limits causal inference regarding radiotherapy benefit.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42336217/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.jaad.2026.06.089" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42637048/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.jaad.2026.08.075" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">Journal of the American Academy of Dermatology</div>
-      <h3>Ivarmacitinib is associated with rapid clinical improvement and immune remodeling in palmoplantar pustulosis: A multi-center, single-arm clinical trial</h3>
-      <div class="sample-meta">Xu Z, Chen W, Du J et al. · 2026 Jun 24</div>
+      <h3>Comorbidity-Guided Management of Pyoderma Gangrenosum: A Clinical Guide to Emerging Therapeutic Targets</h3>
+      <div class="sample-meta">Nukaly HY, Elston DM · 2026 Aug 27</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Prospective, single-arm, multi-centre clinical trial
+        Narrative clinical review
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Does oral ivarmacitinib (selective JAK1 inhibitor) improve clinical outcomes and modulate immune pathways in palmoplantar pustulosis over 12 weeks?
+        How should treatment selection for pyoderma gangrenosum (PG) be tailored according to associated systemic comorbidities?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>Mean PPPASI fell from 11.3 to 3.9 (p&lt;0.001) at 12 weeks; 85% achieved PPPASI50, though only 13.3% reached PPPASI75</li><li>Pruritus, pain, and QoL improvements were evident by week 2</li><li>Baseline immune markers (lower CD4/CD8 ratio, Th2/Th1 ratio, IL10RA/IL2RB) predicted early response, suggesting potential for biomarker-guided patient selection</li>        </ul>
+<li>Comorbidity-directed biologic/small-molecule therapy (e.g., TNF inhibitors for IBD-associated PG, IL-1 blockade for autoinflammatory syndromes, JAK inhibitors for arthritis-overlap PG) was associated with higher healing rates and lower relapse than empiric treatment.</li><li>Evidence is drawn from case series and real-world reports rather than comparative trials, so no pooled effect sizes are reported.</li><li>Individualised, mechanism-based therapy targeting underlying systemic drivers appears to produce more durable ulcer healing.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        PPP has few licensed systemic therapies in the UK; this adds prospective evidence for a selective JAK1 inhibitor as a candidate treatment, with rapid symptom onset potentially meaningful for patient burden.
+        Offers UK dermatologists a practical framework for selecting biologics/JAK inhibitors based on PG comorbidity profile, relevant given increasing biologic access via NHS specialist commissioning pathways.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        The uncontrolled single-arm design precludes conclusions about comparative efficacy or placebo effect.
+        Based on heterogeneous, largely uncontrolled case-level evidence, limiting strength of causal or comparative conclusions.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42341933/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.jaad.2026.06.092" target="_blank" rel="noopener">DOI →</a>      </div>
-    </div>
-    <div class="sample-card">
-      <div class="sample-badge">Journal of the American Academy of Dermatology</div>
-      <h3>Low Dose Long-Term Capecitabine for Refractory Field Cancerization: A Retrospective Cohort Study</h3>
-      <div class="sample-meta">Neff H, Mortelliti C, Solomon B et al. · 2026 Jun 27</div>
-      <div class="summary-field">
-        <span class="summary-label">Study Type:</span>
-        Retrospective cohort study with patient satisfaction survey
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Question:</span>
-        Does long-term low-dose capecitabine reduce keratinocyte carcinoma (KC) surgical burden in patients with topical-refractory cutaneous field cancerisation?
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Findings:</span>
-        <ul>
-<li>Statistically significant reduction in KC surgeries at year 2 (73% reduction; 3.46 to 0.93 procedures/year; p=0.02); reductions at years 1 and 3 did not reach significance</li><li>Discontinuation due to toxicity occurred in 10% (2/20 patients)</li><li>75% of survey respondents reported at least moderate skin improvement; 83% preferred capecitabine over prior treatments</li>        </ul>
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Clinical Relevance:</span>
-        For UK dermatologists managing immunocompromised or high-KC-burden patients refractory to topical field treatments, this supports capecitabine as a potential systemic option, though it remains off-label in this context.
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Limitations:</span>
-        Very small sample (n=20), single-centre retrospective design, and limited follow-up numbers at year 3 (n=5) substantially restrict generalisability and statistical power.
-      </div>
-      <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42364769/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.jaad.2026.06.111" target="_blank" rel="noopener">DOI →</a>      </div>
-    </div>
-    <div class="sample-card">
-      <div class="sample-badge">Journal of the European Academy of Dermatology and Venereology : JEADV</div>
-      <h3>The worldwide burden of skin diseases: Lessons from the Global Burden of Disease data</h3>
-      <div class="sample-meta">Naldi L, Cazzaniga S, Flohr C et al. · 2026 Jun 22</div>
-      <div class="summary-field">
-        <span class="summary-label">Study Type:</span>
-        Retrospective analysis of Global Burden of Disease (GBD) dataset
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Question:</span>
-        What is the global epidemiological burden of skin diseases, and how does this vary by region, age, and sex?
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Findings:</span>
-        <ul>
-<li>Skin and subcutaneous diseases (excluding STIs and skin cancers) affected 25.7% of the global population in 2021, ranking sixth in global disease prevalence with a YLD rate of 495.1 per 100,000 person-years</li><li>Keratinocyte carcinomas (SCC, BCC) and pressure ulcers showed increasing prevalence 2000–2021; atopic dermatitis, scabies, and viral skin infections declined slightly</li><li>Chronic inflammatory and neoplastic conditions predominated in high-income regions, mirroring the NHS dermatology caseload</li>        </ul>
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Clinical Relevance:</span>
-        This data reinforces the scale of dermatological need in high-income settings and supports advocacy for NHS dermatology resource allocation and workforce planning.
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Limitations:</span>
-        GBD data substantially underestimates true burden due to limited inclusion of dermatological conditions, underreporting, and poor-quality data from low- and middle-income countries.
-      </div>
-      <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42324974/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1111/jdv.70562" target="_blank" rel="noopener">DOI →</a>      </div>
-    </div>
-    <div class="sample-card">
-      <div class="sample-badge">Journal of the European Academy of Dermatology and Venereology : JEADV</div>
-      <h3>Proteomic analysis in hidradenitis suppurativa reveals systemic inflammation in all disease stages</h3>
-      <div class="sample-meta">Francke LS, Al-Bayatti A, Zhang H et al. · 2026 Jun 27</div>
-      <div class="summary-field">
-        <span class="summary-label">Study Type:</span>
-        Case-control study (single-centre, exploratory proteomic analysis)
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Question:</span>
-        Does systemic inflammation in hidradenitis suppurativa vary with disease stage, severity, and quality of life?
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Findings:</span>
-        <ul>
-<li>37 of 92 immune proteins were significantly elevated in HS patients vs matched controls; top upregulated mediators included TGF-α, IL-6, OSM, IL-8/CXCL8, and IL-17A</li><li>Systemic inflammation was present even in mild (Hurley stage I) disease, with TGF-α, OSM, IL-8, IL-7, and HGF already elevated at this stage</li><li>IL-6 and HGF correlated positively with both IHS4 severity scores and DLQI; IL-17A and CCL19 associated with longer disease duration</li>        </ul>
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Clinical Relevance:</span>
-        These findings support treating HS as a systemic inflammatory disease from early stages, strengthening the rationale for biologics targeting IL-17A and IL-6 pathways within NHS practice.
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Limitations:</span>
-        Small cohort (n=44 per group) with potential confounding from BMI and smoking limits generalisability.
-      </div>
-      <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42363729/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1111/jdv.70546" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42660433/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.jaad.2026.08.086" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
 
     <div class="tease">
@@ -366,15 +367,32 @@
 <section class="cta-section">
   <h2>Get the Dermatology digest in your inbox every Monday</h2>
   <p>4 weeks completely free, then £20/year. Cancel any time during your trial — no charge.</p>
-  <a href="/?specialty=dermatology&ref=samples#subscribe" class="cta-btn">Start your free trial — Dermatology →</a>
+  <a href="/?specialty=dermatology&amp;ref=samples#subscribe" class="cta-btn">Start your free trial — Dermatology →</a>
   <span class="cta-meta">No card needed to browse. We'll ask for payment details to start the trial.</span>
 </section>
 
 <!-- ═══ FOOTER ═══ -->
 <footer>
   <p>&copy; 2026 The Monday Clinical Brief</p>
-  <p><a href="/">Home</a> · <a href="mailto:info@mondayclinicalbrief.co.uk">Contact</a> · <a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms</a></p>
+  <p><a href="/samples/">Samples</a> · <a href="/blog/">Blog</a> · <a href="/methodology/">Methodology</a> · <a href="/about/">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p>
 </footer>
+
+<script>
+// Measure the fixed mobile bottom bar so the body reserves its true height.
+(function () {
+  var nav = document.querySelector('nav');
+  if (!nav) return;
+  function sync() {
+    var fixed = getComputedStyle(nav).position === 'fixed';
+    document.documentElement.style.setProperty('--bottom-nav-h', fixed ? nav.offsetHeight + 'px' : '0px');
+  }
+  sync();
+  addEventListener('resize', sync);
+  addEventListener('orientationchange', sync);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(sync);
+  if (window.ResizeObserver) new ResizeObserver(sync).observe(nav);
+})();
+</script>
 
 </body>
 </html>

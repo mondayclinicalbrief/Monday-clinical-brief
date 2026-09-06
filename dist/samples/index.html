@@ -13,7 +13,14 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://mondayclinicalbrief.co.uk/samples/">
 <meta property="og:site_name" content="The Monday Clinical Brief">
+<meta property="og:image" content="https://mondayclinicalbrief.co.uk/assets/brand/mcb-og-1200x630-v2.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Monday Clinical Brief — sample digests for all 31 specialties">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sample Digests — All 31 Specialties">
+<meta name="twitter:description" content="Browse a real recent Monday Clinical Brief digest for every specialty we cover — from Acute Medicine to Urology. See the format, depth, and journal coverage before you subscribe.">
+<meta name="twitter:image" content="https://mondayclinicalbrief.co.uk/assets/brand/mcb-og-1200x630-v2.png">
 
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
 
@@ -70,9 +77,13 @@
   footer a { color: var(--sage); text-decoration: none; }
 
   @media (max-width: 640px) {
-    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); }
+    /* Fixed bottom bar on mobile — reserve its measured height, not a flat
+       60px, or the two-line brand hides the footer at ~390px. */
+    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); align-items: center; gap: 0.75rem; }
+    .nav-brand { font-size: 0.9rem; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+    .nav-cta { flex-shrink: 0; }
     .nav-links a:not(.nav-cta) { display: none; }
-    body { padding-bottom: 60px; }
+    body { padding-bottom: calc(var(--bottom-nav-h, 64px) + env(safe-area-inset-bottom, 0px)); }
     .breadcrumb { padding-top: 2rem; }
   }
 </style>
@@ -291,6 +302,7 @@
   </div>
 </nav>
 
+<main id="main">
 <div class="breadcrumb" aria-label="Breadcrumb">
   <ol>
     <li><a href="/">Home</a></li>
@@ -342,11 +354,31 @@
   <p>Your subscription covers the top 5 journals in your specialty, every Monday. Add any of the other 30 specialties for £5/year each.</p>
   <a href="/#subscribe" class="btn-primary">Start your free trial →</a>
 </div>
+</main>
 
 <footer>
-  <p>&copy; 2025 The Monday Clinical Brief. All rights reserved.</p>
-  <p><a href="/samples/">Samples</a> · <a href="/blog/">Blog</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p>
+  <p>&copy; 2026 The Monday Clinical Brief. All rights reserved.</p>
+  <p><a href="/samples/">Samples</a> · <a href="/blog/">Blog</a> · <a href="/methodology/">Methodology</a> · <a href="/about/">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p>
 </footer>
+
+<script>
+// Measure the fixed mobile bottom bar so the body reserves its true height.
+(function () {
+  var nav = document.querySelector('nav');
+  if (!nav) return;
+  function sync() {
+    var fixed = getComputedStyle(nav).position === 'fixed';
+    document.documentElement.style.setProperty(
+      '--bottom-nav-h', fixed ? nav.offsetHeight + 'px' : '0px'
+    );
+  }
+  sync();
+  addEventListener('resize', sync);
+  addEventListener('orientationchange', sync);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(sync);
+  if (window.ResizeObserver) new ResizeObserver(sync).observe(nav);
+})();
+</script>
 
 </body>
 </html>

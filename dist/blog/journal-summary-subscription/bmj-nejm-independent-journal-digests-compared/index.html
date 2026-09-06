@@ -3,23 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BMJ vs NEJM Clinician vs Independent Journal Digests: Which Is Best? | MCB — The Monday Clinical Brief</title>
-<meta name="description" content="How do BMJ summaries, NEJM Clinician (rebranded from Journal Watch), and independent UK digests compare in 2026? Updated with NEJM&#39;s £75 price, UpToDate Expert AI&#39;s UK availability, Heidi Evidence, and OpenEvidence.">
+<title>BMJ vs NEJM Clinician vs Independent Digests (2026) — The Monday Clinical Brief</title>
+<meta name="description" content="How BMJ summaries, NEJM Clinician (£75/yr) and independent UK digests compare in 2026 — coverage, cost, and UK fit for busy clinicians.">
 <link rel="canonical" href="https://mondayclinicalbrief.co.uk/blog/journal-summary-subscription/bmj-nejm-independent-journal-digests-compared/">
 
 
 <!-- Open Graph -->
-<meta property="og:title" content="BMJ vs NEJM Clinician vs Independent Journal Digests: Which Is Best? | MCB">
-<meta property="og:description" content="How do BMJ summaries, NEJM Clinician (rebranded from Journal Watch), and independent UK digests compare in 2026? Updated with NEJM&#39;s £75 price, UpToDate Expert AI&#39;s UK availability, Heidi Evidence, and OpenEvidence.">
+<meta property="og:title" content="BMJ vs NEJM Clinician vs Independent Digests (2026)">
+<meta property="og:description" content="How BMJ summaries, NEJM Clinician (£75/yr) and independent UK digests compare in 2026 — coverage, cost, and UK fit for busy clinicians.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://mondayclinicalbrief.co.uk/blog/journal-summary-subscription/bmj-nejm-independent-journal-digests-compared/">
-
+<meta property="og:image" content="https://mondayclinicalbrief.co.uk/assets/brand/mcb-og-1200x630-v2.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="BMJ vs NEJM Clinician vs Independent Digests (2026) — The Monday Clinical Brief">
 <meta property="og:site_name" content="The Monday Clinical Brief">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="BMJ vs NEJM Clinician vs Independent Journal Digests: Which Is Best? | MCB">
-<meta name="twitter:description" content="How do BMJ summaries, NEJM Clinician (rebranded from Journal Watch), and independent UK digests compare in 2026? Updated with NEJM&#39;s £75 price, UpToDate Expert AI&#39;s UK availability, Heidi Evidence, and OpenEvidence.">
+<meta name="twitter:title" content="BMJ vs NEJM Clinician vs Independent Digests (2026)">
+<meta name="twitter:description" content="How BMJ summaries, NEJM Clinician (£75/yr) and independent UK digests compare in 2026 — coverage, cost, and UK fit for busy clinicians.">
 
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
 
@@ -122,9 +125,15 @@
   footer a { color: var(--sage); text-decoration: none; }
 
   @media (max-width: 640px) {
-    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; }
+    /* Fixed bottom bar on mobile. The brand used to wrap to two lines at
+       390px, making the bar ~123px tall while the body reserved only 60px —
+       so the footer sat underneath it. Keep the brand on one line and reserve
+       the bar's measured height via a custom property. */
+    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; align-items: center; gap: 0.75rem; }
     .nav-links a:not(.nav-cta) { display: none; }
-    body { padding-bottom: 60px; }
+    .nav-brand { font-size: 0.9rem; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+    .nav-cta { flex-shrink: 0; }
+    body { padding-bottom: calc(var(--bottom-nav-h, 64px) + env(safe-area-inset-bottom, 0px)); }
     .breadcrumb { padding-top: 2rem; }
     .article-header { padding-top: 1rem; }
     .article-header h1 { font-size: 1.8rem; }
@@ -138,8 +147,8 @@
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "BMJ vs NEJM Clinician vs Independent Journal Digests: Which Is Best? | MCB",
-  "description": "How do BMJ summaries, NEJM Clinician (rebranded from Journal Watch), and independent UK digests compare in 2026? Updated with NEJM&#39;s £75 price, UpToDate Expert AI&#39;s UK availability, Heidi Evidence, and OpenEvidence.",
+  "headline": "BMJ vs NEJM Clinician vs Independent Digests (2026)",
+  "description": "How BMJ summaries, NEJM Clinician (£75/yr) and independent UK digests compare in 2026 — coverage, cost, and UK fit for busy clinicians.",
   "url": "https://mondayclinicalbrief.co.uk/blog/journal-summary-subscription/bmj-nejm-independent-journal-digests-compared/",
   "datePublished": "2026-04-25T00:00:00.000Z",
   
@@ -217,6 +226,7 @@
 </nav>
 
 <!-- ═══ BREADCRUMB ═══ -->
+<main id="main">
 <div class="breadcrumb" aria-label="Breadcrumb">
   <ol>
     <li><a href="/">Home</a></li>
@@ -233,7 +243,7 @@
   <h1>BMJ, NEJM Clinician and Independent Journal Digests Compared (2026)</h1>
   <div class="article-meta">
     <time datetime="2026-04-25T00:00:00.000Z">25 April 2026</time>
-    <span>10 min read</span>
+    <span>11 min read</span>
     <span>By Dr Tim Hamilton, Consultant in Palliative Medicine, NHS Wales</span>
   </div>
 </header>
@@ -308,7 +318,7 @@
 <p><strong>Best for:</strong> Not available in the UK. When or if it arrives, it will be a Q&amp;A tool, not a current-awareness digest.</p>
 <h2 id="iatrox" tabindex="-1">iatroX</h2>
 <p><a href="https://iatrox.com">iatroX</a> is a UK-built clinical-AI pull-tool. It is MHRA-registered as a Class I device, carries UKCA marking, and is built around UK guideline retrieval (NICE, CKS, SmPC) with calculators and Q-banks attached. The base tier is free for individual clinicians; paid specialty diplomas sit at around £99/year.</p>
-<p>We mention iatroX here for completeness. With OpenEvidence withdrawn, ChatGPT for Clinicians excluding UK accounts, and Heidi Evidence restricted to out-of-session use in the UK and EU, iatroX is the credible UK pull-tool option a UK clinician can use in the consultation itself today. Our coverage of the <a href="/blog/medical-journal-digest/openevidence-alternative-uk/">OpenEvidence withdrawal</a>, <a href="/blog/medical-journal-digest/chatgpt-for-clinicians-uk/">ChatGPT exclusion</a>, and <a href="/blog/medical-journal-digest/heidi-evidence-uk-in-session-restriction/">Heidi Evidence in-session restriction</a> names iatroX as the UK-regulatory-compliant alternative in each case.</p>
+<p>We mention iatroX here for completeness. With OpenEvidence withdrawn, ChatGPT for Clinicians excluding UK accounts, and Heidi Evidence restricted to out-of-session use in the UK and EU (and excluded on NHS accounts), iatroX is the credible UK pull-tool option that can see the case in the consultation itself today. Our coverage of the <a href="/blog/medical-journal-digest/openevidence-alternative-uk/">OpenEvidence withdrawal</a>, <a href="/blog/medical-journal-digest/chatgpt-for-clinicians-uk/">ChatGPT exclusion</a>, and <a href="/blog/medical-journal-digest/heidi-evidence-uk-in-session-restriction/">Heidi Evidence in-session restriction</a> names iatroX as the UK-regulatory-compliant alternative in each case.</p>
 <p><strong>How it relates to a digest:</strong> iatroX is a pull tool. You ask it a clinical question; it returns a UK-guideline-grounded answer. It does not aim to surface new literature on a calendar — that is the role a digest serves. The two are complementary.</p>
 <p><strong>We have no commercial relationship with iatroX.</strong> Mention is editorial.</p>
 <p><strong>Best for:</strong> UK clinicians who need a regulatory-compliant Q&amp;A tool at the point of care, alongside whatever they use for current awareness.</p>
@@ -420,13 +430,13 @@
 <h2 id="which-to-pick" tabindex="-1">Which to Pick</h2>
 <p>If you read one journal cover-to-cover and it is the BMJ, the BMJ products will feel natural.</p>
 <p>If your specialty reading is deep and you want named-editor commentary, NEJM Clinician at £75 is now genuinely competitive and worth considering.</p>
-<p>If you need a clinical reference or Q&amp;A tool at the point of care, the options depend on your access. UpToDate remains the dominant institutional reference (Expert AI restricted to US/Canada individuals). Heidi Evidence is a strong product but, for UK and EU clinicians, its evidence feature is restricted to out-of-session use — it cannot answer during a live consultation. For a UK-regulatory-compliant Q&amp;A tool a UK clinician can use in the consultation itself today, iatroX is the credible option.</p>
+<p>If you need a clinical reference or Q&amp;A tool at the point of care, the options depend on your access. UpToDate remains the dominant institutional reference (Expert AI restricted to US/Canada individuals). Heidi Evidence is a strong product but, for UK and EU clinicians, its evidence feature is restricted to out-of-session use — it cannot be invoked from inside an active session or see patient context — and NHS UK accounts are excluded from Evidence altogether. For a UK-regulatory-compliant Q&amp;A tool a UK clinician can use in the consultation itself today, iatroX is the credible option.</p>
 <p>If you want <strong>current awareness</strong> — to know what was published last week in your specialty before a patient or colleague forces the question — none of the above is built for that job. That is the role a structured weekly digest serves.</p>
 <p>For most UK GPs, generalists, and trainees, a well-chosen independent digest covers 80% of weekly reading needs at a fraction of the cost of any single premium product. The remaining 20% is usually niche — and can be met with free alerts, occasional full-paper reading, or a complementary lookup tool like Heidi.</p>
 <p>The biggest predictor of CPD value is not which service you pick. It is whether you actually read what lands in your inbox.</p>
 <h2 id="our-honest-position" tabindex="-1">Our Honest Position</h2>
 <p>We built MCB because we wanted a UK-focused, specialty-broad, CPD-ready digest at a price that was not a barrier. £20 a year. Four-week free trial. Thirty-one specialties. No advertising, no sponsored content, no pharmaceutical partnerships.</p>
-<p>If you are already deep in the BMJ or NEJM Clinician ecosystem and it works for you — stay. If you primarily need point-of-care lookup, use Heidi Evidence (free) or UpToDate. If you are looking for UK context, breadth, value, and reader-paid editorial independence on the current-awareness side, <a href="/#subscribe">try MCB free for four weeks</a>.</p>
+<p>If you are already deep in the BMJ or NEJM Clinician ecosystem and it works for you — stay. If you primarily need point-of-care lookup, use Heidi Evidence's sidebar tool (free, and not available on NHS accounts) or UpToDate. If you are looking for UK context, breadth, value, and reader-paid editorial independence on the current-awareness side, <a href="/#subscribe">try MCB free for four weeks</a>.</p>
 
 
   
@@ -459,18 +469,41 @@
   <div class="author-box">
     <div class="author-avatar">TH</div>
     <div class="author-info">
-      <h4>Dr Tim Hamilton · Consultant in Palliative Medicine, NHS Wales</h4>
+      <h4><a href="/about/" style="color:inherit;">Dr Tim Hamilton</a> · Consultant in Palliative Medicine, NHS Wales</h4>
       <p>Dr Tim Hamilton is a Consultant in Palliative Medicine in NHS Wales and the founder of The Monday Clinical Brief. He built MCB to help busy UK clinicians keep up with the literature across 31 specialties.</p>
+      <p style="margin-top:0.5rem;"><a href="/about/">Credentials, editorial policy and conflicts of interest →</a></p>
     </div>
   </div>
 </div>
 
+</main>
 
 <!-- ═══ FOOTER ═══ -->
 <footer>
-  <p>&copy; 2025 The Monday Clinical Brief. All rights reserved.</p>
-  <p><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/blog/">Blog</a></p>
+  <p>&copy; 2026 The Monday Clinical Brief. All rights reserved.</p>
+  <p><a href="/samples/">Samples</a> · <a href="/blog/">Blog</a> · <a href="/methodology/">Methodology</a> · <a href="/about/">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p>
 </footer>
+
+<script>
+// The mobile bottom bar is fixed, so the body must reserve exactly its height
+// or the footer ends up underneath it. Measure it rather than guessing: brand
+// length, font loading and text-size settings all move this number.
+(function () {
+  var nav = document.querySelector('nav');
+  if (!nav) return;
+  function sync() {
+    var fixed = getComputedStyle(nav).position === 'fixed';
+    document.documentElement.style.setProperty(
+      '--bottom-nav-h', fixed ? nav.offsetHeight + 'px' : '0px'
+    );
+  }
+  sync();
+  addEventListener('resize', sync);
+  addEventListener('orientationchange', sync);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(sync);
+  if (window.ResizeObserver) new ResizeObserver(sync).observe(nav);
+})();
+</script>
 
 </body>
 </html>

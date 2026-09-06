@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How we choose journals and write summaries — The Monday Clinical Brief</title>
+<meta name="description" content="The journals we monitor in every specialty, how articles are selected from PubMed, how each summary is generated, and what we do when we get something wrong.">
+<link rel="canonical" href="https://mondayclinicalbrief.co.uk/methodology/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="How we choose journals and write summaries">
+<meta property="og:description" content="The journals we monitor in every specialty, how articles are selected from PubMed, how each summary is generated, and what we do when we get something wrong.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://mondayclinicalbrief.co.uk/methodology/">
+<meta property="og:site_name" content="The Monday Clinical Brief">
+<meta property="og:image" content="https://mondayclinicalbrief.co.uk/assets/brand/mcb-og-1200x630-v2.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Monday Clinical Brief — how we choose journals and write summaries">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How we choose journals and write summaries">
+<meta name="twitter:description" content="The journals we monitor in every specialty, how articles are selected from PubMed, how each summary is generated, and what we do when we get something wrong.">
+<meta name="twitter:image" content="https://mondayclinicalbrief.co.uk/assets/brand/mcb-og-1200x630-v2.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --charcoal: #1c1c1c;
+    --cream: #f7f5f0;
+    --warm-white: #fdfcf9;
+    --sage: #5a7a6a;
+    --sage-light: #e8efeb;
+    --sage-deep: #3d5a4c;
+    --gold: #c4994c;
+    --gold-light: #f5edd8;
+    --text: #3a3a38;
+    --text-muted: #7a7a76;
+    --border: #e2dfd8;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Figtree', sans-serif; color: var(--text); background: var(--warm-white); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; background: rgba(247,245,240,0.9); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(226,223,216,0.5); }
+  .nav-brand { font-family: 'Instrument Serif', serif; font-size: 1.8rem; font-weight: 700; color: var(--charcoal); text-decoration: none; letter-spacing: -0.02em; }
+  .nav-links { display: flex; gap: 1.5rem; align-items: center; }
+  .nav-links a { font-size: 0.85rem; color: var(--text-muted); text-decoration: none; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--sage-deep); }
+  .nav-cta { background: var(--sage-deep); color: white !important; padding: 0.5rem 1.25rem; border-radius: 40px; font-size: 0.85rem; }
+  .nav-cta:hover { background: var(--charcoal); }
+
+  .breadcrumb { padding: 6rem 2rem 0; max-width: 820px; margin: 0 auto; }
+  .breadcrumb ol { list-style: none; display: flex; flex-wrap: wrap; gap: 0.25rem; font-size: 0.8rem; color: var(--text-muted); }
+  .breadcrumb ol li::after { content: '/'; margin-left: 0.4rem; opacity: 0.4; }
+  .breadcrumb ol li:last-child::after { content: ''; }
+  .breadcrumb a { color: var(--sage); text-decoration: none; }
+  .breadcrumb a:hover { text-decoration: underline; }
+
+  .page-hero { padding: 2.5rem 2rem 1rem; max-width: 820px; margin: 0 auto; }
+  .page-hero h1 { font-family: 'Instrument Serif', serif; font-size: clamp(2rem, 4.5vw, 2.8rem); font-weight: 400; color: var(--charcoal); line-height: 1.2; margin-bottom: 0.75rem; }
+  .page-hero .standfirst { color: var(--text-muted); font-size: 1.05rem; }
+
+  .prose { max-width: 820px; margin: 0 auto; padding: 1rem 2rem 3rem; }
+  .prose h2 { font-family: 'Instrument Serif', serif; font-size: 1.6rem; font-weight: 400; color: var(--charcoal); margin: 2.5rem 0 0.75rem; }
+  .prose h3 { font-size: 1rem; font-weight: 600; color: var(--charcoal); margin: 1.5rem 0 0.4rem; }
+  .prose p { margin-bottom: 1rem; }
+  .prose ul { margin: 0 0 1rem 1.25rem; }
+  .prose li { margin-bottom: 0.4rem; }
+  .prose a { color: var(--sage-deep); }
+
+  .callout { background: var(--sage-light); border-left: 3px solid var(--sage); border-radius: 0 8px 8px 0; padding: 1.25rem 1.5rem; margin: 1.5rem 0; font-size: 0.95rem; }
+  .callout strong { display: block; color: var(--sage-deep); margin-bottom: 0.3rem; }
+
+  .panel-controls { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; margin: 1.25rem 0; }
+  .panel-filter { flex: 1 1 260px; padding: 0.7rem 1rem; font-family: 'Figtree', sans-serif; font-size: 0.95rem; color: var(--text); background: white; border: 1px solid var(--border); border-radius: 8px; }
+  .panel-filter:focus { border-color: var(--sage); }
+  .panel-count { font-size: 0.85rem; color: var(--text-muted); }
+
+  .panel { border: 1px solid var(--border); border-radius: 8px; background: white; margin-bottom: 0.6rem; overflow: hidden; }
+  .panel > summary { cursor: pointer; padding: 0.9rem 1.25rem; font-weight: 600; font-size: 0.95rem; color: var(--charcoal); list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+  .panel > summary::-webkit-details-marker { display: none; }
+  .panel > summary::after { content: '+'; color: var(--sage); font-weight: 400; font-size: 1.2rem; flex-shrink: 0; }
+  .panel[open] > summary::after { content: '−'; }
+  .panel > summary:hover { background: var(--sage-light); }
+  .panel ol { margin: 0; padding: 0 1.25rem 1rem 2.6rem; }
+  .panel li { font-size: 0.92rem; color: var(--text); margin-bottom: 0.25rem; }
+  .panel .panel-foot { padding: 0 1.25rem 1rem; font-size: 0.85rem; }
+  .panel .panel-foot a { color: var(--sage); }
+
+  .cta-box { max-width: 820px; margin: 0 auto 3rem; padding: 2rem; text-align: center; background: var(--cream); border-radius: 8px; }
+  .cta-box h2 { font-family: 'Instrument Serif', serif; font-size: 1.5rem; font-weight: 400; color: var(--charcoal); margin-bottom: 0.5rem; }
+  .cta-box p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.25rem; }
+  .btn-primary { display: inline-block; background: var(--sage-deep); color: white; text-decoration: none; padding: 0.75rem 2rem; border-radius: 60px; font-weight: 600; font-size: 0.95rem; transition: all 0.3s ease; }
+  .btn-primary:hover { background: var(--charcoal); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
+
+  footer { padding: 3rem 2rem; text-align: center; border-top: 1px solid var(--border); }
+  footer p { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+  footer a { color: var(--sage); text-decoration: none; }
+
+  a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible, summary:focus-visible {
+    outline: 3px solid var(--sage-deep); outline-offset: 2px; border-radius: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+  }
+
+  @media (max-width: 640px) {
+    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); align-items: center; gap: 0.75rem; }
+    .nav-brand { font-size: 0.9rem; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+    .nav-cta { flex-shrink: 0; }
+    .nav-links a:not(.nav-cta) { display: none; }
+    body { padding-bottom: calc(var(--bottom-nav-h, 64px) + env(safe-area-inset-bottom, 0px)); }
+    .breadcrumb { padding-top: 2rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-brand">The Monday Clinical Brief</a>
+  <div class="nav-links">
+    <a href="/samples/">Samples</a>
+    <a href="/blog/">Blog</a>
+    <a href="/#how">How it works</a>
+    <a href="/#subscribe" class="nav-cta">Start free trial</a>
+  </div>
+</nav>
+
+<main id="main">
+
+<div class="breadcrumb" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="/">Home</a></li>
+    <li>Methodology</li>
+  </ol>
+</div>
+
+<div class="page-hero">
+  <h1>How we choose journals and write summaries</h1>
+  <p class="standfirst">Every claim we make about coverage is on this page. The journals we watch in each specialty, how articles reach your digest, how each summary is written, and what happens when we get one wrong.</p>
+</div>
+
+<div class="prose">
+
+  <h2>The journals we monitor</h2>
+  <p>Each specialty has a fixed panel of five journals. We monitor those five for every new article, every week. We do not sample, rank, or pick out the interesting ones — if a paper appears in your panel and has an abstract, it reaches your digest.</p>
+  <p>That means the number of articles varies week to week. A quiet week in Ophthalmology might bring four papers. A busy week in Cardiology might bring fifty. It also means some weeks a journal in your panel publishes nothing at all, so fewer than five journals appear in that Monday's digest. The panel has not changed; that journal simply had nothing new.</p>
+
+  <div class="panel-controls">
+    <label for="panel-filter" class="visually-hidden" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;">Filter specialties</label>
+    <input type="search" id="panel-filter" class="panel-filter" placeholder="Filter specialties…" autocomplete="off">
+    <span class="panel-count" id="panel-count" aria-live="polite">31 specialties</span>
+  </div>
+
+  <div id="panel-list">
+    <details class="panel" data-name="acute medicine">
+      <summary>Acute Medicine</summary>
+      <ol>
+        <li>The BMJ</li>
+        <li>European Journal of Internal Medicine</li>
+        <li>Journal of Hospital Medicine</li>
+        <li>American Journal of Medicine</li>
+        <li>Internal and Emergency Medicine</li>
+      </ol>
+      <div class="panel-foot"><a href="/samples/acute-medicine/">See a real Acute Medicine digest →</a></div>
+    </details>
+    <details class="panel" data-name="anaesthetics">
+      <summary>Anaesthetics</summary>
+      <ol>
+        <li>British Journal of Anaesthesia</li>
+        <li>Anaesthesia</li>
+        <li>Anesthesiology</li>
+        <li>European Journal of Anaesthesiology</li>
+        <li>Journal of Clinical Anesthesia</li>
+      </ol>
+      <div class="panel-foot"><a href="/samples/anaesthetics/">See a real Anaesthetics digest →</a></div>
+    </details>
+    <details class="panel" data-name="cardiology">
+      <summary>Cardiology</summary>
+      <ol>
+        <li>Journal of the American College of Cardiology</li>
+        <li>Circulation</li>
+        <li>European Heart Journal</li>
+        <li>JAMA Cardiology</li>
+        <li>Heart</li>
+      </ol>
+      <div class="panel-foot"><a href="/samples/cardiology/">See a real Cardiology digest →</a></div>
+    </details>
+    <details class="panel" data-name="cardiothoracic surgery">
+      <summary>Cardiothoracic Surgery</summary>
+      <ol>
+        <li>The Journal of Thoracic and Cardiovascular Surgery</li>
+        <li>The Annals of Thoracic Surgery</li>
+        <li>European Journal of Cardio-Thoracic Surgery</li>
+        <li>Interdisciplinary CardioVascular and Thoracic Surgery</li>
+        <li>The Journal of Heart and Lung Transplantation</li>
+      </ol>
+      <div class="panel-foot"><a href="/samples/cardiothoracic-surgery/">See a real Cardiothoracic Surgery digest →</a></div>
+    </details>
+    <details class="panel" data-name="dermatology">
+      <summary>Dermatology</summary>
+      <ol>
+        <li>Journal of the American Academy of Dermatology</li>
+        <li>British Journal of Dermatology</li>
+        <li>JAMA Dermatology</li>
+        <li>Journal of Investigative Dermatology</li>
+        <li>Journal of the European Academy of Dermatology and Venereology</li>
+      </ol>
+      <div class="panel-foot"><a href="/samples/dermatology/">See a real Dermatology digest →</a></div>
+    </details>
+    <details class="panel" data-name="emergency medicine">
+      <summary>Emergency Medicine</summary>
+      <ol>
+        <li>Annals of Emergency Medicine</li>
+        <li>Resuscitation</li>
+        <li>Emergency Medicine Journal</li>
+        <li>Academic Emergency Medicine</li>
+        <li>American Journal of Emergency Medicine</li>
+      </ol>
+      <div class="panel-foot"><a href="/samples/emergency-medicine/">See a real Emergency Medicine digest →</a></div>
+    </details>
+    <details class="panel" data-name="endocrinology">
+      <summary>Endocrinology</summary>
+      <ol>
+        <li>The Lancet Diabetes &amp; Endocrinology</li>
+        <li>Diabetes Care</li>
+        <li>The Journal of Clinical Endocrinology &amp; Metabolism</li>
+        <li>Diabetologia</li>
+        <li>European Journal of Endocrinology</li>
+      </ol>
+      <div class="panel-foot"><a href="/samples/endocrinology/">See a real Endocrinology digest →</a></div>
+    </details>
+    <details class="panel" data-name="gastroenterology">
+      <summary>Gastroenterology</summary>
+      <ol>
+        <li>Gastroenterology</li>
+        <li>Gut</li>
+        <li>Journal of Hepatology</li>
+        <li>The Lancet Gastroenterology &amp; Hepatology</li>
+        <li>American Journal of Gastroenterology</li>
+      </ol>
+      <div class="panel-foot"><a href="/samples/gastroenterology/">See a real Gastroenterology digest →</a></div>
+    </details>
+    <details class="panel" data-name="general practice / family medicine">
+      <summary>General Practice / Family Medicine</summary>
+      <ol>
+        <li>The BMJ</li>
+        <li>British Journal of General Practice</li>
+        <li>Annals of Family Medicine</li>
+        <li>Journal of General Internal Medicine</li>
+        <li>Family Practice</li>
+      </ol>
+      <div class="panel-foot"><a href="/samples/general-practice/">See a real General Practice / Family Medicine digest →</a></div>
+    </details>
+    <details class="panel" data-name="general surgery">
+      <summary>General Surgery</summary>
+      <ol>
+        <li>Annals of Surgery</li>
+        <li>JAMA Surgery</li>
+        <li>British Journal of Surgery</li>
+        <li>Journal of the American College of Surgeons</li>
+        <li>Surgical Endoscopy</li>
+      </ol>
+      <div class="panel-foot"><a href="/samples/general-surgery/">See a real General Surgery digest →</a></div>
+    </details>
+    <details class="panel" data-name="geriatric medicine">
+      <summary>Geriatric Medicine</summary>
+      <ol>
+        <li>Journal of the American Geriatrics Society</li>
+        <li>Age and Ageing</li>
+        <li>The Lancet Healthy Longevity</li>
+        <li>The Journals of Gerontology: Series A</li>
+        <li>European Geriatric Medicine</li>
+      </ol>
+      <div class="panel-foot"><a href="/samples/geriatric-medicine/">See a real Geriatric Medicine digest →</a></div>
+    </details>
+    <details class="panel" data-name="haematology">
+      <summary>Haematology</summary>
+      <ol>
+        <li>Blood</li>
+        <li>The Lancet Haematology</li>
+        <li>Leukemia</li>
+        <li>Haematologica</li>
+        <li>British Journal of Haematology</li>
+      </ol>
+      <div class="panel-foot"><a href="/samples/haematology/">See a real Haematology digest →</a></div>
+    </details>
+    <details class="panel" data-name="infectious disease">
+      <summary>Infectious Disease</summary>
+      <ol>
+        <li>The Lancet Infectious Diseases</li>
+        <li>Clinical Infectious Diseases</li>
+        <li>Journal of Infectious Diseases</li>
+        <li>Emerging Infectious Diseases</li>
+        <li>Journal of Infection</li>
+      </ol>
+      <div class="panel-foot"><a href="/samples/infectious-disease/">See a real Infectious Disease digest →</a></div>
+    </details>
+    <details class="panel" data-name="intensive care / critical care">
+      <summary>Intensive Care / Critical Care</summary>
+      <ol>
+        <li>Intensive Care Medicine</li>
+        <li>Critical Care</li>
+        <li>Critical Care Medicine</li>
+        <li>Annals of Intensive Care</li>
+        <li>Journal of Critical Care</li>
+      </ol>
+      <div class="panel-foot"><a href="/samples/intensive-care/">See a real Intensive Care / Critical Care digest →</a></div>
+    </details>
+    <details class="panel" data-name="nephrology / renal medicine">
+      <summary>Nephrology / Renal Medicine</summary>
+      <ol>
+        <li>Journal of the American Society of Nephrology</li>
+        <li>Kidney International</li>
+        <li>American Journal of Kidney Diseases</li>
+        <li>Clinical Journal of the American Society of Nephrology</li>
+        <li>Nephrology Dialysis Transplantation</li>
+      </ol>
+      <div class="panel-foot"><a href="/samples/nephrology/">See a real Nephrology / Renal Medicine digest →</a></div>
+    </details>
+    <details class="panel" data-name="neurology">
+      <summary>Neurology</summary>
+      <ol>
+        <li>The Lancet Neurology</li>
+        <li>Brain</li>
+        <li>JAMA Neurology</li>
+        <li>Annals of Neurology</li>
+        <li>Neurology</li>
+      </ol>
+      <div class="panel-foot"><a href="/samples/neurology/">See a real Neurology digest →</a></div>
+    </details>
+    <details class="panel" data-name="neurosurgery">
+      <summary>Neurosurgery</summary>
+      <ol>
+        <li>Journal of Neurosurgery</li>
+        <li>Neurosurgery</li>
+        <li>Acta Neurochirurgica</li>
+        <li>World Neurosurgery</li>
+        <li>Journal of Neurosurgery: Spine</li>
+      </ol>
+      <div class="panel-foot"><a href="/samples/neurosurgery/">See a real Neurosurgery digest →</a></div>
+    </details>
+    <details class="panel" data-name="obstetrics &amp; gynaecology">
+      <summary>Obstetrics &amp; Gynaecology</summary>
+      <ol>
+        <li>Human Reproduction Update</li>
+        <li>American Journal of Obstetrics and Gynecology</li>
+        <li>Obstetrics &amp; Gynecology</li>
+        <li>Ultrasound in Obstetrics &amp; Gynecology</li>
+        <li>BJOG</li>
+      </ol>
+      <div class="panel-foot"><a href="/samples/obstetrics-gynaecology/">See a real Obstetrics &amp; Gynaecology digest →</a></div>
+    </details>
+    <details class="panel" data-name="oncology">
+      <summary>Oncology</summary>
+      <ol>
+        <li>JAMA Oncology</li>
+        <li>Journal of Clinical Oncology</li>
+        <li>The Lancet Oncology</li>
+        <li>Annals of Oncology</li>
+        <li>European Journal of Cancer</li>
+      </ol>
+      <div class="panel-foot"><a href="/samples/oncology/">See a real Oncology digest →</a></div>
+    </details>
+    <details class="panel" data-name="ophthalmology">
+      <summary>Ophthalmology</summary>
+      <ol>
+        <li>Ophthalmology</li>
+        <li>JAMA Ophthalmology</li>
+        <li>American Journal of Ophthalmology</li>
+        <li>British Journal of Ophthalmology</li>
+        <li>Eye</li>
+      </ol>
+      <div class="panel-foot"><a href="/samples/ophthalmology/">See a real Ophthalmology digest →</a></div>
+    </details>
+    <details class="panel" data-name="orthopaedic surgery">
+      <summary>Orthopaedic Surgery</summary>
+      <ol>
+        <li>The Journal of Bone &amp; Joint Surgery</li>
+        <li>The Bone &amp; Joint Journal</li>
+        <li>Clinical Orthopaedics and Related Research</li>
+        <li>The American Journal of Sports Medicine</li>
+        <li>Journal of Arthroplasty</li>
+      </ol>
+      <div class="panel-foot"><a href="/samples/orthopaedic-surgery/">See a real Orthopaedic Surgery digest →</a></div>
+    </details>
+    <details class="panel" data-name="paediatrics">
+      <summary>Paediatrics</summary>
+      <ol>
+        <li>Pediatrics</li>
+        <li>JAMA Pediatrics</li>
+        <li>The Lancet Child &amp; Adolescent Health</li>
+        <li>The Journal of Pediatrics</li>
+        <li>Archives of Disease in Childhood</li>
+      </ol>
+      <div class="panel-foot"><a href="/samples/paediatrics/">See a real Paediatrics digest →</a></div>
+    </details>
+    <details class="panel" data-name="palliative care">
+      <summary>Palliative Care</summary>
+      <ol>
+        <li>Journal of Pain and Symptom Management</li>
+        <li>Palliative Medicine</li>
+        <li>Journal of Palliative Medicine</li>
+        <li>BMJ Supportive &amp; Palliative Care</li>
+        <li>Supportive Care in Cancer</li>
+      </ol>
+      <div class="panel-foot"><a href="/samples/palliative-care/">See a real Palliative Care digest →</a></div>
+    </details>
+    <details class="panel" data-name="pathology">
+      <summary>Pathology</summary>
+      <ol>
+        <li>Modern Pathology</li>
+        <li>The American Journal of Surgical Pathology</li>
+        <li>Journal of Pathology</li>
+        <li>The American Journal of Pathology</li>
+        <li>Histopathology</li>
+      </ol>
+      <div class="panel-foot"><a href="/samples/pathology/">See a real Pathology digest →</a></div>
+    </details>
+    <details class="panel" data-name="plastic &amp; reconstructive surgery">
+      <summary>Plastic &amp; Reconstructive Surgery</summary>
+      <ol>
+        <li>Plastic and Reconstructive Surgery</li>
+        <li>Aesthetic Surgery Journal</li>
+        <li>Journal of Plastic, Reconstructive &amp; Aesthetic Surgery</li>
+        <li>Annals of Plastic Surgery</li>
+        <li>PRS Global Open</li>
+      </ol>
+      <div class="panel-foot"><a href="/samples/plastic-surgery/">See a real Plastic &amp; Reconstructive Surgery digest →</a></div>
+    </details>
+    <details class="panel" data-name="psychiatry">
+      <summary>Psychiatry</summary>
+      <ol>
+        <li>British Journal of Psychiatry</li>
+        <li>The Lancet Psychiatry</li>
+        <li>JAMA Psychiatry</li>
+        <li>American Journal of Psychiatry</li>
+        <li>Psychological Medicine</li>
+      </ol>
+      <div class="panel-foot"><a href="/samples/psychiatry/">See a real Psychiatry digest →</a></div>
+    </details>
+    <details class="panel" data-name="public health">
+      <summary>Public Health</summary>
+      <ol>
+        <li>The Lancet Public Health</li>
+        <li>American Journal of Public Health</li>
+        <li>Bulletin of the World Health Organization</li>
+        <li>European Journal of Public Health</li>
+        <li>BMC Public Health</li>
+      </ol>
+      <div class="panel-foot"><a href="/samples/public-health/">See a real Public Health digest →</a></div>
+    </details>
+    <details class="panel" data-name="radiology">
+      <summary>Radiology</summary>
+      <ol>
+        <li>Radiology</li>
+        <li>European Radiology</li>
+        <li>American Journal of Roentgenology</li>
+        <li>Clinical Radiology</li>
+        <li>British Journal of Radiology</li>
+      </ol>
+      <div class="panel-foot"><a href="/samples/radiology/">See a real Radiology digest →</a></div>
+    </details>
+    <details class="panel" data-name="respiratory medicine">
+      <summary>Respiratory Medicine</summary>
+      <ol>
+        <li>American Journal of Respiratory and Critical Care Medicine</li>
+        <li>The Lancet Respiratory Medicine</li>
+        <li>European Respiratory Journal</li>
+        <li>Chest</li>
+        <li>Thorax</li>
+      </ol>
+      <div class="panel-foot"><a href="/samples/respiratory/">See a real Respiratory Medicine digest →</a></div>
+    </details>
+    <details class="panel" data-name="rheumatology">
+      <summary>Rheumatology</summary>
+      <ol>
+        <li>Annals of the Rheumatic Diseases</li>
+        <li>Arthritis &amp; Rheumatology</li>
+        <li>Nature Reviews Rheumatology</li>
+        <li>Rheumatology</li>
+        <li>The Lancet Rheumatology</li>
+      </ol>
+      <div class="panel-foot"><a href="/samples/rheumatology/">See a real Rheumatology digest →</a></div>
+    </details>
+    <details class="panel" data-name="urology">
+      <summary>Urology</summary>
+      <ol>
+        <li>European Urology</li>
+        <li>The Journal of Urology</li>
+        <li>BJU International</li>
+        <li>Urology</li>
+        <li>World Journal of Urology</li>
+      </ol>
+      <div class="panel-foot"><a href="/samples/urology/">See a real Urology digest →</a></div>
+    </details>
+  </div>
+
+  <h3>Dental panels</h3>
+  <p>Dentistry is sold separately from the 31 medical specialties. The same method applies.</p>
+  <div id="panel-list-dental">
+    <details class="panel" data-name="dental hygiene &amp; therapy">
+      <summary>Dental Hygiene &amp; Therapy</summary>
+      <ol>
+        <li>International Journal of Dental Hygiene</li>
+        <li>Journal of Dental Hygiene</li>
+        <li>Community Dentistry and Oral Epidemiology</li>
+        <li>Caries Research</li>
+        <li>Special Care in Dentistry</li>
+      </ol>
+      <div class="panel-foot"><a href="/samples/dental-hygiene-therapy/">See a real Dental Hygiene &amp; Therapy digest →</a></div>
+    </details>
+    <details class="panel" data-name="dentistry">
+      <summary>Dentistry</summary>
+      <ol>
+        <li>British Dental Journal</li>
+        <li>Journal of Dentistry</li>
+        <li>Clinical Oral Investigations</li>
+        <li>International Dental Journal</li>
+        <li>Journal of Oral Rehabilitation</li>
+      </ol>
+      <div class="panel-foot"><a href="/samples/dentistry/">See a real Dentistry digest →</a></div>
+    </details>
+    <details class="panel" data-name="oral &amp; maxillofacial surgery">
+      <summary>Oral &amp; Maxillofacial Surgery</summary>
+      <ol>
+        <li>International Journal of Oral and Maxillofacial Surgery</li>
+        <li>British Journal of Oral and Maxillofacial Surgery</li>
+        <li>Journal of Oral and Maxillofacial Surgery</li>
+        <li>Journal of Cranio-Maxillofacial Surgery</li>
+        <li>Oral Surgery, Oral Medicine, Oral Pathology and Oral Radiology</li>
+      </ol>
+      <div class="panel-foot"><a href="/samples/oral-surgery/">See a real Oral &amp; Maxillofacial Surgery digest →</a></div>
+    </details>
+    <details class="panel" data-name="orthodontics">
+      <summary>Orthodontics</summary>
+      <ol>
+        <li>American Journal of Orthodontics and Dentofacial Orthopedics</li>
+        <li>European Journal of Orthodontics</li>
+        <li>The Angle Orthodontist</li>
+        <li>Orthodontics &amp; Craniofacial Research</li>
+        <li>Journal of Orthodontics</li>
+      </ol>
+      <div class="panel-foot"><a href="/samples/orthodontics/">See a real Orthodontics digest →</a></div>
+    </details>
+  </div>
+
+  <h2>How the panels were chosen</h2>
+  <p>Panels were selected by a practising NHS consultant, not by an algorithm. For each specialty we started from the journals a UK clinician in that field would expect to be told about: the leading general medical journal where it carries specialty-relevant work, the main UK or European specialty journal, and the highest-impact international titles that regularly publish practice-changing work for that specialty.</p>
+  <p>We favoured journals that publish original clinical research over those that are mainly review or educational. We favoured titles indexed in PubMed, because that is where our coverage comes from. Where a specialty had two comparable candidates, we chose the one more likely to change UK practice.</p>
+  <p>We review the panels annually, and sooner if a subscriber tells us we are missing something obvious in their field. If you think your panel is wrong, <a href="mailto:info@mondayclinicalbrief.co.uk">tell us</a> — that feedback has changed panels before.</p>
+
+  <h2>Which articles are included</h2>
+  <p>We query PubMed for every article published in your panel's five journals, matched by ISSN. We look back over a rolling ten-day window each week, which overlaps deliberately so nothing falls through the gap between two Mondays. Articles we have already sent you are filtered out by DOI, so an overlap never means a repeat.</p>
+  <p>One filter applies: the article must have an abstract. Beyond that we do not exclude by article type. Original research, systematic reviews, guidelines, editorials, commentary and correspondence all reach you if they carry an abstract and appeared in your panel that week. The summary names the study type at the top, so you can see in a second whether you are reading an RCT or an editorial.</p>
+  <p>Articles without an abstract — most letters, many news items, some errata — are not included, because there is nothing substantive to summarise.</p>
+
+  <h2>How each summary is written</h2>
+  <p>Summaries are generated by a large language model (Anthropic's Claude) working from the PubMed record: title, authors, journal, and abstract. Every summary follows the same fixed structure:</p>
+  <ul>
+    <li><strong>Study type</strong> — what kind of study this is</li>
+    <li><strong>Key question</strong> — the clinical question in one sentence</li>
+    <li><strong>Key findings</strong> — two or three points, with the actual numbers, effect sizes and confidence intervals where the abstract gives them</li>
+    <li><strong>Clinical relevance</strong> — why it matters in UK practice</li>
+    <li><strong>Limitations</strong> — the most important caveat</li>
+  </ul>
+  <p>Every article carries a direct DOI link to the source. We expect you to follow it before anything reaches a patient.</p>
+
+  <div class="callout">
+    <strong>The limitation that matters most</strong>
+    Summaries are written from the abstract, not the full text. An abstract can overstate a finding, omit the harm data, or bury the population the trial actually recruited. Our summary inherits whatever the abstract got wrong. This is why every digest links straight to the paper, and why we say plainly that a summary is a prompt to read, not a substitute for reading.
+  </div>
+
+  <h2>Quality checks</h2>
+  <p>Three checks run on every digest. The model is instructed to summarise only what the abstract states and not to infer beyond it. Summaries that come back empty or malformed are held rather than sent, so a failed generation never reaches you as a blank entry. And the digest that lands in your inbox is the same one published on our <a href="/samples/">samples pages</a> — the summaries on this site are real sends, not marketing copy written separately.</p>
+  <p>We do not clinically peer-review each summary before it sends. With this volume, across 35 panels, no one could and still deliver on Monday morning. We would rather say that than imply a review process we do not run.</p>
+
+  <h2>Corrections</h2>
+  <p>If a summary misrepresents a paper, email <a href="mailto:info@mondayclinicalbrief.co.uk">info@mondayclinicalbrief.co.uk</a> and tell us which article. We will check it against the source.</p>
+  <p>If we got it wrong, we correct it in the next digest to that specialty, naming the article and what was wrong, and we fix the published sample page if that week is on the site. We do not quietly edit and move on. If the error came from the abstract rather than from us, we will say that too.</p>
+
+  <h2>What this is not</h2>
+  <p>The Monday Clinical Brief is an awareness service. It tells you what was published in your field last week and gives you enough structure to decide what to read. It is not a guideline, not a systematic review, and not clinical advice. Read the paper before you act on it, and apply your own judgement — the same as you would with any journal alert.</p>
+
+</div>
+
+<div class="cta-box">
+  <h2>See the method in a real digest</h2>
+  <p>Every specialty has a recent digest published exactly as subscribers received it.</p>
+  <a href="/samples/" class="btn-primary">Browse sample digests →</a>
+</div>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 The Monday Clinical Brief. All rights reserved.</p>
+  <p><a href="/samples/">Samples</a> · <a href="/blog/">Blog</a> · <a href="/methodology/">Methodology</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p>
+</footer>
+
+<script>
+// Filter the specialty panels by name. Progressive enhancement: with JS off
+// every panel is already in the DOM and readable.
+(function () {
+  var input = document.getElementById('panel-filter');
+  var count = document.getElementById('panel-count');
+  if (!input) return;
+  var panels = Array.prototype.slice.call(
+    document.querySelectorAll('#panel-list .panel, #panel-list-dental .panel')
+  );
+  var medical = document.querySelectorAll('#panel-list .panel').length;
+  input.addEventListener('input', function () {
+    var q = this.value.trim().toLowerCase();
+    var shown = 0;
+    panels.forEach(function (p) {
+      var hit = !q || p.dataset.name.indexOf(q) !== -1;
+      p.hidden = !hit;
+      if (hit) shown++;
+    });
+    count.textContent = q
+      ? shown + (shown === 1 ? ' match' : ' matches')
+      : medical + ' specialties';
+  });
+})();
+
+// Measure the fixed mobile bottom bar so the body reserves its true height.
+(function () {
+  var nav = document.querySelector('nav');
+  if (!nav) return;
+  function sync() {
+    var fixed = getComputedStyle(nav).position === 'fixed';
+    document.documentElement.style.setProperty(
+      '--bottom-nav-h', fixed ? nav.offsetHeight + 'px' : '0px'
+    );
+  }
+  sync();
+  addEventListener('resize', sync);
+  addEventListener('orientationchange', sync);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(sync);
+  if (window.ResizeObserver) new ResizeObserver(sync).observe(nav);
+})();
+</script>
+
+</body>
+</html>

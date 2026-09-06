@@ -1,0 +1,391 @@
+{
+  "medical": [
+    {
+      "slug": "acute-medicine",
+      "name": "Acute Medicine",
+      "journals": [
+        "The BMJ",
+        "European Journal of Internal Medicine",
+        "Journal of Hospital Medicine",
+        "American Journal of Medicine",
+        "Internal and Emergency Medicine"
+      ]
+    },
+    {
+      "slug": "anaesthetics",
+      "name": "Anaesthetics",
+      "journals": [
+        "British Journal of Anaesthesia",
+        "Anaesthesia",
+        "Anesthesiology",
+        "European Journal of Anaesthesiology",
+        "Journal of Clinical Anesthesia"
+      ]
+    },
+    {
+      "slug": "cardiology",
+      "name": "Cardiology",
+      "journals": [
+        "Journal of the American College of Cardiology",
+        "Circulation",
+        "European Heart Journal",
+        "JAMA Cardiology",
+        "Heart"
+      ]
+    },
+    {
+      "slug": "cardiothoracic-surgery",
+      "name": "Cardiothoracic Surgery",
+      "journals": [
+        "The Journal of Thoracic and Cardiovascular Surgery",
+        "The Annals of Thoracic Surgery",
+        "European Journal of Cardio-Thoracic Surgery",
+        "Interdisciplinary CardioVascular and Thoracic Surgery",
+        "The Journal of Heart and Lung Transplantation"
+      ]
+    },
+    {
+      "slug": "dermatology",
+      "name": "Dermatology",
+      "journals": [
+        "Journal of the American Academy of Dermatology",
+        "British Journal of Dermatology",
+        "JAMA Dermatology",
+        "Journal of Investigative Dermatology",
+        "Journal of the European Academy of Dermatology and Venereology"
+      ]
+    },
+    {
+      "slug": "emergency-medicine",
+      "name": "Emergency Medicine",
+      "journals": [
+        "Annals of Emergency Medicine",
+        "Resuscitation",
+        "Emergency Medicine Journal",
+        "Academic Emergency Medicine",
+        "American Journal of Emergency Medicine"
+      ]
+    },
+    {
+      "slug": "endocrinology",
+      "name": "Endocrinology",
+      "journals": [
+        "The Lancet Diabetes & Endocrinology",
+        "Diabetes Care",
+        "The Journal of Clinical Endocrinology & Metabolism",
+        "Diabetologia",
+        "European Journal of Endocrinology"
+      ]
+    },
+    {
+      "slug": "gastroenterology",
+      "name": "Gastroenterology",
+      "journals": [
+        "Gastroenterology",
+        "Gut",
+        "Journal of Hepatology",
+        "The Lancet Gastroenterology & Hepatology",
+        "American Journal of Gastroenterology"
+      ]
+    },
+    {
+      "slug": "general-practice",
+      "name": "General Practice / Family Medicine",
+      "journals": [
+        "The BMJ",
+        "British Journal of General Practice",
+        "Annals of Family Medicine",
+        "Journal of General Internal Medicine",
+        "Family Practice"
+      ]
+    },
+    {
+      "slug": "general-surgery",
+      "name": "General Surgery",
+      "journals": [
+        "Annals of Surgery",
+        "JAMA Surgery",
+        "British Journal of Surgery",
+        "Journal of the American College of Surgeons",
+        "Surgical Endoscopy"
+      ]
+    },
+    {
+      "slug": "geriatric-medicine",
+      "name": "Geriatric Medicine",
+      "journals": [
+        "Journal of the American Geriatrics Society",
+        "Age and Ageing",
+        "The Lancet Healthy Longevity",
+        "The Journals of Gerontology: Series A",
+        "European Geriatric Medicine"
+      ]
+    },
+    {
+      "slug": "haematology",
+      "name": "Haematology",
+      "journals": [
+        "Blood",
+        "The Lancet Haematology",
+        "Leukemia",
+        "Haematologica",
+        "British Journal of Haematology"
+      ]
+    },
+    {
+      "slug": "infectious-disease",
+      "name": "Infectious Disease",
+      "journals": [
+        "The Lancet Infectious Diseases",
+        "Clinical Infectious Diseases",
+        "Journal of Infectious Diseases",
+        "Emerging Infectious Diseases",
+        "Journal of Infection"
+      ]
+    },
+    {
+      "slug": "intensive-care",
+      "name": "Intensive Care / Critical Care",
+      "journals": [
+        "Intensive Care Medicine",
+        "Critical Care",
+        "Critical Care Medicine",
+        "Annals of Intensive Care",
+        "Journal of Critical Care"
+      ]
+    },
+    {
+      "slug": "nephrology",
+      "name": "Nephrology / Renal Medicine",
+      "journals": [
+        "Journal of the American Society of Nephrology",
+        "Kidney International",
+        "American Journal of Kidney Diseases",
+        "Clinical Journal of the American Society of Nephrology",
+        "Nephrology Dialysis Transplantation"
+      ]
+    },
+    {
+      "slug": "neurology",
+      "name": "Neurology",
+      "journals": [
+        "The Lancet Neurology",
+        "Brain",
+        "JAMA Neurology",
+        "Annals of Neurology",
+        "Neurology"
+      ]
+    },
+    {
+      "slug": "neurosurgery",
+      "name": "Neurosurgery",
+      "journals": [
+        "Journal of Neurosurgery",
+        "Neurosurgery",
+        "Acta Neurochirurgica",
+        "World Neurosurgery",
+        "Journal of Neurosurgery: Spine"
+      ]
+    },
+    {
+      "slug": "obstetrics-gynaecology",
+      "name": "Obstetrics & Gynaecology",
+      "journals": [
+        "Human Reproduction Update",
+        "American Journal of Obstetrics and Gynecology",
+        "Obstetrics & Gynecology",
+        "Ultrasound in Obstetrics & Gynecology",
+        "BJOG"
+      ]
+    },
+    {
+      "slug": "oncology",
+      "name": "Oncology",
+      "journals": [
+        "JAMA Oncology",
+        "Journal of Clinical Oncology",
+        "The Lancet Oncology",
+        "Annals of Oncology",
+        "European Journal of Cancer"
+      ]
+    },
+    {
+      "slug": "ophthalmology",
+      "name": "Ophthalmology",
+      "journals": [
+        "Ophthalmology",
+        "JAMA Ophthalmology",
+        "American Journal of Ophthalmology",
+        "British Journal of Ophthalmology",
+        "Eye"
+      ]
+    },
+    {
+      "slug": "orthopaedic-surgery",
+      "name": "Orthopaedic Surgery",
+      "journals": [
+        "The Journal of Bone & Joint Surgery",
+        "The Bone & Joint Journal",
+        "Clinical Orthopaedics and Related Research",
+        "The American Journal of Sports Medicine",
+        "Journal of Arthroplasty"
+      ]
+    },
+    {
+      "slug": "paediatrics",
+      "name": "Paediatrics",
+      "journals": [
+        "Pediatrics",
+        "JAMA Pediatrics",
+        "The Lancet Child & Adolescent Health",
+        "The Journal of Pediatrics",
+        "Archives of Disease in Childhood"
+      ]
+    },
+    {
+      "slug": "palliative-care",
+      "name": "Palliative Care",
+      "journals": [
+        "Journal of Pain and Symptom Management",
+        "Palliative Medicine",
+        "Journal of Palliative Medicine",
+        "BMJ Supportive & Palliative Care",
+        "Supportive Care in Cancer"
+      ]
+    },
+    {
+      "slug": "pathology",
+      "name": "Pathology",
+      "journals": [
+        "Modern Pathology",
+        "The American Journal of Surgical Pathology",
+        "Journal of Pathology",
+        "The American Journal of Pathology",
+        "Histopathology"
+      ]
+    },
+    {
+      "slug": "plastic-surgery",
+      "name": "Plastic & Reconstructive Surgery",
+      "journals": [
+        "Plastic and Reconstructive Surgery",
+        "Aesthetic Surgery Journal",
+        "Journal of Plastic, Reconstructive & Aesthetic Surgery",
+        "Annals of Plastic Surgery",
+        "PRS Global Open"
+      ]
+    },
+    {
+      "slug": "psychiatry",
+      "name": "Psychiatry",
+      "journals": [
+        "British Journal of Psychiatry",
+        "The Lancet Psychiatry",
+        "JAMA Psychiatry",
+        "American Journal of Psychiatry",
+        "Psychological Medicine"
+      ]
+    },
+    {
+      "slug": "public-health",
+      "name": "Public Health",
+      "journals": [
+        "The Lancet Public Health",
+        "American Journal of Public Health",
+        "Bulletin of the World Health Organization",
+        "European Journal of Public Health",
+        "BMC Public Health"
+      ]
+    },
+    {
+      "slug": "radiology",
+      "name": "Radiology",
+      "journals": [
+        "Radiology",
+        "European Radiology",
+        "American Journal of Roentgenology",
+        "Clinical Radiology",
+        "British Journal of Radiology"
+      ]
+    },
+    {
+      "slug": "respiratory",
+      "name": "Respiratory Medicine",
+      "journals": [
+        "American Journal of Respiratory and Critical Care Medicine",
+        "The Lancet Respiratory Medicine",
+        "European Respiratory Journal",
+        "Chest",
+        "Thorax"
+      ]
+    },
+    {
+      "slug": "rheumatology",
+      "name": "Rheumatology",
+      "journals": [
+        "Annals of the Rheumatic Diseases",
+        "Arthritis & Rheumatology",
+        "Nature Reviews Rheumatology",
+        "Rheumatology",
+        "The Lancet Rheumatology"
+      ]
+    },
+    {
+      "slug": "urology",
+      "name": "Urology",
+      "journals": [
+        "European Urology",
+        "The Journal of Urology",
+        "BJU International",
+        "Urology",
+        "World Journal of Urology"
+      ]
+    }
+  ],
+  "dental": [
+    {
+      "slug": "dental-hygiene-therapy",
+      "name": "Dental Hygiene & Therapy",
+      "journals": [
+        "International Journal of Dental Hygiene",
+        "Journal of Dental Hygiene",
+        "Community Dentistry and Oral Epidemiology",
+        "Caries Research",
+        "Special Care in Dentistry"
+      ]
+    },
+    {
+      "slug": "dentistry",
+      "name": "Dentistry",
+      "journals": [
+        "British Dental Journal",
+        "Journal of Dentistry",
+        "Clinical Oral Investigations",
+        "International Dental Journal",
+        "Journal of Oral Rehabilitation"
+      ]
+    },
+    {
+      "slug": "oral-surgery",
+      "name": "Oral & Maxillofacial Surgery",
+      "journals": [
+        "International Journal of Oral and Maxillofacial Surgery",
+        "British Journal of Oral and Maxillofacial Surgery",
+        "Journal of Oral and Maxillofacial Surgery",
+        "Journal of Cranio-Maxillofacial Surgery",
+        "Oral Surgery, Oral Medicine, Oral Pathology and Oral Radiology"
+      ]
+    },
+    {
+      "slug": "orthodontics",
+      "name": "Orthodontics",
+      "journals": [
+        "American Journal of Orthodontics and Dentofacial Orthopedics",
+        "European Journal of Orthodontics",
+        "The Angle Orthodontist",
+        "Orthodontics & Craniofacial Research",
+        "Journal of Orthodontics"
+      ]
+    }
+  ]
+}

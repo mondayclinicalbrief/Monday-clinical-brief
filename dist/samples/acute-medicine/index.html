@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Acute Medicine Sample Digest — The Monday Clinical Brief</title>
-<meta name="description" content="See what Acute Medicine clinicians received in this Monday's digest: 26 new articles from The American journal of medicine, Internal and emergency medicine, European journal of internal medicine summarised every Monday by The Monday Clinical Brief.">
+<meta name="description" content="See what Acute Medicine clinicians received in this Monday's digest: 29 new articles from Internal and emergency medicine, The American journal of medicine, European journal of internal medicine summarised every Monday by The Monday Clinical Brief.">
 <link rel="canonical" href="https://mondayclinicalbrief.co.uk/samples/acute-medicine/">
 <meta property="og:title" content="Acute Medicine — Monday Clinical Brief Sample Digest">
-<meta property="og:description" content="26 new Acute Medicine papers summarised this week. Free 4-week trial.">
+<meta property="og:description" content="29 new Acute Medicine papers summarised this week. Free 4-week trial.">
 <meta property="og:url" content="https://mondayclinicalbrief.co.uk/samples/acute-medicine/">
 <meta property="og:type" content="article">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -89,9 +89,12 @@
   footer a { color: var(--sage); text-decoration: none; }
 
   @media (max-width: 640px) {
-    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; }
+    /* Fixed bottom bar — reserve its measured height, not a flat 60px. */
+    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; align-items: center; gap: 0.75rem; }
     .nav-links a:not(.nav-cta) { display: none; }
-    body { padding-bottom: 60px; }
+    .nav-brand { font-size: 0.9rem; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+    .nav-cta { flex-shrink: 0; }
+    body { padding-bottom: calc(var(--bottom-nav-h, 64px) + env(safe-area-inset-bottom, 0px)); }
     .page-header { padding: 3.5rem 1.5rem 2.5rem; }
     section { padding: 2rem 1.5rem 3.5rem; }
     .sample-card { padding: 1.5rem; }
@@ -106,24 +109,25 @@
 <nav>
   <a href="/" class="nav-brand">The Monday Clinical Brief</a>
   <div class="nav-links">
+    <a href="/samples/">Samples</a>
+    <a href="/blog/">Blog</a>
     <a href="/#how">How it works</a>
-    <a href="/#about">About</a>
     <a href="/?specialty=acute-medicine#subscribe" class="nav-cta">Start free trial</a>
   </div>
 </nav>
 
 <!-- ═══ HEADER ═══ -->
 <header class="page-header">
-  <div class="eyebrow">Sample Digest · Monday 29 June 2026</div>
+  <div class="eyebrow">Sample Digest · Monday 31 August 2026</div>
   <h1>A recent Acute Medicine digest,<br><em>as sent to subscribers</em></h1>
-  <p class="lede">This is the real Monday digest from Monday 29 June 2026. Showing the first 8 of 26 articles from that week — every new paper from the top journals in Acute Medicine.</p>
+  <p class="lede">This is the real Monday digest from Monday 31 August 2026. Showing the first 8 of 29 articles from that week — every new paper from the top 5 journals in Acute Medicine.</p>
   <div class="stat-bar">
-    <div class="stat"><strong>26</strong><span>articles that week</span></div>
-    <div class="stat"><strong>5</strong><span>journals covered</span></div>
+    <div class="stat"><strong>29</strong><span>articles that week</span></div>
+    <div class="stat"><strong>5</strong><span><a href="/methodology/">journals monitored</a></span></div>
     <div class="stat"><strong>£0</strong><span>for your first 4 weeks</span></div>
   </div>
   <div class="disclaimer">
-    <strong>Note:</strong> Summaries are AI-generated from publicly available PubMed abstracts. Always verify against the source article before clinical use.
+    <strong>Note:</strong> Summaries are AI-generated from publicly available PubMed abstracts. Always verify against the source article before clinical use. <a href="/methodology/">How we choose journals and write summaries →</a>
   </div>
 </header>
 
@@ -132,231 +136,231 @@
   <div class="container">
     <div class="sample-card">
       <div class="sample-badge">BMJ (Clinical research ed.)</div>
-      <h3>Assessing early effects of Australia&#39;s Social Media Minimum Age Act on adolescents&#39; social media use: observational study</h3>
-      <div class="sample-meta">Barnes C, Hall A, Mantach S et al. · 2026 Jun 24</div>
+      <h3>Prevalence of chronic traumatic encephalopathy at death in National Football League players: retrospective population based cohort study, 2008-21</h3>
+      <div class="sample-meta">Daneshvar DH, Nowinski CJ, Abdolmohammadi B et al. · 2026 Aug 25</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Observational study (pre-post with regression discontinuity design)
+        Retrospective population-based cohort study
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Did Australia&#39;s minimum age-16 law for social media accounts reduce adolescent social media use in the three months following implementation?
+        What is the plausible range of chronic traumatic encephalopathy (CTE) prevalence at death among former NFL players, and how does CTE severity relate to dementia risk?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>Over 85% of under-16s still reported using regulated platforms at three-month follow-up, predominantly via their own accounts (54–68%)</li><li>Circumvention was common: 15–19% used fake accounts; 6–11% accessed via private browsers; age verification was largely limited to self-declaration or selfies</li><li>Regression discontinuity analyses found no statistically significant reduction in daily use or time spent at the age-16 threshold (p≥0.60)</li>        </ul>
+<li>Among 1712 deceased NFL players, 338 (19.7%) had brain donation/autopsy; 315 (93.2%) of these had pathological CTE, yielding an estimated population prevalence range of 18.5–98.7% (24.5–97.7% for 2016–21, the highest-donation period).</li><li>Stage IV (severe) CTE was associated with clinician-adjudicated dementia (risk ratio 1.44, 95% CI 1.16–1.78; p&lt;0.001); dementia onset averaged 63.4 years.</li><li>Only 40.6% of donors with diagnosed dementia had neurodegenerative disease recorded as a cause of death, indicating substantial underrepresentation in death certification.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        As the UK considers similar age-based social media restrictions, this provides early real-world evidence that legislative minimum age requirements alone are unlikely to meaningfully reduce adolescent exposure without robust verification infrastructure.
+        Highlights that neurodegenerative and dementia burden linked to repetitive head impact exposure is likely underestimated by routine mortality data, relevant to UK clinicians managing contact-sport athletes and counselling on long-term neurological risk.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Small sample (n=408), short follow-up (three months), and self-reported outcomes introduce significant measurement and maturation bias.
+        Selection bias from voluntary brain donation limits precise prevalence estimation despite bias-adjustment methods.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42342272/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1136/bmj-2026-363695" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42642105/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1136/bmj-2026-100418" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
-      <div class="sample-badge">European journal of internal medicine</div>
-      <h3>Neutrophil-to-lymphocyte ratio: A disease severity biomarker in stable chronic obstructive pulmonary disease?</h3>
-      <div class="sample-meta">Vanetti M, Visca D, Ardesi F et al. · 2026 Jun 24</div>
+      <div class="sample-badge">BMJ (Clinical research ed.)</div>
+      <h3>Schizophrenia: advances in pathophysiology, management, and precision medicine</h3>
+      <div class="sample-meta">Sawa A, Chiappelli J, Hamrah OP et al. · 2026 Aug 28</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Retrospective cohort study
+        Narrative review
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Does a higher neutrophil-to-lymphocyte ratio (NLR ≥2.26) correlate with greater disease severity and cardiovascular risk in stable COPD?
+        What is the current state of understanding and management of schizophrenia, and how might precision medicine advance future care?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>Patients with NLR ≥2.26 had significantly worse spirometry (lower FEV₁, higher residual volume), higher PaCO₂, and more severe exacerbations in the preceding year (p&lt;0.05)</li><li>Chronic respiratory failure, atrial fibrillation, and lung cancer were significantly more frequent in the high-NLR group</li><li>High NLR was associated with a significantly greater 10-year cardiovascular risk using ESC risk scoring</li>        </ul>
+<li>Schizophrenia arises from combined genetic and environmental factors with neurodevelopmental origins; onset typically in late adolescence/young adulthood.</li><li>Current management combines antipsychotic drugs (targeting positive symptoms, relapse prevention) with psychosocial/cognitive interventions for functional recovery; neuromodulation and digital health tools remain investigational.</li><li>Progress is limited by clinical (rather than biological) diagnostic criteria, causing biological heterogeneity; identifying objective biomarkers is proposed as the key step towards stratified, mechanism-based treatment.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        NLR is a cheap, readily available routine blood test; if validated prospectively, it could help UK acute medicine clinicians risk-stratify stable COPD patients for cardiovascular and respiratory complications without additional cost.
+        Highlights the diagnostic and therapeutic limitations UK clinicians face in acute psychiatric presentations of schizophrenia, and signals a future shift towards biomarker-guided, personalised treatment strategies relevant to NHS mental health and acute liaison services.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Single-centre retrospective design in a pulmonary rehabilitation population limits generalisability to broader acute medicine COPD cohorts.
+        As a narrative review, it lacks systematic methodology and primary data, offering expert synthesis rather than quantifiable evidence.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42342518/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.ejim.2026.107036" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42665310/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1136/bmj-2026-635470" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">European journal of internal medicine</div>
-      <h3>Epicardial adipose tissue between biological complexity and clinical readiness</h3>
-      <div class="sample-meta">Ragozzino G, Mattera E · 2026 Jun 24</div>
+      <h3>Steroid-sparing biologics in severe asthma and chronic obstructive pulmonary disease: a systematic review, cross-disease meta-analysis, and translational estimate of corticosteroid-related harm prevented</h3>
+      <div class="sample-meta">Mari PV, Carriera L, Coppola A et al. · 2026 Aug 24</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Commentary/Editorial
+        Systematic review with cross-disease meta-analysis and translational modelling of randomised, placebo-controlled trials.
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Is epicardial adipose tissue (EAT) ready for routine clinical use as an imaging biomarker?
+        Do Type-2-targeted biologics reduce oral corticosteroid burden and exacerbations in severe asthma versus COPD, and what downstream harm might this prevent?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>Measurement standardisation and reproducibility remain unresolved barriers to clinical translation of EAT</li><li>EAT has not yet been shown to add meaningful prognostic value beyond established metabolic and imaging markers</li><li>Emerging tissue quality indices (density, perivascular fat attenuation/FAI) lack validated thresholds and outcome-based evidence</li>        </ul>
+<li>Biologics nearly tripled the odds of achieving ≥50% maintenance OCS reduction in severe asthma (OR 2.99, 95% CI 2.11–4.25; 4 trials, n=615).</li><li>Exacerbation reduction was significantly greater in asthma (RR 0.38) than COPD (RR 0.78; p=0.0001).</li><li>Applying a 42% cumulative OCS reduction (BOREAS/NOTUS COPD subgroup) to pharmacoepidemiologic dose-response data suggested lowest NNTs for preventing serious infection, pneumonia, and osteoporotic fracture in COPD.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        For UK acute medicine clinicians encountering CT-derived cardiac imaging reports, this commentary cautions against over-interpreting EAT measurements as actionable biomarkers until pragmatic outcome trials are completed.
+        Supports biologic use as an OCS-sparing strategy in severe asthma and highlights a plausible, quantifiable harm-reduction rationale for expanding biologic access in exacerbation-prone COPD within NHS respiratory pathways.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        As an editorial responding to a prior exchange, it presents no original data and does not systematically review the existing evidence base.
+        The translational NNT estimates rely on indirect extrapolation from observational cohorts rather than direct trial-level harm outcomes, limiting causal certainty.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42342516/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.ejim.2026.107005" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42637632/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.ejim.2026.107156" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">European journal of internal medicine</div>
-      <h3>SARS-CoV-2 infection, viral burden, and variant-specific outcomes in hospitalized patients with heart failure</h3>
-      <div class="sample-meta">Nashtar MA, Salemdawod M, Sehovic H et al. · 2026 Jun 25</div>
+      <h3>Long-term mortality in patients admitted acutely for chronic liver disease in England: A national cohort study</h3>
+      <div class="sample-meta">Campbell C, Palafox B, Bains V et al. · 2026 Aug 24</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Retrospective cohort study
+        National retrospective cohort study (administrative hospital data)
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Does SARS-CoV-2 infection independently worsen in-hospital outcomes in patients hospitalised with heart failure, and does viral load or variant type further modify risk?
+        What is long-term mortality after first emergency admission for chronic liver disease (CLD) in England, and what factors drive variation?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>SARS-CoV-2 infection (11.5% of 2826 HF admissions) independently increased in-hospital mortality (aOR 2.60), invasive ventilation (aOR 2.76), and ICU admission (aOR 1.95), with prolonged hospitalisation of approximately 9 days.</li><li>Higher viral burden (lower Ct value) independently predicted mortality (aOR 0.90 per unit Ct increase, p=0.039).</li><li>Pre-Omicron variants carried substantially higher mortality and ICU utilisation than Omicron sublineages.</li>        </ul>
+<li>Of 82,402 CLD patients, 59.9% died within 5 years; median survival was 2.72 years (95%CI 2.66–2.79).</li><li>Mortality was lower for metabolic (adjHR 0.76), combined metabolic/alcohol (adjHR 0.80), and autoimmune aetiologies (adjHR 0.82) versus alcohol-related disease; encephalopathy (adjHR 1.70), ascites (adjHR 1.64), and GI bleeding (adjHR 1.10) predicted higher mortality.</li><li>All eight regions outside London had higher adjusted mortality (adjHR 1.06–1.19), suggesting geographic inequity.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        HF patients admitted to UK acute medicine units with concurrent SARS-CoV-2 remain a very high-risk group warranting early escalation planning, regardless of dominant circulating variant.
+        Highlights exceptionally poor prognosis after emergency CLD admissions in England and identifies high-risk subgroups and regional disparities relevant to NHS service planning and resource allocation.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Single-centre or registry-based retrospective design limits generalisability, and residual confounding cannot be excluded despite multivariable adjustment.
+        Retrospective administrative data lack granular clinical detail (e.g., liver function scores, treatment received), limiting causal inference regarding regional and aetiological differences.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42342517/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.ejim.2026.107034" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42637631/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.ejim.2026.107142" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">European journal of internal medicine</div>
-      <h3>Low-renin hypertension in incidental adrenal adenomas and response to aldosterone-targeted therapy: a prospective study</h3>
-      <div class="sample-meta">Uslar T, Sanfuentes B, Olmos R et al. · 2026 Jun 27</div>
+      <h3>Artificial intelligence in medicine: An ethical and legal review</h3>
+      <div class="sample-meta">Schleidgen S, Friedrich O · 2026 Aug 26</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Narrative review (ethical and legal analysis)
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        What ethical and legal challenges arise from integrating AI/ML into medical practice, and how should these be addressed by clinicians, regulators, and developers?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>AI adoption raises core ethical tensions around autonomy, beneficence, non-maleficence, and justice, particularly regarding algorithmic bias and equitable access.</li><li>Legal frameworks (liability, data protection, medical device regulation) are still adapting to AI-specific issues such as informed consent for automated decision-making and transparency of &#34;black-box&#34; algorithms.</li><li>Regulatory approaches vary across jurisdictions, with existing frameworks being retrofitted rather than purpose-built for AI in healthcare.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        As NHS trusts increasingly deploy AI tools for diagnostics and decision support, clinicians must understand evolving liability, consent, and governance implications to ensure safe, equitable, and legally defensible use.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        As a narrative review, it lacks systematic methodology and empirical data, offering conceptual synthesis rather than quantifiable evidence.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42648942/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.ejim.2026.107172" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">European journal of internal medicine</div>
+      <h3>Recurrent venous thromboembolism and bleeding during anticoagulation in patients with deep-vein thrombosis treated with vitamin K antagonists or direct oral anticoagulants: insights from the RIETE registry</h3>
+      <div class="sample-meta">Prandoni P, Pesavento R, Bilora F et al. · 2026 Aug 28</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Registry-based retrospective cohort study (RIETE registry)
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Do DOACs outperform VKAs for recurrent VTE and bleeding outcomes in real-world DVT patients, and does this benefit hold across trial-eligible versus trial-ineligible populations?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Among 24,728 patients, DOACs were associated with lower recurrent VTE (HR 0.71, 95% CI 0.58–0.87) and major bleeding (HR 0.78, 95% CI 0.63–0.97), but higher CRNMB (HR 1.35, 95% CI 1.17–1.55) versus VKAs.</li><li>Median time to recurrence/major bleeding/CRNMB was 105/88/81 days respectively.</li><li>Efficacy and safety advantages of DOACs were significant only in patients resembling pivotal RCT populations; no benefit was seen in trial-ineligible patients.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        Supports current UK practice favouring DOACs as first-line VTE treatment but highlights that benefits may not extend to complex, multimorbid patients typically excluded from RCTs and common in NHS acute medicine settings.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Observational design with potential residual confounding despite inverse probability weighting, limiting causal inference.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42665519/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.ejim.2026.107120" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">European journal of internal medicine</div>
+      <h3>Long-term vascular outcomes and biological predictors of thrombosis in systemic lupus erythematosus: a 10-year prospective cohort study</h3>
+      <div class="sample-meta">Riancho-Zarrabeitia L, Vegas-Revenga N, Domínguez-Casas L et al. · 2026 Aug 29</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
         Prospective cohort study
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        How common is low-renin hypertension in patients with adrenal incidentalomas, and does aldosterone-targeted therapy improve outcomes across all aldosterone levels?
+        What clinical and biological factors predict long-term thrombotic cardiovascular events in women with SLE over a 10-year follow-up?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>47% (138/290) of hypertensive patients with adrenal incidentalomas had suppressed renin, regardless of whether aldosterone was overtly elevated</li><li>Aldosterone-targeted therapy (75% mineralocorticoid receptor antagonist, 25% adrenalectomy) produced clinically significant SBP reductions across all aldosterone categories: −18, −26, and −30 mmHg in groups with PAC 5–10, 10–15, and &gt;15 ng/dL respectively (all p&lt;0.001)</li><li>Higher aldosterone correlated with resistant hypertension, greater antihypertensive burden, hypokalaemia, and reduced eGFR (p-trend &lt;0.001)</li>        </ul>
+<li>44% had carotid plaque at baseline; 11.3% experienced thrombotic events (8 arterial) over ~9.7 years.</li><li>Metabolic syndrome independently predicted events (HR 4.3, 95% CI 1.2–15.2), alongside age, higher carotid IMT, cumulative organ damage, and reduced renal function.</li><li>No independent prognostic value was found for inflammatory or adipokine biomarkers; arterial event rates were numerically but not significantly higher than age-matched controls.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        In UK acute medicine, adrenal incidentalomas are frequently encountered; this study supports routine renin measurement in hypertensive patients with incidentalomas, potentially identifying treatable disease even without overt primary hyperaldosteronism.
+        Reinforces that in SLE patients seen acutely, traditional cardiovascular risk factors (age, metabolic syndrome, renal impairment) rather than lupus-specific inflammatory markers should guide cardiovascular risk stratification and preventive management.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Single-centre prospective cohort without a control arm limits causal inference and generalisability.
+        Single-centre study with modest sample size (n=97) and only 11 events, limiting statistical power for multivariable analysis and biomarker assessment.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42364940/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.ejim.2026.107042" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42665520/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.ejim.2026.107169" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">European journal of internal medicine</div>
-      <h3>Pharmacokinetic robustness of direct oral anticoagulants vs. phenprocoumon in the emergency setting: impact of renal and hepatic impairment</h3>
-      <div class="sample-meta">Merzou F, Tarantini L, Landau B et al. · 2026 Jun 27</div>
+      <h3>Phenotypic clustering and ABC pathway adherence in patients with atrial fibrillation at high risk of bleeding and stroke: Insights from three global registries</h3>
+      <div class="sample-meta">Askarinejad A, Bucci T, Tartaglia E et al. · 2026 Aug 30</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Multi-centre cohort study
+        Retrospective cohort analysis (pooled data from three global AF registries)
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        How do renal and hepatic impairment affect the likelihood of supratherapeutic anticoagulant levels in emergency department patients on DOACs versus phenprocoumon?
+        In AF patients at high combined risk of stroke and bleeding, do distinct clinical phenotypes exist, and does adherence to the ABC (Atrial fibrillation Better Care) pathway improve one-year outcomes?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>Apixaban (OR 0.41, 95% CI 0.25–0.69) and edoxaban (OR 0.30, 95% CI 0.10–0.90) had significantly lower rates of supratherapeutic levels than phenprocoumon (28.5%)</li><li>Renal impairment independently increased supratherapeutic DOAC levels (OR 1.55), most markedly with apixaban (OR 2.23); renal function did not significantly affect phenprocoumon levels</li><li>Hepatic dysfunction (MELD score) raised supratherapeutic risk for both, but more steeply for phenprocoumon (OR 5.26) than DOACs (OR 3.46)</li>        </ul>
+<li>Hierarchical clustering identified three phenotypes: Cluster I (prior thromboembolic/bleeding events, low comorbidity), Cluster II (oldest, highest dyslipidaemia/heart failure/PAD burden), Cluster III (youngest, highest BMI/alcohol use).</li><li>Compared with Cluster I, Clusters II and III had significantly higher all-cause mortality (aOR 1.93, 95% CI 1.37–2.78; and aOR 1.65, 95% CI 1.10–2.50, respectively).</li><li>ABC pathway adherence was associated with markedly lower 1-year MACE (OR 0.39, 95% CI 0.15–0.82).</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        In UK acute medicine, where DOACs predominate, this supports checking drug levels in DOAC patients presenting with acute kidney injury, as supratherapeutic exposure—and bleeding risk—may be underappreciated.
+        Supports UK acute medicine practice of embedding structured ABC pathway management (anticoagulation, symptom control, comorbidity/lifestyle optimisation) even in complex, high-bleeding-risk AF patients, while highlighting the need for phenotype-tailored risk stratification.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Phenprocoumon (not warfarin) was the VKA comparator, limiting direct applicability to UK practice.
+        Observational design with incomplete ABC adherence data limits causal inference and generalisability.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42364939/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.ejim.2026.107030" target="_blank" rel="noopener">DOI →</a>      </div>
-    </div>
-    <div class="sample-card">
-      <div class="sample-badge">European journal of internal medicine</div>
-      <h3>Understanding the Barriers to Translating Artificial Intelligence into the Clinical Laboratory</h3>
-      <div class="sample-meta">Neale M, Wong C, Kreuter D et al. · 2026 Jun 27</div>
-      <div class="summary-field">
-        <span class="summary-label">Study Type:</span>
-        Narrative review / commentary
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Question:</span>
-        Why has AI adoption in clinical laboratory medicine lagged behind other medical specialties, and what barriers impede translation into practice?
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Findings:</span>
-        <ul>
-<li>Three core barriers identified: insufficient model robustness for complex laboratory data; training datasets lacking scale, diversity, and operational representativeness; and regulatory constraints limiting both data acquisition and model deployment</li><li>Progression from autoverification and classical machine learning to foundation/generative models is traced, with limitations identified at each stage</li><li>Federated learning and large-scale data initiatives are proposed as potential mechanisms to address dataset and regulatory barriers</li>        </ul>
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Clinical Relevance:</span>
-        As NHS laboratories face increasing demand, understanding why AI tools fail to reach deployment helps acute medicine clinicians critically appraise vendor claims and engage meaningfully with digital transformation strategies.
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Limitations:</span>
-        As a narrative review without systematic methodology, conclusions reflect authors&#39; perspectives and may not capture the full breadth of existing evidence.
-      </div>
-      <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42364938/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.ejim.2026.107029" target="_blank" rel="noopener">DOI →</a>      </div>
-    </div>
-    <div class="sample-card">
-      <div class="sample-badge">Internal and emergency medicine</div>
-      <h3>Impact of hospital restructuring on emergency department quality: a natural experiment</h3>
-      <div class="sample-meta">Wang JY, Huang YN, Chang YH et al. · 2026 Jun 22</div>
-      <div class="summary-field">
-        <span class="summary-label">Study Type:</span>
-        Retrospective cohort study (difference-in-differences analysis)
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Question:</span>
-        Does restructuring a regional hospital into specialised facilities affect emergency department quality metrics?
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Findings:</span>
-        <ul>
-<li>Post-restructuring, paediatric ED visits surged 74.3% (22,510→39,226), while general medicine visits fell 26.4%</li><li>Non-paediatric specialties showed significant efficiency gains: Door-to-Physician Time −8.97%, Physician-to-Departure Time −17.92%, Decision-to-Departure Time −24.56% (all p&lt;0.001)</li><li>Paediatric services deteriorated relative to controls: Door-to-Physician Time +18.7 min, Physician-to-Departure Time +14.6 min, Decision-to-Departure Time +4.9 min (all p&lt;0.001), though remained within clinically acceptable thresholds</li>        </ul>
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Clinical Relevance:</span>
-        As NHS trusts explore site specialisation and reconfiguration, this study highlights the risk of demand surges overwhelming the designated specialist service, with direct implications for paediatric emergency capacity planning.
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Limitations:</span>
-        Single-centre Taiwanese setting limits generalisability to NHS acute care configurations and patient demographics.
-      </div>
-      <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42329582/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1007/s11739-026-04426-7" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42669578/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.ejim.2026.107160" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
 
     <div class="tease">
-      <p>…and <em>18 more</em> Acute Medicine articles in that week's digest.</p>
+      <p>…and <em>21 more</em> Acute Medicine articles in that week's digest.</p>
       <small>Subscribers get the complete brief, every Monday.</small>
     </div>
   </div>
@@ -373,8 +377,25 @@
 <!-- ═══ FOOTER ═══ -->
 <footer>
   <p>&copy; 2026 The Monday Clinical Brief</p>
-  <p><a href="/">Home</a> · <a href="mailto:info@mondayclinicalbrief.co.uk">Contact</a> · <a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms</a></p>
+  <p><a href="/samples/">Samples</a> · <a href="/blog/">Blog</a> · <a href="/methodology/">Methodology</a> · <a href="/about/">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p>
 </footer>
+
+<script>
+// Measure the fixed mobile bottom bar so the body reserves its true height.
+(function () {
+  var nav = document.querySelector('nav');
+  if (!nav) return;
+  function sync() {
+    var fixed = getComputedStyle(nav).position === 'fixed';
+    document.documentElement.style.setProperty('--bottom-nav-h', fixed ? nav.offsetHeight + 'px' : '0px');
+  }
+  sync();
+  addEventListener('resize', sync);
+  addEventListener('orientationchange', sync);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(sync);
+  if (window.ResizeObserver) new ResizeObserver(sync).observe(nav);
+})();
+</script>
 
 </body>
 </html>

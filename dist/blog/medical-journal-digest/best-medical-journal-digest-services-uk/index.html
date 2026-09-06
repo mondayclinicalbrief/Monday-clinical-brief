@@ -3,23 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Best Medical Publications &amp; Journal Digests for UK Doctors (2026) — The Monday Clinical Brief</title>
-<meta name="description" content="Compare the best medical journal digests for UK doctors on coverage, CPD and price. The Monday Clinical Brief covers the top 5 journals across 31 specialties from £20/year — free 4-week trial.">
+<title>Best Medical Journal Digests for UK Doctors (2026) — The Monday Clinical Brief</title>
+<meta name="description" content="Compare the best medical journal digests for UK doctors on coverage, CPD and price — the top 5 journals across 31 specialties from £20/year.">
 <link rel="canonical" href="https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/best-medical-journal-digest-services-uk/">
 
 
 <!-- Open Graph -->
-<meta property="og:title" content="Best Medical Publications &amp; Journal Digests for UK Doctors (2026)">
-<meta property="og:description" content="Compare the best medical journal digests for UK doctors on coverage, CPD and price. The Monday Clinical Brief covers the top 5 journals across 31 specialties from £20/year — free 4-week trial.">
+<meta property="og:title" content="Best Medical Journal Digests for UK Doctors (2026)">
+<meta property="og:description" content="Compare the best medical journal digests for UK doctors on coverage, CPD and price — the top 5 journals across 31 specialties from £20/year.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/best-medical-journal-digest-services-uk/">
-
+<meta property="og:image" content="https://mondayclinicalbrief.co.uk/assets/brand/mcb-og-1200x630-v2.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Best Medical Journal Digests for UK Doctors (2026) — The Monday Clinical Brief">
 <meta property="og:site_name" content="The Monday Clinical Brief">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Best Medical Publications &amp; Journal Digests for UK Doctors (2026)">
-<meta name="twitter:description" content="Compare the best medical journal digests for UK doctors on coverage, CPD and price. The Monday Clinical Brief covers the top 5 journals across 31 specialties from £20/year — free 4-week trial.">
+<meta name="twitter:title" content="Best Medical Journal Digests for UK Doctors (2026)">
+<meta name="twitter:description" content="Compare the best medical journal digests for UK doctors on coverage, CPD and price — the top 5 journals across 31 specialties from £20/year.">
 
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
 
@@ -122,9 +125,15 @@
   footer a { color: var(--sage); text-decoration: none; }
 
   @media (max-width: 640px) {
-    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; }
+    /* Fixed bottom bar on mobile. The brand used to wrap to two lines at
+       390px, making the bar ~123px tall while the body reserved only 60px —
+       so the footer sat underneath it. Keep the brand on one line and reserve
+       the bar's measured height via a custom property. */
+    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; align-items: center; gap: 0.75rem; }
     .nav-links a:not(.nav-cta) { display: none; }
-    body { padding-bottom: 60px; }
+    .nav-brand { font-size: 0.9rem; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+    .nav-cta { flex-shrink: 0; }
+    body { padding-bottom: calc(var(--bottom-nav-h, 64px) + env(safe-area-inset-bottom, 0px)); }
     .breadcrumb { padding-top: 2rem; }
     .article-header { padding-top: 1rem; }
     .article-header h1 { font-size: 1.8rem; }
@@ -138,11 +147,11 @@
 {
   "@context": "https://schema.org",
   "@type": "MedicalWebPage",
-  "headline": "Best Medical Publications &amp; Journal Digests for UK Doctors (2026)",
-  "description": "Compare the best medical journal digests for UK doctors on coverage, CPD and price. The Monday Clinical Brief covers the top 5 journals across 31 specialties from £20/year — free 4-week trial.",
+  "headline": "Best Medical Journal Digests for UK Doctors (2026)",
+  "description": "Compare the best medical journal digests for UK doctors on coverage, CPD and price — the top 5 journals across 31 specialties from £20/year.",
   "url": "https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/best-medical-journal-digest-services-uk/",
   "datePublished": "2026-04-14T00:00:00.000Z",
-  "dateModified": "2026-06-30T00:00:00.000Z",
+  "dateModified": "2026-09-01T00:00:00.000Z",
   "author": {
     "@type": "Person",
     "name": "Dr Tim Hamilton",
@@ -155,7 +164,7 @@
     "name": "Dr Tim Hamilton",
     "jobTitle": "Consultant in Palliative Medicine"
   },
-  "lastReviewed": "2026-06-30T00:00:00.000Z",
+  "lastReviewed": "2026-09-01T00:00:00.000Z",
   "publisher": {
     "@type": "Organization",
     "name": "The Monday Clinical Brief",
@@ -227,6 +236,15 @@
     
     {
       "@type": "Question",
+      "name": "Is Medscape AI a free alternative to a paid journal digest?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not really — it solves a different problem. Medscape AI is free to Medscape members and answers clinical questions you put to it, but it does not push you what is new in your specialty, so it cannot do a digest&#39;s job. It also holds no UK regulatory status: it is not UKCA-marked, not MHRA-registered, and has not been assessed against DTAC, and its parent WebMD is advertising-funded. If your problem is keeping up rather than looking up, a digest is the tool that fits — Evidence Alerts has a free tier, and The Monday Clinical Brief offers a free four-week trial."
+      }
+    },
+    
+    {
+      "@type": "Question",
       "name": "Which journal digest services count towards CPD or revalidation?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -272,6 +290,7 @@
 </nav>
 
 <!-- ═══ BREADCRUMB ═══ -->
+<main id="main">
 <div class="breadcrumb" aria-label="Breadcrumb">
   <ol>
     <li><a href="/">Home</a></li>
@@ -288,7 +307,7 @@
   <h1>Best Medical Journal Digest Services for UK Doctors</h1>
   <div class="article-meta">
     <time datetime="2026-04-14T00:00:00.000Z">14 April 2026</time>
-    <span>9 min read</span>
+    <span>11 min read</span>
     <span>By Dr Tim Hamilton, Consultant in Palliative Medicine, NHS Wales</span>
   </div>
 </header>
@@ -451,6 +470,45 @@
 <p><strong>Pricing:</strong> Free (basic); from £50/year (premium)</p>
 <p><strong>CPD Support:</strong> Minimal</p>
 <hr>
+<h3 id="medisummary" tabindex="-1">MediSummary</h3>
+<p><strong>What is it?</strong> A US subscription service that summarises papers across more than 70 specialties. Since mid-2026 it has marketed a weekly specialty digest — &quot;the papers that matter in your field, ranked and ready&quot; — offered as a three-minute read or an eight-minute audio briefing, alongside iOS and Android apps. It is the newest product to use the language this page is about, which is why we have included it.</p>
+<p>One caveat before the detail. MediSummary's marketing describes the digest as weekly and says it &quot;just arrives&quot;, but the delivery channel is not stated anywhere on the site, and its own terms of service — last updated on 21 May 2026 — still describe &quot;Monthly Specialty Updates: curated audio and written summaries of newly published studies in your specialty&quot;, with no weekly digest mentioned. We could not confirm that it arrives by email, or that it arrives weekly. Both are best read as marketing claims dated September 2026 rather than settled product behaviour.</p>
+<p><strong>Strengths:</strong></p>
+<ul>
+<li>Very broad specialty coverage — more than 70 fields</li>
+<li>Summaries in both read and audio formats, with mobile apps on both stores</li>
+<li>Ranked selection, which suits a reader who wants a filtered shortlist rather than everything</li>
+<li>Seven-day free trial and a 60-day money-back guarantee</li>
+</ul>
+<p><strong>Limitations:</strong></p>
+<ul>
+<li>No UK positioning — operated by ODAKCO, LLC of Dover, Delaware, with no UK entity, no UK pricing and no UK regulatory statement we could find</li>
+<li>Ranked selection puts an editorial filter between you and the literature: you see what the ranking surfaces, not everything that was published</li>
+<li>Delivery channel and frequency are unconfirmed (see above)</li>
+<li>Scale claims are company-reported and inconsistent — 6,000-plus physicians in one place, 3,000-plus in another; we have not independently verified either</li>
+</ul>
+<p><strong>Pricing:</strong> US$16/month, billed as US$197/year</p>
+<p><strong>CPD Support:</strong> None stated for UK revalidation</p>
+<hr>
+<h3 id="medscape-ai" tabindex="-1">Medscape AI</h3>
+<p><strong>What is it?</strong> A generative clinical reference launched in November 2025 and free to Medscape's 13 million-plus registered members. It answers clinical questions in natural language, personalises to your specialty, and traces its answers back to sources. Medscape added AI Search in August 2026 — a chat-based layer drawing on 6,000-plus physician-reviewed articles, launched US-first. Like ClinicalKey AI and UpToDate, it is a look-up tool rather than a digest — it is here because it is the free option UK clinicians are most likely to meet, not because it keeps you current.</p>
+<p><strong>Strengths:</strong></p>
+<ul>
+<li>Free at the point of use, with no subscription</li>
+<li>Very large existing user base; many UK clinicians already hold a Medscape account</li>
+<li>Specialty-personalised answers, traced back to sources</li>
+<li>Broad general-medicine coverage</li>
+</ul>
+<p><strong>Limitations:</strong></p>
+<ul>
+<li>No UK regulatory status — not UKCA-marked, not MHRA-registered, and not assessed against DTAC</li>
+<li>A look-up tool: it answers what you ask, and will not tell you what was published this week</li>
+<li>Parent company WebMD is advertising-funded, so the surrounding platform carries commercial content</li>
+<li>US-centric clinical context; limited NICE and NHS alignment</li>
+</ul>
+<p><strong>Pricing:</strong> Free (advertising-funded parent)</p>
+<p><strong>CPD Support:</strong> Minimal; no logging or reflection features for UK revalidation</p>
+<hr>
 <h2 id="comparison-table" tabindex="-1">Comparison Table</h2>
 <table>
 <thead>
@@ -512,6 +570,20 @@
 <td>Minimal</td>
 <td>Free–£50/year</td>
 </tr>
+<tr>
+<td><strong>Medscape AI</strong></td>
+<td>General medical literature via AI look-up</td>
+<td>On-demand (look-up)</td>
+<td>Minimal</td>
+<td>Free (ad-funded)</td>
+</tr>
+<tr>
+<td><strong>MediSummary</strong></td>
+<td>Ranked selection across 70+ specialties</td>
+<td>Weekly (company claim; unconfirmed)</td>
+<td>Not stated</td>
+<td>~US$197/year</td>
+</tr>
 </tbody>
 </table>
 <h2 id="how-to-choose-the-right-service-for-you" tabindex="-1">How to Choose the Right Service for You</h2>
@@ -527,7 +599,7 @@
 <p>The Monday Clinical Brief offers a <strong>free 4-week trial</strong> with no credit card required. It's an easy way to see if a UK-focused weekly digest fits your workflow. Start the trial and see if those 15 minutes a week make a difference to how informed and confident you feel in your practice.</p>
 <p>For a broader introduction to managing medical literature, see our <a href="../guide/">guide to medical journal digests</a> and <a href="../how-to-keep-up-with-medical-literature/">how to stay current with medical literature</a>.</p>
 <hr>
-<p><em>Last updated: June 2026. Pricing and features current as of publication. Services and their offerings change; please verify current details with providers.</em></p>
+<p><em>Last updated: September 2026. Pricing and features current as of publication. Services and their offerings change; please verify current details with providers.</em></p>
 
 
   
@@ -542,6 +614,11 @@
     <details class="faq-item">
       <summary>Are there any free medical journal digest services?</summary>
       <p>Yes. Evidence Alerts has a free tier, and The Monday Clinical Brief offers a free four-week trial with no credit card required. Many NHS clinicians also reach UpToDate and BMJ Best Practice at no personal cost through an NHS trust or institutional subscription.</p>
+    </details>
+    
+    <details class="faq-item">
+      <summary>Is Medscape AI a free alternative to a paid journal digest?</summary>
+      <p>Not really — it solves a different problem. Medscape AI is free to Medscape members and answers clinical questions you put to it, but it does not push you what is new in your specialty, so it cannot do a digest&#39;s job. It also holds no UK regulatory status: it is not UKCA-marked, not MHRA-registered, and has not been assessed against DTAC, and its parent WebMD is advertising-funded. If your problem is keeping up rather than looking up, a digest is the tool that fits — Evidence Alerts has a free tier, and The Monday Clinical Brief offers a free four-week trial.</p>
     </details>
     
     <details class="faq-item">
@@ -575,6 +652,9 @@
     <h3>More on Medical Journal Digest</h3>
     <ul>
       <li><a href="/blog/medical-journal-digest/guide/">Medical Journal Digest</a> — the complete guide</li>
+      <li><a href="/blog/medical-journal-digest/heidi-evidence-vs-openevidence-uk/">Heidi Evidence vs OpenEvidence: Which One Can UK Doctors Actually Use?</a></li>
+      <li><a href="/blog/medical-journal-digest/this-week-in-medical-journals-august-2026/">This Week in Medical Journals: August 2026 Highlights</a></li>
+      <li><a href="/blog/medical-journal-digest/cks-round-up-july-2026/">NICE CKS Round-Up — July 2026: Recent Updates for UK Primary Care</a></li>
       <li><a href="/blog/medical-journal-digest/clinicalkey-ai-vs-openevidence/">ClinicalKey AI vs OpenEvidence: In the UK, It&#39;s Not a Choice</a></li>
       <li><a href="/blog/medical-journal-digest/cks-round-up-june-2026/">NICE CKS Round-Up — June 2026: Recent Updates for UK Primary Care</a></li>
       <li><a href="/blog/medical-journal-digest/nice-ng106-heart-failure-2025-update/">NICE Heart Failure Update (NG106): SGLT2 Inhibitors Now Span the Ejection-Fraction Spectrum</a></li>
@@ -584,19 +664,19 @@
       <li><a href="/blog/medical-journal-digest/asthma-bts-nice-sign-ng245-uk-2026/">Asthma Diagnosis and Treatment in UK Primary Care 2026: What the BTS/NICE/SIGN Guideline (NG245) Changed</a></li>
       <li><a href="/blog/medical-journal-digest/atrial-fibrillation-anticoagulation-uk-primary-care-2026/">Anticoagulation in Atrial Fibrillation: A UK Primary-Care Guide (NICE NG196)</a></li>
       <li><a href="/blog/medical-journal-digest/sglt2-inhibitors-ckd-uk-primary-care-2026/">SGLT2 Inhibitors for CKD in UK Primary Care 2026: What NICE TA1075 Means in Practice</a></li>
-      <li><a href="/blog/medical-journal-digest/statins-cvd-prevention-uk-primary-care-2026/">Statins and CVD Prevention in UK Primary Care 2026: What NICE NG238 Means in Practice</a></li>
+      <li><a href="/blog/medical-journal-digest/statins-cvd-prevention-uk-primary-care-2026/">Who Gets a Statin in 2026? The NICE NG238 Thresholds UK GPs Actually Use</a></li>
       <li><a href="/blog/medical-journal-digest/medical-journal-digest-vs-podcast/">Medical Journal Digest vs Medical Podcast: Which Is Better for CPD?</a></li>
       <li><a href="/blog/medical-journal-digest/ad-free-clinical-ai-uk-2026/">Ad-Free Clinical AI for UK Doctors (2026): The Short List</a></li>
       <li><a href="/blog/medical-journal-digest/best-medical-journal-digest-apps/">Best Medical Journal Digest Apps for UK Doctors</a></li>
       <li><a href="/blog/medical-journal-digest/cks-round-up-may-2026/">NICE CKS Round-Up — May 2026: Recent Updates for UK Primary Care</a></li>
-      <li><a href="/blog/medical-journal-digest/menopause-hrt-nice-ng23-2026/">Menopause and HRT Guidance UK 2026: NICE Recommends Fezolinetant and Updates NG23</a></li>
-      <li><a href="/blog/medical-journal-digest/mrcp-paces-2026-study-plan-uk/">MRCP PACES 2026: Fee Rise, Part 1 In-Centre, and a 12-Week Study Plan for Working Trainees</a></li>
+      <li><a href="/blog/medical-journal-digest/menopause-hrt-nice-ng23-2026/">What Can You Offer When HRT Isn&#39;t Suitable? Fezolinetant and NG23 in 2026</a></li>
+      <li><a href="/blog/medical-journal-digest/mrcp-paces-2026-study-plan-uk/">Can You Pass MRCP PACES While Working Full Time? A 12-Week Plan for 2026</a></li>
       <li><a href="/blog/medical-journal-digest/praxis-medicine-uk/">Praxis Medicine UK: What It Is, What It Costs, and Where It Fits</a></li>
       <li><a href="/blog/medical-journal-digest/this-week-in-medical-journals-june-2026/">This Week in Medical Journals: June 2026 Highlights</a></li>
       <li><a href="/blog/medical-journal-digest/tirzepatide-gp-qof-2026/">Can You Prescribe Tirzepatide Under QOF 2026/27? The Mounjaro Decision Facing GPs</a></li>
       <li><a href="/blog/medical-journal-digest/uk-doctors-lost-ai-tools-2026/">Two AI Tools UK Doctors Lost, One Restricted — And What Works in Their Place</a></li>
       <li><a href="/blog/medical-journal-digest/sglt2-inhibitors-uk-primary-care-2026/">SGLT2 Inhibitors in UK Primary Care 2026: What NICE NG28 Means in Practice</a></li>
-      <li><a href="/blog/medical-journal-digest/heidi-evidence-uk-in-session-restriction/">Heidi Evidence Is Excellent. In the UK, It Won&#39;t Answer Mid-Consultation.</a></li>
+      <li><a href="/blog/medical-journal-digest/heidi-evidence-uk-in-session-restriction/">Heidi Evidence in the UK: What the In-Session Restriction Actually Blocks</a></li>
       <li><a href="/blog/medical-journal-digest/nice-ng28-type-2-diabetes-2026/">NICE NG28 Update, February 2026: Metformin Plus an SGLT2 Inhibitor Is the New Starting Point</a></li>
       <li><a href="/blog/medical-journal-digest/chatgpt-for-clinicians-uk/">ChatGPT for Clinicians Launched. UK Doctors Are Excluded.</a></li>
       <li><a href="/blog/medical-journal-digest/palliative-care-journal-digest/">Palliative Care Journal Digest</a></li>
@@ -619,18 +699,41 @@
   <div class="author-box">
     <div class="author-avatar">TH</div>
     <div class="author-info">
-      <h4>Dr Tim Hamilton · Consultant in Palliative Medicine, NHS Wales</h4>
+      <h4><a href="/about/" style="color:inherit;">Dr Tim Hamilton</a> · Consultant in Palliative Medicine, NHS Wales</h4>
       <p>Dr Tim Hamilton is a Consultant in Palliative Medicine in NHS Wales and the founder of The Monday Clinical Brief. He built MCB to help busy UK clinicians keep up with the literature across 31 specialties.</p>
+      <p style="margin-top:0.5rem;"><a href="/about/">Credentials, editorial policy and conflicts of interest →</a></p>
     </div>
   </div>
 </div>
 
+</main>
 
 <!-- ═══ FOOTER ═══ -->
 <footer>
-  <p>&copy; 2025 The Monday Clinical Brief. All rights reserved.</p>
-  <p><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/blog/">Blog</a></p>
+  <p>&copy; 2026 The Monday Clinical Brief. All rights reserved.</p>
+  <p><a href="/samples/">Samples</a> · <a href="/blog/">Blog</a> · <a href="/methodology/">Methodology</a> · <a href="/about/">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p>
 </footer>
+
+<script>
+// The mobile bottom bar is fixed, so the body must reserve exactly its height
+// or the footer ends up underneath it. Measure it rather than guessing: brand
+// length, font loading and text-size settings all move this number.
+(function () {
+  var nav = document.querySelector('nav');
+  if (!nav) return;
+  function sync() {
+    var fixed = getComputedStyle(nav).position === 'fixed';
+    document.documentElement.style.setProperty(
+      '--bottom-nav-h', fixed ? nav.offsetHeight + 'px' : '0px'
+    );
+  }
+  sync();
+  addEventListener('resize', sync);
+  addEventListener('orientationchange', sync);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(sync);
+  if (window.ResizeObserver) new ResizeObserver(sync).observe(nav);
+})();
+</script>
 
 </body>
 </html>

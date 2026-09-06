@@ -3,23 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>UK Doctors&#39; AI Tools 2026: Two Withdrawn, One Restricted — and What Replaces Them — The Monday Clinical Brief</title>
-<meta name="description" content="Between 23 April and May 2026, UK clinicians lost OpenEvidence and ChatGPT for Clinicians, while Heidi Evidence pulled back to out-of-session use only. Here&#39;s what happened, why, and the UK-regulatory-compliant tools that still work.">
+<title>UK Doctors&#39; AI Tools 2026: Withdrawn and Restricted — The Monday Clinical Brief</title>
+<meta name="description" content="UK clinicians lost OpenEvidence and ChatGPT for Clinicians in 2026, and Heidi Evidence pulled back to out-of-session use. What still works.">
 <link rel="canonical" href="https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/uk-doctors-lost-ai-tools-2026/">
 
 
 <!-- Open Graph -->
-<meta property="og:title" content="UK Doctors&#39; AI Tools 2026: Two Withdrawn, One Restricted — and What Replaces Them">
-<meta property="og:description" content="Between 23 April and May 2026, UK clinicians lost OpenEvidence and ChatGPT for Clinicians, while Heidi Evidence pulled back to out-of-session use only. Here&#39;s what happened, why, and the UK-regulatory-compliant tools that still work.">
+<meta property="og:title" content="UK Doctors&#39; AI Tools 2026: Withdrawn and Restricted">
+<meta property="og:description" content="UK clinicians lost OpenEvidence and ChatGPT for Clinicians in 2026, and Heidi Evidence pulled back to out-of-session use. What still works.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/uk-doctors-lost-ai-tools-2026/">
-
+<meta property="og:image" content="https://mondayclinicalbrief.co.uk/assets/brand/mcb-og-1200x630-v2.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="UK Doctors&#39; AI Tools 2026: Withdrawn and Restricted — The Monday Clinical Brief">
 <meta property="og:site_name" content="The Monday Clinical Brief">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="UK Doctors&#39; AI Tools 2026: Two Withdrawn, One Restricted — and What Replaces Them">
-<meta name="twitter:description" content="Between 23 April and May 2026, UK clinicians lost OpenEvidence and ChatGPT for Clinicians, while Heidi Evidence pulled back to out-of-session use only. Here&#39;s what happened, why, and the UK-regulatory-compliant tools that still work.">
+<meta name="twitter:title" content="UK Doctors&#39; AI Tools 2026: Withdrawn and Restricted">
+<meta name="twitter:description" content="UK clinicians lost OpenEvidence and ChatGPT for Clinicians in 2026, and Heidi Evidence pulled back to out-of-session use. What still works.">
 
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
 
@@ -122,9 +125,15 @@
   footer a { color: var(--sage); text-decoration: none; }
 
   @media (max-width: 640px) {
-    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; }
+    /* Fixed bottom bar on mobile. The brand used to wrap to two lines at
+       390px, making the bar ~123px tall while the body reserved only 60px —
+       so the footer sat underneath it. Keep the brand on one line and reserve
+       the bar's measured height via a custom property. */
+    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; align-items: center; gap: 0.75rem; }
     .nav-links a:not(.nav-cta) { display: none; }
-    body { padding-bottom: 60px; }
+    .nav-brand { font-size: 0.9rem; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+    .nav-cta { flex-shrink: 0; }
+    body { padding-bottom: calc(var(--bottom-nav-h, 64px) + env(safe-area-inset-bottom, 0px)); }
     .breadcrumb { padding-top: 2rem; }
     .article-header { padding-top: 1rem; }
     .article-header h1 { font-size: 1.8rem; }
@@ -138,8 +147,8 @@
 {
   "@context": "https://schema.org",
   "@type": "MedicalWebPage",
-  "headline": "UK Doctors&#39; AI Tools 2026: Two Withdrawn, One Restricted — and What Replaces Them",
-  "description": "Between 23 April and May 2026, UK clinicians lost OpenEvidence and ChatGPT for Clinicians, while Heidi Evidence pulled back to out-of-session use only. Here&#39;s what happened, why, and the UK-regulatory-compliant tools that still work.",
+  "headline": "UK Doctors&#39; AI Tools 2026: Withdrawn and Restricted",
+  "description": "UK clinicians lost OpenEvidence and ChatGPT for Clinicians in 2026, and Heidi Evidence pulled back to out-of-session use. What still works.",
   "url": "https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/uk-doctors-lost-ai-tools-2026/",
   "datePublished": "2026-05-25T00:00:00.000Z",
   "dateModified": "2026-06-15T00:00:00.000Z",
@@ -212,7 +221,7 @@
       "name": "Which AI tools have UK doctors lost access to in 2026?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Two withdrew and one was restricted, in six weeks. ChatGPT for Clinicians launched on 23 April 2026 with UK and EEA accounts explicitly excluded at the verification step. OpenEvidence withdrew from the UK and EU on 28 April 2026. Heidi Evidence stayed available in the UK and EU but restricted to out-of-session use only — it cannot answer during a live consultation. All three are point-of-care clinical Q&amp;A tools."
+        "text": "Two withdrew and one was restricted, in six weeks. ChatGPT for Clinicians launched on 23 April 2026 with UK and EEA accounts explicitly excluded at the verification step. OpenEvidence withdrew from the UK and EU on 28 April 2026. Heidi Evidence stayed available in the UK and EU but restricted to out-of-session use only — it cannot be invoked from inside an active session or see patient context, and NHS UK accounts are excluded from Evidence altogether. All three are point-of-care clinical Q&amp;A tools."
       }
     },
     
@@ -281,6 +290,7 @@
 </nav>
 
 <!-- ═══ BREADCRUMB ═══ -->
+<main id="main">
 <div class="breadcrumb" aria-label="Breadcrumb">
   <ol>
     <li><a href="/">Home</a></li>
@@ -304,7 +314,7 @@
 
 <!-- ═══ ARTICLE CONTENT ═══ -->
 <article class="article-content">
-  <p>In six weeks between late April and May 2026, three of the most credible clinical AI tools in the world pulled back from UK point-of-care use. ChatGPT for Clinicians launched with the UK and EEA excluded at the verification step. OpenEvidence withdrew from the UK and EU entirely. Heidi Evidence — UK-partnered with NICE, BMJ Group, MIMS, and HealthPathways — stayed available in the UK and EU but restricted to out-of-session use, so it cannot answer during a live consultation.</p>
+  <p>In six weeks between late April and May 2026, three of the most credible clinical AI tools in the world pulled back from UK point-of-care use. ChatGPT for Clinicians launched with the UK and EEA excluded at the verification step. OpenEvidence withdrew from the UK and EU entirely. Heidi Evidence — UK-partnered with NICE, BMJ Group, MIMS, and HealthPathways — stayed available in the UK and EU but restricted to out-of-session use, so it cannot be invoked from inside an active session or see patient context. Heidi also excludes NHS UK accounts from Evidence entirely.</p>
 <p>If you are a UK NHS clinician, you may not have noticed all three. They happened quietly, in adjacent news cycles, each treated as a one-off rather than a pattern. The pattern is the point.</p>
 <p>This post sets out what happened, why it happened, and — more usefully — what UK clinicians can actually use today.</p>
 <h2 id="the-pattern%2C-in-dates" tabindex="-1">The pattern, in dates</h2>
@@ -313,7 +323,7 @@
 <li><strong>28 April 2026</strong> — OpenEvidence withdraws from the UK and EU. No replacement announced. No UK handoff. The platform that 40 % of US physicians were reportedly using disappears from UK access overnight.</li>
 <li><strong>May 2026</strong> — Heidi Evidence (the clinical decision support arm of Heidi Health) operates in the UK and EU but restricts evidence querying to out-of-session use. It cannot be used during a live patient consultation.</li>
 </ul>
-<p>We have written individual explainers for each: <a href="/blog/medical-journal-digest/openevidence-alternative-uk/">the OpenEvidence withdrawal</a>, <a href="/blog/medical-journal-digest/chatgpt-for-clinicians-uk/">the ChatGPT for Clinicians exclusion</a>, and <a href="/blog/medical-journal-digest/heidi-evidence-uk-in-session-restriction/">the Heidi Evidence in-session restriction</a>. This post pulls the thread.</p>
+<p>We have written individual explainers for each: <a href="/blog/medical-journal-digest/openevidence-alternative-uk/">the OpenEvidence withdrawal</a>, <a href="/blog/medical-journal-digest/chatgpt-for-clinicians-uk/">the ChatGPT for Clinicians exclusion</a>, and <a href="/blog/medical-journal-digest/heidi-evidence-uk-in-session-restriction/">the Heidi Evidence in-session restriction</a>. This post pulls the thread. For the two of them head to head, see <a href="/blog/medical-journal-digest/heidi-evidence-vs-openevidence-uk/">Heidi Evidence vs OpenEvidence</a>.</p>
 <h2 id="why-this-is-happening" tabindex="-1">Why this is happening</h2>
 <p>The three withdrawals look like coincidences. They are not. They share a single underlying cause: UK and EU regulatory uncertainty around clinical AI, at exactly the moment the products were ready to ship.</p>
 <p>Each of the three tools generates AI-synthesised clinical recommendations from a clinical query. Under UK MHRA classification, that kind of output sits close to — and in some cases inside — Software as a Medical Device territory. Content partnerships with NICE or BMJ Group describe what a model is grounded in. They do not describe how a regulator classifies it.</p>
@@ -329,7 +339,7 @@
 <p>The UK and EU withdrawal cited AI regulatory uncertainty. No re-entry signal has been published. UK doctors who were trialling the platform have lost access; the few who built clinical workflows around it have had to reconfigure.</p>
 <h3 id="heidi-evidence-(2026)" tabindex="-1">Heidi Evidence (2026)</h3>
 <p>Heidi Evidence is the most strategically interesting move in the trio. Free at the individual tier. Citation-backed. Partnered with NICE, BMJ Group, MIMS, and HealthPathways — the four most credible UK clinical-content sources a tool in this space could pair with. The product is good. We have read the output carefully.</p>
-<p>UK and EU clinicians can use it — but only outside live sessions. Heidi documents Evidence as available to UK and EU users out of session, with in-session querying disabled under current compliance settings. So it can answer between patients or after clinic, but not in the room, in the moment. The restriction is specific to Heidi Evidence; Heidi Scribe (the AI clinical scribe product, separately MHRA-cleared) remains available to UK clinicians, including NHS staff, in session.</p>
+<p>UK and EU clinicians can use it — but only outside an active session, and not at all on an NHS UK account. Heidi documents Evidence used outside sessions as fully available in the UK and EU on all plans, opened from the sidebar independently of any consultation, so it <em>can</em> be used with a patient in the room. What is disabled here is in-session Evidence, which would read the session transcript and linked patient details, along with patient and session linking. Heidi states separately that NHS UK accounts are excluded from Evidence and from free trials that include it. Heidi's stated reason for the in-session limit is that patient-context Evidence would constitute clinical decision support requiring medical device classification under UK MDR 2002. The restriction is specific to Heidi Evidence; Heidi Scribe (the AI clinical scribe product, separately MHRA-cleared) remains available to UK clinicians, including NHS staff, in session.</p>
 <p>Heidi Health has not published a detailed rationale. The most likely explanation is the same regulatory caution that took OpenEvidence and ChatGPT for Clinicians out of UK access — but applied to the context of use (live point-of-care decision support) rather than the whole market.</p>
 <h2 id="what-uk-nhs-clinicians-can-use-today" tabindex="-1">What UK NHS clinicians can use today</h2>
 <p>There is a credible UK setup for clinicians who want both point-of-care Q&amp;A and weekly literature current-awareness. It is not a workaround. It is a two-tool combination that does the same job the three products that pulled back were attempting, with the advantage that it is actually available in session.</p>
@@ -366,7 +376,7 @@
     
     <details class="faq-item">
       <summary>Which AI tools have UK doctors lost access to in 2026?</summary>
-      <p>Two withdrew and one was restricted, in six weeks. ChatGPT for Clinicians launched on 23 April 2026 with UK and EEA accounts explicitly excluded at the verification step. OpenEvidence withdrew from the UK and EU on 28 April 2026. Heidi Evidence stayed available in the UK and EU but restricted to out-of-session use only — it cannot answer during a live consultation. All three are point-of-care clinical Q&amp;A tools.</p>
+      <p>Two withdrew and one was restricted, in six weeks. ChatGPT for Clinicians launched on 23 April 2026 with UK and EEA accounts explicitly excluded at the verification step. OpenEvidence withdrew from the UK and EU on 28 April 2026. Heidi Evidence stayed available in the UK and EU but restricted to out-of-session use only — it cannot be invoked from inside an active session or see patient context, and NHS UK accounts are excluded from Evidence altogether. All three are point-of-care clinical Q&amp;A tools.</p>
     </details>
     
     <details class="faq-item">
@@ -410,6 +420,9 @@
     <h3>More on Medical Journal Digest</h3>
     <ul>
       <li><a href="/blog/medical-journal-digest/guide/">Medical Journal Digest</a> — the complete guide</li>
+      <li><a href="/blog/medical-journal-digest/heidi-evidence-vs-openevidence-uk/">Heidi Evidence vs OpenEvidence: Which One Can UK Doctors Actually Use?</a></li>
+      <li><a href="/blog/medical-journal-digest/this-week-in-medical-journals-august-2026/">This Week in Medical Journals: August 2026 Highlights</a></li>
+      <li><a href="/blog/medical-journal-digest/cks-round-up-july-2026/">NICE CKS Round-Up — July 2026: Recent Updates for UK Primary Care</a></li>
       <li><a href="/blog/medical-journal-digest/clinicalkey-ai-vs-openevidence/">ClinicalKey AI vs OpenEvidence: In the UK, It&#39;s Not a Choice</a></li>
       <li><a href="/blog/medical-journal-digest/cks-round-up-june-2026/">NICE CKS Round-Up — June 2026: Recent Updates for UK Primary Care</a></li>
       <li><a href="/blog/medical-journal-digest/nice-ng106-heart-failure-2025-update/">NICE Heart Failure Update (NG106): SGLT2 Inhibitors Now Span the Ejection-Fraction Spectrum</a></li>
@@ -419,18 +432,18 @@
       <li><a href="/blog/medical-journal-digest/asthma-bts-nice-sign-ng245-uk-2026/">Asthma Diagnosis and Treatment in UK Primary Care 2026: What the BTS/NICE/SIGN Guideline (NG245) Changed</a></li>
       <li><a href="/blog/medical-journal-digest/atrial-fibrillation-anticoagulation-uk-primary-care-2026/">Anticoagulation in Atrial Fibrillation: A UK Primary-Care Guide (NICE NG196)</a></li>
       <li><a href="/blog/medical-journal-digest/sglt2-inhibitors-ckd-uk-primary-care-2026/">SGLT2 Inhibitors for CKD in UK Primary Care 2026: What NICE TA1075 Means in Practice</a></li>
-      <li><a href="/blog/medical-journal-digest/statins-cvd-prevention-uk-primary-care-2026/">Statins and CVD Prevention in UK Primary Care 2026: What NICE NG238 Means in Practice</a></li>
+      <li><a href="/blog/medical-journal-digest/statins-cvd-prevention-uk-primary-care-2026/">Who Gets a Statin in 2026? The NICE NG238 Thresholds UK GPs Actually Use</a></li>
       <li><a href="/blog/medical-journal-digest/medical-journal-digest-vs-podcast/">Medical Journal Digest vs Medical Podcast: Which Is Better for CPD?</a></li>
       <li><a href="/blog/medical-journal-digest/ad-free-clinical-ai-uk-2026/">Ad-Free Clinical AI for UK Doctors (2026): The Short List</a></li>
       <li><a href="/blog/medical-journal-digest/best-medical-journal-digest-apps/">Best Medical Journal Digest Apps for UK Doctors</a></li>
       <li><a href="/blog/medical-journal-digest/cks-round-up-may-2026/">NICE CKS Round-Up — May 2026: Recent Updates for UK Primary Care</a></li>
-      <li><a href="/blog/medical-journal-digest/menopause-hrt-nice-ng23-2026/">Menopause and HRT Guidance UK 2026: NICE Recommends Fezolinetant and Updates NG23</a></li>
-      <li><a href="/blog/medical-journal-digest/mrcp-paces-2026-study-plan-uk/">MRCP PACES 2026: Fee Rise, Part 1 In-Centre, and a 12-Week Study Plan for Working Trainees</a></li>
+      <li><a href="/blog/medical-journal-digest/menopause-hrt-nice-ng23-2026/">What Can You Offer When HRT Isn&#39;t Suitable? Fezolinetant and NG23 in 2026</a></li>
+      <li><a href="/blog/medical-journal-digest/mrcp-paces-2026-study-plan-uk/">Can You Pass MRCP PACES While Working Full Time? A 12-Week Plan for 2026</a></li>
       <li><a href="/blog/medical-journal-digest/praxis-medicine-uk/">Praxis Medicine UK: What It Is, What It Costs, and Where It Fits</a></li>
       <li><a href="/blog/medical-journal-digest/this-week-in-medical-journals-june-2026/">This Week in Medical Journals: June 2026 Highlights</a></li>
       <li><a href="/blog/medical-journal-digest/tirzepatide-gp-qof-2026/">Can You Prescribe Tirzepatide Under QOF 2026/27? The Mounjaro Decision Facing GPs</a></li>
       <li><a href="/blog/medical-journal-digest/sglt2-inhibitors-uk-primary-care-2026/">SGLT2 Inhibitors in UK Primary Care 2026: What NICE NG28 Means in Practice</a></li>
-      <li><a href="/blog/medical-journal-digest/heidi-evidence-uk-in-session-restriction/">Heidi Evidence Is Excellent. In the UK, It Won&#39;t Answer Mid-Consultation.</a></li>
+      <li><a href="/blog/medical-journal-digest/heidi-evidence-uk-in-session-restriction/">Heidi Evidence in the UK: What the In-Session Restriction Actually Blocks</a></li>
       <li><a href="/blog/medical-journal-digest/nice-ng28-type-2-diabetes-2026/">NICE NG28 Update, February 2026: Metformin Plus an SGLT2 Inhibitor Is the New Starting Point</a></li>
       <li><a href="/blog/medical-journal-digest/chatgpt-for-clinicians-uk/">ChatGPT for Clinicians Launched. UK Doctors Are Excluded.</a></li>
       <li><a href="/blog/medical-journal-digest/palliative-care-journal-digest/">Palliative Care Journal Digest</a></li>
@@ -454,18 +467,41 @@
   <div class="author-box">
     <div class="author-avatar">TH</div>
     <div class="author-info">
-      <h4>Dr Tim Hamilton · Consultant in Palliative Medicine, NHS Wales</h4>
+      <h4><a href="/about/" style="color:inherit;">Dr Tim Hamilton</a> · Consultant in Palliative Medicine, NHS Wales</h4>
       <p>Dr Tim Hamilton is a Consultant in Palliative Medicine in NHS Wales and the founder of The Monday Clinical Brief. He built MCB to help busy UK clinicians keep up with the literature across 31 specialties.</p>
+      <p style="margin-top:0.5rem;"><a href="/about/">Credentials, editorial policy and conflicts of interest →</a></p>
     </div>
   </div>
 </div>
 
+</main>
 
 <!-- ═══ FOOTER ═══ -->
 <footer>
-  <p>&copy; 2025 The Monday Clinical Brief. All rights reserved.</p>
-  <p><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/blog/">Blog</a></p>
+  <p>&copy; 2026 The Monday Clinical Brief. All rights reserved.</p>
+  <p><a href="/samples/">Samples</a> · <a href="/blog/">Blog</a> · <a href="/methodology/">Methodology</a> · <a href="/about/">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p>
 </footer>
+
+<script>
+// The mobile bottom bar is fixed, so the body must reserve exactly its height
+// or the footer ends up underneath it. Measure it rather than guessing: brand
+// length, font loading and text-size settings all move this number.
+(function () {
+  var nav = document.querySelector('nav');
+  if (!nav) return;
+  function sync() {
+    var fixed = getComputedStyle(nav).position === 'fixed';
+    document.documentElement.style.setProperty(
+      '--bottom-nav-h', fixed ? nav.offsetHeight + 'px' : '0px'
+    );
+  }
+  sync();
+  addEventListener('resize', sync);
+  addEventListener('orientationchange', sync);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(sync);
+  if (window.ResizeObserver) new ResizeObserver(sync).observe(nav);
+})();
+</script>
 
 </body>
 </html>

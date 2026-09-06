@@ -74,6 +74,7 @@
   "jobTitle": "Consultant in Palliative Medicine",
   "worksFor": { "@type": "MedicalOrganization", "name": "NHS Wales" },
   "url": "https://mondayclinicalbrief.co.uk/#about",
+  "image": "https://mondayclinicalbrief.co.uk/assets/brand/tim-hamilton-800.jpg",
   "sameAs": [
     "https://www.linkedin.com/in/tim-hamilton-6328473b4/"
   ],
@@ -143,6 +144,8 @@
   .btn-secondary:hover { color: var(--sage-deep); }
   .price-tag { display: inline-block; margin-top: 1.5rem; font-size: 0.9rem; color: var(--text-muted); }
   .price-tag strong { color: var(--charcoal); font-size: 1.1rem; }
+  .trial-terms { max-width: 420px; margin: 0.6rem auto 0; font-size: 0.8rem; line-height: 1.5; color: var(--text-muted); }
+  .trial-terms-dark { color: rgba(255,255,255,0.55); margin-top: 0.5rem; }
 
   /* ── SECTIONS ── */
   section { padding: 5rem 2rem; }
@@ -184,7 +187,8 @@
   .sample-sources a:hover { text-decoration: underline; }
   .sample-picker { margin: 1.5rem 0 0; }
   .sample-picker select { width: 100%; max-width: 360px; padding: 0.85rem 1.1rem; font-family: 'Figtree', sans-serif; font-size: 0.95rem; border: 1px solid var(--border); border-radius: 8px; background: white; color: var(--text); appearance: none; cursor: pointer; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23555' stroke-width='1.5'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 1rem center; padding-right: 2.5rem; }
-  .sample-picker select:focus { outline: none; border-color: var(--sage); }
+  .sample-picker select:focus { border-color: var(--sage); }
+  .sample-picker select:focus-visible { outline: 3px solid var(--sage-deep); outline-offset: 2px; border-color: var(--sage); }
   .sample-deep-link { display: inline-block; margin-top: 1.5rem; color: var(--sage-deep); text-decoration: none; font-weight: 600; font-size: 0.95rem; padding: 0.75rem 1.25rem; border: 1px solid var(--sage-deep); border-radius: 40px; transition: all 0.2s; }
   .sample-deep-link:hover { background: var(--sage-deep); color: white; }
 
@@ -198,10 +202,11 @@
   .subscribe-price .period { font-size: 0.9rem; opacity: 0.6; margin-top: 0.25rem; }
   .subscribe-price .promo-hint { font-size: 0.85rem; color: var(--gold); margin-top: 0.75rem; }
 
-  .specialty-select-label { font-size: 0.85rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-bottom: 0.75rem; }
+  .specialty-select-label { display: block; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-bottom: 0.75rem; }
 
   .specialty-select { width: 100%; padding: 1rem 1.25rem; font-family: 'Figtree', sans-serif; font-size: 1rem; border: 1px solid rgba(255,255,255,0.15); border-radius: 8px; background: rgba(255,255,255,0.08); color: white; appearance: none; cursor: pointer; margin-bottom: 1.5rem; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23ffffff' stroke-width='1.5'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 1.25rem center; }
-  .specialty-select:focus { outline: none; border-color: var(--sage); }
+  .specialty-select:focus { border-color: var(--sage); }
+  .specialty-select:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; border-color: var(--gold); }
   .specialty-select option { background: var(--charcoal); color: white; }
 
   .subscribe-btn { width: 100%; padding: 1.1rem; font-family: 'Figtree', sans-serif; font-size: 1.05rem; font-weight: 600; background: white; color: var(--charcoal); border: none; border-radius: 60px; cursor: pointer; transition: all 0.3s; }
@@ -237,6 +242,8 @@
   .about-section { background: var(--cream); }
   .about-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 2.5rem; align-items: start; margin-top: 2rem; }
   .about-photo { width: 100%; aspect-ratio: 1; background: var(--sage-light); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-family: 'Instrument Serif', serif; font-size: 3rem; color: var(--sage); }
+  .about-photo picture { display: block; width: 100%; height: 100%; }
+  .about-photo img { width: 100%; height: 100%; object-fit: cover; border-radius: 8px; display: block; }
   .about-text p { margin-bottom: 1rem; color: var(--text-muted); font-size: 0.95rem; }
   .about-text strong { color: var(--text); }
 
@@ -245,18 +252,40 @@
   footer p { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0.5rem; }
   footer a { color: var(--sage); text-decoration: none; }
 
+  /* Keyboard focus baseline — every interactive control gets a visible ring. */
+  a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible, summary:focus-visible {
+    outline: 3px solid var(--sage-deep); outline-offset: 2px; border-radius: 3px;
+  }
+  .subscribe-section a:focus-visible, .subscribe-section button:focus-visible, .subscribe-section input:focus-visible {
+    outline-color: var(--gold);
+  }
+
+  /* Respect a reduced-motion preference. The hero starts at opacity:0 and is
+     revealed by fadeUp, so the animations must still *run* (near-instantly)
+     rather than be cancelled, or the hero would never appear. */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+    .eyebrow, .hero h1, .hero-sub, .hero-cta { opacity: 1 !important; transform: none !important; }
+    .hero::before { animation: none !important; }
+  }
+
   @media (max-width: 640px) {
     nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; gap: 0.75rem; }
     .nav-brand { font-size: 1.3rem; line-height: 1.05; gap: 0.45rem; }
     .nav-mark { height: 2rem; }
     .nav-cta { white-space: nowrap; flex-shrink: 0; }
     .nav-links a:not(.nav-cta) { display: none; }
-    body { padding-bottom: 60px; }
-    .hero { min-height: calc(100vh - 60px); padding-top: 3rem; }
+    body { padding-bottom: calc(var(--bottom-nav-h, 64px) + env(safe-area-inset-bottom, 0px)); }
+    .hero { min-height: calc(100vh - var(--bottom-nav-h, 64px)); padding-top: 3rem; }
     section { padding: 3.5rem 1.5rem; }
     .specialties-grid { grid-template-columns: 1fr 1fr; }
-    .about-grid { grid-template-columns: 1fr; }
-    .about-photo { max-width: 160px; }
+    .about-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+    .about-photo { max-width: 160px; margin-left: auto; margin-right: auto; }
     .step { grid-template-columns: 40px 1fr; gap: 1rem; }
     .subscribe-features { grid-template-columns: 1fr; }
   }
@@ -268,13 +297,14 @@
 <nav>
   <a href="/" class="nav-brand"><img src="/assets/brand/mcb-mark-512.png" alt="" class="nav-mark" width="36" height="36">The Monday Clinical Brief</a>
   <div class="nav-links">
-    <a href="#how">How it works</a>
-    <a href="/samples/">All samples</a>
+    <a href="/samples/">Samples</a>
     <a href="/blog/">Blog</a>
+    <a href="#how">How it works</a>
     <a href="#subscribe" class="nav-cta">Start free trial</a>
   </div>
 </nav>
 
+<main id="main">
 <!-- ═══ HERO ═══ -->
 <section class="hero">
   <div class="hero-content">
@@ -286,6 +316,7 @@
       <br>
       <a href="#how" class="btn-secondary">See how it works ↓</a>
       <div class="price-tag">Free for 4 weeks, then <strong>£20</strong> / year · Cancel any time</div>
+      <div class="trial-terms">A card is needed to start the trial. Nothing is charged for 4 weeks, and nothing at all if you cancel before then.</div>
     </div>
   </div>
 </section>
@@ -352,7 +383,7 @@
         <div class="step-num">02</div>
         <div>
           <h3>AI-generated clinical summaries</h3>
-          <p>Each article gets a structured summary: study type, key question, findings with real numbers, clinical relevance, and limitations.</p>
+          <p>Each article gets a structured summary: study type, key question, findings with real numbers, clinical relevance, and limitations. <a href="/methodology/">How we choose journals and write summaries →</a></p>
         </div>
       </div>
       <div class="step">
@@ -367,6 +398,13 @@
         <div>
           <h3>Direct links to full text</h3>
           <p>Every article includes DOI and PubMed links. One click to the full paper via your institutional or OpenAthens login.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">05</div>
+        <div>
+          <h3>CPD logged as you read</h3>
+          <p>Every article has a "Log as CPD" button. One click records your reading in the <a href="https://cpd.mondayclinicalbrief.co.uk">MCB CPD Tracker</a> and starts a reflection for you to edit in your own words, ready to export for appraisal. Included with every subscription.</p>
         </div>
       </div>
     </div>
@@ -418,338 +456,16 @@
 
     <div id="sample-output">
       <!-- EXAMPLE_ARTICLES:START — auto-generated by build_sample_pages.py, do not edit by hand -->
-      <article class="sample-card" data-slug="acute-medicine" hidden>
-        <div class="sample-badge">BMJ (Clinical research ed.)</div>
-        <h3>Assessing early effects of Australia&#x27;s Social Media Minimum Age Act on adolescents&#x27; social media use: observational study</h3>
-        <div class="sample-meta">Barnes C, Hall A, Mantach S et al. · 2026 Jun 24</div>
-        <div class="summary-field"><span class="summary-label">Study Type:</span> Observational study (pre-post with regression discontinuity design)</div>
-        <div class="summary-field"><span class="summary-label">Key Question:</span> Did Australia&#x27;s minimum age-16 law for social media accounts reduce adolescent social media use in the three months following implementation?</div>
-        <div class="summary-field"><span class="summary-label">Key Findings:</span> <ul><li>Over 85% of under-16s still reported using regulated platforms at three-month follow-up, predominantly via their own accounts (54–68%)</li><li>Circumvention was common: 15–19% used fake accounts; 6–11% accessed via private browsers; age verification was largely limited to self-declaration or selfies</li><li>Regression discontinuity analyses found no statistically significant reduction in daily use or time spent at the age-16 threshold (p≥0.60)</li></ul></div>
-        <div class="summary-field"><span class="summary-label">Clinical Relevance:</span> As the UK considers similar age-based social media restrictions, this provides early real-world evidence that legislative minimum age requirements alone are unlikely to meaningfully reduce adolescent exposure without robust verification infrastructure.</div>
-        <div class="summary-field"><span class="summary-label">Limitations:</span> Small sample (n=408), short follow-up (three months), and self-reported outcomes introduce significant measurement and maturation bias.</div>
-        <div class="sample-sources"><a href="https://pubmed.ncbi.nlm.nih.gov/42342272/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1136/bmj-2026-363695" target="_blank" rel="noopener">DOI →</a></div>
-      </article>
-      <article class="sample-card" data-slug="anaesthetics" hidden>
-        <div class="sample-badge">Anesthesia and analgesia</div>
-        <h3>Live Interactive Music Therapy Across the Perioperative Continuum: A Scoping Review</h3>
-        <div class="sample-meta">Devlin K, Shegogue JC, DeGroot C et al. · 2026 Jun 23</div>
-        <div class="summary-field"><span class="summary-label">Study Type:</span> Scoping review (PRISMA-ScR compliant)</div>
-        <div class="summary-field"><span class="summary-label">Key Question:</span> What are the characteristics and impacts of live, certified music therapist-delivered therapy across the perioperative period?</div>
-        <div class="summary-field"><span class="summary-label">Key Findings:</span> <ul><li>25 studies (1,821 patients, age 9 months–94 years, diverse surgical specialties) met inclusion criteria from 2,095 identified articles</li><li>Music therapy was delivered preoperatively (n=17), intraoperatively (n=8), and postoperatively (n=15), with measurable effects on anxiety, mood, and pain across age groups</li><li>Paediatric interventions favoured active/play-based preoperative approaches (measured behaviourally via m-YPAS); adult interventions were more evenly distributed across timepoints using self-report outcomes (VAS)</li></ul></div>
-        <div class="summary-field"><span class="summary-label">Clinical Relevance:</span> For UK anaesthetic teams seeking non-pharmacological adjuncts to reduce perioperative anxiety and analgesic requirements, this review maps current evidence, though service availability of certified music therapists within NHS settings is likely limited.</div>
-        <div class="summary-field"><span class="summary-label">Limitations:</span> Small sample sizes, expectancy bias, inconsistent intervention reporting, and absence of therapist-contact control groups significantly limit generalisability.</div>
-        <div class="sample-sources"><a href="https://pubmed.ncbi.nlm.nih.gov/42329136/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1213/ANE.0000000000008130" target="_blank" rel="noopener">DOI →</a></div>
-      </article>
-      <article class="sample-card" data-slug="cardiology" hidden>
-        <div class="sample-badge">Circulation</div>
-        <h3>Consumption of Fructose-Containing Food and Beverage Sources in Childhood Through to Adulthood and Risk of Hypertension: A Prospective Cohort Study</h3>
-        <div class="sample-meta">Nguyen M, AlEssa HB, Glenn AJ et al. · 2026 Jun 22</div>
-        <div class="summary-field"><span class="summary-label">Study Type:</span> Prospective cohort study</div>
-        <div class="summary-field"><span class="summary-label">Key Question:</span> Does consumption of fructose-containing foods and beverages (SSBs, fruit juice, whole fruit) from childhood through adulthood affect incident hypertension risk?</div>
-        <div class="summary-field"><span class="summary-label">Key Findings:</span> <ul><li>SSBs (≥2 servings/day) and fruit juice (≥1.5 servings/day) were independently associated with higher hypertension risk (HR 1.52 [95% CI 1.27–1.83] and HR 1.35 [95% CI 1.06–1.71], respectively)</li><li>Whole fruit intake showed no significant association with hypertension (HR 0.79 [95% CI 0.59–1.05])</li><li>Substituting one daily SSB serving with whole fruit, milk, or water was associated with 22%, 13%, and 9% lower hypertension risk respectively</li></ul></div>
-        <div class="summary-field"><span class="summary-label">Clinical Relevance:</span> Supports current NHS guidance limiting SSB and fruit juice consumption from childhood; fruit juice should not be considered a safe alternative to SSBs for cardiovascular risk reduction.</div>
-        <div class="summary-field"><span class="summary-label">Limitations:</span> Hypertension was self-reported, introducing potential misclassification bias.</div>
-        <div class="sample-sources"><a href="https://pubmed.ncbi.nlm.nih.gov/42324999/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1161/CIRCULATIONAHA.125.077666" target="_blank" rel="noopener">DOI →</a></div>
-      </article>
-      <article class="sample-card" data-slug="cardiothoracic-surgery" hidden>
-        <div class="sample-badge">European journal of cardio-thoracic surgery : official journal of the European Association for Cardio-thoracic Surgery</div>
-        <h3>Association between interventional cardiologist practice characteristics, CABG use, and clinical outcomes</h3>
-        <div class="sample-meta">Blackman J, Quon S, Francis DP et al. · 2026 Jun 23</div>
-        <div class="summary-field"><span class="summary-label">Study Type:</span> Retrospective cohort study (administrative health data)</div>
-        <div class="summary-field"><span class="summary-label">Key Question:</span> Does inter-operator variation in CABG referral rates among interventional cardiologists affect long-term patient outcomes?</div>
-        <div class="summary-field"><span class="summary-label">Key Findings:</span> <ul><li>CABG referral rates varied 13-fold across 40 interventionalists (2.03%–26.4%), with substantial operator-level variation independent of hospital factors (ICC 0.358)</li><li>Higher operator CABG rates correlated with lower PCI utilisation (R=−0.60) and less extensive PCI (R=−0.52)</li><li>Among 73,603 revascularised patients, higher operator CABG rate was associated with significantly fewer repeat revascularisations (HR 0.075), with no difference in mortality or MACE</li></ul></div>
-        <div class="summary-field"><span class="summary-label">Clinical Relevance:</span> This supports the case for consistent multidisciplinary Heart Team decision-making in UK catheter laboratories, where operator-driven variation in CABG referral may compromise revascularisation durability without clinical justification.</div>
-        <div class="summary-field"><span class="summary-label">Limitations:</span> Observational design using administrative data from a single Canadian province limits causal inference and generalisability to NHS practice.</div>
-        <div class="sample-sources"><a href="https://pubmed.ncbi.nlm.nih.gov/42334925/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1093/ejcts/ezag188" target="_blank" rel="noopener">DOI →</a></div>
-      </article>
-      <article class="sample-card" data-slug="dermatology" hidden>
-        <div class="sample-badge">JAMA dermatology</div>
-        <h3>Online vs In-Person Care for Atopic Dermatitis: A Randomized Clinical Trial</h3>
-        <div class="sample-meta">Armstrong AW, Roberts AM, Kostandy G et al. · 2026 Jun 24</div>
-        <div class="summary-field"><span class="summary-label">Study Type:</span> Randomised clinical equivalence trial</div>
-        <div class="summary-field"><span class="summary-label">Key Question:</span> Does an asynchronous, online team-based connected health (TCH) model produce equivalent improvements in atopic dermatitis severity compared to conventional in-person care over 12 months?</div>
-        <div class="summary-field"><span class="summary-label">Key Findings:</span> <ul><li>EASI difference between groups: −0.01 (95% CI −0.22 to 0.20); within equivalence margins</li><li>POEM and vIGA differences were similarly within prespecified equivalence bounds across 300 participants (149 TCH, 151 in-person)</li><li>Clinical equivalence was demonstrated across all three primary and secondary outcomes at 12 months</li></ul></div>
-        <div class="summary-field"><span class="summary-label">Clinical Relevance:</span> With NHS dermatology facing sustained demand pressures and geographic access inequity, this trial supports asynchronous teledermatology as a clinically equivalent alternative to in-person AD management, strengthening the evidence base for scalable remote care pathways.</div>
-        <div class="summary-field"><span class="summary-label">Limitations:</span> The trial was conducted across California outpatient clinics, limiting direct generalisability to NHS settings with differing workforce structures, referral pathways, and patient demographics.</div>
-        <div class="sample-sources"><a href="https://pubmed.ncbi.nlm.nih.gov/42340708/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1001/jamadermatol.2026.1959" target="_blank" rel="noopener">DOI →</a></div>
-      </article>
-      <article class="sample-card" data-slug="emergency-medicine" hidden>
-        <div class="sample-badge">Academic emergency medicine : official journal of the Society for Academic Emergency Medicine</div>
-        <h3>Development and Validation of a Modified Sudbury Vertigo Risk Score for Predicting Central Causes of Dizziness in the Emergency Department</h3>
-        <div class="sample-meta">Soma S, Kamitani T, Sasaki S · 2026 Jun</div>
-        <div class="summary-field"><span class="summary-label">Study Type:</span> Retrospective cohort study (clinical prediction model development and validation)</div>
-        <div class="summary-field"><span class="summary-label">Key Question:</span> Can a modified Sudbury Vertigo Risk Score — replacing BPPV diagnosis with history-based variables — reliably identify central causes of dizziness in ED patients?</div>
-        <div class="summary-field"><span class="summary-label">Key Findings:</span> <ul><li>Central aetiology confirmed in 5.2% of 2,958 patients; modified model achieved AUROC 0.81 (95% CI 0.77–0.85) vs 0.85 (95% CI 0.82–0.88) for the original Sudbury score</li><li>The modified model&#x27;s miss rate (false negatives) was 0.9% (95% CI 0.4–2.1%) vs 0.0% for the Sudbury model — a clinically meaningful safety trade-off</li><li>The modified model identified 18.7% of patients as low-risk (vs 26.8%), indicating reduced efficiency alongside the lower safety margin</li></ul></div>
-        <div class="summary-field"><span class="summary-label">Clinical Relevance:</span> For UK ED clinicians unable to reliably assign a BPPV diagnosis at triage, this modified tool offers a history-only alternative, though its higher miss rate warrants caution before adoption.</div>
-        <div class="summary-field"><span class="summary-label">Limitations:</span> Single-centre retrospective design limits generalisability; no external validation cohort was used.</div>
-        <div class="sample-sources"><a href="https://pubmed.ncbi.nlm.nih.gov/42363580/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1111/acem.70367" target="_blank" rel="noopener">DOI →</a></div>
-      </article>
-      <article class="sample-card" data-slug="endocrinology" hidden>
-        <div class="sample-badge">Diabetes care</div>
-        <h3>Erratum. Diabetes Body Project: Acute Effects of an Eating Disorder Prevention Program for Young Women With Type 1 Diabetes. A Multinational Randomized Controlled Trial. Diabetes Care 2025;48:220-225</h3>
-        <div class="sample-meta">Hennekes MHCL, Haugvik S, Wit M et al. · 2026 Jun 23</div>
-        <div class="summary-field"><span class="summary-label">Study Type:</span> Erratum / Correction notice</div>
-        <div class="summary-field"><span class="summary-label">Key Question:</span> Not applicable — this notice corrects an omission of funding acknowledgement in a published RCT examining an eating disorder prevention programme for young women with Type 1 Diabetes.</div>
-        <div class="summary-field"><span class="summary-label">Key Findings:</span> <ul><li>No new data or findings are presented</li><li>The sole correction adds a previously omitted NIH grant acknowledgement (P30 DK036836, Joslin Diabetes Center Clinical Research Center)</li><li>The original article (Diabetes Care 2025;48:220–225) remains otherwise unchanged</li></ul></div>
-        <div class="summary-field"><span class="summary-label">Clinical Relevance:</span> The underlying RCT addresses disordered eating in Type 1 Diabetes — a clinically significant comorbidity relevant to UK endocrinology and diabetes services — but this notice contains no new clinical information.</div>
-        <div class="summary-field"><span class="summary-label">Limitations:</span> Not applicable — this is an administrative correction only; clinicians should refer to the original article (DOI: 10.2337/dc24-1599) for study content.</div>
-        <div class="sample-sources"><a href="https://pubmed.ncbi.nlm.nih.gov/42335186/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.2337/dc26-er09a" target="_blank" rel="noopener">DOI →</a></div>
-      </article>
-      <article class="sample-card" data-slug="gastroenterology" hidden>
-        <div class="sample-badge">Gastroenterology</div>
-        <h3>Epithelial FOXP3 orchestrates O-glycosylated IL-6 secretion to drive pancreatic fibrocarcinogenesis</h3>
-        <div class="sample-meta">Gong R, Wang J, Ren M et al. · 2026 Jun 23</div>
-        <div class="summary-field"><span class="summary-label">Study Type:</span> Translational mechanistic study (human tissue analysis with genetically engineered mouse models)</div>
-        <div class="summary-field"><span class="summary-label">Key Question:</span> Does epithelial FOXP3 drive early pancreatic fibrosis and carcinogenesis via a glycosylation-dependent IL-6 signalling mechanism?</div>
-        <div class="summary-field"><span class="summary-label">Key Findings:</span> <ul><li>Epithelial FOXP3 (E-FOXP3) transactivates GALNT1, which O-glycosylates IL-6 at threonine-165, enabling its secretion and activation of pancreatic stellate cells via gp130/MAPK-ERK signalling</li><li>Epithelial-specific FOXP3 knockout attenuated fibrosis and delayed PanIN progression; knock-in induced spontaneous stromal activation and accelerated neoplasia</li><li>A fasting-mimicking diet suppressed the E-FOXP3–GALNT1 axis, reducing IL-6 glycosylation and pancreatic fibrosis in vivo</li></ul></div>
-        <div class="summary-field"><span class="summary-label">Clinical Relevance:</span> Identifies a druggable early-stage fibrocarcinogenic pathway in PDAC — a cancer with persistently poor UK outcomes — and raises interest in dietary intervention as a stromal-targeting strategy.</div>
-        <div class="summary-field"><span class="summary-label">Limitations:</span> Predominantly preclinical; human tissue data are correlative, with no clinical intervention evidence yet available.</div>
-        <div class="sample-sources"><a href="https://pubmed.ncbi.nlm.nih.gov/42336167/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1053/j.gastro.2026.06.007" target="_blank" rel="noopener">DOI →</a></div>
-      </article>
       <article class="sample-card" data-slug="general-practice">
         <div class="sample-badge">BMJ (Clinical research ed.)</div>
-        <h3>Assessing early effects of Australia&#x27;s Social Media Minimum Age Act on adolescents&#x27; social media use: observational study</h3>
-        <div class="sample-meta">Barnes C, Hall A, Mantach S et al. · 2026 Jun 24</div>
-        <div class="summary-field"><span class="summary-label">Study Type:</span> Observational study (pre-post with regression discontinuity design)</div>
-        <div class="summary-field"><span class="summary-label">Key Question:</span> Did Australia&#x27;s minimum age-16 social media legislation meaningfully reduce social media use in under-16s within three months of implementation?</div>
-        <div class="summary-field"><span class="summary-label">Key Findings:</span> <ul><li>Over 85% of under-16s still reported using regulated platforms at follow-up, predominantly via their own accounts (54–68%)</li><li>Daily use reduced modestly in 14–15 year olds (78% → 69%) but was stable in 12–13 year olds; regression discontinuity analysis found no statistically significant discontinuity at the age threshold (p≥0.60)</li><li>Circumvention was common: fake accounts (15–19%) and private browsing (6–11%); age verification was mostly self-declared age or selfie upload</li></ul></div>
-        <div class="summary-field"><span class="summary-label">Clinical Relevance:</span> As UK policymakers consider similar age-restriction legislation, this signals that minimum-age laws alone are unlikely to achieve short-term reductions in adolescent social media exposure without robust enforcement mechanisms.</div>
-        <div class="summary-field"><span class="summary-label">Limitations:</span> Small sample (n=408), short follow-up (~3 months), and self-reported outcomes limit conclusions about longer-term policy effects.</div>
-        <div class="sample-sources"><a href="https://pubmed.ncbi.nlm.nih.gov/42342272/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1136/bmj-2026-363695" target="_blank" rel="noopener">DOI →</a></div>
-      </article>
-      <article class="sample-card" data-slug="general-surgery" hidden>
-        <div class="sample-badge">Annals of surgery</div>
-        <h3>Normothermic Machine and Regional Perfusion in U.S. DCD Liver Transplantation: A National Comparative Analysis Supporting Adoption as Standard of Care</h3>
-        <div class="sample-meta">Acuna SA, Dayala H, Jones-Carr ME et al. · 2026 Jun 23</div>
-        <div class="summary-field"><span class="summary-label">Study Type:</span> Retrospective cohort study (national registry analysis)</div>
-        <div class="summary-field"><span class="summary-label">Key Question:</span> Does normothermic regional perfusion (NRP) or normothermic machine perfusion (NMP) confer superior graft survival in DCD liver transplantation compared to conventional super-rapid recovery with static cold storage?</div>
-        <div class="summary-field"><span class="summary-label">Key Findings:</span> <ul><li>Both SRR-NMP and NRP-SCS significantly reduced graft loss versus SRR-SCS (HR 0.54, 95%CI 0.32–0.92 and HR 0.42, 95%CI 0.29–0.61, respectively)</li><li>No significant difference in graft or overall survival between NRP-SCS and SRR-NMP</li><li>Adding NMP to NRP-procured livers conferred no additional survival benefit over NRP-SCS alone</li></ul></div>
-        <div class="summary-field"><span class="summary-label">Clinical Relevance:</span> With DCD donation expanding under NHS Blood and Transplant strategy, this large dataset supports both NRP and NMP as equivalent, legitimate standards of care — informing UK centre-level decisions about procurement pathway investment.</div>
-        <div class="summary-field"><span class="summary-label">Limitations:</span> Retrospective registry design with surrogate-marker identification of NRP and back-to-base NMP introduces potential misclassification bias.</div>
-        <div class="sample-sources"><a href="https://pubmed.ncbi.nlm.nih.gov/42335023/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1097/SLA.0000000000007120" target="_blank" rel="noopener">DOI →</a></div>
-      </article>
-      <article class="sample-card" data-slug="geriatric-medicine" hidden>
-        <div class="sample-badge">Age and ageing</div>
-        <h3>Effects of a home-based exercise and physical activity intervention after inpatient rehabilitation on real-world mobility in older adults with cognitive impairment: a secondary analysis of a randomised controlled trial</h3>
-        <div class="sample-meta">Werner C, Ullrich P, Degli Angeli L et al. · 2026 Jun 01</div>
-        <div class="summary-field"><span class="summary-label">Study Type:</span> Secondary analysis of an RCT</div>
-        <div class="summary-field"><span class="summary-label">Key Question:</span> Does a 12-week home-based exercise and physical activity programme improve real-world mobility in cognitively impaired older adults following inpatient geriatric rehabilitation?</div>
-        <div class="summary-field"><span class="summary-label">Key Findings:</span> <ul><li>Small but statistically significant post-intervention improvements in walking pace and pattern (stride length, walking bout duration, walking speed) in shorter walking bouts, measured via wearable sensor</li><li>No improvement in overall walking amount in either group at any timepoint</li><li>Gains were not sustained at 12-week follow-up, suggesting effects are transient without continued intervention</li></ul></div>
-        <div class="summary-field"><span class="summary-label">Clinical Relevance:</span> For UK geriatric teams managing post-rehabilitation care, this highlights that even structured home exercise programmes may not translate into meaningful increases in daily walking activity in older adults with cognitive impairment — a key consideration when designing post-discharge pathways.</div>
-        <div class="summary-field"><span class="summary-label">Limitations:</span> As a secondary analysis, the study was not powered for these digital mobility outcomes, limiting confidence in the effect size estimates.</div>
-        <div class="sample-sources"><a href="https://pubmed.ncbi.nlm.nih.gov/42361312/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1093/ageing/afag189" target="_blank" rel="noopener">DOI →</a></div>
-      </article>
-      <article class="sample-card" data-slug="haematology" hidden>
-        <div class="sample-badge">Blood</div>
-        <h3>Niche-targeted therapy via YAP/TAZ activation enhances hematopoietic regeneration</h3>
-        <div class="sample-meta">Uemura S, Yamashita M, Yokomizo-Nakano T et al. · 2026 Jun 22</div>
-        <div class="summary-field"><span class="summary-label">Study Type:</span> Preclinical mechanistic study (murine model)</div>
-        <div class="summary-field"><span class="summary-label">Key Question:</span> Can pharmacological activation of YAP/TAZ in bone marrow niche cells (endothelial cells and mesenchymal stromal cells) accelerate haematopoietic regeneration following myeloablative injury?</div>
-        <div class="summary-field"><span class="summary-label">Key Findings:</span> <ul><li>YAP/TAZ are rapidly upregulated in MSCs and ECs after myeloablative stress, acting as transcriptional regulators that preserve MSC identity (via Ebf1/Ebf3) and sustain CXCL12 and angiogenic factor expression</li><li>YAP/TAZ signalling coordinates sinusoidal vascular remodelling and HSC retention post-myelosuppression; conditional loss impaired haematopoietic recovery</li><li>Pharmacological YAP/TAZ activation enhanced BM niche reorganisation and accelerated haematopoietic regeneration across multiple myelosuppressive models</li></ul></div>
-        <div class="summary-field"><span class="summary-label">Clinical Relevance:</span> This identifies a tractable niche-targeted strategy that could reduce post-transplant cytopenias or chemotherapy-related marrow failure — areas of unmet need in UK transplant and intensive chemotherapy programmes.</div>
-        <div class="summary-field"><span class="summary-label">Limitations:</span> Findings are entirely preclinical (murine); human translatability and pharmacological agent safety profiles require prospective validation.</div>
-        <div class="sample-sources"><a href="https://pubmed.ncbi.nlm.nih.gov/42329810/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1182/blood.2025030831" target="_blank" rel="noopener">DOI →</a></div>
-      </article>
-      <article class="sample-card" data-slug="infectious-disease" hidden>
-        <div class="sample-badge">Clinical infectious diseases : an official publication of the Infectious Diseases Society of America</div>
-        <h3>DASC-LOT Framework and S3 Metric: A Novel Evaluation and Benchmarking Method to Assess Initiation, Duration, and Spectrum of Antimicrobial Usage at Inpatient Hospital Settings</h3>
-        <div class="sample-meta">Goto M, Imai S, Cho H et al. · 2026 Jun 25</div>
-        <div class="summary-field"><span class="summary-label">Study Type:</span> Retrospective cohort study with methodological framework development and validation</div>
-        <div class="summary-field"><span class="summary-label">Key Question:</span> Can a novel three-component metric (DASC-LOT / S3) more precisely benchmark inpatient antimicrobial stewardship performance across hospitals than existing single-measure metrics?</div>
-        <div class="summary-field"><span class="summary-label">Key Findings:</span> <ul><li>Marked inter-hospital variation in antimicrobial use across 118 VHA hospitals: DASC/1,000 days present ranged 1,311–5,275; LOT/1,000 days present ranged 132–518</li><li>The composite S3 metric (integrating initiation, duration, and spectrum) ranged from 0.703 to 1.572 across hospitals, with risk-adjustment models incorporating up to 116 patient-level variables</li><li>Radar chart visualisation enabled hospital-specific identification of stewardship weaknesses across all three domains separately</li></ul></div>
-        <div class="summary-field"><span class="summary-label">Clinical Relevance:</span> NHS stewardship teams currently rely heavily on Days of Therapy metrics; this framework could support more granular benchmarking and targeted interventions across NHS trusts.</div>
-        <div class="summary-field"><span class="summary-label">Limitations:</span> Derived exclusively from US Veterans Health Administration data, limiting direct generalisability to NHS inpatient populations and prescribing contexts.</div>
-        <div class="sample-sources"><a href="https://pubmed.ncbi.nlm.nih.gov/42345285/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1093/cid/ciag389" target="_blank" rel="noopener">DOI →</a></div>
-      </article>
-      <article class="sample-card" data-slug="intensive-care" hidden>
-        <div class="sample-badge">American journal of respiratory and critical care medicine</div>
-        <h3>Airway Mucus Plugs in Asthma and COPD: Pathobiology, Imaging, and Implications for Clinical Trials</h3>
-        <div class="sample-meta">Bosma CB, Aaron SD, Celli BR et al. · 2026 Jun 22</div>
-        <div class="summary-field"><span class="summary-label">Study Type:</span> Commentary / narrative review</div>
-        <div class="summary-field"><span class="summary-label">Key Question:</span> What is the pathobiology and clinical significance of airway mucus plugs in asthma and COPD, and how should they be incorporated into clinical trials and practice?</div>
-        <div class="summary-field"><span class="summary-label">Key Findings:</span> <ul><li>Mucus plug burden (quantified via CT bronchopulmonary segment scoring) correlates with increased exacerbations, accelerated spirometric decline, and higher mortality in COPD</li><li>Biologic therapies in asthma have demonstrated measurable reductions in CT-quantified mucus plug burden alongside spirometric improvement, supporting mucus plugging as a treatable trait</li><li>Standardised quantitative CT scoring methods are still maturing but are considered sufficiently developed for research and clinical integration</li></ul></div>
-        <div class="summary-field"><span class="summary-label">Clinical Relevance:</span> For UK ICU/critical care teams managing severe asthma or COPD exacerbations, CT-quantified mucus plug burden may offer a practical phenotyping and prognostic tool, and could inform selection of biologic therapy in refractory cases.</div>
-        <div class="summary-field"><span class="summary-label">Limitations:</span> As a review/commentary, no primary data are presented; conclusions depend on the quality and heterogeneity of cited studies.</div>
-        <div class="sample-sources"><a href="https://pubmed.ncbi.nlm.nih.gov/42330343/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1093/ajrccm/aamag309" target="_blank" rel="noopener">DOI →</a></div>
-      </article>
-      <article class="sample-card" data-slug="nephrology" hidden>
-        <div class="sample-badge">American journal of kidney diseases : the official journal of the National Kidney Foundation</div>
-        <h3>Mitochondrial Alterations and CKD</h3>
-        <div class="sample-meta">Pinzon-Cortes JA, Narongkiatikhun P, Yuan L et al. · 2026 Jun 22</div>
-        <div class="summary-field"><span class="summary-label">Study Type:</span> Narrative review</div>
-        <div class="summary-field"><span class="summary-label">Key Question:</span> What is the role of mitochondrial dysfunction in CKD pathogenesis, and which diagnostic and therapeutic strategies targeting mitochondrial pathways show promise?</div>
-        <div class="summary-field"><span class="summary-label">Key Findings:</span> <ul><li>Mitochondrial remodelling — affecting bioenergetics, redox balance, dynamics, and biogenesis — is implicated in both diabetic and non-diabetic CKD progression</li><li>Established agents (SGLT2 inhibitors, GLP-1 receptor agonists, non-steroidal MRAs) and emerging therapies (NAD⁺ boosters, CoQ10 derivatives, dual GIP/glucagon receptor agonists) may exert benefit partly via mitochondrial pathway modulation</li><li>Multi-omics integration and spatial profiling are enabling development of mitochondrial health scores for precision phenotyping and individualised therapy</li></ul></div>
-        <div class="summary-field"><span class="summary-label">Clinical Relevance:</span> With SGLT2 inhibitors and non-steroidal MRAs already embedded in NHS CKD management, understanding their mitochondrial mechanisms may inform future combination strategies and novel therapeutic targets.</div>
-        <div class="summary-field"><span class="summary-label">Limitations:</span> As a narrative review, conclusions are not derived from systematic evidence synthesis and are subject to selection bias.</div>
-        <div class="sample-sources"><a href="https://pubmed.ncbi.nlm.nih.gov/42331132/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1053/j.ajkd.2026.01.021" target="_blank" rel="noopener">DOI →</a></div>
-      </article>
-      <article class="sample-card" data-slug="neurology" hidden>
-        <div class="sample-badge">Annals of neurology</div>
-        <h3>Gut-Brain Axis Modulation by Short-Chain Fatty Acids Exerts Disease-Modifying Effects in a Murine Model of Drug-Resistant Epilepsy</h3>
-        <div class="sample-meta">Bera AA, Sapia RD, Volpedo G et al. · 2026 Jun 20</div>
-        <div class="summary-field"><span class="summary-label">Study Type:</span> Preclinical animal study (murine model with human brain tissue correlative analysis)</div>
-        <div class="summary-field"><span class="summary-label">Key Question:</span> Does short-chain fatty acid (SCFA) supplementation modify disease trajectory in drug-resistant epilepsy?</div>
-        <div class="summary-field"><span class="summary-label">Key Findings:</span> <ul><li>SCFA supplementation (acetate, propionate, butyrate mixture) reduced progressive epilepsy phenotype and decreased the progression index 3-fold over 70 days of EEG monitoring, without significantly reducing overall daily seizure frequency</li><li>Treatment reduced seizure clustering, improved cognitive deficits, and restored hippocampal and intestinal histopathological changes</li><li>Metabolomic profiling and human DRE brain tissue analysis supported gut-brain axis dysfunction as a mechanistic contributor to disease progression</li></ul></div>
-        <div class="summary-field"><span class="summary-label">Clinical Relevance:</span> For UK neurologists managing drug-resistant epilepsy — a group with very limited disease-modifying options — SCFAs represent a potentially accessible therapeutic avenue warranting clinical translation.</div>
-        <div class="summary-field"><span class="summary-label">Limitations:</span> Findings are limited to male mice only, restricting generalisability; human tissue analysis is correlative rather than interventional.</div>
-        <div class="sample-sources"><a href="https://pubmed.ncbi.nlm.nih.gov/42322241/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1002/ana.78283" target="_blank" rel="noopener">DOI →</a></div>
-      </article>
-      <article class="sample-card" data-slug="neurosurgery" hidden>
-        <div class="sample-badge">Acta neurochirurgica</div>
-        <h3>Intracranial pressure changes and outcomes in the early phase of experimental subarachnoid hemorrhage: severity of subarachnoid hemorrhage and maximum intracranial pressure</h3>
-        <div class="sample-meta">Fujii K, Takeuchi S, Toyooka T et al. · 2026 Jun 20</div>
-        <div class="summary-field"><span class="summary-label">Study Type:</span> Experimental animal study (rat model)</div>
-        <div class="summary-field"><span class="summary-label">Key Question:</span> Does maximum ICP in the early phase of experimental SAH correlate with neurological outcome and SAH severity, and can it serve as a reliable severity classifier?</div>
-        <div class="summary-field"><span class="summary-label">Key Findings:</span> <ul><li>Maximum ICP strongly correlated with neurological score, SAH grade, and 24-hour mortality across four groups (sham; mild &lt;50 mmHg; moderate 50–149 mmHg; severe ≥150 mmHg)</li><li>Higher maximum ICP was associated with greater cortical and hippocampal neuronal damage, apoptosis, and oxidative stress on histology at 24 hours</li><li>Moderate ICP group (50–149 mmHg) identified as the most reproducible and clinically translatable tier for SAH research</li></ul></div>
-        <div class="summary-field"><span class="summary-label">Clinical Relevance:</span> Establishes ICP monitoring as a valid severity-stratification tool in preclinical SAH models, which has implications for interpreting translational research underpinning future ICP-targeted therapies relevant to UK neurocritical care practice.</div>
-        <div class="summary-field"><span class="summary-label">Limitations:</span> Findings are confined to a rodent model and may not translate directly to human SAH pathophysiology or ICP dynamics.</div>
-        <div class="sample-sources"><a href="https://pubmed.ncbi.nlm.nih.gov/42322464/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1007/s00701-026-06953-w" target="_blank" rel="noopener">DOI →</a></div>
-      </article>
-      <article class="sample-card" data-slug="obstetrics-gynaecology" hidden>
-        <div class="sample-badge">American journal of obstetrics and gynecology</div>
-        <h3>The Role of Placental Anastomoses in Severe Brain Injury After Fetal Demise in Monochorionic Twins: A Multicenter Retrospective Study</h3>
-        <div class="sample-meta">Rondagh M, Zwinkels LCM, Spekman JA et al. · 2026 Jun 22</div>
-        <div class="summary-field"><span class="summary-label">Study Type:</span> Multicenter retrospective cohort study</div>
-        <div class="summary-field"><span class="summary-label">Key Question:</span> Does the number and diameter of arterio-arterial (AAA) and veno-venous (VVA) placental anastomoses predict severe brain injury in the surviving monochorionic twin following fetal demise?</div>
-        <div class="summary-field"><span class="summary-label">Key Findings:</span> <ul><li>Severe brain injury occurred in 25% (19/75) of pregnancies; affected placentas had larger AAA diameter (2.5 vs 1.6 mm, p&lt;0.01) and larger VVA diameter (3.0 vs 1.5 mm, p=0.02)</li><li>Presence of VVA (OR 3.47, 95% CI 1.10–10.96) and total AAA/VVA cumulative diameter (OR 1.27, 95% CI 1.09–1.48) were independently associated with severe brain injury</li><li>Discordant cord insertion was more frequent in the brain injury group (47% vs 20%, p=0.03)</li></ul></div>
-        <div class="summary-field"><span class="summary-label">Clinical Relevance:</span> These findings may inform counselling and surveillance intensity for monochorionic twin pregnancies complicated by fetal demise in UK fetal medicine units.</div>
-        <div class="summary-field"><span class="summary-label">Limitations:</span> Associations were non-significant when restricted to single fetal demise cases, likely reflecting insufficient statistical power in this small exploratory cohort.</div>
-        <div class="sample-sources"><a href="https://pubmed.ncbi.nlm.nih.gov/42331081/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.ajog.2026.06.016" target="_blank" rel="noopener">DOI →</a></div>
-      </article>
-      <article class="sample-card" data-slug="oncology" hidden>
-        <div class="sample-badge">Journal of clinical oncology : official journal of the American Society of Clinical Oncology</div>
-        <h3>Small Cemetery Within</h3>
-        <div class="sample-meta">Önder AH · 2026 Jun 23</div>
-        <div class="summary-field"><span class="summary-label">Study Type:</span> Commentary / reflective piece</div>
-        <div class="summary-field"><span class="summary-label">Key Question:</span> How does cumulative emotional exposure affect oncology clinicians over the course of their careers?</div>
-        <div class="summary-field"><span class="summary-label">Key Findings:</span> <ul><li>Describes an intangible, accumulating psychological burden resulting from repeated patient loss in oncology practice</li><li>Each clinical encounter is framed as leaving a lasting emotional imprint on the clinician, irrespective of clinical outcome</li><li>The piece argues this burden remains largely invisible within professional and institutional frameworks</li></ul></div>
-        <div class="summary-field"><span class="summary-label">Clinical Relevance:</span> Oncology clinicians in the NHS face high rates of moral distress and burnout; this piece draws attention to the unacknowledged psychological cost of sustained exposure to patient death and suffering, relevant to workforce wellbeing strategies.</div>
-        <div class="summary-field"><span class="summary-label">Limitations:</span> Not applicable — reflective commentary without primary data.
-
----
-*Note: This is a reflective/literary piece. No quantitative findings, study population, or methodology are present. The summary is necessarily interpretive based on the abstract provided.*</div>
-        <div class="sample-sources"><a href="https://pubmed.ncbi.nlm.nih.gov/42335414/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1200/JCO-26-00027" target="_blank" rel="noopener">DOI →</a></div>
-      </article>
-      <article class="sample-card" data-slug="ophthalmology" hidden>
-        <div class="sample-badge">American journal of ophthalmology</div>
-        <h3>Zeb1 mediates injury-induced mesenchymal transition in the mouse corneal endothelium in vivo</h3>
-        <div class="sample-meta">Heur M, Brabletz S, Stemmler MP et al. · 2026 Jun 21</div>
-        <div class="summary-field"><span class="summary-label">Study Type:</span> In vivo experimental animal study (conditional knockout mouse model)</div>
-        <div class="summary-field"><span class="summary-label">Key Question:</span> Does targeted deletion of Zeb1 in the corneal endothelium inhibit injury-induced endothelial-mesenchymal transition (EnMT) and retrocorneal membrane (RCM) formation?</div>
-        <div class="summary-field"><span class="summary-label">Key Findings:</span> <ul><li>Conditional Zeb1 knockout (intracameral 4-OHT) significantly attenuated surgical injury-induced corneal oedema: central corneal thickness 106.8 ± 11.1 µm (injury + 4-OHT) vs 182.2 ± 15.5 µm (injury alone), p &lt;0.00001</li><li>Zeb1 targeting suppressed FGF2- and injury-induced upregulation of EnMT markers (COL1, fibronectin, vimentin) and preserved E-cadherin expression</li><li>Conditional Zeb1 deletion inhibited injury-dependent RCM formation in vivo</li></ul></div>
-        <div class="summary-field"><span class="summary-label">Clinical Relevance:</span> ZEB1 represents a potential therapeutic target for anterior segment fibrosis and corneal blindness, offering a non-transplant strategy relevant to a NHS corneal graft waiting list context.</div>
-        <div class="summary-field"><span class="summary-label">Limitations:</span> Findings are limited to a murine model; translation to human corneal endothelial biology requires validation.</div>
-        <div class="sample-sources"><a href="https://pubmed.ncbi.nlm.nih.gov/42323978/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.ajo.2026.06.028" target="_blank" rel="noopener">DOI →</a></div>
-      </article>
-      <article class="sample-card" data-slug="orthopaedic-surgery" hidden>
-        <div class="sample-badge">Clinical orthopaedics and related research</div>
-        <h3>What Is the Effect of Robot Reduction in Displaced Pelvic Fractures? A Multicenter Randomized Clinical Trial</h3>
-        <div class="sample-meta">Zhao C, Ge Y, Cao Q et al. · 2026 Jul 01</div>
-        <div class="summary-field"><span class="summary-label">Study Type:</span> Multicentre RCT (Level I evidence)</div>
-        <div class="summary-field"><span class="summary-label">Key Question:</span> Does robotic closed reduction improve reduction quality and reduce radiation exposure compared with manual closed reduction in displaced pelvic fractures?</div>
-        <div class="summary-field"><span class="summary-label">Key Findings:</span> <ul><li>Robotic reduction achieved excellent/good reduction (Matta criteria) in 96% vs 48% with manual technique (RR 2.00, 95% CI 1.47–2.72; p&lt;0.001)</li><li>Intraoperative surgeon fluoroscopic exposures were significantly lower with robotic reduction (median 0 vs 38; p&lt;0.001)</li><li>No significant difference in 12-week Majeed functional scores (69 vs 71; mean difference −3, 95% CI −11 to 6; p=0.55)</li></ul></div>
-        <div class="summary-field"><span class="summary-label">Clinical Relevance:</span> Robotic reduction offers substantially improved anatomical outcomes and reduced radiation burden for pelvic ring fractures, relevant to UK major trauma centres considering robotic platform investment.</div>
-        <div class="summary-field"><span class="summary-label">Limitations:</span> Short follow-up (12 weeks) limits conclusions on functional recovery, and the study was conducted in Chinese tertiary centres, limiting generalisability to NHS trauma systems without cost-effectiveness data.</div>
-        <div class="sample-sources"><a href="https://pubmed.ncbi.nlm.nih.gov/42370806/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1097/CORR.0000000000003882" target="_blank" rel="noopener">DOI →</a></div>
-      </article>
-      <article class="sample-card" data-slug="palliative-care" hidden>
-        <div class="sample-badge">Journal of pain and symptom management</div>
-        <h3>Minimal Comfort Feeding in Advanced Dementia: Attitudes of Hospice and Palliative Care Professionals</h3>
-        <div class="sample-meta">Becker C, Wechkin H, Bern-Klug M et al. · 2026 Jun 22</div>
-        <div class="summary-field"><span class="summary-label">Study Type:</span> Cross-sectional exploratory survey study</div>
-        <div class="summary-field"><span class="summary-label">Key Question:</span> Are hospice and palliative care professionals willing to accept and implement Minimal Comfort Feeding (MCF) for patients with advanced dementia?</div>
-        <div class="summary-field"><span class="summary-label">Key Findings:</span> <ul><li>83% (35/42) of respondents agreed MCF is an acceptable care option for people with advanced dementia</li><li>93% (39/42) would be comfortable discussing MCF with patients in early dementia or at risk as a future planning option</li><li>Respondents were divided on practical implementability, despite high attitudinal acceptance</li></ul></div>
-        <div class="summary-field"><span class="summary-label">Clinical Relevance:</span> MCF represents a novel, potentially patient-centred approach to nutrition and hydration decisions in advanced dementia — a common and ethically complex challenge in UK palliative care and care home settings.</div>
-        <div class="summary-field"><span class="summary-label">Limitations:</span> Convenience sample of 51 attendees at a single US conference introduces significant selection bias, severely limiting generalisability to UK clinical practice.</div>
-        <div class="sample-sources"><a href="https://pubmed.ncbi.nlm.nih.gov/42331265/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.jpainsymman.2026.06.007" target="_blank" rel="noopener">DOI →</a></div>
-      </article>
-      <article class="sample-card" data-slug="pathology" hidden>
-        <div class="sample-badge">Histopathology</div>
-        <h3>Perivascular epithelioid cell tumours of the genitourinary tract: clinicopathological features and molecular landscape</h3>
-        <div class="sample-meta">Yaprak Bayrak B, Akgul M, Cheng M et al. · 2026 Jun 26</div>
-        <div class="summary-field"><span class="summary-label">Study Type:</span> Review article (narrative/synthesis)</div>
-        <div class="summary-field"><span class="summary-label">Key Question:</span> What are the clinicopathological, immunohistochemical, and molecular features of perivascular epithelioid cell tumours (PEComas) arising in the genitourinary tract, and how should they be classified and risk-stratified?</div>
-        <div class="summary-field"><span class="summary-label">Key Findings:</span> <ul><li>Renal AML represents the most common and best-characterised GU PEComa, serving as the reference model for understanding the broader PEComa family</li><li>Extrarenal GU PEComas are rare, morphologically heterogeneous, and diagnostically challenging—particularly on limited biopsy material</li><li>The authors advocate molecular driver-based classification over organ-site or legacy terminology to guide diagnosis and risk stratification</li></ul></div>
-        <div class="summary-field"><span class="summary-label">Clinical Relevance:</span> For UK pathologists encountering unusual mesenchymal GU tumours, this review offers a practical framework for diagnosis and malignant risk assessment, particularly relevant when evaluating small biopsies where morphology alone is insufficient.</div>
-        <div class="summary-field"><span class="summary-label">Limitations:</span> As a narrative review without systematic methodology or original data, conclusions reflect expert synthesis rather than evidence-graded analysis.</div>
-        <div class="sample-sources"><a href="https://pubmed.ncbi.nlm.nih.gov/42363647/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1111/his.70204" target="_blank" rel="noopener">DOI →</a></div>
-      </article>
-      <article class="sample-card" data-slug="plastic-surgery" hidden>
-        <div class="sample-badge">Aesthetic surgery journal</div>
-        <h3>Impact of Facial Regions on Perceived Age: A 3D Modeling Study</h3>
-        <div class="sample-meta">Bravo FG, Ch&#x27;ng S · 2026 Jun 20</div>
-        <div class="summary-field"><span class="summary-label">Study Type:</span> Experimental perception study (3D modelling/survey-based)</div>
-        <div class="summary-field"><span class="summary-label">Key Question:</span> Which facial region — periocular, perioral, midface-lower face, or neck-jawline — contributes most to perceived youth when rejuvenated in isolation?</div>
-        <div class="summary-field"><span class="summary-label">Key Findings:</span> <ul><li>Neck-jawline rejuvenation was most frequently ranked as appearing youngest (54/101 participants); perioral rejuvenation was most often ranked oldest (71/101)</li><li>Mean perceived-youth rankings: neck-jawline 1.8, midface-lower face 2.2, periocular 2.6, perioral 3.6 (P&lt;0.001)</li><li>Periocular and midface-lower face regions did not differ significantly from each other (P=0.4)</li></ul></div>
-        <div class="summary-field"><span class="summary-label">Clinical Relevance:</span> When resource, recovery, or patient preference limits comprehensive facial rejuvenation, these findings support prioritising jawline/neck procedures — relevant to NHS and private practice treatment planning conversations.</div>
-        <div class="summary-field"><span class="summary-label">Limitations:</span> Participants assessed a single digitally sculpted female model, limiting generalisability across ages, ethnicities, and sexes.</div>
-        <div class="sample-sources"><a href="https://pubmed.ncbi.nlm.nih.gov/42322213/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1093/asj/sjag119" target="_blank" rel="noopener">DOI →</a></div>
-      </article>
-      <article class="sample-card" data-slug="psychiatry" hidden>
-        <div class="sample-badge">JAMA psychiatry</div>
-        <h3>Use and Misuse of GLP-1 Receptor Agonists Among People With Eating Disorders</h3>
-        <div class="sample-meta">Peiper NC, Zibbell JE, LaJoie AS et al. · 2026 Jun 24</div>
-        <div class="summary-field"><span class="summary-label">Study Type:</span> Insufficient information — abstract content not provided; cannot determine study type or findings.</div>
-        <div class="summary-field"><span class="summary-label">Key Question:</span> What are the patterns of use and misuse of GLP-1 receptor agonists (e.g., semaglutide, liraglutide) among individuals with eating disorders?</div>
-        <div class="summary-field"><span class="summary-label">Key Findings:</span> <ul><li>Abstract text was not supplied; specific findings, effect sizes, or prevalence data cannot be extracted.</li><li>The title suggests the study examines both therapeutic use and potential misuse/diversion in an eating disorder population.</li><li>No further detail available from the information provided.</li></ul></div>
-        <div class="summary-field"><span class="summary-label">Clinical Relevance:</span> Directly relevant to UK psychiatry practice given widespread NHS prescribing of GLP-1 agonists for obesity and emerging concerns about their potential for misuse in patients with restrictive or purging eating disorders.</div>
-        <div class="summary-field"><span class="summary-label">Limitations:</span> Abstract not provided; full assessment of methodology and limitations is not possible.</div>
-        <div class="sample-sources"><a href="https://pubmed.ncbi.nlm.nih.gov/42340738/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1001/jamapsychiatry.2026.1716" target="_blank" rel="noopener">DOI →</a></div>
-      </article>
-      <article class="sample-card" data-slug="public-health" hidden>
-        <div class="sample-badge">American journal of public health</div>
-        <h3>Postpandemic Telehealth Use: Patterns and Barriers for Older Adults in the United States, 2024</h3>
-        <div class="sample-meta">Chandrasekaran R · 2026 Jul</div>
-        <div class="summary-field"><span class="summary-label">Study Type:</span> Cross-sectional analysis of nationally representative survey data</div>
-        <div class="summary-field"><span class="summary-label">Key Question:</span> What are the patterns of and barriers to telehealth use among older adults in the US in the postpandemic period?</div>
-        <div class="summary-field"><span class="summary-label">Key Findings:</span> <ul><li>Only 31.4% of device-owning older adults used telehealth in 2024; video and phone-only use were near-equal (~12% each), suggesting no clear dominance of video modality</li><li>Higher telehealth use was associated with Hispanic ethnicity (AOR 1.92), lung disease (AOR 2.32), and depression (AOR 1.89); non-metropolitan residence significantly reduced odds (AOR 0.36)</li><li>Video specifically required higher income and independent app use; 45.7% of non-users preferred in-person care and 13.4% reported never being offered telehealth</li></ul></div>
-        <div class="summary-field"><span class="summary-label">Clinical Relevance:</span> As NHS England expands remote consultation, these findings highlight equity risks for rural, lower-income, and digitally excluded older patients if audio-only options are deprioritised.</div>
-        <div class="summary-field"><span class="summary-label">Limitations:</span> US-specific, device-owning sample only, likely underestimating barriers among the most digitally excluded older adults.</div>
-        <div class="sample-sources"><a href="https://pubmed.ncbi.nlm.nih.gov/42341279/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.2105/AJPH.2026.308575" target="_blank" rel="noopener">DOI →</a></div>
-      </article>
-      <article class="sample-card" data-slug="radiology" hidden>
-        <div class="sample-badge">AJR. American journal of roentgenology</div>
-        <h3>Utilization of Emergency Department (ED) Neuroimaging From 2016 to 2025: Analysis in Over 3 Million ED Encounters from the Multicenter Cosmos EHR Dataset</h3>
-        <div class="sample-meta">Rai P, Rajeev R, Malhotra A et al. · 2026 Jun 24</div>
-        <div class="summary-field"><span class="summary-label">Study Type:</span> Retrospective analysis (multicentre EHR database study)</div>
-        <div class="summary-field"><span class="summary-label">Key Question:</span> How has utilisation of emergency department neuroimaging changed across the United States between 2016 and 2025?</div>
-        <div class="summary-field"><span class="summary-label">Key Findings:</span> <ul><li>Abstract content insufficient to extract specific numerical findings, effect sizes, or statistical results — the full data are not present in the submission provided.</li><li>Study draws on over 3 million ED encounters from the Cosmos EHR dataset, suggesting substantial statistical power.</li><li>Temporal trends in CT and/or MRI use for neurological presentations across a 9-year period are the primary focus.</li></ul></div>
-        <div class="summary-field"><span class="summary-label">Clinical Relevance:</span> Understanding neuroimaging utilisation trends is directly relevant to UK radiology departments managing ED demand, workforce planning, and referral appropriateness — particularly given NHS pressures around imaging capacity and GIRFT (Getting It Right First Time) priorities.</div>
-        <div class="summary-field"><span class="summary-label">Limitations:</span> As only the title and author information were provided rather than a full abstract, a complete methodological appraisal is not possible.</div>
-        <div class="sample-sources"><a href="https://pubmed.ncbi.nlm.nih.gov/42340236/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.2214/AJR.26.35237" target="_blank" rel="noopener">DOI →</a></div>
-      </article>
-      <article class="sample-card" data-slug="respiratory" hidden>
-        <div class="sample-badge">American journal of respiratory and critical care medicine</div>
-        <h3>Airway Mucus Plugs in Asthma and COPD: Pathobiology, Imaging, and Implications for Clinical Trials</h3>
-        <div class="sample-meta">Bosma CB, Aaron SD, Celli BR et al. · 2026 Jun 22</div>
-        <div class="summary-field"><span class="summary-label">Study Type:</span> Commentary/narrative review</div>
-        <div class="summary-field"><span class="summary-label">Key Question:</span> What is the pathobiological basis, clinical significance, and trial utility of airway mucus plugs in asthma and COPD?</div>
-        <div class="summary-field"><span class="summary-label">Key Findings:</span> <ul><li>Mucus plug burden, quantified via CT-based scoring (e.g., bronchopulmonary segment mucus plug score), correlates with increased exacerbations, accelerated spirometric decline in both asthma and COPD, and excess mortality in COPD</li><li>Biologic therapies in asthma trials have demonstrated measurable reductions in mucus plug burden alongside spirometric improvement, supporting mucus plugging as a treatable trait</li><li>Quantitative imaging methods for mucus plug scoring are under active development but lack standardisation</li></ul></div>
-        <div class="summary-field"><span class="summary-label">Clinical Relevance:</span> CT-quantified mucus plug burden may offer UK respiratory clinicians a phenotyping and treatment-monitoring tool, particularly when considering biologic therapy eligibility and response in severe asthma and COPD.</div>
-        <div class="summary-field"><span class="summary-label">Limitations:</span> As a narrative review, no primary data are presented and evidence synthesis is not systematic.</div>
-        <div class="sample-sources"><a href="https://pubmed.ncbi.nlm.nih.gov/42330343/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1093/ajrccm/aamag309" target="_blank" rel="noopener">DOI →</a></div>
-      </article>
-      <article class="sample-card" data-slug="rheumatology" hidden>
-        <div class="sample-badge">Annals of the rheumatic diseases</div>
-        <h3>Referral pathways and duration of care for musculoskeletal complaints across Europe: an analysis of primary and secondary care</h3>
-        <div class="sample-meta">Gomon G, Raffray M, Betancort Rodríguez C et al. · 2026 Jun 22</div>
-        <div class="summary-field"><span class="summary-label">Study Type:</span> Retrospective analysis of routinely collected healthcare data</div>
-        <div class="summary-field"><span class="summary-label">Key Question:</span> How do referral pathways and duration of rheumatology care for MSK complaints vary across five European healthcare systems?</div>
-        <div class="summary-field"><span class="summary-label">Key Findings:</span> <ul><li>Primary care MSK burden was consistent across countries (25–30% of residents consulting annually), but referral rates to rheumatology varied markedly (5–38%)</li><li>46–70% of referred patients were discharged within 3 months; only 13–43% entered long-term rheumatology follow-up</li><li>The UK and Sweden, despite lower referral rates and fewer rheumatologists per capita, maintained higher rates of long-term rheumatology care, attributed to selective triaging systems</li></ul></div>
-        <div class="summary-field"><span class="summary-label">Clinical Relevance:</span> This confirms that the NHS selective triaging model concentrates rheumatology resource on complex cases, which is relevant when interpreting international benchmarking data or developing cross-national diagnostic tools applicable to UK practice.</div>
-        <div class="summary-field"><span class="summary-label">Limitations:</span> UK primary care consultation rates were unavailable, limiting direct comparison of the full care pathway for the NHS cohort.</div>
-        <div class="sample-sources"><a href="https://pubmed.ncbi.nlm.nih.gov/42331648/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.ard.2026.05.011" target="_blank" rel="noopener">DOI →</a></div>
-      </article>
-      <article class="sample-card" data-slug="urology" hidden>
-        <div class="sample-badge">BJU international</div>
-        <h3>Artificial intelligence in genitourinary oncology: publication trends and systematic review</h3>
-        <div class="sample-meta">Kim A, Moore NA, Dong T et al. · 2026 Jun 26</div>
-        <div class="summary-field"><span class="summary-label">Study Type:</span> Systematic review with publication trend analysis (including RCT sub-analysis)</div>
-        <div class="summary-field"><span class="summary-label">Key Question:</span> What is the current volume, trajectory, and quality of evidence for AI applications in genitourinary oncology?</div>
-        <div class="summary-field"><span class="summary-label">Key Findings:</span> <ul><li>Publications grew from 14 (2013) to 362 (2023), with marked acceleration from 2019; the vast majority were retrospective (n=962 of 1220 included studies)</li><li>Only 4 RCTs identified across the entire field — three in prostate cancer, one in urothelial cancer — covering diagnostics, prognostication, and treatment planning, all showing performance gains over conventional approaches</li><li>Risk of bias varied across RCTs, primarily relating to randomisation methodology and intervention fidelity</li></ul></div>
-        <div class="summary-field"><span class="summary-label">Clinical Relevance:</span> Despite widespread clinical interest in AI-assisted diagnostics and treatment planning for prostate, renal, and urothelial cancers, the evidence base underpinning NHS adoption decisions remains almost entirely observational.</div>
-        <div class="summary-field"><span class="summary-label">Limitations:</span> Only four RCTs were available for systematic review, making definitive conclusions about efficacy or safety impossible.</div>
-        <div class="sample-sources"><a href="https://pubmed.ncbi.nlm.nih.gov/42360093/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1111/bju.70361" target="_blank" rel="noopener">DOI →</a></div>
+        <h3>Prevalence of chronic traumatic encephalopathy at death in National Football League players: retrospective population based cohort study, 2008-21</h3>
+        <div class="sample-meta">Daneshvar DH, Nowinski CJ, Abdolmohammadi B et al. · 2026 Aug 25</div>
+        <div class="summary-field"><span class="summary-label">Study Type:</span> Retrospective population-based cohort study</div>
+        <div class="summary-field"><span class="summary-label">Key Question:</span> What is the plausible prevalence of chronic traumatic encephalopathy (CTE) among deceased former NFL players, and how does CTE severity relate to dementia risk?</div>
+        <div class="summary-field"><span class="summary-label">Key Findings:</span> <ul><li>Among all 1712 deceased NFL players (2008-21), possible CTE prevalence ranged widely (18.5%–98.7%); during 2016-21 (peak donation period), the range narrowed to 24.5%–97.7%, suggesting a true minimum of roughly one-quarter.</li><li>Among 338 brain donors, 93.2% had CTE and 30.8% had stage IV disease; stage IV CTE was associated with a 44% higher risk of clinician-diagnosed dementia (RR 1.44, 95% CI 1.16–1.78, p&lt;0.001).</li><li>Neurodegenerative disease was recorded as cause of death in only 18.6% of donors and in just 40.6% of those with confirmed dementia, indicating substantial under-recognition on death certificates.</li></ul></div>
+        <div class="summary-field"><span class="summary-label">Clinical Relevance:</span> Highlights that repetitive head impact-related neurodegeneration is likely underdiagnosed and under-certified, reinforcing the need for GPs to consider CTE/dementia risk when assessing cognitive symptoms in patients with significant contact-sport histories (relevant to UK rugby/football concussion pathways).</div>
+        <div class="summary-field"><span class="summary-label">Limitations:</span> Selection bias is substantial, as brain donation was voluntary and likely over-represents symptomatic players, limiting generalisability of prevalence estimates.</div>
+        <div class="sample-sources"><a href="https://pubmed.ncbi.nlm.nih.gov/42642105/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1136/bmj-2026-100418" target="_blank" rel="noopener">DOI →</a></div>
       </article>
       <!-- EXAMPLE_ARTICLES:END -->
     </div>
@@ -769,9 +485,10 @@
         <div class="amount">Free</div>
         <div class="period">for your first 4 weeks</div>
         <div class="promo-hint">Then £20/year. Cancel any time during your trial — no charge.</div>
+        <div class="trial-terms trial-terms-dark">A card is needed to start. £0 today; £20/year after 4 weeks unless you cancel.</div>
       </div>
 
-      <div class="specialty-select-label">Choose your specialty</div>
+      <label class="specialty-select-label" for="specialty-select">Choose your specialty</label>
       <select class="specialty-select" id="specialty-select">
         <option value="" disabled selected>Select your specialty...</option>
         <option value="acute-medicine">Acute Medicine</option>
@@ -807,7 +524,7 @@
         <option value="urology">Urology</option>
       </select>
 
-      <button type="button" class="add-extras-toggle" id="add-extras-toggle">+ Add additional specialties (£5/yr each)</button>
+      <button type="button" class="add-extras-toggle" id="add-extras-toggle" aria-expanded="false" aria-controls="extras-panel">+ Add additional specialties (£5/yr each)</button>
 
       <div class="extras-panel" id="extras-panel">
         <div class="extras-panel-label">Additional specialties</div>
@@ -821,11 +538,13 @@
 
       <ul class="subscribe-features">
         <li>4 weeks completely free</li>
+        <li>Card required — nothing charged until week 5</li>
         <li>No charge if you cancel during trial</li>
         <li>Weekly Monday email</li>
         <li>Top 5 journals covered</li>
         <li>AI clinical summaries</li>
         <li>Direct DOI links</li>
+        <li>CPD Tracker included</li>
       </ul>
 
       <p class="subscribe-note">
@@ -844,18 +563,27 @@
   <div class="container">
     <div class="section-label">About</div>
     <h2>Built by a clinician, for clinicians</h2>
-    <div class="about-text" style="margin-top: 2rem;">
+    <div class="about-grid">
+      <div class="about-photo">
+        <picture>
+          <source srcset="/assets/brand/tim-hamilton-800.webp" type="image/webp">
+          <img src="/assets/brand/tim-hamilton-800.jpg" width="800" height="800" loading="lazy" decoding="async" alt="Dr Tim Hamilton, Consultant in Palliative Medicine and founder of The Monday Clinical Brief">
+        </picture>
+      </div>
+      <div class="about-text">
         <p><strong>Dr Tim Hamilton</strong> is a Consultant in Palliative Medicine working in NHS Wales. He built The Monday Clinical Brief to solve a problem he and his colleagues shared: keeping up with the literature alongside a busy clinical workload.</p>
         <p>The digest uses publicly available PubMed abstracts summarised by AI. Summaries are a starting point for identifying relevant articles — not a substitute for reading the original papers. No patient data is involved at any stage.</p>
         <p style="margin-bottom:0;">Questions? <a href="mailto:info@mondayclinicalbrief.co.uk" style="color: var(--sage-deep);">info@mondayclinicalbrief.co.uk</a></p>
+      </div>
     </div>
   </div>
 </section>
+</main>
 
 <!-- ═══ FOOTER ═══ -->
 <footer>
   <p>&copy; 2026 The Monday Clinical Brief</p>
-  <p><a href="mailto:info@mondayclinicalbrief.co.uk">Contact</a> · <a href="/blog/">Blog</a> · <a href="#subscribe">Free trial</a> · <a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms</a></p>
+  <p><a href="mailto:info@mondayclinicalbrief.co.uk">Contact</a> · <a href="/samples/">Samples</a> · <a href="/blog/">Blog</a> · <a href="/methodology/">Methodology</a> · <a href="/about/">About</a> · <a href="#subscribe">Free trial</a> · <a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms</a></p>
   <p>Follow: <a href="https://x.com/monclinbrief" rel="me noopener" target="_blank">X</a> · <a href="https://www.instagram.com/mondayclinicalbrief" rel="me noopener" target="_blank">Instagram</a> · <a href="https://www.linkedin.com/in/tim-hamilton-6328473b4/" rel="me noopener" target="_blank">LinkedIn</a></p>
 </footer>
 
@@ -948,10 +676,34 @@ extrasToggle.addEventListener('click', function() {
   var isVisible = extrasPanel.classList.contains('visible');
   extrasPanel.classList.toggle('visible');
   this.classList.toggle('active');
+  this.setAttribute('aria-expanded', String(!isVisible));
   this.textContent = isVisible
     ? '+ Add additional specialties (\u00a35/yr each)'
     : '\u2212 Hide additional specialties';
 });
+
+// ── Preselect from ?specialty=<slug> ──
+// Every /samples/<slug>/ page links here as /?specialty=<slug>#subscribe.
+// Without this the parameter was ignored and the dropdown stayed on its
+// default (General Practice), so a cardiologist arriving from their own
+// sample page saw a form pre-set to someone else's specialty — and could
+// subscribe to the wrong one.
+//
+// Reuses the same path as the specialty tiles below: set the value, then
+// dispatch 'change' so the extras grid, pricing and button state all follow.
+// An unknown slug is ignored, leaving the default untouched.
+(function () {
+  try {
+    var wanted = new URLSearchParams(window.location.search).get('specialty');
+    if (!wanted) return;
+    var match = Array.prototype.some.call(select.options, function (o) {
+      return o.value === wanted;
+    });
+    if (!match) return;
+    select.value = wanted;
+    select.dispatchEvent(new Event('change'));
+  } catch (e) { /* leave the default selection in place */ }
+})();
 
 // ── Specialty tiles: auto-select + scroll ──
 document.querySelectorAll('.specialty-pill[data-slug]').forEach(function(pill) {
@@ -963,68 +715,129 @@ document.querySelectorAll('.specialty-pill[data-slug]').forEach(function(pill) {
   });
 });
 
-// ── Sample-section picker: changing the dropdown immediately swaps the
-//    visible article card and rewrites the deep-link to that specialty's
-//    full /samples/<slug>/ page. The cards are auto-generated into the
-//    EXAMPLE_ARTICLES marker block by build_sample_pages.py.
+// ── Sample-section picker: changing the dropdown swaps the visible article
+//    card and rewrites the deep-link to that specialty's /samples/<slug>/
+//    page. Only the default specialty's card is inlined by
+//    build_sample_pages.py; the other 30 live in a JSON sidecar fetched once,
+//    the first time a visitor picks a different specialty. That keeps ~65 KB
+//    of preview markup off the initial page load.
 (function() {
   var sampleSelect = document.getElementById('sample-select');
   var sampleDeep = document.getElementById('sample-deep-link');
-  if (!sampleSelect || !sampleDeep) return;
+  var sampleOutput = document.getElementById('sample-output');
+  if (!sampleSelect || !sampleDeep || !sampleOutput) return;
 
-  function showSpecialty(slug) {
-    var target = document.querySelector('.sample-card[data-slug="' + slug + '"]');
-    if (!target) return;
-    document.querySelectorAll('.sample-card[data-slug]').forEach(function(c) { c.hidden = true; });
+  var PREVIEWS_URL = '/assets/data/homepage-previews.json';
+  var previews = null;      // resolved sidecar, once fetched
+  var pending = null;       // in-flight fetch, so we only ever ask once
+
+  function loadPreviews() {
+    if (previews) return Promise.resolve(previews);
+    if (pending) return pending;
+    pending = fetch(PREVIEWS_URL)
+      .then(function(r) { return r.ok ? r.json() : {}; })
+      .then(function(data) { previews = data || {}; return previews; })
+      .catch(function() { previews = {}; return previews; });
+    return pending;
+  }
+
+  function reveal(slug) {
+    var target = sampleOutput.querySelector('.sample-card[data-slug="' + slug + '"]');
+    if (!target) return false;
+    sampleOutput.querySelectorAll('.sample-card[data-slug]').forEach(function(c) {
+      c.hidden = true;
+    });
     target.hidden = false;
     var match = Array.from(sampleSelect.options).find(function(o) { return o.value === slug; });
     var name = match ? match.text : slug;
     sampleDeep.href = '/samples/' + slug + '/';
     sampleDeep.textContent = 'See the full ' + name + ' digest →';
+    return true;
+  }
+
+  function showSpecialty(slug) {
+    if (reveal(slug)) return;
+    // Not in the DOM yet — pull it from the sidecar and insert it once.
+    loadPreviews().then(function(data) {
+      var markup = data[slug];
+      if (!markup) {
+        // No preview available: send them to the full sample page instead of
+        // leaving the previous specialty's card showing under a new label.
+        sampleDeep.href = '/samples/' + slug + '/';
+        var m = Array.from(sampleSelect.options).find(function(o) { return o.value === slug; });
+        sampleDeep.textContent = 'See the full ' + (m ? m.text : slug) + ' digest →';
+        return;
+      }
+      if (!sampleOutput.querySelector('.sample-card[data-slug="' + slug + '"]')) {
+        sampleOutput.insertAdjacentHTML('beforeend', markup);
+      }
+      reveal(slug);
+    });
   }
 
   sampleSelect.addEventListener('change', function() {
     showSpecialty(this.value);
   });
+
+  // Warm the sidecar on first interaction with the picker, so the swap feels
+  // instant rather than waiting on a round trip after the change event.
+  sampleSelect.addEventListener('focus', loadPreviews, { once: true });
+})();
+
+// Measure the fixed mobile bottom bar so the body reserves its true height.
+(function () {
+  var nav = document.querySelector('nav');
+  if (!nav) return;
+  function sync() {
+    var fixed = getComputedStyle(nav).position === 'fixed';
+    document.documentElement.style.setProperty('--bottom-nav-h', fixed ? nav.offsetHeight + 'px' : '0px');
+  }
+  sync();
+  addEventListener('resize', sync);
+  addEventListener('orientationchange', sync);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(sync);
+  if (window.ResizeObserver) new ResizeObserver(sync).observe(nav);
 })();
 
 // ── Checkout ──
+// Every order — single or multi — goes through the Netlify function, so Stripe
+// shows the chosen specialty by name ("Monday Clinical Brief — Cardiology")
+// rather than a generic annual subscription. The static Payment Link is kept
+// as a fallback for single-specialty orders only, because it cannot express
+// the extras. Promotion codes are enabled on both routes.
 function goToCheckout() {
   var primary = select.value;
   if (!primary) return;
 
   var extras = getSelectedExtras();
 
-  if (extras.length === 0) {
-    // Single specialty — use existing Stripe payment link
-    var url = STRIPE_LINK + '?client_reference_id=' + encodeURIComponent(primary);
-    window.location.href = url;
-  } else {
-    // Multiple specialties — use dynamic checkout session
-    btn.disabled = true;
-    btn.textContent = 'Redirecting to checkout\u2026';
+  btn.disabled = true;
+  btn.textContent = 'Redirecting to checkout\u2026';
 
-    fetch(CHECKOUT_FUNCTION, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ primary: primary, extras: extras })
-    })
-    .then(function(r) { return r.json(); })
-    .then(function(data) {
-      if (data.url) {
-        window.location.href = data.url;
-      } else {
-        alert('Something went wrong. Please try again or contact us.');
-        btn.disabled = false;
-        updatePricing();
-      }
-    })
-    .catch(function() {
-      alert('Something went wrong. Please try again or contact us.');
-      btn.disabled = false;
-      updatePricing();
-    });
+  function fallback() {
+    if (extras.length === 0) {
+      window.location.href = STRIPE_LINK + '?client_reference_id=' + encodeURIComponent(primary);
+      return;
+    }
+    alert('Something went wrong. Please try again or contact us.');
+    btn.disabled = false;
+    updatePricing();
   }
+
+  fetch(CHECKOUT_FUNCTION, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ primary: primary, extras: extras })
+  })
+  .then(function(r) { return r.json(); })
+  .then(function(data) {
+    if (data && data.url) {
+      window.location.href = data.url;
+    } else {
+      fallback();
+    }
+  })
+  .catch(fallback);
 }
 </script>
 

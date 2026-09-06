@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rheumatology Sample Digest — The Monday Clinical Brief</title>
-<meta name="description" content="See what Rheumatology clinicians received in this Monday's digest: 34 new articles from Rheumatology (Oxford, England), Arthritis &amp; rheumatology (Hoboken, N.J.), Annals of the rheumatic diseases summarised every Monday by The Monday Clinical Brief.">
+<meta name="description" content="See what Rheumatology clinicians received in this Monday's digest: 30 new articles from Rheumatology (Oxford, England), Arthritis &amp; rheumatology (Hoboken, N.J.), Annals of the rheumatic diseases summarised every Monday by The Monday Clinical Brief.">
 <link rel="canonical" href="https://mondayclinicalbrief.co.uk/samples/rheumatology/">
 <meta property="og:title" content="Rheumatology — Monday Clinical Brief Sample Digest">
-<meta property="og:description" content="34 new Rheumatology papers summarised this week. Free 4-week trial.">
+<meta property="og:description" content="30 new Rheumatology papers summarised this week. Free 4-week trial.">
 <meta property="og:url" content="https://mondayclinicalbrief.co.uk/samples/rheumatology/">
 <meta property="og:type" content="article">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -89,9 +89,12 @@
   footer a { color: var(--sage); text-decoration: none; }
 
   @media (max-width: 640px) {
-    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; }
+    /* Fixed bottom bar — reserve its measured height, not a flat 60px. */
+    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; align-items: center; gap: 0.75rem; }
     .nav-links a:not(.nav-cta) { display: none; }
-    body { padding-bottom: 60px; }
+    .nav-brand { font-size: 0.9rem; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+    .nav-cta { flex-shrink: 0; }
+    body { padding-bottom: calc(var(--bottom-nav-h, 64px) + env(safe-area-inset-bottom, 0px)); }
     .page-header { padding: 3.5rem 1.5rem 2.5rem; }
     section { padding: 2rem 1.5rem 3.5rem; }
     .sample-card { padding: 1.5rem; }
@@ -106,24 +109,25 @@
 <nav>
   <a href="/" class="nav-brand">The Monday Clinical Brief</a>
   <div class="nav-links">
+    <a href="/samples/">Samples</a>
+    <a href="/blog/">Blog</a>
     <a href="/#how">How it works</a>
-    <a href="/#about">About</a>
     <a href="/?specialty=rheumatology#subscribe" class="nav-cta">Start free trial</a>
   </div>
 </nav>
 
 <!-- ═══ HEADER ═══ -->
 <header class="page-header">
-  <div class="eyebrow">Sample Digest · Wednesday 1 July 2026</div>
+  <div class="eyebrow">Sample Digest · Tuesday 1 September 2026</div>
   <h1>A recent Rheumatology digest,<br><em>as sent to subscribers</em></h1>
-  <p class="lede">This is the real Monday digest from Wednesday 1 July 2026. Showing the first 8 of 34 articles from that week — every new paper from the top journals in Rheumatology.</p>
+  <p class="lede">This is a real digest, generated on Tuesday 1 September 2026. Showing the first 8 of 30 articles from that week — every new paper from the top 5 journals in Rheumatology.</p>
   <div class="stat-bar">
-    <div class="stat"><strong>34</strong><span>articles that week</span></div>
-    <div class="stat"><strong>4</strong><span>journals covered</span></div>
+    <div class="stat"><strong>30</strong><span>articles that week</span></div>
+    <div class="stat"><strong>5</strong><span><a href="/methodology/">journals monitored</a></span></div>
     <div class="stat"><strong>£0</strong><span>for your first 4 weeks</span></div>
   </div>
   <div class="disclaimer">
-    <strong>Note:</strong> Summaries are AI-generated from publicly available PubMed abstracts. Always verify against the source article before clinical use.
+    <strong>Note:</strong> Summaries are AI-generated from publicly available PubMed abstracts. Always verify against the source article before clinical use. <a href="/methodology/">How we choose journals and write summaries →</a>
   </div>
 </header>
 
@@ -132,231 +136,231 @@
   <div class="container">
     <div class="sample-card">
       <div class="sample-badge">Annals of the rheumatic diseases</div>
-      <h3>Referral pathways and duration of care for musculoskeletal complaints across Europe: an analysis of primary and secondary care</h3>
-      <div class="sample-meta">Gomon G, Raffray M, Betancort Rodríguez C et al. · 2026 Jun 22</div>
+      <h3>Impact of disease activity on bone density, microarchitecture, and biomechanical properties in rheumatoid and psoriatic arthritis over 7 years</h3>
+      <div class="sample-meta">Temiz A, Kemenes S, Bayat S et al. · 2026 Aug 22</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Retrospective analysis of routinely collected healthcare data
+        Longitudinal cohort study (HR-pQCT imaging)
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        How do referral pathways and duration of rheumatology care for MSK complaints vary across five European healthcare systems?
+        How do disease activity, diagnosis, and seropositivity influence longitudinal changes in bone density, microarchitecture, and strength in RA and PsA?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>Primary care MSK burden was consistent across countries (25–30% of residents consulting annually), but referral rates to rheumatology varied markedly (5–38%)</li><li>46–70% of referred patients were discharged within 3 months; only 13–43% entered long-term rheumatology follow-up</li><li>The UK and Sweden, despite lower referral rates and fewer rheumatologists per capita, maintained higher rates of long-term rheumatology care, attributed to selective triaging systems</li>        </ul>
+<li>Seropositive RA (RA+) had significantly lower trabecular vBMD than PsA (−14.71 mg HA/cm³, 95% CI 2.85–26.58) and seronegative RA (RA−) (−16.92 mg HA/cm³, 95% CI 0.97–32.86) at baseline.</li><li>Over 5 years, total vBMD declined most in RA+ (−16.2 mg HA/cm³, 95% CI −20.9 to −11.4), with smaller losses in RA− and PsA.</li><li>PsA showed relative cortical preservation; sustained remission was associated with preserved bone structure, while high disease activity predicted deterioration across all groups.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        This confirms that the NHS selective triaging model concentrates rheumatology resource on complex cases, which is relevant when interpreting international benchmarking data or developing cross-national diagnostic tools applicable to UK practice.
+        Supports serostatus-stratified bone risk assessment and reinforces the value of achieving sustained remission to prevent structural bone loss in RA/PsA patients managed in NHS rheumatology services.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        UK primary care consultation rates were unavailable, limiting direct comparison of the full care pathway for the NHS cohort.
+        Observational design with variable follow-up duration limits causal inference regarding disease activity and bone outcomes.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42331648/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.ard.2026.05.011" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42632786/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.ard.2026.07.017" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">Annals of the rheumatic diseases</div>
-      <h3>Uncovering the heterogeneity of care trajectories leading up to a rheumatoid arthritis diagnosis: a Swedish 10-year study</h3>
-      <div class="sample-meta">Raffray M, Westerlind H, Delcoigne B et al. · 2026 Jun 24</div>
+      <h3>The private truncating Toll-like receptor 7 p.Glu834* variant associates with juvenile-onset systemic lupus erythematosus and pathological cytokine expression in vitro</h3>
+      <div class="sample-meta">Renaudineau Y, Hawkes J, Mizgalska K et al. · 2026 Aug 22</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Retrospective cohort study using linked nationwide registry data
+        Genetic association study with functional/mechanistic validation (targeted sequencing cohort plus in vitro and molecular modelling studies)
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Are there distinct patterns of healthcare use in the years preceding an RA diagnosis, and when do these deviate from the general population?
+        Does a novel truncating TLR7 variant contribute to juvenile-onset SLE pathogenesis via a distinct molecular mechanism?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>Five pre-diagnosis care trajectories identified in 6,824 seropositive RA patients: Healthy (60%), High sick leave (18%), Chronic pain (10%), High infection (9%), and High burden (3%)</li><li>Divergence from matched population controls emerged up to 10 years before diagnosis in some groups, with earlier deviation in trajectories characterised by pain and multimorbidity</li><li>The &#34;Chronic pain&#34; and &#34;High burden&#34; groups showed the earliest and most sustained healthcare divergence, suggesting distinct aetiological or prodromal pathways</li>        </ul>
+<li>A private heterozygous TLR7 p.Glu834* variant was identified in one of 319 UK jSLE patients, presenting with severe multisystem/neuropsychiatric disease and a family history of lupus-like autoimmunity.</li><li>The truncated protein forms an unconventional TLR7:TLR8 heterodimer (favoured over native TLR8:TLR8 dimerisation per structural modelling), driving enhanced proinflammatory cytokine output and an elevated peripheral blood IFN signature.</li><li>Findings implicate a novel non-canonical TLR7/8 signalling mechanism distinct from previously described gain-of-function TLR7 variants.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        These findings support earlier case identification strategies within primary care and could inform risk-stratification tools relevant to NHS early arthritis pathways and RA prevention initiatives.
+        This supports incorporating TLR7 genetic screening into severe/refractory jSLE work-up within NHS paediatric rheumatology genomics pathways and strengthens rationale for TLR7/8- or IFN-pathway-targeted therapies (e.g., anifrolumab) in genetically stratified patients.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        The study includes only seropositive RA, limiting generalisability to seronegative disease, which represents a substantial clinical subgroup.
+        Findings derive from a single patient/family, limiting generalisability until replicated in independent cohorts.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42342555/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.ard.2026.06.004" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42632785/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.ard.2026.07.024" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">Annals of the rheumatic diseases</div>
-      <h3>Comparison of the established ASAS definition and preliminary proposed data-driven cut-offs for inflammatory and structural MRI lesions in the sacroiliac joints for eligibility of patients with nonradiographic axial spondyloarthritis in clinical trials</h3>
-      <div class="sample-meta">Baraliakos X, Navarro-Compán V, Ramiro S et al. · 2026 Jun 25</div>
+      <h3>Pharmacodynamic analysis of TYK2 inhibition by deucravacitinib: results from the phase 2 PAISLEY SLE trial in patients with active systemic lupus erythematosus</h3>
+      <div class="sample-meta">Kahlenberg JM, Wu C, Vital E et al. · 2026 Aug 27</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Retrospective post hoc analysis of a phase 3 RCT (COAST-X)
+        Phase 2 trial substudy (pharmacodynamic/biomarker analysis), PAISLEY SLE trial
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Do the newer 2021 data-driven MRI-SIJ definitions (PD) better identify nr-axSpA patients for clinical trials compared to the established 2009 ASAS definition (ED)?
+        Does TYK2 inhibition with deucravacitinib produce measurable changes in interferon and B-cell pathway biomarkers in patients with active SLE?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>Baseline demographics and disease characteristics were comparable across all subgroups defined by either ED or PD MRI-SIJ positivity</li><li>Clinical response rates at week 16 (ASAS40, BASDAI50, ASDAS outcomes) were similar whether patients were classified by ED or PD criteria</li><li>Subgroups meeting only one definition (ED but not PD, or vice versa) showed marginally lower response rates than those meeting either definition outright</li>        </ul>
+<li>At baseline, 42 genes and 75 proteins were differentially expressed between SLE patients (n=363) and healthy volunteers.</li><li>Deucravacitinib produced rapid, sustained reductions in IFN-responsive gene/protein expression, B-cell pathway markers, and serological biomarkers, with increased complement C3/C4, versus placebo.</li><li>IFN signature score fell in both IFN-high and IFN-low subgroups; anti-dsDNA titres decreased specifically in the IFN-high subgroup.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        For UK rheumatologists enrolling patients in nr-axSpA trials, these findings suggest no meaningful advantage in switching to newer MRI classification criteria; the established ASAS ED remains fit for purpose in trial eligibility decisions.
+        These mechanistic data support deucravacitinib&#39;s biological rationale in SLE and underpin ongoing UK-relevant phase 3 POETYK SLE-1/SLE-2 trials, offering a potential oral alternative to biologics for IFN-driven disease.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Post hoc analysis limits causal inference, and findings may not generalise beyond the ixekizumab trial population.
+        All analyses were descriptive/exploratory without formal statistical comparison, limiting definitive efficacy conclusions.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42350183/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.ard.2026.06.001" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42660739/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.ard.2026.07.013" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Annals of the rheumatic diseases</div>
+      <h3>Use of parenteral compared with oral glucocorticoids in early rheumatoid arthritis for chance of being off steroids and escalation of therapy at 1 year</h3>
+      <div class="sample-meta">Fernández-Codina A, Bartlett SJ, Thorne C et al. · 2026 Aug 28</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Retrospective cohort study (Canadian Early Arthritis Cohort, 2007–2023)
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        In early rheumatoid arthritis, does the route of glucocorticoid administration (oral vs parenteral) affect the likelihood of remaining on steroids or escalating to advanced therapy at 12 months?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Persistent GC use at 12 months: 63% (both routes), 47% (oral), 26% (parenteral), 8% (no GC).</li><li>Adjusted odds of ongoing GC use at 1 year were higher with oral (OR 9.8) than parenteral GC (OR 4.1), versus no GC.</li><li>Advanced therapy escalation was similar across groups (14–16%), regardless of GC route.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        Favouring intra-articular/intramuscular GC over oral courses in newly diagnosed RA may reduce cumulative steroid exposure without compromising disease control, supporting steroid-sparing strategies relevant to NHS treat-to-target pathways.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Observational design with treatment allocation by clinician choice risks confounding by indication (e.g., disease pattern influencing route selection).
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42665531/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.ard.2026.08.001" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">Arthritis &amp; rheumatology (Hoboken, N.J.)</div>
-      <h3>Increased plasma microbial tDR-1 in at-risk individuals is associated with decreased conversion to clinical rheumatoid arthritis and reduces an in vitro macrophage type 1 interferon response</h3>
-      <div class="sample-meta">Phothisane A, Joishy TK, Ramirez-Becerra C et al. · 2026 Jun 22</div>
+      <h3>Age-specific Incidence of Systemic Lupus Erythematosus in the United States: A Meta-Analysis of Data from the Centers for Disease Control and Prevention Lupus Registries</h3>
+      <div class="sample-meta">Izmirly PM, Ferucci ED, Hersh AO et al. · 2026 Aug 24</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Prospective cohort study with in vitro mechanistic component
+        Meta-analysis of population-based registry data (CDC National Lupus Registry network)
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Does plasma microbial tDR-1 concentration predict progression to clinical RA in anti-CCP3-positive at-risk individuals, and what is its mechanism of action?
+        How does SLE incidence in the US vary by age, sex, race, and ethnicity, including under-recognised groups such as men and older adults?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>Baseline tDR-1 was 5.4-fold higher in non-converters vs converters (n=60 CCP3+ individuals; P=5.1×10⁻⁴), remaining significant after adjustment for shared epitope, smoking, and rheumatoid factor</li><li>Adding tDR-1 to established risk factors improved discriminatory ability from AUROC 0.722 to 0.902 (P=0.003)</li><li>In vitro, tDR-1 significantly downregulated type 1 interferon response genes in THP-1 macrophages, suggesting a plausible immunomodulatory mechanism</li>        </ul>
+<li>Peak SLE incidence occurred in women aged 30–39 (12.7/100,000 person-years, 95%CI 9.5–16.8), versus men aged 60–69 (2.1, 95%CI 1.3–3.4).</li><li>Black women aged 20–39 had the highest overall incidence (23.6, 95%CI 20.7–26.8); Asian women had highest paediatric-onset rates (&lt;20 years: 6.5) and American Indian/Alaska Native women highest late-onset rates (&gt;60 years: 9.4).</li><li>10.0% of cases were diagnosed before age 20 and 15.1% after age 60.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        tDR-1 could strengthen risk stratification in CCP-positive at-risk individuals, a population increasingly targeted by prevention trials (e.g., PRAIRI, APIPPRA), potentially refining who is offered preventive intervention.
+        UK rheumatologists should maintain a high index of suspicion for SLE outside typical young-female presentations, particularly in older men and specific ethnic subgroups, to reduce diagnostic delay.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Small sample (n=60), single-centre, and relatively short follow-up in converters limits generalisability.
+        US registry-derived racial/ethnic categories and case ascertainment may not generalise directly to UK demographic or healthcare contexts.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42332992/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1002/art.70264" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42635302/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1002/art.70306" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">Arthritis &amp; rheumatology (Hoboken, N.J.)</div>
-      <h3>The role of IgM anti-acetylated protein antibodies and B cells in the origin of anti-modified protein autoimmunity in rheumatoid arthritis</h3>
-      <div class="sample-meta">Athanasiadou A, Kroos S, van de Wetering R et al. · 2026 Jun 22</div>
+      <h3>Hepatotoxicity of Avacopan: Real-World Incidence and Confirmed Cases of Severe Drug-Induced Liver Injury in a US National Rheumatology Registry</h3>
+      <div class="sample-meta">Roberts ET, Dadabhoy D, Antolini R et al. · 2026 Aug 24</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Longitudinal cohort study with mechanistic laboratory sub-study
+        Retrospective cohort study (national registry analysis)
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Does IgM AAPA serve as a precursor autoantibody marking the initial breach of immune tolerance preceding other AMPAs in RA?
+        What is the real-world incidence of hepatotoxicity, including confirmed drug-induced liver injury (DILI), among US patients with ANCA-associated vasculitis treated with avacopan?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>Pre-disease AAPA IgM positivity (27.3%) exceeded ACPA IgM positivity (11.7%), but ACPA IgM rose sharply to 51.2% approaching disease onset while AAPA IgM remained stable</li><li>AMPAs developed in individuals who were AAPA IgM-negative at baseline, arguing against a universal AAPA-first pathway</li><li>Germline-encoded B-cell receptors were identified in both AAPA- and ACPA-expressing B cells, suggesting ACPA responses can arise independently rather than through AAPA IgM class-switching</li>        </ul>
+<li>Among 238 avacopan-treated patients, hepatic enzyme elevations were infrequent: AST elevation incidence 4.24/100 person-years (95% CI 1.77–10.19); ALT 2.67 (0.86–8.27); ALP 3.56 (1.34–9.49); bilirubin 1.80 (0.45–7.19).</li><li>Two confirmed DILI cases (0.8%), both RUCAM score 9 (highly probable causality), including one with biopsy-confirmed severe hepatocellular injury.</li><li>Early liver monitoring was inconsistent (median first test at 32 days; average testing interval 125 days).</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        Challenges the hypothesis of a single autoantibody origin in RA, with implications for early biomarker strategies and understanding pre-clinical disease in at-risk populations.
+        Despite low overall incidence, severe confirmed DILI occurred, reinforcing the need for rigorous, early liver function monitoring in UK patients prescribed avacopan for AAV amid ongoing regulatory scrutiny.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Pre-disease cohort size was modest, limiting statistical power to detect temporal associations between AMPA subtypes.
+        Small sample size and incomplete/irregular liver enzyme monitoring likely underestimate true DILI incidence.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42328895/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1002/art.70259" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42635291/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1002/art.70304" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">Arthritis &amp; rheumatology (Hoboken, N.J.)</div>
-      <h3>Comparative transcriptional profiling of key macrophage and fibroblast subpopulations in rheumatoid arthritis-associated lung disease</h3>
-      <div class="sample-meta">Tabib T, Ezenwa O, Sciurba J et al. · 2026 Jun 22</div>
+      <h3>IL-12 Signaling Promotes Podocyte Senescence in Lupus Nephritis</h3>
+      <div class="sample-meta">Guo C, Fu R, Pan W et al. · 2026 Aug 24</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Comparative transcriptional profiling study (single-cell RNA sequencing of fixed lung tissue)
+        Translational research (human sample analysis combined with in vitro and murine mechanistic studies)
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        What are the distinct cellular and molecular signatures of macrophage and fibroblast subpopulations in RA-ILD versus RA pulmonary nodules, and how do these compare to IPF?
+        Does IL-12 signalling drive podocyte injury and senescence in lupus nephritis, and could this pathway be therapeutically targeted?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>RA-ILD fibroblasts showed preferential upregulation of immunoregulatory, angioregulatory, and matrix assembly pathways, whereas RA nodule macrophages predominantly upregulated innate and adaptive immune pathways — indicating only partial transcriptional overlap between the two RA lung phenotypes</li><li>Profibrotic gene expression was significantly shared between RA-ILD and IPF across both macrophage and fibroblast populations, suggesting convergent fibrotic mechanisms</li><li>FLEX scRNA-seq of fixed tissue produced clustering patterns consistent with conventional fresh-tissue sequencing, validating the methodology for archival specimens</li>        </ul>
+<li>Serum IL-12 was elevated in LN patients (p=0.006) and lupus-prone mice (p=0.041), with increased podocyte IL-12 receptor expression in both species.</li><li>IL-12 activated CaMK4/STAT4 signalling, causing mitochondrial dysfunction, oxidative stress, and podocyte senescence with cytoskeletal disruption.</li><li>Podocyte-specific deletion of Il12rb1 reduced senescence, glomerular injury, and proteinuria in both lupus-prone and nephrotoxic nephritis models.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        Divergent molecular pathways in RA lung disease subtypes may explain differential treatment responses and could inform future targeted therapeutic strategies for RA-ILD in UK practice.
+        This identifies the IL-12–IL-12R axis as a novel podocyte-protective therapeutic target in LN, relevant given growing UK interest in biologics (e.g., ustekinumab) for refractory lupus nephritis.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Small sample sizes, particularly for RA nodules (n=3), limit generalisability.
+        Human data were correlative and based on a small cohort (n=39), with causal mechanistic evidence derived solely from murine and in vitro models.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42328894/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1002/art.70256" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42635289/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1002/art.70305" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">Arthritis &amp; rheumatology (Hoboken, N.J.)</div>
-      <h3>IgG Glycosylation-Dependent CLEC7A Signaling Drives Podocyte Dysfunction in Lupus Nephritis</h3>
-      <div class="sample-meta">Upadhyay R, Orellana A, Tsokos GC et al. · 2026 Jun 22</div>
+      <h3>Complement activation linked to type II interferon signaling in Still disease</h3>
+      <div class="sample-meta">Huijsmans FMCH, Thalheim T, Bodelón A et al. · 2026 Aug 25</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Translational experimental study (in vitro human cell work, murine model, and human biopsy validation)
+        Translational/mechanistic study (transcriptomic, proteomic, and in vitro analyses)
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Does aberrant IgG glycosylation in lupus nephritis drive podocyte injury via CLEC7A–SYK signalling?
+        Is complement activation a feature of Still disease pathogenesis, and how does it relate to interferon signalling?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>LN-IgG (but not healthy or non-nephritis SLE IgG) induced CLEC7A upregulation, actin cytoskeleton disruption, reduced nephrin expression, impaired motility, and increased calcium flux in human podocytes</li><li>Deglycosylation of LN-IgG abolished CLEC7A binding and preserved podocyte function, confirming glycan-dependence</li><li>Pharmacological SYK inhibition and CLEC7A silencing each prevented podocyte injury; elevated CLEC7A and SYK expression was confirmed in MRL/lpr mouse kidneys and active LN human biopsies</li>        </ul>
+<li>Monocyte transcriptomics showed marked complement pathway enrichment at SD onset vs remission (Padj=3.7×10⁻³⁶), with C1QB/C1QC among the top upregulated genes.</li><li>Active SD patients had elevated C1q, C3a, C5a, and terminal complement complex levels, plus increased functional classical complement activity versus inactive disease and JIA.</li><li>C1QB/C1QC expression correlated with IFN-γ-related markers (IL-18, CXCL9, CXCL10); IFN-γ induced monocytic C1q production, and C1q in turn amplified IFN-γ release from CD8+ T cells, indicating a feed-forward loop.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        SYK inhibitors (e.g., fostamatinib) are already in clinical use; this identifies a mechanistic rationale for targeting the CLEC7A–SYK axis specifically in lupus nephritis, potentially informing future trial design in NHS renal lupus clinics.
+        These findings identify complement (particularly C1q) as a novel biomarker and potential therapeutic target in Still disease, relevant to UK paediatric and adult rheumatology services managing this rare but high-morbidity autoinflammatory condition, including MAS risk stratification.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Mechanistic findings rely on in vitro and murine models; direct quantitative data from human biopsy cohorts are limited, and clinical translation remains unproven.
+        Small subgroup sizes (e.g., MAS n=2) and cross-sectional design limit causal inference and generalisability.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42328892/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1002/art.70260" target="_blank" rel="noopener">DOI →</a>      </div>
-    </div>
-    <div class="sample-card">
-      <div class="sample-badge">Arthritis &amp; rheumatology (Hoboken, N.J.)</div>
-      <h3>From Interferon Signature to the Clinical Landscape: Type I Interferonopathies</h3>
-      <div class="sample-meta">Yaz I, Ozen S, Bildik HN et al. · 2026 Jun 22</div>
-      <div class="summary-field">
-        <span class="summary-label">Study Type:</span>
-        Cohort study (single-centre, cross-sectional diagnostic evaluation)
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Question:</span>
-        What is the diagnostic utility of IFN signature, CXCL10 levels, and antiviral activity in characterising patients with suspected type I interferonopathies?
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Findings:</span>
-        <ul>
-<li>Genetic diagnosis confirmed in 80% (37/46); IFN signature positive in 91% (31/34) of evaluable patients, with significantly higher median IFN scores versus controls (p&lt;0.0001)</li><li>Serum CXCL10 was elevated in patients and correlated with IFN scores (rs=0.50, p=0.003), with both markers showing strong discriminative capacity</li><li>A distinct &#34;undifferentiated interferonopathy&#34; subgroup was identified with consistent clinical features and positive IFN signatures but no confirmed genetic diagnosis</li>        </ul>
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Clinical Relevance:</span>
-        As interferonopathies increasingly enter rheumatology practice, this supports incorporating CXCL10 and IFN scoring into diagnostic pathways — tools potentially accessible within NHS specialist immunology-rheumatology services.
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Limitations:</span>
-        Small sample size (n=46) with antiviral assays performed in only five patients limits generalisability of functional findings.
-      </div>
-      <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42328836/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1002/art.70257" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42640011/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1002/art.70307" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
 
     <div class="tease">
-      <p>…and <em>26 more</em> Rheumatology articles in that week's digest.</p>
+      <p>…and <em>22 more</em> Rheumatology articles in that week's digest.</p>
       <small>Subscribers get the complete brief, every Monday.</small>
     </div>
   </div>
@@ -366,15 +370,32 @@
 <section class="cta-section">
   <h2>Get the Rheumatology digest in your inbox every Monday</h2>
   <p>4 weeks completely free, then £20/year. Cancel any time during your trial — no charge.</p>
-  <a href="/?specialty=rheumatology&ref=samples#subscribe" class="cta-btn">Start your free trial — Rheumatology →</a>
+  <a href="/?specialty=rheumatology&amp;ref=samples#subscribe" class="cta-btn">Start your free trial — Rheumatology →</a>
   <span class="cta-meta">No card needed to browse. We'll ask for payment details to start the trial.</span>
 </section>
 
 <!-- ═══ FOOTER ═══ -->
 <footer>
   <p>&copy; 2026 The Monday Clinical Brief</p>
-  <p><a href="/">Home</a> · <a href="mailto:info@mondayclinicalbrief.co.uk">Contact</a> · <a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms</a></p>
+  <p><a href="/samples/">Samples</a> · <a href="/blog/">Blog</a> · <a href="/methodology/">Methodology</a> · <a href="/about/">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p>
 </footer>
+
+<script>
+// Measure the fixed mobile bottom bar so the body reserves its true height.
+(function () {
+  var nav = document.querySelector('nav');
+  if (!nav) return;
+  function sync() {
+    var fixed = getComputedStyle(nav).position === 'fixed';
+    document.documentElement.style.setProperty('--bottom-nav-h', fixed ? nav.offsetHeight + 'px' : '0px');
+  }
+  sync();
+  addEventListener('resize', sync);
+  addEventListener('orientationchange', sync);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(sync);
+  if (window.ResizeObserver) new ResizeObserver(sync).observe(nav);
+})();
+</script>
 
 </body>
 </html>

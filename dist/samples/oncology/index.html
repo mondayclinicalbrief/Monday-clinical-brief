@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Oncology Sample Digest — The Monday Clinical Brief</title>
-<meta name="description" content="See what Oncology clinicians received in this Monday's digest: 4 new articles from Journal of clinical oncology : official journal of the American Society of Clinical Oncology summarised every Monday by The Monday Clinical Brief.">
+<meta name="description" content="See what Oncology clinicians received in this Monday's digest: 22 new articles from The Lancet. Oncology, Journal of clinical oncology : official journal of the American Society of Clinical Oncology, Annals of oncology : official journal of the European Society for Medical Oncology summarised every Monday by The Monday Clinical Brief.">
 <link rel="canonical" href="https://mondayclinicalbrief.co.uk/samples/oncology/">
 <meta property="og:title" content="Oncology — Monday Clinical Brief Sample Digest">
-<meta property="og:description" content="4 new Oncology papers summarised this week. Free 4-week trial.">
+<meta property="og:description" content="22 new Oncology papers summarised this week. Free 4-week trial.">
 <meta property="og:url" content="https://mondayclinicalbrief.co.uk/samples/oncology/">
 <meta property="og:type" content="article">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -89,9 +89,12 @@
   footer a { color: var(--sage); text-decoration: none; }
 
   @media (max-width: 640px) {
-    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; }
+    /* Fixed bottom bar — reserve its measured height, not a flat 60px. */
+    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; align-items: center; gap: 0.75rem; }
     .nav-links a:not(.nav-cta) { display: none; }
-    body { padding-bottom: 60px; }
+    .nav-brand { font-size: 0.9rem; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+    .nav-cta { flex-shrink: 0; }
+    body { padding-bottom: calc(var(--bottom-nav-h, 64px) + env(safe-area-inset-bottom, 0px)); }
     .page-header { padding: 3.5rem 1.5rem 2.5rem; }
     section { padding: 2rem 1.5rem 3.5rem; }
     .sample-card { padding: 1.5rem; }
@@ -106,24 +109,25 @@
 <nav>
   <a href="/" class="nav-brand">The Monday Clinical Brief</a>
   <div class="nav-links">
+    <a href="/samples/">Samples</a>
+    <a href="/blog/">Blog</a>
     <a href="/#how">How it works</a>
-    <a href="/#about">About</a>
     <a href="/?specialty=oncology#subscribe" class="nav-cta">Start free trial</a>
   </div>
 </nav>
 
 <!-- ═══ HEADER ═══ -->
 <header class="page-header">
-  <div class="eyebrow">Sample Digest · Monday 29 June 2026</div>
+  <div class="eyebrow">Sample Digest · Monday 31 August 2026</div>
   <h1>A recent Oncology digest,<br><em>as sent to subscribers</em></h1>
-  <p class="lede">This is the real Monday digest from Monday 29 June 2026. Showing the first 4 of 4 articles from that week — every new paper from the top journals in Oncology.</p>
+  <p class="lede">This is the real Monday digest from Monday 31 August 2026. Showing the first 8 of 22 articles from that week — every new paper from the top 5 journals in Oncology, 4 of which published that week.</p>
   <div class="stat-bar">
-    <div class="stat"><strong>4</strong><span>articles that week</span></div>
-    <div class="stat"><strong>1</strong><span>journals covered</span></div>
+    <div class="stat"><strong>22</strong><span>articles that week</span></div>
+    <div class="stat"><strong>5</strong><span><a href="/methodology/">journals monitored</a></span></div>
     <div class="stat"><strong>£0</strong><span>for your first 4 weeks</span></div>
   </div>
   <div class="disclaimer">
-    <strong>Note:</strong> Summaries are AI-generated from publicly available PubMed abstracts. Always verify against the source article before clinical use.
+    <strong>Note:</strong> Summaries are AI-generated from publicly available PubMed abstracts. Always verify against the source article before clinical use. <a href="/methodology/">How we choose journals and write summaries →</a>
   </div>
 </header>
 
@@ -131,121 +135,234 @@
 <section>
   <div class="container">
     <div class="sample-card">
-      <div class="sample-badge">Journal of clinical oncology : official journal of the American Society of Clinical Oncology</div>
-      <h3>Small Cemetery Within</h3>
-      <div class="sample-meta">Önder AH · 2026 Jun 23</div>
+      <div class="sample-badge">Annals of oncology : official journal of the European Society for Medical Oncology</div>
+      <h3>Sustained benefit of adjuvant olaparib in women with germline BRCA1- and BRCA2- -associated high-risk HER2-negative early breast cancer: Updated results from the OlympiA phase III trial</h3>
+      <div class="sample-meta">Garber JE, Cameron D, Campbell C et al. · 2026 Aug 24</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Commentary / reflective piece
+        RCT (updated interim analysis of phase III OlympiA trial)
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        How does cumulative emotional exposure affect oncology clinicians over the course of their careers?
+        Does the benefit of 1 year adjuvant olaparib versus placebo persist long-term in patients with gBRCA1/2-mutated, high-risk HER2-negative early breast cancer?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>Describes an intangible, accumulating psychological burden resulting from repeated patient loss in oncology practice</li><li>Each clinical encounter is framed as leaving a lasting emotional imprint on the clinician, irrespective of clinical outcome</li><li>The piece argues this burden remains largely invisible within professional and institutional frameworks</li>        </ul>
+<li>At 6.1-year median follow-up, olaparib maintained significant improvements in IDFS (HR 0.65, 95% CI 0.53–0.78), DDFS (HR 0.65, 95% CI 0.53–0.81), and OS (HR 0.72, 95% CI 0.56–0.93).</li><li>6-year OS: 87.5% (olaparib) vs 83.2% (placebo); absolute difference 4.4% (95% CI 0.9–6.7%).</li><li>Benefit consistent across subgroups including hormone receptor-positive disease; fewer new BRCA-associated cancers, no increased MDS/AML risk (0.4% vs 0.7%), and lower overall AESI rate (6.3% vs 9.3%) with olaparib.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        Oncology clinicians in the NHS face high rates of moral distress and burnout; this piece draws attention to the unacknowledged psychological cost of sustained exposure to patient death and suffering, relevant to workforce wellbeing strategies.
+        These mature data reinforce current UK practice (NICE-approved) of offering 1 year adjuvant olaparib to gBRCA1/2 carriers with high-risk HER2-negative early breast cancer, confirming durable survival benefit and long-term safety.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Not applicable — reflective commentary without primary data.
+        This is a descriptive interim analysis without formal statistical testing, so findings should be interpreted as supportive rather than confirmatory of final trial conclusions.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42636977/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.annonc.2026.08.002" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Annals of oncology : official journal of the European Society for Medical Oncology</div>
+      <h3>Adjuvant pembrolizumab for the treatment of clear cell renal cell carcinoma: Five-year results from the phase III KEYNOTE-564 study</h3>
+      <div class="sample-meta">Haas NB, Powles TB, Tomczak P et al. · 2026 Aug 26</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        RCT (phase III, prespecified interim analysis)
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Does adjuvant pembrolizumab continue to improve disease-free and overall survival versus placebo in resected high-risk clear cell RCC at 5-year follow-up?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>DFS improved with pembrolizumab vs placebo (HR 0.71, 95% CI 0.59–0.86); 5-year DFS 60.9% vs 52.2%.</li><li>OS improved with pembrolizumab (HR 0.66, 95% CI 0.48–0.90); 5-year OS 87.7% vs 82.3%; median OS not reached in either arm.</li><li>Benefits consistent across subgroups; safety profile unchanged from earlier analyses.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        Confirms durable DFS and OS benefit supporting continued NHS use of adjuvant pembrolizumab as standard of care post-nephrectomy in high-risk ccRCC.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Investigator-assessed DFS (not blinded independent review) may introduce assessment bias.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42648402/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.annonc.2026.08.006" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Annals of oncology : official journal of the European Society for Medical Oncology</div>
+      <h3>Thymic Radiation is Associated with Worse Outcomes in Patients with NSCLC</h3>
+      <div class="sample-meta">Prudente V, Bernatz S, Pai S et al. · 2026 Dec 31</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Multicohort retrospective analysis (including secondary analysis of RTOG-0617 phase III trial data plus two real-world cohorts)
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Does incidental thymic radiation dose during chemoradiotherapy for NSCLC affect distant metastasis risk and survival?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Each 1 Gy increase in mean thymic dose (MTD) was associated with increased distant metastasis risk across all three cohorts (aHR 1.29–1.95; p=0.0028–0.011).</li><li>Effect was strongest in patients with preserved pre-RT thymic health; no significant association in those with impaired thymic function.</li><li>Higher thymic dose correlated with dose-dependent decline in thymic health and lower circulating lymphocyte counts at 1 year, suggesting immune-mediated mechanism; thymic-sparing RT planning appeared feasible without compromising tumour coverage.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        This challenges current UK RT planning practice by suggesting the thymus should be considered an organ-at-risk, with thymic-sparing techniques potentially improving outcomes in NSCLC chemoradiotherapy patients, including those receiving consolidation immunotherapy per standard NHS pathways.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Retrospective design with residual confounding risk, and thymic function was estimated via a deep-learning imaging proxy rather than direct immunological measurement.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42641684/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.annonc.2026.07.001" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">CA: a cancer journal for clinicians</div>
+      <h3>The new (version 9) American Joint Committee on Cancer (AJCC) tumor-node-metastasis (TNM) staging protocol for carcinoma of the vulva</h3>
+      <div class="sample-meta">Olawaiye AB, Asare EA, Hagemann IS et al. · 2026</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Staging protocol update (not original research; validation study using registry data)
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        What changes define the new AJCC version 9 TNM staging protocol for vulvar carcinoma, and how do they align with current international standards?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>New standardised method for measuring depth of invasion</li><li>Addition of a new T4 subcategory and redefined N subcategories</li><li>Expanded M subcategories, now incorporating a &#34;clinical&#34; designation across all M classifications</li><li>Changes were validated against the National Cancer Data Base and harmonised with 2021 FIGO staging</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        UK gynae-oncology MDTs should adopt these revised T, N, and M definitions to ensure consistent staging, prognostication, and cross-study comparability with FIGO-aligned practice.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        As a staging protocol update rather than primary research, validation relies on registry data (predominantly US-based), with limited detail on external or UK-specific applicability.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42665926/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.3322/caac.70104" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Journal of clinical oncology : official journal of the American Society of Clinical Oncology</div>
+      <h3>Omitting Bone Marrow Sampling in FDG-Avid Rhabdomyosarcoma With 2-[18F]FDG PET-Negative Marrow: Results From an International Retrospective Study</h3>
+      <div class="sample-meta">Mercolini F, Just M, Shulkin BL et al. · 2026 Aug 24</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Retrospective international cohort study
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Can FDG PET/CT or PET/MRI reliably replace bilateral bone marrow aspirate/biopsy (BMAB) for detecting bone marrow metastases in staging rhabdomyosarcoma?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Among 301 patients with FDG-avid RMS, PET showed 98% sensitivity and 90% specificity for bone marrow metastases versus BMAB as gold standard.</li><li>PET and BMAB concordantly detected disease in 54 patients and concordantly excluded it in 222; PET identified 24 additional cases missed by BMAB, while BMAB detected only 1 case missed by PET.</li><li>Patients with PET+/BMAB+ marrow disease had more marrow foci, more metastatic sites, and poorer survival than PET-only positive cases, suggesting more advanced disease.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        In UK paediatric oncology practice, PET-negative bone marrow findings could allow safe omission of invasive bilateral BMAB, reducing procedural burden under anaesthesia while maintaining staging accuracy.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Retrospective design with BMAB as an imperfect reference standard, given its known sampling limitations for patchy marrow infiltration.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42636421/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1200/JCO-25-03080" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Journal of clinical oncology : official journal of the American Society of Clinical Oncology</div>
+      <h3>Salvage Hypofractionated Accelerated Versus Standard Radiotherapy for Biochemical Recurrence After Radical Prostatectomy: A Phase III Randomized Clinical Trial</h3>
+      <div class="sample-meta">Song Y, Park W, Pyo H et al. · 2026 Aug 25</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Phase III randomized controlled trial
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Does hypofractionated salvage radiotherapy after radical prostatectomy achieve comparable biochemical control to conventional fractionation in men with biochemical recurrence?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>4-year bPFS was similar between arms (80.1% HYPO vs 78.1% CONV), with no significant difference in DMFS (91.7% vs 91.0%) or CSS (100% vs 100%).</li><li>Grade ≥2 GI toxicity was higher with HYPO (7.9% vs 0.7%), mainly in patients without endorectal balloon use; all events resolved.</li><li>Patient-reported quality-of-life outcomes were comparable between arms.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        Supports hypofractionated salvage RT (65 Gy/26#) as a resource-efficient alternative to conventional fractionation, relevant to UK efforts to reduce fraction numbers and treatment burden without compromising oncological outcomes, provided GI toxicity mitigation (e.g., endorectal balloon) is considered.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Follow-up (median 52.6 months) may be insufficient to fully capture late toxicity and long-term oncologic differences.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42641124/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1200/JCO-25-02234" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Journal of clinical oncology : official journal of the American Society of Clinical Oncology</div>
+      <h3>The Patient Who Could Not Die</h3>
+      <div class="sample-meta">Ramsdale E · 2026 Aug 25</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Commentary/reflective essay
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        What can interactions with artificial intelligence reveal about the nature of human connection and communication in oncology practice?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>This is a narrative reflection, not an empirical study; no quantitative data or effect sizes are reported.</li><li>The piece explores an imagined/simulated patient encounter to examine what AI can and cannot replicate regarding empathy, presence, and the therapeutic relationship.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        As NHS oncology services increasingly explore AI tools for communication, triage, and decision support, this piece prompts reflection on preserving the human elements of care that underpin patient trust and wellbeing.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        As a personal/narrative commentary, it offers no empirical evidence or generalisable clinical data.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42641122/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1200/JCO-25-02505" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Journal of clinical oncology : official journal of the American Society of Clinical Oncology</div>
+      <h3>Becotatug Vedotin Combined With Pucotenlimab in Platinum- and Immunotherapy-Resistant Recurrent or Metastatic Nasopharyngeal Carcinoma</h3>
+      <div class="sample-meta">Ruan DY, Wang FH, Zhou Y et al. · 2026 Aug 25</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Phase I/II open-label, multicohort dose escalation and expansion trial
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Is the combination of EGFR-directed ADC becotatug vedotin plus PD-1 inhibitor pucotenlimab effective and safe in R/M nasopharyngeal carcinoma previously resistant to platinum and anti-PD-1/PD-L1 therapy?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Confirmed ORR of 71.0% (95% CI, 52.0–85.8) and DCR of 93.5% in 31 patients treated at RP2D.</li><li>Median DoR 14.0 months and median PFS 12.0 months; OS immature.</li><li>Grade ≥3 TRAEs in 40.6%; common toxicities included pruritus, hypoesthesia, anaemia, and rash, with no treatment-related deaths.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        This represents a potential new option and PD-1 &#34;rechallenge&#34; strategy for R/M NPC patients who have exhausted standard platinum- and immunotherapy-based regimens, a population with currently limited effective therapies in UK practice.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Small single-arm cohort (n=31) without a comparator arm, limiting definitive efficacy conclusions pending the ongoing phase III RCT.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42641116/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1200/JCO-26-00640" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
 
----
-*Note: This is a reflective/literary piece. No quantitative findings, study population, or methodology are present. The summary is necessarily interpretive based on the abstract provided.*
-      </div>
-      <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42335414/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1200/JCO-26-00027" target="_blank" rel="noopener">DOI →</a>      </div>
+    <div class="tease">
+      <p>…and <em>14 more</em> Oncology articles in that week's digest.</p>
+      <small>Subscribers get the complete brief, every Monday.</small>
     </div>
-    <div class="sample-card">
-      <div class="sample-badge">Journal of clinical oncology : official journal of the American Society of Clinical Oncology</div>
-      <h3>Donor Selection and Human Leukocyte Antigen Loss Leukemia Relapse After Hematopoietic Cell Transplantation</h3>
-      <div class="sample-meta">Fleischhauer K, Toffalori C, Cugnata F et al. · 2026 Jun 25</div>
-      <div class="summary-field">
-        <span class="summary-label">Study Type:</span>
-        Retrospective multicentre cohort study
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Question:</span>
-        Does the pattern of HLA mismatches between donor and recipient predict immune evasion via genomic HLA loss at leukaemia relapse after allogeneic HCT?
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Findings:</span>
-        <ul>
-<li>HLA loss occurred in 15.6% of 533 post-HCT relapses overall, but was markedly higher after haploidentical transplants (28.7%) versus unrelated donor (7.2%) or cord blood (2.7%)</li><li>HLA mismatches located on the same haplotype (cis configuration) conferred a 27.6% HLA loss rate versus 5.4% when mismatches were on different haplotypes (trans; p&lt;0.0001)</li><li>At relapse, HLA loss abrogated efficacy of original donor lymphocyte infusions; second allo-HCT from a different donor conferred a significant survival advantage</li>        </ul>
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Clinical Relevance:</span>
-        This directly informs donor selection strategy in UK transplant practice, with a validated phasing tool enabling pre-transplant risk stratification for HLA loss-mediated relapse.
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Limitations:</span>
-        Retrospective design with potential selection bias across 27 heterogeneous international centres.
-      </div>
-      <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42348822/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1200/JCO-26-00113" target="_blank" rel="noopener">DOI →</a>      </div>
-    </div>
-    <div class="sample-card">
-      <div class="sample-badge">Journal of clinical oncology : official journal of the American Society of Clinical Oncology</div>
-      <h3>Long-Term Follow-Up of JCOG1008, a Randomized Phase II/III Trial of Chemoradiotherapy Comparing 3-Weekly Cisplatin With Weekly Cisplatin in Postoperative Head and Neck Cancer</h3>
-      <div class="sample-meta">Tahara M, Kiyota N, Kodaira T et al. · 2026 Jun 26</div>
-      <div class="summary-field">
-        <span class="summary-label">Study Type:</span>
-        RCT (randomised phase II/III trial — long-term follow-up analysis)
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Question:</span>
-        Is weekly cisplatin (40 mg/m² ×7) non-inferior to 3-weekly cisplatin (100 mg/m² ×3) when combined with postoperative radiotherapy in high-risk locally advanced head and neck squamous cell carcinoma?
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Findings:</span>
-        <ul>
-<li>At median follow-up of 5.6 years, 5-year OS was 71.2% (weekly) vs 58.7% (3-weekly); HR 0.76 (95% CI 0.52–1.12), confirming non-inferiority</li><li>5-year RFS and local RFS were numerically superior in the weekly arm, though formal superiority was not established</li><li>No late toxicity differed by &gt;10% between arms</li>        </ul>
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Clinical Relevance:</span>
-        Weekly cisplatin-based CRT is commonly used in UK postoperative head and neck oncology practice; this 5-year data provides durable evidence supporting its use over 3-weekly cisplatin without compromising survival or increasing late toxicity.
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Limitations:</span>
-        The trial was conducted in a Japanese population, limiting direct generalisability to UK/Western practice.
-      </div>
-      <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42361282/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1200/JCO-25-01708" target="_blank" rel="noopener">DOI →</a>      </div>
-    </div>
-    <div class="sample-card">
-      <div class="sample-badge">Journal of clinical oncology : official journal of the American Society of Clinical Oncology</div>
-      <h3>First-Line Disitamab Vedotin, Tislelizumab, and S-1 in HER2-Overexpressing Advanced Gastric or Gastroesophageal Junction Adenocarcinoma: A Single-Arm, Phase II Trial</h3>
-      <div class="sample-meta">Li S, Liu Z, Liu Y et al. · 2026 Jun 26</div>
-      <div class="summary-field">
-        <span class="summary-label">Study Type:</span>
-        Single-arm, phase II trial
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Question:</span>
-        Does first-line disitamab vedotin (HER2-directed ADC) combined with tislelizumab (PD-1 inhibitor) and S-1 offer meaningful efficacy in HER2-overexpressing advanced gastric/GEJ adenocarcinoma?
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Findings:</span>
-        <ul>
-<li>Confirmed ORR of 89.5% (95% CI 78.5–96.0%) across all HER2 IHC 2+/3+ patients, including ISH-negative and PD-L1 CPS &lt;1 subgroups</li><li>Median PFS 13.8 months and median OS 31.9 months at 28.2 months follow-up — substantially exceeding outcomes typical of trastuzumab-based first-line regimens</li><li>Grade ≥3 treatment-related adverse events in 64.9%, predominantly haematological toxicity and peripheral neuropathy</li>        </ul>
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Clinical Relevance:</span>
-        These efficacy signals are striking for a HER2-overexpressing gastric cancer population and could inform future first-line ADC-immunotherapy combinations relevant to NHS patients where trastuzumab plus chemotherapy remains standard of care.
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Limitations:</span>
-        Absence of a control arm precludes definitive efficacy conclusions; randomised validation is required before practice change.
-      </div>
-      <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42361276/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1200/JCO-26-00277" target="_blank" rel="noopener">DOI →</a>      </div>
-    </div>
-
   </div>
 </section>
 
@@ -260,8 +377,25 @@
 <!-- ═══ FOOTER ═══ -->
 <footer>
   <p>&copy; 2026 The Monday Clinical Brief</p>
-  <p><a href="/">Home</a> · <a href="mailto:info@mondayclinicalbrief.co.uk">Contact</a> · <a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms</a></p>
+  <p><a href="/samples/">Samples</a> · <a href="/blog/">Blog</a> · <a href="/methodology/">Methodology</a> · <a href="/about/">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p>
 </footer>
+
+<script>
+// Measure the fixed mobile bottom bar so the body reserves its true height.
+(function () {
+  var nav = document.querySelector('nav');
+  if (!nav) return;
+  function sync() {
+    var fixed = getComputedStyle(nav).position === 'fixed';
+    document.documentElement.style.setProperty('--bottom-nav-h', fixed ? nav.offsetHeight + 'px' : '0px');
+  }
+  sync();
+  addEventListener('resize', sync);
+  addEventListener('orientationchange', sync);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(sync);
+  if (window.ResizeObserver) new ResizeObserver(sync).observe(nav);
+})();
+</script>
 
 </body>
 </html>

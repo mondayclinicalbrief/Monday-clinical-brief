@@ -3,23 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Heidi Evidence UK: Free, Citation-Backed — but Not Mid-Consultation — The Monday Clinical Brief</title>
-<meta name="description" content="Heidi Evidence is free, citation-backed and NICE/BMJ-partnered — but in the UK it won&#39;t answer mid-consultation. The in-session limit, and how to work around it.">
+<title>Heidi Evidence UK: What the Restriction Blocks — The Monday Clinical Brief</title>
+<meta name="description" content="Heidi Evidence works in the UK outside a session — even with a patient present. What is actually blocked, and why NHS accounts are excluded.">
 <link rel="canonical" href="https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/heidi-evidence-uk-in-session-restriction/">
 
 
 <!-- Open Graph -->
-<meta property="og:title" content="Heidi Evidence UK: Free, Citation-Backed — but Not Mid-Consultation">
-<meta property="og:description" content="Heidi Evidence is free, citation-backed and NICE/BMJ-partnered — but in the UK it won&#39;t answer mid-consultation. The in-session limit, and how to work around it.">
+<meta property="og:title" content="Heidi Evidence UK: What the Restriction Blocks">
+<meta property="og:description" content="Heidi Evidence works in the UK outside a session — even with a patient present. What is actually blocked, and why NHS accounts are excluded.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/heidi-evidence-uk-in-session-restriction/">
-
+<meta property="og:image" content="https://mondayclinicalbrief.co.uk/assets/brand/mcb-og-1200x630-v2.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Heidi Evidence UK: What the Restriction Blocks — The Monday Clinical Brief">
 <meta property="og:site_name" content="The Monday Clinical Brief">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Heidi Evidence UK: Free, Citation-Backed — but Not Mid-Consultation">
-<meta name="twitter:description" content="Heidi Evidence is free, citation-backed and NICE/BMJ-partnered — but in the UK it won&#39;t answer mid-consultation. The in-session limit, and how to work around it.">
+<meta name="twitter:title" content="Heidi Evidence UK: What the Restriction Blocks">
+<meta name="twitter:description" content="Heidi Evidence works in the UK outside a session — even with a patient present. What is actually blocked, and why NHS accounts are excluded.">
 
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
 
@@ -122,9 +125,15 @@
   footer a { color: var(--sage); text-decoration: none; }
 
   @media (max-width: 640px) {
-    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; }
+    /* Fixed bottom bar on mobile. The brand used to wrap to two lines at
+       390px, making the bar ~123px tall while the body reserved only 60px —
+       so the footer sat underneath it. Keep the brand on one line and reserve
+       the bar's measured height via a custom property. */
+    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; align-items: center; gap: 0.75rem; }
     .nav-links a:not(.nav-cta) { display: none; }
-    body { padding-bottom: 60px; }
+    .nav-brand { font-size: 0.9rem; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+    .nav-cta { flex-shrink: 0; }
+    body { padding-bottom: calc(var(--bottom-nav-h, 64px) + env(safe-area-inset-bottom, 0px)); }
     .breadcrumb { padding-top: 2rem; }
     .article-header { padding-top: 1rem; }
     .article-header h1 { font-size: 1.8rem; }
@@ -138,11 +147,11 @@
 {
   "@context": "https://schema.org",
   "@type": "MedicalWebPage",
-  "headline": "Heidi Evidence UK: Free, Citation-Backed — but Not Mid-Consultation",
-  "description": "Heidi Evidence is free, citation-backed and NICE/BMJ-partnered — but in the UK it won&#39;t answer mid-consultation. The in-session limit, and how to work around it.",
+  "headline": "Heidi Evidence UK: What the Restriction Blocks",
+  "description": "Heidi Evidence works in the UK outside a session — even with a patient present. What is actually blocked, and why NHS accounts are excluded.",
   "url": "https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/heidi-evidence-uk-in-session-restriction/",
   "datePublished": "2026-05-17T00:00:00.000Z",
-  "dateModified": "2026-07-16T00:00:00.000Z",
+  "dateModified": "2026-08-30T00:00:00.000Z",
   "author": {
     "@type": "Person",
     "name": "Dr Tim Hamilton",
@@ -155,7 +164,7 @@
     "name": "Dr Tim Hamilton",
     "jobTitle": "Consultant in Palliative Medicine"
   },
-  "lastReviewed": "2026-07-16T00:00:00.000Z",
+  "lastReviewed": "2026-08-30T00:00:00.000Z",
   "publisher": {
     "@type": "Organization",
     "name": "The Monday Clinical Brief",
@@ -194,7 +203,7 @@
     {
       "@type": "ListItem",
       "position": 4,
-      "name": "Heidi Evidence Is Excellent. In the UK, It Won&#39;t Answer Mid-Consultation."
+      "name": "Heidi Evidence in the UK: What the In-Session Restriction Actually Blocks"
     }
   ]
 }
@@ -212,16 +221,25 @@
       "name": "Can UK clinicians use Heidi Evidence?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, with one limit. Heidi Evidence works for UK and EU clinicians outside live patient sessions. In-session evidence querying — using it during a consultation — is disabled under current compliance settings, so it cannot answer in the moment. Heidi Scribe, the AI clinical scribe product, is separately MHRA-cleared and is unaffected."
+        "text": "Yes, outside a patient session — unless the account uses an NHS UK email. Heidi documents Evidence used outside sessions as fully available in the UK and EU on all plans, opened from the sidebar independently of any consultation, so it can be used with a patient present. What is not available here is in-session Evidence: querying from inside Ask Heidi during an active consult, where the tool can read the session transcript and linked patient details. Separately, Heidi states that NHS UK accounts are excluded from Heidi Evidence and from free trials that include it."
       }
     },
     
     {
       "@type": "Question",
-      "name": "Why can&#39;t Heidi Evidence be used during a live session in the UK?",
+      "name": "Does that mean Heidi Evidence cannot be used during a consultation?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Heidi Evidence offers AI-generated clinical decision support, which under UK MHRA classification can meet the threshold for a regulated medical device when used at the point of care. Heidi Health&#39;s UK partnerships with NICE, BMJ Group, MIMS and HealthPathways are content partnerships, not regulatory clearances. The in-session restriction is almost certainly a precautionary measure while UK AI-in-healthcare regulation is being finalised."
+        "text": "No, and this is the point most often reported incorrectly — including in earlier versions of this article. The out-of-session tool opens from the sidebar at any time, so a clinician can use it with a patient in the room. The restriction is on the mode of use, not the moment: Evidence cannot be invoked from inside an active Heidi session, and patient or session linking is unavailable for UK and EU accounts, so it cannot see the case you are asking about."
+      }
+    },
+    
+    {
+      "@type": "Question",
+      "name": "Why is in-session Evidence restricted in the UK?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Heidi gives a specific reason. It operates Evidence in the UK and EU as a non-medical-device product, and states that in-session Evidence carrying patient context would constitute clinical decision support, which requires medical device classification under UK MDR 2002 as amended. This is narrower than the broad regulatory uncertainty OpenEvidence cited when it withdrew, and the two should not be described as the same rationale."
       }
     },
     
@@ -230,7 +248,7 @@
       "name": "Is Heidi Evidence the same as Heidi Scribe?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Heidi Scribe is an AI clinical scribe that drafts consultation notes — it is separately MHRA-cleared and remains available to UK clinicians, including in-session. Heidi Evidence is a citation-backed clinical decision support tool that answers clinical questions. Heidi Evidence is the feature carrying the UK and EU in-session restriction."
+        "text": "No. Heidi Scribe is an AI clinical scribe that drafts consultation notes — it is separately MHRA-cleared and remains available to UK clinicians, including NHS staff, in session. Heidi Evidence is the citation-backed clinical question-answering feature, and it is the one carrying the UK and EU in-session restriction and the NHS account exclusion."
       }
     },
     
@@ -239,7 +257,7 @@
       "name": "What can UK clinicians use for point-of-care Q&amp;A during a consultation?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "For clinical Q&amp;A in the moment, iatroX is the UK-based option with MHRA registration and UKCA marking. Heidi Evidence covers out-of-session questions well. For staying current with the medical literature — knowing what was published in your specialty each week — The Monday Clinical Brief sends a weekly email digest covering 31 specialties for £20 a year. The tools solve different problems and work well alongside each other."
+        "text": "Heidi Evidence&#39;s out-of-session tool can be used during a consultation, though it cannot see the patient&#39;s context. iatroX is the UK-based option built for in-session use, with MHRA registration and UKCA marking. For staying current with the medical literature — knowing what was published in your specialty each week — The Monday Clinical Brief sends a weekly email digest covering 31 specialties, £20 a year for your specialty and £5 for each additional one. The tools solve different problems and work well alongside each other."
       }
     },
     
@@ -248,7 +266,7 @@
       "name": "What changed for UK access to clinical AI tools in 2026?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Two tools withdrew and one was restricted, in six weeks. ChatGPT for Clinicians launched on 23 April 2026 with UK and EEA excluded. OpenEvidence withdrew from the UK and EU on 28 April 2026. Heidi Evidence — launched February 2026 — operates in the UK and EU but only outside live sessions, restricting its in-session use."
+        "text": "Two tools withdrew and one was restricted, in six weeks. ChatGPT for Clinicians launched on 23 April 2026 with UK and EEA excluded. OpenEvidence withdrew from the UK and EU in late April 2026. Heidi Evidence stayed, restricted to out-of-session use, with NHS UK accounts later excluded from the feature entirely."
       }
     }
     
@@ -272,12 +290,13 @@
 </nav>
 
 <!-- ═══ BREADCRUMB ═══ -->
+<main id="main">
 <div class="breadcrumb" aria-label="Breadcrumb">
   <ol>
     <li><a href="/">Home</a></li>
     <li><a href="/blog/">Blog</a></li>
     <li><a href="/blog/medical-journal-digest/">Medical Journal Digest</a></li>
-    <li>Heidi Evidence Is Excellent. In the UK, It Won&#39;t Answer Mid-Consultation.</li>
+    <li>Heidi Evidence in the UK: What the In-Session Restriction Actually Blocks</li>
   </ol>
 </div>
 
@@ -285,10 +304,10 @@
 <header class="article-header">
   
   <a href="/blog/medical-journal-digest/" class="article-cluster">Medical Journal Digest</a>
-  <h1>Heidi Evidence Is Excellent. In the UK, It Won&#39;t Answer Mid-Consultation.</h1>
+  <h1>Heidi Evidence in the UK: What the In-Session Restriction Actually Blocks</h1>
   <div class="article-meta">
     <time datetime="2026-05-17T00:00:00.000Z">17 May 2026</time>
-    <span>8 min read</span>
+    <span>10 min read</span>
     <span>By Dr Tim Hamilton, Consultant in Palliative Medicine, NHS Wales</span>
   </div>
 </header>
@@ -296,9 +315,10 @@
 <!-- ═══ ARTICLE CONTENT ═══ -->
 <article class="article-content">
   <p>Heidi Evidence is the most strategically interesting clinical AI tool to land in 2026. It is free at the individual tier. It is citation-backed. It is partnered with NICE, BMJ Group, MIMS and HealthPathways — the four most credible UK clinical-content sources a tool in this space could pair with. We have read the output carefully. It is good.</p>
-<p>In the UK, it will not answer during a live consultation.</p>
-<p>Heidi documents Evidence as available to UK and EU users only <em>outside</em> live patient sessions. In-session evidence querying is disabled under current compliance settings. You can use it to read up between patients, to prepare, or to check a question after clinic — but not in the room, with the patient in front of you, at the moment the question arises.</p>
-<p>That is a real limitation for a point-of-care tool. We think it matters, and it is worth being precise about.</p>
+<p>In the UK, it will not answer from inside an active session.</p>
+<p>That is a narrower limit than it is usually reported to be, including in earlier versions of this article, so it is worth stating precisely. Heidi documents Evidence used <strong>outside</strong> a session as <em>&quot;fully available in the UK and EU on all plans&quot;</em> — opened from the sidebar, independently of any consultation. You can use it with a patient in the room. What you cannot do is query Evidence from <strong>inside</strong> an active Heidi session, where it would read the transcript and linked patient details, and patient or session linking is unavailable for UK and EU accounts.</p>
+<p>There is also a second limit that matters more to most readers of this site: <strong>Heidi states that NHS UK accounts are excluded from Heidi Evidence</strong>, and from free trials that include it. An account registered with an NHS UK email address stays on its current plan.</p>
+<p>So the honest position is three-part: out-of-session Evidence works here, in-session Evidence does not, and NHS accounts are excluded from the feature altogether.</p>
 <blockquote>
 <p><strong>Update — 16 July 2026:</strong> Heidi Evidence formally launched on 10 July 2026, alongside a $65M raise, the acquisition of AutoMedica — a UK clinical AI firm with a place in the MHRA's AI Airlock pilot — and a new communications product, Heidi Comms. None of it changes the UK position described below: Heidi's own help pages still document Evidence as available to UK and EU clinicians only <em>outside</em> live sessions (re-verified 15 July 2026). If anything, the AutoMedica acquisition is the clearest signal yet that Heidi intends to resolve the UK regulatory question properly. We will update this post when the in-session restriction changes.</p>
 </blockquote>
@@ -308,15 +328,16 @@
 <p>Two things make Heidi Evidence stand out from earlier clinical AI tools.</p>
 <p>The first is that the citations are honest. Click any reference and you land on the source — NICE guideline, BMJ article, MIMS entry — exactly as quoted. This is not always true of clinical AI tools, and it has been a real problem with some of the larger-funded US entries.</p>
 <p>The second is that there is no advertising and no sponsored content. The product is free at the individual tier and the funding model does not depend on shaping which answers surface.</p>
-<p>For UK clinicians, the catch is <em>when</em> you can use it. Out of session, it is available. In session, it is not.</p>
+<p>For UK clinicians, the catch is <em>how</em> you invoke it, not when. From the sidebar, it is available. From inside a session, it is not.</p>
 <h2 id="what-the-in-session-restriction-actually-looks-like" tabindex="-1">What the in-session restriction actually looks like</h2>
-<p>The restriction is on context of use, not on access. A UK or EU clinician can hold a Heidi Evidence account. What they cannot do is run an evidence query during a live patient session.</p>
-<p>In practice that splits Heidi Evidence's usefulness in two. The &quot;I have ten minutes between patients and want to check the current line on a drug interaction&quot; use case is supported. The &quot;the patient is in front of me and I need an answer now&quot; use case — the defining point-of-care moment — is the one the compliance configuration holds back in the UK and EU.</p>
+<p>The restriction is on the mode of use, not on access or timing. A UK or EU clinician can hold a Heidi Evidence account and open the sidebar tool whenever they like, including mid-clinic. What they cannot do is run the query from inside an active session, or attach a patient record or live session to an Evidence conversation.</p>
+<p>In practice that means the tool works, but it works blind. &quot;I have ten minutes between patients and want to check the current line on a drug interaction&quot; is fully supported. So, in fact, is &quot;the patient is in front of me and I need to look something up&quot; — provided you ask it as a general question in the sidebar. What is not supported is the version where Evidence can see the consultation: the transcript, the linked patient details, the context that would let it answer about <em>this</em> patient rather than the topic.</p>
+<p>⚠️ <strong>NHS UK accounts are a separate matter.</strong> Heidi excludes them from Evidence entirely, so for a clinician whose account is an NHS UK email address, none of the above applies — the feature is not available to them at all.</p>
 <p>Heidi Scribe — the AI clinical scribe that drafts consultation notes — is a different story. Heidi Scribe is <strong>separately MHRA-cleared</strong> and remains available to UK clinicians, including NHS staff, in session. If you have been using Heidi Scribe, that is unaffected. The restriction is specific to Heidi Evidence's in-session use.</p>
 <h2 id="why-the-restriction-is-in-place" tabindex="-1">Why the restriction is in place</h2>
-<p>Heidi Health has not published a detailed rationale. The most likely explanation is regulatory.</p>
-<p>Heidi Evidence generates AI-synthesised clinical recommendations from a clinical query. Used at the point of care, that is the kind of output that pushes a tool toward Software as a Medical Device territory under MHRA classification. The NICE, BMJ Group, MIMS and HealthPathways partnerships are content arrangements — they describe what the model is grounded in, not how the model is classified for live clinical use.</p>
-<p>The UK regulatory framework for AI in healthcare is mid-flight. The Medical Devices (Amendment) Regulations consultation closed on 19 June 2026. The International Reliance Framework is planned for Autumn 2026. The National Commission on AI in Healthcare report is due later in the year. Until these land, restricting an AI decision-support tool to out-of-session use is a cautious reading of an unsettled rulebook.</p>
+<p>Heidi now publishes its rationale, and it is more specific than the speculation this article previously carried. Heidi operates Evidence in the UK and EU as a non-medical-device product, and states that in-session Evidence carrying patient context <em>&quot;would constitute clinical decision support, which requires medical device classification under UK MDR 2002 (as amended).&quot;</em></p>
+<p>That is a precise regulatory line rather than general caution: it is patient context inside a session, not AI-synthesised clinical answers as such, that would move the product into device territory. The NICE, BMJ Group, MIMS and HealthPathways partnerships are content arrangements — they describe what the model is grounded in, not how the model is classified for live clinical use.</p>
+<p>The wider UK regulatory framework for AI in healthcare is still mid-flight. The Medical Devices (Amendment) Regulations consultation closed on 19 June 2026. The International Reliance Framework is planned for Autumn 2026. The National Commission on AI in Healthcare report is due later in the year. Heidi's position sits inside that unsettled rulebook, but the company's own stated reason is the narrower device-classification one above, not general uncertainty.</p>
 <p>The July 2026 acquisition of AutoMedica points the same way. AutoMedica holds a place in the MHRA's AI Airlock pilot — the regulator's sandbox for AI medical devices — which gives Heidi a direct working relationship with the process that will decide how tools like Evidence are classified for live clinical use. That is not a clearance, but it is the posture of a company planning to lift the restriction properly rather than sidestep it.</p>
 <p>This sits in the same regulatory current that took OpenEvidence out of the UK and EU on 28 April 2026 and has kept ChatGPT for Clinicians US-first since 23 April. The difference is one of degree: those two stepped back entirely; Heidi Evidence stayed, with a limit on how it can be used.</p>
 <h2 id="the-pattern-uk-clinicians-should-be-aware-of" tabindex="-1">The pattern UK clinicians should be aware of</h2>
@@ -324,14 +345,14 @@
 <ul>
 <li><strong>23 April 2026:</strong> ChatGPT for Clinicians launches. UK and EEA excluded at the verification step.</li>
 <li><strong>28 April 2026:</strong> OpenEvidence withdraws from the UK and EU.</li>
-<li><strong>2026:</strong> Heidi Evidence operates in the UK and EU, but only outside live sessions — its in-session point-of-care use is restricted.</li>
+<li><strong>2026:</strong> Heidi Evidence operates in the UK and EU, but only outside an active session — and NHS UK accounts are excluded from the feature entirely.</li>
 </ul>
-<p>All three offered the same broad use case — point-of-care clinical Q&amp;A grounded in cited sources. Two are now unavailable to UK clinicians; the third is available, but not in the one moment a point-of-care tool is most wanted.</p>
-<p>We have written separately about <a href="/blog/medical-journal-digest/openevidence-alternative-uk/">the OpenEvidence withdrawal</a> and <a href="/blog/medical-journal-digest/chatgpt-for-clinicians-uk/">the ChatGPT for Clinicians exclusion</a>. Heidi Evidence is the third chapter in the same regulatory story.</p>
-<p>What is striking is that Heidi Evidence — unlike the other two — is the one product that did everything right on the UK content side. NICE partnership. BMJ Group partnership. UK-relevant prescribing data. And it still pulls back from live point-of-care use. That is the regulatory environment talking, not the product.</p>
+<p>All three offered the same broad use case — clinical Q&amp;A grounded in cited sources. Two are now unavailable to UK clinicians; the third is available, but not in the mode that would let it see the patient in front of you, and not at all on an NHS account.</p>
+<p>We have written separately about <a href="/blog/medical-journal-digest/openevidence-alternative-uk/">the OpenEvidence withdrawal</a> and <a href="/blog/medical-journal-digest/chatgpt-for-clinicians-uk/">the ChatGPT for Clinicians exclusion</a>. Heidi Evidence is the third chapter in the same regulatory story. If you are choosing between the two directly, see <a href="/blog/medical-journal-digest/heidi-evidence-vs-openevidence-uk/">Heidi Evidence vs OpenEvidence</a>.</p>
+<p>What is striking is that Heidi Evidence — unlike the other two — is the one product that did everything right on the UK content side. NICE partnership. BMJ Group partnership. UK-relevant prescribing data. And it still holds back the patient-context mode. That is device regulation talking, not the product.</p>
 <h2 id="what-uk-clinicians-can-use-right-now" tabindex="-1">What UK clinicians can use right now</h2>
-<p>For <strong>clinical Q&amp;A at the point of care</strong> — in the room, in the moment: <a href="https://iatrox.com">iatroX</a> is the UK-based option. It holds MHRA registration as a Class I device, carries UKCA marking, and is built around UK guideline retrieval (NICE, CKS, SmPC) with calculators and Q-banks attached. It is not a perfect substitute for Heidi Evidence's model quality, but it is the most credible UK-regulatory-compliant in-session tool today.</p>
-<p>For <strong>out-of-session evidence questions</strong>: Heidi Evidence itself is available and worth using — between patients, before clinic, after a consultation.</p>
+<p>For <strong>clinical Q&amp;A that needs the patient's context</strong> — inside the consultation, aware of the case: <a href="https://iatrox.com">iatroX</a> is the UK-based option. It holds MHRA registration as a Class I device, carries UKCA marking, and is built around UK guideline retrieval (NICE, CKS, SmPC) with calculators and Q-banks attached. It is not a perfect substitute for Heidi Evidence's model quality, but it is the most credible UK-regulatory-compliant in-session tool today.</p>
+<p>For <strong>general evidence questions</strong>: Heidi Evidence's sidebar tool is available and worth using — between patients, before clinic, after a consultation, or during one, so long as the question is a general one rather than about the patient in front of you. Not available on an NHS UK account.</p>
 <p>For <strong>AI clinical documentation</strong>: Heidi Scribe remains available and MHRA-cleared, in session included.</p>
 <p>For <strong>staying current with the medical literature</strong> — knowing what was published in your specialty each week — that is a different job altogether. Q&amp;A tools answer questions you have already thought to ask. They cannot tell you about the practice-changing trial that landed last Tuesday. That is the gap The Monday Clinical Brief is built to close.</p>
 <p>We have written more on <a href="/blog/medical-journal-digest/heidi-evidence-vs-monday-clinical-brief/">how Heidi Evidence and a weekly digest fit together</a> — push and pull, current awareness and point-of-care.</p>
@@ -342,9 +363,11 @@
 <p>We cover 31 specialties. We are reader-paid at £20 a year. No advertising, no sponsored papers, no regulatory uncertainty — we are not a medical device and we do not claim to be one. We are a weekly reading habit you can log for CPD.</p>
 <p><a href="/#subscribe">Subscribe to The Monday Clinical Brief</a> — and know what was published last week before any of these AI tools could have told you about it.</p>
 <h2 id="the-bottom-line" tabindex="-1">The bottom line</h2>
-<p>Heidi Evidence is excellent. In the UK and EU, it works outside live sessions but not during them — so the defining point-of-care moment is the one it currently holds back from. This will probably ease once the UK regulatory framework for clinical AI lands, but the timeline is months, not weeks.</p>
+<p>Heidi Evidence is excellent, and in the UK and EU the sidebar tool is available to use whenever you like — including with a patient in front of you. What it will not do here is answer from inside an active session with the consultation's context attached, which is the version that would know about <em>this</em> patient rather than the topic. And if your account uses an NHS UK email, Heidi excludes you from Evidence altogether.</p>
+<p>The in-session limit may ease as the UK regulatory framework for clinical AI settles, though Heidi's stated reason — device classification under UK MDR 2002 — is a specific bar to clear rather than a general wait.</p>
 <p>In the meantime: iatroX for in-session UK clinical Q&amp;A, Heidi Evidence for out-of-session questions, Heidi Scribe for documentation if you want it, and MCB for keeping current with the literature itself. Each tool does one job well. Together they cover most of the ground.</p>
-<p>We will update this post as Heidi Evidence's UK position changes. Evidence suggests any change will follow the UK regulatory process now in train — the Medical Devices (Amendment) Regulations consultation closed on 19 June 2026, and Heidi's acquisition of AutoMedica gives it MHRA AI Airlock access and a seat close to that process. Until something lands, the in-session restriction holds.</p>
+<p>We will update this post as Heidi Evidence's UK position changes. Any change will likely follow the UK regulatory process now in train — the Medical Devices (Amendment) Regulations consultation closed on 19 June 2026, and Heidi's acquisition of AutoMedica gives it MHRA AI Airlock access and a seat close to that process. Until something lands, the in-session restriction and the NHS account exclusion both hold.</p>
+<p><em>Heidi's UK and EU position was re-checked against the company's own help documentation on 30 August 2026. An earlier version of this article said Heidi Evidence could not be used during a consultation; that was too broad, and the position above is Heidi's own.</em></p>
 
 
   
@@ -353,27 +376,32 @@
     
     <details class="faq-item">
       <summary>Can UK clinicians use Heidi Evidence?</summary>
-      <p>Yes, with one limit. Heidi Evidence works for UK and EU clinicians outside live patient sessions. In-session evidence querying — using it during a consultation — is disabled under current compliance settings, so it cannot answer in the moment. Heidi Scribe, the AI clinical scribe product, is separately MHRA-cleared and is unaffected.</p>
+      <p>Yes, outside a patient session — unless the account uses an NHS UK email. Heidi documents Evidence used outside sessions as fully available in the UK and EU on all plans, opened from the sidebar independently of any consultation, so it can be used with a patient present. What is not available here is in-session Evidence: querying from inside Ask Heidi during an active consult, where the tool can read the session transcript and linked patient details. Separately, Heidi states that NHS UK accounts are excluded from Heidi Evidence and from free trials that include it.</p>
     </details>
     
     <details class="faq-item">
-      <summary>Why can&#39;t Heidi Evidence be used during a live session in the UK?</summary>
-      <p>Heidi Evidence offers AI-generated clinical decision support, which under UK MHRA classification can meet the threshold for a regulated medical device when used at the point of care. Heidi Health&#39;s UK partnerships with NICE, BMJ Group, MIMS and HealthPathways are content partnerships, not regulatory clearances. The in-session restriction is almost certainly a precautionary measure while UK AI-in-healthcare regulation is being finalised.</p>
+      <summary>Does that mean Heidi Evidence cannot be used during a consultation?</summary>
+      <p>No, and this is the point most often reported incorrectly — including in earlier versions of this article. The out-of-session tool opens from the sidebar at any time, so a clinician can use it with a patient in the room. The restriction is on the mode of use, not the moment: Evidence cannot be invoked from inside an active Heidi session, and patient or session linking is unavailable for UK and EU accounts, so it cannot see the case you are asking about.</p>
+    </details>
+    
+    <details class="faq-item">
+      <summary>Why is in-session Evidence restricted in the UK?</summary>
+      <p>Heidi gives a specific reason. It operates Evidence in the UK and EU as a non-medical-device product, and states that in-session Evidence carrying patient context would constitute clinical decision support, which requires medical device classification under UK MDR 2002 as amended. This is narrower than the broad regulatory uncertainty OpenEvidence cited when it withdrew, and the two should not be described as the same rationale.</p>
     </details>
     
     <details class="faq-item">
       <summary>Is Heidi Evidence the same as Heidi Scribe?</summary>
-      <p>No. Heidi Scribe is an AI clinical scribe that drafts consultation notes — it is separately MHRA-cleared and remains available to UK clinicians, including in-session. Heidi Evidence is a citation-backed clinical decision support tool that answers clinical questions. Heidi Evidence is the feature carrying the UK and EU in-session restriction.</p>
+      <p>No. Heidi Scribe is an AI clinical scribe that drafts consultation notes — it is separately MHRA-cleared and remains available to UK clinicians, including NHS staff, in session. Heidi Evidence is the citation-backed clinical question-answering feature, and it is the one carrying the UK and EU in-session restriction and the NHS account exclusion.</p>
     </details>
     
     <details class="faq-item">
       <summary>What can UK clinicians use for point-of-care Q&amp;A during a consultation?</summary>
-      <p>For clinical Q&amp;A in the moment, iatroX is the UK-based option with MHRA registration and UKCA marking. Heidi Evidence covers out-of-session questions well. For staying current with the medical literature — knowing what was published in your specialty each week — The Monday Clinical Brief sends a weekly email digest covering 31 specialties for £20 a year. The tools solve different problems and work well alongside each other.</p>
+      <p>Heidi Evidence&#39;s out-of-session tool can be used during a consultation, though it cannot see the patient&#39;s context. iatroX is the UK-based option built for in-session use, with MHRA registration and UKCA marking. For staying current with the medical literature — knowing what was published in your specialty each week — The Monday Clinical Brief sends a weekly email digest covering 31 specialties, £20 a year for your specialty and £5 for each additional one. The tools solve different problems and work well alongside each other.</p>
     </details>
     
     <details class="faq-item">
       <summary>What changed for UK access to clinical AI tools in 2026?</summary>
-      <p>Two tools withdrew and one was restricted, in six weeks. ChatGPT for Clinicians launched on 23 April 2026 with UK and EEA excluded. OpenEvidence withdrew from the UK and EU on 28 April 2026. Heidi Evidence — launched February 2026 — operates in the UK and EU but only outside live sessions, restricting its in-session use.</p>
+      <p>Two tools withdrew and one was restricted, in six weeks. ChatGPT for Clinicians launched on 23 April 2026 with UK and EEA excluded. OpenEvidence withdrew from the UK and EU in late April 2026. Heidi Evidence stayed, restricted to out-of-session use, with NHS UK accounts later excluded from the feature entirely.</p>
     </details>
     
   </div>
@@ -392,6 +420,9 @@
     <h3>More on Medical Journal Digest</h3>
     <ul>
       <li><a href="/blog/medical-journal-digest/guide/">Medical Journal Digest</a> — the complete guide</li>
+      <li><a href="/blog/medical-journal-digest/heidi-evidence-vs-openevidence-uk/">Heidi Evidence vs OpenEvidence: Which One Can UK Doctors Actually Use?</a></li>
+      <li><a href="/blog/medical-journal-digest/this-week-in-medical-journals-august-2026/">This Week in Medical Journals: August 2026 Highlights</a></li>
+      <li><a href="/blog/medical-journal-digest/cks-round-up-july-2026/">NICE CKS Round-Up — July 2026: Recent Updates for UK Primary Care</a></li>
       <li><a href="/blog/medical-journal-digest/clinicalkey-ai-vs-openevidence/">ClinicalKey AI vs OpenEvidence: In the UK, It&#39;s Not a Choice</a></li>
       <li><a href="/blog/medical-journal-digest/cks-round-up-june-2026/">NICE CKS Round-Up — June 2026: Recent Updates for UK Primary Care</a></li>
       <li><a href="/blog/medical-journal-digest/nice-ng106-heart-failure-2025-update/">NICE Heart Failure Update (NG106): SGLT2 Inhibitors Now Span the Ejection-Fraction Spectrum</a></li>
@@ -401,13 +432,13 @@
       <li><a href="/blog/medical-journal-digest/asthma-bts-nice-sign-ng245-uk-2026/">Asthma Diagnosis and Treatment in UK Primary Care 2026: What the BTS/NICE/SIGN Guideline (NG245) Changed</a></li>
       <li><a href="/blog/medical-journal-digest/atrial-fibrillation-anticoagulation-uk-primary-care-2026/">Anticoagulation in Atrial Fibrillation: A UK Primary-Care Guide (NICE NG196)</a></li>
       <li><a href="/blog/medical-journal-digest/sglt2-inhibitors-ckd-uk-primary-care-2026/">SGLT2 Inhibitors for CKD in UK Primary Care 2026: What NICE TA1075 Means in Practice</a></li>
-      <li><a href="/blog/medical-journal-digest/statins-cvd-prevention-uk-primary-care-2026/">Statins and CVD Prevention in UK Primary Care 2026: What NICE NG238 Means in Practice</a></li>
+      <li><a href="/blog/medical-journal-digest/statins-cvd-prevention-uk-primary-care-2026/">Who Gets a Statin in 2026? The NICE NG238 Thresholds UK GPs Actually Use</a></li>
       <li><a href="/blog/medical-journal-digest/medical-journal-digest-vs-podcast/">Medical Journal Digest vs Medical Podcast: Which Is Better for CPD?</a></li>
       <li><a href="/blog/medical-journal-digest/ad-free-clinical-ai-uk-2026/">Ad-Free Clinical AI for UK Doctors (2026): The Short List</a></li>
       <li><a href="/blog/medical-journal-digest/best-medical-journal-digest-apps/">Best Medical Journal Digest Apps for UK Doctors</a></li>
       <li><a href="/blog/medical-journal-digest/cks-round-up-may-2026/">NICE CKS Round-Up — May 2026: Recent Updates for UK Primary Care</a></li>
-      <li><a href="/blog/medical-journal-digest/menopause-hrt-nice-ng23-2026/">Menopause and HRT Guidance UK 2026: NICE Recommends Fezolinetant and Updates NG23</a></li>
-      <li><a href="/blog/medical-journal-digest/mrcp-paces-2026-study-plan-uk/">MRCP PACES 2026: Fee Rise, Part 1 In-Centre, and a 12-Week Study Plan for Working Trainees</a></li>
+      <li><a href="/blog/medical-journal-digest/menopause-hrt-nice-ng23-2026/">What Can You Offer When HRT Isn&#39;t Suitable? Fezolinetant and NG23 in 2026</a></li>
+      <li><a href="/blog/medical-journal-digest/mrcp-paces-2026-study-plan-uk/">Can You Pass MRCP PACES While Working Full Time? A 12-Week Plan for 2026</a></li>
       <li><a href="/blog/medical-journal-digest/praxis-medicine-uk/">Praxis Medicine UK: What It Is, What It Costs, and Where It Fits</a></li>
       <li><a href="/blog/medical-journal-digest/this-week-in-medical-journals-june-2026/">This Week in Medical Journals: June 2026 Highlights</a></li>
       <li><a href="/blog/medical-journal-digest/tirzepatide-gp-qof-2026/">Can You Prescribe Tirzepatide Under QOF 2026/27? The Mounjaro Decision Facing GPs</a></li>
@@ -436,18 +467,41 @@
   <div class="author-box">
     <div class="author-avatar">TH</div>
     <div class="author-info">
-      <h4>Dr Tim Hamilton · Consultant in Palliative Medicine, NHS Wales</h4>
+      <h4><a href="/about/" style="color:inherit;">Dr Tim Hamilton</a> · Consultant in Palliative Medicine, NHS Wales</h4>
       <p>Dr Tim Hamilton is a Consultant in Palliative Medicine in NHS Wales and the founder of The Monday Clinical Brief. He built MCB to help busy UK clinicians keep up with the literature across 31 specialties.</p>
+      <p style="margin-top:0.5rem;"><a href="/about/">Credentials, editorial policy and conflicts of interest →</a></p>
     </div>
   </div>
 </div>
 
+</main>
 
 <!-- ═══ FOOTER ═══ -->
 <footer>
-  <p>&copy; 2025 The Monday Clinical Brief. All rights reserved.</p>
-  <p><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/blog/">Blog</a></p>
+  <p>&copy; 2026 The Monday Clinical Brief. All rights reserved.</p>
+  <p><a href="/samples/">Samples</a> · <a href="/blog/">Blog</a> · <a href="/methodology/">Methodology</a> · <a href="/about/">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p>
 </footer>
+
+<script>
+// The mobile bottom bar is fixed, so the body must reserve exactly its height
+// or the footer ends up underneath it. Measure it rather than guessing: brand
+// length, font loading and text-size settings all move this number.
+(function () {
+  var nav = document.querySelector('nav');
+  if (!nav) return;
+  function sync() {
+    var fixed = getComputedStyle(nav).position === 'fixed';
+    document.documentElement.style.setProperty(
+      '--bottom-nav-h', fixed ? nav.offsetHeight + 'px' : '0px'
+    );
+  }
+  sync();
+  addEventListener('resize', sync);
+  addEventListener('orientationchange', sync);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(sync);
+  if (window.ResizeObserver) new ResizeObserver(sync).observe(nav);
+})();
+</script>
 
 </body>
 </html>

@@ -3,23 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Palliative Care Journal Digest for NHS Clinicians | The Monday Clinical Brief — The Monday Clinical Brief</title>
-<meta name="description" content="Stay current with palliative care evidence — every new paper from the field&#39;s five leading journals, every Monday. Written by a Consultant in Palliative Medicine, NHS Wales.">
+<title>Palliative Care Journal Digest for NHS Clinicians — The Monday Clinical Brief</title>
+<meta name="description" content="Every new paper from palliative care&#39;s five leading journals, every Monday. Written by a Consultant in Palliative Medicine, NHS Wales.">
 <link rel="canonical" href="https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/palliative-care-journal-digest/">
 
 
 <!-- Open Graph -->
-<meta property="og:title" content="Palliative Care Journal Digest for NHS Clinicians | The Monday Clinical Brief">
-<meta property="og:description" content="Stay current with palliative care evidence — every new paper from the field&#39;s five leading journals, every Monday. Written by a Consultant in Palliative Medicine, NHS Wales.">
+<meta property="og:title" content="Palliative Care Journal Digest for NHS Clinicians">
+<meta property="og:description" content="Every new paper from palliative care&#39;s five leading journals, every Monday. Written by a Consultant in Palliative Medicine, NHS Wales.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/palliative-care-journal-digest/">
-
+<meta property="og:image" content="https://mondayclinicalbrief.co.uk/assets/brand/mcb-og-1200x630-v2.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Palliative Care Journal Digest for NHS Clinicians — The Monday Clinical Brief">
 <meta property="og:site_name" content="The Monday Clinical Brief">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Palliative Care Journal Digest for NHS Clinicians | The Monday Clinical Brief">
-<meta name="twitter:description" content="Stay current with palliative care evidence — every new paper from the field&#39;s five leading journals, every Monday. Written by a Consultant in Palliative Medicine, NHS Wales.">
+<meta name="twitter:title" content="Palliative Care Journal Digest for NHS Clinicians">
+<meta name="twitter:description" content="Every new paper from palliative care&#39;s five leading journals, every Monday. Written by a Consultant in Palliative Medicine, NHS Wales.">
 
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
 
@@ -122,9 +125,15 @@
   footer a { color: var(--sage); text-decoration: none; }
 
   @media (max-width: 640px) {
-    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; }
+    /* Fixed bottom bar on mobile. The brand used to wrap to two lines at
+       390px, making the bar ~123px tall while the body reserved only 60px —
+       so the footer sat underneath it. Keep the brand on one line and reserve
+       the bar's measured height via a custom property. */
+    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; align-items: center; gap: 0.75rem; }
     .nav-links a:not(.nav-cta) { display: none; }
-    body { padding-bottom: 60px; }
+    .nav-brand { font-size: 0.9rem; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+    .nav-cta { flex-shrink: 0; }
+    body { padding-bottom: calc(var(--bottom-nav-h, 64px) + env(safe-area-inset-bottom, 0px)); }
     .breadcrumb { padding-top: 2rem; }
     .article-header { padding-top: 1rem; }
     .article-header h1 { font-size: 1.8rem; }
@@ -138,8 +147,8 @@
 {
   "@context": "https://schema.org",
   "@type": "MedicalWebPage",
-  "headline": "Palliative Care Journal Digest for NHS Clinicians | The Monday Clinical Brief",
-  "description": "Stay current with palliative care evidence — every new paper from the field&#39;s five leading journals, every Monday. Written by a Consultant in Palliative Medicine, NHS Wales.",
+  "headline": "Palliative Care Journal Digest for NHS Clinicians",
+  "description": "Every new paper from palliative care&#39;s five leading journals, every Monday. Written by a Consultant in Palliative Medicine, NHS Wales.",
   "url": "https://mondayclinicalbrief.co.uk/blog/medical-journal-digest/palliative-care-journal-digest/",
   "datePublished": "2026-05-11T00:00:00.000Z",
   "dateModified": "2026-06-30T00:00:00.000Z",
@@ -263,6 +272,7 @@
 </nav>
 
 <!-- ═══ BREADCRUMB ═══ -->
+<main id="main">
 <div class="breadcrumb" aria-label="Breadcrumb">
   <ol>
     <li><a href="/">Home</a></li>
@@ -350,6 +360,9 @@
     <h3>More on Medical Journal Digest</h3>
     <ul>
       <li><a href="/blog/medical-journal-digest/guide/">Medical Journal Digest</a> — the complete guide</li>
+      <li><a href="/blog/medical-journal-digest/heidi-evidence-vs-openevidence-uk/">Heidi Evidence vs OpenEvidence: Which One Can UK Doctors Actually Use?</a></li>
+      <li><a href="/blog/medical-journal-digest/this-week-in-medical-journals-august-2026/">This Week in Medical Journals: August 2026 Highlights</a></li>
+      <li><a href="/blog/medical-journal-digest/cks-round-up-july-2026/">NICE CKS Round-Up — July 2026: Recent Updates for UK Primary Care</a></li>
       <li><a href="/blog/medical-journal-digest/clinicalkey-ai-vs-openevidence/">ClinicalKey AI vs OpenEvidence: In the UK, It&#39;s Not a Choice</a></li>
       <li><a href="/blog/medical-journal-digest/cks-round-up-june-2026/">NICE CKS Round-Up — June 2026: Recent Updates for UK Primary Care</a></li>
       <li><a href="/blog/medical-journal-digest/nice-ng106-heart-failure-2025-update/">NICE Heart Failure Update (NG106): SGLT2 Inhibitors Now Span the Ejection-Fraction Spectrum</a></li>
@@ -359,19 +372,19 @@
       <li><a href="/blog/medical-journal-digest/asthma-bts-nice-sign-ng245-uk-2026/">Asthma Diagnosis and Treatment in UK Primary Care 2026: What the BTS/NICE/SIGN Guideline (NG245) Changed</a></li>
       <li><a href="/blog/medical-journal-digest/atrial-fibrillation-anticoagulation-uk-primary-care-2026/">Anticoagulation in Atrial Fibrillation: A UK Primary-Care Guide (NICE NG196)</a></li>
       <li><a href="/blog/medical-journal-digest/sglt2-inhibitors-ckd-uk-primary-care-2026/">SGLT2 Inhibitors for CKD in UK Primary Care 2026: What NICE TA1075 Means in Practice</a></li>
-      <li><a href="/blog/medical-journal-digest/statins-cvd-prevention-uk-primary-care-2026/">Statins and CVD Prevention in UK Primary Care 2026: What NICE NG238 Means in Practice</a></li>
+      <li><a href="/blog/medical-journal-digest/statins-cvd-prevention-uk-primary-care-2026/">Who Gets a Statin in 2026? The NICE NG238 Thresholds UK GPs Actually Use</a></li>
       <li><a href="/blog/medical-journal-digest/medical-journal-digest-vs-podcast/">Medical Journal Digest vs Medical Podcast: Which Is Better for CPD?</a></li>
       <li><a href="/blog/medical-journal-digest/ad-free-clinical-ai-uk-2026/">Ad-Free Clinical AI for UK Doctors (2026): The Short List</a></li>
       <li><a href="/blog/medical-journal-digest/best-medical-journal-digest-apps/">Best Medical Journal Digest Apps for UK Doctors</a></li>
       <li><a href="/blog/medical-journal-digest/cks-round-up-may-2026/">NICE CKS Round-Up — May 2026: Recent Updates for UK Primary Care</a></li>
-      <li><a href="/blog/medical-journal-digest/menopause-hrt-nice-ng23-2026/">Menopause and HRT Guidance UK 2026: NICE Recommends Fezolinetant and Updates NG23</a></li>
-      <li><a href="/blog/medical-journal-digest/mrcp-paces-2026-study-plan-uk/">MRCP PACES 2026: Fee Rise, Part 1 In-Centre, and a 12-Week Study Plan for Working Trainees</a></li>
+      <li><a href="/blog/medical-journal-digest/menopause-hrt-nice-ng23-2026/">What Can You Offer When HRT Isn&#39;t Suitable? Fezolinetant and NG23 in 2026</a></li>
+      <li><a href="/blog/medical-journal-digest/mrcp-paces-2026-study-plan-uk/">Can You Pass MRCP PACES While Working Full Time? A 12-Week Plan for 2026</a></li>
       <li><a href="/blog/medical-journal-digest/praxis-medicine-uk/">Praxis Medicine UK: What It Is, What It Costs, and Where It Fits</a></li>
       <li><a href="/blog/medical-journal-digest/this-week-in-medical-journals-june-2026/">This Week in Medical Journals: June 2026 Highlights</a></li>
       <li><a href="/blog/medical-journal-digest/tirzepatide-gp-qof-2026/">Can You Prescribe Tirzepatide Under QOF 2026/27? The Mounjaro Decision Facing GPs</a></li>
       <li><a href="/blog/medical-journal-digest/uk-doctors-lost-ai-tools-2026/">Two AI Tools UK Doctors Lost, One Restricted — And What Works in Their Place</a></li>
       <li><a href="/blog/medical-journal-digest/sglt2-inhibitors-uk-primary-care-2026/">SGLT2 Inhibitors in UK Primary Care 2026: What NICE NG28 Means in Practice</a></li>
-      <li><a href="/blog/medical-journal-digest/heidi-evidence-uk-in-session-restriction/">Heidi Evidence Is Excellent. In the UK, It Won&#39;t Answer Mid-Consultation.</a></li>
+      <li><a href="/blog/medical-journal-digest/heidi-evidence-uk-in-session-restriction/">Heidi Evidence in the UK: What the In-Session Restriction Actually Blocks</a></li>
       <li><a href="/blog/medical-journal-digest/nice-ng28-type-2-diabetes-2026/">NICE NG28 Update, February 2026: Metformin Plus an SGLT2 Inhibitor Is the New Starting Point</a></li>
       <li><a href="/blog/medical-journal-digest/chatgpt-for-clinicians-uk/">ChatGPT for Clinicians Launched. UK Doctors Are Excluded.</a></li>
       <li><a href="/blog/medical-journal-digest/mcb-vs-nejm-clinician/">MCB vs NEJM Clinician (formerly NEJM Journal Watch)</a></li>
@@ -394,18 +407,41 @@
   <div class="author-box">
     <div class="author-avatar">TH</div>
     <div class="author-info">
-      <h4>Dr Tim Hamilton · Consultant in Palliative Medicine, NHS Wales</h4>
+      <h4><a href="/about/" style="color:inherit;">Dr Tim Hamilton</a> · Consultant in Palliative Medicine, NHS Wales</h4>
       <p>Consultant in Palliative Medicine, Aneurin Bevan University Health Board (ABUHB), NHS Wales. Founder, The Monday Clinical Brief.</p>
+      <p style="margin-top:0.5rem;"><a href="/about/">Credentials, editorial policy and conflicts of interest →</a></p>
     </div>
   </div>
 </div>
 
+</main>
 
 <!-- ═══ FOOTER ═══ -->
 <footer>
-  <p>&copy; 2025 The Monday Clinical Brief. All rights reserved.</p>
-  <p><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/blog/">Blog</a></p>
+  <p>&copy; 2026 The Monday Clinical Brief. All rights reserved.</p>
+  <p><a href="/samples/">Samples</a> · <a href="/blog/">Blog</a> · <a href="/methodology/">Methodology</a> · <a href="/about/">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p>
 </footer>
+
+<script>
+// The mobile bottom bar is fixed, so the body must reserve exactly its height
+// or the footer ends up underneath it. Measure it rather than guessing: brand
+// length, font loading and text-size settings all move this number.
+(function () {
+  var nav = document.querySelector('nav');
+  if (!nav) return;
+  function sync() {
+    var fixed = getComputedStyle(nav).position === 'fixed';
+    document.documentElement.style.setProperty(
+      '--bottom-nav-h', fixed ? nav.offsetHeight + 'px' : '0px'
+    );
+  }
+  sync();
+  addEventListener('resize', sync);
+  addEventListener('orientationchange', sync);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(sync);
+  if (window.ResizeObserver) new ResizeObserver(sync).observe(nav);
+})();
+</script>
 
 </body>
 </html>

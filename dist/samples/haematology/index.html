@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Haematology Sample Digest — The Monday Clinical Brief</title>
-<meta name="description" content="See what Haematology clinicians received in this Monday's digest: 33 new articles from Blood, British journal of haematology, Haematologica summarised every Monday by The Monday Clinical Brief.">
+<meta name="description" content="See what Haematology clinicians received in this Monday's digest: 51 new articles from Haematologica, Blood, British journal of haematology summarised every Monday by The Monday Clinical Brief.">
 <link rel="canonical" href="https://mondayclinicalbrief.co.uk/samples/haematology/">
 <meta property="og:title" content="Haematology — Monday Clinical Brief Sample Digest">
-<meta property="og:description" content="33 new Haematology papers summarised this week. Free 4-week trial.">
+<meta property="og:description" content="51 new Haematology papers summarised this week. Free 4-week trial.">
 <meta property="og:url" content="https://mondayclinicalbrief.co.uk/samples/haematology/">
 <meta property="og:type" content="article">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -89,9 +89,12 @@
   footer a { color: var(--sage); text-decoration: none; }
 
   @media (max-width: 640px) {
-    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; }
+    /* Fixed bottom bar — reserve its measured height, not a flat 60px. */
+    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; align-items: center; gap: 0.75rem; }
     .nav-links a:not(.nav-cta) { display: none; }
-    body { padding-bottom: 60px; }
+    .nav-brand { font-size: 0.9rem; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+    .nav-cta { flex-shrink: 0; }
+    body { padding-bottom: calc(var(--bottom-nav-h, 64px) + env(safe-area-inset-bottom, 0px)); }
     .page-header { padding: 3.5rem 1.5rem 2.5rem; }
     section { padding: 2rem 1.5rem 3.5rem; }
     .sample-card { padding: 1.5rem; }
@@ -106,24 +109,25 @@
 <nav>
   <a href="/" class="nav-brand">The Monday Clinical Brief</a>
   <div class="nav-links">
+    <a href="/samples/">Samples</a>
+    <a href="/blog/">Blog</a>
     <a href="/#how">How it works</a>
-    <a href="/#about">About</a>
     <a href="/?specialty=haematology#subscribe" class="nav-cta">Start free trial</a>
   </div>
 </nav>
 
 <!-- ═══ HEADER ═══ -->
 <header class="page-header">
-  <div class="eyebrow">Sample Digest · Wednesday 1 July 2026</div>
+  <div class="eyebrow">Sample Digest · Monday 31 August 2026</div>
   <h1>A recent Haematology digest,<br><em>as sent to subscribers</em></h1>
-  <p class="lede">This is the real Monday digest from Wednesday 1 July 2026. Showing the first 8 of 33 articles from that week — every new paper from the top journals in Haematology.</p>
+  <p class="lede">This is the real Monday digest from Monday 31 August 2026. Showing the first 8 of 51 articles from that week — every new paper from the top 5 journals in Haematology.</p>
   <div class="stat-bar">
-    <div class="stat"><strong>33</strong><span>articles that week</span></div>
-    <div class="stat"><strong>4</strong><span>journals covered</span></div>
+    <div class="stat"><strong>51</strong><span>articles that week</span></div>
+    <div class="stat"><strong>5</strong><span><a href="/methodology/">journals monitored</a></span></div>
     <div class="stat"><strong>£0</strong><span>for your first 4 weeks</span></div>
   </div>
   <div class="disclaimer">
-    <strong>Note:</strong> Summaries are AI-generated from publicly available PubMed abstracts. Always verify against the source article before clinical use.
+    <strong>Note:</strong> Summaries are AI-generated from publicly available PubMed abstracts. Always verify against the source article before clinical use. <a href="/methodology/">How we choose journals and write summaries →</a>
   </div>
 </header>
 
@@ -132,231 +136,231 @@
   <div class="container">
     <div class="sample-card">
       <div class="sample-badge">Blood</div>
-      <h3>Niche-targeted therapy via YAP/TAZ activation enhances hematopoietic regeneration</h3>
-      <div class="sample-meta">Uemura S, Yamashita M, Yokomizo-Nakano T et al. · 2026 Jun 22</div>
+      <h3>International Consensus Criteria for the Diagnosis, Treatment Initiation, and Response Assessment for T-LGL Leukemia</h3>
+      <div class="sample-meta">Brammer JE, Pflug N, Zambello R et al. · 2026 Aug 21</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Preclinical mechanistic study (murine model)
+        Expert consensus statement (international multidisciplinary panel), not original research
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Can pharmacological activation of YAP/TAZ in bone marrow niche cells (endothelial cells and mesenchymal stromal cells) accelerate haematopoietic regeneration following myeloablative injury?
+        How should T-LGL leukaemia be diagnosed, when should treatment be initiated, and how should response be assessed in a standardised way across clinical practice and trials?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>YAP/TAZ are rapidly upregulated in MSCs and ECs after myeloablative stress, acting as transcriptional regulators that preserve MSC identity (via Ebf1/Ebf3) and sustain CXCL12 and angiogenic factor expression</li><li>YAP/TAZ signalling coordinates sinusoidal vascular remodelling and HSC retention post-myelosuppression; conditional loss impaired haematopoietic recovery</li><li>Pharmacological YAP/TAZ activation enhanced BM niche reorganisation and accelerated haematopoietic regeneration across multiple myelosuppressive models</li>        </ul>
+<li>Highlights current lack of uniform diagnostic and response criteria, causing heterogeneity across studies and hindering cross-trial comparison.</li><li>Establishes evidence-based, consensus-derived criteria for diagnosis, treatment initiation thresholds, and response assessment, developed by the International LGLL Consortium.</li><li>No new efficacy or outcome data presented; this is a framework-defining document.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        This identifies a tractable niche-targeted strategy that could reduce post-transplant cytopenias or chemotherapy-related marrow failure — areas of unmet need in UK transplant and intensive chemotherapy programmes.
+        Provides UK haematologists with a much-needed standardised framework to diagnose and manage this rare, under-recognised leukaemia consistently, supporting trial enrolment and NHS specialist service alignment with international practice.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Findings are entirely preclinical (murine); human translatability and pharmacological agent safety profiles require prospective validation.
+        As a consensus opinion rather than primary data, recommendations require prospective validation before widespread adoption as standard of care.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42329810/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1182/blood.2025030831" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42640859/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1182/blood.2025030252" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">Blood</div>
-      <h3>NG2-ITGA4 axis regulates Rho GTPases and leukemic aggressiveness in KMT2A-r B-ALL and is targetable with natalizumab</h3>
-      <div class="sample-meta">Rubio-Gayarre A, Vinyoles M, Tejedor JR et al. · 2026 Jun 23</div>
+      <h3>T-cell immunosenescence limits CD19 CAR T-cell function in chronic lymphocytic leukemia</h3>
+      <div class="sample-meta">Noll JH, Dersh D, Li JY et al. · 2026 Aug 24</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Preclinical mechanistic study (in vitro and patient-derived xenograft models)
+        Translational/mechanistic study (correlative analysis of clinical trial samples plus laboratory experiments)
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Does the NG2–ITGA4 signalling axis drive leukemic aggressiveness in KMT2A-rearranged B-ALL, and can natalizumab targeting ITGA4 improve outcomes?
+        Does T-cell immunosenescence, rather than classical exhaustion, explain variable CD19 CAR T-cell efficacy in CLL?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>NG2 promotes KMT2A-r B-ALL cell proliferation and migration via Rho GTPase activation in an ITGA4-dependent manner</li><li>Combined genetic ablation of NG2 and ITGA4 in immunodeficient mice significantly delayed disease onset and prolonged survival compared to single-gene knockouts</li><li>Natalizumab (EMA-approved anti-ITGA4 monoclonal antibody) delayed leukemia progression and enhanced standard chemotherapy efficacy in PDX models</li>        </ul>
+<li>Nonresponders/short partial responders showed higher senescence and SASP gene programs in preinfusion CTL019 products, correlating with poor CAR T-cell expansion and worse survival.</li><li>Poor responders had CD27⁻CD28⁻/KLRG1⁺ CD8 T-cells at apheresis, lower CD27 expression, reduced TCR diversity, and a circulating SASP-like inflammatory milieu.</li><li>Senescent features (SA-β-gal, p16, p53, DNA damage) limited proliferative capacity and cytotoxic reserve; ibrutinib reduced senescence/SASP markers and improved CAR T-cell expansion, including in an ibrutinib-resistant model.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        Natalizumab is already EMA-licensed (for MS and Crohn&#39;s disease), making rapid repurposing feasible; this provides preclinical rationale for trials in KMT2A-r B-ALL, a subtype with persistently poor outcomes despite CD19-directed immunotherapy.
+        Identifies immunosenescence as a measurable, potentially modifiable determinant of CAR T-cell failure in CLL, supporting consideration of BTK-inhibitor priming or senescence biomarker screening to improve outcomes within UK CAR-T commissioning pathways.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Findings are entirely preclinical — no human clinical data are presented, and translation to patient benefit remains undemonstrated.
+        Findings are largely correlative and derived from a modest CTL019 patient cohort plus in vitro models, requiring prospective validation before influencing manufacturing or treatment protocols.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42345361/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1182/blood.2025031693" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42636161/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1182/blood.2025032274" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">Blood</div>
-      <h3>Galectin-1 Fuels Monocyte Hyperinflammation and Represents a Novel Therapeutic Target in Myeloproliferative Neoplasms</h3>
-      <div class="sample-meta">He F, Lin S, Kong T et al. · 2026 Jun 23</div>
+      <h3>Ferroptotic stress promotes hematopoietic stem cell aging through S1P-dependent epigenetic and lipid remodeling</h3>
+      <div class="sample-meta">Zhao Y, Li Y, Tian X et al. · 2026 Aug 24</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Translational study (scRNA-seq, CyTOF, in vitro functional assays, murine in vivo models)
+        Preclinical mechanistic study (murine and human HSC models)
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Does galectin-1 (Gal-1) drive pathological monocyte-mediated inflammation in MPNs, and does its inhibition ameliorate disease features?
+        What drives haematopoietic stem cell (HSC) aging, and can this be therapeutically reversed?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>scRNA-seq and CyTOF identified Gal-1 overexpression selectively in MPN monocytes; recombinant Gal-1 significantly upregulated proinflammatory cytokine transcription and secretion in CD14+ monocytes from MPN patients</li><li>Gal-1 mediates inflammation via TLR4/NF-κB signalling; TLR4 inhibition abolished Gal-1-driven proinflammatory effects</li><li>Genetic Lgals1 knockout in MPLW515L mice reduced leukocytosis and splenomegaly; Gal-1 inhibition also suppressed carrageenan-induced thrombosis in vivo</li>        </ul>
+<li>Aged HSCs show elevated sphingosine-1-phosphate (S1P), which inhibits HDAC activity, increases H3K9 acetylation, and upregulates Lpcat2, driving accumulation of pro-ferroptotic phospholipids.</li><li>Genetic or pharmacological Sphk2 inhibition lowers S1P, reduces Lpcat2 expression, and attenuates ferroptotic stress in both aged mouse and human HSCs.</li><li>Sphk2 inhibition improved HSC function, restored immune homeostasis, and modestly extended lifespan in aged mice.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        Gal-1 represents a potentially actionable therapeutic target in MPNs, where monocyte-driven inflammation contributes to disease burden and thrombotic risk — areas of unmet need beyond current JAK inhibitor therapy.
+        Identifies sphingosine kinase 2/S1P signalling as a novel druggable pathway for HSC rejuvenation, with potential future relevance to ageing-related bone marrow failure, transplant conditioning, or immunosenescence management in UK haematology practice.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Findings are predominantly preclinical; direct clinical validation in MPN patients is lacking.
+        Findings are based on animal and in vitro human cell models; clinical efficacy and safety of Sphk2 inhibition in humans remain unestablished.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42345360/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1182/blood.2025032631" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42636157/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1182/blood.2026034204" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">Blood</div>
-      <h3>Translational Regulation of Sf1 Integrates Alternative Splicing and Hematopoietic Stem Cell Fate</h3>
-      <div class="sample-meta">Liudkovska V, Ciołek M, Grygorowicz D et al. · 2026 Jun 23</div>
+      <h3>Immunoglobulin constant domains as targets for T-cell receptor-based treatment of multiple myeloma</h3>
+      <div class="sample-meta">Meeuwsen MH, Wouters AK, Wellershoff JC et al. · 2026 Aug 24</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Translational/mechanistic laboratory study (murine and molecular models)
+        Preclinical translational research (in vitro and murine xenograft study)
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Does post-transcriptional regulation of splicing factor SF1 influence haematopoietic stem cell (HSC) fate decisions?
+        Can TCR-engineered T cells targeting immunoglobulin heavy chain constant domains provide effective, isotype-selective killing of multiple myeloma cells while sparing normal tissue?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>Activity-based profiling of 305 splicing regulators identified widespread post-transcriptional spliceosome modulation in HSCs and progenitor cells</li><li>SF1 translation is controlled by a conserved 5′ UTR structure acting cooperatively with RNA-binding protein IGF2BP2; disrupting this axis reduces SF1 protein and skews differentiation toward stem and erythroid programmes</li><li>SF1-dependent alternative splicing remodels 5′ UTRs of haematopoietic and DNA damage response genes, altering their translation and DNA damage resolution</li>        </ul>
+<li>Nine HLA-presented IgG/IgA-derived peptides were identified; high-avidity TCRs against four epitopes were isolated and showed selective recognition of IgG- or IgA-expressing MM lines, sparing antigen-negative cells.</li><li>TCR-T cells lysed patient-derived MM cells ex vivo and eradicated established IgA/IgG-expressing MM tumours in xenograft models, with strict HLA restriction and no cross-reactivity against non-B-lineage cells or healthy tissue (aside from isotype-matched B-cell depletion).</li><li>Dendritic cells could cross-present immunoglobulin peptides at high serum Ig concentrations, suggesting a mechanism for enhanced in vivo T-cell activation.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        Identifies a previously unrecognised translational regulatory axis governing HSC fate, with potential implications for understanding dysregulated haematopoiesis in myeloid malignancies and bone marrow failure syndromes relevant to NHS haematology practice.
+        This offers a novel, isotype-selective TCR-T approach for relapsed/refractory MM that may preserve humoral immunity better than pan-B-cell or BCMA-directed CAR-T strategies currently used in NHS practice.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Findings are derived from molecular/murine models; human translational validity and therapeutic applicability remain undemonstrated.
+        Findings are based on preclinical models only; clinical efficacy, safety, and durability in patients remain unestablished.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42345356/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1182/blood.2025032484" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42636156/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1182/blood.2025032234" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">Blood</div>
-      <h3>Combining Quizartinib with intensive chemotherapy in older patients with newly diagnosed AML: results of the UK NCRI AML18 Trial</h3>
-      <div class="sample-meta">Knapper S, Thomas A, Hills RK et al. · 2026 Jun 23</div>
+      <h3>Whole genome sequencing to elucidate novel genetic modifiers of FVIII clearance</h3>
+      <div class="sample-meta">Hulshof AM, Antunes Heck L, Atiq F et al. · 2026 Aug 24</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        RCT (randomised controlled trial)
+        Cohort study with translational/genetic analysis (human SNP association study plus murine knockout validation)
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Does adding quizartinib to intensive chemotherapy improve outcomes in older patients (&gt;60 years) with newly diagnosed AML, irrespective of FLT3 mutation status?
+        What genetic factors, beyond VWF levels, ABO blood group and age, modify FVIII clearance in haemophilia A patients?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>No overall survival benefit in the unselected population (HR 0.99, 95% CI 0.79–1.24), with increased non-relapse mortality in the quizartinib arm (HR 1.64, 95% CI 1.04–2.59)</li><li>In FLT3-mutated patients (n=116), quizartinib significantly improved OS (HR 0.59, 95% CI 0.37–0.93) and reduced relapse risk (HR 0.57, 95% CI 0.35–0.91)</li><li>FLT3 wild-type patients derived no survival or relapse benefit</li>        </ul>
+<li>VWF, ABO group and age together explained &lt;40% of variance in FVIII clearance in 52 haemophilia A patients across 106 SNPs at 43 loci.</li><li>Known clearance receptor loci (STAB2, ASGR2, CLEC4M) were confirmed; four novel signals (TC2N, ADAMTS13, RASIP1/MAMSTR/FUT2, C2CD4B) were newly associated with FVIII PK.</li><li>FUT2 Secretor status affected FVIII half-life (prolonged in non-secretors vs secretors); Fut2 knockout mice showed significantly elevated plasma FVIII, supporting causality.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        This NCRI trial directly informs UK practice: quizartinib should be restricted to FLT3-mutated older AML patients, supporting mutation-directed treatment selection within NHS intensive chemotherapy pathways.
+        These findings could improve individualised FVIII dosing and PK-guided prophylaxis in UK haemophilia centres, and highlight FVIII/VWF pathway genetics as a potential modifiable cardiovascular risk factor.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        FLT3-mutated subgroup analysis was pre-planned but underpowered, limiting definitive conclusions about maintenance duration benefit.
+        Small human cohort (n=52) limits statistical power and generalisability of genetic associations.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42345353/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1182/blood.2025032681" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42636151/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1182/blood.2026033717" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">Blood</div>
-      <h3>Direct and indirect regulation of fetal globin transcript by RNA-binding protein IGF2BP1</h3>
-      <div class="sample-meta">Coyne S, Hwang G, Wu T et al. · 2026 Jun 24</div>
+      <h3>Early administration of calcineurin inhibitors limits tolerogenic effect of PTCy in allogeneic hematopoietic transplant</h3>
+      <div class="sample-meta">Kojima K, Senjo H, Tsukamoto S et al. · 2026 Aug 24</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Basic science / mechanistic laboratory study
+        Translational research (murine model plus single-cell analysis of clinical transplant samples)
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        What is the mechanism by which the RNA-binding protein IGF2BP1 regulates fetal haemoglobin (HbF) expression during developmental haemoglobin switching?
+        Does timing of calcineurin inhibitor (CNI) administration relative to post-transplant cyclophosphamide (PTCy) affect donor T-cell exhaustion and chronic GVHD (cGVHD) risk after haploidentical HCT?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>IGF2BP1 activates HIC2 (a BCL11A repressor) via direct binding, providing a mechanistic explanation for its previously described indirect suppression of BCL11A</li><li>IGF2BP1 also directly binds HBG1/2 transcripts to promote fetal globin translation, independent of BCL11A — a novel, previously unrecognised mechanism</li><li>m6A-modified coding sequences near the stop codon of HBG2 are necessary and sufficient for this direct IGF2BP1-mediated upregulation</li>        </ul>
+<li>Early tacrolimus (before PTCy) in PTCy-haplo-PBSCT patients promoted expansion of effector-like CD8+ intermediate-exhausted T cells (Tex-int) and CD4+ cytotoxic T cells, both retaining TCR/PD-1 blockade responsiveness.</li><li>Expansion of these subsets by day 28 predicted subsequent cGVHD development.</li><li>Delaying tacrolimus to day 5 post-PTCy significantly reduced expansion of these pathogenic effector-like T-cell populations, mirroring murine findings with delayed cyclosporine.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        Understanding post-transcriptional regulators of HbF reactivation may identify novel therapeutic targets for sickle cell disease and beta-thalassaemia, conditions managed across NHS haematology services.
+        These findings suggest that CNI timing relative to PTCy is a modifiable factor influencing cGVHD risk in haploidentical transplant protocols increasingly used in UK haematology practice, with Tex-int and CD4+ CTL populations potentially serving as biomarkers guiding preemptive cGVHD therapy.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Purely mechanistic in vitro/molecular study; no functional validation in patient-derived cells or in vivo disease models is described.
+        Findings derive from a single-centre translational study combining murine and limited clinical single-cell data, requiring validation in larger prospective cohorts before altering CNI timing in practice.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42341077/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1182/blood.2025031840" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42636145/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1182/blood.2025030909" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">Blood</div>
-      <h3>FGF18 mediates fibroblast-leukemia crosstalk to promote acute myeloid leukemia progression</h3>
-      <div class="sample-meta">Zhang W, Ye Z, Zhou X et al. · 2026 Jun 26</div>
+      <h3>Inhibition of nucleoporin 214 depletes leukemia stem cells by promoting heme catabolism and lipid peroxidation</h3>
+      <div class="sample-meta">Chen Z, Wu F, Zhang W et al. · 2026 Aug 25</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Preclinical translational study (murine AML models, single-cell RNA sequencing, CRISPR screen, with human clinical correlation)
+        Preclinical laboratory study (mechanistic + in vivo model, drug development)
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Does fibroblast-derived FGF18 promote AML progression via stromal-leukemic crosstalk, and can its neutralisation restore anti-tumour immunity?
+        Does wild-type NUP214 sustain leukaemia stem cell (LSC) survival in AML via metabolic regulation, and can it be therapeutically targeted?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>Fibroblast-specific Fgf18 depletion and Fgfr3 loss in AML cells both significantly delayed disease progression and improved murine survival</li><li>FGF18 activates FGFR3/AKT-mTOR/IL-6 signalling in AML cells, creating a feed-forward loop with stromal fibroblasts that suppresses CD8⁺ T-cell effector function</li><li>An anti-FGF18 neutralising antibody synergised with anti-PD-1 therapy to produce durable anti-leukaemic responses in vivo; elevated FGF18 expression correlated with poor prognosis in AML patients</li>        </ul>
+<li>NUP214 suppresses ferroptosis in LSCs by nuclear repression of HMOX1 and ALOX15 (via blocking Sub1-mediated RNA Pol II recruitment), limiting heme catabolism, Fe²⁺ accumulation, and lipid peroxidation.</li><li>NUP214 loss induces heme exhaustion, excess lipid peroxidation, and ferroptosis, impairing AML progression.</li><li>Novel degrader compound 0449-b (recruits NUP214 to Cullin5-Rbx2 for neddylation/proteasomal degradation) triggers LSC ferroptosis and shows anti-leukaemic activity in vivo while sparing normal HSCs.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        This identifies FGF18 as a potentially actionable stromal target in AML, where outcomes remain poor, and provides rationale for combining FGF18 blockade with existing checkpoint inhibitor strategies.
+        Identifies NUP214 as a novel, LSC-selective therapeutic target with a first-in-class degrader strategy, offering a potential future ferroptosis-inducing approach for relapsed/refractory AML relevant to UK haematology drug development pipelines.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Findings are predominantly murine; clinical correlation is observational only, with no human therapeutic data presented.
+        Findings are based on preclinical models; clinical efficacy, pharmacokinetics, and safety of 0449-b in humans remain unestablished.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42360909/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1182/blood.2026033125" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42640860/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1182/blood.2026033244" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">Blood</div>
-      <h3>Arterial iron regulates vasodilation during anemia via endothelial holo α-globin</h3>
-      <div class="sample-meta">Dunaway LS, Nyshadham S, Loeb SA et al. · 2026 Jun 29</div>
+      <h3>Epigenetic markers expand genetic risk estimation in acute myeloid leukemia</h3>
+      <div class="sample-meta">Abdelbaky SB, Giacopelli B, Kohlschmidt J et al. · 2026 Aug 25</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Preclinical mechanistic study (mouse model with human cell validation)
+        Retrospective cohort/biomarker discovery study
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Does iron deficiency regulate vascular endothelial function through modulation of endothelial α-globin and nitric oxide (NO) signalling?
+        Can DNA methylation profiling improve prognostic risk stratification in AML beyond standard genetic and clinical markers?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>Resistance artery endothelial cells carry the lowest iron stores across the vasculature, making them particularly vulnerable to iron deficiency anaemia (IDA)</li><li>IDA increased endothelial NO signalling in female mice; this was reversed by iron dextran repletion — effects were absent in males, attributable to preserved heme-bound (holo) α-globin despite equivalent anaemia severity</li><li>Endothelial-specific α-globin knockout confirmed α-globin loss is necessary for IDA-associated NO upregulation, identifying it as the mechanistic link between vascular iron and vasodilation</li>        </ul>
+<li>Unsupervised methylation analysis identified 13 epitypes in 1,262 de novo AML patients; some patients lacking cardinal genetic lesions (e.g., CEBPAbZIP, FLT3-ITD, CBF, KMT2A-r) showed &#34;alteration-like&#34; methylation patterns with outcomes resembling patients harbouring the actual mutation.</li><li>A novel STAT hypomethylation signature (SHS), enriched in FLT3-ITD patients, identified a subgroup with inferior outcomes, adding prognostic granularity beyond FLT3-ITD status alone.</li><li>Machine learning models incorporating methylation signatures alongside genetic/clinical/demographic variables significantly improved prediction of remission, relapse, and overall survival.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        Offers a mechanistic basis for the cardiovascular complications of iron deficiency anaemia and raises the possibility that vascular iron status — independent of haemoglobin — is a therapeutic target relevant to IDA management in UK haematology practice.
+        For UK haematology services increasingly using molecular profiling in AML risk stratification (per ELN/WHO frameworks), methylation-based signatures could refine treatment allocation, particularly identifying occult high-risk biology in patients lacking canonical mutations.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Findings are predominantly from a mouse model; human vascular translation and sex-specific differences require prospective clinical validation.
+        Retrospective design without independent validation cohort or prospective outcome testing limits immediate clinical applicability.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42371808/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1182/blood.2025032905" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42640858/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1182/blood.2025031899" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
 
     <div class="tease">
-      <p>…and <em>25 more</em> Haematology articles in that week's digest.</p>
+      <p>…and <em>43 more</em> Haematology articles in that week's digest.</p>
       <small>Subscribers get the complete brief, every Monday.</small>
     </div>
   </div>
@@ -373,8 +377,25 @@
 <!-- ═══ FOOTER ═══ -->
 <footer>
   <p>&copy; 2026 The Monday Clinical Brief</p>
-  <p><a href="/">Home</a> · <a href="mailto:info@mondayclinicalbrief.co.uk">Contact</a> · <a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms</a></p>
+  <p><a href="/samples/">Samples</a> · <a href="/blog/">Blog</a> · <a href="/methodology/">Methodology</a> · <a href="/about/">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p>
 </footer>
+
+<script>
+// Measure the fixed mobile bottom bar so the body reserves its true height.
+(function () {
+  var nav = document.querySelector('nav');
+  if (!nav) return;
+  function sync() {
+    var fixed = getComputedStyle(nav).position === 'fixed';
+    document.documentElement.style.setProperty('--bottom-nav-h', fixed ? nav.offsetHeight + 'px' : '0px');
+  }
+  sync();
+  addEventListener('resize', sync);
+  addEventListener('orientationchange', sync);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(sync);
+  if (window.ResizeObserver) new ResizeObserver(sync).observe(nav);
+})();
+</script>
 
 </body>
 </html>

@@ -99,7 +99,7 @@ Every Monday Clinical Brief digest is formatted so that each paper summary inclu
 - Clean citation and DOI details you can paste directly into a log.
 - A format short enough that a full reflection fits into five minutes of writing.
 
-You can export or screenshot a digest to your appraisal system. Over a year, a weekly 15-minute reading slot produces roughly 50 entries — more than enough CPD evidence for any appraiser.
+You can export or screenshot a digest to your appraisal system. Over a year, a weekly 15-minute reading slot produces roughly 50 entries. That is a substantial body of reflective evidence to bring to appraisal, alongside whatever else your college expects of you.
 
 ### Logging it into FourteenFish
 

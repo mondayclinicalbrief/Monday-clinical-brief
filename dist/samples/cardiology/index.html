@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cardiology Sample Digest — The Monday Clinical Brief</title>
-<meta name="description" content="See what Cardiology clinicians received in this Monday's digest: 14 new articles from Circulation, JAMA cardiology, Journal of the American College of Cardiology summarised every Monday by The Monday Clinical Brief.">
+<meta name="description" content="See what Cardiology clinicians received in this Monday's digest: 54 new articles from Circulation, European heart journal, Journal of the American College of Cardiology summarised every Monday by The Monday Clinical Brief.">
 <link rel="canonical" href="https://mondayclinicalbrief.co.uk/samples/cardiology/">
 <meta property="og:title" content="Cardiology — Monday Clinical Brief Sample Digest">
-<meta property="og:description" content="14 new Cardiology papers summarised this week. Free 4-week trial.">
+<meta property="og:description" content="54 new Cardiology papers summarised this week. Free 4-week trial.">
 <meta property="og:url" content="https://mondayclinicalbrief.co.uk/samples/cardiology/">
 <meta property="og:type" content="article">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -89,9 +89,12 @@
   footer a { color: var(--sage); text-decoration: none; }
 
   @media (max-width: 640px) {
-    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; }
+    /* Fixed bottom bar — reserve its measured height, not a flat 60px. */
+    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; align-items: center; gap: 0.75rem; }
     .nav-links a:not(.nav-cta) { display: none; }
-    body { padding-bottom: 60px; }
+    .nav-brand { font-size: 0.9rem; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+    .nav-cta { flex-shrink: 0; }
+    body { padding-bottom: calc(var(--bottom-nav-h, 64px) + env(safe-area-inset-bottom, 0px)); }
     .page-header { padding: 3.5rem 1.5rem 2.5rem; }
     section { padding: 2rem 1.5rem 3.5rem; }
     .sample-card { padding: 1.5rem; }
@@ -106,24 +109,25 @@
 <nav>
   <a href="/" class="nav-brand">The Monday Clinical Brief</a>
   <div class="nav-links">
+    <a href="/samples/">Samples</a>
+    <a href="/blog/">Blog</a>
     <a href="/#how">How it works</a>
-    <a href="/#about">About</a>
     <a href="/?specialty=cardiology#subscribe" class="nav-cta">Start free trial</a>
   </div>
 </nav>
 
 <!-- ═══ HEADER ═══ -->
 <header class="page-header">
-  <div class="eyebrow">Sample Digest · Monday 29 June 2026</div>
+  <div class="eyebrow">Sample Digest · Monday 31 August 2026</div>
   <h1>A recent Cardiology digest,<br><em>as sent to subscribers</em></h1>
-  <p class="lede">This is the real Monday digest from Monday 29 June 2026. Showing the first 8 of 14 articles from that week — every new paper from the top journals in Cardiology.</p>
+  <p class="lede">This is the real Monday digest from Monday 31 August 2026. Showing the first 8 of 54 articles from that week — every new paper from the top 5 journals in Cardiology.</p>
   <div class="stat-bar">
-    <div class="stat"><strong>14</strong><span>articles that week</span></div>
-    <div class="stat"><strong>4</strong><span>journals covered</span></div>
+    <div class="stat"><strong>54</strong><span>articles that week</span></div>
+    <div class="stat"><strong>5</strong><span><a href="/methodology/">journals monitored</a></span></div>
     <div class="stat"><strong>£0</strong><span>for your first 4 weeks</span></div>
   </div>
   <div class="disclaimer">
-    <strong>Note:</strong> Summaries are AI-generated from publicly available PubMed abstracts. Always verify against the source article before clinical use.
+    <strong>Note:</strong> Summaries are AI-generated from publicly available PubMed abstracts. Always verify against the source article before clinical use. <a href="/methodology/">How we choose journals and write summaries →</a>
   </div>
 </header>
 
@@ -132,231 +136,231 @@
   <div class="container">
     <div class="sample-card">
       <div class="sample-badge">Circulation</div>
-      <h3>Consumption of Fructose-Containing Food and Beverage Sources in Childhood Through to Adulthood and Risk of Hypertension: A Prospective Cohort Study</h3>
-      <div class="sample-meta">Nguyen M, AlEssa HB, Glenn AJ et al. · 2026 Jun 22</div>
+      <h3>Association of Adherence to Various Dietary Patterns With Mortality Among Survivors of Myocardial Infarction: A Prospective Cohort Study</h3>
+      <div class="sample-meta">Ma L, Hu Y, Liu G et al. · 2026 Aug 25</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Prospective cohort study
+        Prospective cohort study (pooled analysis of Nurses&#39; Health Study and Health Professionals Follow-Up Study)
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Does consumption of fructose-containing foods and beverages (SSBs, fruit juice, whole fruit) from childhood through adulthood affect incident hypertension risk?
+        Does adherence to healthy dietary patterns after myocardial infarction (MI), and changes in adherence over time, influence long-term survival in MI survivors?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>SSBs (≥2 servings/day) and fruit juice (≥1.5 servings/day) were independently associated with higher hypertension risk (HR 1.52 [95% CI 1.27–1.83] and HR 1.35 [95% CI 1.06–1.71], respectively)</li><li>Whole fruit intake showed no significant association with hypertension (HR 0.79 [95% CI 0.59–1.05])</li><li>Substituting one daily SSB serving with whole fruit, milk, or water was associated with 22%, 13%, and 9% lower hypertension risk respectively</li>        </ul>
+<li>Across 8 dietary quality indices, highest vs lowest adherence quintiles were associated with 23–34% lower total mortality (HRs 0.66–0.77), with concordant reductions in cardiovascular death and recurrent nonfatal MI.</li><li>Improving diet quality (Alternate Healthy Eating Index) from pre- to post-MI was associated with 14% lower mortality (HR 0.86, 95% CI 0.76–0.97); worsening adherence was linked to higher mortality across most patterns.</li><li>Benefits were consistent across Mediterranean, DASH, plant-based, and anti-inflammatory/insulinaemic dietary constructs, suggesting a generalisable &#34;diet quality&#34; effect rather than one specific pattern.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        Supports current NHS guidance limiting SSB and fruit juice consumption from childhood; fruit juice should not be considered a safe alternative to SSBs for cardiovascular risk reduction.
+        Supports incorporating structured dietary quality counselling (not restricted to Mediterranean or DASH diets specifically) into UK secondary prevention pathways and cardiac rehabilitation programmes for MI survivors.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Hypertension was self-reported, introducing potential misclassification bias.
+        Observational design in US health professionals limits causal inference and generalisability to a more diverse UK population.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42324999/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1161/CIRCULATIONAHA.125.077666" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42639679/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1161/CIRCULATIONAHA.126.079972" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">Circulation</div>
-      <h3>Perioperative Anemia and Patient Blood Management in Cardiac Surgery: A Scientific Statement From the American Heart Association</h3>
-      <div class="sample-meta">Howard-Quijano K, Shore-Lesserson L, Osho A et al. · 2026 Jun 22</div>
+      <h3>METTL7B Mitigates Hypertension and Vascular Remodeling</h3>
+      <div class="sample-meta">Chen Z, Zhang H, Yang Q et al. · 2026 Aug 25</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Scientific statement (expert consensus/narrative review — not original research)
+        Preclinical mechanistic study (animal models and in vitro assays, with limited human correlative data).
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        What is the current evidence base for perioperative anaemia assessment and patient blood management (PBM) strategies in cardiac surgery?
+        Does METTL7B, a novel RNA m6A methyltransferase, regulate vascular smooth muscle cell (VSMC) function and blood pressure, and can it be therapeutically targeted?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>Up to 50% of patients presenting for cardiac surgery have preoperative anaemia, with iron deficiency identified as the most prevalent and modifiable cause</li><li>PBM is framed as a multidisciplinary intervention targeting preoperative optimisation, intraoperative blood conservation, and reduced transfusion exposure to improve outcomes</li><li>The statement identifies significant knowledge gaps and challenges in applying PBM consistently across specific patient subgroups</li>        </ul>
+<li>METTL7B acts as a METTL3-independent m6A methyltransferase; VSMC-specific knockout worsened angiotensin II-induced hypertension and vascular remodeling, while overexpression was protective.</li><li>Mechanism: METTL7B recruits HNRNPH1 to methylate FILIP1L mRNA, reducing FLNA-mediated F-actin polymerisation and VSMC contractility; FILIP1L overexpression rescued the knockout phenotype (m6A-site mutation did not).</li><li>Stress-activated KLF4 suppresses METTL7B transcription; the repurposed drug netarsudil activated METTL7B and lowered blood pressure in vivo, with effects abolished in VSMC-specific knockouts.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        With cardiac surgical volumes sustained across NHS centres, this AHA statement consolidates emerging evidence on iron deficiency treatment and blood conservation strategies directly relevant to preoperative assessment pathways and transfusion governance.
+        Identifies a novel epitranscriptomic pathway and a repurposable FDA-approved drug (netarsudil) with potential as a future antihypertensive strategy, relevant to NHS efforts in developing novel therapies for treatment-resistant hypertension.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        As a consensus scientific statement rather than systematic review or meta-analysis, recommendations reflect expert synthesis and may not be graded by formal evidence hierarchy.
+        Findings are derived from murine models and in vitro systems; human translational and clinical efficacy data are lacking.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42324995/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1161/CIR.0000000000001446" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42639676/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1161/CIRCULATIONAHA.126.079407" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">Circulation</div>
-      <h3>Challenges and Future Trends in Large Vessel Vasculitis</h3>
-      <div class="sample-meta">Sandovici M, van der Geest KSM, Reitsema RD et al. · 2026 Jun 23</div>
+      <h3>Site-Specific Apo AI Glycation Impairs HDL Function and Promotes Atherosclerosis in Diabetes</h3>
+      <div class="sample-meta">Dai Y, Li Q, Ding F et al. · 2026 Aug 25</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Narrative review (commentary/overview — not original research)
+        Translational research combining human proteomic cohort analysis with mechanistic in vitro/in vivo experiments.
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        What are the current challenges and emerging directions in the pathogenesis, diagnosis, and management of large vessel vasculitis (giant cell arteritis and Takayasu arteritis)?
+        Does site-specific glycation of apo AI impair HDL function and contribute to atherosclerosis in patients with type 2 diabetes?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>Diagnosis remains difficult due to nonspecific symptoms; advanced vascular imaging is emerging as a key diagnostic aid</li><li>Novel immunotherapy agents targeting specific pathways offer potential to reduce reliance on glucocorticoids and their associated morbidity</li><li>Molecular imaging may improve objective monitoring of disease activity and treatment response</li>        </ul>
+<li>Glycation at apo AI residues K96 and K106/107 distinguished diabetic patients with coronary atherosclerosis (n=860) from diabetic controls without CAS (n=294); a derived Apo AI Glycation Index was independently associated with CAS/CAD and inversely correlated with reverse cholesterol transport and LCAT activity.</li><li>A glycation-resistant apo AI mutant (apo AICL) preserved structural stability, LCAT binding, and cholesterol efflux, reducing HDL dysfunction and atherosclerotic burden in diabetic mouse models.</li><li>Mechanistically, glycated apo AI activates RAGE–ERK1/2–NF-κB signalling, upregulating NR2C2 and suppressing LXRα-driven macrophage cholesterol efflux.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        UK cardiologists managing aortopathy, unexplained aortic dilatation, or cardiovascular complications of systemic inflammation should be aware of evolving diagnostic and therapeutic strategies in LVV, particularly given its cardiovascular sequelae.
+        Identifies a novel, biologically plausible biomarker (Apo AI Glycation Index) and therapeutic target relevant to residual cardiovascular risk in diabetic patients, a population of major concern within NHS cardiometabolic services.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        As a narrative review, it is subject to selection bias in source literature and does not provide pooled quantitative data.
+        Findings are largely mechanistic and preclinical; clinical utility of the glycation index requires prospective validation and outcome-based studies before adoption.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42330100/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1161/CIRCULATIONAHA.125.077491" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42639673/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1161/CIRCULATIONAHA.125.078171" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">Circulation</div>
-      <h3>Heart Failure Occurring in the Perinatal Period: A Scientific Statement From the American Heart Association</h3>
-      <div class="sample-meta">Adedinsewo DA, Brown HL, Hameed AB et al. · 2026 Jun 24</div>
+      <h3>International Experience With Implantable Cardioverter Defibrillators for the Prevention of Sudden Death in High-Risk Patients With Hypertrophic Cardiomyopathy</h3>
+      <div class="sample-meta">Rowin EJ, Maron BJ, Siontis KC et al. · 2026 Aug 25</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Scientific statement / expert consensus (American Heart Association)
+        Retrospective multicenter cohort study (25 centres, international)
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        How should heart failure with reduced or mildly reduced ejection fraction during pregnancy and the postpartum period be defined, diagnosed, and managed?
+        How effective are ICDs at preventing sudden cardiac death in patients with hypertrophic cardiomyopathy across a large, real-world global population?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>True incidence of perinatal heart failure is unknown; population prevalence estimates reach 1–2%, but obstetric-specific data are lacking</li><li>Physiological changes of pregnancy (dyspnoea, oedema, fatigue) mask classic heart failure symptoms, contributing to diagnostic delay and adverse maternal outcomes</li><li>Current evidence base is insufficient; the statement calls for standardised definitions, validated screening tools, and inclusion of pregnant/postpartum patients in heart failure trials</li>        </ul>
+<li>16% of 3387 patients received ≥1 appropriate ICD therapy (2.6%/year); rates were higher for secondary prevention (35%, 6.4%/year) than primary prevention (15%, 2.2%/year).</li><li>Among primary prevention patients, median time to first appropriate therapy was 4 years, with 16% occurring ≥10 years post-implant and 47% experiencing multiple interventions.</li><li>HCM-related mortality was low (0.3%/year); 10- and 20-year survival free from HCM-related death were 97% and 91% respectively; sudden death despite ICD occurred in only 0.4%.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        UK cardiologists managing pregnant patients with cardiomyopathy face the same diagnostic ambiguity highlighted here; this statement provides a framework pending robust trial data, relevant to MDT working with obstetric teams.
+        Provides the largest, most robust international evidence base supporting current primary prevention ICD strategies in HCM, reinforcing UK/NICE risk-stratification practice and long-term device follow-up planning.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        As a consensus statement rather than original research, recommendations are expert-opinion-driven with acknowledged absence of high-quality trial evidence in this population.
+        Retrospective design across heterogeneous centres/eras introduces variability in implantation criteria, device technology, and follow-up practices.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42339539/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1161/CIR.0000000000001450" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42639666/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1161/CIRCULATIONAHA.125.078597" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">Circulation</div>
-      <h3>Advancing Quality in the Evaluation, Surveillance, and Management of Aortic Stenosis: A Report From the AHA Target: AS Registry</h3>
-      <div class="sample-meta">Lindman BR, Gillam LD, Perpetua EM et al. · 2026 Jun 26</div>
+      <h3>Dual-Target Cardiac Regeneration: Controllable Nfyb/Nr3c1 Cointervention Spurs Cardiomyocyte Cytokinesis After Myocardial Infarction</h3>
+      <div class="sample-meta">Lu B, Liu W, Ge Z et al. · 2026 Aug 25</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Registry-based cohort study (prospective national quality registry)
+        Preclinical experimental study (transcriptomic profiling, genetically engineered mouse models, and human engineered heart tissue).
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Does the AHA Target: AS registry identify gaps in upstream quality of care for patients with moderate or severe aortic stenosis?
+        Can combined activation of a proliferation stimulator (Nfyb) and inhibition of a cytokinesis repressor (Nr3c1) enhance cardiomyocyte regeneration after myocardial infarction?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>Timely diagnosis improved from 54% (2023) to 61% (2024), but remained substantially incomplete, primarily due to absent multimodality testing (87% vs 75%) and delayed symptom assessment</li><li>Timely AVR in those with a Class I indication was 82–85%, but ~40% of patients did not receive guideline-recommended surveillance echocardiography</li><li>Clinical recommendations were included in echocardiogram reports less than 10% of the time, despite 83–85% documentation of key echo parameters</li>        </ul>
+<li>Nfyb overexpression promoted cardiomyocyte cell-cycle gene transcription and improved post-MI repair; Nr3c1 inhibition independently increased proliferation, improved cardiac function, and reduced infarct size.</li><li>A spatiotemporally controlled AAV9 system combining inducible Nfyb overexpression with CRISPR-mediated Nr3c1 deletion produced synergistic new cardiomyocyte formation (28% clustered, &gt;28-fold vs control) in clonal MADM analysis.</li><li>Benefits were replicated in post-MI mice and human engineered heart tissue, supporting translational relevance.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        UK cardiology teams managing valve disease through TAVI/surgical MDT pathways face similar upstream diagnostic delays; this registry highlights that echo reporting practice and surveillance scheduling are high-yield targets for quality improvement.
+        This dual-gene approach offers a novel, controllable regenerative strategy that could inform future myocardial repair therapies for NHS patients with post-MI heart failure, though remains preclinical.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Findings derive from self-selected US registry sites, limiting generalisability to broader or non-participating centres.
+        Findings are based on animal models and human tissue constructs, not clinical trials, so safety, delivery, and efficacy in humans remain unproven.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42360276/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1161/CIRCULATIONAHA.126.081405" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42639656/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1161/CIRCULATIONAHA.125.079049" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
-      <div class="sample-badge">European heart journal</div>
-      <h3>Diastolic dysfunction is linked to the initiation and progression of aortic stenosis: a hypothesis</h3>
-      <div class="sample-meta">Sengupta PP, Yanamala N, Pibarot P · 2026 Jun 23</div>
+      <div class="sample-badge">Circulation</div>
+      <h3>Risk of Stroke and TIA With Pulsed Field Compared With Radiofrequency Ablation for Atrial Fibrillation</h3>
+      <div class="sample-meta">Ferro EG, d&#39;Avila A, Reynolds MJ et al. · 2026 Aug 25</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Commentary / hypothesis paper (no original primary data)
+        Prospective single-centre registry with propensity score-weighted comparative analysis
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Does diastolic dysfunction represent an upstream shared pathophysiological driver of aortic stenosis initiation and progression, rather than a downstream consequence of valvular obstruction?
+        Does pulsed field ablation (PFA) carry a different 30-day risk of stroke/TIA compared with radiofrequency ablation (RFA) for atrial fibrillation?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>AI-derived diastolic dysfunction risk scores — generated without valve imaging — can predict future AS development even in patients with aortic sclerosis, challenging the conventional afterload-first model</li><li>The authors propose a shared &#34;mechano-inflammatory milieu&#34; (arterial stiffness, elevated afterload, disrupted ventriculo-valvular-vascular coupling) detectable earlier in myocardium than valve tissue</li><li>This framework reframes diastolic dysfunction as an early biomarker for calcific AS risk, potentially enabling intervention before significant valvular disease establishes</li>        </ul>
+<li>30-day stroke/TIA rate was significantly higher with PFA (0.47%, 10/2144) than RFA (0.10%, 2/2077); weighted risk difference 0.36% (95% CI 0.03–0.70%; P=0.03).</li><li>Events were spread evenly across the study period and operators (no operator with ≥2 events), arguing against a learning-curve or device-adoption effect.</li><li>PFA procedures were shorter (108 vs 144 min) and more often included posterior wall isolation (57% vs 31%); mediation analysis did not identify ablation extent as an independent risk factor, though power was limited.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        If validated, this model could shift AS screening and early risk stratification toward routine echocardiographic diastolic assessment, relevant to current NHS valve surveillance pathways.
+        As UK centres rapidly adopt PFA (Farawave, Sphere-9, Varipulse, PulseSelect) based on presumed superior safety, this signals a need for cautious interpretation and robust post-market surveillance rather than assumed neurological safety advantage over RFA.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Hypothesis-generating only; no primary outcome data presented to confirm causality.
+        Single-centre, non-randomised design with low absolute event numbers limits generalisability and causal inference regarding mechanism.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42334265/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1093/eurheartj/ehag435" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42639654/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1161/CIRCULATIONAHA.126.081092" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
-      <div class="sample-badge">JAMA cardiology</div>
-      <h3>Seven-Year Valve Durability With Transcatheter or Surgical Aortic Valve Replacement: An Ad Hoc Analysis of the PARTNER 3 Randomized Clinical Trial</h3>
-      <div class="sample-meta">Ternacle J, Hahn RT, Silva I et al. · 2026 Jun 24</div>
+      <div class="sample-badge">Circulation</div>
+      <h3>Primary and Secondary Raynaud: A Scientific Statement From the American Heart Association</h3>
+      <div class="sample-meta">Ujueta F, Goudot G, Cutolo M et al. · 2026 Aug 25</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        RCT (ad hoc analysis of PARTNER 3 — 7-year follow-up)
+        Scientific statement (expert consensus/narrative review) — not original research.
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Does balloon-expandable TAVR (SAPIEN 3) demonstrate comparable valve durability to surgical AVR at 7 years in low-risk patients with severe aortic stenosis?
+        How should clinicians distinguish and manage primary versus secondary Raynaud phenomenon (RP), including emerging diagnostic and therapeutic approaches?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>SVD-related bioprosthetic valve dysfunction (stages 2–3), all-cause valve failure, and reintervention rates were low and statistically equivalent between TAVR and surgery (all-cause BVF: 6.9% vs 7.5%, HR 0.91, 95% CI 0.55–1.49)</li><li>Thrombosis-related valve dysfunction was significantly more frequent with TAVR (5.2% vs 0.9%, HR 5.52, 95% CI 1.92–15.85), though most events occurred within 3 years and rarely progressed to valve failure</li><li>Freedom from all-cause valve failure at 7 years was similar: 73.4% (TAVR) vs 74.8% (surgery)</li>        </ul>
+<li>PRP is typically benign, affects younger women, and rarely causes tissue damage, whereas SRP occurs later in life secondary to systemic disease (e.g., connective tissue disorders) and carries risk of digital ischaemia/ulceration.</li><li>Evidence base for RP treatment is limited; management combines lifestyle measures with pharmacotherapy, with botulinum toxin and surgery reserved for severe/refractory SRP.</li><li>Advanced imaging (e.g., nailfold capillaroscopy) may enable earlier identification of SRP and underlying systemic disease.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        These data support TAVR as a durable medium-term option in low-risk patients, directly informing Heart Team discussions about valve choice in younger UK patients where longevity is a priority concern.
+        UK cardiologists and vascular specialists should recognise SRP as a marker of systemic disease requiring prompt investigation and multidisciplinary management to prevent ischaemic complications, relevant to NHS rheumatology-cardiology referral pathways.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Ad hoc analysis with ~20% echocardiographic attrition at 7 years, potentially introducing ascertainment bias for valve dysfunction outcomes.
+        As a consensus statement rather than primary research, conclusions rely on heterogeneous, often low-quality evidence with few randomised trials.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42340728/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1001/jamacardio.2026.2299" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42639644/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1161/CIR.0000000000001464" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
-      <div class="sample-badge">JAMA cardiology</div>
-      <h3>Right Ventricular Metrics as End Points in Clinical Trials: A Review</h3>
-      <div class="sample-meta">Surkova E, Lakatos B, Kempton H et al. · 2026 Jun 24</div>
+      <div class="sample-badge">Circulation</div>
+      <h3>Vasoactive Agent Selection Strategies in the Management of Cardiogenic Shock</h3>
+      <div class="sample-meta">Bohula EA, Morrow DA · 2026 Aug 25</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Narrative review / commentary
+        Clinical primer/narrative review (expert guidance, not original research)
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Can RV-specific imaging and haemodynamic parameters serve as robust, validated end points in cardiovascular clinical trials?
+        How should clinicians select and titrate vasoactive agents in cardiogenic shock based on pharmacology, phenotype, and evolving hemodynamics?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>RV metrics from echocardiography, CMR, CT, and right heart catheterisation show potential across HF, cardiomyopathies, valvular disease, pulmonary hypertension, and congenital heart disease, but are applied inconsistently across trials</li><li>Major barriers include acquisition variability, incomplete data capture, absent standardised protocols, and lack of validated links between short-term RV changes and long-term clinical outcomes</li><li>AI-assisted analysis and centralised data processing are identified as priority solutions to improve reproducibility in multicentre settings</li>        </ul>
+<li>Proposes a stepwise framework: (1) emergently protect mean arterial pressure, (2) define hemodynamic phenotype and identify/address underlying etiology in parallel, (3) set hemodynamic goals beyond MAP, (4) iteratively tailor pharmacotherapy based on perfusion reassessment.</li><li>Emphasises matching vasoactive agent choice to the pathophysiology of specific cardiogenic shock phenotypes rather than a one-size-fits-all approach.</li><li>Summarises pharmacologic profiles and comparative effectiveness data for currently available vasoactive agents.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        For UK cardiology triallists and clinicians managing RV-dependent conditions, adopting standardised RV end points could improve trial efficiency and mechanistic understanding, supporting faster regulatory and NICE appraisal pathways.
+        Offers UK cardiology teams (including cardiac ICU/CCU staff) a practical, phenotype-driven framework to standardise vasopressor/inotrope selection in cardiogenic shock, an area with limited high-quality comparative trial evidence.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        As a narrative review without systematic methodology, conclusions reflect expert opinion rather than pooled quantitative evidence.
+        As a narrative primer rather than systematic review or trial, recommendations rely on expert synthesis and existing (often limited) comparative data rather than new empirical evidence.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42340710/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1001/jamacardio.2026.2053" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42636314/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1161/CIRCULATIONAHA.126.079463" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
 
     <div class="tease">
-      <p>…and <em>6 more</em> Cardiology articles in that week's digest.</p>
+      <p>…and <em>46 more</em> Cardiology articles in that week's digest.</p>
       <small>Subscribers get the complete brief, every Monday.</small>
     </div>
   </div>
@@ -373,8 +377,25 @@
 <!-- ═══ FOOTER ═══ -->
 <footer>
   <p>&copy; 2026 The Monday Clinical Brief</p>
-  <p><a href="/">Home</a> · <a href="mailto:info@mondayclinicalbrief.co.uk">Contact</a> · <a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms</a></p>
+  <p><a href="/samples/">Samples</a> · <a href="/blog/">Blog</a> · <a href="/methodology/">Methodology</a> · <a href="/about/">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p>
 </footer>
+
+<script>
+// Measure the fixed mobile bottom bar so the body reserves its true height.
+(function () {
+  var nav = document.querySelector('nav');
+  if (!nav) return;
+  function sync() {
+    var fixed = getComputedStyle(nav).position === 'fixed';
+    document.documentElement.style.setProperty('--bottom-nav-h', fixed ? nav.offsetHeight + 'px' : '0px');
+  }
+  sync();
+  addEventListener('resize', sync);
+  addEventListener('orientationchange', sync);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(sync);
+  if (window.ResizeObserver) new ResizeObserver(sync).observe(nav);
+})();
+</script>
 
 </body>
 </html>

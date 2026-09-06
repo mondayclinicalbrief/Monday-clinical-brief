@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pathology Sample Digest — The Monday Clinical Brief</title>
-<meta name="description" content="See what Pathology clinicians received in this Monday's digest: 6 new articles from Histopathology, The American journal of surgical pathology summarised every Monday by The Monday Clinical Brief.">
+<meta name="description" content="See what Pathology clinicians received in this Monday's digest: 24 new articles from Modern pathology : an official journal of the United States and Canadian Academy of Pathology, Inc, Histopathology, The American journal of surgical pathology summarised every Monday by The Monday Clinical Brief.">
 <link rel="canonical" href="https://mondayclinicalbrief.co.uk/samples/pathology/">
 <meta property="og:title" content="Pathology — Monday Clinical Brief Sample Digest">
-<meta property="og:description" content="6 new Pathology papers summarised this week. Free 4-week trial.">
+<meta property="og:description" content="24 new Pathology papers summarised this week. Free 4-week trial.">
 <meta property="og:url" content="https://mondayclinicalbrief.co.uk/samples/pathology/">
 <meta property="og:type" content="article">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -89,9 +89,12 @@
   footer a { color: var(--sage); text-decoration: none; }
 
   @media (max-width: 640px) {
-    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; }
+    /* Fixed bottom bar — reserve its measured height, not a flat 60px. */
+    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; align-items: center; gap: 0.75rem; }
     .nav-links a:not(.nav-cta) { display: none; }
-    body { padding-bottom: 60px; }
+    .nav-brand { font-size: 0.9rem; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+    .nav-cta { flex-shrink: 0; }
+    body { padding-bottom: calc(var(--bottom-nav-h, 64px) + env(safe-area-inset-bottom, 0px)); }
     .page-header { padding: 3.5rem 1.5rem 2.5rem; }
     section { padding: 2rem 1.5rem 3.5rem; }
     .sample-card { padding: 1.5rem; }
@@ -106,24 +109,25 @@
 <nav>
   <a href="/" class="nav-brand">The Monday Clinical Brief</a>
   <div class="nav-links">
+    <a href="/samples/">Samples</a>
+    <a href="/blog/">Blog</a>
     <a href="/#how">How it works</a>
-    <a href="/#about">About</a>
     <a href="/?specialty=pathology#subscribe" class="nav-cta">Start free trial</a>
   </div>
 </nav>
 
 <!-- ═══ HEADER ═══ -->
 <header class="page-header">
-  <div class="eyebrow">Sample Digest · Wednesday 1 July 2026</div>
+  <div class="eyebrow">Sample Digest · Tuesday 1 September 2026</div>
   <h1>A recent Pathology digest,<br><em>as sent to subscribers</em></h1>
-  <p class="lede">This is the real Monday digest from Wednesday 1 July 2026. Showing the first 6 of 6 articles from that week — every new paper from the top journals in Pathology.</p>
+  <p class="lede">This is a real digest, generated on Tuesday 1 September 2026. Showing the first 8 of 24 articles from that week — every new paper from the top 5 journals in Pathology.</p>
   <div class="stat-bar">
-    <div class="stat"><strong>6</strong><span>articles that week</span></div>
-    <div class="stat"><strong>2</strong><span>journals covered</span></div>
+    <div class="stat"><strong>24</strong><span>articles that week</span></div>
+    <div class="stat"><strong>5</strong><span><a href="/methodology/">journals monitored</a></span></div>
     <div class="stat"><strong>£0</strong><span>for your first 4 weeks</span></div>
   </div>
   <div class="disclaimer">
-    <strong>Note:</strong> Summaries are AI-generated from publicly available PubMed abstracts. Always verify against the source article before clinical use.
+    <strong>Note:</strong> Summaries are AI-generated from publicly available PubMed abstracts. Always verify against the source article before clinical use. <a href="/methodology/">How we choose journals and write summaries →</a>
   </div>
 </header>
 
@@ -132,173 +136,233 @@
   <div class="container">
     <div class="sample-card">
       <div class="sample-badge">Histopathology</div>
-      <h3>Perivascular epithelioid cell tumours of the genitourinary tract: clinicopathological features and molecular landscape</h3>
-      <div class="sample-meta">Yaprak Bayrak B, Akgul M, Cheng M et al. · 2026 Jun 26</div>
+      <h3>Cutaneous involvement by myeloid leukaemias: challenging cases with important implications</h3>
+      <div class="sample-meta">Hristov AC · 2026 Aug 23</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Review article (narrative/synthesis)
+        Narrative review/commentary
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        What are the clinicopathological, immunohistochemical, and molecular features of perivascular epithelioid cell tumours (PEComas) arising in the genitourinary tract, and how should they be classified and risk-stratified?
+        How should pathologists recognise and diagnostically approach cutaneous involvement by myeloid leukaemias and precursor conditions?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>Renal AML represents the most common and best-characterised GU PEComa, serving as the reference model for understanding the broader PEComa family</li><li>Extrarenal GU PEComas are rare, morphologically heterogeneous, and diagnostically challenging—particularly on limited biopsy material</li><li>The authors advocate molecular driver-based classification over organ-site or legacy terminology to guide diagnosis and risk stratification</li>        </ul>
+<li>Reviews clinical and histopathological features of myelodysplasia cutis, myeloid sarcoma (cutaneous AML), and blastic plasmacytoid dendritic cell neoplasm, plus brief coverage of chronic myelomonocytic leukaemia skin involvement.</li><li>Highlights key genetic markers relevant to diagnosis and discusses differential diagnoses for each entity, given overlapping clinical/histological presentations.</li><li>No original data, statistics, or outcome measures presented; content is expert-based educational guidance.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        For UK pathologists encountering unusual mesenchymal GU tumours, this review offers a practical framework for diagnosis and malignant risk assessment, particularly relevant when evaluating small biopsies where morphology alone is insufficient.
+        UK dermatopathologists and haematopathologists need clear diagnostic frameworks for these rare but prognostically significant skin infiltrates, as accurate recognition directly informs haematology referral, staging, and treatment pathways within NHS multidisciplinary teams.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        As a narrative review without systematic methodology or original data, conclusions reflect expert synthesis rather than evidence-graded analysis.
+        As a narrative review, it lacks systematic methodology and primary data, so recommendations reflect expert opinion rather than validated evidence.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42363647/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1111/his.70204" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42634004/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1111/his.70265" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">Histopathology</div>
-      <h3>Navigating diagnostic challenges in low-grade spindle cell lesions of the breast: a retrospective review</h3>
-      <div class="sample-meta">Stoddard G, Ali R, Saglam O · 2026 Jun 26</div>
+      <h3>AI for tumour proportion scoring of programmed death-ligand 1 immunohistochemistry in non-small cell lung cancer: a review of commercial and non-commercial tools</h3>
+      <div class="sample-meta">Webers J, Martens S, Gervois P et al. · 2026 Aug 23</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Retrospective analysis
+        Narrative/scoping review (evidence mapping) of commercial and non-commercial AI tools for PD-L1 TPS scoring.
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        How accurately can low-grade spindle cell lesions of the breast (LGSCL-B) be classified on core needle biopsy (CNB), and what diagnostic pitfalls arise?
+        Does published evidence support ranking or routine adoption of AI tools for PD-L1 tumour proportion scoring in NSCLC?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>Desmoid-type fibromatosis was the most common subtype (28/68 cases; 41%); 6 resections were β-catenin negative, including 3 cases already diagnosed as DF on CNB, highlighting IHC unreliability.</li><li>13/68 CNBs (19%) yielded indeterminate results, with reclassification occurring at resection in several cases (e.g., malignant phyllodes tumour misclassified as fibromatosis-like metaplastic carcinoma).</li><li>Myofibroblastoma showed a male predominance (58%) and morphological variants warranting awareness; one case was reclassified from solitary fibrous tumour to palisaded myofibroblastoma.</li>        </ul>
+<li>20 tools reviewed (7 commercial, 13 non-commercial); commercial sources emphasised workflow integration and certification, while non-commercial studies detailed model architecture and code availability.</li><li>Marked heterogeneity in cohorts, assay-scanner combinations, reference standards, and reported decision thresholds precluded direct performance comparison.</li><li>Prospective multi-centre validation and reporting at clinically relevant TPS cut-offs remain scarce.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        These findings directly inform UK breast pathology MDT decision-making, particularly given evolving non-surgical management of desmoid fibromatosis and the risk of overtreatment from misclassification.
+        UK pathology labs considering AI-assisted PD-L1 scoring should locally verify tool performance against their own assay-scanner workflow and TPS thresholds rather than relying on vendor claims or cross-study comparisons.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Single-institution retrospective design over 24 years limits generalisability and introduces selection bias.
+        The review relies solely on publicly available evidence, which is inconsistently reported and largely lacks independent external or prospective validation.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42363645/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1111/his.70228" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42634001/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1111/his.70268" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">Histopathology</div>
-      <h3>Neoplastic transformation of sporadic gastric hyperplastic polyps: a systematic review and meta-analysis of risk factors and clinicopathological features</h3>
-      <div class="sample-meta">Ferreira IM, Simplício M, Vieira RJ et al. · 2026 Jun 26</div>
+      <h3>Plexiform Wagner-Meissner schwannoma with a SH3PXD2A::HTRA1 fusion: a twisted sister?</h3>
+      <div class="sample-meta">Wilsher MJ, Berber O · 2026 Aug 26</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Systematic review and meta-analysis
+        Case report with molecular and immunohistochemical correlation
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        What clinicopathological features and risk factors are associated with neoplastic transformation in sporadic gastric hyperplastic polyps (GHP)?
+        Does Wagner-Meissner (W-M) schwannoma have a distinct molecular driver linking it to other HTRA1-rearranged schwannoma subtypes?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>Overall neoplastic transformation rate was 6.0%; progression to adenocarcinoma occurred in 1.5% of GHPs</li><li>Significant risk factors: age ≥65 years (OR 2.60; 95% CI 1.88–3.59), size ≥20 mm (OR 4.63; 95% CI 1.82–11.77), and intestinal metaplasia in background mucosa (OR 3.65; 95% CI 1.68–7.97)</li><li>Immunophenotypic analysis demonstrated a shift from gastric to hybrid gastric-intestinal phenotype with increasing dysplastic progression; TP53 alterations and chromosomal instability were the predominant molecular events</li>        </ul>
+<li>A plexiform W-M schwannoma from the volar pulp of a 37-year-old woman&#39;s finger harboured a SH3PXD2A::HTRA1 fusion, detected by RNA-based NGS.</li><li>Tumour cells expressed S100, SOX10, Calretinin, and CD56, with NF1 loss; stroma showed CD34 and patchy EMA positivity.</li><li>Findings suggest W-M body formation correlates histologically with the &#34;serpentine&#34; palisading pattern previously reported in HTRA1-fusion schwannomas.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        GI pathologists reporting gastric polyp resections should systematically assess polyp size, patient age, and background mucosal status (intestinal metaplasia, dysplasia) to stratify malignant risk and inform endoscopic surveillance decisions.
+        Recognising SH3PXD2A::HTRA1 fusions in W-M-predominant schwannomas may refine molecular classification and diagnostic algorithms for peripheral nerve sheath tumours in UK histopathology practice, particularly where NGS fusion panels are available.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Quantitative synthesis included only 11 of 58 studies, limiting statistical power and potentially introducing selection bias.
+        Single-case observation limits generalisability; further cases are needed to confirm this fusion as a consistent molecular feature of W-M schwannoma.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42363644/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1111/his.70202" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42644309/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1111/his.70270" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">Histopathology</div>
-      <h3>Malignant adenomyoepithelioma of the breast: seven cases illustrating morphological diversity and diagnostic challenges</h3>
-      <div class="sample-meta">Apornvirat S, Hadi EJ, Gudi M et al. · 2026 Jun 28</div>
+      <h3>Cutaneous lymphomas - an update</h3>
+      <div class="sample-meta">Kempf W, Mitteldorf C · 2026 Aug 27</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Retrospective case series
+        Narrative review / classification update (non-systematic)
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        How does malignant adenomyoepithelioma (M-AME) of the breast present histologically, and what diagnostic criteria support accurate classification?
+        How have recent WHO/ICC classification updates changed the diagnostic approach to primary cutaneous lymphomas and lymphoproliferative disorders?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>Seven cases in women aged 45–74 years demonstrated marked architectural heterogeneity, including metaplastic carcinoma arising within AME, invasive AME with aberrant IHC profiles, adenomyoepithelial adenosis pattern, and M-AME in situ</li><li>Molecular findings in one case included *HRAS* p.G13R mutation and *PIK3R1* in-frame deletion, associated with late lung metastasis, highlighting malignant potential even in morphologically atypical lesions</li><li>Classification into in situ vs invasive M-AME vs conventional carcinoma arising in AME requires integration of morphology, IHC, and molecular data, given significant overlap with metaplastic breast carcinoma and infiltrative-pattern classic AME</li>        </ul>
+<li>Several previously provisional entities (e.g., CD4+ small/medium T-cell LPD, gamma/delta T-cell lymphoma, CD8+ aggressive epidermotropic cytotoxic T-cell lymphoma, EBV+ mucocutaneous ulcer) are now formally recognised diagnostic categories.</li><li>Primary cutaneous CD8+ acral T-cell lymphoma has been reclassified as a lymphoproliferative disorder (renamed &#34;LPD&#34;) reflecting its indolent, excellent-prognosis behaviour.</li><li>Emerging tools highlighted include TCR sequencing, novel immunohistochemical/molecular markers, and AI-assisted diagnostics to improve discrimination between indolent, aggressive, and reactive lymphoid processes.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        For UK breast pathologists, accurate subclassification of M-AME has direct management implications; misclassification risks inappropriate surgical or systemic treatment decisions.
+        Accurate synoptic diagnosis—integrating histology, immunophenotype, and molecular data—is essential for UK pathologists to prevent overtreatment of indolent LPDs or missed aggressive lymphomas, directly affecting staging and referral pathways within NHS haemato-oncology MDTs.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Seven-case series limits generalisability; no outcome data beyond individual case descriptions.
+        As a narrative review, it synthesises expert opinion and classification consensus rather than new primary data, limiting evidence grading.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42365981/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1111/his.70233" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42657966/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1111/his.70269" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
-      <div class="sample-badge">The American journal of surgical pathology</div>
-      <h3>Neuroendocrine Carcinoma of the Gallbladder: Clinicopathologic and Immunohistochemical Analysis of 31 Cases</h3>
-      <div class="sample-meta">Reid MD, Pehlivanoglu B, Memis B et al. · 2026 Jun 24</div>
+      <div class="sample-badge">Histopathology</div>
+      <h3>AI-based segmentation of occult cervical lymph node metastases: potential reduction of cytokeratin staining</h3>
+      <div class="sample-meta">Akrish G, Yoshai E, Akrish S et al. · 2026 Aug 27</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Retrospective cohort analysis (case series with comparative cohort)
+        Retrospective method-development study (deep-learning model validation)
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        What are the clinicopathological, immunohistochemical, and survival characteristics of neuroendocrine carcinomas of the gallbladder (GBNECs)?
+        Can a deep-learning segmentation model detect occult cervical lymph node metastases from H&amp;E sections alone, reducing the need for cytokeratin (CK) immunohistochemistry?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>GBNECs constitute &lt;5% of gallbladder cancers (31/636); two-thirds are mixed with adenocarcinoma, and 72% present at pT3/T4 stage versus 26% in ordinary gallbladder carcinomas (p=0.001)</li><li>Median survival was 6.1 months, markedly worse than ordinary gallbladder carcinoma; pRB/p16 pathway inactivation was present in 83%, predominantly through pRB loss (67%)</li><li>Standard neuroendocrine markers are reliable (synaptophysin 95%, CD56 90%, chromogranin 75%); TTF-1 positivity in 25% does not indicate pulmonary origin in this context</li>        </ul>
+<li>After fine-tuning on lymph node metastases, the model achieved precision 0.8778, recall 0.8607, accuracy 0.9193, and specificity 0.9458.</li><li>Case-level analysis showed reduced Dice scores in harder cases, reflecting difficulty with micrometastatic/occult disease.</li><li>AI-predicted tumour regions showed substantial spatial overlap with CK-positive areas, suggesting reliable localisation of small metastatic deposits using H&amp;E alone.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        Pathologists reporting gallbladder resections should recognise GBNECs as a distinct aggressive entity requiring specific IHC workup, with implications for staging documentation and oncological referral pathways.
+        For NHS head and neck pathology services facing pressure on IHC turnaround times and staffing, this approach could streamline nodal staging in OSCC by triaging cases needing CK confirmation, improving efficiency without necessarily compromising detection of occult metastases.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Small case numbers with incomplete lymph node data limit survival analysis generalisability.
+        Single-institution, expert-annotated dataset with CK used selectively to guide annotation, and no independent multi-centre validation, limiting generalisability.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42333416/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1097/PAS.0000000000002580" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42656182/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1111/his.70267" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
-      <div class="sample-badge">The American journal of surgical pathology</div>
-      <h3>NF2/Merlin Immunohistochemistry Helps Distinguish Collecting Duct Carcinoma From Upper Tract Urothelial Carcinoma</h3>
-      <div class="sample-meta">Baraban E, Palsgrove DN, Yol C et al. · 2026 Jun 25</div>
+      <div class="sample-badge">Histopathology</div>
+      <h3>Histological manifestations of vitamin A toxicity in the liver</h3>
+      <div class="sample-meta">Cazzaniga G, Lietz G, Tiniakos DG · 2026 Aug 27</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Retrospective analysis (diagnostic accuracy study)
+        Systematic literature review (narrative synthesis of 39 studies/84 liver samples)
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Can NF2/Merlin immunohistochemistry reliably distinguish collecting duct carcinoma (CDC) from upper tract urothelial carcinoma (UTUC)?
+        What are the histopathological features of vitamin A-induced liver toxicity in humans?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>NF2/Merlin loss was identified in 10/16 CDC cases (63%) versus 0/35 UTUC cases (0%; P&lt;0.000001), indicating high specificity for CDC in this differential.</li><li>IHC loss correlated with confirmed NF2 mutations in 6/6 sequenced cases; however, 2/7 CDC cases without detectable NF2 mutations also showed protein loss, indicating imperfect IHC–molecular concordance.</li><li>NF2/Merlin loss is not sensitive enough to exclude CDC when absent, but its presence strongly favours CDC over UTUC.</li>        </ul>
+<li>Hepatic stellate cell hypertrophy/hyperplasia was the near-universal finding (90.1%), representing the primary adaptive storage response.</li><li>Progressive injury patterns included sinusoidal fibrosis (44.1%), chronic hepatitis (23.8%), and cirrhosis (25.0%), with severity linked to cumulative dose and duration (mean intake 112,006 IU/day over 6.8 years).</li><li>Most cases arose from medical therapy (67.9%) or supplements (27.4%), affecting a wide age range (3–78 years) with balanced sex distribution.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        CDC and UTUC require different treatment strategies; this marker offers an objective IHC adjunct for pathologists encountering diagnostically challenging infiltrative renal carcinomas with tubular architecture.
+        Provides UK liver pathologists with a histological reference framework for recognising VitA-related hepatotoxicity—relevant given rising supplement use and retinoid-based therapies—supporting differentiation from other steatotic/fibrotic liver diseases.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Small CDC cohort (n=16) limits precision of sensitivity estimates and generalisability.
+        Small, heterogeneous case-level dataset spanning six decades limits standardisation of histological criteria and generalisability.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42340165/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1097/PAS.0000000000002584" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42656135/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1111/his.70271" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Modern pathology : an official journal of the United States and Canadian Academy of Pathology, Inc</div>
+      <h3>Radiologic, Pathologic, and Deep Learning Predictors of Response to Immune Checkpoint Blockade in Renal Cell Carcinoma Patients Undergoing Post-Treatment Nephrectomy</h3>
+      <div class="sample-meta">Kapur P, Christie A, Jarmale V et al. · 2026 Aug 24</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Retrospective cohort study
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Do radiologic, pathologic, and deep learning (DL)-derived response metrics predict clinical outcomes in RCC patients receiving ICI therapy before nephrectomy?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Radiologic shrinkage ≥30% was significantly associated with longer freedom from next systemic therapy (FFNT) (p=0.0036).</li><li>Greater pathologic regression correlated with prolonged FFNT (HR 0.97, 95% CI 0.95–0.99; p=0.0023), with concordant DL-based quantification (HR 0.96, 95% CI 0.93–0.99; p=0.0041).</li><li>Coagulative tumour necrosis remained associated with worse outcomes; DL-derived immune infiltrate and tumour size independently predicted FFNT on multivariable analysis.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        Establishes reproducible pathologic and AI-assisted criteria for assessing ICI treatment response in nephrectomy specimens, potentially informing standardised reporting and postoperative treatment stratification within UK renal cancer MDTs.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Single-centre, retrospective design with modest sample size (n=99) limits generalisability pending prospective validation.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42637010/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.modpat.2026.101069" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Modern pathology : an official journal of the United States and Canadian Academy of Pathology, Inc</div>
+      <h3>Integrated Bulk and Spatial Proteomics of Castleman Disease: Molecular Signatures Across Subtypes and Compartmentalized Pathogenic Networks in iMCD-TAFRO</h3>
+      <div class="sample-meta">Zheng S, Huang Y, Huang X et al. · 2026 Aug 25</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Translational research study (integrated bulk and spatial proteomic analysis of lymph node tissue)
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        What proteomic signatures distinguish Castleman disease subtypes, and what spatially compartmentalised molecular pathways drive iMCD-TAFRO pathogenesis?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Bulk proteomics differentiated hyaline vascular vs plasmacytic CD variants, showed systemic complement activation distinguishing iMCD from UCD, and supported iMCD-IPL as a molecularly distinct entity.</li><li>iMCD-TAFRO showed upregulated angiogenesis (PDGFRβ, NOTCH3), interferon signalling (STAT1/ISG15), and fibrosis markers (COL3A1/LOXL1).</li><li>Spatial proteomics revealed compartment-specific pathology: intrafollicular vessels enriched for myofibroblast/pyroptosis markers (ACTA2, GSDMD, TFRC); interfollicular regions showing TGF-β/SMAD3-driven fibrosis (LOXL1); follicular zones showing complement activation (CFHR1/2) and M2 macrophage infiltration.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        These findings refine molecular classification of Castleman disease subtypes and identify candidate diagnostic biomarkers and therapeutic targets relevant to UK haematopathology services managing this rare, diagnostically challenging condition.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Likely limited by small sample size given tissue scarcity in this rare disease, restricting generalisability and statistical power.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42641686/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.modpat.2026.101071" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
 
+    <div class="tease">
+      <p>…and <em>16 more</em> Pathology articles in that week's digest.</p>
+      <small>Subscribers get the complete brief, every Monday.</small>
+    </div>
   </div>
 </section>
 
@@ -306,15 +370,32 @@
 <section class="cta-section">
   <h2>Get the Pathology digest in your inbox every Monday</h2>
   <p>4 weeks completely free, then £20/year. Cancel any time during your trial — no charge.</p>
-  <a href="/?specialty=pathology&ref=samples#subscribe" class="cta-btn">Start your free trial — Pathology →</a>
+  <a href="/?specialty=pathology&amp;ref=samples#subscribe" class="cta-btn">Start your free trial — Pathology →</a>
   <span class="cta-meta">No card needed to browse. We'll ask for payment details to start the trial.</span>
 </section>
 
 <!-- ═══ FOOTER ═══ -->
 <footer>
   <p>&copy; 2026 The Monday Clinical Brief</p>
-  <p><a href="/">Home</a> · <a href="mailto:info@mondayclinicalbrief.co.uk">Contact</a> · <a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms</a></p>
+  <p><a href="/samples/">Samples</a> · <a href="/blog/">Blog</a> · <a href="/methodology/">Methodology</a> · <a href="/about/">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p>
 </footer>
+
+<script>
+// Measure the fixed mobile bottom bar so the body reserves its true height.
+(function () {
+  var nav = document.querySelector('nav');
+  if (!nav) return;
+  function sync() {
+    var fixed = getComputedStyle(nav).position === 'fixed';
+    document.documentElement.style.setProperty('--bottom-nav-h', fixed ? nav.offsetHeight + 'px' : '0px');
+  }
+  sync();
+  addEventListener('resize', sync);
+  addEventListener('orientationchange', sync);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(sync);
+  if (window.ResizeObserver) new ResizeObserver(sync).observe(nav);
+})();
+</script>
 
 </body>
 </html>

@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Neurosurgery Sample Digest — The Monday Clinical Brief</title>
-<meta name="description" content="See what Neurosurgery clinicians received in this Monday's digest: 48 new articles from Acta neurochirurgica, World neurosurgery, Neurosurgery summarised every Monday by The Monday Clinical Brief.">
+<meta name="description" content="See what Neurosurgery clinicians received in this Monday's digest: 23 new articles from Journal of neurosurgery. Spine, World neurosurgery, Journal of neurosurgery summarised every Monday by The Monday Clinical Brief.">
 <link rel="canonical" href="https://mondayclinicalbrief.co.uk/samples/neurosurgery/">
 <meta property="og:title" content="Neurosurgery — Monday Clinical Brief Sample Digest">
-<meta property="og:description" content="48 new Neurosurgery papers summarised this week. Free 4-week trial.">
+<meta property="og:description" content="23 new Neurosurgery papers summarised this week. Free 4-week trial.">
 <meta property="og:url" content="https://mondayclinicalbrief.co.uk/samples/neurosurgery/">
 <meta property="og:type" content="article">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -89,9 +89,12 @@
   footer a { color: var(--sage); text-decoration: none; }
 
   @media (max-width: 640px) {
-    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; }
+    /* Fixed bottom bar — reserve its measured height, not a flat 60px. */
+    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; align-items: center; gap: 0.75rem; }
     .nav-links a:not(.nav-cta) { display: none; }
-    body { padding-bottom: 60px; }
+    .nav-brand { font-size: 0.9rem; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+    .nav-cta { flex-shrink: 0; }
+    body { padding-bottom: calc(var(--bottom-nav-h, 64px) + env(safe-area-inset-bottom, 0px)); }
     .page-header { padding: 3.5rem 1.5rem 2.5rem; }
     section { padding: 2rem 1.5rem 3.5rem; }
     .sample-card { padding: 1.5rem; }
@@ -106,24 +109,25 @@
 <nav>
   <a href="/" class="nav-brand">The Monday Clinical Brief</a>
   <div class="nav-links">
+    <a href="/samples/">Samples</a>
+    <a href="/blog/">Blog</a>
     <a href="/#how">How it works</a>
-    <a href="/#about">About</a>
     <a href="/?specialty=neurosurgery#subscribe" class="nav-cta">Start free trial</a>
   </div>
 </nav>
 
 <!-- ═══ HEADER ═══ -->
 <header class="page-header">
-  <div class="eyebrow">Sample Digest · Wednesday 1 July 2026</div>
+  <div class="eyebrow">Sample Digest · Tuesday 1 September 2026</div>
   <h1>A recent Neurosurgery digest,<br><em>as sent to subscribers</em></h1>
-  <p class="lede">This is the real Monday digest from Wednesday 1 July 2026. Showing the first 8 of 48 articles from that week — every new paper from the top journals in Neurosurgery.</p>
+  <p class="lede">This is a real digest, generated on Tuesday 1 September 2026. Showing the first 8 of 23 articles from that week — every new paper from the top 5 journals in Neurosurgery.</p>
   <div class="stat-bar">
-    <div class="stat"><strong>48</strong><span>articles that week</span></div>
-    <div class="stat"><strong>5</strong><span>journals covered</span></div>
+    <div class="stat"><strong>23</strong><span>articles that week</span></div>
+    <div class="stat"><strong>5</strong><span><a href="/methodology/">journals monitored</a></span></div>
     <div class="stat"><strong>£0</strong><span>for your first 4 weeks</span></div>
   </div>
   <div class="disclaimer">
-    <strong>Note:</strong> Summaries are AI-generated from publicly available PubMed abstracts. Always verify against the source article before clinical use.
+    <strong>Note:</strong> Summaries are AI-generated from publicly available PubMed abstracts. Always verify against the source article before clinical use. <a href="/methodology/">How we choose journals and write summaries →</a>
   </div>
 </header>
 
@@ -132,231 +136,231 @@
   <div class="container">
     <div class="sample-card">
       <div class="sample-badge">Acta neurochirurgica</div>
-      <h3>Intracranial pressure changes and outcomes in the early phase of experimental subarachnoid hemorrhage: severity of subarachnoid hemorrhage and maximum intracranial pressure</h3>
-      <div class="sample-meta">Fujii K, Takeuchi S, Toyooka T et al. · 2026 Jun 20</div>
-      <div class="summary-field">
-        <span class="summary-label">Study Type:</span>
-        Experimental animal study (rat model)
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Question:</span>
-        Does maximum ICP in the early phase of experimental SAH correlate with neurological outcome and SAH severity, and can it serve as a reliable severity classifier?
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Findings:</span>
-        <ul>
-<li>Maximum ICP strongly correlated with neurological score, SAH grade, and 24-hour mortality across four groups (sham; mild &lt;50 mmHg; moderate 50–149 mmHg; severe ≥150 mmHg)</li><li>Higher maximum ICP was associated with greater cortical and hippocampal neuronal damage, apoptosis, and oxidative stress on histology at 24 hours</li><li>Moderate ICP group (50–149 mmHg) identified as the most reproducible and clinically translatable tier for SAH research</li>        </ul>
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Clinical Relevance:</span>
-        Establishes ICP monitoring as a valid severity-stratification tool in preclinical SAH models, which has implications for interpreting translational research underpinning future ICP-targeted therapies relevant to UK neurocritical care practice.
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Limitations:</span>
-        Findings are confined to a rodent model and may not translate directly to human SAH pathophysiology or ICP dynamics.
-      </div>
-      <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42322464/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1007/s00701-026-06953-w" target="_blank" rel="noopener">DOI →</a>      </div>
-    </div>
-    <div class="sample-card">
-      <div class="sample-badge">Acta neurochirurgica</div>
-      <h3>CT-positive traumatic brain injury in patients ≥ 80 years: mortality and 6-months functional outcome</h3>
-      <div class="sample-meta">Aarhus M, Netteland DF, Tverdal C et al. · 2026 Jun 20</div>
+      <h3>Idiopathic intracranial hypertension and pregnancy: outcomes in previously shunted women</h3>
+      <div class="sample-meta">Polemikos M, Heissler HE, Hermann EJ et al. · 2026 Aug 29</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
         Retrospective cohort study
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Does neurosurgical intervention improve mortality and functional outcomes in patients aged ≥80 years with CT-confirmed traumatic brain injury?
+        Does pregnancy or vaginal delivery affect shunt function or disease recurrence in women with idiopathic intracranial hypertension (IIH) previously treated with VP shunting?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>Neurosurgical intervention reduced 30-day mortality (HR 0.46, 95% CI 0.28–0.76) but conferred no survival benefit at one year (HR 0.84, 95% CI 0.63–1.12)</li><li>Favourable 6-month outcome (GOS 4–5) was similar between surgical (29%) and conservatively managed (34%) patients; preinjury dependency, age, ASA class, and injury severity were the strongest predictors of poor outcome</li><li>Delayed trephination for chronic subdural haematoma carried only 5% mortality, whereas acute craniotomy was associated with significantly worse outcomes</li>        </ul>
+<li>Among 61 shunted IIH patients, 9 women had 12 pregnancies (live births) at a median of 40.5 months post-shunting; 9/12 deliveries were vaginal, with no shunt adjustment, infection, or malfunction.</li><li>IIH onset was unrelated to pregnancy in all but one case; that patient developed refractory visual loss in the first trimester, managed successfully with VP shunting at 11 weeks&#39; gestation followed by elective Caesarean section.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        This challenges routine surgical escalation in octogenarians with TBI, supporting a goals-of-care and functional-baseline approach to neurosurgical decision-making — directly relevant to MDT practice across UK major trauma centres.
+        Provides reassurance for UK neurosurgical and obstetric teams that pregnancy and vaginal delivery are generally safe in women with programmable/gravitational VP shunts for IIH, supporting multidisciplinary, individualised management rather than routine Caesarean or shunt revision.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Single-centre retrospective design limits generalisability and introduces selection bias in surgical case allocation.
+        Small sample size (9 women, 12 pregnancies) from a single centre limits generalisability and statistical power.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42322349/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1007/s00701-026-06964-7" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42671619/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1007/s00701-026-07017-9" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
-      <div class="sample-badge">Acta neurochirurgica</div>
-      <h3>Next-generation sequencing (NGS) analysis and age-based survival comparison among glioblastoma (GBM) patients: a two-center cohort study</h3>
-      <div class="sample-meta">Lee CO, Park SY, Yun Y et al. · 2026 Jun 23</div>
+      <div class="sample-badge">Journal of neurosurgery</div>
+      <h3>Refining the posterior compartment of the cavernous sinus: a detailed reappraisal of surgical anatomy and techniques for invasive pituitary adenoma resection</h3>
+      <div class="sample-meta">Xu Y, Uchida T, Burgos-Sosa E et al. · 2026 Aug 28</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Retrospective two-centre cohort study
+        Cadaveric anatomical study with illustrative surgical case review
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Do younger and elderly GBM patients differ in molecular genetics (via NGS) and survival outcomes?
+        What is the detailed microsurgical anatomy of the posterior cavernous sinus compartment relevant to safe endoscopic endonasal resection of invasive pituitary adenomas?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>Elderly patients (≥65 years) had significantly shorter median OS (11.0 vs 18.0 months; p=0.001); multivariate analysis confirmed age as independent adverse prognostic factor (HR 1.961, p=0.002)</li><li>MGMT methylation was more prevalent in elderly patients (p=0.009) and independently protective (HR 0.513, p=0.004); GTR and Stupp protocol completion also independently improved survival</li><li>No NGS-derived mutation (including ATRX, MET, CDK6 amplification) reached statistical significance between age groups after correction for multiple testing</li>        </ul>
+<li>Posterior compartment shape was triangular in 66.7% and quadrilateral in 33.3% of hemispheres, determined by ICA posterior genu angulation.</li><li>Posterior parasellar ligament identified in 64% (42% two-anchor, 58% net-like); Gruber&#39;s ligament seen as a robust band in 78% (59% ossified), forming potential corridors for tumour invasion/residual disease.</li><li>Four consistent venous outlets (basilar, foramen lacerum, inferior and superior petrosal plexuses) were mapped as key landmarks.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        Supports continued MGMT methylation testing across all age groups in NHS GBM pathways, as elderly patients may particularly benefit from temozolomide-based regimens despite lower Stupp protocol completion rates.
+        Provides UK skull-base neurosurgeons with anatomical landmarks and ligamentous/venous corridors to improve safety and completeness of EEA resection for invasive pituitary adenomas extending into the posterior cavernous sinus.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Small sample (n=124) limits statistical power to detect molecular differences between age groups, and non-significant NGS trends should be interpreted cautiously.
+        Findings are based on cadaveric dissection, which may not fully replicate tumour-distorted anatomy or intraoperative variability seen in vivo.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42334679/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1007/s00701-026-06924-1" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42664526/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.3171/2026.4.JNS252898" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
-      <div class="sample-badge">Acta neurochirurgica</div>
-      <h3>Transient cerebellum-related network disruption characterizes postoperative cognitive changes after dominant hemisphere subtemporal meningioma resection</h3>
-      <div class="sample-meta">Liu Z, Li Y, Jiang J et al. · 2026 Jun 23</div>
+      <div class="sample-badge">Journal of neurosurgery</div>
+      <h3>A discrete-time Markov pipeline model of neurosurgical workforce attrition and retention rates across Africa through 2030</h3>
+      <div class="sample-meta">Kanmounye US, Karekezi C, Farazi Z et al. · 2026 Aug 28</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Prospective cohort study
+        Modelling study (discrete-time Markov pipeline simulation with Monte Carlo uncertainty analysis)
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Does dominant-hemisphere petroclival meningioma resection via the extradural subtemporal approach cause distinct postoperative cognitive changes, and what are the corresponding neuroimaging correlates?
+        How will the African neurosurgical workforce evolve by 2030 under different policy scenarios, and what infrastructure/training constraints limit subspecialisation?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>Dominant-side resection caused significant short-term cognitive decline across multiple domains (MMSE Δ−6.4, MoCA Δ−5.1, SDMT Δ−17.8); non-dominant-side resection did not</li><li>rs-fMRI identified reduced spontaneous activity in left thalamus, middle temporal gyrus, and middle frontal gyrus, with attenuated cerebello-cortical and cerebello-subcortical functional connectivity in cognitively impaired patients</li><li>Cognitive deficits and neuroimaging changes largely resolved by three months postoperatively</li>        </ul>
+<li>Baseline projection: workforce grows from a median of 10 neurosurgeons/country to 5888 by 2030 (+43.1%); a policy pack (scholarships, mentorship, equipment) increases this to 8809 (+49.6% over baseline).</li><li>Training bottlenecks are severe: ~231 interested medical students annually vs. limited residency capacity, with waiting lists growing by ~154 applicants/year.</li><li>Equipment readiness varies extremely (only Egypt scores 0.81; 21 countries &lt;0.10), limiting subspecialisation; policy pack significantly raised projected female workforce share (OR 1.28, 95% CI 1.01–1.61, p=0.04).</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        For UK neurosurgeons managing skull base meningiomas, this highlights the need for structured preoperative counselling and postoperative cognitive monitoring in dominant-hemisphere cases, and supports three-month neuropsychological follow-up as a minimum standard.
+        Highlights systemic training and infrastructure bottlenecks relevant to UK-Africa neurosurgical partnerships, fellowship programmes, and global health engagement/workforce planning initiatives.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Very small sample (n=23, recruited over six months), limiting statistical power and generalisability.
+        Findings rely on modelled projections and survey-derived inputs with inherent uncertainty, rather than direct empirical workforce tracking.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42334641/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1007/s00701-026-06926-z" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42664525/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.3171/2026.3.JNS252665" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
-      <div class="sample-badge">Acta neurochirurgica</div>
-      <h3>An agentic AI framework for integrated decision support and surgical planning in intracerebral hemorrhage</h3>
-      <div class="sample-meta">Kochuiev E, Kaliuzhka V, Markevych M et al. · 2026 Jun 23</div>
+      <div class="sample-badge">Journal of neurosurgery</div>
+      <h3>A surgeon beyond his era: neurosurgical contributions of Eugène-Louis Doyen (1859-1916)</h3>
+      <div class="sample-meta">Tayebi Meybodi A, On TJ, Payman AA et al. · 2026 Aug 28</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Retrospective validation study (single-centre, n=50)
+        Historical/biographical commentary (not original clinical research)
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Can an agentic AI framework reliably replicate expert decision-making and surgical trajectory planning for spontaneous intracerebral haemorrhage?
+        What were Eugène-Louis Doyen&#39;s contributions to the early development of neurosurgical technique, particularly for trigeminal neuralgia?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>AI treatment recommendations agreed with expert consensus in 82% of cases (41/50; κ=0.71), with discrepancies concentrated in borderline surgical candidates</li><li>Automated trajectory planning generated feasible minimally invasive corridors in all 50 cases; median angular deviation from expert-defined trajectories was 7.6° (IQR 5.1–9.8°)</li><li>AI-generated trajectories demonstrated equal or superior safety margins to expert planning in the majority of evacuation candidates</li>        </ul>
+<li>Doyen combined the Hartley-Krause subtemporal and Rose sphenoidal routes to develop a refined trigeminal ganglionectomy technique aimed at reducing complications.</li><li>He innovated surgical instrumentation, including an electric craniotome, dural detachment tools, and devices enabling en bloc ganglion resection.</li><li>He pioneered a minimally invasive retrosigmoid approach using a speculum and custom neurotome to divide the trigeminal sensory root, prefiguring modern cerebellopontine angle endoscopic techniques.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        This framework could reduce operator-dependent variability in ICH surgical planning, relevant to UK centres managing high case volumes with variable subspecialty expertise across regional neurosurgical networks.
+        Provides historical context for the evolution of skull base and trigeminal neuralgia surgery, illustrating the technical lineage underpinning contemporary retrosigmoid and endoscopic approaches used in UK neurosurgical practice.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Small retrospective single-centre dataset of 50 cases limits generalisability, and prospective clinical validation with patient outcome data is absent.
+        As a historical narrative review, it lacks primary clinical data or outcome analysis to substantiate efficacy claims.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42332303/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1007/s00701-026-06954-9" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42664524/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.3171/2026.4.JNS252504" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
-      <div class="sample-badge">Acta neurochirurgica</div>
-      <h3>Improved visual outcomes after endoscopic endonasal transsphenoidal surgery for pituitary macroadenomas: a single-arm meta-analysis</h3>
-      <div class="sample-meta">Gupta K, Ashraf M, Farahnak D et al. · 2026 Jun 24</div>
+      <div class="sample-badge">Journal of neurosurgery</div>
+      <h3>Voxel-based analysis of glioblastoma topography and invasiveness using the Brain-Grid system: a multicenter retrospective study</h3>
+      <div class="sample-meta">Arcidiacono UA, Bonada M, Falanga A et al. · 2026 Aug 28</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Single-arm meta-analysis (29 studies; n=2,943)
+        Retrospective multicenter cohort study
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        What are the pooled postoperative visual field outcomes following endoscopic endonasal transsphenoidal surgery (EETS) for pituitary macroadenomas?
+        Can a standardised voxel-based mapping system (Brain-Grid) quantify glioblastoma location and invasiveness to improve prognostic stratification?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>Visual field improvement achieved in 79% of patients (95% CI: 73–84%); complete normalisation in 41% (95% CI: 29–53%)</li><li>Visual field deterioration was rare at 1% (95% CI: 0–1%); 19% remained unchanged</li><li>Pooled CSF leak rate was 7% (95% CI: 4–10%)</li>        </ul>
+<li>Greater tumor infiltration (≥6 BG voxels) was associated with shorter OS (p=0.012); mean OS was 14.4±8.86 months across 116 patients.</li><li>Tumors most frequently involved basal ganglia/subventricular zone voxels; posterior tumor location predicted better survival (AUC 0.71), and resection involving voxel A2-C2-S3 correlated with improved OS (p=0.03).</li><li>Higher pre-/postoperative tumor volume and lower extent of resection independently predicted worse survival (p=0.012, 0.001, 0.002); MGMT methylation showed no survival or spatial correlation (p=0.15).</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        These figures provide benchmark outcome rates directly applicable to preoperative counselling for pituitary macroadenoma patients in UK neurosurgical practice, where EETS is now the standard approach.
+        Offers UK neurosurgical teams a reproducible, voxel-based framework to integrate tumor topography and infiltration extent into preoperative MDT planning and prognostic counselling, complementing molecular data.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Significant heterogeneity in visual field testing methodology and follow-up timing across included studies limits the validity of pooled estimates as standardised recovery benchmarks.
+        Retrospective design with modest sample size limits causal inference and generalisability of voxel-based cutoffs.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42340522/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1007/s00701-026-06967-4" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42664519/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.3171/2026.3.JNS252145" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
-      <div class="sample-badge">Acta neurochirurgica</div>
-      <h3>Case study of monozygotic triplets with identical pineal cysts. Is pineal cyst hereditary condition?</h3>
-      <div class="sample-meta">Balasubramaniam N, Musil Z, Chroboková K et al. · 2026 Jun 24</div>
+      <div class="sample-badge">Journal of neurosurgery. Spine</div>
+      <h3>The association between direct admission to level I trauma centers and lower in-hospital mortality in operative spine trauma</h3>
+      <div class="sample-meta">Ng MK, Mastrokostas LE, Mastrokostas PG et al. · 2026 Aug 28</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Case series with retrospective institutional database review
+        Retrospective cohort study (National Trauma Data Bank, 2023)
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Do genetic factors contribute to pineal cyst formation, and is there evidence for hereditary predisposition?
+        Does trauma center level (I vs II) influence in-hospital mortality after operative spine trauma, and does this vary by whether patients are directly admitted or transferred?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>Monozygotic male triplets each harboured morphologically identical 14 mm pineal cysts despite differing clinical presentations</li><li>Whole-exome sequencing identified a germline *HERC2* nonsense variant and a somatic *INO80E* frameshift mutation in cyst tissue, suggesting a possible two-hit oncogenic model</li><li>Institutional database review (n=243) revealed familial clustering in four unrelated families, with identical cyst sizes in three of four families — all affected relatives were first-degree</li>        </ul>
+<li>Among 12,516 operative spine trauma patients, direct admission to a level I centre was associated with significantly lower adjusted mortality odds versus level II (aOR 0.62, 95% CI 0.39–0.97, p=0.037).</li><li>No mortality benefit was seen for interfacility transfers to level I centres (aOR 0.88, 95% CI 0.47–1.68, p=0.693).</li><li>Level I centres treated more severely injured and comorbid patients, and received a disproportionate share of transfers.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        Incidental pineal cysts are frequently encountered in UK neurosurgical practice; evidence of hereditary clustering may prompt clinician awareness when taking family histories, though current surveillance protocols remain unaffected.
+        Supports prioritising direct prehospital transport to major trauma centres for spine trauma patients within UK trauma networks, as delayed transfer may negate survival benefits of specialist care.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Causality cannot be established from a single case and small retrospective database review; ascertainment bias is likely.
+        Retrospective registry data cannot fully capture prehospital timing, transfer delays, or unmeasured confounders influencing triage decisions.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42340433/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1007/s00701-026-06966-5" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42664523/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.3171/2026.4.SPINE26178" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
-      <div class="sample-badge">Acta neurochirurgica</div>
-      <h3>How I do it: pediatric lateral-type posterior fossa ependymoma resection</h3>
-      <div class="sample-meta">Horčičáková K, Táborský J, Trková K et al. · 2026 Jun 25</div>
+      <div class="sample-badge">Journal of neurosurgery. Spine</div>
+      <h3>Association between postoperative ketorolac use and pseudarthrosis following anterior lumbar interbody fusion: retrospective analysis of a multicenter national database</h3>
+      <div class="sample-meta">Luck T, Cush C, Wang N et al. · 2026 Aug 28</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Technical case report / operative &#34;how I do it&#34; description
+        Retrospective cohort study (propensity-matched, multicenter database analysis)
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        What surgical approach and technique achieves safe gross total resection of lateral-type posterior fossa ependymoma in a young child?
+        Does postoperative ketorolac use increase pseudarthrosis risk following anterior lumbar interbody fusion (ALIF)?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>Single case of a 2-year-old presenting with torticollis and vomiting, harbouring a cerebellopontine angle ependymoma</li><li>Gross total resection was achieved following pre-operative external ventricular drain insertion to manage hydrocephalus</li><li>Authors assert GTR as the primary determinant of prognosis in this tumour subtype</li>        </ul>
+<li>Among 2408 matched patients per cohort, ketorolac was associated with a *lower* pseudarthrosis rate at 2 years (3.99% vs 5.44%; RR 0.733, 95% CI 0.567–0.948, p=0.017), not increased risk.</li><li>No significant difference in reoperation rate (4.82% vs 5.31%; RR 0.906, p=0.430) or postoperative opioid use (21.7% vs 21.8%; p=0.972).</li><li>No difference in 90-day complications (bleeding, hematoma/seroma, infection, ileus)—none occurred in either group.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        Lateral-type posterior fossa ependymomas are rare and technically demanding; this operative description may inform surgical planning for paediatric neurosurgeons managing similar cases at UK specialist centres.
+        Supports safe use of short-course postoperative NSAIDs as opioid-sparing analgesia after ALIF, relevant to NHS enhanced recovery and opioid-reduction pathways in spinal surgery.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Single-case technical report with no outcome data, follow-up, or comparative series — no generalisable conclusions can be drawn regarding efficacy or safety.
+        Retrospective database design relies on coding accuracy and lacks granular data on ketorolac dose/duration, limiting causal inference.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42342978/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1007/s00701-026-06960-x" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42664522/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.3171/2026.4.SPINE26198" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Journal of neurosurgery. Spine</div>
+      <h3>Do outcomes diverge over time? A 5-year Spine CORe™ Quality Outcomes Database study comparing patient-reported outcomes after minimally invasive versus open surgery for degenerative grade 1 lumbar spondylolisthesis</h3>
+      <div class="sample-meta">Khan FA, Chabot PJ, Chou D et al. · 2026 Aug 28</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Prospective multicentre cohort study (registry-based, Quality Outcomes Database)
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Do patient-reported outcomes after MIS versus open surgery for grade 1 lumbar spondylolisthesis diverge over 5-year follow-up?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>No difference in ODI, EQ-5D, or pain scores between MIS and open surgery at 3 and 12 months.</li><li>By 24 and 60 months, MIS showed greater ODI improvement (e.g., -25.8 vs -20.9 at 24 months, p=0.0116) and higher MCID achievement (72.8% vs 61.1% at 24 months, p=0.009); effect persisted on multivariable analysis (OR 1.6–2.0).</li><li>Divergence was significant in arthrodesis patients but not in decompression-only subgroups; MIS also had less blood loss and shorter length of stay, with no difference in complications or reoperation.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        Supports considering MIS with fusion for long-term disability benefit in appropriately selected spondylolisthesis patients, relevant to NHS spinal units balancing resource use, training capacity, and patient selection for MIS pathways.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Non-randomised registry design with baseline differences between groups (age, BMI, arthrodesis rate) introduces potential residual confounding despite multivariable adjustment.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42664520/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.3171/2026.4.SPINE26180" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
 
     <div class="tease">
-      <p>…and <em>40 more</em> Neurosurgery articles in that week's digest.</p>
+      <p>…and <em>15 more</em> Neurosurgery articles in that week's digest.</p>
       <small>Subscribers get the complete brief, every Monday.</small>
     </div>
   </div>
@@ -366,15 +370,32 @@
 <section class="cta-section">
   <h2>Get the Neurosurgery digest in your inbox every Monday</h2>
   <p>4 weeks completely free, then £20/year. Cancel any time during your trial — no charge.</p>
-  <a href="/?specialty=neurosurgery&ref=samples#subscribe" class="cta-btn">Start your free trial — Neurosurgery →</a>
+  <a href="/?specialty=neurosurgery&amp;ref=samples#subscribe" class="cta-btn">Start your free trial — Neurosurgery →</a>
   <span class="cta-meta">No card needed to browse. We'll ask for payment details to start the trial.</span>
 </section>
 
 <!-- ═══ FOOTER ═══ -->
 <footer>
   <p>&copy; 2026 The Monday Clinical Brief</p>
-  <p><a href="/">Home</a> · <a href="mailto:info@mondayclinicalbrief.co.uk">Contact</a> · <a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms</a></p>
+  <p><a href="/samples/">Samples</a> · <a href="/blog/">Blog</a> · <a href="/methodology/">Methodology</a> · <a href="/about/">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p>
 </footer>
+
+<script>
+// Measure the fixed mobile bottom bar so the body reserves its true height.
+(function () {
+  var nav = document.querySelector('nav');
+  if (!nav) return;
+  function sync() {
+    var fixed = getComputedStyle(nav).position === 'fixed';
+    document.documentElement.style.setProperty('--bottom-nav-h', fixed ? nav.offsetHeight + 'px' : '0px');
+  }
+  sync();
+  addEventListener('resize', sync);
+  addEventListener('orientationchange', sync);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(sync);
+  if (window.ResizeObserver) new ResizeObserver(sync).observe(nav);
+})();
+</script>
 
 </body>
 </html>

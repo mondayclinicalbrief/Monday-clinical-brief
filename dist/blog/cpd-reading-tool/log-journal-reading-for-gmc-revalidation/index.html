@@ -13,7 +13,10 @@
 <meta property="og:description" content="A step-by-step guide to logging medical journal reading for GMC revalidation. What counts, what to include, and how to present it to your appraiser.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://mondayclinicalbrief.co.uk/blog/cpd-reading-tool/log-journal-reading-for-gmc-revalidation/">
-
+<meta property="og:image" content="https://mondayclinicalbrief.co.uk/assets/brand/mcb-og-1200x630-v2.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How to Log Journal Reading for GMC Revalidation — The Monday Clinical Brief">
 <meta property="og:site_name" content="The Monday Clinical Brief">
 
 <!-- Twitter Card -->
@@ -122,9 +125,15 @@
   footer a { color: var(--sage); text-decoration: none; }
 
   @media (max-width: 640px) {
-    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; }
+    /* Fixed bottom bar on mobile. The brand used to wrap to two lines at
+       390px, making the bar ~123px tall while the body reserved only 60px —
+       so the footer sat underneath it. Keep the brand on one line and reserve
+       the bar's measured height via a custom property. */
+    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; align-items: center; gap: 0.75rem; }
     .nav-links a:not(.nav-cta) { display: none; }
-    body { padding-bottom: 60px; }
+    .nav-brand { font-size: 0.9rem; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+    .nav-cta { flex-shrink: 0; }
+    body { padding-bottom: calc(var(--bottom-nav-h, 64px) + env(safe-area-inset-bottom, 0px)); }
     .breadcrumb { padding-top: 2rem; }
     .article-header { padding-top: 1rem; }
     .article-header h1 { font-size: 1.8rem; }
@@ -142,7 +151,7 @@
   "description": "A step-by-step guide to logging medical journal reading for GMC revalidation. What counts, what to include, and how to present it to your appraiser.",
   "url": "https://mondayclinicalbrief.co.uk/blog/cpd-reading-tool/log-journal-reading-for-gmc-revalidation/",
   "datePublished": "2026-05-19T00:00:00.000Z",
-  "dateModified": "2026-07-16T00:00:00.000Z",
+  "dateModified": "2026-09-01T00:00:00.000Z",
   "author": {
     "@type": "Person",
     "name": "Dr Tim Hamilton",
@@ -155,7 +164,7 @@
     "name": "Dr Tim Hamilton",
     "jobTitle": "Consultant in Palliative Medicine"
   },
-  "lastReviewed": "2026-07-16T00:00:00.000Z",
+  "lastReviewed": "2026-09-01T00:00:00.000Z",
   "publisher": {
     "@type": "Organization",
     "name": "The Monday Clinical Brief",
@@ -217,6 +226,7 @@
 </nav>
 
 <!-- ═══ BREADCRUMB ═══ -->
+<main id="main">
 <div class="breadcrumb" aria-label="Breadcrumb">
   <ol>
     <li><a href="/">Home</a></li>
@@ -285,7 +295,7 @@
 <li><strong>NHS appraisal platform.</strong> SARD, PReP, L2P, or a trust-specific system. Usually requires manual entry.</li>
 <li><strong>A spreadsheet.</strong> Five columns matching the fields above. Simple, portable, searchable. Good for doctors between systems or with multi-site work.</li>
 <li><strong>A dedicated CPD reading tool.</strong> The MCB CPD Tracker — included free with an annual <a href="/#subscribe">Monday Clinical Brief subscription</a> — is purpose-built for logging journal reading, with reflection prompts and export to appraisal formats.</li>
-<li><strong>BMJ Portfolio.</strong> Newly launched in 2026, a free CPD-recording platform from BMJ Group that records CPD from any source, alongside BMJ Learning and Learner+. A credible general-purpose home for the log — and evidence exported from the MCB CPD Tracker can feed it, the same as any other portfolio.</li>
+<li><strong>BMJ Portfolio.</strong> Relaunched in July 2026, a free CPD-recording platform from BMJ Group — no subscription — that records CPD from any source, tracks BMJ Learning activity automatically, and integrates directly with FourteenFish. It also offers AI-assisted reflection support. A credible general-purpose home for the log — and evidence exported from the MCB CPD Tracker can feed it, the same as any other portfolio.</li>
 </ul>
 <p>The best format is whichever one you will actually use. A perfect RCGP portfolio that sits empty is worth less than a scruffy Google Sheet filled in weekly.</p>
 <h2 id="getting-from-%22i-read-this%22-to-%22i-logged-this%22" tabindex="-1">Getting from &quot;I Read This&quot; to &quot;I Logged This&quot;</h2>
@@ -303,10 +313,10 @@
 <li>Clean citation and DOI details you can paste directly into a log.</li>
 <li>A format short enough that a full reflection fits into five minutes of writing.</li>
 </ul>
-<p>You can export or screenshot a digest to your appraisal system. Over a year, a weekly 15-minute reading slot produces roughly 50 entries — more than enough CPD evidence for any appraiser.</p>
+<p>You can export or screenshot a digest to your appraisal system. Over a year, a weekly 15-minute reading slot produces roughly 50 entries. That is a substantial body of reflective evidence to bring to appraisal, alongside whatever else your college expects of you.</p>
 <h3 id="logging-it-into-fourteenfish" tabindex="-1">Logging it into FourteenFish</h3>
 <p>The most common UK revalidation portfolio is FourteenFish — and if you are considering something else, we compare <a href="/blog/cpd-reading-tool/fourteenfish-alternatives-cpd-logging/">the alternatives for logging CPD</a>. The workflow is short: read the digest, then in FourteenFish add a CPD entry, choose &quot;reading&quot; or &quot;self-directed learning&quot; as the activity type, paste the citation, write two sentences against the reflection prompt, and record the time spent (a 15-minute read is 15 minutes of CPD). The MCB CPD Tracker, included with an annual subscription, keeps the running record if you would rather log as you go and transfer in a batch at appraisal time.</p>
-<p>It is worth knowing the wider direction of travel here: in May 2026, BMJ Future Health partnered with Learner+ to use AI to turn informal learning into structured, FourteenFish-compatible CPD, and BMJ Group has since launched BMJ Portfolio, a free platform that records CPD from any source. The tooling around CPD reflection is getting easier across the board — but the underlying requirement is unchanged, and a weekly reading habit with a two-sentence reflection still satisfies it cleanly.</p>
+<p>It is worth knowing the wider direction of travel here: in May 2026, BMJ Future Health partnered with Learner+ to use AI to turn informal learning into structured, FourteenFish-compatible CPD, and BMJ Group relaunched BMJ Portfolio in July 2026 — free, with AI-assisted reflection and direct FourteenFish integration. The tooling around CPD reflection is getting easier across the board — but the underlying requirement is unchanged, and a weekly reading habit with a two-sentence reflection still satisfies it cleanly.</p>
 <p><a href="/#subscribe">Start your four-week trial</a> and see whether your reading log starts writing itself.</p>
 
 
@@ -345,18 +355,41 @@
   <div class="author-box">
     <div class="author-avatar">TH</div>
     <div class="author-info">
-      <h4>Dr Tim Hamilton · Consultant in Palliative Medicine, NHS Wales</h4>
+      <h4><a href="/about/" style="color:inherit;">Dr Tim Hamilton</a> · Consultant in Palliative Medicine, NHS Wales</h4>
       <p>Dr Tim Hamilton is a Consultant in Palliative Medicine in NHS Wales and the founder of The Monday Clinical Brief. He built MCB to help busy UK clinicians keep up with the literature across 31 specialties.</p>
+      <p style="margin-top:0.5rem;"><a href="/about/">Credentials, editorial policy and conflicts of interest →</a></p>
     </div>
   </div>
 </div>
 
+</main>
 
 <!-- ═══ FOOTER ═══ -->
 <footer>
-  <p>&copy; 2025 The Monday Clinical Brief. All rights reserved.</p>
-  <p><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/blog/">Blog</a></p>
+  <p>&copy; 2026 The Monday Clinical Brief. All rights reserved.</p>
+  <p><a href="/samples/">Samples</a> · <a href="/blog/">Blog</a> · <a href="/methodology/">Methodology</a> · <a href="/about/">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p>
 </footer>
+
+<script>
+// The mobile bottom bar is fixed, so the body must reserve exactly its height
+// or the footer ends up underneath it. Measure it rather than guessing: brand
+// length, font loading and text-size settings all move this number.
+(function () {
+  var nav = document.querySelector('nav');
+  if (!nav) return;
+  function sync() {
+    var fixed = getComputedStyle(nav).position === 'fixed';
+    document.documentElement.style.setProperty(
+      '--bottom-nav-h', fixed ? nav.offsetHeight + 'px' : '0px'
+    );
+  }
+  sync();
+  addEventListener('resize', sync);
+  addEventListener('orientationchange', sync);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(sync);
+  if (window.ResizeObserver) new ResizeObserver(sync).observe(nav);
+})();
+</script>
 
 </body>
 </html>

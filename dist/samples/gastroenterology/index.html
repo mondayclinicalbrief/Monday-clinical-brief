@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gastroenterology Sample Digest — The Monday Clinical Brief</title>
-<meta name="description" content="See what Gastroenterology clinicians received in this Monday's digest: 22 new articles from The American journal of gastroenterology, Journal of hepatology, Gut summarised every Monday by The Monday Clinical Brief.">
+<meta name="description" content="See what Gastroenterology clinicians received in this Monday's digest: 17 new articles from The American journal of gastroenterology, Gut, Journal of hepatology summarised every Monday by The Monday Clinical Brief.">
 <link rel="canonical" href="https://mondayclinicalbrief.co.uk/samples/gastroenterology/">
 <meta property="og:title" content="Gastroenterology — Monday Clinical Brief Sample Digest">
-<meta property="og:description" content="22 new Gastroenterology papers summarised this week. Free 4-week trial.">
+<meta property="og:description" content="17 new Gastroenterology papers summarised this week. Free 4-week trial.">
 <meta property="og:url" content="https://mondayclinicalbrief.co.uk/samples/gastroenterology/">
 <meta property="og:type" content="article">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -89,9 +89,12 @@
   footer a { color: var(--sage); text-decoration: none; }
 
   @media (max-width: 640px) {
-    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; }
+    /* Fixed bottom bar — reserve its measured height, not a flat 60px. */
+    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; align-items: center; gap: 0.75rem; }
     .nav-links a:not(.nav-cta) { display: none; }
-    body { padding-bottom: 60px; }
+    .nav-brand { font-size: 0.9rem; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+    .nav-cta { flex-shrink: 0; }
+    body { padding-bottom: calc(var(--bottom-nav-h, 64px) + env(safe-area-inset-bottom, 0px)); }
     .page-header { padding: 3.5rem 1.5rem 2.5rem; }
     section { padding: 2rem 1.5rem 3.5rem; }
     .sample-card { padding: 1.5rem; }
@@ -106,24 +109,25 @@
 <nav>
   <a href="/" class="nav-brand">The Monday Clinical Brief</a>
   <div class="nav-links">
+    <a href="/samples/">Samples</a>
+    <a href="/blog/">Blog</a>
     <a href="/#how">How it works</a>
-    <a href="/#about">About</a>
     <a href="/?specialty=gastroenterology#subscribe" class="nav-cta">Start free trial</a>
   </div>
 </nav>
 
 <!-- ═══ HEADER ═══ -->
 <header class="page-header">
-  <div class="eyebrow">Sample Digest · Wednesday 1 July 2026</div>
+  <div class="eyebrow">Sample Digest · Tuesday 1 September 2026</div>
   <h1>A recent Gastroenterology digest,<br><em>as sent to subscribers</em></h1>
-  <p class="lede">This is the real Monday digest from Wednesday 1 July 2026. Showing the first 8 of 22 articles from that week — every new paper from the top journals in Gastroenterology.</p>
+  <p class="lede">This is a real digest, generated on Tuesday 1 September 2026. Showing the first 8 of 17 articles from that week — every new paper from the top 5 journals in Gastroenterology.</p>
   <div class="stat-bar">
-    <div class="stat"><strong>22</strong><span>articles that week</span></div>
-    <div class="stat"><strong>5</strong><span>journals covered</span></div>
+    <div class="stat"><strong>17</strong><span>articles that week</span></div>
+    <div class="stat"><strong>5</strong><span><a href="/methodology/">journals monitored</a></span></div>
     <div class="stat"><strong>£0</strong><span>for your first 4 weeks</span></div>
   </div>
   <div class="disclaimer">
-    <strong>Note:</strong> Summaries are AI-generated from publicly available PubMed abstracts. Always verify against the source article before clinical use.
+    <strong>Note:</strong> Summaries are AI-generated from publicly available PubMed abstracts. Always verify against the source article before clinical use. <a href="/methodology/">How we choose journals and write summaries →</a>
   </div>
 </header>
 
@@ -132,231 +136,231 @@
   <div class="container">
     <div class="sample-card">
       <div class="sample-badge">Gastroenterology</div>
-      <h3>Epithelial FOXP3 orchestrates O-glycosylated IL-6 secretion to drive pancreatic fibrocarcinogenesis</h3>
-      <div class="sample-meta">Gong R, Wang J, Ren M et al. · 2026 Jun 23</div>
+      <h3>Fibroblast-derived Spondin-2 promotes dysplastic transition in metaplastic gastric epithelial cells</h3>
+      <div class="sample-meta">Rhodes JD, Hur S, Zhang C et al. · 2026 Aug 25</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Translational mechanistic study (human tissue analysis with genetically engineered mouse models)
+        Preclinical translational research (single-cell RNA-sequencing, proteomics, spatial transcriptomics, and organoid/fibroblast coculture experiments)
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Does epithelial FOXP3 drive early pancreatic fibrosis and carcinogenesis via a glycosylation-dependent IL-6 signalling mechanism?
+        Which fibroblast-secreted factor drives progression from gastric metaplasia (SPEM) to dysplasia, an early step in gastric carcinogenesis?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>Epithelial FOXP3 (E-FOXP3) transactivates GALNT1, which O-glycosylates IL-6 at threonine-165, enabling its secretion and activation of pancreatic stellate cells via gp130/MAPK-ERK signalling</li><li>Epithelial-specific FOXP3 knockout attenuated fibrosis and delayed PanIN progression; knock-in induced spontaneous stromal activation and accelerated neoplasia</li><li>A fasting-mimicking diet suppressed the E-FOXP3–GALNT1 axis, reducing IL-6 glycosylation and pancreatic fibrosis in vivo</li>        </ul>
+<li>SPON2 was the most upregulated, selectively secreted protein in metaplasia- and cancer-derived fibroblasts versus normal fibroblasts, with PDGFRA+/SPON2+ fibroblasts localised adjacent to metaplastic glands in human tissue.</li><li>SPON2 knockdown in cancer-derived fibroblasts abolished dysplastic induction in cocultured SPEM organoids, preserving metaplastic identity.</li><li>Recombinant SPON2 induced dysplasia markers and suppressed metaplastic markers in gastroids; this effect was reversible upon SPON2 withdrawal.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        Identifies a druggable early-stage fibrocarcinogenic pathway in PDAC — a cancer with persistently poor UK outcomes — and raises interest in dietary intervention as a stromal-targeting strategy.
+        SPON2 represents a novel, potentially targetable stromal driver of gastric pre-neoplastic progression, offering a mechanistic biomarker or therapeutic target relevant to UK gastric cancer surveillance and chemoprevention strategies in high-risk metaplasia/atrophic gastritis patients.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Predominantly preclinical; human tissue data are correlative, with no clinical intervention evidence yet available.
+        Findings are based on in vitro organoid–fibroblast coculture models and human tissue correlation, without in vivo validation of causality or clinical outcome data.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42336167/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1053/j.gastro.2026.06.007" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42641992/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1053/j.gastro.2026.08.011" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">Gastroenterology</div>
-      <h3>Proactive Fecal Calprotectin Home Monitoring in Ulcerative Colitis: Results of a Prospective Randomized Control Trial</h3>
-      <div class="sample-meta">Rosenfeld G, Narula N, Leung Y et al. · 2026 Jun 23</div>
+      <h3>The CA19-9 glycan is a viable target for CAR T cell therapy in pancreatic and other solid tumors</h3>
+      <div class="sample-meta">Mo F, Good AL, McDevitt JC et al. · 2026 Aug 27</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Prospective multicentre RCT
+        Preclinical translational study (in vitro and in vivo experimental models)
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Does proactive home-based faecal calprotectin (FC) monitoring every two months reduce symptomatic flares in UC patients in remission?
+        Can CAR T cells engineered against the CA19-9 glycan safely and effectively target pancreatic and other GI cancers?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>No significant difference in risk of symptomatic flare between intervention and control arms (HR 1.05, 95% CI 0.79–1.40); 32% flared in both groups over 18 months</li><li>No differences in secondary endpoints including healthcare utilisation, medication use, or quality of life</li><li>Among the 88 patients whose therapy was changed following a confirmed elevated FC, flare frequency was numerically lower (49% vs 55%) but did not reach statistical significance</li>        </ul>
+<li>Screening of 14 CAR constructs identified one optimal design (AbLIFT15.28z) with robust T cell expansion and CA19-9-restricted cytotoxicity in PDAC cell lines and patient-derived organoids.</li><li>In immunocompetent murine PDAC models, AbLIFT15.28z CAR T cells produced significant anti-tumour effects against both primary and metastatic disease.</li><li>Efficacy extended to CA19-9-expressing colon, gastric, oesophageal, and biliary tract tumours, with tumour-specific killing sparing antigen-negative cells.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        This challenges the assumption that FC home monitoring alone improves outcomes in UC; without a protocolised treatment escalation pathway, routine FC surveillance does not appear to prevent flares in NHS remission-monitoring programmes.
+        This provides proof-of-concept for a novel cell-surface target in PDAC and other GI malignancies with limited immunotherapy options, supporting future early-phase trials relevant to UK GI oncology and cellular therapy centres.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Absence of a mandatory treatment escalation protocol when FC was elevated likely significantly undermined the intervention&#39;s potential efficacy.
+        Findings are based solely on preclinical models (cell lines, organoids, murine models) and require validation in human clinical trials before translation.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42336164/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1053/j.gastro.2026.06.006" target="_blank" rel="noopener">DOI →</a>      </div>
-    </div>
-    <div class="sample-card">
-      <div class="sample-badge">Gastroenterology</div>
-      <h3>BIRC3 (Encoding Cellular Inhibitor of Apoptosis Protein 2) Variants Result in Dysregulated Receptor-Interacting Protein Kinase 1 Signaling Leading to Increased Epithelial Cell Death and Are Associated With Monogenic Crohn&#39;s Disease</h3>
-      <div class="sample-meta">Li Q, Nambu R, Yaqiang H et al. · 2026 Jun 23</div>
-      <div class="summary-field">
-        <span class="summary-label">Study Type:</span>
-        Multicentre cohort study with mechanistic validation (human exome sequencing, organoid models, knock-in/knockout mouse and zebrafish models, transcriptome analysis)
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Question:</span>
-        Do rare loss-of-function variants in *BIRC3* cause monogenic Crohn&#39;s disease through dysregulated RIPK1-mediated intestinal epithelial cell death?
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Findings:</span>
-        <ul>
-<li>Rare damaging *BIRC3* variants identified in 14 patients across 10 unrelated families, with onset ranging from infancy to adulthood</li><li>*BIRC3* deficiency impairs RIPK1 ubiquitylation, driving autophosphorylation and excess epithelial apoptosis/necroptosis, with spontaneous colitis observed in *ciap1−/+* zebrafish</li><li>Pharmacological RIPK1 inhibition and caspase inhibition attenuated inflammation in both organoid and murine knock-in models</li>        </ul>
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Clinical Relevance:</span>
-        This establishes *BIRC3* as a novel monogenic cause of CD relevant across all ages, potentially informing genetic workup of treatment-refractory or very-early-onset IBD in NHS practice, and identifies RIPK1 as a tractable therapeutic target.
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Limitations:</span>
-        Patient numbers are small (n=14), limiting genotype–phenotype characterisation and assessment of penetrance.
-      </div>
-      <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42335979/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1053/j.gastro.2026.05.022" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42660205/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1053/j.gastro.2026.08.014" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">Gut</div>
-      <h3>Functional anti-preS1 antibody responses associated with viral control in chronic hepatitis B</h3>
-      <div class="sample-meta">Wang B, Li Y, Li F et al. · 2026 Jun 22</div>
+      <h3>Emerging exposure-driven accelerated colorectal carcinogenesis: a model with implications for screening colonoscopy effectiveness</h3>
+      <div class="sample-meta">Truninger K, Easwaran H, Macrae F et al. · 2026 Aug 24</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Cohort study with functional immunological analysis
+        Commentary/conceptual model (non-empirical, hypothesis-generating)
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        What is the serological and functional significance of preS1 antigen and anti-preS1 IgG in chronic hepatitis B, including their relationship to viral control after stopping nucleos(t)ide analogues (NUCs)?
+        Could an &#34;accelerated carcinogenesis&#34; pathway, driven by cumulative environmental/lifestyle exposures, explain rising early-onset CRC and post-colonoscopy CRC that evade conventional precursor-based screening models?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>PreS1 antigen levels were highest in HBeAg-positive patients and correlated positively with HBV DNA, HBsAg, and HBeAg</li><li>Anti-preS1 IgG inversely correlated with HBV DNA and demonstrated potent HBV/HDV neutralising activity by blocking preS1-NTCP binding, with dominant epitopes mapping to the NTCP-binding domain</li><li>High baseline anti-preS1 IgG was associated with sustained virological suppression following NUC discontinuation in 51 patients</li>        </ul>
+<li>Proposes that exposure-driven subclinical inflammation, immune dysregulation, microbiome disruption and epigenetic remodelling can compress the adenoma-to-carcinoma timeline, bypassing or shortening classical precursor stages.</li><li>Introduces &#34;oncoembryonic reprogramming&#34; as a candidate molecular mechanism linking mucosal remodelling to accelerated malignant transformation.</li><li>Frames sporadic microsatellite-stable EOCRC and a subset of PCCRC as sentinel cases of this broader accelerated pathway, rather than isolated phenomena.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        Anti-preS1 IgG may serve as a clinically useful biomarker to identify CHB patients most likely to achieve sustained off-therapy remission — a key decision point in NUC stopping-rule discussions increasingly relevant to UK hepatology practice.
+        For UK gastroenterologists delivering the NHS Bowel Cancer Screening Programme, this model offers a rationale for observed screening/surveillance failures and PCCRC, potentially informing future risk stratification and interval adjustments beyond standard adenoma-based paradigms.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        The NUC discontinuation cohort was small (n=51), limiting the statistical robustness of the off-therapy suppression findings.
+        This is a theoretical framework without new primary data, so its mechanisms and clinical implications require empirical validation.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42331615/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1136/gutjnl-2025-337810" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42637526/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1136/gutjnl-2026-339128" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">Gut</div>
-      <h3>Pancreatic cancer fibrosis activates protumorigenic Schwann cells through a nuclear mechanosensing mechanism</h3>
-      <div class="sample-meta">Stupakov P, Sadatrezaei G, Velazquez Quesada I et al. · 2026 Jun 23</div>
+      <h3>Childhood exposure to a sibling with Crohn&#39;s disease alters gut microbiome and Crohn&#39;s disease susceptibility</h3>
+      <div class="sample-meta">Chen R, Kim HJ, Bushra M et al. · 2026 Aug 25</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Translational mechanistic study (human tissue samples, murine models, and in vitro experimentation)
+        Translational cohort study (prospective GEM cohort + South Korean nationwide validation) with mechanistic murine modelling.
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        How does pancreatic fibrosis activate Schwann cells within the tumour microenvironment of pancreatic ductal adenocarcinoma?
+        Does childhood, versus adult, exposure to a sibling with Crohn&#39;s disease (CD) increase CD risk via gut microbiome alterations?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>Stiffer perineural stroma correlates with greater Schwann cell (SC) activation (c-Jun phosphorylation) in human PDAC samples and murine models</li><li>Mechanical force induces SC activation via nuclear compression triggering non-canonical AP-1/c-Jun signalling, involving phospholipase A2, independently of cancer cell signalling</li><li>Fibrosis alone (without malignant cells) is sufficient to activate SCs, and SCs demonstrate greater mechanosensitivity than PDAC cells themselves</li>        </ul>
+<li>Childhood sibling exposure conferred a fourfold higher CD risk in GEM (aHR 4.00, 95% CI 1.83–8.75), replicated in the Korean cohort (aHR 2.54, 95% CI 1.70–3.81).</li><li>Childhood exposure was linked to reduced Lachnospira, Roseburia and Colidextribacter, partially mediating CD risk; transplanting this microbiota into germ-free mice worsened colitis and raised mucosal IL-22.</li><li>A combined faecal calprotectin/enterotype risk model identified a high-risk subgroup (Blautia- or Prevotella-enriched) with 22.5% 10-year cumulative CD incidence.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        Identifies a stroma–nerve interaction as a tractable therapeutic target in PDAC, a disease with persistently poor outcomes, potentially relevant across fibrotic pancreatic conditions managed within NHS hepatopancreaticobiliary services.
+        Supports targeted surveillance (e.g., FCP and microbiome profiling) for siblings of CD patients exposed in childhood, informing future risk-stratified screening pathways within UK IBD services.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Mechanistic findings are predominantly preclinical; direct therapeutic applicability in humans requires further validation.
+        Mediation and mechanistic conclusions rely on observational microbiome associations and murine transfer models, limiting direct causal inference in humans.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42336627/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1136/gutjnl-2025-337316" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42642218/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1136/gutjnl-2026-339257" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">Gut</div>
-      <h3>Targeting NEK9 synergises with immunotherapy in hepatocellular carcinoma by remodelling the immunosuppressive microenvironment</h3>
-      <div class="sample-meta">Lu G, Du R, Wan Y et al. · 2026 Jun 25</div>
+      <h3>From pressure to prognosis: establishing a common language for portal hypertension in advanced chronic liver disease</h3>
+      <div class="sample-meta">Jeffrey AW, Tsochatzis EA, Genescà J et al. · 2026 Aug 25</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Preclinical mechanistic study (in vitro and orthotopic mouse models with human cohort analysis)
+        Commentary/editorial (perspective article on risk stratification frameworks)
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Does targeting the kinase NEK9 overcome immunotherapy resistance in HCC by remodelling the tumour microenvironment?
+        Should clinical management of compensated advanced chronic liver disease shift from HVPG-defined clinically significant portal hypertension (CSPH) towards non-invasive, outcome-based prediction models?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>NEK9 overexpression in HCC correlated with poor survival, reduced intratumoral CD8+ T cell infiltration, and increased MDSCs in human cohorts</li><li>Mechanistically, NEK9 phosphorylates TRIM28/USP46, stabilising NF-κB2 and driving PD-L1 and CXCL1 transcription — promoting T cell dysfunction and MDSC recruitment</li><li>Two novel NEK9 inhibitors (MIPO, FPTP) demonstrated strong synergy with anti-PD-L1 therapy in vivo, enhancing CD8+ T cell effector function and tumour suppression</li>        </ul>
+<li>CSPH (HVPG ≥10 mmHg) confers markedly higher 4-year decompensation risk than its absence (29% vs 10%)</li><li>Non-invasive tools (elastography-based models, ANTICIPATE, Non-Invasive CSPH Estimated Risk, Portal Hypertension Decompensation Score) show prognostic accuracy comparable to HVPG for predicting decompensation</li><li>NITs enable longitudinal, dynamic reassessment of risk and treatment response, unlike static HVPG thresholds</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        ICI monotherapy yields modest response rates in HCC; NEK9 inhibition represents a potential combinatorial strategy to sensitise tumours to checkpoint blockade in a disease where treatment options remain limited.
+        For UK gastroenterology services, wider adoption of validated NIT-based risk models could reduce reliance on invasive HVPG measurement (limited availability in most NHS centres), enabling more accessible, serial risk stratification and earlier intervention in compensated cirrhosis pathways.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Findings are entirely preclinical — no human pharmacokinetic, safety, or efficacy data exist for the identified inhibitors.
+        As a commentary, it proposes conceptual and terminological reform rather than presenting new comparative outcome data, and calls for standardised endpoint definitions before models can be validated for widespread clinical adoption.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42350096/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1136/gutjnl-2026-338449" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42642217/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1136/gutjnl-2026-339845" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">Gut</div>
-      <h3>Efficacy of gut-brain neuromodulators and brain-gut behaviour therapies for irritable bowel syndrome: systematic review and network meta-analysis</h3>
-      <div class="sample-meta">Khasawneh M, Thakur ER, Goodoory VC et al. · 2026 Jun 26</div>
+      <h3>Proteomic landscape of pan-tissue neuroendocrine carcinomas defines subtype-specific functional architectures, biomarkers and therapeutic targets</h3>
+      <div class="sample-meta">Ge F, Wang Z, Zheng S et al. · 2026 Aug 26</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Systematic review and network meta-analysis of RCTs
+        Translational proteogenomic/molecular profiling study (cohort-based discovery and preclinical validation)
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Which gut-brain neuromodulators and brain-gut behavioural therapies are most efficacious for IBS?
+        Can integrated proteomic and phosphoproteomic profiling of neuroendocrine carcinomas across tissue types define molecular subtypes with actionable biomarkers and therapeutic targets?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>SNRIs ranked highest (P-score 0.95; RR 0.49, 95% CI 0.32–0.75) for global symptom improvement, though based on only six trials (387 patients) all at uncertain/high risk of bias</li><li>TCAs ranked second (RR 0.60, 95% CI 0.43–0.85; 15 trials, 1519 patients); dynamic psychotherapy/emotional processing ranked third (RR 0.62, 95% CI 0.44–0.87)</li><li>CBT, disease self-management, SSRIs, and gut-directed hypnotherapy were all superior to waiting list control</li>        </ul>
+<li>Proteomic analysis of 267 NECs from 26 sites confirmed five transcriptional subtypes (ASCL1, NEUROD1, HNF4A, POU2F3, YAP1), each linked to distinct lineage programmes and RB1 status.</li><li>Subtype H (predominantly gastroenteropancreatic NEC) showed selective NAD+ biosynthesis deficiency; NAMPT inhibition induced synthetic lethality with complete tumour regression in vivo.</li><li>Four tumour microenvironment subtypes were identified; an &#34;inflamed&#34; TME signature predicted superior immunotherapy response across tissue origins.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        Directly supports prescribing and referral decisions in NHS IBS management, reinforcing NICE guidance favouring TCAs and psychological therapies where access exists.
+        Offers UK gastroenterology and oncology teams a potential framework for subtype-specific biomarker testing and targeted therapy (e.g., NAMPT inhibitors) in gastroenteropancreatic NEC, a group with currently limited treatment options and poor prognosis.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Evidence certainty was low or very low for most comparisons, with possible publication bias and no trials at low risk of bias for the top-ranked treatment (SNRIs).
+        Findings are largely derived from tissue/preclinical models with in vivo validation limited to xenografts, requiring prospective clinical validation before practice change.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42362221/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1136/gutjnl-2026-339311" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42648907/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1136/gutjnl-2026-339593" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">Journal of hepatology</div>
-      <h3>MRI-based prediction of very early recurrence within 1 year after resection of HCC: An international cohort study</h3>
-      <div class="sample-meta">Wei H, Heo S, Yang Y et al. · 2026 Jun 20</div>
+      <h3>Chronic liver disease is associated with earlier-stage cholangiocarcinoma diagnosis and improved prognosis: Findings from the GLOBAL-BTC registry</h3>
+      <div class="sample-meta">Izquierdo-Sanchez L, Narbaiza J, Martin-Robles J et al. · 2026 Aug 24</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        International multicentre retrospective cohort study
+        Retrospective international multicentre cohort study (GLOBAL-BTC registry)
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Can preoperative MRI-based models predict very early HCC recurrence (within 1 year) after curative resection of single BCLC 0/A HCC?
+        Does pre-existing chronic liver disease (CLD) influence stage at diagnosis and survival outcomes in cholangiocarcinoma (CCA)?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>Two models (MERP-pre: AFP, tumour size, peritumoral hypoenhancement, blood products; MERP-post: substituting MVI for tumour size) outperformed existing staging systems and IMbrave050 criteria across all validation cohorts (C-indexes 0.685–0.790 vs 0.524–0.682; p&lt;0.001–0.046)</li><li>Both models significantly improved risk reclassification (NRI 0.004–0.372) and stratified patients into distinct 1-year RFS groups across Eastern, Western, and CT-based cohorts</li><li>Low-risk MERP-pre tumours showed non-proliferative biology, increased lipid catabolism, and immunoactive microenvironments</li>        </ul>
+<li>CLD-associated CCA (n=993/3,743) presented at earlier stage (localized 57% vs 43%), better ECOG status, lower CA19.9, and more often intrahepatic subtype (64% vs 42%) versus non-CLD CCA.</li><li>CLD patients underwent curative-intent surgery more frequently (60% vs 48%) and had improved survival (mOS 12.2 vs 11.1 months; HR 0.88, 95% CI 0.80–0.98), most pronounced in intrahepatic CCA (HR 0.77, 95% CI 0.68–0.87).</li><li>Treatment response rates were similar across CLD status, suggesting survival benefit is driven by earlier detection rather than differential treatment efficacy.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        For UK hepatobiliary MDTs, these models could improve preoperative risk stratification to guide adjuvant therapy decisions and surveillance intensity following HCC resection.
+        Supports strengthening structured HCC-style surveillance pathways for high-risk CLD patients (e.g., cirrhosis, PSC) within NHS hepatology services to enable earlier CCA detection and surgical eligibility.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Retrospective design with predominantly Asian patient cohorts limits direct generalisability to UK/Western populations.
+        Retrospective design with heterogeneous CLD definitions and surveillance practices across centres limits causal inference regarding the mechanism of earlier detection.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42323021/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.jhep.2026.05.027" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42637053/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.jhep.2026.08.020" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Journal of hepatology</div>
+      <h3>Alcohol, Cardiometabolic Risk Factors, and Cirrhosis: Ten-Year Risk Estimates from a Population-based Danish Cohort</h3>
+      <div class="sample-meta">Hedelund Rønn J, Jepsen P, Mellinger J et al. · 2026 Aug 24</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Population-based prospective cohort study
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        How do alcohol consumption and cardiometabolic risk factors, separately and jointly, influence 10-year cirrhosis risk?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>10-year absolute cirrhosis risk rose steeply with alcohol intake (0.14% at 1–7 drinks/week to 4.6% at &gt;42 drinks/week); alcohol accounted for 59.9% of population attributable risk.</li><li>Obesity, diabetes, hypertension, and smoking each conferred 2–3-fold higher risk, but their impact was only significant at ≤28 drinks/week, becoming non-significant in heavier drinkers; dyslipidaemia showed no independent association.</li><li>Smoking showed supra-additive interaction with alcohol across all consumption levels; obesity, diabetes, and hypertension showed supra-additivity mainly at moderate intake.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        Supports prioritising alcohol reduction as the principal cirrhosis prevention strategy in UK practice, with cardiometabolic risk modification and smoking cessation as adjunctive targets, particularly relevant to MetALD classification and NHS liver disease prevention pathways.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        Self-reported alcohol consumption and cardiometabolic risk factors risk misclassification, potentially underestimating true effect sizes.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42637052/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1016/j.jhep.2026.08.017" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
 
     <div class="tease">
-      <p>…and <em>14 more</em> Gastroenterology articles in that week's digest.</p>
+      <p>…and <em>9 more</em> Gastroenterology articles in that week's digest.</p>
       <small>Subscribers get the complete brief, every Monday.</small>
     </div>
   </div>
@@ -366,15 +370,32 @@
 <section class="cta-section">
   <h2>Get the Gastroenterology digest in your inbox every Monday</h2>
   <p>4 weeks completely free, then £20/year. Cancel any time during your trial — no charge.</p>
-  <a href="/?specialty=gastroenterology&ref=samples#subscribe" class="cta-btn">Start your free trial — Gastroenterology →</a>
+  <a href="/?specialty=gastroenterology&amp;ref=samples#subscribe" class="cta-btn">Start your free trial — Gastroenterology →</a>
   <span class="cta-meta">No card needed to browse. We'll ask for payment details to start the trial.</span>
 </section>
 
 <!-- ═══ FOOTER ═══ -->
 <footer>
   <p>&copy; 2026 The Monday Clinical Brief</p>
-  <p><a href="/">Home</a> · <a href="mailto:info@mondayclinicalbrief.co.uk">Contact</a> · <a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms</a></p>
+  <p><a href="/samples/">Samples</a> · <a href="/blog/">Blog</a> · <a href="/methodology/">Methodology</a> · <a href="/about/">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p>
 </footer>
+
+<script>
+// Measure the fixed mobile bottom bar so the body reserves its true height.
+(function () {
+  var nav = document.querySelector('nav');
+  if (!nav) return;
+  function sync() {
+    var fixed = getComputedStyle(nav).position === 'fixed';
+    document.documentElement.style.setProperty('--bottom-nav-h', fixed ? nav.offsetHeight + 'px' : '0px');
+  }
+  sync();
+  addEventListener('resize', sync);
+  addEventListener('orientationchange', sync);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(sync);
+  if (window.ResizeObserver) new ResizeObserver(sync).observe(nav);
+})();
+</script>
 
 </body>
 </html>

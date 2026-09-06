@@ -65,7 +65,7 @@ Short. Specific. Honest about what you actually read.
 > **What I learned:** In over-75s, intensive BP control below 130 mmHg did not reduce major cardiovascular events over three years but did increase hypotensive symptoms and falls, with the strongest signal in frail patients on polypharmacy.
 > **Impact on practice:** I will be more cautious tightening targets in my over-75s, and will review the four patients currently titrated below 130 at their next appointment. I am not changing anything for under-75s on one trial.
 
-Four minutes to write. Names the source, states the learning, commits to a specific action, and says where it stops. That entry passes any appraisal.
+Four minutes to write. Names the source, states the learning, commits to a specific action, and says where it stops. An entry like that would usually meet appraisal expectations — though your college's own requirements are the ones that count.
 
 Note the honesty about reading a summary before the abstract. That is not a weakness in the entry — it is what actually happened, and appraisers are not auditing your reading method.
 

@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Infectious Disease Sample Digest — The Monday Clinical Brief</title>
-<meta name="description" content="See what Infectious Disease clinicians received in this Monday's digest: 60 new articles from Emerging infectious diseases, The Journal of infectious diseases, Clinical infectious diseases : an official publication of the Infectious Diseases Society of America summarised every Monday by The Monday Clinical Brief.">
+<meta name="description" content="See what Infectious Disease clinicians received in this Monday's digest: 38 new articles from Emerging infectious diseases, Clinical infectious diseases : an official publication of the Infectious Diseases Society of America, The Journal of infectious diseases summarised every Monday by The Monday Clinical Brief.">
 <link rel="canonical" href="https://mondayclinicalbrief.co.uk/samples/infectious-disease/">
 <meta property="og:title" content="Infectious Disease — Monday Clinical Brief Sample Digest">
-<meta property="og:description" content="60 new Infectious Disease papers summarised this week. Free 4-week trial.">
+<meta property="og:description" content="38 new Infectious Disease papers summarised this week. Free 4-week trial.">
 <meta property="og:url" content="https://mondayclinicalbrief.co.uk/samples/infectious-disease/">
 <meta property="og:type" content="article">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -89,9 +89,12 @@
   footer a { color: var(--sage); text-decoration: none; }
 
   @media (max-width: 640px) {
-    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; }
+    /* Fixed bottom bar — reserve its measured height, not a flat 60px. */
+    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); z-index: 100; align-items: center; gap: 0.75rem; }
     .nav-links a:not(.nav-cta) { display: none; }
-    body { padding-bottom: 60px; }
+    .nav-brand { font-size: 0.9rem; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+    .nav-cta { flex-shrink: 0; }
+    body { padding-bottom: calc(var(--bottom-nav-h, 64px) + env(safe-area-inset-bottom, 0px)); }
     .page-header { padding: 3.5rem 1.5rem 2.5rem; }
     section { padding: 2rem 1.5rem 3.5rem; }
     .sample-card { padding: 1.5rem; }
@@ -106,24 +109,25 @@
 <nav>
   <a href="/" class="nav-brand">The Monday Clinical Brief</a>
   <div class="nav-links">
+    <a href="/samples/">Samples</a>
+    <a href="/blog/">Blog</a>
     <a href="/#how">How it works</a>
-    <a href="/#about">About</a>
     <a href="/?specialty=infectious-disease#subscribe" class="nav-cta">Start free trial</a>
   </div>
 </nav>
 
 <!-- ═══ HEADER ═══ -->
 <header class="page-header">
-  <div class="eyebrow">Sample Digest · Wednesday 1 July 2026</div>
+  <div class="eyebrow">Sample Digest · Monday 31 August 2026</div>
   <h1>A recent Infectious Disease digest,<br><em>as sent to subscribers</em></h1>
-  <p class="lede">This is the real Monday digest from Wednesday 1 July 2026. Showing the first 8 of 60 articles from that week — every new paper from the top journals in Infectious Disease.</p>
+  <p class="lede">This is the real Monday digest from Monday 31 August 2026. Showing the first 8 of 38 articles from that week — every new paper from the top 5 journals in Infectious Disease.</p>
   <div class="stat-bar">
-    <div class="stat"><strong>60</strong><span>articles that week</span></div>
-    <div class="stat"><strong>5</strong><span>journals covered</span></div>
+    <div class="stat"><strong>38</strong><span>articles that week</span></div>
+    <div class="stat"><strong>5</strong><span><a href="/methodology/">journals monitored</a></span></div>
     <div class="stat"><strong>£0</strong><span>for your first 4 weeks</span></div>
   </div>
   <div class="disclaimer">
-    <strong>Note:</strong> Summaries are AI-generated from publicly available PubMed abstracts. Always verify against the source article before clinical use.
+    <strong>Note:</strong> Summaries are AI-generated from publicly available PubMed abstracts. Always verify against the source article before clinical use. <a href="/methodology/">How we choose journals and write summaries →</a>
   </div>
 </header>
 
@@ -132,231 +136,231 @@
   <div class="container">
     <div class="sample-card">
       <div class="sample-badge">Clinical infectious diseases : an official publication of the Infectious Diseases Society of America</div>
-      <h3>DASC-LOT Framework and S3 Metric: A Novel Evaluation and Benchmarking Method to Assess Initiation, Duration, and Spectrum of Antimicrobial Usage at Inpatient Hospital Settings</h3>
-      <div class="sample-meta">Goto M, Imai S, Cho H et al. · 2026 Jun 25</div>
+      <h3>IDSA/ACEP/ASM/PIDS/SCCM/SHEA/SHM/SIDP Multisociety Position Paper: Hospital Strategies to Improve Sepsis Outcomes</h3>
+      <div class="sample-meta">Rhee C, Masur H, Klompas M et al. · 2026 Aug 25</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Retrospective cohort study with methodological framework development and validation
+        Multisociety consensus position paper (expert panel guidance, not primary research)
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Can a novel three-component metric (DASC-LOT / S3) more precisely benchmark inpatient antimicrobial stewardship performance across hospitals than existing single-measure metrics?
+        What hospital-level, infection-focused strategies can complement existing sepsis guidelines and quality measures to improve sepsis care and outcomes?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>Marked inter-hospital variation in antimicrobial use across 118 VHA hospitals: DASC/1,000 days present ranged 1,311–5,275; LOT/1,000 days present ranged 132–518</li><li>The composite S3 metric (integrating initiation, duration, and spectrum) ranged from 0.703 to 1.572 across hospitals, with risk-adjustment models incorporating up to 116 patient-level variables</li><li>Radar chart visualisation enabled hospital-specific identification of stewardship weaknesses across all three domains separately</li>        </ul>
+<li>Recommendations span six domains: diagnostics/pathogen detection, antimicrobial management, surveillance/metrics, adjunctive therapy, programme infrastructure, and infection prevention.</li><li>Specific actionable measures include rapid multiplex blood culture PCR with stewardship support, prioritising β-lactam before vancomycin via clinical decision support, prolonged-infusion antipseudomonal β-lactams in critical illness, EHR-based sepsis surveillance, tracking de-escalation/source control timeliness, corticosteroids for severe CAP, and routine tooth brushing to reduce hospital-acquired pneumonia.</li><li>Emerging diagnostic strategies are flagged as promising but not yet ready for routine adoption pending further validation.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        NHS stewardship teams currently rely heavily on Days of Therapy metrics; this framework could support more granular benchmarking and targeted interventions across NHS trusts.
+        Offers UK ID clinicians and antimicrobial stewardship teams a practical, evidence-informed framework to strengthen infection-related sepsis pathways beyond existing bundles (e.g., NHS Sepsis Six), particularly around diagnostics, antibiotic optimisation, and infection prevention.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Derived exclusively from US Veterans Health Administration data, limiting direct generalisability to NHS inpatient populations and prescribing contexts.
+        As a US-focused consensus document based on expert opinion rather than new trial data, recommendations may require adaptation for NHS infrastructure, resourcing, and existing quality frameworks.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42345285/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1093/cid/ciag389" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42640090/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1093/cid/ciag438" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">Clinical infectious diseases : an official publication of the Infectious Diseases Society of America</div>
-      <h3>10-Year Trends in Attributable and Contributable Mortality of Culture-Positive Invasive Aspergillosis in Patients with Hematologic Malignancies: Have We Reached the &#34;Ceiling Efficacy Effect&#34; of Modern Antifungals?</h3>
-      <div class="sample-meta">Szvalb AD, Wurster S, Matsuo T et al. · 2026 Jun 29</div>
+      <h3>A New Paradigm for Clostridioides difficile Infection: Atypical Presentations Correlating to Acute Gastrointestinal Dysmotility Are Associated With Increased Mortality</h3>
+      <div class="sample-meta">Bishop E, Mileto S, Ravipati T et al. · 2026 Aug 25</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
         Retrospective cohort study
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Have modern antifungals reduced attributable, contributable, and all-cause mortality from culture-confirmed invasive aspergillosis (IA) in haematological malignancy patients over a 10-year period?
+        Does atypical presentation of CDI (dominant dysmotility/ileus features preceding diarrhoea) affect diagnostic timeliness and mortality compared with typical diarrhoeal-onset CDI?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>IA-attributable mortality showed a statistically meaningful decrease over the study period</li><li>Contributable and all-cause mortality remained persistently high despite antifungal advances</li><li>Findings suggest a potential &#34;ceiling effect&#34; of current antifungal therapy, with residual mortality driven by underlying host factors and competing causes</li>        </ul>
+<li>Among 467 CDI episodes, 32% had dysmotility at diagnosis (radiologically persisting up to 6 weeks); small-bowel involvement seen in 16.3% of baseline imaging.</li><li>Atypical presentations (19.5% of episodes) had delayed treatment initiation (median 4 vs 2 days, P&lt;.001) and higher 90-day mortality (24.2% vs 9.6%; HR 2.62, 95% CI 1.51–4.57, P=.001).</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        For UK ID clinicians managing haematological malignancy patients — a high-burden group in NHS haematology-oncology settings — this signals that optimising antifungal choice alone is insufficient; host-directed strategies (e.g., immunomodulation, G-CSF, checkpoint inhibitor reversal) warrant prioritisation.
+        UK clinicians should maintain a high index of suspicion for CDI in patients with unexplained ileus or gastrointestinal dysmotility even before diarrhoea develops, as delayed recognition is linked to significantly worse outcomes, supporting review of current UK/NICE CDI diagnostic pathways.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        The abstract provides insufficient detail to assess sample size, case ascertainment methodology, or confounding control, limiting critical appraisal.
+        Single-centre retrospective design limits generalisability and causal inference regarding the dysmotility–mortality relationship.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42372090/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1093/cid/ciag393" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42638551/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1093/cid/ciag463" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">Clinical infectious diseases : an official publication of the Infectious Diseases Society of America</div>
-      <h3>Virologic Outcomes After LA ART Initiation with and without Viremia in Two Large U.S. Clinic Cohorts</h3>
-      <div class="sample-meta">Spinelli M, Heise MJ, Glidden DV et al. · 2026 Jun 29</div>
+      <h3>When Choosing Antiretroviral Therapy Meets Immigration Policy: An Ethical Analysis</h3>
+      <div class="sample-meta">Diarra A, Vignier N, Tantet C et al. · 2026 Aug 25</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Case report with ethical analysis (commentary)
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        How should clinicians navigate antiretroviral treatment decisions (oral vs long-acting injectable) when they intersect with immigration status and administrative/legal considerations?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>A case of a woman with HIV and irregular migration status requesting a switch to long-acting injectable therapy, motivated partly by anticipated immigration-related benefits and discretion rather than purely clinical need.</li><li>Applying Beauchamp and Childress&#39;s principlism alongside Tronto&#39;s ethics of care reveals tensions between autonomy, justice, beneficence, and non-maleficence when treatment choice may be perceived as influencing residency outcomes.</li><li>Treatment interruption risk is heightened by legal instability, complicating standard clinical reasoning around regimen switching.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        UK clinicians managing migrant patients with insecure immigration status (relevant given NHS charging regulations and Home Office interactions) may face analogous dilemmas where therapeutic decisions become entangled with legal/administrative consequences, highlighting a need for professional guidance.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        As a single case-based ethical commentary, findings are illustrative rather than generalisable and offer no empirical outcome data.
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42638524/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1093/cid/ciag442" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Clinical infectious diseases : an official publication of the Infectious Diseases Society of America</div>
+      <h3>Reanalyzing a Randomized Controlled Trial of Invasive Aspergillosis Using a Desirability of Outcome Ranking Approach: Voriconazole Versus Amphotericin B Deoxycholate</h3>
+      <div class="sample-meta">Zuniga-Moya JC, Araujo de Oliveira Santana M, Ostrosky-Zeichner L et al. · 2026 Aug 26</div>
+      <div class="summary-field">
+        <span class="summary-label">Study Type:</span>
+        Post-hoc reanalysis of a randomized controlled trial
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Question:</span>
+        Does applying a Desirability of Outcome Ranking (DOOR) framework, integrating mortality, treatment failure, and severe adverse events, change the assessment of voriconazole versus amphotericin B deoxycholate for invasive aspergillosis compared to mortality-based endpoints alone?
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Key Findings:</span>
+        <ul>
+<li>Voriconazole demonstrated superior overall outcomes compared to amphotericin B deoxycholate when assessed using the composite DOOR endpoint.</li><li>The abstract does not report specific probability-of-better-outcome statistics, effect sizes, or confidence intervals.</li>        </ul>
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Clinical Relevance:</span>
+        Supports voriconazole&#39;s established first-line status for invasive aspergillosis in NHS antifungal guidelines by demonstrating benefit across a broader, patient-centred outcome measure rather than mortality alone.
+      </div>
+      <div class="summary-field">
+        <span class="summary-label">Limitations:</span>
+        This is a secondary reanalysis of an older trial using amphotericin B deoxycholate, a comparator no longer standard practice, limiting direct applicability to current treatment choices (e.g., liposomal formulations).
+      </div>
+      <div class="source-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/42644615/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1093/cid/ciag457" target="_blank" rel="noopener">DOI →</a>      </div>
+    </div>
+    <div class="sample-card">
+      <div class="sample-badge">Clinical infectious diseases : an official publication of the Infectious Diseases Society of America</div>
+      <h3>How High is Too High? The Diagnostic Value of Absolute Eosinophil Count in Excluding Parasitic Infection</h3>
+      <div class="sample-meta">Bass J, Filippov E, Kubofcik J et al. · 2026 Aug 26</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
         Retrospective cohort study
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Does initiating long-acting cabotegravir/rilpivirine (LA CAB/RPV) in viraemic people with HIV (PWH) result in comparable virological outcomes to those initiating whilst suppressed?
+        Can peak absolute eosinophil count (AEC) or serum IgE reliably distinguish parasitic from non-parasitic causes of marked eosinophilia?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>In two large U.S. cohorts (n=1,070), 96% of viraemic PWH achieved virological suppression at a median of 4 weeks post-initiation</li><li>Virological blips and treatment failure occurred more frequently in those initiating LA CAB/RPV with detectable viraemia compared to suppressed initiators</li><li>Findings suggest LA CAB/RPV can achieve suppression in viraemic patients but with a less favourable safety profile</li>        </ul>
+<li>Among 1,025 patients (360 with parasitic infection), median peak AEC was significantly lower in parasitic vs non-parasitic diagnoses.</li><li>ROC-derived cutoffs of AEC &gt;28,680/µL (adults) and &gt;59,529/µL (children) excluded parasitic infection with near-100% specificity; only 2 parasitic cases (paediatric VLM) exceeded 30,000/µL.</li><li>Rising AEC in adults correlated with increasing likelihood of malignancy-associated eosinophilia (χ²trend=84.69, p&lt;0.0001); serum IgE showed no diagnostic discriminatory value.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        As NHS services increasingly offer LA CAB/RPV to PWH with adherence difficulties — who are often viraemic — this supports its use but highlights the need for enhanced virological monitoring post-initiation in this group.
+        Provides UK ID/haematology clinicians a practical AEC threshold (&gt;30,000/µL) to deprioritise parasitic work-up and expedite investigation for malignancy or hypereosinophilic syndrome, potentially streamlining NHS eosinophilia pathways.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        Retrospective design limits causal inference and baseline viraemia levels and resistance data are not detailed in the abstract.
+        Single-centre (NIH) retrospective cohort with likely referral bias toward complex/refractory cases, limiting generalisability to routine UK populations.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42372087/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1093/cid/ciag392" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42644490/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1093/cid/ciag513" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">Clinical infectious diseases : an official publication of the Infectious Diseases Society of America</div>
-      <h3>Andes Virus Exposure and Nosocomial Transmission Events to Healthcare Personnel: A Systematic Review</h3>
-      <div class="sample-meta">Kakoullis L, Carr ER, Baissary J et al. · 2026 Jun 29</div>
+      <h3>Does acute pyelonephritis skew outcomes in registrational trials of novel antibiotics for complicated urinary tract infections? A systematic review and meta-analysis</h3>
+      <div class="sample-meta">Mori G, Ceccato T, Botti S et al. · 2026 Aug 27</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Systematic review
+        Systematic review and meta-analysis (of registrational RCTs)
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        What is the documented risk of Andes virus (ANDV) transmission to healthcare personnel (HCP) during nosocomial exposure events?
+        Does pooling acute pyelonephritis (AP) with other complicated UTIs (cUTIs) in registrational antibiotic trials mask meaningful differences in treatment outcomes?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>Across 7 nosocomial exposure events, 207 individuals were exposed (including 118 HCP), resulting in 8 HCP infections and 4 HCP deaths</li><li>All described HCP infections occurred in the context of absent or inadequate PPE use and delayed implementation of transmission-based precautions</li><li>Only 8 studies met inclusion criteria, reflecting sparse and inconsistently reported literature on healthcare-associated ANDV exposure</li>        </ul>
+<li>Across 10 RCTs (n=5,971), AP was associated with significantly higher composite cure at test-of-cure than other cUTIs (RR 1.12; 95% CI 1.03–1.23; I²=82%; prediction interval crossing 1).</li><li>Composite endpoint differences were driven mainly by microbiologic eradication (r=0.98) rather than clinical cure (r=0.30).</li><li>In the one trial with subtype-stratified data (ADAPT-PO), the AP advantage was far larger for microbiologic eradication (+15.6pp) than clinical response (+3.5pp); generalisability to other trials could not be confirmed.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        With a WHO-declared multinational ANDV outbreak reported May 2026, UK ID teams and infection prevention services need current evidence to guide PPE protocols and risk assessments for potential imported cases presenting to NHS facilities.
+        UK clinicians interpreting cUTI trial data (informing antibiotic licensing and local formulary decisions) should recognise that pooled AP/cUTI outcomes may overstate efficacy for non-pyelonephritis cUTIs, affecting extrapolation to real-world prescribing.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        The small number of included studies (n=8) with heterogeneous reporting standards limits generalisability and may substantially underestimate true exposure and transmission rates.
+        Substantial heterogeneity in AP/cUTI definitions and near-universal absence of outcome-component stratification limit confidence in generalising the single stratified trial&#39;s findings across the pooled dataset.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42372085/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1093/cid/ciag394" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42658107/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1093/cid/ciag516" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">Clinical infectious diseases : an official publication of the Infectious Diseases Society of America</div>
-      <h3>Sepsis Diagnostic Excellence and its Association with Mortality in Adults with Potential Infection</h3>
-      <div class="sample-meta">Kowalkowski M, Birken S, Obermiller C et al. · 2026 Jun 30</div>
+      <h3>Should valve leaflet thickening be considered a characteristic lesion of infective endocarditis?</h3>
+      <div class="sample-meta">Tzimas G, Monney P, Ianculescu N et al. · 2026 Aug 30</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
         Retrospective cohort study
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Does hospital-level diagnostic excellence in sepsis — simultaneously minimising undertreatment and overtreatment — correlate with improved patient outcomes?
+        Does including valve leaflet thickening as a major imaging criterion improve or compromise diagnostic accuracy of the 2023 Duke-ESC criteria for infective endocarditis (IE)?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>Only 4 of 20 hospitals met &#34;Diagnostic Excellence&#34; criteria; hospital performance on under- and overtreatment was negatively correlated (τ=−0.51), suggesting optimising one often compromises the other</li><li>Treatment at Diagnostic Excellence hospitals was associated with significantly lower mortality/hospice discharge (aOR 0.61, 95%CI 0.41–0.90) and shorter LOS (−1.20 days, 95%CI −2.23 to −0.17)</li><li>Antibiotic days were reduced at Diagnostic Excellence hospitals, though this did not reach significance (adjusted difference −0.62 days, p=0.07)</li>        </ul>
+<li>Among 3,747 episodes investigated for suspected IE, leaflet thickening was found in 288 (8%); IE was ultimately diagnosed in 67% of these.</li><li>Adding leaflet thickening increased sensitivity of the 2023 Duke-ESC criteria from 59% (95% CI 52–66%) to 79% (95% CI 73–85%), but specificity fell sharply from 98% (95% CI 93–100%) to 46% (95% CI 36–57%).</li><li>32% of confirmed IE episodes with leaflet thickening had no other typical intracardiac lesion, and half of IE cases still met major imaging criteria even without leaflet thickening.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        For UK ID teams supporting sepsis stewardship, this supports the case that reducing both diagnostic delay and antibiotic overuse simultaneously — rather than prioritising one — is achievable and meaningfully improves outcomes.
+        UK ID clinicians applying the 2023 Duke-ESC criteria should be cautious using leaflet thickening as a major imaging criterion, as it markedly increases false-positive IE diagnoses and risks unnecessary antibiotic courses or valve surgery.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        US health system data limits direct generalisability to NHS sepsis pathways and coding practices.
+        Single-centre retrospective design limits generalisability and may introduce selection or diagnostic bias.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42376964/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1093/cid/ciag382" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42668139/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1093/cid/ciag524" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
     <div class="sample-card">
       <div class="sample-badge">Emerging infectious diseases</div>
-      <h3>Detection of and Early Genomic Insights into Chikungunya Virus, Bolivia, 2025</h3>
-      <div class="sample-meta">Chuquimia Valdez JA, Guimarães NR, Fonseca V et al. · 2026 Jul</div>
+      <h3>Autochthonous Canine Pythiosis Linked with Freshwater Exposure, Italy, 2021-2024</h3>
+      <div class="sample-meta">Peano A, Min ARM, Danesi P et al. · 2026 Sep</div>
       <div class="summary-field">
         <span class="summary-label">Study Type:</span>
-        Case series with genomic/phylogenetic analysis
+        Case series
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Question:</span>
-        Which chikungunya virus lineage was circulating during the 2025 Bolivian outbreak, and what were its transmission dynamics?
+        Is autochthonous canine pythiosis, a rare oomycete infection, emerging in Italy, and what is its environmental and molecular epidemiology?
       </div>
       <div class="summary-field">
         <span class="summary-label">Key Findings:</span>
         <ul>
-<li>Chikungunya virus was confirmed circulating in Bolivia during a 2025 outbreak via genomic surveillance</li><li>Phylogenetic analysis identified the specific circulating lineage and characterised transmission dynamics (precise lineage designation and case numbers not reported in abstract)</li><li>Findings support the value of sustained genomic surveillance for arbovirus emergence monitoring</li>        </ul>
+<li>7 autochthonous canine pythiosis cases identified in Italy (2021–2024), all with documented freshwater exposure across multiple lakes.</li><li>Cases recurred over consecutive years, suggesting an established environmental reservoir rather than isolated events.</li><li>Molecular sequencing placed isolates within clade IV of the *Pythium insidiosum* species complex, now designated *Pythium periculosum*.</li>        </ul>
       </div>
       <div class="summary-field">
         <span class="summary-label">Clinical Relevance:</span>
-        With increasing chikungunya importation into the UK from Latin America, understanding circulating lineages informs clinical suspicion, travel health advisory updates, and imported case management in NHS settings.
+        UK clinicians should be aware of pythiosis as an emerging, difficult-to-diagnose oomycete infection with expanding European geographic range, relevant to travel/import history in dogs and as a rare zoonotic differential in humans with similar freshwater exposure.
       </div>
       <div class="summary-field">
         <span class="summary-label">Limitations:</span>
-        The abstract provides insufficient detail on sample size, lineage identity, or epidemiological data to draw firm clinical conclusions — full publication required for meaningful interpretation.
+        Small case numbers limit generalisability and preclude firm conclusions on incidence trends or environmental risk factors.
       </div>
       <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42366174/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.3201/eid3207.260540" target="_blank" rel="noopener">DOI →</a>      </div>
-    </div>
-    <div class="sample-card">
-      <div class="sample-badge">Emerging infectious diseases</div>
-      <h3>Household Transmission of Enterovirus D68, Washington and Oregon, United States, 2022-2024</h3>
-      <div class="sample-meta">Roychoudhury P, Wetzler E, Elias-Warren A et al. · 2026 Jul</div>
-      <div class="summary-field">
-        <span class="summary-label">Study Type:</span>
-        Prospective cohort study (household transmission study)
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Question:</span>
-        What is the rate of symptomatic secondary household transmission of enterovirus D68 (EV-D68)?
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Findings:</span>
-        <ul>
-<li>Symptomatic secondary attack rate of 13.6% across 35 EV-D68 index households identified from 1,040 surveilled households</li><li>Genomic sequencing confirmed household transmission, with 0–2 pairwise nucleotide differences between cases occurring 6–14 days apart</li><li>Clustering of sequences within households supports person-to-person spread rather than independent community acquisition</li>        </ul>
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Clinical Relevance:</span>
-        EV-D68 causes acute flaccid myelitis in children; quantifying household transmission risk informs public health guidance and infection control advice relevant to UK clinicians managing paediatric clusters or outbreak investigations.
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Limitations:</span>
-        Symptomatic-only case ascertainment likely underestimates true secondary attack rate by missing asymptomatic infections.
-      </div>
-      <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42366172/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.3201/eid3207.251733" target="_blank" rel="noopener">DOI →</a>      </div>
-    </div>
-    <div class="sample-card">
-      <div class="sample-badge">Emerging infectious diseases</div>
-      <h3>New World Ocular Dirofilariasis Caused by Dirofilaria repens Infection, United States</h3>
-      <div class="sample-meta">Glasgow BJ, Collins M, Helminiak L et al. · 2026 Jul</div>
-      <div class="summary-field">
-        <span class="summary-label">Study Type:</span>
-        Case series (single case report)
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Question:</span>
-        Can *Dirofilaria repens* cause ocular dirofilariasis acquired in the continental United States?
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Key Findings:</span>
-        <ul>
-<li>A subcutaneous eyelid nodule following an insect bite in a California patient was confirmed as *D. repens* infection on excision</li><li>Diagnosis required combined morphological (histology) and molecular analysis; neither modality alone was sufficient for species-level identification</li><li>This represents a notable occurrence of New World ocular dirofilariasis from a species predominantly associated with Old World (European/Asian) transmission</li>        </ul>
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Clinical Relevance:</span>
-        UK clinicians should be alert to *D. repens* as a cause of periocular/subcutaneous nodules in returning travellers, but this case highlights emerging autochthonous transmission in North America, broadening the epidemiological context for travel history assessment.
-      </div>
-      <div class="summary-field">
-        <span class="summary-label">Limitations:</span>
-        Single case report; no conclusions can be drawn regarding prevalence, vector competence, or transmission risk within the US.
-      </div>
-      <div class="source-links">
-<a href="https://pubmed.ncbi.nlm.nih.gov/42366171/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.3201/eid3207.251596" target="_blank" rel="noopener">DOI →</a>      </div>
+<a href="https://pubmed.ncbi.nlm.nih.gov/42661393/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.3201/eid3209.260354" target="_blank" rel="noopener">DOI →</a>      </div>
     </div>
 
     <div class="tease">
-      <p>…and <em>52 more</em> Infectious Disease articles in that week's digest.</p>
+      <p>…and <em>30 more</em> Infectious Disease articles in that week's digest.</p>
       <small>Subscribers get the complete brief, every Monday.</small>
     </div>
   </div>
@@ -373,8 +377,25 @@
 <!-- ═══ FOOTER ═══ -->
 <footer>
   <p>&copy; 2026 The Monday Clinical Brief</p>
-  <p><a href="/">Home</a> · <a href="mailto:info@mondayclinicalbrief.co.uk">Contact</a> · <a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms</a></p>
+  <p><a href="/samples/">Samples</a> · <a href="/blog/">Blog</a> · <a href="/methodology/">Methodology</a> · <a href="/about/">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p>
 </footer>
+
+<script>
+// Measure the fixed mobile bottom bar so the body reserves its true height.
+(function () {
+  var nav = document.querySelector('nav');
+  if (!nav) return;
+  function sync() {
+    var fixed = getComputedStyle(nav).position === 'fixed';
+    document.documentElement.style.setProperty('--bottom-nav-h', fixed ? nav.offsetHeight + 'px' : '0px');
+  }
+  sync();
+  addEventListener('resize', sync);
+  addEventListener('orientationchange', sync);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(sync);
+  if (window.ResizeObserver) new ResizeObserver(sync).observe(nav);
+})();
+</script>
 
 </body>
 </html>
