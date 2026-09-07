@@ -1,42 +1,6 @@
 ---
 permalink: /sitemap.xml
 eleventyExcludeFromCollections: true
-specialties:
-  - acute-medicine
-  - anaesthetics
-  - cardiology
-  - cardiothoracic-surgery
-  - dental-hygiene-therapy
-  - dentistry
-  - dermatology
-  - emergency-medicine
-  - endocrinology
-  - gastroenterology
-  - general-practice
-  - general-surgery
-  - geriatric-medicine
-  - haematology
-  - infectious-disease
-  - intensive-care
-  - nephrology
-  - neurology
-  - neurosurgery
-  - obstetrics-gynaecology
-  - oncology
-  - ophthalmology
-  - oral-surgery
-  - orthodontics
-  - orthopaedic-surgery
-  - paediatrics
-  - palliative-care
-  - pathology
-  - plastic-surgery
-  - psychiatry
-  - public-health
-  - radiology
-  - respiratory
-  - rheumatology
-  - urology
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -80,9 +44,9 @@ specialties:
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
-  {%- for slug in specialties %}
+  {%- for s in specialties %}
   <url>
-    <loc>https://mondayclinicalbrief.co.uk/samples/{{ slug }}/</loc>
+    <loc>https://mondayclinicalbrief.co.uk/samples/{{ s.slug }}/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

@@ -1,40 +1,8 @@
 ---
 permalink: /samples/index.html
 eleventyExcludeFromCollections: true
-title: "Sample Digests — All 31 Specialties"
+title: "Sample Digests — All 35 Specialties"
 description: "Browse a real recent Monday Clinical Brief digest for every specialty we cover — from Acute Medicine to Urology. See the format, depth, and journal coverage before you subscribe."
-specialties:
-  - { slug: acute-medicine, name: "Acute Medicine" }
-  - { slug: anaesthetics, name: "Anaesthetics" }
-  - { slug: cardiology, name: "Cardiology" }
-  - { slug: cardiothoracic-surgery, name: "Cardiothoracic Surgery" }
-  - { slug: dermatology, name: "Dermatology" }
-  - { slug: emergency-medicine, name: "Emergency Medicine" }
-  - { slug: endocrinology, name: "Endocrinology" }
-  - { slug: gastroenterology, name: "Gastroenterology" }
-  - { slug: general-practice, name: "General Practice" }
-  - { slug: general-surgery, name: "General Surgery" }
-  - { slug: geriatric-medicine, name: "Geriatric Medicine" }
-  - { slug: haematology, name: "Haematology" }
-  - { slug: infectious-disease, name: "Infectious Disease" }
-  - { slug: intensive-care, name: "Intensive Care" }
-  - { slug: nephrology, name: "Nephrology" }
-  - { slug: neurology, name: "Neurology" }
-  - { slug: neurosurgery, name: "Neurosurgery" }
-  - { slug: obstetrics-gynaecology, name: "Obstetrics & Gynaecology" }
-  - { slug: oncology, name: "Oncology" }
-  - { slug: ophthalmology, name: "Ophthalmology" }
-  - { slug: orthopaedic-surgery, name: "Orthopaedic Surgery" }
-  - { slug: paediatrics, name: "Paediatrics" }
-  - { slug: palliative-care, name: "Palliative Care" }
-  - { slug: pathology, name: "Pathology" }
-  - { slug: plastic-surgery, name: "Plastic Surgery" }
-  - { slug: psychiatry, name: "Psychiatry" }
-  - { slug: public-health, name: "Public Health" }
-  - { slug: radiology, name: "Radiology" }
-  - { slug: respiratory, name: "Respiratory" }
-  - { slug: rheumatology, name: "Rheumatology" }
-  - { slug: urology, name: "Urology" }
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -54,7 +22,7 @@ specialties:
 <meta property="og:image" content="https://mondayclinicalbrief.co.uk/assets/brand/mcb-og-1200x630-v2.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="The Monday Clinical Brief — sample digests for all 31 specialties">
+<meta property="og:image:alt" content="The Monday Clinical Brief — sample digests for all {{ specialties.length }} specialties">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ title }}">
 <meta name="twitter:description" content="{{ description }}">
@@ -104,6 +72,9 @@ specialties:
   .sample-card:hover { border-color: var(--sage); background: var(--sage-light); color: var(--sage-deep); box-shadow: 0 4px 16px rgba(0,0,0,0.05); }
   .sample-card .arrow { color: var(--sage); font-weight: 400; }
 
+  .samples-note { max-width: 680px; margin: 0 auto 1.5rem; padding: 0 2rem; text-align: center; }
+  .samples-note p { color: var(--text-muted); font-size: 0.9rem; }
+  .samples-note a { color: var(--sage-deep); font-weight: 600; }
   .samples-cta { max-width: 680px; margin: 0 auto 3rem; padding: 2rem; text-align: center; background: var(--cream); border-radius: 8px; }
   .samples-cta h2 { font-family: 'Instrument Serif', serif; font-size: 1.5rem; font-weight: 400; color: var(--charcoal); margin-bottom: 0.5rem; }
   .samples-cta p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.25rem; }
@@ -141,7 +112,10 @@ specialties:
       {
         "@type": "ListItem",
         "position": {{ loop.index }},
-        "name": "{{ s.name }} Sample Digest",
+        {#- JSON-LD is not HTML: autoescaping here emits &amp; inside the
+            structured data ("Obstetrics &amp; Gynaecology"). Names contain no
+            quotes or backslashes, so raw output keeps the JSON valid. -#}
+        "name": "{{ s.name | safe }} Sample Digest",
         "url": "https://mondayclinicalbrief.co.uk/samples/{{ s.slug }}/"
       }{% if not loop.last %},{% endif %}
       {%- endfor %}
@@ -171,7 +145,7 @@ specialties:
 </div>
 
 <div class="samples-hero">
-  <h1>Sample digests — all 31 specialties</h1>
+  <h1>Sample digests — all {{ specialties.length }} specialties</h1>
   <p>Every specialty we cover, with a real recent digest exactly as it reaches subscribers. See the format, the depth, and the journals we track before you sign up.</p>
 </div>
 
@@ -181,9 +155,15 @@ specialties:
   {%- endfor %}
 </div>
 
+<div class="samples-note">
+  <p>Dentist, hygienist, therapist, orthodontist or oral surgeon? There's a
+  <a href="/dentistry/">dedicated dentistry page</a> covering the journals we
+  track across dental practice.</p>
+</div>
+
 <div class="samples-cta">
   <h2>One specialty included. Add more for £5 each.</h2>
-  <p>Your subscription covers the top 5 journals in your specialty, every Monday. Add any of the other 30 specialties for £5/year each.</p>
+  <p>Your subscription covers the top 5 journals in your specialty, every Monday. Add any of the other {{ specialties.length - 1 }} specialties for £5/year each.</p>
   <a href="/#subscribe" class="btn-primary">Start your free trial →</a>
 </div>
 </main>
