@@ -1,25 +1,32 @@
+# 2026-09-08: every retired-page rule below uses a FORCED redirect (301!, not 301).
+# A plain 301 only fires when nothing exists at that path — and the retired pages
+# were still present on the deploy, so Netlify served them instead and the rules
+# never ran. /compare/, /early-access/, /ad-free/, /why-uk/ and the old Heidi slug
+# were all live and self-canonicalising, including a withdrawn "3 years for £50"
+# offer. Keep new retired-page rules forced.
+
 /welcome  /welcome.html  200
 
 # Netlify Functions exposed under /api/ (used by digest unsubscribe links)
 /api/*    /.netlify/functions/:splat  200
 
 # 2026-04-25: Heidi blog moved from journal-summary-subscription to medical-journal-digest cluster
-/blog/journal-summary-subscription/heidi-evidence-vs-weekly-journal-digest/  /blog/medical-journal-digest/heidi-evidence-vs-monday-clinical-brief/  301
-/blog/journal-summary-subscription/heidi-evidence-vs-weekly-journal-digest  /blog/medical-journal-digest/heidi-evidence-vs-monday-clinical-brief/  301
+/blog/journal-summary-subscription/heidi-evidence-vs-weekly-journal-digest/  /blog/medical-journal-digest/heidi-evidence-vs-monday-clinical-brief/  301!
+/blog/journal-summary-subscription/heidi-evidence-vs-weekly-journal-digest  /blog/medical-journal-digest/heidi-evidence-vs-monday-clinical-brief/  301!
 
 # 2026-06-22: Heidi explainer slug corrected — the limit is in-session, not an NHS exclusion (old slug was inaccurate)
 /blog/medical-journal-digest/heidi-evidence-uk-nhs-excluded/  /blog/medical-journal-digest/heidi-evidence-uk-in-session-restriction/  301!
 /blog/medical-journal-digest/heidi-evidence-uk-nhs-excluded  /blog/medical-journal-digest/heidi-evidence-uk-in-session-restriction/  301!
 
 # 2026-04-25: Standalone landing pages removed; comparison content lives in the updated blog post
-/compare/  /blog/journal-summary-subscription/bmj-nejm-independent-journal-digests-compared/  301
-/compare  /blog/journal-summary-subscription/bmj-nejm-independent-journal-digests-compared/  301
-/early-access/  /  301
-/early-access  /  301
-/ad-free/  /  301
-/ad-free  /  301
-/why-uk/  /  301
-/why-uk  /  301
+/compare/  /blog/journal-summary-subscription/bmj-nejm-independent-journal-digests-compared/  301!
+/compare  /blog/journal-summary-subscription/bmj-nejm-independent-journal-digests-compared/  301!
+/early-access/  /  301!
+/early-access  /  301!
+/ad-free/  /  301!
+/ad-free  /  301!
+/why-uk/  /  301!
+/why-uk  /  301!
 
 # 2026-07-26: /specialty/palliative-care/ was an orphan in dist/ with no source
 # file — unlinked, absent from the sitemap, and duplicating the H1 and title of
