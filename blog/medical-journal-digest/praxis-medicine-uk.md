@@ -60,7 +60,7 @@ This is not a criticism of Praxis. It is a different job. Pull tools, by design,
 
 If Praxis becomes the UK query tool you reach for, pair it with a reading habit. Every Monday morning, The Monday Clinical Brief sends every new peer-reviewed paper published that week in your specialty's five highest-impact journals — plain-language summaries, links to the originals, across 31 specialties, for £20 a year. The digest keeps you current; the query tool answers the specifics. One is preventive; the other is acute.
 
-[Start a four-week free trial →](/#subscribe)
+[Start a four-week free trial](/#subscribe)
 
 ## The bottom line
 

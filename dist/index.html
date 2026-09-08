@@ -122,7 +122,7 @@
   .nav-links { display: flex; gap: 1.5rem; align-items: center; }
   .nav-links a { font-size: 0.85rem; color: var(--text-muted); text-decoration: none; font-weight: 500; transition: color 0.2s; }
   .nav-links a:hover { color: var(--sage-deep); }
-  .nav-cta { background: var(--sage-deep); color: white !important; padding: 0.5rem 1.25rem; border-radius: 40px; font-size: 0.85rem; }
+  .nav-cta { text-align: center; background: var(--sage-deep); color: white !important; padding: 0.5rem 1.25rem; border-radius: 40px; font-size: 0.85rem; }
   .nav-cta:hover { background: var(--charcoal); }
 
   /* ── HERO ── */
@@ -138,7 +138,7 @@
   .hero-cta { opacity:0; animation: fadeUp 0.8s ease 0.8s forwards; }
   @keyframes fadeUp { from { opacity:0; transform: translateY(16px); } to { opacity:1; transform: translateY(0); } }
 
-  .btn-primary { display: inline-block; background: var(--sage-deep); color: white; text-decoration: none; padding: 1rem 2.5rem; border-radius: 60px; font-family: 'Figtree', sans-serif; font-size: 1rem; font-weight: 600; transition: all 0.3s ease; border: none; cursor: pointer; }
+  .btn-primary { display: inline-block; text-align: center; background: var(--sage-deep); color: white; text-decoration: none; padding: 1rem 2.5rem; border-radius: 60px; font-family: 'Figtree', sans-serif; font-size: 1rem; font-weight: 600; transition: all 0.3s ease; border: none; cursor: pointer; }
   .btn-primary:hover { background: var(--charcoal); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
   .btn-secondary { display: inline-block; color: var(--text-muted); text-decoration: none; font-size: 0.9rem; margin-top: 1rem; transition: color 0.2s; }
   .btn-secondary:hover { color: var(--sage-deep); }
@@ -189,7 +189,7 @@
   .sample-picker select { width: 100%; max-width: 360px; padding: 0.85rem 1.1rem; font-family: 'Figtree', sans-serif; font-size: 0.95rem; border: 1px solid var(--border); border-radius: 8px; background: white; color: var(--text); appearance: none; cursor: pointer; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23555' stroke-width='1.5'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 1rem center; padding-right: 2.5rem; }
   .sample-picker select:focus { border-color: var(--sage); }
   .sample-picker select:focus-visible { outline: 3px solid var(--sage-deep); outline-offset: 2px; border-color: var(--sage); }
-  .sample-deep-link { display: inline-block; margin-top: 1.5rem; color: var(--sage-deep); text-decoration: none; font-weight: 600; font-size: 0.95rem; padding: 0.75rem 1.25rem; border: 1px solid var(--sage-deep); border-radius: 40px; transition: all 0.2s; }
+  .sample-deep-link { display: inline-block; text-align: center; margin-top: 1.5rem; color: var(--sage-deep); text-decoration: none; font-weight: 600; font-size: 0.95rem; padding: 0.75rem 1.25rem; border: 1px solid var(--sage-deep); border-radius: 40px; transition: all 0.2s; }
   .sample-deep-link:hover { background: var(--sage-deep); color: white; }
 
   /* ── SUBSCRIBE SECTION ── */
@@ -312,9 +312,9 @@
     <h1>Your specialty's literature,<br><em>summarised every Monday</em></h1>
     <p class="hero-sub">AI-powered weekly digests of every new article from the top journals in your specialty. Structured clinical summaries, in your inbox, ready to scan over coffee. Try it free for a month.</p>
     <div class="hero-cta">
-      <a href="#subscribe" class="btn-primary">Start your free trial →</a>
+      <a href="#subscribe" class="btn-primary">Start your free trial</a>
       <br>
-      <a href="#how" class="btn-secondary">See how it works ↓</a>
+      <a href="#how" class="btn-secondary">See how it works</a>
       <div class="price-tag">Free for 4 weeks, then <strong>£20</strong> / year · Cancel any time</div>
       <div class="trial-terms">A card is needed to start the trial. Nothing is charged for 4 weeks, and nothing at all if you cancel before then.</div>
     </div>
@@ -383,7 +383,7 @@
         <div class="step-num">02</div>
         <div>
           <h3>AI-generated clinical summaries</h3>
-          <p>Each article gets a structured summary: study type, key question, findings with real numbers, clinical relevance, and limitations. <a href="/methodology/">How we choose journals and write summaries →</a></p>
+          <p>Each article gets a structured summary: study type, key question, findings with real numbers, clinical relevance, and limitations. <a href="/methodology/">How we choose journals and write summaries</a></p>
         </div>
       </div>
       <div class="step">
@@ -465,12 +465,12 @@
         <div class="summary-field"><span class="summary-label">Key Findings:</span> <ul><li>Among all 1712 deceased NFL players (2008-21), possible CTE prevalence ranged widely (18.5%–98.7%); during 2016-21 (peak donation period), the range narrowed to 24.5%–97.7%, suggesting a true minimum of roughly one-quarter.</li><li>Among 338 brain donors, 93.2% had CTE and 30.8% had stage IV disease; stage IV CTE was associated with a 44% higher risk of clinician-diagnosed dementia (RR 1.44, 95% CI 1.16–1.78, p&lt;0.001).</li><li>Neurodegenerative disease was recorded as cause of death in only 18.6% of donors and in just 40.6% of those with confirmed dementia, indicating substantial under-recognition on death certificates.</li></ul></div>
         <div class="summary-field"><span class="summary-label">Clinical Relevance:</span> Highlights that repetitive head impact-related neurodegeneration is likely underdiagnosed and under-certified, reinforcing the need for GPs to consider CTE/dementia risk when assessing cognitive symptoms in patients with significant contact-sport histories (relevant to UK rugby/football concussion pathways).</div>
         <div class="summary-field"><span class="summary-label">Limitations:</span> Selection bias is substantial, as brain donation was voluntary and likely over-represents symptomatic players, limiting generalisability of prevalence estimates.</div>
-        <div class="sample-sources"><a href="https://pubmed.ncbi.nlm.nih.gov/42642105/" target="_blank" rel="noopener">PubMed →</a><a href="https://doi.org/10.1136/bmj-2026-100418" target="_blank" rel="noopener">DOI →</a></div>
+        <div class="sample-sources"><a href="https://pubmed.ncbi.nlm.nih.gov/42642105/" target="_blank" rel="noopener">PubMed</a><a href="https://doi.org/10.1136/bmj-2026-100418" target="_blank" rel="noopener">DOI</a></div>
       </article>
       <!-- EXAMPLE_ARTICLES:END -->
     </div>
 
-    <a class="sample-deep-link" id="sample-deep-link" href="/samples/general-practice/">See the full General Practice digest →</a>
+    <a class="sample-deep-link" id="sample-deep-link" href="/samples/general-practice/">See the full General Practice digest</a>
   </div>
 </section>
 
@@ -751,7 +751,7 @@ document.querySelectorAll('.specialty-pill[data-slug]').forEach(function(pill) {
     var match = Array.from(sampleSelect.options).find(function(o) { return o.value === slug; });
     var name = match ? match.text : slug;
     sampleDeep.href = '/samples/' + slug + '/';
-    sampleDeep.textContent = 'See the full ' + name + ' digest →';
+    sampleDeep.textContent = 'See the full ' + name + ' digest';
     return true;
   }
 
@@ -765,7 +765,7 @@ document.querySelectorAll('.specialty-pill[data-slug]').forEach(function(pill) {
         // leaving the previous specialty's card showing under a new label.
         sampleDeep.href = '/samples/' + slug + '/';
         var m = Array.from(sampleSelect.options).find(function(o) { return o.value === slug; });
-        sampleDeep.textContent = 'See the full ' + (m ? m.text : slug) + ' digest →';
+        sampleDeep.textContent = 'See the full ' + (m ? m.text : slug) + ' digest';
         return;
       }
       if (!sampleOutput.querySelector('.sample-card[data-slug="' + slug + '"]')) {

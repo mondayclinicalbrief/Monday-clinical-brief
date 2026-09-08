@@ -47,7 +47,7 @@
   .nav-links { display: flex; gap: 1.5rem; align-items: center; }
   .nav-links a { font-size: 0.85rem; color: var(--text-muted); text-decoration: none; font-weight: 500; transition: color 0.2s; }
   .nav-links a:hover { color: var(--sage-deep); }
-  .nav-cta { background: var(--sage-deep); color: white !important; padding: 0.5rem 1.25rem; border-radius: 40px; font-size: 0.85rem; }
+  .nav-cta { text-align: center; background: var(--sage-deep); color: white !important; padding: 0.5rem 1.25rem; border-radius: 40px; font-size: 0.85rem; }
   .nav-cta:hover { background: var(--charcoal); }
 
   .breadcrumb { padding: 6rem 2rem 0; max-width: 1000px; margin: 0 auto; }
@@ -62,9 +62,8 @@
   .samples-hero p { color: var(--text-muted); font-size: 1.05rem; }
 
   .samples-grid { max-width: 1000px; margin: 0 auto; padding: 1.5rem 2rem 3rem; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 0.9rem; }
-  .sample-card { display: flex; align-items: center; justify-content: space-between; background: white; border: 1px solid var(--border); border-radius: 8px; padding: 1rem 1.25rem; text-decoration: none; color: var(--charcoal); font-weight: 600; font-size: 0.95rem; transition: all 0.2s; }
+  .sample-card { display: flex; align-items: center; justify-content: center; text-align: center; background: white; border: 1px solid var(--border); border-radius: 8px; padding: 1rem 1.25rem; text-decoration: none; color: var(--charcoal); font-weight: 600; font-size: 0.95rem; transition: all 0.2s; }
   .sample-card:hover { border-color: var(--sage); background: var(--sage-light); color: var(--sage-deep); box-shadow: 0 4px 16px rgba(0,0,0,0.05); }
-  .sample-card .arrow { color: var(--sage); font-weight: 400; }
 
   .samples-note { max-width: 680px; margin: 0 auto 2rem; padding: 0 2rem; text-align: center; }
   .samples-note p { color: var(--text-muted); font-size: 0.82rem; }
@@ -72,7 +71,7 @@
   .samples-cta { max-width: 680px; margin: 0 auto 3rem; padding: 2rem; text-align: center; background: var(--cream); border-radius: 8px; }
   .samples-cta h2 { font-family: 'Instrument Serif', serif; font-size: 1.5rem; font-weight: 400; color: var(--charcoal); margin-bottom: 0.5rem; }
   .samples-cta p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.25rem; }
-  .btn-primary { display: inline-block; background: var(--sage-deep); color: white; text-decoration: none; padding: 0.75rem 2rem; border-radius: 60px; font-weight: 600; font-size: 0.95rem; transition: all 0.3s ease; }
+  .btn-primary { display: inline-block; text-align: center; background: var(--sage-deep); color: white; text-decoration: none; padding: 0.75rem 2rem; border-radius: 60px; font-weight: 600; font-size: 0.95rem; transition: all 0.3s ease; }
   .btn-primary:hover { background: var(--charcoal); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
 
   footer { padding: 3rem 2rem; text-align: center; border-top: 1px solid var(--border); }
@@ -288,37 +287,37 @@
 </div>
 
 <div class="samples-grid">
-  <a class="sample-card" href="/samples/acute-medicine/">Acute Medicine <span class="arrow">→</span></a>
-  <a class="sample-card" href="/samples/anaesthetics/">Anaesthetics <span class="arrow">→</span></a>
-  <a class="sample-card" href="/samples/cardiology/">Cardiology <span class="arrow">→</span></a>
-  <a class="sample-card" href="/samples/cardiothoracic-surgery/">Cardiothoracic Surgery <span class="arrow">→</span></a>
-  <a class="sample-card" href="/samples/dermatology/">Dermatology <span class="arrow">→</span></a>
-  <a class="sample-card" href="/samples/emergency-medicine/">Emergency Medicine <span class="arrow">→</span></a>
-  <a class="sample-card" href="/samples/endocrinology/">Endocrinology <span class="arrow">→</span></a>
-  <a class="sample-card" href="/samples/gastroenterology/">Gastroenterology <span class="arrow">→</span></a>
-  <a class="sample-card" href="/samples/general-practice/">General Practice <span class="arrow">→</span></a>
-  <a class="sample-card" href="/samples/general-surgery/">General Surgery <span class="arrow">→</span></a>
-  <a class="sample-card" href="/samples/geriatric-medicine/">Geriatric Medicine <span class="arrow">→</span></a>
-  <a class="sample-card" href="/samples/haematology/">Haematology <span class="arrow">→</span></a>
-  <a class="sample-card" href="/samples/infectious-disease/">Infectious Disease <span class="arrow">→</span></a>
-  <a class="sample-card" href="/samples/intensive-care/">Intensive Care <span class="arrow">→</span></a>
-  <a class="sample-card" href="/samples/nephrology/">Nephrology <span class="arrow">→</span></a>
-  <a class="sample-card" href="/samples/neurology/">Neurology <span class="arrow">→</span></a>
-  <a class="sample-card" href="/samples/neurosurgery/">Neurosurgery <span class="arrow">→</span></a>
-  <a class="sample-card" href="/samples/obstetrics-gynaecology/">Obstetrics &amp; Gynaecology <span class="arrow">→</span></a>
-  <a class="sample-card" href="/samples/oncology/">Oncology <span class="arrow">→</span></a>
-  <a class="sample-card" href="/samples/ophthalmology/">Ophthalmology <span class="arrow">→</span></a>
-  <a class="sample-card" href="/samples/orthopaedic-surgery/">Orthopaedic Surgery <span class="arrow">→</span></a>
-  <a class="sample-card" href="/samples/paediatrics/">Paediatrics <span class="arrow">→</span></a>
-  <a class="sample-card" href="/samples/palliative-care/">Palliative Care <span class="arrow">→</span></a>
-  <a class="sample-card" href="/samples/pathology/">Pathology <span class="arrow">→</span></a>
-  <a class="sample-card" href="/samples/plastic-surgery/">Plastic Surgery <span class="arrow">→</span></a>
-  <a class="sample-card" href="/samples/psychiatry/">Psychiatry <span class="arrow">→</span></a>
-  <a class="sample-card" href="/samples/public-health/">Public Health <span class="arrow">→</span></a>
-  <a class="sample-card" href="/samples/radiology/">Radiology <span class="arrow">→</span></a>
-  <a class="sample-card" href="/samples/respiratory/">Respiratory <span class="arrow">→</span></a>
-  <a class="sample-card" href="/samples/rheumatology/">Rheumatology <span class="arrow">→</span></a>
-  <a class="sample-card" href="/samples/urology/">Urology <span class="arrow">→</span></a>
+  <a class="sample-card" href="/samples/acute-medicine/">Acute Medicine</a>
+  <a class="sample-card" href="/samples/anaesthetics/">Anaesthetics</a>
+  <a class="sample-card" href="/samples/cardiology/">Cardiology</a>
+  <a class="sample-card" href="/samples/cardiothoracic-surgery/">Cardiothoracic Surgery</a>
+  <a class="sample-card" href="/samples/dermatology/">Dermatology</a>
+  <a class="sample-card" href="/samples/emergency-medicine/">Emergency Medicine</a>
+  <a class="sample-card" href="/samples/endocrinology/">Endocrinology</a>
+  <a class="sample-card" href="/samples/gastroenterology/">Gastroenterology</a>
+  <a class="sample-card" href="/samples/general-practice/">General Practice</a>
+  <a class="sample-card" href="/samples/general-surgery/">General Surgery</a>
+  <a class="sample-card" href="/samples/geriatric-medicine/">Geriatric Medicine</a>
+  <a class="sample-card" href="/samples/haematology/">Haematology</a>
+  <a class="sample-card" href="/samples/infectious-disease/">Infectious Disease</a>
+  <a class="sample-card" href="/samples/intensive-care/">Intensive Care</a>
+  <a class="sample-card" href="/samples/nephrology/">Nephrology</a>
+  <a class="sample-card" href="/samples/neurology/">Neurology</a>
+  <a class="sample-card" href="/samples/neurosurgery/">Neurosurgery</a>
+  <a class="sample-card" href="/samples/obstetrics-gynaecology/">Obstetrics &amp; Gynaecology</a>
+  <a class="sample-card" href="/samples/oncology/">Oncology</a>
+  <a class="sample-card" href="/samples/ophthalmology/">Ophthalmology</a>
+  <a class="sample-card" href="/samples/orthopaedic-surgery/">Orthopaedic Surgery</a>
+  <a class="sample-card" href="/samples/paediatrics/">Paediatrics</a>
+  <a class="sample-card" href="/samples/palliative-care/">Palliative Care</a>
+  <a class="sample-card" href="/samples/pathology/">Pathology</a>
+  <a class="sample-card" href="/samples/plastic-surgery/">Plastic Surgery</a>
+  <a class="sample-card" href="/samples/psychiatry/">Psychiatry</a>
+  <a class="sample-card" href="/samples/public-health/">Public Health</a>
+  <a class="sample-card" href="/samples/radiology/">Radiology</a>
+  <a class="sample-card" href="/samples/respiratory/">Respiratory</a>
+  <a class="sample-card" href="/samples/rheumatology/">Rheumatology</a>
+  <a class="sample-card" href="/samples/urology/">Urology</a>
 </div>
 
 <div class="samples-note">
@@ -328,7 +327,7 @@
 <div class="samples-cta">
   <h2>One specialty included. Add more for £5 each.</h2>
   <p>Your subscription covers the top 5 journals in your specialty, every Monday. Add any of the other 30 specialties for £5/year each.</p>
-  <a href="/#subscribe" class="btn-primary">Start your free trial →</a>
+  <a href="/#subscribe" class="btn-primary">Start your free trial</a>
 </div>
 </main>
 

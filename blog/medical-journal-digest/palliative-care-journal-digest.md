@@ -46,7 +46,7 @@ Papers are selected for clinical applicability to NHS practice. Bench research a
 
 Before you subscribe, have a look at an example of a recent palliative care digest — no sign-up required.
 
-[Read a free sample issue →](/samples/palliative-care/)
+[Read a free sample issue](/samples/palliative-care/)
 
 You'll see the format, the depth of summary, and the journals we draw from. You can sign up for a four-week free trial and the subscription is only £20 a year after that.
 
