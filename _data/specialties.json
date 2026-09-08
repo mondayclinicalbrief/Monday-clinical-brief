@@ -1,37 +1,177 @@
 [
-  { "slug": "acute-medicine",          "name": "Acute Medicine" },
-  { "slug": "anaesthetics",            "name": "Anaesthetics" },
-  { "slug": "cardiology",              "name": "Cardiology" },
-  { "slug": "cardiothoracic-surgery",  "name": "Cardiothoracic Surgery" },
-  { "slug": "dental-hygiene-therapy",  "name": "Dental Hygiene & Therapy" },
-  { "slug": "dentistry",               "name": "Dentistry" },
-  { "slug": "dermatology",             "name": "Dermatology" },
-  { "slug": "emergency-medicine",      "name": "Emergency Medicine" },
-  { "slug": "endocrinology",           "name": "Endocrinology" },
-  { "slug": "gastroenterology",        "name": "Gastroenterology" },
-  { "slug": "general-practice",        "name": "General Practice" },
-  { "slug": "general-surgery",         "name": "General Surgery" },
-  { "slug": "geriatric-medicine",      "name": "Geriatric Medicine" },
-  { "slug": "haematology",             "name": "Haematology" },
-  { "slug": "infectious-disease",      "name": "Infectious Disease" },
-  { "slug": "intensive-care",          "name": "Intensive Care" },
-  { "slug": "nephrology",              "name": "Nephrology" },
-  { "slug": "neurology",               "name": "Neurology" },
-  { "slug": "neurosurgery",            "name": "Neurosurgery" },
-  { "slug": "obstetrics-gynaecology",  "name": "Obstetrics & Gynaecology" },
-  { "slug": "oncology",                "name": "Oncology" },
-  { "slug": "ophthalmology",           "name": "Ophthalmology" },
-  { "slug": "oral-surgery",            "name": "Oral Surgery" },
-  { "slug": "orthodontics",            "name": "Orthodontics" },
-  { "slug": "orthopaedic-surgery",     "name": "Orthopaedic Surgery" },
-  { "slug": "paediatrics",             "name": "Paediatrics" },
-  { "slug": "palliative-care",         "name": "Palliative Care" },
-  { "slug": "pathology",               "name": "Pathology" },
-  { "slug": "plastic-surgery",         "name": "Plastic Surgery" },
-  { "slug": "psychiatry",              "name": "Psychiatry" },
-  { "slug": "public-health",           "name": "Public Health" },
-  { "slug": "radiology",               "name": "Radiology" },
-  { "slug": "respiratory",             "name": "Respiratory" },
-  { "slug": "rheumatology",            "name": "Rheumatology" },
-  { "slug": "urology",                 "name": "Urology" }
+  {
+    "slug": "acute-medicine",
+    "name": "Acute Medicine",
+    "dental": false
+  },
+  {
+    "slug": "anaesthetics",
+    "name": "Anaesthetics",
+    "dental": false
+  },
+  {
+    "slug": "cardiology",
+    "name": "Cardiology",
+    "dental": false
+  },
+  {
+    "slug": "cardiothoracic-surgery",
+    "name": "Cardiothoracic Surgery",
+    "dental": false
+  },
+  {
+    "slug": "dental-hygiene-therapy",
+    "name": "Dental Hygiene & Therapy",
+    "dental": true
+  },
+  {
+    "slug": "dentistry",
+    "name": "Dentistry",
+    "dental": true
+  },
+  {
+    "slug": "dermatology",
+    "name": "Dermatology",
+    "dental": false
+  },
+  {
+    "slug": "emergency-medicine",
+    "name": "Emergency Medicine",
+    "dental": false
+  },
+  {
+    "slug": "endocrinology",
+    "name": "Endocrinology",
+    "dental": false
+  },
+  {
+    "slug": "gastroenterology",
+    "name": "Gastroenterology",
+    "dental": false
+  },
+  {
+    "slug": "general-practice",
+    "name": "General Practice",
+    "dental": false
+  },
+  {
+    "slug": "general-surgery",
+    "name": "General Surgery",
+    "dental": false
+  },
+  {
+    "slug": "geriatric-medicine",
+    "name": "Geriatric Medicine",
+    "dental": false
+  },
+  {
+    "slug": "haematology",
+    "name": "Haematology",
+    "dental": false
+  },
+  {
+    "slug": "infectious-disease",
+    "name": "Infectious Disease",
+    "dental": false
+  },
+  {
+    "slug": "intensive-care",
+    "name": "Intensive Care",
+    "dental": false
+  },
+  {
+    "slug": "nephrology",
+    "name": "Nephrology",
+    "dental": false
+  },
+  {
+    "slug": "neurology",
+    "name": "Neurology",
+    "dental": false
+  },
+  {
+    "slug": "neurosurgery",
+    "name": "Neurosurgery",
+    "dental": false
+  },
+  {
+    "slug": "obstetrics-gynaecology",
+    "name": "Obstetrics & Gynaecology",
+    "dental": false
+  },
+  {
+    "slug": "oncology",
+    "name": "Oncology",
+    "dental": false
+  },
+  {
+    "slug": "ophthalmology",
+    "name": "Ophthalmology",
+    "dental": false
+  },
+  {
+    "slug": "oral-surgery",
+    "name": "Oral Surgery",
+    "dental": true
+  },
+  {
+    "slug": "orthodontics",
+    "name": "Orthodontics",
+    "dental": true
+  },
+  {
+    "slug": "orthopaedic-surgery",
+    "name": "Orthopaedic Surgery",
+    "dental": false
+  },
+  {
+    "slug": "paediatrics",
+    "name": "Paediatrics",
+    "dental": false
+  },
+  {
+    "slug": "palliative-care",
+    "name": "Palliative Care",
+    "dental": false
+  },
+  {
+    "slug": "pathology",
+    "name": "Pathology",
+    "dental": false
+  },
+  {
+    "slug": "plastic-surgery",
+    "name": "Plastic Surgery",
+    "dental": false
+  },
+  {
+    "slug": "psychiatry",
+    "name": "Psychiatry",
+    "dental": false
+  },
+  {
+    "slug": "public-health",
+    "name": "Public Health",
+    "dental": false
+  },
+  {
+    "slug": "radiology",
+    "name": "Radiology",
+    "dental": false
+  },
+  {
+    "slug": "respiratory",
+    "name": "Respiratory",
+    "dental": false
+  },
+  {
+    "slug": "rheumatology",
+    "name": "Rheumatology",
+    "dental": false
+  },
+  {
+    "slug": "urology",
+    "name": "Urology",
+    "dental": false
+  }
 ]
