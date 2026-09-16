@@ -1,8 +1,8 @@
 ---
 title: "NICE NG136 Hypertension Update, February 2026: New Advice for Raised Blood Pressure Before Diagnosis"
 seoTitle: "NICE NG136 Hypertension 2026: What Actually Changed"
-metaDescription: "NICE updated NG136 on 26 Feb 2026: new healthy-living advice for raised BP before diagnosis — plus a plain-English recap of diagnosis, treatment and targets."
-description: "NICE updated its hypertension guideline (NG136) on 26 February 2026 with a new recommendation on healthy-living advice for people with raised blood pressure who do not have diagnosed hypertension. Here is what changed, and a plain-English refresher on NG136 for busy UK clinicians."
+metaDescription: "NICE updated NG136 on 26 Feb 2026: new healthy-living advice for raised BP before diagnosis — plus a quick recap of thresholds, treatment steps and targets."
+description: "NICE updated its hypertension guideline (NG136) on 26 February 2026 with a new recommendation on healthy-living advice for people with raised blood pressure who do not have diagnosed hypertension. Here is what changed, and a quick refresher on NG136 for busy UK clinicians."
 date: 2026-07-02
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
