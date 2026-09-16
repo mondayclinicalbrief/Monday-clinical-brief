@@ -35,9 +35,23 @@ const EXTRA_SPECIALTY_GBP = 5;     // each additional specialty
 //   NASGP — duration: FOREVER (the discounted rate recurs)
 //   SAM   — duration: FOREVER (the discounted rate recurs)
 //   MDDUS — duration: FOREVER (the discounted rate recurs)
+//   AWPCC — duration: FOREVER (the discounted rate recurs)
+// Every code here needs a branch in the if/else chain further down as well. The
+// arrays alone are dead code: couponKind never gets set, so the welcome email
+// quotes the list price while Stripe charges the discounted one.
 const MEMBER_RATE_DISCOUNT_GBP = 5;
-const MEMBER_RATE_COUPONS = ["ABUHB", "APM", "NASGP", "SAM", "MDDUS"];
-const RECURRING_MEMBER_RATES = ["APM", "NASGP", "SAM", "MDDUS"];
+const MEMBER_RATE_COUPONS = ["ABUHB", "APM", "NASGP", "SAM", "MDDUS", "AWPCC"];
+const RECURRING_MEMBER_RATES = ["APM", "NASGP", "SAM", "MDDUS", "AWPCC"];
+
+// How each recurring rate is named in the welcome email. A bare acronym reads fine
+// for a society but not for a conference, so AWPCC is spelled out.
+const MEMBER_RATE_LABELS = {
+  APM: "APM member rate",
+  NASGP: "NASGP member rate",
+  SAM: "SAM member rate",
+  MDDUS: "MDDUS member rate",
+  AWPCC: "All Wales Palliative Care Conference delegate rate",
+};
 const SUPPORT_EMAIL = "info@mondayclinicalbrief.co.uk";
 const STRIPE_CUSTOMER_PORTAL = "https://billing.stripe.com/p/login/dRm28k4rI5LYaoh3qaefC00";
 
@@ -520,7 +534,7 @@ exports.handler = async (event) => {
   // £15 to someone buying two specialties would understate what they actually pay.
   const listTotalGbp = PRIMARY_PRICE_GBP + Math.max(0, specialtySlugs.length - 1) * EXTRA_SPECIALTY_GBP;
   let price = `£${listTotalGbp}`;
-  let couponKind = null; // "FAF2026" | "ABUHB" | "APM" | "NASGP" | "SAM" — drives the priceLine wording below
+  let couponKind = null; // "FAF2026" | "ABUHB" | "APM" | "NASGP" | "SAM" | "MDDUS" | "AWPCC" — drives the priceLine wording below
   try {
     // 1. Check session.discount (included in webhook payload)
     const couponCodes = [];
@@ -589,6 +603,10 @@ exports.handler = async (event) => {
       couponKind = "NASGP";
     } else if (norm.some(c => c.includes("SAM"))) {
       couponKind = "SAM";
+    } else if (norm.some(c => c.includes("MDDUS"))) {
+      couponKind = "MDDUS";
+    } else if (norm.some(c => c.includes("AWPCC"))) {
+      couponKind = "AWPCC";
     }
 
     // Stripe reports amount_total of 0 for the whole 28-day trial, so it is only
@@ -613,7 +631,7 @@ exports.handler = async (event) => {
   if (couponKind === "FAF2026" || couponKind === "ABUHB") {
     priceLine = `${price} for the first year, then £${listTotalGbp}/year`;
   } else if (RECURRING_MEMBER_RATES.includes(couponKind)) {
-    priceLine = `${price}/year — your ${couponKind} member rate`;
+    priceLine = `${price}/year — your ${MEMBER_RATE_LABELS[couponKind] || `${couponKind} member rate`}`;
   } else {
     priceLine = `${price}/year`;
   }
