@@ -54,6 +54,10 @@ module.exports = function(eleventyConfig) {
     return collectionApi.getFilteredByGlob("blog/journal-summary-subscription/**/*.md").sort((a, b) => b.date - a.date);
   });
 
+  eleventyConfig.addCollection("cluster4", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("blog/dentistry/**/*.md").sort((a, b) => b.date - a.date);
+  });
+
   // ── Markdown config with anchor links ──
   let markdownIt = require("markdown-it");
   let markdownItAnchor = require("markdown-it-anchor");
