@@ -79,7 +79,7 @@ __Stop Missing Critical Papers__
 
 Read The Monday Clinical Brief every week. Fifteen minutes. All the papers that matter in your specialty.
 
-[Subscribe to The Monday Clinical Brief](/#subscribe) — £20 a year, no advertising.
+[Subscribe to The Monday Clinical Brief](/#subscribe) — £20 a year, no advertising and no pharmaceutical funding.
 
 ## How to Choose the Right Medical Journal Digest
 

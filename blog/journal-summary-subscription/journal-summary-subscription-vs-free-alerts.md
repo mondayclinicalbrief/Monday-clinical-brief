@@ -4,6 +4,7 @@ seoTitle: "Journal Summary Subscription vs Free Alerts"
 metaDescription: "Free journal alerts or a paid summary subscription? We compare coverage, signal-to-noise, CPD value and time cost for UK doctors."
 description: "Free journal alerts or a paid summary subscription? A practical comparison of coverage, signal-to-noise, and time cost for busy UK doctors."
 date: 2026-04-28
+updated: 2026-09-18
 cluster: "Journal Summary Subscription"
 schemaType: "Article"
 pillar: false
@@ -29,6 +30,18 @@ The weaknesses show up quickly:
 - **No reflection prompt, no CPD output.** The alert is not designed for revalidation. It gives you no help logging what you read or why it mattered.
 
 For a junior doctor with niche interests and time on their hands, this can work. For a consultant running a clinic and three teaching commitments, it rarely does.
+
+## The free alerts worth naming
+
+"Free alerts" covers three quite different things, and the distinction matters more than the price does.
+
+**Journal table-of-contents alerts and PubMed saved searches.** The raw version: you pick the journals or the search, and every new match arrives as a list. Complete coverage of what you asked for, no judgement applied, and entirely your problem to triage.
+
+**EvidenceAlerts.** A step up, because someone has already filtered. New clinical studies are screened for methodological quality and rated for relevance by practising clinicians before anything reaches you. It is free, and worth knowing who provides it: EvidenceAlerts describes itself as a free service provided by **EBSCO and McMaster University**, EBSCO being the publisher of DynaMed. That does not make the ratings less rigorous — the McMaster methodology is well established and predates the arrangement. It does mean the leading free filtered-alert service is operated alongside a paid clinical reference product, which is worth knowing when you are weighing "free" against "independent".
+
+**Red Whale Pearls.** The one most often left out of comparisons like this, and the closest free thing to a digest. A weekly email for GPs and primary care clinicians, free, covering **one topic per issue** — recent editions have run on acute aortic syndrome, suicide risk assessment and penicillin allergy. It is genuinely good, and it is teaching rather than literature coverage: it explains a topic drawn from Red Whale's own library, and it funnels towards their paid courses and memberships.
+
+That last distinction is the one to hold on to. Pearls answers "teach me about this topic". A journal digest answers "what was published in my specialty last week". Both arrive by email on a schedule; they are not substitutes, and a week when nothing is published in your field is not a week when Pearls goes quiet.
 
 ## What a Journal Summary Subscription Gives You
 
