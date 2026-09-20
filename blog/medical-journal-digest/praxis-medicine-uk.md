@@ -25,6 +25,8 @@ Praxis Medicine is a new UK-focused clinical AI search tool, backed by Balderton
 
 If you have searched for "Praxis Medicine UK" and found very little, that is because the product is new. Here is a clear account of what it does and where it sits.
 
+> **Not to be confused with Praktiki**, which is a different company entirely — a free microlearning app for clinicians, built around short cases rather than clinical search. We cover it in our guide to [CPD reading tools for UK doctors](/blog/cpd-reading-tool/best-cpd-reading-tools-doctors-uk/).
+
 ## What Praxis Medicine does
 
 Praxis is a clinical AI search tool. You type a clinical question; it returns a synthesised answer grounded in named UK sources. The source list is the interesting part: [NICE Guidelines](https://www.nice.org.uk), NICE CKS, NHS Digital and Europe PMC. That is a deliberately UK-first grounding, in contrast to US-built tools whose answers reflect FDA labelling and American pathways.

@@ -4,7 +4,7 @@ seoTitle: "FourteenFish Alternatives for Logging CPD"
 metaDescription: "Looking for a FourteenFish alternative? An honest comparison of Clarity, BMJ Portfolio, GP Tools and spreadsheets — and when to just stay put."
 description: "The realistic alternatives to FourteenFish for UK doctors, what each does better, and the cases where FourteenFish is still the right answer."
 date: 2026-07-25
-updated: 2026-09-01
+updated: 2026-09-18
 cluster: "CPD and Revalidation"
 clusterSlug: "cpd-reading-tool"
 schemaType: "Article"
@@ -83,6 +83,15 @@ Included with membership, with prompts aligned to your own college's scheme. Tha
 
 **Choose it if:** you already pay the membership. RCGP fees for 2026–27 run £162–£645 by earnings, so it is free at the margin rather than free.
 
+### iatroX
+
+A clinical reference and search tool that also carries a CPD portfolio. The portfolio side logs activity, offers AI reflection prompts, and exports a PDF report for appraisal and revalidation. CPD is bundled into its all-access plan rather than sold separately.
+
+The logic is the opposite of BMJ Portfolio's. BMJ Portfolio is a portfolio that happens to be free; iatroX is a reference tool where the portfolio comes attached to the thing you were already paying for. Whether that is an advantage depends entirely on whether you want the reference tool.
+
+**Choose it if:** you would use the clinical search anyway, and would rather your lookups and your CPD log lived in the same place.
+**Against:** you are buying a reference product to get a portfolio. If the portfolio is all you want, the free options above do that job.
+
 ### A spreadsheet
 
 Five columns — date, source, time spent, what you learned, impact on practice. That is the entire structure the GMC asks for.
@@ -99,6 +108,7 @@ Five columns — date, source, time spent, what you learned, impact on practice.
 | GP Tools | Free | Yes | Fair | NHS GPs only; MSF included |
 | NHS platform | Employer-funded | Yes | Basic | SARD, PReP, L2P, MARS |
 | BMJ Portfolio | Free | No | Good | Any source; integrates directly with FourteenFish |
+| iatroX | Paid (all-access) | No | Good | Reference tool first; AI reflection prompts, PDF export |
 | College diary | With membership | Partly | Good | College-aligned prompts |
 | Spreadsheet | Free | No | Good | You supply the structure |
 

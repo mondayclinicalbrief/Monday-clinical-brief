@@ -4,6 +4,7 @@ seoTitle: "Best CPD Tools for UK Doctors (2026)"
 metaDescription: "CPD tools for UK doctors compared: portfolios, reading logs and trackers. What each one records, how it feeds your appraisal, and which fits your workflow."
 description: "A practical comparison of CPD reading tools for UK doctors — what they track, how they integrate with appraisal portfolios, and which suits your workflow."
 date: 2026-04-21
+updated: 2026-09-18
 cluster: "CPD and Revalidation"
 clusterSlug: "cpd-reading-tool"
 schemaType: "Article"
@@ -139,6 +140,27 @@ Is it free or subscription-based? Does your trust or professional body already p
 
 ---
 
+### Praktiki
+
+**What it does:** A microlearning app for clinicians built around short clinical cases — pitched as five minutes a day. Its RCGP listing describes automatic CPD tracking, with points synced to FourteenFish, so the learning and the logging happen together.
+
+**Strengths:**
+- Free to clinicians
+- The logging is automatic rather than a separate chore
+- Genuinely short — designed around minutes, not evenings
+- Syncs to FourteenFish, which is where most UK GPs submit anyway
+
+**Limitations:**
+- Modules, not literature — it teaches a topic rather than telling you what was published
+- You are reading someone's curriculum, not your specialty's output
+- Funded by pharmaceutical companies, charities and medical societies rather than by clinicians, which is worth knowing when a module sits near a product
+
+**Cost:** Free. Its own material claims over 11,000 users and more than 100,000 modules completed; both are company-reported figures.
+
+**Who it suits:** Doctors who want CPD hours to accumulate with minimal friction, and who are comfortable with industry-funded content. It answers "teach me something" rather than "what changed this week".
+
+---
+
 ### Excel/Paper Logs (DIY Approach)
 
 **What it does:** You create your own spreadsheet or paper notebook: date, article title, journal, key learning, application to practice, hours spent.
@@ -171,6 +193,7 @@ Is it free or subscription-based? Does your trust or professional body already p
 | **RCGP CPD Module** | 3–4 min | Very good (college-aligned) | Fair (manual export) | Free (with RCGP membership) |
 | **BMA CPD Tracker** | 3–4 min | Good (generic) | Fair (basic export) | Free (with BMA membership) |
 | **The Monday Clinical Brief** | N/A (reading tool) | Good (summaries include takeaways) | Pairs with any portfolio; CPD Tracker included | £20/year per specialty |
+| **Praktiki** | Automatic | Built into the modules | Syncs to FourteenFish | Free (industry-funded) |
 | **Excel/Paper** | 5–10 min | None (you create) | Poor (manual) | Free |
 
 ---

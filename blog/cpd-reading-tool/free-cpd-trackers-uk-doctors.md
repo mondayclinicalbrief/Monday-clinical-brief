@@ -4,7 +4,7 @@ seoTitle: "Free CPD Trackers for UK Doctors (2026)"
 metaDescription: "The genuinely free ways for UK doctors to track CPD — BMJ Portfolio, college diaries, NHS platforms and spreadsheets — and what each costs you elsewhere."
 description: "A straight comparison of the free CPD tracking options open to UK doctors, what each one actually covers, and where the hidden cost sits."
 date: 2026-07-25
-updated: 2026-09-01
+updated: 2026-09-18
 cluster: "CPD and Revalidation"
 clusterSlug: "cpd-reading-tool"
 schemaType: "Article"
@@ -78,6 +78,16 @@ Worth including because the pricing is widely misunderstood. You can use the App
 
 **Best for:** most UK GPs, given it is the default platform and the effective cost is low or nil. We cover [the alternatives to it here](/blog/cpd-reading-tool/fourteenfish-alternatives-cpd-logging/).
 
+### Praktiki — free, and it logs itself
+
+A microlearning app built around short clinical cases, pitched at five minutes a day. The reason it belongs on a page about trackers rather than a page about courses is the automatic bit: its own RCGP listing describes automatic CPD tracking, with CPD points synced to FourteenFish. You do the learning, and the logging happens.
+
+Worth understanding why it costs you nothing. Praktiki sells clinical programmes to pharmaceutical companies, charities and medical societies, and its homepage displays them as partners. The clinician side is free because the funding comes from the other side. That is a normal arrangement in UK medical education and not a reason to avoid it — but it is worth knowing who paid for the module you are reflecting on, particularly if the topic sits near a product.
+
+**Covers:** the learning and the logging, in one motion.
+**Doesn't cover:** it is modules, not your own reading. Anything you read elsewhere still has to be logged elsewhere.
+**Best for:** doctors who want CPD hours to accumulate without thinking about it, and who are comfortable with industry-funded content.
+
 ### A spreadsheet — free, and better than it sounds
 
 Five columns: date, source, time spent, what you learned, impact on practice. That is the whole structure the GMC asks for.
@@ -95,6 +105,7 @@ Five columns: date, source, time spent, what you learned, impact on practice. Th
 | NHS platform | Employer-funded | Basic | Yes | SARD, PReP, L2P, MARS (Wales) |
 | GP Tools | Free | Yes | Yes | NHS GPs only; includes MSF and survey |
 | FourteenFish | Free until submission | Yes | Yes | ~£40–50/yr, 30% off for RCGP members |
+| Praktiki | Free | Automatic | No | Modules, not your own reading; syncs to FourteenFish; industry-funded |
 | Spreadsheet | Free | Yes | No | You supply the structure |
 
 ## Where the real cost is
