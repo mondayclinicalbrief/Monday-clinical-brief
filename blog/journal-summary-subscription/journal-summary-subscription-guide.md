@@ -5,6 +5,7 @@ seoTitle: "Journal Summary Subscription: Weekly Clinical Digests"
 metaDescription: "Subscribe to Monday Clinical Brief for weekly journal summaries from The Lancet, BMJ, NEJM and 20+ journals. Easy to log for CPD. Written for UK doctors."
 description: "Compare journal summary subscription services for UK doctors. What to look for, how they work, and why The Monday Clinical Brief covers 31 specialties for £20/year."
 date: 2026-03-17
+updated: 2026-09-18
 permalink: /blog/journal-summary-subscription/guide/
 cluster: "Journal Summary Subscription"
 schemaType: "MedicalWebPage"
@@ -28,7 +29,7 @@ Monday Clinical Brief is a weekly journal summary subscription that delivers the
 
 __Try It Free for 4 Weeks__
 
-No credit card required. Cancel anytime. See why UK doctors start their week with MCB.
+Four weeks free, and cancel anytime. See why UK doctors start their week with MCB.
 
 [Start your four-week free trial](/#subscribe)
 
@@ -114,6 +115,6 @@ Alerts only, no summaries
 
 __Start Your Free Trial Today__
 
-Start every Monday informed, current, and CPD-ready. Fifteen minutes, no credit card required.
+Start every Monday informed, current, and CPD-ready. Fifteen minutes a week, and four weeks free.
 
 [Start your four-week free trial](/#subscribe)

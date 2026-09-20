@@ -4,7 +4,7 @@ seoTitle: "Monday Clinical Brief vs UpToDate: Which Do You Need?"
 metaDescription: "UpToDate is a clinical reference; The Monday Clinical Brief is a weekly literature digest. They do different jobs — here is how to think about both."
 description: "UpToDate and MCB solve different problems. One is a reference you consult. The other is a digest that keeps you current. Most UK doctors need both — here's why."
 date: 2026-05-04
-updated: 2026-08-17
+updated: 2026-09-18
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
@@ -98,4 +98,4 @@ The gap UpToDate cannot fill is the one MCB is built for: the trial published la
 
 **If you want both:** most UK NHS doctors do. Institutional UpToDate access plus a £20/year digest is the combination that covers both jobs. The total cost is typically just the £20.
 
-[Start a four-week free trial of The Monday Clinical Brief](/#subscribe) — no credit card required.
+[Start a four-week free trial of The Monday Clinical Brief](/#subscribe) — cancel any time before it renews.

@@ -4,7 +4,7 @@ seoTitle: "Best Medical Journal Digests for UK Doctors (2026)"
 metaDescription: "Compare the best medical journal digests for UK doctors on coverage, CPD and price — the top 5 journals across 31 specialties from £20/year."
 description: "A head-to-head comparison of journal digest services available to UK doctors — features, pricing, CPD integration, and specialty coverage."
 date: 2026-04-14
-updated: 2026-09-01
+updated: 2026-09-18
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
@@ -12,7 +12,7 @@ faqs:
   - question: "What is the best medical journal digest service for UK doctors?"
     answer: "There is no single best service for everyone. For passive, UK-focused weekly reading, The Monday Clinical Brief suits most clinicians. For a searchable reference tool, UpToDate and BMJ Best Practice lead. For tightly filtered primary-care evidence, Evidence Alerts works well. The right choice depends on whether you want to stay current or look things up, and on your budget."
   - question: "Are there any free medical journal digest services?"
-    answer: "Yes. Evidence Alerts has a free tier, and The Monday Clinical Brief offers a free four-week trial with no credit card required. Many NHS clinicians also reach UpToDate and BMJ Best Practice at no personal cost through an NHS trust or institutional subscription."
+    answer: "Yes. Evidence Alerts has a free tier, and The Monday Clinical Brief offers a free four-week trial, which you can cancel any time before it renews. Many NHS clinicians also reach UpToDate and BMJ Best Practice at no personal cost through an NHS trust or institutional subscription."
   - question: "Is Medscape AI a free alternative to a paid journal digest?"
     answer: "Not really — it solves a different problem. Medscape AI is free to Medscape members and answers clinical questions you put to it, but it does not push you what is new in your specialty, so it cannot do a digest's job. It also holds no UK regulatory status: it is not UKCA-marked, not MHRA-registered, and has not been assessed against DTAC, and its parent WebMD is advertising-funded. If your problem is keeping up rather than looking up, a digest is the tool that fits — Evidence Alerts has a free tier, and The Monday Clinical Brief offers a free four-week trial."
   - question: "Which journal digest services count towards CPD or revalidation?"
@@ -292,7 +292,7 @@ No single service is "best" for all clinicians. Most UK doctors benefit from a *
 
 If you're currently skipping summaries because you're overwhelmed, or reading abstracts at 10 pm and falling behind, a good digest service isn't a luxury—it's essential protected learning time.
 
-The Monday Clinical Brief offers a **free 4-week trial** with no credit card required. It's an easy way to see if a UK-focused weekly digest fits your workflow. Start the trial and see if those 15 minutes a week make a difference to how informed and confident you feel in your practice.
+The Monday Clinical Brief offers a **free 4-week trial**, cancellable any time before it renews. It's an easy way to see if a UK-focused weekly digest fits your workflow. Start the trial and see if those 15 minutes a week make a difference to how informed and confident you feel in your practice.
 
 For a broader introduction to managing medical literature, see our [guide to medical journal digests](../guide/) and [how to stay current with medical literature](../how-to-keep-up-with-medical-literature/).
 

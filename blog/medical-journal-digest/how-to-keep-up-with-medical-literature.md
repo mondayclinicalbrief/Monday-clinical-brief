@@ -4,7 +4,7 @@ seoTitle: "How to Keep Up with Medical Literature in 2026"
 metaDescription: "Over 7,000 medical papers published weekly. How do busy UK doctors stay current? Five practical strategies for efficient journal reading that count towards CPD."
 description: "Five practical strategies for busy UK doctors to stay current with the medical literature — without sacrificing every evening and weekend."
 date: 2026-03-24
-updated: 2026-06-02
+updated: 2026-09-18
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
@@ -14,7 +14,7 @@ pillar: false
 
 ## The Scale of the Problem
 
-The volume of medical literature published each week is staggering. Over 7,000 peer-reviewed papers hit the journals every seven days. For a busy NHS consultant or GP, staying abreast of the latest evidence feels like trying to drink from a firehose.
+The volume of medical literature published each week is staggering. Over 7,000 peer-reviewed papers hit the journals every seven days. For a busy NHS consultant or GP, staying abreast of the latest evidence can feel impossible before the week has even started.
 
 In your specialty alone, hundreds of new articles emerge monthly. Some are landmark trials that reshape clinical practice. Many others are incremental advances or niche studies that do not apply to your daily work. The challenge is not access to information—we have more than ever—but discernment: knowing what to read, when to read it, and how to retain what matters.
 

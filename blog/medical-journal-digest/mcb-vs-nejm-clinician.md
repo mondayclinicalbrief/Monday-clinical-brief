@@ -4,7 +4,7 @@ seoTitle: "Monday Clinical Brief vs NEJM Clinician (2026)"
 metaDescription: "NEJM Clinician costs about £75/year per specialty across 12 editions. The Monday Clinical Brief covers all 31 specialties for £20/year. How they compare."
 description: "NEJM Journal Watch is now NEJM Clinician. Here's how it compares to The Monday Clinical Brief in 2026 — price, coverage, UK alignment, and which one fits your workflow."
 date: 2026-05-04
-updated: 2026-07-16
+updated: 2026-09-18
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
@@ -86,4 +86,4 @@ MCB is less than a third of the cost for a single specialty and covers more than
 
 **Use both if:** you're in one of NEJM Clinician's core specialties and want the editorial commentary layer on top of systematic weekly coverage. At a combined £95/year, this is still less than a single year of many premium alternatives.
 
-[Start a four-week free trial of The Monday Clinical Brief](/#subscribe) — no credit card required.
+[Start a four-week free trial of The Monday Clinical Brief](/#subscribe) — cancel any time before it renews.
