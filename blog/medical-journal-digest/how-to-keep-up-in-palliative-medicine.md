@@ -1,7 +1,13 @@
 ---
-# 2026-07-31: Unpublished pending submission of a closely related piece to BMJ
-# Supportive & Palliative Care. Not built, not in any collection, not in the
-# sitemap. To restore, delete these two keys and the /_redirects entry.
+# 2026-07-31: unpublished pending a closely related piece in BMJ Supportive &
+# Palliative Care.
+# 2026-09-18: that piece is live (blogs.bmj.com/spcare, 3 Sept 2026, by Dr Angus
+# Grant, who used this draft as a structural template and wrote his own). Tim's
+# decision: this post STAYS DOWN permanently rather than compete with it — the
+# two share a title and an argument, and would split the same search intent.
+# Not a temporary hold. Do not restore it, and do not re-flag it as unblocked.
+# Not built, not in any collection, not in the sitemap; /_redirects sends the
+# URL to palliative-care-journal-digest.
 permalink: false
 eleventyExcludeFromCollections: true
 title: "How Does a Palliative Care Clinician Keep Up With the Evidence?"
