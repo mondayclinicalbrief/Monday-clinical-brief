@@ -8,6 +8,12 @@ updated: 2026-08-17
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
+signup:
+  eyebrow: "For general practice"
+  heading: "NG238 changes rarely. The evidence behind it doesn't stop."
+  body: "Research on lipids, prevention and statin side effects keeps arriving. Every Monday we send one email with each new paper from the five general practice journals we hand-pick, summarised and linked to the original."
+  specialty: general-practice
+  note: "Want the cardiology journals as well? Add Cardiology for £5 a year when you sign up."
 faqs:
   - question: "At what QRISK3 score does NICE recommend a statin for primary prevention?"
     answer: "NICE NG238 recommends offering atorvastatin 20mg for the primary prevention of cardiovascular disease to people with a 10-year QRISK3 score of 10% or more. The 10% figure is a threshold for a proactive offer, not a hard cut-off. NICE also says not to rule out atorvastatin 20mg for people with a QRISK3 below 10% if they have an informed preference for taking a statin. QRISK3 is used for adults aged 25 to 84 without established cardiovascular disease."

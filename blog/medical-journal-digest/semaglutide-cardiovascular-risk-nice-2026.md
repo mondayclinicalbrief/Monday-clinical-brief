@@ -8,6 +8,12 @@ updated: 2026-07-16
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
+signup:
+  eyebrow: "For cardiology"
+  heading: "Drug classes are crossing specialties. Your reading can too."
+  body: "TA1152 took semaglutide from weight management into cardiovascular prevention. Every Monday we send one email with each new paper from the five cardiology journals we hand-pick, summarised and linked to the original. Each extra specialty is £5 a year."
+  specialty: cardiology
+  note: 'Work in general practice? <a href="/?specialty=general-practice#subscribe">Start with General Practice</a> and add Cardiology for £5 a year.'
 faqs:
   - question: "Does a patient need diabetes to get semaglutide for cardiovascular protection under TA1152?"
     answer: "No. NICE TA1152 recommends semaglutide (Wegovy) for adults with established cardiovascular disease and a BMI of 27 kg/m² or more. Type 2 diabetes is not a requirement — this is a cardiovascular indication defined by vascular disease and weight, not glycaemia."

@@ -7,6 +7,12 @@ date: 2026-05-19
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
+signup:
+  eyebrow: "For general practice"
+  heading: "Guidelines catch up. The journals get there first."
+  body: "The case for SGLT2 inhibitors was built paper by paper, years before NG28 moved them first-line. Every Monday we send one email with each new paper from the five general practice journals we hand-pick, summarised and linked to the original."
+  specialty: general-practice
+  note: "Run the practice diabetes clinic? Add Endocrinology for £5 a year for Diabetes Care, Diabetologia and three more."
 faqs:
   - question: "Which SGLT2 inhibitors are licensed for type 2 diabetes in the UK?"
     answer: "Four SGLT2 inhibitors are licensed in the UK for type 2 diabetes: dapagliflozin, empagliflozin, canagliflozin and ertugliflozin. Dapagliflozin and empagliflozin are the agents most commonly used in UK primary care and most commonly preferred on local formularies. The BNF entry for each agent is the authoritative reference for licensed indications, doses, and renal cut-offs."

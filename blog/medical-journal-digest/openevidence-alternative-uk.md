@@ -8,6 +8,11 @@ updated: 2026-08-17
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
+signup:
+  eyebrow: "For keeping up, not looking up"
+  heading: "OpenEvidence answered your questions. We tell you what's new."
+  body: "A query tool only knows what you think to ask it. Every Monday we send one email with each new paper from the five journals we hand-pick for your specialty, summarised and linked to the original. No app, no login."
+  button: "Choose your specialty"
 faqs:
   - question: "Why did OpenEvidence leave the UK?"
     answer: "OpenEvidence withdrew from the UK and EU in April 2026 citing uncertainty around AI regulation. The EU AI Act and UK AI regulatory landscape remain unsettled, and several US AI health tools have paused UK access or withdrawn entirely."

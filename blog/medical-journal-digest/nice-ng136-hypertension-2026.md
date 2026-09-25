@@ -7,6 +7,11 @@ date: 2026-07-02
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
+signup:
+  eyebrow: "For general practice"
+  heading: "Most of what changes practice arrives quietly"
+  body: "This update was a single recommendation. Research moves the same way, one paper at a time. Every Monday we send one email with each new paper from the five general practice journals we hand-pick, summarised and linked to the original."
+  specialty: general-practice
 faqs:
   - question: "What changed in the February 2026 NICE NG136 update?"
     answer: "NICE added one new recommendation: offer advice on healthy living, in line with NHS healthy-living information, to people who have raised blood pressure but have not been diagnosed with hypertension. The rest of the guideline — diagnosis thresholds, treatment thresholds, the step 1 to 4 drug algorithm, and blood pressure targets — is unchanged."
