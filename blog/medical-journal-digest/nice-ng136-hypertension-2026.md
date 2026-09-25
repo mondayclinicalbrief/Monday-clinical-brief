@@ -29,7 +29,7 @@ NICE updated NG136, its guideline on hypertension in adults, on 26 February 2026
 
 This is not a prescribing overhaul. The diagnosis thresholds, the treatment thresholds, the drug algorithm, and the blood pressure targets are all unchanged. But the addition is worth a moment's attention, because it formalises something good clinicians already do — and it is an easy thing to let slide in a ten-minute appointment.
 
-This post is a plain-English summary for busy clinicians. The authoritative source is the [NICE guideline itself](https://www.nice.org.uk/guidance/ng136). We summarise; we do not replace NICE, and nothing here substitutes for clinical judgement on an individual patient.
+This post is a summary for busy clinicians. The authoritative source is the [NICE guideline itself](https://www.nice.org.uk/guidance/ng136). We summarise; we do not replace NICE, and nothing here substitutes for clinical judgement on an individual patient.
 
 ## What actually changed
 

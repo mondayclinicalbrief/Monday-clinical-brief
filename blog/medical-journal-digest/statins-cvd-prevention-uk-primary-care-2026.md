@@ -2,7 +2,7 @@
 title: "Who Gets a Statin in 2026? The NICE NG238 Thresholds UK GPs Actually Use"
 seoTitle: "Statins 2026: Do You Need a QRISK3 of 10%?"
 metaDescription: "No — NG238 says don't rule out atorvastatin 20mg below a QRISK3 of 10% where the patient has an informed preference. Thresholds, doses and aims."
-description: "The NICE NG238 lipid pathway shapes how UK primary care prescribes statins. A plain-English guide — QRISK3 thresholds, shared decisions below 10%, atorvastatin 20mg and 80mg, the greater-than-40% non-HDL aim for primary prevention, and the LDL and non-HDL targets for secondary prevention."
+description: "The NICE NG238 lipid pathway shapes how UK primary care prescribes statins. A practical guide — QRISK3 thresholds, shared decisions below 10%, atorvastatin 20mg and 80mg, the greater-than-40% non-HDL aim for primary prevention, and the LDL and non-HDL targets for secondary prevention."
 date: 2026-06-16
 updated: 2026-08-17
 cluster: "Medical Journal Digest"
@@ -69,7 +69,7 @@ The second sticking point is the framing of risk itself. A 10-year cardiovascula
 
 This is a guideline summary for awareness. It is not a substitute for [NICE NG238](https://www.nice.org.uk/guidance/ng238), the BNF, the QOF business rules, or local prescribing policy. Thresholds, doses, and indicator definitions change and should be confirmed before prescribing. Clinical decisions remain the responsibility of the prescribing clinician.
 
-The Monday Clinical Brief publishes weekly summaries of the most important new papers and guideline updates across 31 UK medical specialties — including prescribing and policy changes like this one. We surface them, summarise them, and link to them, so practice-changing material does not get missed in a busy clinical week.
+The Monday Clinical Brief publishes weekly summaries of every new paper from five hand-picked journals in each of 31 UK medical specialties. We surface them, summarise them, and link to them, so practice-changing material does not get missed in a busy clinical week.
 
 ## Related reading
 

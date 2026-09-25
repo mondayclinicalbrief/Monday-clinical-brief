@@ -2,7 +2,7 @@
 title: "Can You Prescribe Tirzepatide Under QOF 2026/27? The Mounjaro Decision Facing GPs"
 seoTitle: "Can GPs Prescribe Tirzepatide (Mounjaro) Under QOF 2026/27?"
 metaDescription: "Yes — if your ICB commissions it. The decision GPs face under the 2026/27 QOF tirzepatide change: TA1026 eligibility and BMI thresholds."
-description: "Tirzepatide for obesity moved into the 2026/27 GP QOF on 1 April 2026. Whether you can actually prescribe it is a local question — a plain-English summary of NICE TA1026 eligibility, the primary-care prescribing model, and what UK GPs need to know."
+description: "Tirzepatide for obesity moved into the 2026/27 GP QOF on 1 April 2026. Whether you can actually prescribe it is a local question — a summary of NICE TA1026 eligibility, the primary-care prescribing model, and what UK GPs need to know."
 date: 2026-06-02
 updated: 2026-07-16
 cluster: "Medical Journal Digest"
@@ -23,7 +23,7 @@ faqs:
 
 From 1 April 2026, NHS England incorporated [tirzepatide](https://www.nice.org.uk/guidance/ta1026) (Mounjaro) prescribing for obesity into the 2026/27 GP contract through new QOF indicators. NICE TA1026 recommends it for adults with a BMI of at least 35 kg/m² (2.5 kg/m² lower for several ethnic groups), alongside a reduced-calorie diet and increased physical activity. GPs are not mandated to prescribe it, and what you can actually prescribe depends on local commissioning. Here is the operational summary.
 
-This post is a plain-English summary for busy clinicians. We summarise; we do not replace NICE or NHS England guidance, and nothing here substitutes for clinical judgement on individual patients.
+This post is a summary for busy clinicians. We summarise; we do not replace NICE or NHS England guidance, and nothing here substitutes for clinical judgement on individual patients.
 
 ## What changed on 1 April 2026
 
@@ -70,7 +70,7 @@ For eligible patients where it is commissioned, remember the wrap-around: diet, 
 
 This is a guideline and policy summary for awareness. It is not a substitute for [NICE TA1026](https://www.nice.org.uk/guidance/ta1026), the [NHS England interim commissioning guidance](https://www.england.nhs.uk/long-read/interim-commissioning-guidance-nice-ta1026-tirzepatide/), the BNF, or local prescribing policy. Clinical and prescribing decisions remain the responsibility of the prescribing clinician.
 
-The Monday Clinical Brief publishes weekly summaries of the most important new papers and guideline updates across 31 UK medical specialties — including prescribing and policy changes like this one. We surface them, summarise them, and link to them, so practice-changing material does not get missed in a busy week. For the bigger picture, see our pillar guide on [how to keep up with the medical literature](/blog/medical-journal-digest/how-to-keep-up-with-medical-literature/).
+The Monday Clinical Brief publishes weekly summaries of every new paper from five hand-picked journals in each of 31 UK medical specialties. We surface them, summarise them, and link to them, so practice-changing material does not get missed in a busy week. For the bigger picture, see our pillar guide on [how to keep up with the medical literature](/blog/medical-journal-digest/how-to-keep-up-with-medical-literature/).
 
 Worth logging while it is fresh: a guideline or QOF change you have read and acted on is exactly the kind of entry appraisers want. Our guide to [logging journal reading for GMC revalidation](/blog/cpd-reading-tool/log-journal-reading-for-gmc-revalidation/) sets out the five fields it needs.
 

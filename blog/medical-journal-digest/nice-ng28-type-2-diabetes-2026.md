@@ -2,7 +2,7 @@
 title: "NICE NG28 Update, February 2026: Metformin Plus an SGLT2 Inhibitor Is the New Starting Point"
 seoTitle: "NICE NG28 2026: Metformin + SGLT2 From Diagnosis"
 metaDescription: "NICE updated NG28 on 18 Feb 2026: most adults now start modified-release metformin and an SGLT2 inhibitor together, with GLP-1s and tirzepatide used earlier."
-description: "The 18 February 2026 NICE NG28 update changes how type 2 diabetes treatment starts: modified-release metformin and an SGLT2 inhibitor together for most adults, semaglutide added for established cardiovascular disease, and earlier use of GLP-1 receptor agonists and tirzepatide. A plain-English summary for UK clinicians."
+description: "The 18 February 2026 NICE NG28 update changes how type 2 diabetes treatment starts: modified-release metformin and an SGLT2 inhibitor together for most adults, semaglutide added for established cardiovascular disease, and earlier use of GLP-1 receptor agonists and tirzepatide. A practical summary for UK clinicians."
 date: 2026-05-17
 updated: 2026-07-03
 cluster: "Medical Journal Digest"
@@ -23,7 +23,7 @@ faqs:
 
 NICE updated NG28 on 18 February 2026. It is the biggest change to UK type 2 diabetes prescribing in years — though not the one a quick reading suggests. Metformin has not been replaced. What changed is that, for most adults, an SGLT2 inhibitor is now started *alongside* metformin from diagnosis, rather than added later once cardiovascular or renal risk has been assessed.
 
-This post is a plain-English summary for busy clinicians. The authoritative source is the [NICE guideline itself](https://www.nice.org.uk/guidance/ng28). We summarise; we do not replace NICE, and nothing here substitutes for clinical judgement on individual patients.
+This post is a summary for busy clinicians. The authoritative source is the [NICE guideline itself](https://www.nice.org.uk/guidance/ng28). We summarise; we do not replace NICE, and nothing here substitutes for clinical judgement on individual patients.
 
 ## The headline change
 
@@ -80,7 +80,7 @@ For the operational detail — agent choice, eligibility, cautions, and the init
 
 This is a guideline summary for awareness. It is not a substitute for the NICE guideline itself, the BNF, or local prescribing policy. Where there is doubt, NICE's published visual summary at [nice.org.uk/guidance/ng28](https://www.nice.org.uk/guidance/ng28) and the BNF entry for each agent should be consulted. Clinical decisions remain the responsibility of the prescribing clinician.
 
-The Monday Clinical Brief publishes weekly summaries of the most important new papers and guideline updates across 31 UK medical specialties. We do not replace the source documents. We surface them, summarise them, and link to them — so the practice-changing material does not get missed in a busy clinical week.
+The Monday Clinical Brief publishes weekly summaries of every new paper from five hand-picked journals in each of 31 UK medical specialties. We do not replace the source documents. We surface them, summarise them, and link to them — so the practice-changing material does not get missed in a busy clinical week.
 
 Before you subscribe, read a recent general practice issue in full — no sign-up required: [see a free sample](/samples/general-practice/).
 

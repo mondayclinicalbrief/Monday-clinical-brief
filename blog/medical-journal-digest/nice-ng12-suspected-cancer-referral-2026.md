@@ -20,7 +20,7 @@ faqs:
 
 NICE reviewed NG12, the guideline on suspected-cancer recognition and referral, on 15 April 2026. Three changes matter for primary care: age-banded CA125 thresholds for ovarian cancer, clearer referral for endometrial cancer in postmenopausal bleeding, and a defined pathway for unexplained weight loss.
 
-This post is a plain-English summary of what changed for busy clinicians. The authoritative source is the [NICE guideline itself](https://www.nice.org.uk/guidance/ng12). We summarise; we do not replace NICE, and nothing here substitutes for clinical judgement on an individual patient. (NICE's current term, "suspected cancer pathway referral," is the referral many clinicians still call the two-week wait.)
+This post summarises what changed, for busy clinicians. The authoritative source is the [NICE guideline itself](https://www.nice.org.uk/guidance/ng12). We summarise; we do not replace NICE, and nothing here substitutes for clinical judgement on an individual patient. (NICE's current term, "suspected cancer pathway referral," is the referral many clinicians still call the two-week wait.)
 
 ## Ovarian cancer: CA125 now reads by age
 

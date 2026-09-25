@@ -2,7 +2,7 @@
 title: "What Can You Offer When HRT Isn't Suitable? Fezolinetant and NG23 in 2026"
 seoTitle: "Menopause 2026: What to Offer When HRT Isn't Suitable"
 metaDescription: "Fezolinetant (Veoza) — NICE TA1143 recommends it for moderate to severe hot flushes when HRT is unsuitable. HRT stays first-line. Plus the NG23 update."
-description: "Two menopause guidance changes landed in 2026: NICE recommended fezolinetant as a non-hormonal option for vasomotor symptoms, and updated NG23 on unscheduled bleeding. A plain-English summary for UK clinicians."
+description: "Two menopause guidance changes landed in 2026: NICE recommended fezolinetant as a non-hormonal option for vasomotor symptoms, and updated NG23 on unscheduled bleeding. A practical summary for UK clinicians."
 date: 2026-06-02
 updated: 2026-08-17
 cluster: "Medical Journal Digest"
@@ -27,7 +27,7 @@ faqs:
 
 Two pieces of UK menopause guidance changed in 2026. NICE recommended [fezolinetant](https://www.nice.org.uk/guidance/ta1143) (Veoza) as a non-hormonal option for moderate to severe vasomotor symptoms when HRT is unsuitable — technology appraisal TA1143, published 31 March 2026, with around 500,000 people estimated to be eligible. And NICE updated [NG23](https://www.nice.org.uk/guidance/ng23), the menopause guideline, on 15 April 2026 with revised advice on unscheduled bleeding while taking systemic HRT. HRT remains first-line throughout.
 
-This post is a plain-English summary for busy clinicians. We summarise; we do not replace NICE, and nothing here substitutes for clinical judgement on individual patients.
+This post is a summary for busy clinicians. We summarise; we do not replace NICE, and nothing here substitutes for clinical judgement on individual patients.
 
 > **Update — 16 July 2026:** the Scottish Medicines Consortium has now accepted fezolinetant for restricted use in NHS Scotland (SMC2898, published 13 July 2026). The detail — who qualifies, and what it does not change for England and Wales — is in the new section below.
 
@@ -85,7 +85,7 @@ The highest-yield action is small: update your HRT-initiation safety-netting to 
 
 This is a guideline summary for awareness. It is not a substitute for the NICE guidance itself, the BNF, or local prescribing policy. Where there is doubt, [NICE TA1143](https://www.nice.org.uk/guidance/ta1143) and [NICE NG23](https://www.nice.org.uk/guidance/ng23), plus the BNF entry for fezolinetant, should be consulted. Clinical decisions remain the responsibility of the prescribing clinician.
 
-The Monday Clinical Brief publishes weekly summaries of the most important new papers and guideline updates across 31 UK medical specialties — including the kind of guideline change covered here. We do not replace the source documents. We surface them, summarise them, and link to them, so practice-changing material does not get missed in a busy clinical week. For the wider picture on staying current, see our pillar guide on [how to keep up with the medical literature](/blog/medical-journal-digest/how-to-keep-up-with-medical-literature/).
+The Monday Clinical Brief publishes weekly summaries of every new paper from five hand-picked journals in each of 31 UK medical specialties. We do not replace the source documents. We surface them, summarise them, and link to them, so practice-changing material does not get missed in a busy clinical week. For the wider picture on staying current, see our pillar guide on [how to keep up with the medical literature](/blog/medical-journal-digest/how-to-keep-up-with-medical-literature/).
 
 Reading a guideline change like this one counts towards CPD the moment you reflect on it — see [what a credit-bearing entry actually needs](/blog/cpd-reading-tool/does-reading-count-as-cpd/).
 

@@ -117,7 +117,6 @@ Monday Clinical Brief is a weekly medical journal digest designed specifically f
 
 - Key paper summaries: structured summaries of the most clinically significant new papers from your specialty's top five journals.
 - Clinical relevance: each summary highlights what the findings mean for UK practice.
-- Guideline updates: flagged whenever a paper has implications for current NICE or specialty guidelines.
 - Easy CPD logging: each issue is structured so you can log it as a CPD activity in minutes, with a short reflection ready for your portfolio.
 - Reading time: approximately 15 minutes per issue.
 

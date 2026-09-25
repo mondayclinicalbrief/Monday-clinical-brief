@@ -2,7 +2,7 @@
 title: "Anticoagulation in Atrial Fibrillation: A UK Primary-Care Guide (NICE NG196)"
 seoTitle: "AF Anticoagulation UK 2026: DOACs and NICE NG196"
 metaDescription: "NICE NG196 makes DOACs first-line over warfarin in AF, uses CHA2DS2-VASc to decide who to anticoagulate and ORBIT for bleeding risk, and drops aspirin."
-description: "DOACs first-line, CHA2DS2-VASc to decide who to treat, ORBIT for bleeding risk, and no role for aspirin — NICE NG196 reshaped AF stroke prevention, and the work sits in primary care. A plain-English UK guide, including DOAC choice and the edoxaban-first formulary shift."
+description: "DOACs first-line, CHA2DS2-VASc to decide who to treat, ORBIT for bleeding risk, and no role for aspirin — NICE NG196 reshaped AF stroke prevention, and the work sits in primary care. A practical UK guide, including DOAC choice and the edoxaban-first formulary shift."
 date: 2026-06-17
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
@@ -56,7 +56,7 @@ Anticoagulation is independent of how the rhythm itself is managed. For symptom 
 
 This is a guideline summary for awareness. It is not a substitute for [NICE NG196](https://www.nice.org.uk/guidance/ng196), the BNF, or local prescribing policy. Risk scores, DOAC choice, and renal dosing should be confirmed against the source before prescribing. Clinical decisions remain the responsibility of the prescribing clinician.
 
-The Monday Clinical Brief publishes weekly summaries of the most important new papers and guideline updates across 31 UK medical specialties — including prescribing decisions like this one. We surface them, summarise them, and link to them, so practice-changing material does not get missed in a busy clinical week.
+The Monday Clinical Brief publishes weekly summaries of every new paper from five hand-picked journals in each of 31 UK medical specialties. We surface them, summarise them, and link to them, so practice-changing material does not get missed in a busy clinical week.
 
 ## Related reading
 

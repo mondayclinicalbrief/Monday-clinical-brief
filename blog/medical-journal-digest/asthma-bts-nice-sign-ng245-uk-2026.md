@@ -2,7 +2,7 @@
 title: "Asthma Diagnosis and Treatment in UK Primary Care 2026: What the BTS/NICE/SIGN Guideline (NG245) Changed"
 seoTitle: "Asthma Guideline 2026 UK (NG245): FeNO, AIR and MART"
 metaDescription: "The BTS/NICE/SIGN asthma guideline (NG245) changed UK diagnosis and treatment: FeNO first, and ICS/formoterol as AIR and MART instead of SABA-only."
-description: "NG245 — the joint BTS, NICE and SIGN asthma guideline — overhauled diagnosis (blood eosinophils and FeNO first) and treatment (AIR and MART, the end of SABA-only) for people aged 12 and over. A plain-English guide for UK primary care."
+description: "NG245 — the joint BTS, NICE and SIGN asthma guideline — overhauled diagnosis (blood eosinophils and FeNO first) and treatment (AIR and MART, the end of SABA-only) for people aged 12 and over. A practical guide for UK primary care."
 date: 2026-06-17
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
@@ -58,7 +58,7 @@ The reliever-in-the-pocket habit is decades old. Changing it is the patient-faci
 
 This is a guideline summary for awareness. It is not a substitute for [NICE NG245](https://www.nice.org.uk/guidance/ng245), the BNF, or local prescribing and diagnostic policy. The age-specific pathways, test cut-offs, and licensed products should be confirmed against the guideline and the BNF before applying them. Clinical decisions remain the responsibility of the treating clinician.
 
-The Monday Clinical Brief publishes weekly summaries of the most important new papers and guideline updates across 31 UK medical specialties — including guideline changes like this one. We surface them, summarise them, and link to them, so practice-changing material does not get missed in a busy clinical week.
+The Monday Clinical Brief publishes weekly summaries of every new paper from five hand-picked journals in each of 31 UK medical specialties. We surface them, summarise them, and link to them, so practice-changing material does not get missed in a busy clinical week.
 
 ## Related reading
 

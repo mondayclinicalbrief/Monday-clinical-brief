@@ -2,7 +2,7 @@
 title: "NICE Heart Failure Update (NG106): SGLT2 Inhibitors Now Span the Ejection-Fraction Spectrum"
 seoTitle: "NICE NG106 Heart Failure: SGLT2 for HFpEF and HFmrEF"
 metaDescription: "NICE updated NG106 in Sept 2025: SGLT2 inhibitors and MRAs now extend to mildly-reduced and preserved ejection fraction. The change, plus the NG106 essentials."
-description: "NICE updated its chronic heart failure guideline (NG106) in September 2025, extending SGLT2 inhibitors and MRAs beyond reduced ejection fraction to mildly-reduced and preserved ejection fraction. Here is what changed, and a plain-English refresher on NG106 for UK clinicians."
+description: "NICE updated its chronic heart failure guideline (NG106) in September 2025, extending SGLT2 inhibitors and MRAs beyond reduced ejection fraction to mildly-reduced and preserved ejection fraction. Here is what changed, and a quick refresher on NG106 for UK clinicians."
 date: 2026-07-03
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
@@ -24,7 +24,7 @@ NICE updated NG106, its guideline on chronic heart failure in adults, on 3 Septe
 
 The through-line is SGLT2 inhibitors. A class that arrived in heart failure care as an add-on for reduced ejection fraction now has a place across the whole ejection-fraction spectrum. For preserved ejection fraction — long the hardest form to treat — there is finally something to offer beyond managing comorbidities and congestion.
 
-This post is a plain-English summary for busy clinicians. The authoritative source is the [NICE guideline itself](https://www.nice.org.uk/guidance/ng106). We summarise; we do not replace NICE, and nothing here substitutes for clinical judgement on an individual patient.
+This post is a summary for busy clinicians. The authoritative source is the [NICE guideline itself](https://www.nice.org.uk/guidance/ng106). We summarise; we do not replace NICE, and nothing here substitutes for clinical judgement on an individual patient.
 
 ## The headline change
 

@@ -102,7 +102,7 @@ This is a practical summary of the 2026 NICE NG28 update aimed at UK primary-car
 
 ## How MCB fits in
 
-We publish a weekly summary of the most important papers and guideline updates across 31 UK medical specialties. Type 2 diabetes is one of them; primary care more broadly is another. The 2026 NG28 update is the kind of practice-changing news that lands in a busy clinical week and gets missed by the clinicians it most affects. That is the problem we are built to fix.
+We publish a weekly summary of every new paper from five hand-picked journals in each of 31 UK medical specialties. General practice is one of them; endocrinology, which includes Diabetes Care and Diabetologia, is another. The research behind a change like the 2026 NG28 update lands in busy clinical weeks and gets missed by the clinicians it most affects. That is the problem we are built to fix.
 
 If you are keeping track of the year's CPD, prescribing changes like this are among the easiest credits to claim and the most often missed — see [how many CPD points UK doctors need](/blog/cpd-reading-tool/how-many-cpd-points-do-i-need/), including why the GMC mandates no number at all.
 

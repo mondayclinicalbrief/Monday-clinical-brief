@@ -17,7 +17,7 @@ faqs:
   - question: "Why did OpenEvidence leave the UK?"
     answer: "OpenEvidence withdrew from the UK and EU in April 2026 citing uncertainty around AI regulation. The EU AI Act and UK AI regulatory landscape remain unsettled, and several US AI health tools have paused UK access or withdrawn entirely."
   - question: "What is the best OpenEvidence alternative in the UK?"
-    answer: "For clinical Q&A — questions you ask at the point of care — iatroX is a UK-based alternative with MHRA registration and UKCA marking. For staying current with the medical literature — knowing what's new in your specialty each week — The Monday Clinical Brief is a weekly email digest covering 31 specialties for £20 a year."
+    answer: "It depends on the job. For clinical Q&A — questions you ask at the point of care — several tools are reachable from the UK, and they differ on regulatory status and cost; the comparison table on this page sets them out. For staying current with the medical literature — knowing what's new in your specialty each week — The Monday Clinical Brief is a weekly email digest covering 31 specialties for £20 a year."
   - question: "Does The Monday Clinical Brief replace OpenEvidence?"
     answer: "No — and it doesn't claim to. OpenEvidence answered clinical questions. The Monday Clinical Brief surfaces new peer-reviewed papers in your specialty each week. These are different problems. MCB is for keeping up with what's new before you need to ask a question about it."
   - question: "Can UK doctors use ClinicalKey AI or UpToDate Expert AI?"
@@ -79,9 +79,7 @@ One loop worth closing: Heidi Evidence now publishes its own "OpenEvidence alter
 
 ## For clinical Q&A: what's still available in the UK
 
-[iatroX](https://iatrox.com) is UK-based, holds MHRA registration and UKCA marking, and is positioning as the UK alternative for AI clinical Q&A. It's the closest direct replacement for OpenEvidence's core use case within the UK regulatory environment.
-
-Two established names belong here too, with an important difference between them. **ClinicalKey AI** (Elsevier) is the genuinely UK-available one — individual UK clinicians can subscribe (there's a free trial), and it answers from Elsevier's peer-reviewed library. There is a twist worth knowing: Elsevier co-developed it with OpenEvidence, so the tool UK clinicians can still reach shares its origins with the one that left — see [ClinicalKey AI vs OpenEvidence](/blog/medical-journal-digest/clinicalkey-ai-vs-openevidence/). **UpToDate** is the other: the standard reference is everywhere in the NHS via institutional access, but its generative AI Q&A layer — Pro Plus AI for individuals (US and Canada only) and Expert AI for enterprise (limited availability outside the US) — isn't something a UK individual can reach today (see [MCB vs UpToDate](/blog/medical-journal-digest/mcb-vs-uptodate/)). So for an AI answer you can actually use in the UK, ClinicalKey AI counts; UpToDate's AI layer mostly doesn't, yet. Either way, both answer what you *ask* — not what's *new*.
+Two established names belong here, with an important difference between them. **ClinicalKey AI** (Elsevier) is the genuinely UK-available one — individual UK clinicians can subscribe (there's a free trial), and it answers from Elsevier's peer-reviewed library. There is a twist worth knowing: Elsevier co-developed it with OpenEvidence, so the tool UK clinicians can still reach shares its origins with the one that left — see [ClinicalKey AI vs OpenEvidence](/blog/medical-journal-digest/clinicalkey-ai-vs-openevidence/). **UpToDate** is the other: the standard reference is everywhere in the NHS via institutional access, but its generative AI Q&A layer — Pro Plus AI for individuals (US and Canada only) and Expert AI for enterprise (limited availability outside the US) — isn't something a UK individual can reach today (see [MCB vs UpToDate](/blog/medical-journal-digest/mcb-vs-uptodate/)). So for an AI answer you can actually use in the UK, ClinicalKey AI counts; UpToDate's AI layer mostly doesn't, yet. Either way, both answer what you *ask* — not what's *new*.
 
 ## For keeping up with the literature: that's a different problem
 
@@ -103,7 +101,7 @@ We cover 31 specialties. We do the curation. You stay current.
 
 ## The bottom line
 
-OpenEvidence was good at answering questions you already had. For that job in the UK, iatroX is worth a look.
+OpenEvidence was good at answering questions you already had. For that job in the UK, the table above shows what you can actually reach.
 
 But staying current with the literature — knowing what questions to ask in the first place — is a different problem. If that's the one you're trying to solve, that's what we're here for.
 

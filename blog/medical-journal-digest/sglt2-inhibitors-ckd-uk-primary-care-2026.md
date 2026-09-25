@@ -2,7 +2,7 @@
 title: "SGLT2 Inhibitors for CKD in UK Primary Care 2026: What NICE TA1075 Means in Practice"
 seoTitle: "SGLT2 for CKD UK 2026: Dapagliflozin (TA1075)"
 metaDescription: "NICE TA1075 made dapagliflozin an option for CKD — including without type 2 diabetes. Who is eligible by eGFR and uACR, and the ACEi/ARB add-on rule."
-description: "TA1075 expanded dapagliflozin for CKD to adults without type 2 diabetes, and prescribing SGLT2 inhibitors for kidney protection is now largely a primary-care job. A plain-English guide for UK clinicians — eligibility, the standard-care add-on rule, the early eGFR dip, cautions, and the register review that finds eligible patients."
+description: "TA1075 expanded dapagliflozin for CKD to adults without type 2 diabetes, and prescribing SGLT2 inhibitors for kidney protection is now largely a primary-care job. A practical guide for UK clinicians — eligibility, the standard-care add-on rule, the early eGFR dip, cautions, and the register review that finds eligible patients."
 date: 2026-06-16
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
@@ -88,7 +88,7 @@ None of this requires a new clinic. It is register work, and it is the highest-r
 
 This is a guideline and policy summary for awareness. It is not a substitute for [NICE TA1075](https://www.nice.org.uk/guidance/ta1075), [NICE TA942](https://www.nice.org.uk/guidance/ta942), the NICE CKD guideline, the BNF, or local prescribing policy. Renal cut-offs, monitoring intervals, and licensing change intermittently and should be confirmed before initiation. Clinical and prescribing decisions remain the responsibility of the prescribing clinician.
 
-The Monday Clinical Brief publishes weekly summaries of the most important new papers and guideline updates across 31 UK medical specialties — including prescribing and policy changes like this one. We surface them, summarise them, and link to them, so practice-changing material does not get missed in a busy clinical week.
+The Monday Clinical Brief publishes weekly summaries of every new paper from five hand-picked journals in each of 31 UK medical specialties. We surface them, summarise them, and link to them, so practice-changing material does not get missed in a busy clinical week.
 
 ## Related reading
 
