@@ -388,6 +388,19 @@ function buildWelcomeHtml(email, specialtySlugs, trialStart, trialEnd, priceLine
       </tr>
 
 ${emailTipBlock}
+      <!-- Safe senders. Shown to everyone, dental-only included: NHSmail and
+           other work tenants accept and authenticate the digest, then file it in
+           Junk or "Other" with no bounce we can see (24 Sep 2026). Only the
+           reader can fix that. Safe Senders stops the junk filing; it does not
+           override tenant quarantine, so don't promise more than that here. -->
+      <tr>
+        <td style="padding:0 40px 20px;">
+          <p style="margin:0;font-size:13px;color:#6e6e66;line-height:1.6;">
+            <strong style="color:#1c1c1c;">Make sure it reaches you:</strong> add ${SUPPORT_EMAIL} to your contacts or Safe Senders. Work and NHS mail filters can be cautious with a new sender. If Monday's issue hasn't arrived by mid-morning, check Junk and any "Other" or "Promotions" tab, then mark it "Not junk".
+          </p>
+        </td>
+      </tr>
+
       <!-- Cancel CTA -->
       <tr>
         <td style="padding:10px 40px 30px;">
@@ -466,7 +479,7 @@ async function sendWelcomeEmail(toEmail, specialtySlugs, priceLine, customerName
     from: `"The Monday Clinical Brief" <${process.env.GMAIL_USER}>`,
     to: toEmail,
     subject: "Welcome to The Monday Clinical Brief — your free trial has started",
-    text: `Welcome to The Monday Clinical Brief!\n\nYou're subscribed to: ${specialtyName}\nTrial ends: ${formatDate(trialEnd)}\n\n${multi ? "Your first digests arrive" : "Your first digest arrives"} next Monday morning.\n\nEvery article has a "Log as CPD" button — one click records your reading in the free MCB CPD Tracker (https://cpd.mondayclinicalbrief.co.uk), with an AI-drafted reflection to personalise and export ready for appraisal.${textTip}\n\nAfter your 4-week trial, your subscription begins at ${priceLine}. Cancel any time before ${formatDate(trialEnd)} at no cost.\n\nManage subscription: ${STRIPE_CUSTOMER_PORTAL}\n\nQuestions? ${SUPPORT_EMAIL}`,
+    text: `Welcome to The Monday Clinical Brief!\n\nYou're subscribed to: ${specialtyName}\nTrial ends: ${formatDate(trialEnd)}\n\n${multi ? "Your first digests arrive" : "Your first digest arrives"} next Monday morning.\n\nEvery article has a "Log as CPD" button — one click records your reading in the free MCB CPD Tracker (https://cpd.mondayclinicalbrief.co.uk), with an AI-drafted reflection to personalise and export ready for appraisal.${textTip}\n\nMake sure it reaches you: add ${SUPPORT_EMAIL} to your contacts or Safe Senders. Work and NHS mail filters can be cautious with a new sender. If Monday's issue hasn't arrived by mid-morning, check Junk and any "Other" or "Promotions" tab, then mark it "Not junk".\n\nAfter your 4-week trial, your subscription begins at ${priceLine}. Cancel any time before ${formatDate(trialEnd)} at no cost.\n\nManage subscription: ${STRIPE_CUSTOMER_PORTAL}\n\nQuestions? ${SUPPORT_EMAIL}`,
     html,
   });
 
