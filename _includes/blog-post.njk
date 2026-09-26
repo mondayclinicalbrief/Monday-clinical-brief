@@ -245,6 +245,42 @@
 </head>
 <body>
 
+{%- if signup %}
+{#- Page-specific signup block, set with `signup:` in a post's front matter.
+    It speaks to why the reader landed on this page, names the specialty's
+    five journals from _data/journals.json (so it stays right when a panel
+    changes), and preselects that specialty on the homepage form via
+    ?specialty=<slug> — as does the nav button on these pages. Leave
+    `specialty` out for a post with no single audience: the buttons then
+    open the form unselected. The full block goes after the opening section
+    (insertBeforeH2 in eleventy.config.js); a short reminder closes the post. -#}
+{%- set signupHref = "/?specialty=" + signup.specialty + "#subscribe" if signup.specialty else "/#subscribe" %}
+{%- set signupTerms = '<p class="cta-terms">First 4 weeks free, then £20 a year. A card is needed to start; cancel during the trial and you pay nothing.</p>' %}
+{%- set signupSample %}
+    {%- if signup.specialty %}{% for s in specialties %}{% if s.slug == signup.specialty %}
+    <p class="cta-sample"><a href="/samples/{{ s.slug }}/">Read a recent {{ s.name }} issue first</a></p>
+    {%- endif %}{% endfor %}{% else %}
+    <p class="cta-sample"><a href="/samples/">Read a sample issue from any of our {{ specialties | rejectattr("dental") | length }} specialties</a></p>
+    {%- endif %}
+{%- endset %}
+{%- set signupBlock %}
+  <aside class="cta-box" aria-label="Subscribe">
+    {% if signup.eyebrow %}<div class="cta-eyebrow">{{ signup.eyebrow }}</div>{% endif %}
+    <h3>{{ signup.heading }}</h3>
+    <p class="cta-body">{{ signup.body }}</p>
+    {%- for p in journals.medical %}{% if p.slug == signup.specialty %}
+    <p class="cta-journals"><span>The five journals:</span> {{ p.journals | join(" · ") }}</p>
+    {%- endif %}{% endfor %}
+    <a href="{{ signupHref }}" class="btn-primary">{{ signup.button or "Start your free trial" }}</a>
+    {{ signupTerms | safe }}
+    {% if signup.note %}<p class="cta-note">{{ signup.note | safe }}</p>{% endif %}
+    {{ signupSample | safe }}
+  </aside>
+{% endset %}
+{%- else %}
+{%- set signupHref = "/#subscribe" %}
+{%- endif %}
+
 <!-- ═══ NAV ═══ -->
 <nav>
   <a href="/" class="nav-brand">The Monday Clinical Brief</a>
@@ -252,7 +288,7 @@
     <a href="/samples/">Samples</a>
     <a href="/blog/">Blog</a>
     <a href="/#how">How it works</a>
-    <a href="/#subscribe" class="nav-cta">Start free trial</a>
+    <a href="{{ signupHref }}" class="nav-cta">Start free trial</a>
   </div>
 </nav>
 
@@ -286,7 +322,7 @@
 
 <!-- ═══ ARTICLE CONTENT ═══ -->
 <article class="article-content">
-  {{ content | safe }}
+  {% if signup %}{{ content | insertBeforeH2(signupBlock, 2) | safe }}{% else %}{{ content | safe }}{% endif %}
 
   {% if faqs %}
   <div class="faq-section">
@@ -302,28 +338,15 @@
 
   <!-- CTA Box -->
   {% if signup %}
-  {#- Page-specific signup block, set with `signup:` in a post's front matter.
-      It speaks to why the reader landed on this page, names the specialty's
-      five journals from _data/journals.json (so it stays right when a panel
-      changes), and preselects that specialty on the homepage form via
-      ?specialty=<slug>. Leave `specialty` out for a post with no single
-      audience: the button then opens the form unselected. -#}
-  <div class="cta-box">
-    {% if signup.eyebrow %}<div class="cta-eyebrow">{{ signup.eyebrow }}</div>{% endif %}
-    <h3>{{ signup.heading }}</h3>
-    <p class="cta-body">{{ signup.body }}</p>
-    {%- for p in journals.medical %}{% if p.slug == signup.specialty %}
-    <p class="cta-journals"><span>The five journals:</span> {{ p.journals | join(" · ") }}</p>
-    {%- endif %}{% endfor %}
-    <a href="/{% if signup.specialty %}?specialty={{ signup.specialty }}{% endif %}#subscribe" class="btn-primary">{{ signup.button or "Start your free trial" }}</a>
-    <p class="cta-terms">First 4 weeks free, then £20 a year. A card is needed to start; cancel during the trial and you pay nothing.</p>
-    {% if signup.note %}<p class="cta-note">{{ signup.note | safe }}</p>{% endif %}
-    {%- if signup.specialty %}{% for s in specialties %}{% if s.slug == signup.specialty %}
-    <p class="cta-sample"><a href="/samples/{{ s.slug }}/">Read a recent {{ s.name }} issue first</a></p>
-    {%- endif %}{% endfor %}{% else %}
-    <p class="cta-sample"><a href="/samples/">Read a sample issue from any of our {{ specialties | rejectattr("dental") | length }} specialties</a></p>
-    {%- endif %}
-  </div>
+  {#- The full block sits after the opening section (see signupBlock); this is
+      the short reminder for readers who reach the end. -#}
+  <aside class="cta-box" aria-label="Subscribe">
+    <h3>{% if signup.specialty %}{% for s in specialties %}{% if s.slug == signup.specialty %}Your {{ s.name }} reading, every Monday{% endif %}{% endfor %}{% else %}Your specialty's reading, every Monday{% endif %}</h3>
+    <p class="cta-body">One email with each new paper from the five journals we hand-pick, summarised and linked to the original.</p>
+    <a href="{{ signupHref }}" class="btn-primary">{{ signup.button or "Start your free trial" }}</a>
+    {{ signupTerms | safe }}
+    {{ signupSample | safe }}
+  </aside>
   {% else %}
   <div class="cta-box">
     <h3>Stay on top of the evidence</h3>

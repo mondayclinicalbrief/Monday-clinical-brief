@@ -40,6 +40,21 @@ module.exports = function(eleventyConfig) {
     return `${mins} min read`;
   });
 
+  // ── Signup block placement ──
+  // Puts a post's signup block just before its nth <h2>: after the opening
+  // section, which answers what the reader searched for, rather than at the
+  // foot of the page where few readers get to. A post with fewer headings
+  // gets the block at the end of its body instead.
+  eleventyConfig.addFilter("insertBeforeH2", (content, html, n = 2) => {
+    const body = String(content);
+    let at = -1;
+    for (let i = 0; i < n; i++) {
+      at = body.indexOf("<h2", at + 1);
+      if (at === -1) return body + String(html);
+    }
+    return body.slice(0, at) + String(html) + body.slice(at);
+  });
+
   // ── Blog post collection ──
   eleventyConfig.addCollection("posts", function(collectionApi) {
     return collectionApi.getFilteredByGlob("blog/**/*.md").sort((a, b) => {
