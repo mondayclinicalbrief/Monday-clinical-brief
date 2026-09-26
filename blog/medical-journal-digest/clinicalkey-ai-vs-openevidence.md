@@ -9,7 +9,7 @@ schemaType: "MedicalWebPage"
 pillar: false
 faqs:
   - question: "Can UK clinicians use OpenEvidence in 2026?"
-    answer: "No. OpenEvidence withdrew from the UK and EU on 28 April 2026, citing regulatory uncertainty around AI in healthcare. It remains unavailable to UK clinicians regardless of credentials, and no re-entry has been announced."
+    answer: "No. OpenEvidence withdrew from the UK and EU on 27 April 2026, citing regulatory uncertainty around AI in healthcare. It remains unavailable to UK clinicians regardless of credentials, and no re-entry has been announced."
   - question: "Is ClinicalKey AI available in the UK?"
     answer: "Yes. ClinicalKey AI is available to UK clinicians both individually and through institutions, and Elsevier offers a 14-day free trial. Elsevier does not publish an individual list price publicly, so the cost depends on how you subscribe."
   - question: "Is ClinicalKey AI the same as OpenEvidence?"
@@ -22,7 +22,7 @@ faqs:
 
 This is a comparison with an awkward answer: if you are a UK clinician, there is nothing to compare.
 
-OpenEvidence withdrew from the UK and EU on 28 April 2026. ClinicalKey AI did not. So the practical answer to "ClinicalKey AI or OpenEvidence?" in the UK is ClinicalKey AI, by default rather than by merit.
+OpenEvidence withdrew from the UK and EU on 27 April 2026. ClinicalKey AI did not. So the practical answer to "ClinicalKey AI or OpenEvidence?" in the UK is ClinicalKey AI, by default rather than by merit.
 
 There is a second thing worth knowing, and it is stranger. Elsevier built ClinicalKey AI in partnership with OpenEvidence.
 
@@ -40,7 +40,7 @@ And the partnership is no longer advertised. Elsevier's current ClinicalKey AI p
 
 | | **ClinicalKey AI** | **OpenEvidence** |
 |---|---|---|
-| **UK access** | Available — individual and institutional | Withdrawn 28 April 2026 |
+| **UK access** | Available — individual and institutional | Withdrawn 27 April 2026 |
 | **Cost** | Paid; 14-day free trial. Elsevier does not publish an individual list price | Was free at point of use |
 | **Content base** | Elsevier's proprietary full-text, copyright-cleared library, refreshed daily — society guidelines (ACC, AACE, ACEP, CHEST, ESMO and others), high-impact journals including *The Lancet*, reference texts such as Braunwald's and Goldman-Cecil, plus drug information | Its own content partnerships |
 | **Citations** | Inline, traceable to source | Referenced answers |

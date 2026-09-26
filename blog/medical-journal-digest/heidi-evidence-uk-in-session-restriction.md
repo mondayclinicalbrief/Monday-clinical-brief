@@ -69,14 +69,14 @@ The wider UK regulatory framework for AI in healthcare is still mid-flight. The 
 
 The July 2026 acquisition of AutoMedica points the same way. AutoMedica holds a place in the MHRA's AI Airlock pilot — the regulator's sandbox for AI medical devices — which gives Heidi a direct working relationship with the process that will decide how tools like Evidence are classified for live clinical use. That is not a clearance, but it is the posture of a company planning to lift the restriction properly rather than sidestep it.
 
-This sits in the same regulatory current that took OpenEvidence out of the UK and EU on 28 April 2026 and has kept ChatGPT for Clinicians US-first since 23 April. The difference is one of degree: those two stepped back entirely; Heidi Evidence stayed, with a limit on how it can be used.
+This sits in the same regulatory current that took OpenEvidence out of the UK and EU on 27 April 2026 and has kept ChatGPT for Clinicians US-first since 23 April. The difference is one of degree: those two stepped back entirely; Heidi Evidence stayed, with a limit on how it can be used.
 
 ## The pattern UK clinicians should be aware of
 
 In the space of six weeks, three clinical AI tools in the same category changed their UK footing:
 
 - **23 April 2026:** ChatGPT for Clinicians launches. UK and EEA excluded at the verification step.
-- **28 April 2026:** OpenEvidence withdraws from the UK and EU.
+- **27 April 2026:** OpenEvidence withdraws from the UK and EU.
 - **2026:** Heidi Evidence operates in the UK and EU, but only outside an active session — and NHS UK accounts are excluded from the feature entirely.
 
 All three offered the same broad use case — clinical Q&A grounded in cited sources. Two are now unavailable to UK clinicians; the third is available, but not in the mode that would let it see the patient in front of you, and not at all on an NHS account.

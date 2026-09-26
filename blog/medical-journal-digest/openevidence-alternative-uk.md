@@ -27,10 +27,10 @@ faqs:
   - question: "Is Medscape AI a good OpenEvidence alternative for UK doctors?"
     answer: "It is free and reachable from the UK, but check what you are getting. Medscape AI launched in November 2025 as a generative clinical reference for Medscape's 13 million-plus members, specialty-personalised and source-traced. It carries no UK regulatory status: it is not UKCA-marked, not MHRA-registered, and has not been assessed against DTAC. Its parent, WebMD, is advertising-funded. Like every other tool in the table it answers the question you bring it — it does not tell you what was published in your specialty this week."
   - question: "Has any other clinical AI tool changed its UK access since OpenEvidence withdrew?"
-    answer: "Yes. In 2026, Heidi Evidence — the clinical decision support arm of Heidi Health, partnered with NICE, BMJ Group, MIMS and HealthPathways — restricted its UK and EU evidence querying to out-of-session use only, so it cannot be invoked from inside an active session or see patient context. Heidi also excludes NHS UK accounts from Evidence altogether. Three credible clinical AI tools have now pulled back from UK point-of-care use in six weeks: ChatGPT for Clinicians (23 April, UK/EEA excluded), OpenEvidence (28 April, UK/EU withdrawn), and Heidi Evidence (in-session restricted, and excluded on NHS accounts)."
+    answer: "Yes. In 2026, Heidi Evidence — the clinical decision support arm of Heidi Health, partnered with NICE, BMJ Group, MIMS and HealthPathways — restricted its UK and EU evidence querying to out-of-session use only, so it cannot be invoked from inside an active session or see patient context. Heidi also excludes NHS UK accounts from Evidence altogether. Three credible clinical AI tools have now pulled back from UK point-of-care use in six weeks: ChatGPT for Clinicians (23 April, UK/EEA excluded), OpenEvidence (27 April, UK/EU withdrawn), and Heidi Evidence (in-session restricted, and excluded on NHS accounts)."
 ---
 
-OpenEvidence is no longer available to UK doctors. The platform withdrew from the UK and EU on 28 April 2026, citing uncertainty around AI regulation. It went quietly — no replacement announced, no UK handoff.
+OpenEvidence is no longer available to UK doctors. The platform withdrew from the UK and EU on 27 April 2026, citing uncertainty around AI regulation. It went quietly — no replacement announced, no UK handoff.
 
 If you used it, you'll have noticed the gap.
 

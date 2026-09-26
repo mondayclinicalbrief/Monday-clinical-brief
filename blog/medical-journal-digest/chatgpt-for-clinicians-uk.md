@@ -16,12 +16,12 @@ faqs:
   - question: "What can UK doctors use instead of ChatGPT for Clinicians?"
     answer: "For clinical Q&A at the point of care, several tools are reachable from the UK, and they differ on regulatory status and cost; our OpenEvidence alternatives page compares them. For staying current with the medical literature — knowing what's new in your specialty each week — The Monday Clinical Brief is a weekly digest covering 31 specialties for £20 a year."
   - question: "Did OpenEvidence also leave the UK?"
-    answer: "Yes. OpenEvidence withdrew from the UK and EU on 25 April 2026 — two days after ChatGPT for Clinicians launched and excluded UK users. UK doctors lost both tools in the same fortnight."
+    answer: "Yes. OpenEvidence withdrew from the UK and EU on 27 April 2026 — four days after ChatGPT for Clinicians launched and excluded UK users. UK doctors lost both tools in the same fortnight."
 ---
 
-On 23 April 2026, OpenAI launched ChatGPT for Clinicians. Two days later, OpenEvidence — the tool it most closely resembles — withdrew from the UK entirely.
+On 23 April 2026, OpenAI launched ChatGPT for Clinicians. Four days later, OpenEvidence — the tool it most closely resembles — withdrew from the UK entirely.
 
-UK doctors received both announcements in the same week. Neither had good news for them.
+UK doctors received both announcements within days of each other. Neither had good news for them.
 
 > **Update — June 2026:** ChatGPT for Clinicians remains excluded from the UK and EEA. Nothing has changed since launch — there is no UK enrolment, and OpenAI has announced no UK timeline. The wider regulatory picture is still settling (the [MHRA](https://www.gov.uk/government/organisations/medicines-and-healthcare-products-regulatory-agency) Medical Devices (Amendment) Regulations consultation closes 19 June 2026), so the exclusion is unlikely to lift in the near term.
 
@@ -56,7 +56,7 @@ This is also why The Monday Clinical Brief sits in a different category by desig
 In the space of a fortnight, two of the most prominent AI clinical tools in the world became unavailable to UK doctors:
 
 - **23 April 2026**: ChatGPT for Clinicians launches. UK and EEA excluded.
-- **25 April 2026**: OpenEvidence withdraws from the UK and EU.
+- **27 April 2026**: OpenEvidence withdraws from the UK and EU.
 
 Both tools were primarily Q&A products — you bring a clinical question, they return a referenced answer. That specific use case now has a meaningful gap in the UK market.
 

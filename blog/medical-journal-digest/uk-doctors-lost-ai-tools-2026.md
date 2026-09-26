@@ -10,7 +10,7 @@ schemaType: "MedicalWebPage"
 pillar: false
 faqs:
   - question: "Which AI tools have UK doctors lost access to in 2026?"
-    answer: "Two withdrew and one was restricted, in six weeks. ChatGPT for Clinicians launched on 23 April 2026 with UK and EEA accounts explicitly excluded at the verification step. OpenEvidence withdrew from the UK and EU on 28 April 2026. Heidi Evidence stayed available in the UK and EU but restricted to out-of-session use only — it cannot be invoked from inside an active session or see patient context, and NHS UK accounts are excluded from Evidence altogether. All three are point-of-care clinical Q&A tools."
+    answer: "Two withdrew and one was restricted, in six weeks. ChatGPT for Clinicians launched on 23 April 2026 with UK and EEA accounts explicitly excluded at the verification step. OpenEvidence withdrew from the UK and EU on 27 April 2026. Heidi Evidence stayed available in the UK and EU but restricted to out-of-session use only — it cannot be invoked from inside an active session or see patient context, and NHS UK accounts are excluded from Evidence altogether. All three are point-of-care clinical Q&A tools."
   - question: "Why are US-built AI tools excluding the UK?"
     answer: "All three withdrawals reflect the same underlying issue: UK and EU regulatory uncertainty around clinical AI. The EU AI Act classifies certain clinical AI tools as high-risk systems. The UK's own AI-in-healthcare framework is still being written — the Medical Devices (Amendment) Regulations consultation closes 19 June 2026, with the International Reliance Framework expected in Autumn 2026. Until these land, US vendors are deferring UK launches to markets where the regulatory path is clear."
   - question: "What can UK NHS clinicians use for clinical Q&A instead?"
@@ -32,7 +32,7 @@ This post sets out what happened, why it happened, and — more usefully — wha
 ## The pattern, in dates
 
 - **23 April 2026** — OpenAI launches ChatGPT for Clinicians. Free for verified US physicians, NPs, PAs, and pharmacists. UK and EEA explicitly excluded at the regional-verification step.
-- **28 April 2026** — OpenEvidence withdraws from the UK and EU. No replacement announced. No UK handoff. The platform that 40 % of US physicians were reportedly using disappears from UK access overnight.
+- **27 April 2026** — OpenEvidence withdraws from the UK and EU. No replacement announced. No UK handoff. The platform that 40 % of US physicians were reportedly using disappears from UK access overnight.
 - **May 2026** — Heidi Evidence (the clinical decision support arm of Heidi Health) operates in the UK and EU but restricts evidence querying to out-of-session use. It cannot be used during a live patient consultation.
 
 We have written individual explainers for each: [the OpenEvidence withdrawal](/blog/medical-journal-digest/openevidence-alternative-uk/), [the ChatGPT for Clinicians exclusion](/blog/medical-journal-digest/chatgpt-for-clinicians-uk/), and [the Heidi Evidence in-session restriction](/blog/medical-journal-digest/heidi-evidence-uk-in-session-restriction/). This post pulls the thread. For the two of them head to head, see [Heidi Evidence vs OpenEvidence](/blog/medical-journal-digest/heidi-evidence-vs-openevidence-uk/).
@@ -57,7 +57,7 @@ OpenAI's clinician-facing product. Free for verified US healthcare professionals
 
 OpenAI has not announced a UK launch date. Given the regulatory backdrop, none should be expected before the second half of 2026 at the earliest.
 
-### OpenEvidence (28 April 2026)
+### OpenEvidence (27 April 2026)
 
 OpenEvidence raised $250 million in January 2026 at a $12 billion valuation. It offered AI-powered clinical reasoning with direct access to NEJM content, plus DeepConsult (multi-step clinical reasoning) and Coding Intelligence. In the US, the company claimed adoption by 40 % of practising physicians.
 

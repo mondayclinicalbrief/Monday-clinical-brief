@@ -15,7 +15,7 @@ Every one of these products is good. None of them does the same thing as the oth
 
 This guide compares the realistic options a UK doctor has in 2026 for staying current with the medical literature. We are not neutral — we run The Monday Clinical Brief — but we will tell you honestly when another service is the better fit.
 
-**Last updated:** 25 April 2026
+**Last updated:** 26 September 2026
 
 ## What's Changed Since 2025
 
@@ -24,7 +24,7 @@ If you read a journal-digest comparison article written before late 2025, severa
 - **NEJM Journal Watch is now NEJM Clinician.** The rebrand in November 2025 came with a redesigned platform, broader clinical context, and a UK price reduction to approximately **£75 per year**. The old £150–£250 figure is no longer current.
 - **UpToDate now ships an AI assistant — but not for UK individuals.** Expert AI is available to personal subscribers in the US and Canada only, with limited Enterprise Edition availability elsewhere. UK individual subscribers cannot yet use Expert AI.
 - **Free UK-focused AI tools now exist.** Heidi Evidence (February 2026) is free, partnered with NICE and BMJ Group, and built on Claude. It is not a digest, but it occupies adjacent mindshare.
-- **Foundation-model vendors are entering directly — but not in the UK.** ChatGPT for Clinicians launched 23 April 2026 and explicitly excludes UK and EEA users. OpenEvidence withdrew from the UK entirely on 25 April 2026. UK doctors lost both tools in the same fortnight due to AI regulatory uncertainty.
+- **Foundation-model vendors are entering directly — but not in the UK.** ChatGPT for Clinicians launched 23 April 2026 and explicitly excludes UK and EEA users. OpenEvidence withdrew from the UK entirely on 27 April 2026. UK doctors lost both tools in the same fortnight due to AI regulatory uncertainty.
 
 The result is a more crowded but also more interesting landscape, and the price gap between premium and value options has compressed sharply.
 
@@ -92,7 +92,7 @@ Launched February 2026. Free for UK clinicians. Powered by Claude. Partnered wit
 
 OpenEvidence raised $250 million in January 2026 at a $12 billion valuation. It offers AI-powered clinical reasoning with direct access to NEJM content, plus newer features including DeepConsult (multi-step clinical reasoning) and Coding Intelligence.
 
-**The UK situation:** OpenEvidence **withdrew from the UK and EU on 25 April 2026**, citing regulatory uncertainty around AI in healthcare. UK doctors who were trialling it have lost access. There is no confirmed timeline for return.
+**The UK situation:** OpenEvidence **withdrew from the UK and EU on 27 April 2026**, citing regulatory uncertainty around AI in healthcare. UK doctors who were trialling it have lost access. There is no confirmed timeline for return.
 
 **How it relates to a digest:** OpenEvidence was building a workflow platform — evidence search, documentation, coding. It was not a weekly digest. The same push-vs-pull distinction applies. Its withdrawal is one reason UK clinicians are actively looking for stable, UK-based alternatives.
 
