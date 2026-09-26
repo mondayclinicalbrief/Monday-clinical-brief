@@ -14,7 +14,7 @@ faqs:
   - question: "Which ad-free clinical AI tools can UK doctors actually use in 2026?"
     answer: "For staying current with the literature, The Monday Clinical Brief sends a weekly digest across 31 specialties for £20 a year. For point-of-care clinical questions, iatroX, Heidi Evidence, Praxis Medicine and Umbil all carry no advertising, on different UK footings: iatroX is MHRA-registered and UKCA-marked; Heidi Evidence is restricted to out-of-session use for UK and EU clinicians, and NHS UK accounts are excluded from it; Praxis Medicine and Umbil are newer UK-focused entrants."
   - question: "Can UK clinicians use Heidi Evidence?"
-    answer: "Yes, with a limit. For UK and EU clinicians the Evidence feature works only outside live sessions — in-session querying is restricted, so it cannot answer during a consultation. Heidi Scribe, the AI clinical documentation product, is separately MHRA-cleared and remains fully available to UK clinicians."
+    answer: "Yes, with limits. For UK and EU clinicians the Evidence feature works only outside a session: the sidebar tool can be used with a patient in the room, but it cannot be invoked from inside an active session or see the patient's details. Accounts registered with an NHS email address are excluded from Evidence altogether. Heidi Scribe, the AI clinical documentation product, is separately MHRA-cleared and remains fully available to UK clinicians."
   - question: "Is The Monday Clinical Brief ad-free?"
     answer: "Yes. The Monday Clinical Brief has carried no advertising since launch. It is funded by a £20-a-year subscription, not by sponsors, so the choice of what to summarise each week is editorial, not commercial."
   - question: "Why does ad-free matter for clinical tools specifically?"
@@ -53,7 +53,7 @@ The list below is limited to tools that meet two tests: no advertising, and a cr
 
 **Job:** citation-backed clinical answers grounded in NICE, BMJ Group, MIMS and HealthPathways. Ad-free, ISO 42001 audited, built on Claude.
 **Cost:** free for individuals.
-**UK status:** restricted. For UK and EU clinicians the *Evidence* feature works only outside live sessions — in-session querying is disabled, so it cannot answer during a consultation. *Heidi Scribe* — the AI documentation tool — is separately MHRA-cleared and remains fully available. See our [Heidi Evidence vs MCB comparison](/blog/medical-journal-digest/heidi-evidence-vs-monday-clinical-brief/) and the [in-session restriction explainer](/blog/medical-journal-digest/heidi-evidence-uk-in-session-restriction/).
+**UK status:** restricted. For UK and EU clinicians the *Evidence* feature works only outside a session — in-session querying is disabled, so it cannot see the patient's details. *Heidi Scribe* — the AI documentation tool — is separately MHRA-cleared and remains fully available. See our [Heidi Evidence vs MCB comparison](/blog/medical-journal-digest/heidi-evidence-vs-monday-clinical-brief/) and the [in-session restriction explainer](/blog/medical-journal-digest/heidi-evidence-uk-in-session-restriction/).
 **Not for:** questions that need the patient's context in the UK and EU — Evidence cannot be invoked from inside an active session or see session details. The sidebar tool is fully usable, including during clinic. Not available at all on an NHS UK account, which Heidi excludes from Evidence.
 
 ### Praxis Medicine — new, well-funded, worth watching
@@ -77,7 +77,7 @@ Most UK doctors do not need to pick one. The two jobs are different, and the str
 - **A pull tool for questions you bring** — whichever of the tools above you can actually use. Check it works on the account you log in with: Heidi Evidence, for one, excludes NHS UK accounts.
 - **A push tool for questions you did not know to ask** — a weekly digest, so a landmark paper in your specialty does not pass you by.
 
-One is preventive; the other is acute. Evidence suggests doctors who keep a fixed weekly reading habit produce more consistent CPD portfolios than those who read only reactively — so if you have to invest in one habit, make it the reading.
+One is preventive; the other is acute. If you have to invest in one habit, we would make it the reading — though we run a digest, so weigh that accordingly.
 
 ## A note on regulation
 

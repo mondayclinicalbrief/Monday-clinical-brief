@@ -67,7 +67,7 @@ This is not a criticism. It is a design choice. Heidi is built for the consultat
 
 **Serendipitous discovery.** The most valuable thing a digest does is show you a paper you would never have searched for. A cross-specialty finding, a trial in a neighbouring field, a methodology paper that changes how you interpret evidence in your own domain. Pull tools, by definition, cannot surface what you have not thought to look for.
 
-**Reading habit formation.** Doctors who maintain a fixed weekly reading habit produce more consistent CPD portfolios than those who read reactively. Heidi supports reactive reading. A digest supports habitual reading. The habit is what keeps you current; the lookup is what keeps you safe.
+**Reading habit formation.** Heidi supports reactive reading. A digest supports habitual reading. The habit is what keeps you current; the lookup is what keeps you safe.
 
 ## The Practical Combination
 
@@ -83,9 +83,9 @@ The digest feeds your general awareness. The pull tool — whichever one is curr
 
 ## Who Should Choose One Over the Other
 
-If you genuinely have to pick one — perhaps you are an F1 with no budget — pick Heidi Evidence. It is free, it is useful at the point of care, and it is better than nothing.
+If you genuinely have to pick one — perhaps you are an F1 with no budget — pick Heidi Evidence, as long as your account can use it. Heidi excludes accounts registered with an NHS email address from Evidence. Where it is available, it is free, useful at the point of care, and better than nothing.
 
-If you have £20 a year and fifteen minutes a week, add a digest. The investment is negligible. The return — in CPD evidence, in awareness, in not being blindsided by a guideline change — is disproportionate.
+If you have £20 a year and fifteen minutes a week, add a digest. The investment is negligible. The return — in CPD evidence, in awareness, in not being blindsided by a landmark paper — is disproportionate.
 
 If you are a GP, generalist, or portfolio clinician covering multiple areas, the digest is arguably more important than the lookup tool. Your job requires breadth. You cannot query Heidi for papers you do not know exist. You need the push.
 

@@ -33,7 +33,7 @@ This post sets out what happened, why it happened, and — more usefully — wha
 
 - **23 April 2026** — OpenAI launches ChatGPT for Clinicians. Free for verified US physicians, NPs, PAs, and pharmacists. UK and EEA explicitly excluded at the regional-verification step.
 - **27 April 2026** — OpenEvidence withdraws from the UK and EU. No replacement announced. No UK handoff. The platform that 40 % of US physicians were reportedly using disappears from UK access overnight.
-- **May 2026** — Heidi Evidence (the clinical decision support arm of Heidi Health) operates in the UK and EU but restricts evidence querying to out-of-session use. It cannot be used during a live patient consultation.
+- **May 2026** — Heidi Evidence (the clinical decision support arm of Heidi Health) operates in the UK and EU but restricts evidence querying to out-of-session use. It cannot be invoked from inside an active session or see patient context, and NHS UK accounts are excluded from it.
 
 We have written individual explainers for each: [the OpenEvidence withdrawal](/blog/medical-journal-digest/openevidence-alternative-uk/), [the ChatGPT for Clinicians exclusion](/blog/medical-journal-digest/chatgpt-for-clinicians-uk/), and [the Heidi Evidence in-session restriction](/blog/medical-journal-digest/heidi-evidence-uk-in-session-restriction/). This post pulls the thread. For the two of them head to head, see [Heidi Evidence vs OpenEvidence](/blog/medical-journal-digest/heidi-evidence-vs-openevidence-uk/).
 
@@ -69,7 +69,7 @@ Heidi Evidence is the most strategically interesting move in the trio. Free at t
 
 UK and EU clinicians can use it — but only outside an active session, and not at all on an NHS UK account. Heidi documents Evidence used outside sessions as fully available in the UK and EU on all plans, opened from the sidebar independently of any consultation, so it *can* be used with a patient in the room. What is disabled here is in-session Evidence, which would read the session transcript and linked patient details, along with patient and session linking. Heidi states separately that NHS UK accounts are excluded from Evidence and from free trials that include it. Heidi's stated reason for the in-session limit is that patient-context Evidence would constitute clinical decision support requiring medical device classification under UK MDR 2002. The restriction is specific to Heidi Evidence; Heidi Scribe (the AI clinical scribe product, separately MHRA-cleared) remains available to UK clinicians, including NHS staff, in session.
 
-Heidi Health has not published a detailed rationale. The most likely explanation is the same regulatory caution that took OpenEvidence and ChatGPT for Clinicians out of UK access — but applied to the context of use (live point-of-care decision support) rather than the whole market.
+Heidi's reason is narrower than OpenEvidence's. OpenEvidence cited broad regulatory uncertainty, the EU AI Act among it, and left the UK and EU altogether. Heidi points to one rule, medical device classification under UK MDR 2002, and has held back only the feature that rule would catch.
 
 ## What UK NHS clinicians can use today
 
