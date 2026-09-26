@@ -108,18 +108,6 @@ Launched 23 April 2026 in the US. Free for verified US physicians, NPs, PAs, and
 
 **Best for:** Not available in the UK. When or if it arrives, it will be a Q&A tool, not a current-awareness digest.
 
-## iatroX
-
-[iatroX](https://iatrox.com) is a UK-built clinical-AI pull-tool. It is MHRA-registered as a Class I device, carries UKCA marking, and is built around UK guideline retrieval (NICE, CKS, SmPC) with calculators and Q-banks attached. The base tier is free for individual clinicians; paid specialty diplomas sit at around £99/year.
-
-We mention iatroX here for completeness. With OpenEvidence withdrawn, ChatGPT for Clinicians excluding UK accounts, and Heidi Evidence restricted to out-of-session use in the UK and EU (and excluded on NHS accounts), iatroX is the credible UK pull-tool option that can see the case in the consultation itself today. Our coverage of the [OpenEvidence withdrawal](/blog/medical-journal-digest/openevidence-alternative-uk/), [ChatGPT exclusion](/blog/medical-journal-digest/chatgpt-for-clinicians-uk/), and [Heidi Evidence in-session restriction](/blog/medical-journal-digest/heidi-evidence-uk-in-session-restriction/) names iatroX as the UK-regulatory-compliant alternative in each case.
-
-**How it relates to a digest:** iatroX is a pull tool. You ask it a clinical question; it returns a UK-guideline-grounded answer. It does not aim to surface new literature on a calendar — that is the role a digest serves. The two are complementary.
-
-**We have no commercial relationship with iatroX.** Mention is editorial.
-
-**Best for:** UK clinicians who need a regulatory-compliant Q&A tool at the point of care, alongside whatever they use for current awareness.
-
 ## Independent UK Digest Services (MCB and others)
 
 Independent digests are the growing third option. Services like The Monday Clinical Brief and a handful of specialty-specific newsletters produce summaries outside the large publisher ecosystem.
@@ -159,7 +147,7 @@ If you read one journal cover-to-cover and it is the BMJ, the BMJ products will 
 
 If your specialty reading is deep and you want named-editor commentary, NEJM Clinician at £75 is now genuinely competitive and worth considering.
 
-If you need a clinical reference or Q&A tool at the point of care, the options depend on your access. UpToDate remains the dominant institutional reference (Expert AI restricted to US/Canada individuals). Heidi Evidence is a strong product but, for UK and EU clinicians, its evidence feature is restricted to out-of-session use — it cannot be invoked from inside an active session or see patient context — and NHS UK accounts are excluded from Evidence altogether. For a UK-regulatory-compliant Q&A tool a UK clinician can use in the consultation itself today, iatroX is the credible option.
+If you need a clinical reference or Q&A tool at the point of care, the options depend on your access. UpToDate remains the dominant institutional reference (Expert AI restricted to US/Canada individuals). Heidi Evidence is a strong product but, for UK and EU clinicians, its evidence feature is restricted to out-of-session use — it cannot be invoked from inside an active session or see patient context — and NHS UK accounts are excluded from Evidence altogether. For the AI query tools UK clinicians can reach, see the comparison on our [OpenEvidence alternatives page](/blog/medical-journal-digest/openevidence-alternative-uk/).
 
 If you want **current awareness** — to know what was published last week in your specialty before a patient or colleague forces the question — none of the above is built for that job. That is the role a structured weekly digest serves.
 

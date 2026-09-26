@@ -14,7 +14,7 @@ faqs:
   - question: "Why are US-built AI tools excluding the UK?"
     answer: "All three withdrawals reflect the same underlying issue: UK and EU regulatory uncertainty around clinical AI. The EU AI Act classifies certain clinical AI tools as high-risk systems. The UK's own AI-in-healthcare framework is still being written — the Medical Devices (Amendment) Regulations consultation closes 19 June 2026, with the International Reliance Framework expected in Autumn 2026. Until these land, US vendors are deferring UK launches to markets where the regulatory path is clear."
   - question: "What can UK NHS clinicians use for clinical Q&A instead?"
-    answer: "For UK-regulatory-compliant point-of-care Q&A, iatroX is the credible in-session option in 2026. It is MHRA-registered as a Class I medical device, carries UKCA marking, is UK-built, and retrieves answers grounded in NICE, CKS, and SmPC. Base tier is free for individual clinicians; paid specialty diplomas around £99/year. Heidi Evidence can be used out of session, and Heidi Scribe (the clinical documentation product, separately MHRA-cleared) remains fully available — it is unaffected by the Heidi Evidence in-session restriction."
+    answer: "It depends on your access. Standard UpToDate, often provided through NHS institutional access, and BMJ Best Practice remain the established references. Heidi Evidence can be used outside a session, though not on an NHS UK account. Other AI query tools are reachable from the UK and differ on regulatory status, sources and cost — our OpenEvidence alternatives page compares them side by side. Heidi Scribe (the clinical documentation product, separately MHRA-cleared) remains fully available — it is unaffected by the Heidi Evidence in-session restriction."
   - question: "What about UpToDate Expert AI for UK clinicians?"
     answer: "UpToDate Expert AI is currently available only in the US and Canada for individual subscriptions, with limited Enterprise Edition availability elsewhere. UK individual subscribers cannot use Expert AI. Standard UpToDate remains available and is widely provided to NHS clinicians through institutional access."
   - question: "How long is the UK regulatory pause likely to last?"
@@ -73,15 +73,13 @@ Heidi Health has not published a detailed rationale. The most likely explanation
 
 ## What UK NHS clinicians can use today
 
-There is a credible UK setup for clinicians who want both point-of-care Q&A and weekly literature current-awareness. It is not a workaround. It is a two-tool combination that does the same job the three products that pulled back were attempting, with the advantage that it is actually available in session.
+There is a credible UK setup for clinicians who want both point-of-care Q&A and weekly literature current-awareness. It is not a workaround. It is two tools, each doing one job: something to answer the questions you bring, and something to tell you what was published.
 
-### For clinical Q&A at the point of care: iatroX
+### For clinical Q&A at the point of care: whatever you can actually reach
 
-[iatroX](https://iatrox.com) is the UK-built clinical-AI pull-tool that survived the same six-week period that took the other three out. It is **MHRA-registered as a Class I medical device**, carries **UKCA marking**, is UK-built, and retrieves answers grounded in **NICE, CKS, and SmPC** — the same sources a UK GP, consultant, or trainee would check by hand. Base tier is free for individual clinicians; paid specialty diplomas around £99/year. It includes calculators and Q-banks alongside the core retrieval product.
+Which query tool that is depends on your access. Some are open to any UK clinician, some exclude NHS accounts, and some are still settling their UK pricing. The field has changed month by month since April, so we do not name a single pick here. Our [OpenEvidence alternatives page](/blog/medical-journal-digest/openevidence-alternative-uk/) keeps a dated table of the options: what each one is, its UK regulatory status, and what it costs.
 
-iatroX is not a perfect substitute for the model quality of ChatGPT for Clinicians or the corpus access of OpenEvidence. But it is the UK-regulatory-compliant tool that UK clinicians can actually use in session today, and the regulatory ground it stands on is the ground the other three could not hold for live point-of-care use.
-
-**We have no commercial relationship with iatroX.** Mention is editorial. We point to iatroX because, in 2026, it is the credible UK pull-tool option a UK clinician can use during a consultation.
+Whichever you use, check two things before you rely on it in a consultation: that it works on the account you actually log in with, and what sources its answers are grounded in.
 
 ### For AI clinical documentation: Heidi Scribe
 
@@ -97,7 +95,7 @@ This is the half of the problem that pull-tools never solved, and the half that 
 
 The Monday Clinical Brief is built for this role. Every Monday morning, you get every new peer-reviewed paper published in the past week from the five highest-impact journals in your specialty — summarised in plain language, with UK context (NICE, Royal College, NHS pathway) noted where it matters. Typically 10–20 papers per specialty per week, with significant variation by specialty and week. Thirty-one specialties. £20 per year. No advertising. No sponsored content. No regulatory uncertainty — we are a literature digest, not a medical device, and we do not claim to be one.
 
-We have written separately about [how iatroX and a weekly digest combine into a 30-minute-a-week workflow](/blog/medical-journal-digest/heidi-evidence-vs-monday-clinical-brief/). The short version: a pull tool handles the questions you bring to it; a push tool tells you what to ask in the first place. Most UK clinicians benefit from one of each.
+We have written separately about [how a query tool and a weekly digest fit together](/blog/medical-journal-digest/heidi-evidence-vs-monday-clinical-brief/). The short version: a pull tool handles the questions you bring to it; a push tool tells you what to ask in the first place. Most UK clinicians benefit from one of each.
 
 ## The two-tool workflow
 
@@ -105,7 +103,7 @@ A practical structure for UK clinicians who want both halves of the problem solv
 
 **Monday morning — read the digest.** Fifteen minutes. See what was published in your specialty last week. Flag two or three to read in full if the topic is relevant. Log the reading as CPD.
 
-**During the week — use iatroX for the questions that come up.** A patient presents with something unfamiliar. A colleague asks a question you cannot answer from memory. A guideline you used to know has changed. iatroX gives you a UK-guideline-grounded answer in seconds.
+**During the week — use a query tool for the questions that come up.** A patient presents with something unfamiliar. A colleague asks a question you cannot answer from memory. A guideline you used to know has changed. The query tool, or the NICE and CKS pages themselves, answers it.
 
 **Friday afternoon — five minutes to log and reflect.** What did you read? What changed in how you think about it? One sentence on each. CPD evidence in five minutes. The MCB CPD Tracker — included free with an annual subscription — is built around exactly this rhythm; [FourteenFish](/blog/cpd-reading-tool/fourteenfish-alternatives-cpd-logging/) works if you already use it.
 
@@ -115,11 +113,11 @@ Total time: under 30 minutes most weeks, with the pull-tool time scaling to howe
 
 The pull-tool exclusions will probably ease as the UK regulatory framework lands later in 2026. The MHRA consultation closes in June. The International Reliance Framework is planned for Autumn. The National Commission report is due in the second half of the year. A realistic best case is a clearer regulatory pathway by Q1 2027, with one or two of the currently-withdrawn tools returning to the UK once that pathway is visible.
 
-In the meantime: the credible UK setup is iatroX for pull, a weekly digest for push, and either UpToDate (institutional) or BMJ Best Practice (NHS-bundled) for traditional reference. That covers the use cases the three products that pulled back were trying to occupy.
+In the meantime: the credible UK setup is a query tool you can actually reach for pull, a weekly digest for push, and either UpToDate (institutional) or BMJ Best Practice (NHS-bundled) for traditional reference. That covers the use cases the three products that pulled back were trying to occupy.
 
 ## Our honest position
 
-We run The Monday Clinical Brief. We are not neutral on the value of a weekly literature digest in this picture. But the recommendations in this post are not paid placements. We have no commercial relationship with iatroX. We have no commercial relationship with UpToDate or BMJ Best Practice. We mention each one because, in May 2026, they are the UK options that work — for the use cases the withdrawn products were trying to fill.
+We run The Monday Clinical Brief. We are not neutral on the value of a weekly literature digest in this picture. But nothing in this post is a paid placement. We have no commercial relationship with UpToDate or BMJ Best Practice. We mention them because, in May 2026, they are UK options that work for the use cases the withdrawn products were trying to fill.
 
 If the situation changes — if Heidi Evidence lifts its in-session restriction, if OpenEvidence returns to the UK, if ChatGPT for Clinicians launches a UK tier — we will update this post and say so explicitly. Until then, the six-week pattern is what UK doctors need to understand, and the two-tool setup above is the practical response.
 

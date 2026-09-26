@@ -18,7 +18,7 @@ faqs:
   - question: "Is Heidi Evidence the same as Heidi Scribe?"
     answer: "No. Heidi Scribe is an AI clinical scribe that drafts consultation notes — it is separately MHRA-cleared and remains available to UK clinicians, including NHS staff, in session. Heidi Evidence is the citation-backed clinical question-answering feature, and it is the one carrying the UK and EU in-session restriction and the NHS account exclusion."
   - question: "What can UK clinicians use for point-of-care Q&A during a consultation?"
-    answer: "Heidi Evidence's out-of-session tool can be used during a consultation, though it cannot see the patient's context. iatroX is the UK-based option built for in-session use, with MHRA registration and UKCA marking. For staying current with the medical literature — knowing what was published in your specialty each week — The Monday Clinical Brief sends a weekly email digest covering 31 specialties, £20 a year for your specialty and £5 for each additional one. The tools solve different problems and work well alongside each other."
+    answer: "Heidi Evidence's out-of-session tool can be used during a consultation, though it cannot see the patient's context. Other point-of-care query tools are available to UK clinicians and differ on regulatory status, NHS access and cost; our OpenEvidence alternatives page compares them. For staying current with the medical literature — knowing what was published in your specialty each week — The Monday Clinical Brief sends a weekly email digest covering 31 specialties, £20 a year for your specialty and £5 for each additional one. The tools solve different problems and work well alongside each other."
   - question: "What changed for UK access to clinical AI tools in 2026?"
     answer: "Two tools withdrew and one was restricted, in six weeks. ChatGPT for Clinicians launched on 23 April 2026 with UK and EEA excluded. OpenEvidence withdrew from the UK and EU in late April 2026. Heidi Evidence stayed, restricted to out-of-session use, with NHS UK accounts later excluded from the feature entirely."
 ---
@@ -87,7 +87,7 @@ What is striking is that Heidi Evidence — unlike the other two — is the one 
 
 ## What UK clinicians can use right now
 
-For **clinical Q&A that needs the patient's context** — inside the consultation, aware of the case: [iatroX](https://iatrox.com) is the UK-based option. It holds MHRA registration as a Class I device, carries UKCA marking, and is built around UK guideline retrieval (NICE, CKS, SmPC) with calculators and Q-banks attached. It is not a perfect substitute for Heidi Evidence's model quality, but it is the most credible UK-regulatory-compliant in-session tool today.
+For **clinical Q&A that needs the patient's context** — inside the consultation, aware of the case: this is the kind of tool UK device regulation applies to most directly, which is Heidi's own stated reason for holding back. Before you rely on any tool here, check its UK regulatory status and whether it accepts your account. Our [OpenEvidence alternatives page](/blog/medical-journal-digest/openevidence-alternative-uk/) keeps a dated comparison of what UK clinicians can reach.
 
 For **general evidence questions**: Heidi Evidence's sidebar tool is available and worth using — between patients, before clinic, after a consultation, or during one, so long as the question is a general one rather than about the patient in front of you. Not available on an NHS UK account.
 
@@ -115,7 +115,7 @@ Heidi Evidence is excellent, and in the UK and EU the sidebar tool is available 
 
 The in-session limit may ease as the UK regulatory framework for clinical AI settles, though Heidi's stated reason — device classification under UK MDR 2002 — is a specific bar to clear rather than a general wait.
 
-In the meantime: iatroX for in-session UK clinical Q&A, Heidi Evidence for out-of-session questions, Heidi Scribe for documentation if you want it, and MCB for keeping current with the literature itself. Each tool does one job well. Together they cover most of the ground.
+In the meantime: Heidi Evidence for out-of-session questions if you are not on an NHS account, Heidi Scribe for documentation if you want it, a query tool you can actually reach for questions about the case in front of you, and MCB for keeping current with the literature itself. Each tool does one job well. Together they cover most of the ground.
 
 We will update this post as Heidi Evidence's UK position changes. Any change will likely follow the UK regulatory process now in train — the Medical Devices (Amendment) Regulations consultation closed on 19 June 2026, and Heidi's acquisition of AutoMedica gives it MHRA AI Airlock access and a seat close to that process. Until something lands, the in-session restriction and the NHS account exclusion both hold.
 

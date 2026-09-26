@@ -14,7 +14,7 @@ faqs:
   - question: "Why is ChatGPT for Clinicians not available in the UK?"
     answer: "OpenAI has not made ChatGPT for Clinicians available in the UK or EEA. The likely reason is regulatory uncertainty around AI in healthcare — the EU AI Act classifies certain clinical AI tools as high-risk, and the UK's own AI regulatory framework remains unsettled. Several US AI health tools have paused or withdrawn UK access for the same reason."
   - question: "What can UK doctors use instead of ChatGPT for Clinicians?"
-    answer: "For clinical Q&A at the point of care, iatroX is a UK-based alternative with MHRA registration and UKCA marking. For staying current with the medical literature — knowing what's new in your specialty each week — The Monday Clinical Brief is a weekly digest covering 31 specialties for £20 a year."
+    answer: "For clinical Q&A at the point of care, several tools are reachable from the UK, and they differ on regulatory status and cost; our OpenEvidence alternatives page compares them. For staying current with the medical literature — knowing what's new in your specialty each week — The Monday Clinical Brief is a weekly digest covering 31 specialties for £20 a year."
   - question: "Did OpenEvidence also leave the UK?"
     answer: "Yes. OpenEvidence withdrew from the UK and EU on 25 April 2026 — two days after ChatGPT for Clinicians launched and excluded UK users. UK doctors lost both tools in the same fortnight."
 ---
@@ -62,9 +62,7 @@ Both tools were primarily Q&A products — you bring a clinical question, they r
 
 ## For clinical Q&A: what's available in the UK
 
-[iatroX](https://iatrox.com) is UK-based, holds MHRA registration and UKCA marking, and is actively positioning as the UK alternative for AI clinical Q&A. It does the same job as OpenEvidence and ChatGPT for Clinicians — referenced answers to point-of-care questions — within a UK regulatory framework.
-
-It is not a perfect substitute. These tools differ in model quality, citation depth, and interface. But it is the most credible UK-regulatory-compliant option in this space right now.
+Several tools UK clinicians can reach do the same job — referenced answers to point-of-care questions — and the list has grown since April. They differ in model quality, citation depth, UK regulatory status, and whether they accept NHS accounts. We keep a dated comparison on our [OpenEvidence alternatives page](/blog/medical-journal-digest/openevidence-alternative-uk/) rather than naming one here, because the field is still moving.
 
 ## The other half of the problem
 
@@ -88,7 +86,7 @@ We cover 31 specialties. We do the curation. You stay current.
 
 ## The bottom line
 
-ChatGPT for Clinicians is not coming to the UK any time soon. Neither, for now, is OpenEvidence. For clinical Q&A in the meantime, iatroX is the most credible UK option.
+ChatGPT for Clinicians is not coming to the UK any time soon. Neither, for now, is OpenEvidence. For clinical Q&A in the meantime, the UK options are in [our comparison table](/blog/medical-journal-digest/openevidence-alternative-uk/).
 
 But neither of those tools — available or not — tells you what was published last week. That is a different job. And it matters just as much.
 
