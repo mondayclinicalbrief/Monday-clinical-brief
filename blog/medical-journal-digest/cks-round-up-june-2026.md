@@ -18,7 +18,7 @@ faqs:
 
 NICE Clinical Knowledge Summaries (CKS) are updated on a rolling basis, and five primary-care topics changed in June 2026. This round-up gives a one-line takeaway for each, with a link to the source. The authoritative record is the [NICE CKS site](https://cks.nice.org.uk/); this is a summary for awareness, not a substitute for the topic page itself.
 
-This is the latest in our recurring monthly series — the [May 2026 edition](/blog/medical-journal-digest/cks-round-up-may-2026/) is here if you missed it. We summarise the changes; we do not replace NICE, and clinical decisions remain the responsibility of the treating clinician.
+This is part of our monthly series — the [May 2026 edition](/blog/medical-journal-digest/cks-round-up-may-2026/) is here if you missed it. We summarise the changes; we do not replace NICE, and clinical decisions remain the responsibility of the treating clinician.
 
 ## The updates that matter this month
 

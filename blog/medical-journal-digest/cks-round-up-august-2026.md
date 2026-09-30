@@ -24,6 +24,8 @@ Six topics were updated in August 2026, and every one of them was a scheduled re
 
 That is worth stating plainly rather than dressing up. But three of the six gained something genuinely useful, and one of those is a rename that will break a bookmark.
 
+This is part of our monthly series — the [July 2026 edition](/blog/medical-journal-digest/cks-round-up-july-2026/) is here if you missed it.
+
 ## The updates that matter this month
 
 - **[Carpal tunnel syndrome](https://cks.nice.org.uk/topics/carpal-tunnel-syndrome/).** Reviewed against an April 2026 literature search, with **no major changes to clinical recommendations**. Within that: follow-up recommendations in primary care were amended to reflect pragmatic clinical practice, **CTS-6 is recommended to support diagnostic decisions**, and **referral for nerve conduction studies should be reserved for atypical cases and diagnostic uncertainty**. The information on the **Tinel sign** was updated to reflect a recent systematic review. *Takeaway:* the most practically useful item this month. It puts a validated clinical score at the front of the pathway and is explicit that electrodiagnostic testing is for uncertainty, not confirmation of the obvious — worth reading in full if you refer for nerve conduction studies routinely.

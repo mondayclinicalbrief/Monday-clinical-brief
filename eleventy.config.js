@@ -62,6 +62,15 @@ module.exports = function(eleventyConfig) {
     });
   });
 
+  // ── CKS round-ups, newest first ──
+  // Older editions link to collections.cksRoundups[0] from blog-post.njk, so
+  // Google's "nice cks" traffic (which lands on May) reaches the current one.
+  // A new edition only needs the cks-round-up- filename prefix to take over.
+  eleventyConfig.addCollection("cksRoundups", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("blog/medical-journal-digest/cks-round-up-*.md")
+      .sort((a, b) => b.date - a.date);
+  });
+
   // ── Cluster collections ──
   eleventyConfig.addCollection("cluster1", function(collectionApi) {
     return collectionApi.getFilteredByGlob("blog/medical-journal-digest/**/*.md").sort((a, b) => b.date - a.date);
