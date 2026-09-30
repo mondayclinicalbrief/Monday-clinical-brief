@@ -1,7 +1,7 @@
 ---
-title: "Dental CPD Requirements in the UK"
-seoTitle: "Dental CPD Requirements UK: Hours, Evidence and What Counts"
-metaDescription: "How many CPD hours the GDC requires by registrant title, what makes an activity verifiable, and where journal reading actually fits. Based on the GDC's own guidance."
+title: "Dental CPD in the UK: Verifiable, Non-Verifiable and the Hours"
+seoTitle: "Non-Verifiable vs Verifiable Dental CPD: GDC Rules (UK)"
+metaDescription: "What counts as non-verifiable dental CPD, why the GDC won't accept it as hours, and how many verifiable hours dentists, DCPs and dental nurses need."
 description: "The GDC's hours requirement by registrant title, the 10-hours-in-two-years rule, what makes CPD verifiable, and the honest answer on where reading fits."
 date: 2026-09-18
 cluster: "Dentistry"
@@ -12,6 +12,8 @@ faqs:
   - question: "How many CPD hours do dentists need?"
     answer: "Dentists need a minimum of 100 hours of verifiable CPD per five-year cycle. Dental therapists, dental hygienists, orthodontic therapists and clinical dental technicians need 75 hours. Dental nurses and dental technicians need 50 hours. If you hold more than one registrant title, you must meet the requirement for the title with the highest number of hours."
     
+  - question: "What counts as non-verifiable CPD for dentists and dental nurses?"
+    answer: "Any learning that does not come with the provider evidence the GDC sets out for verifiable CPD. Journal reading is the common example. The GDC's guidance says you may continue to do non-verifiable CPD, but all hours submitted must be verifiable, so it never counts towards your total. That applies whatever your title, whether you are a dentist working towards 100 hours or a dental nurse working towards 50."
   - question: "Does reading journals count towards GDC CPD hours?"
     answer: "No. Journal reading is non-verifiable CPD, and only verifiable hours are declared to the GDC. The GDC's guidance goes further — if it asks to see your CPD record, you should not include information about non-verifiable CPD at all. Reading is still worth doing: it informs your personal development plan and gives your reflection something to work with. It just does not appear in your hours total."
   - question: "What makes a CPD activity verifiable?"
@@ -70,7 +72,7 @@ One thing follows from this that is worth stating plainly: **the GDC does not ap
 
 Typical verifiable activity includes courses and lectures, training days, hands-on clinical training and workshops, clinical audit, conferences, and e-learning.
 
-## Where reading actually fits
+## Non-verifiable CPD: where reading fits
 
 Reading is not on that list, and it is not going to be.
 
