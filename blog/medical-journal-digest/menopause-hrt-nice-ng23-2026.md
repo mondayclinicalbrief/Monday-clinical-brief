@@ -77,6 +77,7 @@ The highest-yield action is small: update your HRT-initiation safety-netting to 
 
 ## Related reading
 
+- [NICE NG12 update, April 2026: what changed in suspected-cancer referral](/blog/medical-journal-digest/nice-ng12-suspected-cancer-referral-2026/) — includes the referral criteria for postmenopausal bleeding.
 - [NICE NG28 February 2026: SGLT2 inhibitors first-line for type 2 diabetes](/blog/medical-journal-digest/nice-ng28-type-2-diabetes-2026/) — another major 2026 NICE update for UK primary care.
 - [SGLT2 inhibitors in UK primary care 2026: the practical prescribing guide](/blog/medical-journal-digest/sglt2-inhibitors-uk-primary-care-2026/) — the practical companion to the NG28 diabetes update.
 - [Tirzepatide in the GP QOF 2026/27](/blog/medical-journal-digest/tirzepatide-gp-qof-2026/) — the 2026 obesity-prescribing change now in the GP contract.

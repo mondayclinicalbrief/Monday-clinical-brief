@@ -43,6 +43,8 @@ Most months bring restructuring and clarification, and the honest summary is "no
 
 For the bigger picture on staying current across guidance and the journals, see our pillar guide on [how to keep up with the medical literature](/blog/medical-journal-digest/how-to-keep-up-with-medical-literature/).
 
+We also summarise NICE guideline changes for primary care: [suspected-cancer referral (NG12)](/blog/medical-journal-digest/nice-ng12-suspected-cancer-referral-2026/), [hypertension (NG136)](/blog/medical-journal-digest/nice-ng136-hypertension-2026/) and [asthma (NG245)](/blog/medical-journal-digest/asthma-bts-nice-sign-ng245-uk-2026/).
+
 ## A note on what this post is — and is not
 
 This is a summary for awareness. It is not a substitute for the [NICE CKS](https://cks.nice.org.uk/) topic pages, which are the authoritative and current source. Always confirm the recommendation on the CKS topic page before acting on it — that matters more than usual for the stroke and TIA changes above. Clinical decisions remain the responsibility of the treating clinician.

@@ -41,6 +41,8 @@ Two things are worth your time this month: the carpal tunnel diagnostic pathway 
 
 Everything else is awareness. A review that changes nothing still tells you something: the topic has been checked against a recent literature search and confirmed as current. NICE fully reviews every CKS topic on a five-year cycle, and sooner when significant new evidence appears, so a quiet month is the system working rather than the system idling.
 
+We also summarise NICE guideline changes for primary care: [suspected-cancer referral (NG12)](/blog/medical-journal-digest/nice-ng12-suspected-cancer-referral-2026/), [hypertension (NG136)](/blog/medical-journal-digest/nice-ng136-hypertension-2026/) and [asthma (NG245)](/blog/medical-journal-digest/asthma-bts-nice-sign-ng245-uk-2026/).
+
 ## A note on what this post is — and is not
 
 This is a summary for awareness. It is not a substitute for the [NICE CKS](https://cks.nice.org.uk/) topic pages, which are the authoritative and current source. Always confirm the recommendation on the CKS topic page before acting on it — that matters most for the carpal tunnel and palliative care breathlessness changes above. Clinical decisions remain the responsibility of the treating clinician.

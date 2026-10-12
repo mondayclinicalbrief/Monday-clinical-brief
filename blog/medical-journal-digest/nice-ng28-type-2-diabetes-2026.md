@@ -75,6 +75,7 @@ For the operational detail — agent choice, eligibility, cautions, and the init
 - [Semaglutide for cardiovascular risk (NICE TA1152)](/blog/medical-journal-digest/semaglutide-cardiovascular-risk-nice-2026/) — semaglutide for atherosclerotic cardiovascular disease, the same drug NG28 now adds for that group.
 - [SGLT2 inhibitors for CKD in UK primary care 2026](/blog/medical-journal-digest/sglt2-inhibitors-ckd-uk-primary-care-2026/) — the same drug class for kidney protection, including CKD without diabetes.
 - [Statins and CVD prevention in UK primary care 2026](/blog/medical-journal-digest/statins-cvd-prevention-uk-primary-care-2026/) — lipid management in the same high-cardiovascular-risk population.
+- [NICE NG136 hypertension update, February 2026](/blog/medical-journal-digest/nice-ng136-hypertension-2026/) — the other February 2026 NICE update for primary care: raised blood pressure before diagnosis.
 
 ## A note on what this post is — and is not
 

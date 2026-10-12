@@ -85,4 +85,11 @@ The practical version is a single sentence added to an existing consultation: th
 
 That is also the argument for a routine that surfaces changes like this one before a patient or an appraisal does. A once-a-week read of what actually changed in your specialty is how a one-line guideline update becomes a change in practice rather than a change you meant to make. That is what we built [The Monday Clinical Brief](/#subscribe) to do, and it is the theme of our pillar guide on [keeping up with the medical literature](/blog/medical-journal-digest/how-to-keep-up-with-medical-literature/).
 
+## Related reading
+
+- [Statins and CVD prevention in UK primary care 2026 (NICE NG238)](/blog/medical-journal-digest/statins-cvd-prevention-uk-primary-care-2026/) — lipid management in the same cardiovascular-risk consultation.
+- [Anticoagulation in atrial fibrillation: a UK primary-care guide (NICE NG196)](/blog/medical-journal-digest/atrial-fibrillation-anticoagulation-uk-primary-care-2026/) — the other major stroke-prevention decision in primary care.
+- [NICE NG28 February 2026: SGLT2 inhibitors first-line for type 2 diabetes](/blog/medical-journal-digest/nice-ng28-type-2-diabetes-2026/) — the other February 2026 NICE update for primary care.
+- [NICE NG12 update, April 2026: what changed in suspected-cancer referral](/blog/medical-journal-digest/nice-ng12-suspected-cancer-referral-2026/) — age-banded CA125 thresholds, postmenopausal bleeding and unexplained weight loss.
+
 A recent general practice issue is online in full, with no sign-up required: [read a free sample](/samples/general-practice/).

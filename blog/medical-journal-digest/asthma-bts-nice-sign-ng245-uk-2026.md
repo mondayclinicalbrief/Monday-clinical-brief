@@ -65,6 +65,7 @@ The Monday Clinical Brief publishes weekly summaries of every new paper from fiv
 - [How to keep up with the medical literature](/blog/medical-journal-digest/how-to-keep-up-with-medical-literature/) — the wider problem of staying current when guidelines move this fast.
 - [NICE NG28 February 2026: SGLT2 inhibitors first-line for type 2 diabetes](/blog/medical-journal-digest/nice-ng28-type-2-diabetes-2026/) — another major UK primary-care guideline change to keep on the radar.
 - [Statins and CVD prevention in UK primary care 2026 (NICE NG238)](/blog/medical-journal-digest/statins-cvd-prevention-uk-primary-care-2026/) — the lipid pathway, reframed around shared decisions.
+- [NICE NG12 update, April 2026: what changed in suspected-cancer referral](/blog/medical-journal-digest/nice-ng12-suspected-cancer-referral-2026/) — the April 2026 suspected-cancer referral update, another primary-care change to keep on the radar.
 
 Before you subscribe, read a recent respiratory issue in full — no sign-up required: [see a free sample](/samples/respiratory/).
 
