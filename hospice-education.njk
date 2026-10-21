@@ -1,0 +1,226 @@
+---
+permalink: /hospice-education/index.html
+eleventyExcludeFromCollections: true
+title: "Sign up — Farleigh, St Elizabeth and St Helena Hospices"
+licence: "hospice-education"
+---
+{#-
+  Unlisted sign-up page for staff covered by the hospice collaboration's
+  licence. Reached only from the tile on their Synergy platform: it is noindex,
+  absent from the sitemap and linked from nowhere on the site. Do not add it to
+  robots.txt — a Disallow line would advertise the URL and stop crawlers seeing
+  the noindex.
+
+  The form posts to /api/licence-signup, which checks the email domain and
+  queues the sign-up for approval. The domain allowlist lives in that function,
+  not here. No main-site nav on purpose: "Start free trial" would send licence
+  staff to a checkout they do not need.
+-#}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ title }} — The Monday Clinical Brief</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="/assets/brand/favicon-32.png" sizes="32x32" type="image/png">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --charcoal: #1c1c1c; --cream: #f7f5f0; --warm-white: #fdfcf9;
+    --sage: #5a7a6a; --sage-light: #e8efeb; --sage-deep: #3d5a4c;
+    --gold: #c4994c; --gold-light: #f5edd8;
+    --text: #3a3a38; --text-muted: #6e6e66; --border: #e2dfd8;
+    --error: #a3271f;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Figtree', sans-serif; color: var(--text); background: var(--cream); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+
+  .wrap { max-width: 620px; margin: 0 auto; padding: 2rem 1rem 3rem; }
+  .brand { display: block; width: 300px; max-width: 80%; height: auto; margin: 0 auto 1.5rem; }
+
+  .card { background: var(--warm-white); border: 1px solid var(--border); border-radius: 10px; padding: 2rem; }
+  .eyebrow { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--sage-deep); margin-bottom: 0.6rem; }
+  h1 { font-family: 'Instrument Serif', serif; font-size: clamp(1.7rem, 5vw, 2.2rem); font-weight: 400; color: var(--charcoal); line-height: 1.2; margin-bottom: 0.9rem; }
+  .lead { margin-bottom: 0.9rem; }
+  .card a { color: var(--sage-deep); }
+
+  form { margin-top: 1.6rem; border-top: 1px solid var(--border); padding-top: 1.5rem; }
+  .field { margin-bottom: 1.25rem; }
+  label.title, legend { display: block; font-weight: 600; color: var(--charcoal); margin-bottom: 0.3rem; font-size: 0.98rem; }
+  .hint { font-size: 0.86rem; color: var(--text-muted); margin-bottom: 0.45rem; }
+  input[type="text"], input[type="email"] { width: 100%; font: inherit; color: var(--charcoal); background: #fff; border: 1px solid #b9b6ae; border-radius: 6px; padding: 0.65rem 0.75rem; }
+  input[type="text"]:focus, input[type="email"]:focus { outline: 3px solid var(--sage-light); border-color: var(--sage-deep); }
+  fieldset { border: 0; }
+
+  .check { display: flex; align-items: flex-start; gap: 0.6rem; padding: 0.35rem 0; font-size: 0.95rem; cursor: pointer; }
+  .check input { width: 1.15rem; height: 1.15rem; margin-top: 0.2rem; flex-shrink: 0; accent-color: var(--sage-deep); }
+  .check.primary { background: var(--sage-light); border-radius: 6px; padding: 0.65rem 0.75rem; font-weight: 600; color: var(--charcoal); }
+
+  details { margin-top: 0.75rem; border: 1px solid var(--border); border-radius: 6px; background: #fff; }
+  summary { cursor: pointer; padding: 0.65rem 0.75rem; font-weight: 600; color: var(--sage-deep); font-size: 0.93rem; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 1rem; padding: 0.25rem 0.75rem 0.75rem; }
+
+  /* Honeypot: off-screen, not display:none, so simple bots still fill it. */
+  .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+
+  .small { font-size: 0.84rem; color: var(--text-muted); margin-bottom: 1.1rem; }
+  button { font: inherit; font-weight: 600; background: var(--sage-deep); color: #fff; border: 0; border-radius: 40px; padding: 0.75rem 2rem; cursor: pointer; }
+  button:hover { background: var(--charcoal); }
+  button:disabled { background: #8d8d87; cursor: not-allowed; }
+  .error { color: var(--error); font-weight: 600; font-size: 0.93rem; margin-bottom: 1rem; }
+  .error:empty { display: none; }
+
+  .done-tick { width: 52px; height: 52px; background: var(--sage); border-radius: 50%; color: #fff; font-size: 1.5rem; line-height: 52px; text-align: center; margin-bottom: 1rem; }
+
+  footer { text-align: center; font-size: 0.8rem; color: var(--text-muted); margin-top: 1.5rem; }
+  footer a { color: var(--sage-deep); }
+
+  a:focus-visible, button:focus-visible, summary:focus-visible, .check input:focus-visible { outline: 3px solid var(--sage-deep); outline-offset: 2px; border-radius: 3px; }
+
+  @media (max-width: 520px) {
+    .card { padding: 1.4rem 1.15rem; }
+    .grid { grid-template-columns: 1fr; }
+    button { width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <img class="brand" src="/assets/brand/mcb-lockup-email.png" width="536" height="207" alt="The Monday Clinical Brief">
+
+  <main class="card">
+
+    <div id="form-view">
+      <p class="eyebrow">For staff at Farleigh, St Elizabeth and St Helena Hospices</p>
+      <h1>Sign up to The Monday Clinical Brief</h1>
+      <p class="lead">Your hospice has a licence, so the Brief is free for you.</p>
+      <p class="lead">Every Monday morning we email you a short summary of every new paper published that week in five leading journals in your field. Each summary links to the original paper.</p>
+      <p class="lead">It includes a CPD log, so what you read can be exported for appraisal or revalidation.</p>
+      <p><a href="/samples/palliative-care/" target="_blank" rel="noopener">See a sample palliative care issue</a></p>
+
+      <form id="signup-form" novalidate>
+        <div class="field">
+          <label class="title" for="name">Your name</label>
+          <input type="text" id="name" name="name" autocomplete="name" maxlength="100" required>
+        </div>
+
+        <div class="field">
+          <label class="title" for="email">Work email</label>
+          <p class="hint" id="email-hint">Use your hospice email address.</p>
+          <input type="email" id="email" name="email" autocomplete="email" maxlength="254" aria-describedby="email-hint" required>
+        </div>
+
+        <div class="field">
+          <fieldset>
+            <legend>Which specialties would you like?</legend>
+            <p class="hint">You receive one email each Monday for every specialty you choose.</p>
+            <label class="check primary">
+              <input type="checkbox" name="specialties" value="palliative-care" checked>
+              <span>Palliative Care</span>
+            </label>
+            <details>
+              <summary>Add other specialties</summary>
+              <div class="grid">
+                {%- for s in specialties %}
+                {%- if not s.dental and s.slug != "palliative-care" %}
+                <label class="check">
+                  <input type="checkbox" name="specialties" value="{{ s.slug }}">
+                  <span>{{ s.name }}</span>
+                </label>
+                {%- endif %}
+                {%- endfor %}
+              </div>
+            </details>
+          </fieldset>
+        </div>
+
+        <div class="hp" aria-hidden="true">
+          <label for="website">Leave this field empty</label>
+          <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+        </div>
+
+        <p class="small">We use your name and email address only to send you the Brief and to manage your sign-up. You can unsubscribe at any time from the link in every issue. <a href="/privacy.html" target="_blank" rel="noopener">Privacy policy</a>.</p>
+
+        <p class="error" id="error" role="alert"></p>
+        <button type="submit" id="submit-btn">Sign up</button>
+      </form>
+    </div>
+
+    <div id="done-view" hidden>
+      <div class="done-tick" aria-hidden="true">✓</div>
+      <h1 tabindex="-1" id="done-heading">Thank you. You are on the list.</h1>
+      <p class="lead">We will email <strong id="done-email">you</strong> within a few days to confirm. After that, the Brief arrives every Monday morning.</p>
+      <p class="lead">To make sure it reaches you, add <strong>info@mondayclinicalbrief.co.uk</strong> to your contacts or Safe Senders.</p>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>The Monday Clinical Brief · Questions? <a href="mailto:info@mondayclinicalbrief.co.uk">info@mondayclinicalbrief.co.uk</a></p>
+  </footer>
+</div>
+
+<script>
+(function () {
+  var LICENCE = {{ licence | dump | safe }};
+  var form = document.getElementById('signup-form');
+  var btn = document.getElementById('submit-btn');
+  var errorEl = document.getElementById('error');
+
+  function showError(msg) {
+    errorEl.textContent = msg;
+    btn.disabled = false;
+    btn.textContent = 'Sign up';
+  }
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    errorEl.textContent = '';
+
+    var name = form.elements.name.value.trim();
+    var email = form.elements.email.value.trim();
+    var specialties = Array.prototype.slice
+      .call(form.querySelectorAll('input[name="specialties"]:checked'))
+      .map(function (el) { return el.value; });
+
+    if (name.length < 2) { showError('Please enter your name.'); form.elements.name.focus(); return; }
+    if (email.indexOf('@') < 1) { showError('Please enter your work email address.'); form.elements.email.focus(); return; }
+    if (specialties.length === 0) { showError('Please choose at least one specialty.'); return; }
+
+    btn.disabled = true;
+    btn.textContent = 'Signing you up…';
+
+    try {
+      var res = await fetch('/api/licence-signup', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          licence: LICENCE,
+          name: name,
+          email: email,
+          specialties: specialties,
+          website: form.elements.website.value
+        })
+      });
+      var data = {};
+      try { data = await res.json(); } catch (_) {}
+      if (!res.ok) {
+        showError(data.error || 'Something went wrong. Please try again, or email info@mondayclinicalbrief.co.uk.');
+        return;
+      }
+      document.getElementById('done-email').textContent = email;
+      document.getElementById('form-view').hidden = true;
+      document.getElementById('done-view').hidden = false;
+      document.getElementById('done-heading').focus();
+      window.scrollTo(0, 0);
+    } catch (_) {
+      showError('We could not reach the server. Please check your connection and try again.');
+    }
+  });
+})();
+</script>
+</body>
+</html>
