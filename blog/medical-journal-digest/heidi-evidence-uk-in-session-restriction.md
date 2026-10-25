@@ -4,7 +4,7 @@ seoTitle: "Heidi Evidence UK: What the Restriction Blocks"
 metaDescription: "Heidi Evidence works in the UK outside a session — even with a patient present. What is actually blocked, and why NHS accounts are excluded."
 description: "Heidi Evidence is available to UK and EU clinicians outside a patient session, including during clinic. What is blocked is querying from inside an active session with patient context — and NHS UK accounts are excluded from Evidence entirely."
 date: 2026-05-17
-updated: 2026-08-30
+updated: 2026-10-25
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
@@ -34,6 +34,8 @@ There is also a second limit that matters more to most readers of this site: **H
 So the honest position is three-part: out-of-session Evidence works here, in-session Evidence does not, and NHS accounts are excluded from the feature altogether.
 
 > **Update — 16 July 2026:** Heidi Evidence formally launched on 10 July 2026, alongside a $65M raise, the acquisition of AutoMedica — a UK clinical AI firm with a place in the MHRA's AI Airlock pilot — and a new communications product, Heidi Comms. None of it changes the UK position described below: Heidi's own help pages still document Evidence as available to UK and EU clinicians only *outside* live sessions (re-verified 15 July 2026). If anything, the AutoMedica acquisition is the clearest signal yet that Heidi intends to resolve the UK regulatory question properly. We will update this post when the in-session restriction changes.
+
+> **Update — October 2026:** Heidi announced Heidi II on 28 September 2026. It adds agents that carry out multi-step admin work, a memory that learns each clinician's preferences, and saved routines. It also brings peer-reviewed research into the chat, citing content partners including the *New England Journal of Medicine*, Wiley and Cochrane, with clinical decision-support content from BMJ Group. Heidi's own release is clear about where it applies: *"These product capabilities will not be available in the UK or EU."* So the UK position below stands. We re-checked Heidi's help pages on 18 October 2026. Out-of-session Evidence is still available here, in-session Evidence is not, and NHS UK accounts are still excluded. Heidi also says Evidence has answered more than 10 million queries since launch. That is the company's own figure.
 
 ## What Heidi Evidence actually does
 
@@ -119,4 +121,4 @@ In the meantime: Heidi Evidence for out-of-session questions if you are not on a
 
 We will update this post as Heidi Evidence's UK position changes. Any change will likely follow the UK regulatory process now in train — the Medical Devices (Amendment) Regulations consultation closed on 19 June 2026, and Heidi's acquisition of AutoMedica gives it MHRA AI Airlock access and a seat close to that process. Until something lands, the in-session restriction and the NHS account exclusion both hold.
 
-*Heidi's UK and EU position was re-checked against the company's own help documentation on 30 August 2026. An earlier version of this article said Heidi Evidence could not be used during a consultation; that was too broad, and the position above is Heidi's own.*
+*Heidi's UK and EU position was re-checked against the company's own help documentation on 18 October 2026, and against the Heidi II release of 28 September 2026. An earlier version of this article said Heidi Evidence could not be used during a consultation; that was too broad, and the position above is Heidi's own.*

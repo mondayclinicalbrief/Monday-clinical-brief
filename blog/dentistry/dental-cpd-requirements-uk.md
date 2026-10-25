@@ -4,6 +4,7 @@ seoTitle: "Non-Verifiable vs Verifiable Dental CPD: GDC Rules (UK)"
 metaDescription: "What counts as non-verifiable dental CPD, why the GDC won't accept it as hours, and how many verifiable hours dentists, DCPs and dental nurses need."
 description: "The GDC's hours requirement by registrant title, the 10-hours-in-two-years rule, what makes CPD verifiable, and the honest answer on where reading fits."
 date: 2026-09-18
+updated: 2026-10-25
 cluster: "Dentistry"
 clusterSlug: "dentistry"
 schemaType: "MedicalWebPage"
@@ -88,6 +89,16 @@ What reading does do is sit upstream of everything that is declared:
 
 The regulator does not see any of it. That is exactly why it is the first thing to slip.
 
+## Non-verifiable CPD for dental nurses
+
+The rules are the same as for every other registrant. Only the numbers change.
+
+Dental nurses need **50 hours of verifiable CPD** per five-year cycle, the same as dental technicians. The 10-hours-in-two-years rule applies in full: at least 10 verifiable hours in any two consecutive years, including across the join between one cycle and the next. Your CPD year runs 1 August to 31 July, as it does for every dental care professional, and your statement is due by 28 August.
+
+Non-verifiable CPD works the same way it does for a dentist. Reading a journal, a clinical update or a practice newsletter is real learning. None of it counts towards your 50 hours. If the GDC asks for your record, it should not appear there.
+
+Fifty hours over five years is about ten a year. That is a small enough target that the verifiable hours tend to look after themselves. The reading is what drifts. If you nurse chairside in one field, such as orthodontics, oral surgery or a hygiene and therapy clinic, following that field's journals is the quickest way to know what has changed in the work you support. It also gives your PDP and your reflection something concrete to start from.
+
 ## The requirement that *is* per activity
 
 If you take one procedural point from this: every planned and completed activity must be linked to **at least one of the GDC's four development outcomes**.
@@ -136,16 +147,16 @@ You will not routinely be asked to produce your record. You will be asked if you
 
 Verifiable CPD answers "what did I attend". It does not answer "what changed in my field this year".
 
-That second question is where a reading habit earns its place. *Evidence-Based Dentistry* publishes commentary on selected studies — useful, and deliberately selective. A digest takes the other approach: every new paper from a named set of journals, so the selection is the journal panel rather than an editor's judgement about what matters.
+That second question is where a reading habit earns its place. *Evidence-Based Dentistry* publishes commentary on selected studies — useful, and deliberately selective. [The Dental Elf](https://www.nationalelfservice.net/dentistry/) is free, written and funded by its contributors since 2011, and takes the same selective approach in blog form. A digest takes the other approach: every new paper from a named set of journals, so the selection is the journal panel rather than an editor's judgement about what matters.
 
 Neither replaces the other, and neither counts towards your hours. Both make the hours you do count for more.
 
 ## Sources
 
-- GDC — [CPD guidance for dental professionals](https://www.gdc-uk.org/education-cpd/cpd-for-dental-professionals)
-- GDC — [Enhanced CPD scheme rules](https://www.gdc-uk.org/education-cpd/cpd-for-dental-professionals/enhanced-cpd-scheme)
+- GDC — [CPD scheme](https://www.gdc-uk.org/education-cpd/cpd/cpd-scheme)
+- GDC — [Recording and submitting CPD](https://www.gdc-uk.org/education-cpd/cpd/cpd-scheme/recording-and-submitting-cpd)
 - GDC — [MyGDC goes live in a 'first' for dental registration](https://www.gdc-uk.org/news-blogs/news/detail/2026/03/25/mygdc-goes-live-in--first--for-dental-registration) (25 March 2026)
-- GDC — [Recommended CPD topics](https://www.gdc-uk.org/education-cpd/cpd-for-dental-professionals) (live list; the GDC states these topics are not compulsory)
+- GDC — [Recommended CPD topics](https://www.gdc-uk.org/education-cpd/cpd/cpd-scheme/recommended-cpd-topics) (live list; the GDC states these topics are not compulsory)
 
 Requirements change. Check the current GDC position before relying on any of this, and note that other regulations or qualifications you hold may carry their own CPD obligations.
 

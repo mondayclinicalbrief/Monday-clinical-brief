@@ -4,7 +4,7 @@ seoTitle: "Red Whale vs NEJM Clinician vs MCB (2026)"
 metaDescription: "Red Whale (£210 a course), NEJM Clinician (£75/yr) and MCB (£20/yr) do three different jobs. A 2026 UK comparison — and why most combine them."
 description: "A 2026 UK comparison of Red Whale, NEJM Clinician and The Monday Clinical Brief. Three price points, three different jobs — and an honest case for using them together rather than choosing one."
 date: 2026-05-29
-updated: 2026-07-16
+updated: 2026-10-25
 cluster: "Journal Summary Subscription"
 schemaType: "Article"
 pillar: false
@@ -29,7 +29,7 @@ This guide explains what each does, where each earns its keep, and why most clin
 
 We run The Monday Clinical Brief, so we are not neutral. We will still tell you plainly when one of the other two is the right tool for the job.
 
-**Last updated:** 19 June 2026
+**Last updated:** 25 October 2026
 
 ## The Short Version
 
@@ -41,7 +41,7 @@ Different jobs. Different cadences. Different things to do with the result.
 
 ## Red Whale (~£210 per course)
 
-Red Whale runs update courses — most famously the GP Update — delivered in person and online, twice a year, with a written handbook of "pearls" and a CPD certificate on completion. The Spring/Summer 2026 GP Update is around £210 online, or about £250 in person — the in-person price adds a printed handbook, lunch and a year of Red Whale's online library. Red Whale also sells all-access memberships: Red Whale Unlimited at £420 a year covers every course plus the online library, and Red Whale Knowledge at £130 a year covers the searchable article library alone. NB Medical's Hot Topics course occupies the same niche at a similar price — the Spring 2026 course is around £195.
+Red Whale runs update courses — most famously the GP Update — delivered in person and online, twice a year, with a written handbook of "pearls" and a CPD certificate on completion. The Autumn/Winter 2026-27 GP Update is £210 online, on demand from 14 October 2026 with live sessions from 21 November to March 2027, or £250 in person. Both include a year of Red Whale Knowledge, its online article library — the in-person price adds a printed handbook and lunch. Red Whale also sells all-access memberships: Red Whale Unlimited at £420 a year covers every online course plus the library, and Red Whale Knowledge at £130 a year covers the searchable article library alone. NB Medical's Hot Topics course occupies the same niche at a similar price — the Autumn 2026 course, live on 8 October and on demand afterwards, is £195.
 
 **What you are buying:** a structured, taught refresh. Someone has done the synthesis, decided what changed in the last six months, and built it into a day you sit through. You come out with a handbook, a certificate, and the reassurance of having been brought up to date in one concentrated hit.
 

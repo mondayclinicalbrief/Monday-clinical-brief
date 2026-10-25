@@ -4,7 +4,7 @@ seoTitle: "UK Doctors' AI Tools 2026: Withdrawn and Restricted"
 metaDescription: "UK clinicians lost OpenEvidence and ChatGPT for Clinicians in 2026, and Heidi Evidence pulled back to out-of-session use. What still works."
 description: "OpenEvidence withdrew. ChatGPT for Clinicians launched with the UK excluded. Heidi Evidence restricted its in-session use. Three credible AI tools pulled back from UK point-of-care use in six weeks. Here's the pattern — and the two-tool setup we recommend instead."
 date: 2026-05-25
-updated: 2026-06-15
+updated: 2026-10-25
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
@@ -70,6 +70,8 @@ Heidi Evidence is the most strategically interesting move in the trio. Free at t
 UK and EU clinicians can use it — but only outside an active session, and not at all on an NHS UK account. Heidi documents Evidence used outside sessions as fully available in the UK and EU on all plans, opened from the sidebar independently of any consultation, so it *can* be used with a patient in the room. What is disabled here is in-session Evidence, which would read the session transcript and linked patient details, along with patient and session linking. Heidi states separately that NHS UK accounts are excluded from Evidence and from free trials that include it. Heidi's stated reason for the in-session limit is that patient-context Evidence would constitute clinical decision support requiring medical device classification under UK MDR 2002. The restriction is specific to Heidi Evidence; Heidi Scribe (the AI clinical scribe product, separately MHRA-cleared) remains available to UK clinicians, including NHS staff, in session.
 
 Heidi's reason is narrower than OpenEvidence's. OpenEvidence cited broad regulatory uncertainty, the EU AI Act among it, and left the UK and EU altogether. Heidi points to one rule, medical device classification under UK MDR 2002, and has held back only the feature that rule would catch.
+
+> **Update — October 2026:** The gap has widened. Heidi announced Heidi II on 28 September 2026. It adds agents for multi-step admin work, a memory of each clinician's preferences, saved routines, and peer-reviewed research in the chat from partners including the *New England Journal of Medicine*, Wiley and Cochrane, with decision-support content from BMJ Group. The release says: *"These product capabilities will not be available in the UK or EU."* Nothing about Evidence has changed in the UK. Heidi's help pages, re-checked on 18 October 2026, still describe the position above.
 
 ## What UK NHS clinicians can use today
 
