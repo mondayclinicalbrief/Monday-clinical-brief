@@ -4,7 +4,7 @@ seoTitle: "UK Doctors' AI Tools 2026: Withdrawn and Restricted"
 metaDescription: "UK clinicians lost OpenEvidence and ChatGPT for Clinicians in 2026, and Heidi Evidence pulled back to out-of-session use. What still works."
 description: "OpenEvidence withdrew. ChatGPT for Clinicians launched with the UK excluded. Heidi Evidence restricted its in-session use. Three credible AI tools pulled back from UK point-of-care use in six weeks. Here's the pattern — and the two-tool setup we recommend instead."
 date: 2026-05-25
-updated: 2026-10-25
+updated: 2026-11-03
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
@@ -61,7 +61,7 @@ OpenAI has not announced a UK launch date. Given the regulatory backdrop, none s
 
 OpenEvidence raised $250 million in January 2026 at a $12 billion valuation. It offered AI-powered clinical reasoning with direct access to NEJM content, plus DeepConsult (multi-step clinical reasoning) and Coding Intelligence. In the US, the company claimed adoption by 40 % of practising physicians.
 
-The UK and EU withdrawal cited AI regulatory uncertainty. No re-entry signal has been published. UK doctors who were trialling the platform have lost access; the few who built clinical workflows around it have had to reconfigure.
+The UK and EU withdrawal cited AI regulatory uncertainty. No re-entry signal has been published. As of 1 November 2026, we have found no confirmed UK return. UK doctors who were trialling the platform have lost access; the few who built clinical workflows around it have had to reconfigure.
 
 ### Heidi Evidence (2026)
 

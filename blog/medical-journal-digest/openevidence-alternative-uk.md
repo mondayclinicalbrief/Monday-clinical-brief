@@ -4,7 +4,7 @@ seoTitle: "OpenEvidence Alternative UK: What to Use Now It's Gone"
 metaDescription: "OpenEvidence withdrew from the UK in April 2026 and has not returned. What UK doctors actually use instead — and what none of the replacements do."
 description: "OpenEvidence is gone from the UK. Here's what actually fills the gap — and why staying current with the literature is a different problem from clinical Q&A."
 date: 2026-05-03
-updated: 2026-08-17
+updated: 2026-11-03
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
@@ -33,6 +33,8 @@ faqs:
 OpenEvidence is no longer available to UK doctors. The platform withdrew from the UK and EU on 27 April 2026, citing uncertainty around AI regulation. It went quietly — no replacement announced, no UK handoff.
 
 If you used it, you'll have noticed the gap.
+
+> **Update — 1 November 2026:** We have found no confirmed UK return. OpenEvidence has made no public statement on UK or EU availability since it withdrew, and its site makes no country statement either way.
 
 > **Update — 1 June 2026 (five weeks on):** OpenEvidence is still unavailable to UK clinicians, and no re-entry signal has been published. The UK regulatory framework that triggered the withdrawal remains mid-flight — the [MHRA](https://www.gov.uk/government/organisations/medicines-and-healthcare-products-regulatory-agency) Medical Devices (Amendment) Regulations consultation closes 19 June 2026; the International Reliance Framework is expected in Autumn. The clinical-AI press has caught up with the issue: a position piece in *The Lancet Regional Health – Europe* — [The Need for Regulatory Certainty on Medical AI: Lessons From the OpenEvidence Geoblocking in the EU and UK Over the EU AI Act](https://www.thelancet.com/journals/lanepe/article/PIIS2666-7762%2826%2900130-4/fulltext) (De Angelis L, Sacchi F, Pappalardo C, et al., 2026) — examines the geoblocking of clinical AI tools and the EU AI Act. What has changed since April is the alternatives — see the table below.
 

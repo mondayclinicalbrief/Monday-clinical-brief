@@ -4,12 +4,13 @@ seoTitle: "Heidi Evidence vs OpenEvidence: UK Verdict 2026"
 metaDescription: "OpenEvidence left the UK in April 2026. Heidi Evidence works here with limits — and NHS UK accounts are excluded from it entirely."
 description: "For UK clinicians the choice between Heidi Evidence and OpenEvidence is mostly settled by availability rather than quality: one withdrew from the UK, and the other works here with limits that fall hardest on NHS accounts. Here is where each stands, checked against both vendors' own documentation."
 date: 2026-08-30
+updated: 2026-11-03
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
 faqs:
   - question: "Can UK doctors use OpenEvidence in 2026?"
-    answer: "Not officially. OpenEvidence withdrew from the United Kingdom and the European Union on 27 April 2026, attributing the decision to regulatory uncertainty in those territories, including the EU AI Act. It is a company-imposed geoblock rather than a regulator-announced ban, and it applies to existing accounts as well as new registrations. No public timetable for a return was found as of 30 August 2026."
+    answer: "Not officially. OpenEvidence withdrew from the United Kingdom and the European Union on 27 April 2026, attributing the decision to regulatory uncertainty in those territories, including the EU AI Act. It is a company-imposed geoblock rather than a regulator-announced ban, and it applies to existing accounts as well as new registrations. No public timetable for a return was found as of 1 November 2026."
   - question: "Is Heidi Evidence available in the UK?"
     answer: "Partly, and not at all if you use an NHS UK email. Heidi's documentation states that Evidence used outside a patient session is fully available in the UK and EU on all plans, so you can open it from the sidebar at any time, including during clinic. What is not available here is in-session Evidence — querying from inside Ask Heidi during an active consultation, where the tool can read the session transcript and linked patient details. Separately, Heidi states that NHS UK accounts are excluded from Heidi Evidence altogether, along with free trials that include it."
   - question: "What is the difference between in-session and out-of-session Evidence?"
@@ -34,7 +35,7 @@ OpenEvidence withdrew from the United Kingdom and the European Union on 27 April
 
 Two details matter more than the headline.
 
-The first is that the restriction is deliberate rather than a temporary outage. It is a company-imposed geoblock, not a regulator-announced ban, and it covers existing accounts as well as new registrations. No public timetable for a return was found as of 30 August 2026.
+The first is that the restriction is deliberate rather than a temporary outage. It is a company-imposed geoblock, not a regulator-announced ban, and it covers existing accounts as well as new registrations. No public timetable for a return was found as of 1 November 2026.
 
 The second is scale. OpenEvidence has reported handling in the order of 18 million clinical consultations a month before the withdrawal, and daily use by more than 40% of US physicians. Those are the company's own figures rather than independently audited ones, but they place this as a product that left at the height of its adoption.
 
@@ -53,6 +54,8 @@ Its UK position is more layered than "available" or "not available", and Heidi's
 **2. Patient and session linking is unavailable.** An Evidence conversation cannot be attached to a patient record or a live session. So the out-of-session tool works, but it works blind — it has no awareness of the case you are actually asking about.
 
 **3. NHS UK accounts are excluded from Evidence altogether.** Heidi states that NHS UK accounts are excluded from Heidi Evidence, and from free trials that include it, and that an account registered with an NHS UK email address stays on its current plan. For a large share of UK clinicians, that turns a partial restriction into a complete one on their work account.
+
+**Heidi II does not change this.** Heidi announced Heidi II on 28 September 2026, adding agents, saved routines and research from partners including the *New England Journal of Medicine*, Wiley and Cochrane. The release says: *"These product capabilities will not be available in the UK or EU."* Heidi's help page, re-checked on 1 November 2026, still sets out the three limits above.
 
 We covered the in-session restriction in more depth in [Heidi Evidence in the UK: what the in-session restriction actually blocks](/blog/medical-journal-digest/heidi-evidence-uk-in-session-restriction/).
 
@@ -108,4 +111,4 @@ Then treat question-answering and keeping up as two separate jobs, because they 
 
 ---
 
-*Availability details in this article were checked against OpenEvidence's and Heidi's own published documentation on 30 August 2026. Usage figures for OpenEvidence are the company's own reported numbers. Clinical AI availability in the UK has changed several times in 2026 — verify current status before relying on any tool.*
+*Availability details in this article were checked against OpenEvidence's and Heidi's own published documentation on 30 August 2026, and re-checked on 1 November 2026. Usage figures for OpenEvidence are the company's own reported numbers. Clinical AI availability in the UK has changed several times in 2026 — verify current status before relying on any tool.*

@@ -4,7 +4,7 @@ seoTitle: "Heidi Evidence vs a Weekly Digest: Do UK Doctors Need Both?"
 metaDescription: "Heidi Evidence is free, UK-focused and powered by Claude — but it's a pull tool, not a weekly push. Here's why UK doctors get the most from using both."
 description: "Heidi Evidence is free and powerful — but it solves a different problem. Here's why UK doctors still need a weekly digest alongside evidence lookup tools."
 date: 2026-04-25
-updated: 2026-07-16
+updated: 2026-11-03
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
@@ -27,6 +27,8 @@ If you are a UK doctor wondering whether Heidi Evidence replaces your need for a
 
 > **July 2026 update:** Heidi Evidence formally launched on 10 July 2026 — with a $65M raise, the acquisition of UK clinical AI firm AutoMedica (which brings access to the MHRA's AI Airlock pilot), and a new communications product, Heidi Comms. Its named content partners now span NICE, BMJ Group, MIMS and HealthPathways. The UK and EU in-session restriction is unchanged — re-verified against Heidi's own help pages on 30 August 2026, when the NHS account exclusion was also documented — so the comparison below still holds: Heidi is the best-resourced pull tool in the category, and it is still a pull tool.
 
+> **November 2026 update:** Heidi announced Heidi II on 28 September 2026, adding agents, saved routines and peer-reviewed research in the chat from partners including the *New England Journal of Medicine*, Wiley and Cochrane. The release says: *"These product capabilities will not be available in the UK or EU."* Evidence itself is unchanged here. Heidi's help page, re-checked on 1 November 2026, still says out-of-session Evidence is fully available in the UK and EU on all plans, in-session Evidence is not, and NHS UK accounts are excluded from Evidence. Heidi's UK pricing has changed too: the pricing page no longer lists an Evidence Plus tier, and paid plans start at £45 per user per month, billed annually.
+
 ## The Core Difference: Pull vs Push
 
 Heidi Evidence is a **pull** tool. You have a clinical question. You type it in. It retrieves an answer grounded in authoritative sources — NICE guidelines, BMJ Group content, HealthPathways, MIMS, and others. The answer arrives with citations you can check.
@@ -47,7 +49,7 @@ Credit where it is due. Heidi Evidence is a strong product and a useful one for 
 
 **UK-specific sources.** The partnership with NICE and BMJ Group means answers reflect UK guidelines, not FDA recommendations or American clinical pathways. For UK GPs especially, this is a meaningful advantage over US-centric tools like UpToDate or OpenEvidence.
 
-**A free base tier.** The base tier costs nothing, and in a market where UpToDate charges hundreds of pounds and NEJM Clinician charges £75, that matters. Heidi has since added paid tiers — Evidence Plus at roughly $360 a year is the cheapest — but the entry point is still free.
+**A free base tier.** The base tier costs nothing, and in a market where UpToDate charges hundreds of pounds and NEJM Clinician charges £75, that matters. Paid plans start at £45 per user per month, billed annually, and premium evidence sources such as NICE CKS and the BNF come with the £55 Clinician plan — but the entry point is still free.
 
 **Integrated with the Heidi platform.** If you already use Heidi as an AI scribe for clinical documentation, Evidence sits inside the same interface. No context switching.
 
