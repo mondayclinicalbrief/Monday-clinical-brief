@@ -4,6 +4,7 @@ seoTitle: "Medical Journal Summary Subscription Cost (2026 UK)"
 metaDescription: "What you actually pay for a journal summary subscription in 2026. UK pricing compared, what is included, and how to judge value."
 description: "A transparent breakdown of journal summary subscription pricing in the UK — what you pay, what you get, and how to judge value against time saved."
 date: 2026-05-05
+updated: 2026-11-03
 cluster: "Journal Summary Subscription"
 schemaType: "Article"
 pillar: false
@@ -42,7 +43,7 @@ At the budget end, you should expect:
 - Summaries of five to fifteen papers per issue.
 - Reflection prompts or CPD-formatted entries.
 - An archive you can search.
-- A trial period with no card upfront.
+- A free trial period.
 
 What you will not always get:
 
@@ -90,7 +91,7 @@ Ask for a transparent total before subscribing, and put the renewal date in your
 
 ## How MCB Is Priced
 
-The Monday Clinical Brief is £20 per year for a single specialty, with a four-week free trial and no card required upfront. That price includes the weekly digest, specialty coverage of the top five journals in that field, reflection prompts formatted for CPD, and the full archive.
+The Monday Clinical Brief is £20 per year for a single specialty, with a four-week free trial. A card is taken at signup, and nothing is charged if you cancel before the trial ends. That price includes the weekly digest, specialty coverage of the top five journals in that field, reflection prompts formatted for CPD, and the full archive.
 
 No tiered features. No upsells. If you want a second specialty, you subscribe twice.
 

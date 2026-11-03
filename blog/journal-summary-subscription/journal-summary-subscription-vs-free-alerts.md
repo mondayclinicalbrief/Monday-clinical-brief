@@ -4,7 +4,7 @@ seoTitle: "Journal Summary Subscription vs Free Alerts"
 metaDescription: "Free journal alerts or a paid summary subscription? We compare coverage, signal-to-noise, CPD value and time cost for UK doctors."
 description: "Free journal alerts or a paid summary subscription? A practical comparison of coverage, signal-to-noise, and time cost for busy UK doctors."
 date: 2026-04-28
-updated: 2026-09-18
+updated: 2026-11-03
 cluster: "Journal Summary Subscription"
 schemaType: "Article"
 pillar: false
@@ -93,7 +93,7 @@ That last point is the honest test. If you cannot remember the last alert email 
 
 Evidence suggests the best outcome for most UK doctors is a hybrid: one summary subscription as the spine of weekly reading, plus one or two free alerts for the handful of journals where you want to see everything.
 
-The Monday Clinical Brief is built for the spine role. Every Monday morning, you receive a digest covering the top five journals in your specialty — summarised, reflection-prompted, and formatted for CPD logging. Thirty-one specialties. £20 a year. A four-week trial with no card required.
+The Monday Clinical Brief is built for the spine role. Every Monday morning, you receive a digest covering the top five journals in your specialty — summarised, reflection-prompted, and formatted for CPD logging. Thirty-one specialties. £20 a year. A four-week free trial; cancel before it ends and you pay nothing.
 
 Free alerts will still be there for the niche interests. But the weekly rhythm, the curation, and the CPD output — that is what a subscription is actually for.
 

@@ -4,7 +4,7 @@ seoTitle: "Best Medical Journal Digests for UK Doctors (2026)"
 metaDescription: "Compare the best medical journal digests for UK doctors on coverage, CPD and price — the top 5 journals across 31 specialties from £20/year."
 description: "A head-to-head comparison of journal digest services available to UK doctors — features, pricing, CPD integration, and specialty coverage."
 date: 2026-04-14
-updated: 2026-09-18
+updated: 2026-11-03
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
@@ -168,22 +168,22 @@ Pricing ranges from free to several hundred pounds annually. Consider both the d
 
 ### NEJM Clinician
 
-**What is it?** A curated daily digest of significant articles from New England Journal of Medicine and other major journals, with commentary by specialist physicians.
+**What is it?** Expert summaries and commentary on research from over 150 journals, published continuously and gathered into a weekly email every Monday. NEJM says it focuses on general medicine.
 
 **Strengths:**
 - Excellent clinical commentary from recognised specialists
 - Focus on "highest-impact" articles; quality over quantity
-- Available in multiple specialty editions (cardiology, general medicine, infectious disease, etc.)
+- Covers other specialties through selected papers, filterable by topic
 - Professional presentation; well-respected globally
 - Mobile app available
 
 **Limitations:**
 - Focuses primarily on US journals and US clinical context; limited UK alignment
 - CPD integration weak for UK revalidation
-- Relatively narrow coverage; you'll miss important non-NEJM publications
-- Subscription can feel expensive for limited breadth
+- Built for generalists; specialists get selected highlights, not their own journals in full
+- £75 is a lot for a specialist who reads it mainly for one field
 
-**Pricing:** Approximately £75/year per specialty track (rebranded from NEJM Journal Watch in November 2025)
+**Pricing:** £75/year or £7.50/month for one subscription, on NEJM's UK store (checked 1 November 2026; rebranded from NEJM Journal Watch in November 2025)
 
 **CPD Support:** Minimal; not designed as a CPD tool
 
@@ -267,7 +267,7 @@ One caveat before the detail. MediSummary's marketing describes the digest as we
 | **DynaMed** | 500+ journals (summarised) | Continuous updates | Limited | From £150/year |
 | **UpToDate** | 500+ journals (summarised) | Continuous updates | Limited | From £440/year |
 | **ClinicalKey AI** | Elsevier books + journals + AI search | On-demand (look-up) | Limited | Individual (free trial); ~US$349/yr |
-| **NEJM Clinician** | Major journals (expert picks) | Weekly | Minimal | ~£75/year per specialty |
+| **NEJM Clinician** | Major journals (expert picks) | Weekly | Minimal | ~£75/year |
 | **Evidence Alerts** | High-quality evidence (RCTs, reviews) | 2–3 times/week | Minimal | Free–£50/year |
 | **Medscape AI** | General medical literature via AI look-up | On-demand (look-up) | Minimal | Free (ad-funded) |
 | **MediSummary** | Ranked selection across 70+ specialties | Weekly (company claim; unconfirmed) | Not stated | ~US$197/year |

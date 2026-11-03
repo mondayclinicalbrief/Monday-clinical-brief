@@ -4,6 +4,7 @@ seoTitle: "BMJ vs NEJM Clinician vs Independent Digests (2026)"
 metaDescription: "How BMJ summaries, NEJM Clinician (£75/yr) and independent UK digests compare in 2026 — coverage, cost, and UK fit for busy clinicians."
 description: "A 2026 comparison of BMJ summaries, NEJM Clinician, UpToDate Expert AI, Heidi Evidence, OpenEvidence, ChatGPT for Clinicians, and independent digests like MCB — pricing, coverage, UK availability, and value for UK clinicians."
 date: 2026-04-25
+updated: 2026-11-03
 cluster: "Journal Summary Subscription"
 schemaType: "Article"
 pillar: false
@@ -15,7 +16,7 @@ Every one of these products is good. None of them does the same thing as the oth
 
 This guide compares the realistic options a UK doctor has in 2026 for staying current with the medical literature. We are not neutral — we run The Monday Clinical Brief — but we will tell you honestly when another service is the better fit.
 
-**Last updated:** 26 September 2026
+**Last updated:** 3 November 2026
 
 ## What's Changed Since 2025
 
@@ -49,24 +50,24 @@ The BMJ offers several summary-style products, ranging from the weekly editorial
 
 ## NEJM Clinician (formerly Journal Watch)
 
-NEJM Journal Watch rebranded to **NEJM Clinician** in November 2025. The product is still expert-curated commentary on selected papers, but the platform has been redesigned, the clinical-context layer expanded, and the UK price brought down to approximately **£75 per year** for a single specialty track.
+NEJM Journal Watch rebranded to **NEJM Clinician** in November 2025. The product is still expert-curated commentary on selected papers, but the platform has been redesigned, the clinical-context layer expanded, and the UK price brought down to approximately **£75 per year** for one subscription, built mainly around general medicine.
 
 **Strengths:**
 
 - Broad cross-journal coverage. Editors pull from Lancet, JAMA, BMJ, specialty journals, not just NEJM.
 - Named senior clinicians as editors — clear editorial accountability.
-- Strong in cardiology, infectious diseases, oncology, and hospital medicine.
+- Aimed at generalists: internal and family medicine, hospital care, paediatrics, and obstetrics and gynaecology.
 - The price cut narrows what used to be a large gap between premium and budget options.
 
 **Weaknesses:**
 
-- Specialty tracks are still purchased separately. Two or three tracks add up quickly.
+- Built for generalists. Other specialties get selected papers, not their own journals in full.
 - UK-specific context (NICE guidance, NHS pathways, Royal College positions) is limited; the editorial voice remains American.
 - Coverage is **expert picks**, not complete — by design, you only see what NEJM Clinician's editors think is worth flagging.
 
-**Best for:** Hospital consultants with one strong specialty focus who want named-editor commentary and do not need UK-specific context.
+**Best for:** Generalists who want named-editor commentary and do not need UK-specific context.
 
-**The price-compression point.** Even with NEJM Clinician at £75, MCB is still less than a third of the cost at £20/year, covers more journals (top five per specialty rather than expert picks across the literature), and is written for the UK reader. The narrower the price gap gets, the more the comparison turns on coverage philosophy and UK fit — both of which favour an independent UK-focused digest.
+**The price-compression point.** Even with NEJM Clinician at £75, MCB is still less than a third of the cost at £20/year, covers your specialty's top five journals in full (rather than expert picks across the literature), and is written for the UK reader. The narrower the price gap gets, the more the comparison turns on coverage philosophy and UK fit — both of which favour an independent UK-focused digest.
 
 ## UpToDate (and Expert AI)
 
@@ -134,7 +135,7 @@ Independent digests are the growing third option. Services like The Monday Clini
 | | **BMJ** | **NEJM Clinician** | **UpToDate (+Expert AI)** | **Heidi Evidence** | **OpenEvidence** | **ChatGPT for Clinicians** | **MCB / Independent** |
 |---|---|---|---|---|---|---|---|
 | **What it is** | Summaries + commentary | Expert journal commentary | Reference + AI lookup | Evidence lookup | AI clinical reasoning | AI clinical assistant | Weekly journal digest |
-| **UK price** | £100–£400 (bundle) | ~£75/year per track | ~£440 / institutional | Free (base tier) | Withdrew from UK (Apr 2026) | Excludes UK/EEA | £20/year |
+| **UK price** | £100–£400 (bundle) | ~£75/year | ~£440 / institutional | Free (base tier) | Withdrew from UK (Apr 2026) | Excludes UK/EEA | £20/year |
 | **Delivery** | Mixed (push + pull) | Push (weekly) | Pull | Pull | Pull | Pull | Push (Monday email) |
 | **Coverage model** | Mostly BMJ family | Expert picks across literature | Reference, not digest | On-demand lookup | On-demand lookup | On-demand lookup | Top 5 journals per specialty (complete) |
 | **UK guidelines (NICE)** | Strong | Limited | US-weighted | NICE partnership | US-focused | US-focused | Built in |
@@ -145,7 +146,7 @@ Independent digests are the growing third option. Services like The Monday Clini
 
 If you read one journal cover-to-cover and it is the BMJ, the BMJ products will feel natural.
 
-If your specialty reading is deep and you want named-editor commentary, NEJM Clinician at £75 is now genuinely competitive and worth considering.
+If you work in general medicine and want named-editor commentary, NEJM Clinician at £75 is now genuinely competitive and worth considering.
 
 If you need a clinical reference or Q&A tool at the point of care, the options depend on your access. UpToDate remains the dominant institutional reference (Expert AI restricted to US/Canada individuals). Heidi Evidence is a strong product but, for UK and EU clinicians, its evidence feature is restricted to out-of-session use — it cannot be invoked from inside an active session or see patient context — and NHS UK accounts are excluded from Evidence altogether. For the AI query tools UK clinicians can reach, see the comparison on our [OpenEvidence alternatives page](/blog/medical-journal-digest/openevidence-alternative-uk/).
 
