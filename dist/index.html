@@ -723,9 +723,21 @@ extrasToggle.addEventListener('click', function() {
 // Reuses the same path as the specialty tiles below: set the value, then
 // dispatch 'change' so the extras grid, pricing and button state all follow.
 // An unknown slug is ignored, leaving the default untouched.
+//
+// Campaign short addresses: _redirects serves this same page at a short path
+// (e.g. /pcc for the Palliative Care Congress advert) so that visits from one
+// placement show up as their own row in Netlify's page counts — the ranking
+// API reports paths, never UTM tags. Each path maps to the specialty to
+// preselect, and the visitor is taken straight to the sign-up form, as the
+// sample pages do with #subscribe. To add one: a line here and a 200 rewrite
+// in _redirects.
+var CAMPAIGN_PATHS = { '/pcc': 'palliative-care' };
 (function () {
   try {
     var wanted = new URLSearchParams(window.location.search).get('specialty');
+    var path = window.location.pathname.replace(/\/+$/, '').toLowerCase();
+    var campaign = !wanted && Object.prototype.hasOwnProperty.call(CAMPAIGN_PATHS, path);
+    if (campaign) wanted = CAMPAIGN_PATHS[path];
     if (!wanted) return;
     var match = Array.prototype.some.call(select.options, function (o) {
       return o.value === wanted;
@@ -733,6 +745,24 @@ extrasToggle.addEventListener('click', function() {
     if (!match) return;
     select.value = wanted;
     select.dispatchEvent(new Event('change'));
+    if (campaign) {
+      // Jump, don't glide: the page sets scroll-behavior: smooth, and animating
+      // past the whole homepage on arrival looks like a fault. Jump again once
+      // images and fonts have loaded and moved the form — unless the visitor has
+      // already scrolled, or the browser kept the form in place by itself.
+      var jump = function () {
+        var root = document.documentElement;
+        var prev = root.style.scrollBehavior;
+        root.style.scrollBehavior = 'auto';
+        document.getElementById('subscribe').scrollIntoView();
+        root.style.scrollBehavior = prev;
+        return window.scrollY;
+      };
+      var landedAt = jump();
+      window.addEventListener('load', function () {
+        if (Math.abs(window.scrollY - landedAt) < 2) jump();
+      });
+    }
   } catch (e) { /* leave the default selection in place */ }
 })();
 

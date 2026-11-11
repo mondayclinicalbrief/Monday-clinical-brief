@@ -7,6 +7,16 @@
 
 /welcome  /welcome.html  200
 
+# 2026-11-11: campaign short addresses. A 200 REWRITE, not a redirect: the
+# homepage is served AT the short path, so each placement gets its own row in
+# Netlify's page counts (the ranking API reports paths, not UTM tags). The
+# script in index.html (CAMPAIGN_PATHS) preselects the specialty and goes to
+# the sign-up form. Not linked from the site and not in the sitemap; the
+# homepage's canonical tag points search engines back to /.
+#   /pcc — Palliative Care Congress 2027 advert (PCC website + delegate zone)
+/pcc  /index.html  200
+/PCC  /pcc  301!
+
 # Netlify Functions exposed under /api/ (used by digest unsubscribe links)
 /api/*    /.netlify/functions/:splat  200
 
