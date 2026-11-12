@@ -1,0 +1,239 @@
+---
+permalink: /organisations/index.html
+eleventyExcludeFromCollections: true
+title: "A licence for your whole team"
+description: "Hospices, departments and education teams can buy The Monday Clinical Brief for all their staff: one annual fee, staff sign up with their work email and pay nothing."
+---
+{#-
+  Public page for organisations that want to buy the Brief for their staff.
+  Copy approved by Tim on 12 Nov 2026, with no price shown on purpose.
+
+  Rules this page must keep:
+  - No price figure until Tim sets one for a single organisation.
+  - No customer named without that customer's permission.
+  - No subscriber numbers, no uptake or conversion rates.
+  - The CPD Tracker is named, never linked.
+  - 31 medical specialties only: dentistry is a separate product and the
+    licence sign-up function refuses dental slugs.
+  - The data paragraph must match "If your organisation has a licence" in
+    privacy.html. Change them together.
+-#}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ title }} — The Monday Clinical Brief</title>
+<meta name="description" content="{{ description }}">
+<link rel="canonical" href="https://mondayclinicalbrief.co.uk/organisations/">
+<link rel="icon" href="/assets/brand/favicon-32.png" sizes="32x32" type="image/png">
+
+<meta property="og:title" content="{{ title }}">
+<meta property="og:description" content="{{ description }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mondayclinicalbrief.co.uk/organisations/">
+<meta property="og:site_name" content="The Monday Clinical Brief">
+<meta property="og:image" content="https://mondayclinicalbrief.co.uk/assets/brand/mcb-og-1200x630-v2.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Monday Clinical Brief — a licence for your whole team">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ title }}">
+<meta name="twitter:description" content="{{ description }}">
+<meta name="twitter:image" content="https://mondayclinicalbrief.co.uk/assets/brand/mcb-og-1200x630-v2.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --charcoal: #1c1c1c; --cream: #f7f5f0; --warm-white: #fdfcf9;
+    --sage: #5a7a6a; --sage-light: #e8efeb; --sage-deep: #3d5a4c;
+    --gold: #c4994c; --gold-light: #f5edd8;
+    --text: #3a3a38; --text-muted: #7a7a76; --border: #e2dfd8;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Figtree', sans-serif; color: var(--text); background: var(--warm-white); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; background: rgba(247,245,240,0.9); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(226,223,216,0.5); }
+  .nav-brand { font-family: 'Instrument Serif', serif; font-size: 1.8rem; font-weight: 700; color: var(--charcoal); text-decoration: none; letter-spacing: -0.02em; }
+  .nav-links { display: flex; gap: 1.5rem; align-items: center; }
+  .nav-links a { font-size: 0.85rem; color: var(--text-muted); text-decoration: none; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--sage-deep); }
+  .nav-cta { text-align: center; background: var(--sage-deep); color: white !important; padding: 0.5rem 1.25rem; border-radius: 40px; font-size: 0.85rem; }
+  .nav-cta:hover { background: var(--charcoal); }
+
+  .breadcrumb { padding: 6rem 2rem 0; max-width: 820px; margin: 0 auto; }
+  .breadcrumb ol { list-style: none; display: flex; flex-wrap: wrap; gap: 0.25rem; font-size: 0.8rem; color: var(--text-muted); }
+  .breadcrumb ol li::after { content: '/'; margin-left: 0.4rem; opacity: 0.4; }
+  .breadcrumb ol li:last-child::after { content: ''; }
+  .breadcrumb a { color: var(--sage); text-decoration: none; }
+
+  .page-head { max-width: 820px; margin: 0 auto; padding: 2.5rem 2rem 0; }
+  .page-head .eyebrow { color: var(--sage-deep); font-weight: 600; font-size: 0.85rem; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 0.6rem; }
+  .page-head h1 { font-family: 'Instrument Serif', serif; font-size: clamp(2.1rem, 5vw, 3rem); font-weight: 400; color: var(--charcoal); line-height: 1.15; margin-bottom: 0.9rem; }
+  .page-head .standfirst { color: var(--text); font-size: 1.1rem; max-width: 640px; }
+
+  .btn { display: inline-block; background: var(--sage-deep); color: white; text-decoration: none; font-weight: 600; font-size: 0.95rem; padding: 0.8rem 1.6rem; border-radius: 40px; transition: background 0.2s; }
+  .btn:hover { background: var(--charcoal); }
+  .head-actions { margin-top: 1.5rem; display: flex; flex-wrap: wrap; gap: 1rem 1.5rem; align-items: center; }
+  .head-actions .quiet { color: var(--sage-deep); font-size: 0.95rem; }
+
+  .prose { max-width: 820px; margin: 0 auto; padding: 1.5rem 2rem 3rem; }
+  .prose h2 { font-family: 'Instrument Serif', serif; font-size: 1.6rem; font-weight: 400; color: var(--charcoal); margin: 2.5rem 0 0.6rem; }
+  .prose p { margin-bottom: 1rem; }
+  .prose ul { margin: 0 0 1rem 1.25rem; }
+  .prose li { margin-bottom: 0.4rem; }
+  .prose a { color: var(--sage-deep); }
+  .prose a.btn { color: white; text-decoration: none; }
+
+  .steps { list-style: none; margin: 1.25rem 0 1.25rem; counter-reset: step; }
+  .steps li { counter-increment: step; position: relative; padding: 0 0 1.1rem 3.25rem; margin: 0; }
+  .steps li::before { content: counter(step, decimal-leading-zero); position: absolute; left: 0; top: 0.1rem; font-family: 'Instrument Serif', serif; font-size: 1.5rem; line-height: 1.2; color: var(--gold); }
+  .steps strong { display: block; color: var(--charcoal); }
+
+  .callout { background: var(--sage-light); border-left: 3px solid var(--sage); border-radius: 0 8px 8px 0; padding: 1.25rem 1.5rem; margin: 1.5rem 0; font-size: 0.95rem; }
+  .callout strong { display: block; color: var(--sage-deep); margin-bottom: 0.3rem; }
+
+  .ask { background: var(--cream); border: 1px solid var(--border); border-radius: 12px; padding: 2rem; margin-top: 2.5rem; }
+  .ask h2 { margin-top: 0; }
+  .ask .btn { margin-top: 0.5rem; }
+  .ask .small { font-size: 0.9rem; color: var(--text-muted); margin: 1rem 0 0; }
+
+  footer { padding: 3rem 2rem; text-align: center; border-top: 1px solid var(--border); }
+  footer p { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+  footer a { color: var(--sage); text-decoration: none; }
+
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--sage-deep); outline-offset: 2px; border-radius: 3px; }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+  }
+
+  @media (max-width: 640px) {
+    nav { padding: 0.75rem 1rem; position: fixed; top: auto; bottom: 0; border-bottom: none; border-top: 1px solid rgba(226,223,216,0.5); align-items: center; gap: 0.75rem; }
+    .nav-brand { font-size: 0.9rem; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+    .nav-cta { flex-shrink: 0; }
+    .nav-links a:not(.nav-cta) { display: none; }
+    body { padding-bottom: calc(var(--bottom-nav-h, 64px) + env(safe-area-inset-bottom, 0px)); }
+    .breadcrumb { padding: 2rem 1rem 0; }
+    .page-head { padding: 2rem 1rem 0; }
+    .prose { padding: 1.25rem 1rem 2.5rem; }
+    .ask { padding: 1.5rem 1.25rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-brand">The Monday Clinical Brief</a>
+  <div class="nav-links">
+    <a href="/samples/">Samples</a>
+    <a href="/blog/">Blog</a>
+    <a href="/#how">How it works</a>
+    <a href="/#subscribe" class="nav-cta">Start free trial</a>
+  </div>
+</nav>
+
+<main id="main">
+
+<div class="breadcrumb" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="/">Home</a></li>
+    <li>For organisations</li>
+  </ol>
+</div>
+
+<div class="page-head">
+  <p class="eyebrow">For hospices, departments and education teams</p>
+  <h1>One licence for your whole team</h1>
+  <p class="standfirst">You can buy The Monday Clinical Brief for all your staff. There is one annual fee. Staff sign up with their work email and pay nothing.</p>
+  <div class="head-actions">
+    <a class="btn" href="mailto:info@mondayclinicalbrief.co.uk?subject=Organisation%20licence">Ask about a licence</a>
+    <a class="quiet" href="/samples/">See a sample issue</a>
+  </div>
+</div>
+
+<div class="prose">
+
+  <h2>What your staff receive</h2>
+  <p>One email every Monday morning for each specialty they choose. It summarises every new paper published that week in the top five journals in that field. Each summary links to the original paper.</p>
+  <ul>
+    <li><strong>31 medical specialties.</strong> Each person chooses their own, and can choose more than one. The journals for each are listed on our <a href="/methodology/">methodology page</a>.</li>
+    <li><strong>A CPD log.</strong> Every article has a "Log as CPD" button. Reading is recorded with a reflection in the reader's own words, and exports for appraisal or revalidation.</li>
+    <li><strong>Nothing to visit.</strong> The Brief arrives in the inbox. Nobody has to remember to look for it.</li>
+  </ul>
+  <p>The summaries are generated automatically from each paper's abstract. Our <a href="/methodology/">methodology page</a> sets out how that works and where its limits are.</p>
+
+  <h2>How a licence works</h2>
+  <ol class="steps">
+    <li><strong>You tell us about your organisation.</strong> Roughly how many staff you have, and the email addresses they use. We reply with a price and send one annual invoice.</li>
+    <li><strong>We build a sign-up page for you.</strong> It accepts only your organisation's email addresses, so it does not matter if the link is passed on.</li>
+    <li><strong>Staff sign up themselves.</strong> They give their name and work email and choose their specialties. There is no payment step.</li>
+    <li><strong>We check each sign-up and send a welcome email.</strong> From then on the Brief arrives every Monday.</li>
+  </ol>
+  <p>There is no charge per person and no charge for extra specialties. There is nothing for your team to administer.</p>
+
+  <h2>On your intranet or learning platform</h2>
+  <p>The Brief needs one small entry: a short description, a sample issue and the sign-up link. We supply the wording and the logo. Nothing on the page needs updating from week to week.</p>
+  <p>We do not post the Brief itself there. Staff choose their own specialties, so there is no single edition to post. And a weekly digest works because it arrives.</p>
+
+  <h2>If you run a library or a journal club</h2>
+  <p>Many education teams and librarians already pick out papers by hand, for a current-awareness bulletin or a journal club. The Brief gives you each week's new papers from five journals, already summarised, to choose from.</p>
+
+  <h2>Before you launch</h2>
+  <p>Hospice and hospital mail systems often filter email from a sender they have not seen before. We send each person their own copy, so a filter can stop every one of them.</p>
+  <p>Before launch we ask your IT team to allow our sending address, and we test it with you. It is a small job, and it decides whether your staff see the Brief at all.</p>
+
+  <h2>Your staff's data</h2>
+  <ul>
+    <li>We collect each person's name, work email address and choice of specialties</li>
+    <li>We can tell you how many of your staff have signed up. We do not tell you who, or which specialties anyone chose</li>
+    <li>We delete a person's sign-up details within 30 days of them unsubscribing or the licence ending</li>
+    <li>CPD records are visible only to the person who wrote them</li>
+    <li>No patient information is involved at any point</li>
+  </ul>
+  <p>The detail is in our <a href="/privacy.html">privacy policy</a>. We can send a fuller note on data handling for your information governance lead.</p>
+
+  <div class="callout">
+    <strong>Who pays for the Brief</strong>
+    Its readers, and nobody else. We carry no advertising and no sponsored content, and we take no payment from pharmaceutical companies or journal publishers.
+  </div>
+
+  <h2>Who is behind it</h2>
+  <p>The Monday Clinical Brief is built and run by Dr Tim Hamilton, a Consultant in Palliative Medicine in NHS Wales. More about him, and about how we produce and check what we publish, is on the <a href="/about/">about page</a>.</p>
+
+  <div class="ask">
+    <h2>Ask about a licence</h2>
+    <p>Tell us what kind of organisation you are and roughly how many staff you have. We will reply with a price and a sample issue for your specialty.</p>
+    <a class="btn" href="mailto:info@mondayclinicalbrief.co.uk?subject=Organisation%20licence">Email info@mondayclinicalbrief.co.uk</a>
+    <p class="small">Subscribing for yourself? <a href="/#subscribe">Start a free trial</a>.</p>
+  </div>
+
+</div>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 The Monday Clinical Brief. All rights reserved.</p>
+  <p><a href="/samples/">Samples</a> · <a href="/blog/">Blog</a> · <a href="/methodology/">Methodology</a> · <a href="/about/">About</a> · <a href="/organisations/">For organisations</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p>
+</footer>
+
+<script>
+(function () {
+  var nav = document.querySelector('nav');
+  if (!nav) return;
+  function sync() {
+    var fixed = getComputedStyle(nav).position === 'fixed';
+    document.documentElement.style.setProperty('--bottom-nav-h', fixed ? nav.offsetHeight + 'px' : '0px');
+  }
+  sync();
+  addEventListener('resize', sync);
+  addEventListener('orientationchange', sync);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(sync);
+  if (window.ResizeObserver) new ResizeObserver(sync).observe(nav);
+})();
+</script>
+
+</body>
+</html>
