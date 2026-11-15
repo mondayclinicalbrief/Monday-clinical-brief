@@ -65,6 +65,6 @@ Referral guidance changes rarely make headlines and reliably catch people out at
 - [What can you offer when HRT isn't suitable? Fezolinetant and NG23 in 2026](/blog/medical-journal-digest/menopause-hrt-nice-ng23-2026/) — includes the 2026 NG23 update on unscheduled bleeding.
 - [NICE NG136 hypertension update, February 2026](/blog/medical-journal-digest/nice-ng136-hypertension-2026/) — new advice for raised blood pressure before a diagnosis of hypertension.
 - [Asthma in UK primary care 2026: what the BTS/NICE/SIGN guideline (NG245) changed](/blog/medical-journal-digest/asthma-bts-nice-sign-ng245-uk-2026/) — diagnosis and treatment for people aged 12 and over.
-- [NICE CKS round-up, September 2026](/blog/medical-journal-digest/cks-round-up-september-2026/) — our monthly summary of what changed in NICE Clinical Knowledge Summaries.
+- [NICE CKS round-up, October 2026](/blog/medical-journal-digest/cks-round-up-october-2026/) — our monthly summary of what changed in NICE Clinical Knowledge Summaries.
 
 A recent general practice issue is online in full, with no sign-up required: [read a free sample](/samples/general-practice/).
