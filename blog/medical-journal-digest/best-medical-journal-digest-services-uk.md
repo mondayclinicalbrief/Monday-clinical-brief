@@ -4,21 +4,21 @@ seoTitle: "Best Medical Journal Digests for UK Doctors (2026)"
 metaDescription: "Compare the best medical journal digests for UK doctors on coverage, CPD and price — the top 5 journals across 31 specialties from £20/year."
 description: "A head-to-head comparison of journal digest services available to UK doctors — features, pricing, CPD integration, and specialty coverage."
 date: 2026-04-14
-updated: 2026-11-03
+updated: 2026-11-16
 cluster: "Medical Journal Digest"
 schemaType: "MedicalWebPage"
 pillar: false
 faqs:
   - question: "What is the best medical journal digest service for UK doctors?"
-    answer: "There is no single best service for everyone. For passive, UK-focused weekly reading, The Monday Clinical Brief suits most clinicians. For a searchable reference tool, UpToDate and BMJ Best Practice lead. For tightly filtered primary-care evidence, Evidence Alerts works well. The right choice depends on whether you want to stay current or look things up, and on your budget."
+    answer: "There is no single best service for everyone. For passive, UK-focused weekly reading, The Monday Clinical Brief suits most clinicians. For a searchable reference tool, UpToDate and BMJ Best Practice lead. For free, tightly filtered evidence alerts, Evidence Alerts works well. The right choice depends on whether you want to stay current or look things up, and on your budget."
   - question: "Are there any free medical journal digest services?"
-    answer: "Yes. Evidence Alerts has a free tier, and The Monday Clinical Brief offers a free four-week trial, which you can cancel any time before it renews. Many NHS clinicians also reach UpToDate and BMJ Best Practice at no personal cost through an NHS trust or institutional subscription."
+    answer: "Yes. MediSum is a free weekly email digest for seven specialties, Evidence Alerts is a free, quality-filtered alerting service, and The Monday Clinical Brief offers a free four-week trial, which you can cancel any time before it renews. Many NHS clinicians also reach UpToDate and BMJ Best Practice at no personal cost through an NHS trust or institutional subscription."
   - question: "Is Medscape AI a free alternative to a paid journal digest?"
-    answer: "Not really — it solves a different problem. Medscape AI is free to Medscape members and answers clinical questions you put to it, but it does not push you what is new in your specialty, so it cannot do a digest's job. It also holds no UK regulatory status: it is not UKCA-marked, not MHRA-registered, and has not been assessed against DTAC, and its parent WebMD is advertising-funded. If your problem is keeping up rather than looking up, a digest is the tool that fits — Evidence Alerts has a free tier, and The Monday Clinical Brief offers a free four-week trial."
+    answer: "Not really — it solves a different problem. Medscape AI is free to Medscape members and answers clinical questions you put to it, but it does not push you what is new in your specialty, so it cannot do a digest's job. It also holds no UK regulatory status: it is not UKCA-marked, not MHRA-registered, and has not been assessed against DTAC, and its parent WebMD is advertising-funded. If your problem is keeping up rather than looking up, a digest is the tool that fits — Evidence Alerts is free, and The Monday Clinical Brief offers a free four-week trial."
   - question: "Which journal digest services count towards CPD or revalidation?"
     answer: "BMJ Best Practice has the strongest formal, accredited CPD modules. The Monday Clinical Brief is not an accredited provider, but each issue is structured so you can log your reading and reflections for appraisal, via the free MCB CPD Tracker or your own portfolio. UpToDate, DynaMed and NEJM Clinician offer limited CPD integration for UK revalidation."
   - question: "How much do medical journal digest services cost in the UK?"
-    answer: "Prices range from free to over £400 a year. The Monday Clinical Brief starts at £20/year for individuals. Evidence Alerts is free to £50/year, NEJM Clinician around £75/year per specialty, DynaMed from £150/year, BMJ Best Practice £200–500/year, and UpToDate from around £440/year for individual access."
+    answer: "Prices range from free to over £400 a year. The Monday Clinical Brief starts at £20/year for individuals. Evidence Alerts and MediSum are free, NEJM Clinician is £75/year, DynaMed from £150/year, BMJ Best Practice £200–500/year, and UpToDate from around £440/year for individual access."
   - question: "Is a journal digest different from UpToDate or BMJ Best Practice?"
     answer: "Yes. A digest pushes you a short, regular summary of new research so you stay current without searching. UpToDate and BMJ Best Practice are point-of-care reference tools you query when you need an answer about a specific condition. Many UK doctors use both: institutional reference access plus a weekly digest."
 ---
@@ -191,32 +191,31 @@ Pricing ranges from free to several hundred pounds annually. Consider both the d
 
 ### Evidence Alerts
 
-**What is it?** A highly filtered digest from Cochrane Collaboration and other evidence sources, focusing on high-quality research (RCTs, systematic reviews) relevant to primary care.
+**What is it?** A free email alerting service produced by McMaster University's Health Information Research Unit in Canada and sponsored by EBSCO Health, the publisher of DynaMed. Every article from 90 clinical journals, including all Cochrane reviews, is rated for quality by trained research staff, then rated for clinical relevance and interest by at least three practising physicians. McMaster says fewer than 1 in 10 published articles makes the grade. You choose your clinical interests, and each alert carries the ratings, clinicians' comments, and links to the abstract on PubMed and to the full text where it is free.
 
 **Strengths:**
-- Rigorous methodological filtering; only includes high-quality evidence
-- Excellent for GP practice; evidence-based primary care focus
-- Free tier available
-- Clear, brief summaries
-- Strong on guideline updates
+- Rigorous, published methodological filtering; only the strongest studies and systematic reviews are selected
+- Every article rated for clinical relevance by practising physicians
+- Free
+- Includes clinical practice guidelines published in its journals, as well as studies and reviews
+- A searchable database of rated articles going back to 2003
 
 **Limitations:**
-- Very narrow in scope; secondary care specialists will find limited coverage
-- Updates less frequent than daily digests
-- Premium features require paid subscription
-- Small community compared to larger platforms
+- Highly selective: you see the strongest evidence from 90 journals, not everything published in your field
+- Alerts carry ratings and comments rather than a written summary of each paper
+- No UK-specific or NHS context
 
-**Pricing:** Free (basic); from £50/year (premium)
+**Pricing:** Free (its terms say access is free "at the moment", at McMaster's discretion)
 
-**CPD Support:** Minimal
+**CPD Support:** None stated for UK revalidation
 
 ---
 
 ### MediSummary
 
-**What is it?** A US subscription service that summarises papers across more than 70 specialties. Since mid-2026 it has marketed a weekly specialty digest — "the papers that matter in your field, ranked and ready" — offered as a three-minute read or an eight-minute audio briefing, alongside iOS and Android apps. It is the newest product to use the language this page is about, which is why we have included it.
+**What is it?** A US subscription service that now describes itself as "a medical AI workspace for physicians": nine tools, including paper summaries, clinical questions answered with PubMed citations, and an AI note taker. Since mid-2026 it has also marketed a weekly specialty digest across more than 70 specialties — "the papers that matter in your field, ranked and ready" — offered as a three-minute read or an eight-minute audio briefing. It is one of the newer products to use the language this page is about, which is why we have included it.
 
-One caveat before the detail. MediSummary's marketing describes the digest as weekly and says it "just arrives", but the delivery channel is not stated anywhere on the site, and its own terms of service — last updated on 21 May 2026 — still describe "Monthly Specialty Updates: curated audio and written summaries of newly published studies in your specialty", with no weekly digest mentioned. We could not confirm that it arrives by email, or that it arrives weekly. Both are best read as marketing claims dated September 2026 rather than settled product behaviour.
+One caveat before the detail. MediSummary's marketing describes the digest as weekly and says it "just arrives". The site names a web app and iPhone and Android apps, but does not say the digest arrives by email. Its own terms of service, updated on 10 November 2026, still list "Monthly Specialty Updates", described as "curated audio and written summaries of newly published studies in your specialty", with no weekly digest mentioned. We could not confirm that it arrives by email, or that it arrives weekly. Both are best read as marketing claims, checked in November 2026, rather than settled product behaviour.
 
 **Strengths:**
 - Very broad specialty coverage — more than 70 fields
@@ -225,14 +224,42 @@ One caveat before the detail. MediSummary's marketing describes the digest as we
 - Seven-day free trial and a 60-day money-back guarantee
 
 **Limitations:**
-- No UK positioning — operated by ODAKCO, LLC of Dover, Delaware, with no UK entity, no UK pricing and no UK regulatory statement we could find
+- Little UK positioning — it lists the NHS among the institutions whose physicians use it, but it is operated by ODAKCO, LLC of Dover, Delaware, with no UK entity, no UK pricing and no UK regulatory statement we could find
 - Ranked selection puts an editorial filter between you and the literature: you see what the ranking surfaces, not everything that was published
 - Delivery channel and frequency are unconfirmed (see above)
-- Scale claims are company-reported and inconsistent — 6,000-plus physicians in one place, 3,000-plus in another; we have not independently verified either
+- Scale claims are company-reported and have changed over the year; the site now says 8,000-plus physicians across 50 countries, which we have not independently verified
 
 **Pricing:** US$16/month, billed as US$197/year
 
 **CPD Support:** None stated for UK revalidation
+
+---
+
+### MediSum
+
+**What is it?** A free weekly email digest for clinicians in seven specialties: orthopaedic surgery, neurosurgery, cardiology, neurology, oncology, gastroenterology, and obstetrics and gynaecology. Every Monday it emails new PubMed studies chosen for the subspecialties and topics you pick — four a week by default, anywhere from two to sixteen — each with a two- to three-sentence summary and a link to its PubMed record. It is the closest thing to a free version of the format this page is about, which is why we have included it.
+
+The summaries are written by AI from each study's PubMed abstract. MediSum says not every summary is reviewed by a clinician before it is sent, and that in October 2026 two physicians checked 100 randomly selected summaries against the abstracts and found no factual errors. It says it is read by more than 1,500 physicians.
+
+Its pages do not say how it is funded. Its "For industry" page offers companies a quarterly brief on the new evidence in their product category, "priced for a brand team's quarterly budget", and its terms describe optional industry-partner and physician-data partner programmes. It says companies "do not choose the studies or the wording", and that sponsored content never changes which research a reader receives and is always labelled.
+
+**Strengths:**
+- Free, with no subscription
+- Personalised by specialty and subspecialty, and you choose how many studies arrive each week
+- Every summary links to its PubMed record, and the sourcing method and editorial policy are published
+- A public sample issue, so you can judge it before signing up
+
+**Limitations:**
+- Seven specialties only — no general practice, general medicine, palliative care, psychiatry or paediatrics, for example
+- A short weekly selection drawn from PubMed, not every paper from a fixed, published list of journals
+- No UK positioning — operated by MediSum LLC, a Delaware company with its principal office in North Carolina; its terms and privacy policy are built around US practice, including linking accounts to the US National Provider Identifier registry
+- Funding model not stated (see above)
+
+**Pricing:** Free
+
+**CPD Support:** None stated for UK revalidation
+
+The difference from The Monday Clinical Brief is who pays and what you see. MCB charges its subscribers — £20 a year, with no advertising and no sponsored content — and covers every new paper from five named journals in each of 31 specialties, listed on our [methodology page](/methodology/), rather than a selection.
 
 ---
 
@@ -268,9 +295,10 @@ One caveat before the detail. MediSummary's marketing describes the digest as we
 | **UpToDate** | 500+ journals (summarised) | Continuous updates | Limited | From £440/year |
 | **ClinicalKey AI** | Elsevier books + journals + AI search | On-demand (look-up) | Limited | Individual (free trial); ~US$349/yr |
 | **NEJM Clinician** | Major journals (expert picks) | Weekly | Minimal | ~£75/year |
-| **Evidence Alerts** | High-quality evidence (RCTs, reviews) | 2–3 times/week | Minimal | Free–£50/year |
+| **Evidence Alerts** | 90 journals, rated for quality and relevance | Email alerts (frequency not stated) | Not stated | Free |
 | **Medscape AI** | General medical literature via AI look-up | On-demand (look-up) | Minimal | Free (ad-funded) |
 | **MediSummary** | Ranked selection across 70+ specialties | Weekly (company claim; unconfirmed) | Not stated | ~US$197/year |
+| **MediSum** | PubMed studies picked for your subspecialties (7 specialties) | Weekly (Monday email) | Not stated | Free |
 
 ## How to Choose the Right Service for You
 
@@ -298,4 +326,4 @@ For a broader introduction to managing medical literature, see our [guide to med
 
 ---
 
-*Last updated: September 2026. Pricing and features current as of publication. Services and their offerings change; please verify current details with providers.*
+*Last updated: November 2026. Pricing and features current as of publication. Services and their offerings change; please verify current details with providers.*

@@ -4,7 +4,7 @@ seoTitle: "Journal Summary Subscription vs Free Alerts"
 metaDescription: "Free journal alerts or a paid summary subscription? We compare coverage, signal-to-noise, CPD value and time cost for UK doctors."
 description: "Free journal alerts or a paid summary subscription? A practical comparison of coverage, signal-to-noise, and time cost for busy UK doctors."
 date: 2026-04-28
-updated: 2026-11-03
+updated: 2026-11-16
 cluster: "Journal Summary Subscription"
 schemaType: "Article"
 pillar: false
@@ -37,7 +37,7 @@ For a junior doctor with niche interests and time on their hands, this can work.
 
 **Journal table-of-contents alerts and PubMed saved searches.** The raw version: you pick the journals or the search, and every new match arrives as a list. Complete coverage of what you asked for, no judgement applied, and entirely your problem to triage.
 
-**EvidenceAlerts.** A step up, because someone has already filtered. New clinical studies are screened for methodological quality and rated for relevance by practising clinicians before anything reaches you. It is free, and worth knowing who provides it: EvidenceAlerts describes itself as a free service provided by **EBSCO and McMaster University**, EBSCO being the publisher of DynaMed. That does not make the ratings less rigorous — the McMaster methodology is well established and predates the arrangement. It does mean the leading free filtered-alert service is operated alongside a paid clinical reference product, which is worth knowing when you are weighing "free" against "independent".
+**EvidenceAlerts.** A step up, because someone has already filtered. New clinical studies are screened for methodological quality and rated for relevance by practising clinicians before anything reaches you. It is free, and worth knowing who provides it: EvidenceAlerts says it is produced by **McMaster University** and sponsored by **EBSCO Health**, the publisher of DynaMed, "as a free evidence alerting service". That does not make the ratings less rigorous — the McMaster methodology is well established and predates the arrangement. It does mean the leading free filtered-alert service is sponsored by the publisher of a paid clinical reference product, which is worth knowing when you are weighing "free" against "independent".
 
 **Red Whale Pearls.** The one most often left out of comparisons like this, and the closest free thing to a digest. A weekly email for GPs and primary care clinicians, free, covering **one topic per issue** — recent editions have run on acute aortic syndrome, suicide risk assessment and penicillin allergy. It is genuinely good, and it is teaching rather than literature coverage: it explains a topic drawn from Red Whale's own library, and it funnels towards their paid courses and memberships.
 
@@ -54,7 +54,7 @@ The good services provide four things:
 3. **Specialty relevance.** Summaries are tagged or streamed by specialty so a palliative care consultant is not reading through cardiology before they find something useful.
 4. **CPD-friendly formatting.** Reflection prompts, citations, and publication dates are built in, so logging the reading takes a minute rather than ten.
 
-The cost is typically £20 to £300 per year depending on the service. The time saving is real. A UK GP reading a weekly digest in fifteen minutes instead of managing five RSS feeds saves most of an hour every week — and actually absorbs what they read.
+The cost is typically £20 to £300 per year depending on the service. Free email digests now exist too — [MediSum](/blog/medical-journal-digest/best-medical-journal-digest-services-uk/#medisum), for seven specialties, is one — so the question is no longer only what a digest costs, but who pays for it. The time saving is real. A UK GP reading a weekly digest in fifteen minutes instead of managing five RSS feeds saves most of an hour every week — and actually absorbs what they read.
 
 ## The Honest Comparison
 
