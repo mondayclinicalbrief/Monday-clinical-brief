@@ -16,6 +16,9 @@
 #   /pcc — Palliative Care Congress 2027 advert (PCC website + delegate zone)
 /pcc  /index.html  200
 /PCC  /pcc  301!
+#   /iapc — Irish Association for Palliative Care newsletter item (agreed 18 Nov 2026)
+/iapc  /index.html  200
+/IAPC  /iapc  301!
 
 # Netlify Functions exposed under /api/ (used by digest unsubscribe links)
 /api/*    /.netlify/functions/:splat  200

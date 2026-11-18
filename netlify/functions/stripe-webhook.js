@@ -36,6 +36,10 @@ const EXTRA_SPECIALTY_GBP = 5;     // each additional specialty
 //   SAM   — duration: FOREVER (the discounted rate recurs)
 //   MDDUS — duration: FOREVER (the discounted rate recurs)
 //   AWPCC — duration: FOREVER (the discounted rate recurs)
+//   IAPC  — duration: FOREVER (the discounted rate recurs). Irish Association
+//           for Palliative Care, agreed 18 Nov 2026. Name the coupon plainly
+//           ("IAPC member rate"): the name is matched too, and must not contain
+//           any code checked before IAPC below.
 //   DELEGATE — duration: FOREVER (the discounted rate recurs)
 // Every code here needs a branch in the if/else chain further down as well. The
 // arrays alone are dead code: couponKind never gets set, so the welcome email
@@ -48,8 +52,8 @@ const EXTRA_SPECIALTY_GBP = 5;     // each additional specialty
 // promotion code in Stripe and no change here. Do NOT create a coupon per
 // conference: matching is by substring, and "PCC" sits inside "AWPCC".
 const MEMBER_RATE_DISCOUNT_GBP = 5;
-const MEMBER_RATE_COUPONS = ["ABUHB", "APM", "NASGP", "SAM", "MDDUS", "AWPCC", "DELEGATE"];
-const RECURRING_MEMBER_RATES = ["APM", "NASGP", "SAM", "MDDUS", "AWPCC", "DELEGATE"];
+const MEMBER_RATE_COUPONS = ["ABUHB", "APM", "NASGP", "SAM", "MDDUS", "AWPCC", "IAPC", "DELEGATE"];
+const RECURRING_MEMBER_RATES = ["APM", "NASGP", "SAM", "MDDUS", "AWPCC", "IAPC", "DELEGATE"];
 
 // How each recurring rate is named in the welcome email. A bare acronym reads fine
 // for a society but not for a conference, so AWPCC is spelled out.
@@ -59,6 +63,7 @@ const MEMBER_RATE_LABELS = {
   SAM: "SAM member rate",
   MDDUS: "MDDUS member rate",
   AWPCC: "All Wales Palliative Care Conference delegate rate",
+  IAPC: "IAPC member rate",
   DELEGATE: "conference delegate rate",
 };
 const SUPPORT_EMAIL = "info@mondayclinicalbrief.co.uk";
@@ -556,7 +561,7 @@ exports.handler = async (event) => {
   // £15 to someone buying two specialties would understate what they actually pay.
   const listTotalGbp = PRIMARY_PRICE_GBP + Math.max(0, specialtySlugs.length - 1) * EXTRA_SPECIALTY_GBP;
   let price = `£${listTotalGbp}`;
-  let couponKind = null; // "FAF2026" | "ABUHB" | "APM" | "NASGP" | "SAM" | "MDDUS" | "AWPCC" | "DELEGATE" — drives the priceLine wording below
+  let couponKind = null; // "FAF2026" | "ABUHB" | "APM" | "NASGP" | "SAM" | "MDDUS" | "AWPCC" | "IAPC" | "DELEGATE" — drives the priceLine wording below
   try {
     // 1. Check session.discount (included in webhook payload)
     const couponCodes = [];
@@ -629,6 +634,8 @@ exports.handler = async (event) => {
       couponKind = "MDDUS";
     } else if (norm.some(c => c.includes("AWPCC"))) {
       couponKind = "AWPCC";
+    } else if (norm.some(c => c.includes("IAPC"))) {
+      couponKind = "IAPC";
     } else if (norm.some(c => c.includes("DELEGATE"))) {
       // Keep this branch LAST. "delegate" is an ordinary word that an earlier
       // coupon's name may contain (AWPCC's rate is a delegate rate too), so every
