@@ -28,8 +28,10 @@ const PRIMARY_PRICE_GBP = 20;      // primary specialty
 const EXTRA_SPECIALTY_GBP = 5;     // each additional specialty
 
 // Member-rate coupons all take a flat £5 off the whole order — so a member with
-// two specialties pays £20, not a flat £15. Matched on the coupon id/name, so the
-// Stripe coupon ID must contain the code; the promotion code string is not visible here.
+// two specialties pays £20, not a flat £15. Matched by substring on the coupon's ID
+// first, and on its name only if no ID matches (see matchCouponKind). The promotion
+// code string is not visible here. A custom coupon ID containing the code is best;
+// if Stripe gave the coupon a random ID instead, the code must be in the name.
 //   ABUHB — duration: ONCE    (first year only, then full list price)
 //   APM   — duration: FOREVER (the discounted rate recurs)
 //   NASGP — duration: FOREVER (the discounted rate recurs)
@@ -37,13 +39,14 @@ const EXTRA_SPECIALTY_GBP = 5;     // each additional specialty
 //   MDDUS — duration: FOREVER (the discounted rate recurs)
 //   AWPCC — duration: FOREVER (the discounted rate recurs)
 //   IAPC  — duration: FOREVER (the discounted rate recurs). Irish Association
-//           for Palliative Care, agreed 18 Nov 2026. Name the coupon plainly
-//           ("IAPC member rate"): the name is matched too, and must not contain
-//           any code checked before IAPC below.
+//           for Palliative Care, agreed 18 Nov 2026. Its coupon has a random
+//           Stripe ID ("kVUSeRft") and the name "IAPC Member Rate", so it is
+//           matched on the name. (Before the name fallback existed, its first
+//           test welcome on 18 Nov quoted £20.)
 //   DELEGATE — duration: FOREVER (the discounted rate recurs)
-// Every code here needs a branch in the if/else chain further down as well. The
-// arrays alone are dead code: couponKind never gets set, so the welcome email
-// quotes the list price while Stripe charges the discounted one.
+// Every code here must also be in COUPON_MATCH_ORDER below. The other arrays
+// alone are dead code: couponKind never gets set, so the welcome email quotes the
+// list price while Stripe charges the discounted one.
 //
 // DELEGATE is the one coupon behind every conference from the Palliative Care
 // Congress 2027 onwards. Each conference gets its own Stripe *promotion code* on
@@ -54,6 +57,19 @@ const EXTRA_SPECIALTY_GBP = 5;     // each additional specialty
 const MEMBER_RATE_DISCOUNT_GBP = 5;
 const MEMBER_RATE_COUPONS = ["ABUHB", "APM", "NASGP", "SAM", "MDDUS", "AWPCC", "IAPC", "DELEGATE"];
 const RECURRING_MEMBER_RATES = ["APM", "NASGP", "SAM", "MDDUS", "AWPCC", "IAPC", "DELEGATE"];
+
+// Substring match, first hit wins, so the order matters. Keep DELEGATE LAST:
+// "delegate" is an ordinary word an earlier coupon's name may contain (AWPCC's
+// rate is a delegate rate too), so every specific code must get its chance first.
+const COUPON_MATCH_ORDER = ["FAF2026", "ABUHB", "APM", "NASGP", "SAM", "MDDUS", "AWPCC", "IAPC", "DELEGATE"];
+
+function matchCouponKind(strings) {
+  const norm = strings.map(s => String(s).toUpperCase());
+  for (const code of COUPON_MATCH_ORDER) {
+    if (norm.some(s => s.includes(code))) return code;
+  }
+  return null;
+}
 
 // How each recurring rate is named in the welcome email. A bare acronym reads fine
 // for a society but not for a conference, so AWPCC is spelled out.
@@ -502,6 +518,8 @@ async function sendWelcomeEmail(toEmail, specialtySlugs, priceLine, customerName
 
 // ── Netlify handler ────────────────────────────────────────────────────────────
 
+exports.matchCouponKind = matchCouponKind; // for local checks only
+
 exports.handler = async (event) => {
   if (event.httpMethod !== "POST") {
     return { statusCode: 405, body: "Method Not Allowed" };
@@ -563,37 +581,33 @@ exports.handler = async (event) => {
   let price = `£${listTotalGbp}`;
   let couponKind = null; // "FAF2026" | "ABUHB" | "APM" | "NASGP" | "SAM" | "MDDUS" | "AWPCC" | "IAPC" | "DELEGATE" — drives the priceLine wording below
   try {
+    // Coupon IDs and names are kept apart: IDs are matched first, names only if
+    // no ID matches (a coupon Stripe gave a random ID, like IAPC's).
+    const couponIds = [];
+    const couponNames = [];
+    const addCoupon = (c) => {
+      if (!c || typeof c !== "object") return;
+      if (c.id) couponIds.push(c.id);
+      if (c.name) couponNames.push(c.name);
+    };
+
     // 1. Check session.discount (included in webhook payload)
-    const couponCodes = [];
-    if (session.discount?.coupon) {
-      const c = session.discount.coupon;
-      if (c.id) couponCodes.push(c.id);
-      if (c.name) couponCodes.push(c.name);
-    }
+    addCoupon(session.discount?.coupon);
 
     // 2. Also check total_details.breakdown.discounts (may be present if expanded)
     const discounts = session.total_details?.breakdown?.discounts || [];
-    for (const d of discounts) {
-      const id = d.discount?.coupon?.id || d.discount?.coupon?.name || "";
-      if (id) couponCodes.push(id);
-    }
+    for (const d of discounts) addCoupon(d.discount?.coupon);
 
-    // 3. If still empty, retrieve the session from Stripe with expanded fields
-    if (couponCodes.length === 0) {
+    // 3. If still empty, retrieve the session from Stripe with expanded fields.
+    //    This is the path promotion-code sign-ups normally take.
+    if (couponIds.length === 0) {
       try {
         const fullSession = await stripe.checkout.sessions.retrieve(session.id, {
           expand: ["total_details.breakdown", "discounts"],
         });
-        if (fullSession.discount?.coupon) {
-          const c = fullSession.discount.coupon;
-          if (c.id) couponCodes.push(c.id);
-          if (c.name) couponCodes.push(c.name);
-        }
+        addCoupon(fullSession.discount?.coupon);
         const expandedDiscounts = fullSession.total_details?.breakdown?.discounts || [];
-        for (const d of expandedDiscounts) {
-          const id = d.discount?.coupon?.id || d.discount?.coupon?.name || "";
-          if (id) couponCodes.push(id);
-        }
+        for (const d of expandedDiscounts) addCoupon(d.discount?.coupon);
       } catch (retrieveErr) {
         console.log("Could not retrieve expanded session:", retrieveErr.message);
       }
@@ -602,46 +616,20 @@ exports.handler = async (event) => {
     // 4. A coupon attached to a Payment Link / the subscription itself does NOT
     //    appear on the checkout session — pull it from the subscription. This is
     //    the path ABUHB Payment Link signups take.
-    if (couponCodes.length === 0 && session.subscription) {
+    if (couponIds.length === 0 && session.subscription) {
       try {
         const sub = await stripe.subscriptions.retrieve(session.subscription, {
           expand: ["discounts"],
         });
         const subDiscounts = sub.discounts || (sub.discount ? [sub.discount] : []);
-        for (const d of subDiscounts) {
-          const c = (d && typeof d === "object") ? d.coupon : null;
-          if (c?.id) couponCodes.push(c.id);
-          if (c?.name) couponCodes.push(c.name);
-        }
+        for (const d of subDiscounts) addCoupon((d && typeof d === "object") ? d.coupon : null);
       } catch (subErr) {
         console.log("Could not retrieve subscription discounts:", subErr.message);
       }
     }
 
-    console.log("Coupon codes detected:", couponCodes);
-    const norm = couponCodes.map(c => String(c).toUpperCase());
-    if (norm.some(c => c.includes("FAF2026"))) {
-      couponKind = "FAF2026";
-    } else if (norm.some(c => c.includes("ABUHB"))) {
-      couponKind = "ABUHB";
-    } else if (norm.some(c => c.includes("APM"))) {
-      couponKind = "APM";
-    } else if (norm.some(c => c.includes("NASGP"))) {
-      couponKind = "NASGP";
-    } else if (norm.some(c => c.includes("SAM"))) {
-      couponKind = "SAM";
-    } else if (norm.some(c => c.includes("MDDUS"))) {
-      couponKind = "MDDUS";
-    } else if (norm.some(c => c.includes("AWPCC"))) {
-      couponKind = "AWPCC";
-    } else if (norm.some(c => c.includes("IAPC"))) {
-      couponKind = "IAPC";
-    } else if (norm.some(c => c.includes("DELEGATE"))) {
-      // Keep this branch LAST. "delegate" is an ordinary word that an earlier
-      // coupon's name may contain (AWPCC's rate is a delegate rate too), so every
-      // specific code above must get its chance first.
-      couponKind = "DELEGATE";
-    }
+    console.log("Coupons detected — ids:", couponIds, "names:", couponNames);
+    couponKind = matchCouponKind(couponIds) || matchCouponKind(couponNames);
 
     // Stripe reports amount_total of 0 for the whole 28-day trial, so it is only
     // trustworthy once it is actually populated. Otherwise derive the figure.
