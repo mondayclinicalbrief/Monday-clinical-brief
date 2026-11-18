@@ -48,12 +48,15 @@ const EXTRA_SPECIALTY_GBP = 5;     // each additional specialty
 // alone are dead code: couponKind never gets set, so the welcome email quotes the
 // list price while Stripe charges the discounted one.
 //
-// DELEGATE is the one coupon behind every conference from the Palliative Care
+// DELEGATE is the one rate behind every conference from the Palliative Care
 // Congress 2027 onwards. Each conference gets its own Stripe *promotion code* on
-// that coupon (PCC27, …), which is what the delegate types and what Stripe counts.
+// one shared coupon, which is what the delegate types and what Stripe counts.
 // The promotion code never reaches this function, so a new conference needs a new
 // promotion code in Stripe and no change here. Do NOT create a coupon per
 // conference: matching is by substring, and "PCC" sits inside "AWPCC".
+// The shared coupon was created on 18 Nov 2026 with ID "PCC27" rather than
+// "DELEGATE" (its first test welcome quoted £20), so COUPON_ALIASES maps that
+// ID to DELEGATE. Later conferences' promotion codes go on the PCC27 coupon.
 const MEMBER_RATE_DISCOUNT_GBP = 5;
 const MEMBER_RATE_COUPONS = ["ABUHB", "APM", "NASGP", "SAM", "MDDUS", "AWPCC", "IAPC", "DELEGATE"];
 const RECURRING_MEMBER_RATES = ["APM", "NASGP", "SAM", "MDDUS", "AWPCC", "IAPC", "DELEGATE"];
@@ -61,12 +64,15 @@ const RECURRING_MEMBER_RATES = ["APM", "NASGP", "SAM", "MDDUS", "AWPCC", "IAPC",
 // Substring match, first hit wins, so the order matters. Keep DELEGATE LAST:
 // "delegate" is an ordinary word an earlier coupon's name may contain (AWPCC's
 // rate is a delegate rate too), so every specific code must get its chance first.
-const COUPON_MATCH_ORDER = ["FAF2026", "ABUHB", "APM", "NASGP", "SAM", "MDDUS", "AWPCC", "IAPC", "DELEGATE"];
+// An alias is a coupon ID matched like any code but reported as another kind.
+// "PCC27" is safe as a substring: it is not inside "AWPCC", nor AWPCC inside it.
+const COUPON_ALIASES = { PCC27: "DELEGATE" };
+const COUPON_MATCH_ORDER = ["FAF2026", "ABUHB", "APM", "NASGP", "SAM", "MDDUS", "AWPCC", "IAPC", "PCC27", "DELEGATE"];
 
 function matchCouponKind(strings) {
   const norm = strings.map(s => String(s).toUpperCase());
   for (const code of COUPON_MATCH_ORDER) {
-    if (norm.some(s => s.includes(code))) return code;
+    if (norm.some(s => s.includes(code))) return COUPON_ALIASES[code] || code;
   }
   return null;
 }
