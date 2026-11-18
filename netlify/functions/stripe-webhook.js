@@ -39,10 +39,10 @@ const EXTRA_SPECIALTY_GBP = 5;     // each additional specialty
 //   MDDUS — duration: FOREVER (the discounted rate recurs)
 //   AWPCC — duration: FOREVER (the discounted rate recurs)
 //   IAPC  — duration: FOREVER (the discounted rate recurs). Irish Association
-//           for Palliative Care, agreed 18 Nov 2026. Its coupon has a random
-//           Stripe ID ("kVUSeRft") and the name "IAPC Member Rate", so it is
-//           matched on the name. (Before the name fallback existed, its first
-//           test welcome on 18 Nov quoted £20.)
+//           for Palliative Care, agreed 18 Nov 2026. Coupon ID "IAPC". The
+//           first IAPC coupon got a random Stripe ID, which this function then
+//           failed to match (its test welcome quoted £20). That led to the name
+//           fallback in matchCouponKind, and the coupon was remade with ID "IAPC".
 //   DELEGATE — duration: FOREVER (the discounted rate recurs)
 // Every code here must also be in COUPON_MATCH_ORDER below. The other arrays
 // alone are dead code: couponKind never gets set, so the welcome email quotes the
